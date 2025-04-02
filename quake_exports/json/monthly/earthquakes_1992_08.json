@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1992-08-21 21:57:29",
+      "time_mmt": "1992-08-22 04:27:29",
+      "latitude": 22.576,
+      "longitude": 93.541,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1992-08-06 22:16:32",
+      "time_mmt": "1992-08-07 04:46:32",
+      "latitude": 14.561,
+      "longitude": 97.026,
+      "depth": 24.1,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

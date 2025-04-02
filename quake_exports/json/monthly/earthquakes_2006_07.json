@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2006-07-22 13:13:00",
+      "time_mmt": "2006-07-22 19:43:00",
+      "latitude": 21.073,
+      "longitude": 94.504,
+      "depth": 92.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-11-29 03:57:37",
+      "time_mmt": "2018-11-29 10:27:37",
+      "latitude": 23.5476,
+      "longitude": 94.32,
+      "depth": 83.34,
+      "mag": 4.5,
+      "location": "Mawlaik, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-20 17:49:19",
+      "time_mmt": "2018-11-21 00:19:19",
+      "latitude": 20.2441,
+      "longitude": 93.6503,
+      "depth": 44.91,
+      "mag": 4.5,
+      "location": "Rakhine, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-19 19:03:07",
+      "time_mmt": "2018-11-20 01:33:07",
+      "latitude": 23.4306,
+      "longitude": 94.1988,
+      "depth": 10.0,
+      "mag": 4.4,
+      "location": "Mawlaik, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-19 04:07:53",
+      "time_mmt": "2018-11-19 10:37:53",
+      "latitude": 21.5,
+      "longitude": 94.39,
+      "depth": 80.0,
+      "mag": 4.9,
+      "location": "Pakokku, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-10 17:15:46",
+      "time_mmt": "2018-11-10 23:45:46",
+      "latitude": 23.9634,
+      "longitude": 93.3951,
+      "depth": 51.07,
+      "mag": 5.2,
+      "location": "Chin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-05 19:48:36",
+      "time_mmt": "2018-11-06 02:18:36",
+      "latitude": 19.9181,
+      "longitude": 95.4792,
+      "depth": 10.0,
+      "mag": 4.5,
+      "location": "Taungdwingyi, Burma",
+      "country": "MM"
+    }
+  ]
+}

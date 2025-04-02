@@ -1,0 +1,34 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2019-01-28 03:52:39",
+      "time_mmt": "2019-01-28 10:22:39",
+      "latitude": 18.31,
+      "longitude": 96.08,
+      "depth": 30.0,
+      "mag": 4.5,
+      "location": "Pyu, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-01-25 14:29:05",
+      "time_mmt": "2019-01-25 20:59:05",
+      "latitude": 24.03,
+      "longitude": 94.96,
+      "depth": 40.0,
+      "mag": 4.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-01-16 21:39:35",
+      "time_mmt": "2019-01-17 04:09:35",
+      "latitude": 24.81,
+      "longitude": 96.35,
+      "depth": 10.0,
+      "mag": 4.9,
+      "location": "Kachin, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

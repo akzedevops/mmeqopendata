@@ -1,0 +1,414 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1998-01-16 07:33:10",
+      "time_mmt": "1998-01-16 14:03:10",
+      "latitude": 22.923,
+      "longitude": 99.561,
+      "depth": 49.8,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-01-10 20:26:20",
+      "time_mmt": "1998-01-11 02:56:20",
+      "latitude": 26.462,
+      "longitude": 96.827,
+      "depth": 150.0,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-01-02 21:12:05",
+      "time_mmt": "1998-01-03 03:42:05",
+      "latitude": 23.211,
+      "longitude": 94.499,
+      "depth": 113.7,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-02-21 09:48:54",
+      "time_mmt": "1998-02-21 16:18:54",
+      "latitude": 27.161,
+      "longitude": 96.156,
+      "depth": 100.0,
+      "mag": 3.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-02-18 09:02:25",
+      "time_mmt": "1998-02-18 15:32:25",
+      "latitude": 23.098,
+      "longitude": 94.166,
+      "depth": 45.3,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-02-16 07:29:09",
+      "time_mmt": "1998-02-16 13:59:09",
+      "latitude": 23.571,
+      "longitude": 94.734,
+      "depth": 96.7,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-02-06 18:57:11",
+      "time_mmt": "1998-02-07 01:27:11",
+      "latitude": 22.238,
+      "longitude": 94.353,
+      "depth": 105.5,
+      "mag": 3.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-02-05 06:36:41",
+      "time_mmt": "1998-02-05 13:06:41",
+      "latitude": 23.403,
+      "longitude": 94.771,
+      "depth": 99.8,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-03-20 03:02:46",
+      "time_mmt": "1998-03-20 09:32:46",
+      "latitude": 19.184,
+      "longitude": 93.471,
+      "depth": 33.0,
+      "mag": 3.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-03-13 23:28:36",
+      "time_mmt": "1998-03-14 05:58:36",
+      "latitude": 15.495,
+      "longitude": 94.235,
+      "depth": 33.0,
+      "mag": 3.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-03-11 15:34:06",
+      "time_mmt": "1998-03-11 22:04:06",
+      "latitude": 25.21,
+      "longitude": 95.1,
+      "depth": 97.6,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-03-06 12:50:11",
+      "time_mmt": "1998-03-06 19:20:11",
+      "latitude": 24.539,
+      "longitude": 94.478,
+      "depth": 66.5,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-03-01 15:12:30",
+      "time_mmt": "1998-03-01 21:42:30",
+      "latitude": 23.592,
+      "longitude": 94.521,
+      "depth": 100.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-04-23 21:37:57",
+      "time_mmt": "1998-04-24 04:07:57",
+      "latitude": 25.064,
+      "longitude": 94.777,
+      "depth": 33.0,
+      "mag": 3.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-04-15 18:46:18",
+      "time_mmt": "1998-04-16 01:16:18",
+      "latitude": 25.163,
+      "longitude": 96.617,
+      "depth": 33.0,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-04-15 18:36:40",
+      "time_mmt": "1998-04-16 01:06:40",
+      "latitude": 25.341,
+      "longitude": 96.68,
+      "depth": 33.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-04-14 08:42:04",
+      "time_mmt": "1998-04-14 15:12:04",
+      "latitude": 24.987,
+      "longitude": 95.018,
+      "depth": 33.0,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-04-10 04:59:29",
+      "time_mmt": "1998-04-10 11:29:29",
+      "latitude": 25.158,
+      "longitude": 95.255,
+      "depth": 100.0,
+      "mag": 3.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-06-30 08:00:28",
+      "time_mmt": "1998-06-30 14:30:28",
+      "latitude": 22.982,
+      "longitude": 94.718,
+      "depth": 116.9,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-06-19 03:54:50",
+      "time_mmt": "1998-06-19 10:24:50",
+      "latitude": 23.813,
+      "longitude": 93.821,
+      "depth": 100.0,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-06-18 23:13:17",
+      "time_mmt": "1998-06-19 05:43:17",
+      "latitude": 25.035,
+      "longitude": 95.109,
+      "depth": 127.9,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-05-06 19:56:13",
+      "time_mmt": "1998-05-07 02:26:13",
+      "latitude": 17.791,
+      "longitude": 94.343,
+      "depth": 33.0,
+      "mag": 4.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-05-06 15:40:45",
+      "time_mmt": "1998-05-06 22:10:45",
+      "latitude": 24.526,
+      "longitude": 97.603,
+      "depth": 33.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-05-02 08:36:50",
+      "time_mmt": "1998-05-02 15:06:50",
+      "latitude": 24.932,
+      "longitude": 95.311,
+      "depth": 121.5,
+      "mag": 5.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-07-17 21:13:59",
+      "time_mmt": "1998-07-18 03:43:59",
+      "latitude": 22.849,
+      "longitude": 94.496,
+      "depth": 100.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-07-13 17:36:54",
+      "time_mmt": "1998-07-14 00:06:54",
+      "latitude": 21.534,
+      "longitude": 98.264,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-07-09 09:20:47",
+      "time_mmt": "1998-07-09 15:50:47",
+      "latitude": 18.735,
+      "longitude": 95.786,
+      "depth": 57.3,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-07-02 00:05:58",
+      "time_mmt": "1998-07-02 06:35:58",
+      "latitude": 21.019,
+      "longitude": 93.699,
+      "depth": 56.3,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-08-30 04:36:51",
+      "time_mmt": "1998-08-30 11:06:51",
+      "latitude": 19.81,
+      "longitude": 94.675,
+      "depth": 65.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-08-19 13:42:25",
+      "time_mmt": "1998-08-19 20:12:25",
+      "latitude": 21.154,
+      "longitude": 94.607,
+      "depth": 150.0,
+      "mag": 3.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-08-16 19:46:24",
+      "time_mmt": "1998-08-17 02:16:24",
+      "latitude": 23.239,
+      "longitude": 94.403,
+      "depth": 122.4,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-08-10 12:34:10",
+      "time_mmt": "1998-08-10 19:04:10",
+      "latitude": 25.376,
+      "longitude": 96.526,
+      "depth": 33.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-08-04 05:50:01",
+      "time_mmt": "1998-08-04 12:20:01",
+      "latitude": 23.606,
+      "longitude": 94.582,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-09-13 00:14:38",
+      "time_mmt": "1998-09-13 06:44:38",
+      "latitude": 24.012,
+      "longitude": 96.001,
+      "depth": 33.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-09-06 21:35:39",
+      "time_mmt": "1998-09-07 04:05:39",
+      "latitude": 17.041,
+      "longitude": 94.866,
+      "depth": 33.0,
+      "mag": 3.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-10-16 00:05:34",
+      "time_mmt": "1998-10-16 06:35:34",
+      "latitude": 23.743,
+      "longitude": 94.683,
+      "depth": 101.2,
+      "mag": 5.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-11-30 12:00:48",
+      "time_mmt": "1998-11-30 18:30:48",
+      "latitude": 17.101,
+      "longitude": 96.106,
+      "depth": 10.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-11-17 15:30:50",
+      "time_mmt": "1998-11-17 22:00:50",
+      "latitude": 24.686,
+      "longitude": 96.373,
+      "depth": 100.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-11-14 06:14:34",
+      "time_mmt": "1998-11-14 12:44:34",
+      "latitude": 22.943,
+      "longitude": 94.801,
+      "depth": 33.0,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-11-10 08:39:50",
+      "time_mmt": "1998-11-10 15:09:50",
+      "latitude": 21.168,
+      "longitude": 94.032,
+      "depth": 77.5,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-12-02 01:04:28",
+      "time_mmt": "1998-12-02 07:34:28",
+      "latitude": 25.028,
+      "longitude": 95.156,
+      "depth": 135.8,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

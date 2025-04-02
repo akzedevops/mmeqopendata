@@ -1,0 +1,18 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2015-03-08 05:45:15,2015-03-08 12:15:15,22.57,95.85,10.0,4.4,"စစ်ကိုင်းတိုင်း, Republic of the Union of Myanmar",MM
+2015-04-15 17:57:02,2015-04-16 00:27:02,24.39,96.17,61.0,4.2,"Indaw, Sagaing, Republic of the Union of Myanmar",MM
+2015-05-21 12:43:34,2015-05-21 19:13:34,22.86,96.2,10.0,4.8,"Mandalay Region, Republic of the Union of Myanmar",MM
+2015-07-21 01:27:10,2015-07-21 07:57:10,19.1245,96.2692,26.21,4.7,"Bago Region, Myanmar (Burma)",MM
+2015-07-13 11:03:03,2015-07-13 17:33:03,26.48,96.52,100.0,4.6,"Kachin, Myanmar (Burma)",MM
+2015-08-12 02:44:51,2015-08-12 09:14:51,24.6516,94.8248,40.73,4.5,"Sagaing Region, Myanmar (Burma)",MM
+2015-08-10 17:05:24,2015-08-10 23:35:24,18.54,96.1,10.0,4.9,"Bago Region, Myanmar (Burma)",MM
+2015-09-25 20:28:38,2015-09-26 02:58:38,23.1025,94.4869,86.67,4.1,"Sagaing Region, Myanmar (Burma)",MM
+2015-09-22 13:19:20,2015-09-22 19:49:20,22.97,94.44,88.0,4.7,"Sagaing Region, Myanmar (Burma)",MM
+2015-09-17 18:34:16,2015-09-18 01:04:16,24.5661,94.6695,78.23,4.8,"Sagaing Region, Myanmar (Burma)",MM
+2015-10-27 13:50:48,2015-10-27 20:20:48,24.539,94.9835,87.24,4.2,"Sagaing Region, Myanmar (Burma)",MM
+2015-10-10 23:54:35,2015-10-11 06:24:35,24.2655,96.0382,49.96,4.5,"Indaw, Sagaing Region, Myanmar (Burma)",MM
+2015-10-02 11:29:23,2015-10-02 17:59:23,22.4638,93.3551,35.0,4.6,"Chin State, Myanmar (Burma)",MM
+2015-11-27 12:04:20,2015-11-27 18:34:20,22.6144,95.0403,23.25,4.6,"Sagaing Region, Myanmar (Burma)",MM
+2015-11-27 08:34:01,2015-11-27 15:04:01,22.56,94.87,40.0,5.1,"Sagaing Region, Myanmar (Burma)",MM
+2015-11-27 08:33:59,2015-11-27 15:03:59,22.4973,94.8237,22.42,5.5,"Sagaing Region, Myanmar (Burma)",MM
+2015-11-15 23:24:40,2015-11-16 05:54:40,24.6479,94.7378,95.6,4.5,"Sagaing Region, Myanmar (Burma)",MM

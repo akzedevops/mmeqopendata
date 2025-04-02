@@ -1,0 +1,284 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1978-02-23 23:18:33",
+      "time_mmt": "1978-02-24 05:48:33",
+      "latitude": 23.088,
+      "longitude": 94.715,
+      "depth": 105.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-02-22 09:07:30",
+      "time_mmt": "1978-02-22 15:37:30",
+      "latitude": 23.282,
+      "longitude": 94.14,
+      "depth": 78.0,
+      "mag": 5.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-02-11 14:45:45",
+      "time_mmt": "1978-02-11 21:15:45",
+      "latitude": 24.351,
+      "longitude": 94.778,
+      "depth": 109.0,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-02-09 05:36:02",
+      "time_mmt": "1978-02-09 12:06:02",
+      "latitude": 23.945,
+      "longitude": 94.823,
+      "depth": 103.0,
+      "mag": 4.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-02-03 23:46:43",
+      "time_mmt": "1978-02-04 06:16:43",
+      "latitude": 23.039,
+      "longitude": 94.707,
+      "depth": 105.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-01-08 06:32:58",
+      "time_mmt": "1978-01-08 13:02:58",
+      "latitude": 24.759,
+      "longitude": 95.172,
+      "depth": 100.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-03-31 19:20:21",
+      "time_mmt": "1978-04-01 01:50:21",
+      "latitude": 24.908,
+      "longitude": 94.624,
+      "depth": 33.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-03-30 00:47:24",
+      "time_mmt": "1978-03-30 07:17:24",
+      "latitude": 25.693,
+      "longitude": 96.32,
+      "depth": 33.0,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-03-28 10:25:05",
+      "time_mmt": "1978-03-28 16:55:05",
+      "latitude": 24.327,
+      "longitude": 94.325,
+      "depth": 108.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-03-07 15:36:59",
+      "time_mmt": "1978-03-07 22:06:59",
+      "latitude": 15.121,
+      "longitude": 95.447,
+      "depth": 33.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-03-02 12:14:42",
+      "time_mmt": "1978-03-02 18:44:42",
+      "latitude": 27.243,
+      "longitude": 96.918,
+      "depth": 93.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-04-27 10:18:41",
+      "time_mmt": "1978-04-27 16:48:41",
+      "latitude": 23.634,
+      "longitude": 94.626,
+      "depth": 59.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-05-05 02:30:13",
+      "time_mmt": "1978-05-05 09:00:13",
+      "latitude": 15.161,
+      "longitude": 96.543,
+      "depth": 33.0,
+      "mag": 4.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-05-04 23:16:55",
+      "time_mmt": "1978-05-05 05:46:55",
+      "latitude": 23.031,
+      "longitude": 99.478,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-06-10 11:18:18",
+      "time_mmt": "1978-06-10 17:48:18",
+      "latitude": 22.865,
+      "longitude": 94.613,
+      "depth": 110.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-06-09 06:11:55",
+      "time_mmt": "1978-06-09 12:41:55",
+      "latitude": 25.967,
+      "longitude": 96.513,
+      "depth": 107.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-07-23 10:17:18",
+      "time_mmt": "1978-07-23 16:47:18",
+      "latitude": 22.861,
+      "longitude": 94.583,
+      "depth": 147.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-07-08 21:28:28",
+      "time_mmt": "1978-07-09 03:58:28",
+      "latitude": 27.25,
+      "longitude": 97.048,
+      "depth": 33.0,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-07-03 11:04:44",
+      "time_mmt": "1978-07-03 17:34:44",
+      "latitude": 23.029,
+      "longitude": 94.41,
+      "depth": 67.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-08-10 14:52:51",
+      "time_mmt": "1978-08-10 21:22:51",
+      "latitude": 26.449,
+      "longitude": 96.933,
+      "depth": 33.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-09-30 09:04:31",
+      "time_mmt": "1978-09-30 15:34:31",
+      "latitude": 16.603,
+      "longitude": 95.857,
+      "depth": 10.0,
+      "mag": 5.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-09-29 08:59:28",
+      "time_mmt": "1978-09-29 15:29:28",
+      "latitude": 21.381,
+      "longitude": 94.722,
+      "depth": 96.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-09-18 19:29:59",
+      "time_mmt": "1978-09-19 01:59:59",
+      "latitude": 22.782,
+      "longitude": 94.726,
+      "depth": 109.0,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-10-20 17:21:46",
+      "time_mmt": "1978-10-20 23:51:46",
+      "latitude": 24.249,
+      "longitude": 94.766,
+      "depth": 90.0,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-11-05 05:45:37",
+      "time_mmt": "1978-11-05 12:15:37",
+      "latitude": 19.578,
+      "longitude": 93.813,
+      "depth": 58.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-12-21 22:36:13",
+      "time_mmt": "1978-12-22 05:06:13",
+      "latitude": 23.173,
+      "longitude": 96.196,
+      "depth": 33.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-12-08 03:42:24",
+      "time_mmt": "1978-12-08 10:12:24",
+      "latitude": 22.302,
+      "longitude": 94.33,
+      "depth": 93.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1978-12-08 00:22:06",
+      "time_mmt": "1978-12-08 06:52:06",
+      "latitude": 16.566,
+      "longitude": 95.95,
+      "depth": 17.0,
+      "mag": 5.0,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

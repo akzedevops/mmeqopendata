@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1970-07-29 10:16:22",
+      "time_mmt": "1970-07-29 16:46:22",
+      "latitude": 25.977,
+      "longitude": 95.34,
+      "depth": 76.1,
+      "mag": 7.0,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

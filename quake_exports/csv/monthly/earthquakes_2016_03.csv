@@ -1,0 +1,6 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2016-03-23 10:50:03,2016-03-23 17:20:03,24.56,96.0271,62.66,4.4,"Sagaing Region, Myanmar (Burma)",MM
+2016-03-22 11:49:12,2016-03-22 18:19:12,26.1,95.3,49.0,3.7,"Sagaing Region, Myanmar (Burma)",MM
+2016-03-07 12:23:01,2016-03-07 18:53:01,22.7785,93.968,48.79,4.5,"Chin State, Myanmar (Burma)",MM
+2016-03-07 03:14:00,2016-03-07 09:44:00,21.05,95.11,124.0,4.9,"Magway Region, Myanmar (Burma)",MM
+2016-03-07 03:13:58,2016-03-07 09:43:58,20.98,95.0238,100.99,4.6,"Mandalay Region, Myanmar (Burma)",MM

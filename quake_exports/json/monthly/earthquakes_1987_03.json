@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1987-03-26 21:09:22",
+      "time_mmt": "1987-03-27 03:39:22",
+      "latitude": 24.959,
+      "longitude": 96.33,
+      "depth": 33.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1987-03-22 10:30:22",
+      "time_mmt": "1987-03-22 17:00:22",
+      "latitude": 25.769,
+      "longitude": 96.911,
+      "depth": 33.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

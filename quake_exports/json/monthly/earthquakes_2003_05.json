@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2003-05-20 10:41:30",
+      "time_mmt": "2003-05-20 17:11:30",
+      "latitude": 23.325,
+      "longitude": 93.619,
+      "depth": 67.3,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

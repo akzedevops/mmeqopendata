@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2015-03-08 05:45:15",
+      "time_mmt": "2015-03-08 12:15:15",
+      "latitude": 22.57,
+      "longitude": 95.85,
+      "depth": 10.0,
+      "mag": 4.4,
+      "location": "\u1005\u1005\u103a\u1000\u102d\u102f\u1004\u103a\u1038\u1010\u102d\u102f\u1004\u103a\u1038, Republic of the Union of Myanmar",
+      "country": "MM"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2019-06-21 16:42:23",
+      "time_mmt": "2019-06-21 23:12:23",
+      "latitude": 25.84,
+      "longitude": 95.95,
+      "depth": 120.0,
+      "mag": 4.2,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-06-10 14:07:23",
+      "time_mmt": "2019-06-10 20:37:23",
+      "latitude": 20.33,
+      "longitude": 99.02,
+      "depth": 10.0,
+      "mag": 3.9,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-06-04 13:27:33",
+      "time_mmt": "2019-06-04 19:57:33",
+      "latitude": 25.0438,
+      "longitude": 94.8809,
+      "depth": 62.35,
+      "mag": 4.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

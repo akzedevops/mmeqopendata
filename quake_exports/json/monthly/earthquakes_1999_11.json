@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1999-11-24 03:53:39",
+      "time_mmt": "1999-11-24 10:23:39",
+      "latitude": 21.946,
+      "longitude": 93.567,
+      "depth": 33.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1999-11-05 10:51:30",
+      "time_mmt": "1999-11-05 17:21:30",
+      "latitude": 21.93,
+      "longitude": 94.602,
+      "depth": 118.7,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

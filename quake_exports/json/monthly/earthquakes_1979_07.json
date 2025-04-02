@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1979-07-13 23:20:08",
+      "time_mmt": "1979-07-14 05:50:08",
+      "latitude": 24.898,
+      "longitude": 95.257,
+      "depth": 97.0,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

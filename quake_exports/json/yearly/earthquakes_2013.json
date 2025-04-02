@@ -1,0 +1,114 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2013-01-30 13:37:02",
+      "time_mmt": "2013-01-30 20:07:02",
+      "latitude": 16.78,
+      "longitude": 96.17,
+      "depth": 10.0,
+      "mag": 3.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2013-01-15 11:17:00",
+      "time_mmt": "2013-01-15 17:47:00",
+      "latitude": 23.61,
+      "longitude": 94.707,
+      "depth": 110.9,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2013-01-09 01:41:53",
+      "time_mmt": "2013-01-09 08:11:53",
+      "latitude": 25.329,
+      "longitude": 95.048,
+      "depth": 93.0,
+      "mag": 5.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2013-01-03 05:47:27",
+      "time_mmt": "2013-01-03 12:17:27",
+      "latitude": 24.886,
+      "longitude": 94.002,
+      "depth": 73.8,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2013-01-02 17:25:40",
+      "time_mmt": "2013-01-02 23:55:40",
+      "latitude": 22.624,
+      "longitude": 94.02,
+      "depth": 63.8,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2013-05-30 10:31:20",
+      "time_mmt": "2013-05-30 17:01:20",
+      "latitude": 18.84,
+      "longitude": 95.638,
+      "depth": 66.9,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2013-05-07 21:04:54",
+      "time_mmt": "2013-05-08 03:34:54",
+      "latitude": 15.196,
+      "longitude": 96.28,
+      "depth": 23.8,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2013-06-01 15:54:48",
+      "time_mmt": "2013-06-01 22:24:48",
+      "latitude": 24.107,
+      "longitude": 97.943,
+      "depth": 65.4,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2013-04-18 03:00:00",
+      "time_mmt": "2013-04-18 09:30:00",
+      "latitude": 22.802,
+      "longitude": 94.093,
+      "depth": 54.6,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2013-07-19 01:53:52",
+      "time_mmt": "2013-07-19 08:23:52",
+      "latitude": 19.455,
+      "longitude": 94.735,
+      "depth": 35.4,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2013-07-08 13:27:46",
+      "time_mmt": "2013-07-08 19:57:46",
+      "latitude": 24.138,
+      "longitude": 95.795,
+      "depth": 58.4,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

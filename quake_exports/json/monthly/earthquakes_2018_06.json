@@ -1,0 +1,84 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-06-27 13:02:30",
+      "time_mmt": "2018-06-27 19:32:30",
+      "latitude": 19.76,
+      "longitude": 96.05,
+      "depth": 10.0,
+      "mag": 4.8,
+      "location": "Naypyidaw Union Territory, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-26 00:02:16",
+      "time_mmt": "2018-06-26 06:32:16",
+      "latitude": 22.2092,
+      "longitude": 95.0342,
+      "depth": 21.81,
+      "mag": 4.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-19 11:06:26",
+      "time_mmt": "2018-06-19 17:36:26",
+      "latitude": 21.9448,
+      "longitude": 94.1572,
+      "depth": 84.27,
+      "mag": 4.3,
+      "location": "Magway Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-18 13:56:48",
+      "time_mmt": "2018-06-18 20:26:48",
+      "latitude": 16.4057,
+      "longitude": 96.334,
+      "depth": 67.79,
+      "mag": 4.3,
+      "location": "Yangon Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-17 13:42:37",
+      "time_mmt": "2018-06-17 20:12:37",
+      "latitude": 18.3759,
+      "longitude": 96.1915,
+      "depth": 24.07,
+      "mag": 4.6,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-17 13:21:30",
+      "time_mmt": "2018-06-17 19:51:30",
+      "latitude": 18.2846,
+      "longitude": 96.0789,
+      "depth": 10.0,
+      "mag": 5.0,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-05 23:12:32",
+      "time_mmt": "2018-06-06 05:42:32",
+      "latitude": 23.8585,
+      "longitude": 94.4873,
+      "depth": 82.01,
+      "mag": 4.7,
+      "location": "Pantha, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-05 16:33:54",
+      "time_mmt": "2018-06-05 23:03:54",
+      "latitude": 24.5969,
+      "longitude": 95.1002,
+      "depth": 110.91,
+      "mag": 4.8,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

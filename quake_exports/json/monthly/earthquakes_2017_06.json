@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2017-06-12 11:47:14",
+      "time_mmt": "2017-06-12 18:17:14",
+      "latitude": 16.23,
+      "longitude": 97.95,
+      "depth": 3.0,
+      "mag": 3.1,
+      "location": "Pathein, Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-06-03 02:42:57",
+      "time_mmt": "2017-06-03 09:12:57",
+      "latitude": 24.79,
+      "longitude": 95.19,
+      "depth": 109.0,
+      "mag": 4.2,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

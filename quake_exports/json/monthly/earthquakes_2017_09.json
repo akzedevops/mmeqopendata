@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2017-09-15 01:36:47",
+      "time_mmt": "2017-09-15 08:06:47",
+      "latitude": 18.88,
+      "longitude": 94.88,
+      "depth": 40.0,
+      "mag": 4.8,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

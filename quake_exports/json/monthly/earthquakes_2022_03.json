@@ -1,0 +1,444 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2022-03-31 20:45:39",
+      "time_mmt": "2022-04-01 03:15:39",
+      "latitude": 18.473,
+      "longitude": 97.259,
+      "depth": 5.0,
+      "mag": 2.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-31 17:34:08",
+      "time_mmt": "2022-04-01 00:04:08",
+      "latitude": 20.447,
+      "longitude": 98.28,
+      "depth": 4.0,
+      "mag": 2.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-31 01:18:26",
+      "time_mmt": "2022-03-31 07:48:26",
+      "latitude": 23.1411,
+      "longitude": 94.1874,
+      "depth": 47.16,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-29 13:46:51",
+      "time_mmt": "2022-03-29 20:16:51",
+      "latitude": 22.225,
+      "longitude": 96.906,
+      "depth": 10.0,
+      "mag": 3.0,
+      "location": "Nawnghkio Gyi (North)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-29 06:06:28",
+      "time_mmt": "2022-03-29 12:36:28",
+      "latitude": 20.983,
+      "longitude": 99.951,
+      "depth": 10.0,
+      "mag": 2.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-28 00:05:20",
+      "time_mmt": "2022-03-28 06:35:20",
+      "latitude": 20.534,
+      "longitude": 99.886,
+      "depth": 5.0,
+      "mag": 1.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-27 11:55:01",
+      "time_mmt": "2022-03-27 18:25:01",
+      "latitude": 20.351,
+      "longitude": 98.224,
+      "depth": 2.0,
+      "mag": 2.1,
+      "location": "Na-law, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-27 08:45:26",
+      "time_mmt": "2022-03-27 15:15:26",
+      "latitude": 20.189,
+      "longitude": 99.249,
+      "depth": 1.0,
+      "mag": 1.9,
+      "location": "Hsenpawm\u00f6ng, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-27 06:41:13",
+      "time_mmt": "2022-03-27 13:11:13",
+      "latitude": 20.254,
+      "longitude": 99.246,
+      "depth": 1.0,
+      "mag": 1.9,
+      "location": "Hsenpawm\u00f6ng, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-27 03:15:14",
+      "time_mmt": "2022-03-27 09:45:14",
+      "latitude": 20.18,
+      "longitude": 99.237,
+      "depth": 1.0,
+      "mag": 1.8,
+      "location": "Hsenpawm\u00f6ng, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-27 00:57:01",
+      "time_mmt": "2022-03-27 07:27:01",
+      "latitude": 20.237,
+      "longitude": 99.229,
+      "depth": 1.0,
+      "mag": 1.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-27 00:37:16",
+      "time_mmt": "2022-03-27 07:07:16",
+      "latitude": 20.224,
+      "longitude": 99.231,
+      "depth": 1.0,
+      "mag": 1.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-27 00:22:26",
+      "time_mmt": "2022-03-27 06:52:26",
+      "latitude": 20.212,
+      "longitude": 99.226,
+      "depth": 1.0,
+      "mag": 1.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-25 19:46:35",
+      "time_mmt": "2022-03-26 02:16:35",
+      "latitude": 20.187,
+      "longitude": 98.315,
+      "depth": 10.0,
+      "mag": 2.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-25 16:26:47",
+      "time_mmt": "2022-03-25 22:56:47",
+      "latitude": 20.468,
+      "longitude": 94.991,
+      "depth": 10.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-24 23:02:24",
+      "time_mmt": "2022-03-25 05:32:24",
+      "latitude": 23.26,
+      "longitude": 94.3,
+      "depth": 80.0,
+      "mag": 3.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-24 13:21:59",
+      "time_mmt": "2022-03-24 19:51:59",
+      "latitude": 19.005,
+      "longitude": 94.838,
+      "depth": 10.0,
+      "mag": 3.7,
+      "location": "Tadagyin, Magway Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-22 23:20:03",
+      "time_mmt": "2022-03-23 05:50:03",
+      "latitude": 20.962,
+      "longitude": 98.338,
+      "depth": 10.0,
+      "mag": 2.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-22 22:50:28",
+      "time_mmt": "2022-03-23 05:20:28",
+      "latitude": 21.013,
+      "longitude": 98.407,
+      "depth": 10.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-21 06:36:04",
+      "time_mmt": "2022-03-21 13:06:04",
+      "latitude": 24.1966,
+      "longitude": 94.5147,
+      "depth": 84.68,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-20 16:25:15",
+      "time_mmt": "2022-03-20 22:55:15",
+      "latitude": 19.939,
+      "longitude": 97.903,
+      "depth": 5.0,
+      "mag": 2.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-18 21:10:09",
+      "time_mmt": "2022-03-19 03:40:09",
+      "latitude": 20.618,
+      "longitude": 99.897,
+      "depth": 1.0,
+      "mag": 1.6,
+      "location": "Tachileik, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-18 18:15:30",
+      "time_mmt": "2022-03-19 00:45:30",
+      "latitude": 20.604,
+      "longitude": 99.902,
+      "depth": 2.0,
+      "mag": 2.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-18 17:56:06",
+      "time_mmt": "2022-03-19 00:26:06",
+      "latitude": 20.611,
+      "longitude": 99.908,
+      "depth": 2.0,
+      "mag": 1.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-18 17:52:01",
+      "time_mmt": "2022-03-19 00:22:01",
+      "latitude": 20.65,
+      "longitude": 99.88,
+      "depth": 4.0,
+      "mag": 3.8,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-18 05:46:57",
+      "time_mmt": "2022-03-18 12:16:57",
+      "latitude": 15.724,
+      "longitude": 96.139,
+      "depth": 10.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-17 15:16:17",
+      "time_mmt": "2022-03-17 21:46:17",
+      "latitude": 21.363,
+      "longitude": 100.07,
+      "depth": 10.0,
+      "mag": 2.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-17 14:26:38",
+      "time_mmt": "2022-03-17 20:56:38",
+      "latitude": 21.445,
+      "longitude": 98.597,
+      "depth": 10.0,
+      "mag": 3.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-17 02:23:23",
+      "time_mmt": "2022-03-17 08:53:23",
+      "latitude": 24.67,
+      "longitude": 94.78,
+      "depth": 10.0,
+      "mag": 3.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-15 18:07:16",
+      "time_mmt": "2022-03-16 00:37:16",
+      "latitude": 21.091,
+      "longitude": 98.905,
+      "depth": 10.0,
+      "mag": 2.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-15 17:16:03",
+      "time_mmt": "2022-03-15 23:46:03",
+      "latitude": 20.448,
+      "longitude": 97.981,
+      "depth": 10.0,
+      "mag": 2.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-15 14:19:15",
+      "time_mmt": "2022-03-15 20:49:15",
+      "latitude": 25.67,
+      "longitude": 95.77,
+      "depth": 59.0,
+      "mag": 3.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-15 00:25:52",
+      "time_mmt": "2022-03-15 06:55:52",
+      "latitude": 23.2811,
+      "longitude": 93.9006,
+      "depth": 10.0,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-14 05:56:51",
+      "time_mmt": "2022-03-14 12:26:51",
+      "latitude": 21.402,
+      "longitude": 99.825,
+      "depth": 10.0,
+      "mag": 2.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-13 03:28:19",
+      "time_mmt": "2022-03-13 09:58:19",
+      "latitude": 15.2373,
+      "longitude": 93.5889,
+      "depth": 30.1,
+      "mag": 4.2,
+      "location": "Pathein, Myanmar",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-13 01:11:03",
+      "time_mmt": "2022-03-13 07:41:03",
+      "latitude": 22.6979,
+      "longitude": 94.5421,
+      "depth": 108.51,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-11 15:56:14",
+      "time_mmt": "2022-03-11 22:26:14",
+      "latitude": 25.4212,
+      "longitude": 95.7253,
+      "depth": 10.0,
+      "mag": 3.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-11 13:24:27",
+      "time_mmt": "2022-03-11 19:54:27",
+      "latitude": 20.359,
+      "longitude": 97.236,
+      "depth": 10.0,
+      "mag": 2.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-11 00:42:36",
+      "time_mmt": "2022-03-11 07:12:36",
+      "latitude": 17.274,
+      "longitude": 97.69,
+      "depth": 4.0,
+      "mag": 2.6,
+      "location": "Htaw Ywe",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-09 11:57:07",
+      "time_mmt": "2022-03-09 18:27:07",
+      "latitude": 18.33,
+      "longitude": 96.027,
+      "depth": 10.0,
+      "mag": 2.6,
+      "location": "Ko Pau Te, Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-07 08:19:50",
+      "time_mmt": "2022-03-07 14:49:50",
+      "latitude": 20.601,
+      "longitude": 98.305,
+      "depth": 1.0,
+      "mag": 2.5,
+      "location": "Nawnglao, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-06 07:45:18",
+      "time_mmt": "2022-03-06 14:15:18",
+      "latitude": 19.981,
+      "longitude": 97.946,
+      "depth": 10.0,
+      "mag": 2.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-04 01:37:00",
+      "time_mmt": "2022-03-04 08:07:00",
+      "latitude": 19.063,
+      "longitude": 96.72,
+      "depth": 4.0,
+      "mag": 2.8,
+      "location": "Leik Pyar Kalay",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2022-03-01 15:33:20",
+      "time_mmt": "2022-03-01 22:03:20",
+      "latitude": 19.777,
+      "longitude": 98.001,
+      "depth": 5.0,
+      "mag": 2.2,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

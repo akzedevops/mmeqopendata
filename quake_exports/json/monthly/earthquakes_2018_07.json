@@ -1,0 +1,64 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-07-25 14:23:02",
+      "time_mmt": "2018-07-25 20:53:02",
+      "latitude": 19.29,
+      "longitude": 96.9,
+      "depth": 10.0,
+      "mag": 4.5,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-20 06:36:35",
+      "time_mmt": "2018-07-20 13:06:35",
+      "latitude": 15.06,
+      "longitude": 96.69,
+      "depth": 10.0,
+      "mag": 4.0,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-13 12:07:58",
+      "time_mmt": "2018-07-13 18:37:58",
+      "latitude": 18.96,
+      "longitude": 94.79,
+      "depth": 10.0,
+      "mag": 4.7,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-07 00:44:29",
+      "time_mmt": "2018-07-07 07:14:29",
+      "latitude": 14.71,
+      "longitude": 96.67,
+      "depth": 10.0,
+      "mag": 4.2,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-04 20:34:52",
+      "time_mmt": "2018-07-05 03:04:52",
+      "latitude": 14.5383,
+      "longitude": 96.4654,
+      "depth": 10.42,
+      "mag": 5.1,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-01 15:10:37",
+      "time_mmt": "2018-07-01 21:40:37",
+      "latitude": 20.2592,
+      "longitude": 97.9109,
+      "depth": 10.0,
+      "mag": 4.6,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

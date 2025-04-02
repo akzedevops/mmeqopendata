@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1976-11-10 02:35:52",
+      "time_mmt": "1976-11-10 09:05:52",
+      "latitude": 26.513,
+      "longitude": 96.968,
+      "depth": 63.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1976-11-06 04:43:53",
+      "time_mmt": "1976-11-06 11:13:53",
+      "latitude": 26.519,
+      "longitude": 96.439,
+      "depth": 66.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

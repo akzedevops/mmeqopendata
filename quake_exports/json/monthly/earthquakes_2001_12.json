@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2001-12-24 05:49:41",
+      "time_mmt": "2001-12-24 12:19:41",
+      "latitude": 25.297,
+      "longitude": 94.762,
+      "depth": 100.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2001-12-18 08:55:10",
+      "time_mmt": "2001-12-18 15:25:10",
+      "latitude": 20.999,
+      "longitude": 93.589,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

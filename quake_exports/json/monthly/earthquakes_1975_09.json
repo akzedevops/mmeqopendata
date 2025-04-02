@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1975-09-29 13:42:47",
+      "time_mmt": "1975-09-29 20:12:47",
+      "latitude": 18.297,
+      "longitude": 96.367,
+      "depth": 64.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1975-09-18 23:01:58",
+      "time_mmt": "1975-09-19 05:31:58",
+      "latitude": 20.031,
+      "longitude": 98.451,
+      "depth": 33.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1975-09-17 03:00:20",
+      "time_mmt": "1975-09-17 09:30:20",
+      "latitude": 22.369,
+      "longitude": 94.231,
+      "depth": 88.0,
+      "mag": 4.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1975-09-11 23:07:44",
+      "time_mmt": "1975-09-12 05:37:44",
+      "latitude": 20.761,
+      "longitude": 99.139,
+      "depth": 35.0,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

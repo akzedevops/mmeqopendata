@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1976-07-23 01:43:58",
+      "time_mmt": "1976-07-23 08:13:58",
+      "latitude": 24.893,
+      "longitude": 98.676,
+      "depth": 33.0,
+      "mag": 5.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1976-07-21 15:10:45",
+      "time_mmt": "1976-07-21 21:40:45",
+      "latitude": 24.782,
+      "longitude": 98.698,
+      "depth": 9.0,
+      "mag": 6.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1976-07-13 07:28:37",
+      "time_mmt": "1976-07-13 13:58:37",
+      "latitude": 24.553,
+      "longitude": 98.899,
+      "depth": 33.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1976-07-03 16:33:23",
+      "time_mmt": "1976-07-03 23:03:23",
+      "latitude": 24.191,
+      "longitude": 98.676,
+      "depth": 33.0,
+      "mag": 5.4,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

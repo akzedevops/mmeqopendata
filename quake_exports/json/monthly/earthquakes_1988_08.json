@@ -1,0 +1,104 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1988-08-21 13:16:28",
+      "time_mmt": "1988-08-21 19:46:28",
+      "latitude": 25.303,
+      "longitude": 95.099,
+      "depth": 80.8,
+      "mag": 5.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1988-08-14 17:50:52",
+      "time_mmt": "1988-08-15 00:20:52",
+      "latitude": 22.837,
+      "longitude": 99.74,
+      "depth": 33.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1988-08-13 19:59:51",
+      "time_mmt": "1988-08-14 02:29:51",
+      "latitude": 25.32,
+      "longitude": 95.156,
+      "depth": 92.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1988-08-08 16:14:22",
+      "time_mmt": "1988-08-08 22:44:22",
+      "latitude": 25.382,
+      "longitude": 95.001,
+      "depth": 95.7,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1988-08-08 11:55:01",
+      "time_mmt": "1988-08-08 18:25:01",
+      "latitude": 24.47,
+      "longitude": 94.566,
+      "depth": 139.4,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1988-08-07 23:23:02",
+      "time_mmt": "1988-08-08 05:53:02",
+      "latitude": 26.686,
+      "longitude": 98.243,
+      "depth": 33.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1988-08-07 13:04:12",
+      "time_mmt": "1988-08-07 19:34:12",
+      "latitude": 25.707,
+      "longitude": 95.218,
+      "depth": 33.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1988-08-06 06:21:42",
+      "time_mmt": "1988-08-06 12:51:42",
+      "latitude": 25.362,
+      "longitude": 94.97,
+      "depth": 87.1,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1988-08-06 00:36:24",
+      "time_mmt": "1988-08-06 07:06:24",
+      "latitude": 25.149,
+      "longitude": 95.127,
+      "depth": 90.5,
+      "mag": 7.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1988-08-01 15:22:27",
+      "time_mmt": "1988-08-01 21:52:27",
+      "latitude": 21.028,
+      "longitude": 94.966,
+      "depth": 119.8,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

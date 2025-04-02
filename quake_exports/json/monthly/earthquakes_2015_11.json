@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2015-11-27 12:04:20",
+      "time_mmt": "2015-11-27 18:34:20",
+      "latitude": 22.6144,
+      "longitude": 95.0403,
+      "depth": 23.25,
+      "mag": 4.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2015-11-27 08:34:01",
+      "time_mmt": "2015-11-27 15:04:01",
+      "latitude": 22.56,
+      "longitude": 94.87,
+      "depth": 40.0,
+      "mag": 5.1,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2015-11-27 08:33:59",
+      "time_mmt": "2015-11-27 15:03:59",
+      "latitude": 22.4973,
+      "longitude": 94.8237,
+      "depth": 22.42,
+      "mag": 5.5,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2015-11-15 23:24:40",
+      "time_mmt": "2015-11-16 05:54:40",
+      "latitude": 24.6479,
+      "longitude": 94.7378,
+      "depth": 95.6,
+      "mag": 4.5,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

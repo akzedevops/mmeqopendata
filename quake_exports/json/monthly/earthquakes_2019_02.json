@@ -1,0 +1,54 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2019-02-23 22:10:58",
+      "time_mmt": "2019-02-24 04:40:58",
+      "latitude": 21.15,
+      "longitude": 99.78,
+      "depth": 10.0,
+      "mag": 3.5,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-02-07 08:49:37",
+      "time_mmt": "2019-02-07 15:19:37",
+      "latitude": 25.98,
+      "longitude": 96.8,
+      "depth": 10.0,
+      "mag": 4.3,
+      "location": "Myitkyina, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-02-06 16:21:25",
+      "time_mmt": "2019-02-06 22:51:25",
+      "latitude": 23.9028,
+      "longitude": 94.3342,
+      "depth": 33.82,
+      "mag": 4.4,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-02-02 17:32:35",
+      "time_mmt": "2019-02-03 00:02:35",
+      "latitude": 25.2227,
+      "longitude": 95.2064,
+      "depth": 100.67,
+      "mag": 4.2,
+      "location": "Phek, India",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-02-01 13:30:33",
+      "time_mmt": "2019-02-01 20:00:33",
+      "latitude": 20.22,
+      "longitude": 98.37,
+      "depth": 10.0,
+      "mag": 3.6,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

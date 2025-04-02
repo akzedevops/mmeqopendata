@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1974-07-23 03:06:30",
+      "time_mmt": "1974-07-23 09:36:30",
+      "latitude": 21.974,
+      "longitude": 93.122,
+      "depth": 35.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

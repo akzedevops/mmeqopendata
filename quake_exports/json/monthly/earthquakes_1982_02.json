@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1982-02-12 16:00:05",
+      "time_mmt": "1982-02-12 22:30:05",
+      "latitude": 21.905,
+      "longitude": 94.732,
+      "depth": 116.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

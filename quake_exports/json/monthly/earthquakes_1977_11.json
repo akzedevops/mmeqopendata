@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1977-11-29 01:53:40",
+      "time_mmt": "1977-11-29 08:23:40",
+      "latitude": 22.158,
+      "longitude": 94.749,
+      "depth": 33.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1977-11-24 21:06:52",
+      "time_mmt": "1977-11-25 03:36:52",
+      "latitude": 25.05,
+      "longitude": 96.391,
+      "depth": 33.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

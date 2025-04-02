@@ -1,0 +1,214 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-01-25 00:08:26",
+      "time_mmt": "2018-01-25 06:38:26",
+      "latitude": 21.0,
+      "longitude": 99.81,
+      "depth": 10.0,
+      "mag": 3.7,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-24 23:57:04",
+      "time_mmt": "2018-01-25 06:27:04",
+      "latitude": 21.12,
+      "longitude": 99.89,
+      "depth": 10.0,
+      "mag": 3.6,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-24 19:21:38",
+      "time_mmt": "2018-01-25 01:51:38",
+      "latitude": 22.8,
+      "longitude": 94.48,
+      "depth": 107.0,
+      "mag": 4.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-22 07:37:59",
+      "time_mmt": "2018-01-22 14:07:59",
+      "latitude": 18.37,
+      "longitude": 96.13,
+      "depth": 10.0,
+      "mag": 4.7,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-20 10:06:46",
+      "time_mmt": "2018-01-20 16:36:46",
+      "latitude": 24.01,
+      "longitude": 94.72,
+      "depth": 85.0,
+      "mag": 4.2,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-18 02:03:30",
+      "time_mmt": "2018-01-18 08:33:30",
+      "latitude": 25.19,
+      "longitude": 95.02,
+      "depth": 89.0,
+      "mag": 4.5,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-16 11:23:02",
+      "time_mmt": "2018-01-16 17:53:02",
+      "latitude": 24.5605,
+      "longitude": 94.9791,
+      "depth": 103.26,
+      "mag": 4.1,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-14 17:49:55",
+      "time_mmt": "2018-01-15 00:19:55",
+      "latitude": 18.32,
+      "longitude": 96.21,
+      "depth": 10.0,
+      "mag": 4.7,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-13 23:29:44",
+      "time_mmt": "2018-01-14 05:59:44",
+      "latitude": 18.36,
+      "longitude": 96.09,
+      "depth": 2.0,
+      "mag": 4.6,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-13 08:19:46",
+      "time_mmt": "2018-01-13 14:49:46",
+      "latitude": 16.603,
+      "longitude": 95.866,
+      "depth": 10.0,
+      "mag": 3.5,
+      "location": "Yangon Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-12 15:23:55",
+      "time_mmt": "2018-01-12 21:53:55",
+      "latitude": 18.3661,
+      "longitude": 96.2332,
+      "depth": 10.0,
+      "mag": 4.8,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-12 04:16:07",
+      "time_mmt": "2018-01-12 10:46:07",
+      "latitude": 18.4907,
+      "longitude": 96.126,
+      "depth": 29.1,
+      "mag": 4.4,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 22:30:43",
+      "time_mmt": "2018-01-12 05:00:43",
+      "latitude": 18.3209,
+      "longitude": 96.0559,
+      "depth": 10.0,
+      "mag": 4.3,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 20:08:40",
+      "time_mmt": "2018-01-12 02:38:40",
+      "latitude": 18.54,
+      "longitude": 96.16,
+      "depth": 10.0,
+      "mag": 4.6,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 18:43:59",
+      "time_mmt": "2018-01-12 01:13:59",
+      "latitude": 18.4395,
+      "longitude": 96.0621,
+      "depth": 10.0,
+      "mag": 5.2,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 18:42:59",
+      "time_mmt": "2018-01-12 01:12:59",
+      "latitude": 18.4477,
+      "longitude": 96.1748,
+      "depth": 10.0,
+      "mag": 5.2,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 18:38:12",
+      "time_mmt": "2018-01-12 01:08:12",
+      "latitude": 18.3339,
+      "longitude": 96.0976,
+      "depth": 10.0,
+      "mag": 5.3,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 18:26:24",
+      "time_mmt": "2018-01-12 00:56:24",
+      "latitude": 18.363,
+      "longitude": 96.0795,
+      "depth": 10.0,
+      "mag": 6.0,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-07 06:47:14",
+      "time_mmt": "2018-01-07 13:17:14",
+      "latitude": 24.7561,
+      "longitude": 94.9132,
+      "depth": 22.77,
+      "mag": 5.5,
+      "location": "Shwe Pyi Aye, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-06 22:56:57",
+      "time_mmt": "2018-01-07 05:26:57",
+      "latitude": 17.715,
+      "longitude": 94.3801,
+      "depth": 35.14,
+      "mag": 4.1,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-04 15:00:39",
+      "time_mmt": "2018-01-04 21:30:39",
+      "latitude": 25.0102,
+      "longitude": 96.3972,
+      "depth": 47.43,
+      "mag": 4.4,
+      "location": "Hopin, Kachin, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

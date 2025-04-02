@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2017-02-15 10:44:59",
+      "time_mmt": "2017-02-15 17:14:59",
+      "latitude": 19.34,
+      "longitude": 96.25,
+      "depth": 13.0,
+      "mag": 3.9,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-02-08 20:46:16",
+      "time_mmt": "2017-02-09 03:16:16",
+      "latitude": 22.55,
+      "longitude": 94.7874,
+      "depth": 119.09,
+      "mag": 4.5,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

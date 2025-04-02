@@ -1,0 +1,64 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1995-03-29 02:46:23",
+      "time_mmt": "1995-03-29 09:16:23",
+      "latitude": 24.655,
+      "longitude": 94.273,
+      "depth": 33.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1995-03-20 03:12:37",
+      "time_mmt": "1995-03-20 09:42:37",
+      "latitude": 22.392,
+      "longitude": 94.116,
+      "depth": 106.8,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1995-03-13 09:05:16",
+      "time_mmt": "1995-03-13 15:35:16",
+      "latitude": 22.035,
+      "longitude": 94.531,
+      "depth": 137.6,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1995-03-11 12:23:17",
+      "time_mmt": "1995-03-11 18:53:17",
+      "latitude": 23.829,
+      "longitude": 94.246,
+      "depth": 135.7,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1995-03-06 23:43:27",
+      "time_mmt": "1995-03-07 06:13:27",
+      "latitude": 20.586,
+      "longitude": 93.602,
+      "depth": 40.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1995-03-04 00:02:40",
+      "time_mmt": "1995-03-04 06:32:40",
+      "latitude": 25.97,
+      "longitude": 96.72,
+      "depth": 33.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

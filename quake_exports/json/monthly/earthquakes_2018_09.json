@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-09-20 15:41:26",
+      "time_mmt": "2018-09-20 22:11:26",
+      "latitude": 17.85,
+      "longitude": 97.44,
+      "depth": 10.0,
+      "mag": 4.1,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-09-10 16:57:40",
+      "time_mmt": "2018-09-10 23:27:40",
+      "latitude": 23.1567,
+      "longitude": 94.6719,
+      "depth": 101.03,
+      "mag": 4.5,
+      "location": "\u1005\u1005\u103a\u1000\u102d\u102f\u1004\u103a\u1038\u1010\u102d\u102f\u1004\u103a\u1038\u1012\u1031\u101e\u1000\u103c\u102e\u1038, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-09-07 06:30:29",
+      "time_mmt": "2018-09-07 13:00:29",
+      "latitude": 20.96,
+      "longitude": 100.01,
+      "depth": 10.0,
+      "mag": 3.6,
+      "location": "\u101b\u103e\u1019\u103a\u1038\u1015\u103c\u100a\u103a\u1014\u101a\u103a, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-09-01 19:19:46",
+      "time_mmt": "2018-09-02 01:49:46",
+      "latitude": 24.7533,
+      "longitude": 95.3651,
+      "depth": 149.02,
+      "mag": 4.5,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

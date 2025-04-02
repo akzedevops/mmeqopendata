@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2015-08-12 02:44:51",
+      "time_mmt": "2015-08-12 09:14:51",
+      "latitude": 24.6516,
+      "longitude": 94.8248,
+      "depth": 40.73,
+      "mag": 4.5,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2015-08-10 17:05:24",
+      "time_mmt": "2015-08-10 23:35:24",
+      "latitude": 18.54,
+      "longitude": 96.1,
+      "depth": 10.0,
+      "mag": 4.9,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

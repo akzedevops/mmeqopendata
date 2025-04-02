@@ -1,0 +1,46 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2024-03-30 04:11:19,2024-03-30 10:41:19,21.537,99.182,5.0,2.6,"Wan Pangsung, Shan, Myanmar (Burma)",MM
+2024-03-28 18:33:35,2024-03-29 01:03:35,22.428,93.873,5.0,3.6,"Shimpi, Chin State, Myanmar (Burma)",MM
+2024-03-27 20:35:56,2024-03-28 03:05:56,20.594,100.064,3.0,2.3,"Wan Hsen-enta-hpawng, Shan, Myanmar (Burma)",MM
+2024-03-27 11:43:17,2024-03-27 18:13:17,20.591,99.893,6.0,2.4,"Tachileik, Shan, Myanmar (Burma)",MM
+2024-03-26 22:48:00,2024-03-27 05:18:00,18.591,97.372,1.0,2.8,"Pakyiko, Kayah State, Myanmar (Burma)",MM
+2024-03-24 16:15:40,2024-03-24 22:45:40,24.63,94.77,19.0,3.7,"Myene, Sagaing Region, Myanmar (Burma)",MM
+2024-03-24 09:55:00,2024-03-24 16:25:00,18.519,96.991,2.0,2.6,"Tamikhi, Kayin State, Myanmar (Burma)",MM
+2024-03-24 03:16:31,2024-03-24 09:46:31,22.12,97.44,70.0,3.9,"Namlan, Shan, Myanmar (Burma)",MM
+2024-03-21 16:33:53,2024-03-21 23:03:53,17.995,96.527,10.0,2.7,"Hpa Do, Bago Region, Myanmar (Burma)",MM
+2024-03-19 17:11:44,2024-03-19 23:41:44,19.349,97.602,3.0,2.0,"Wan Kyaukpet, Kayah State, Myanmar (Burma)",MM
+2024-03-19 02:01:51,2024-03-19 08:31:51,19.3,97.811,1.0,2.8,"Daw Hsè-kawlè, Kayah State, Myanmar (Burma)",MM
+2024-03-17 09:33:36,2024-03-17 16:03:36,24.71,94.68,97.0,3.6,"Shwe Pyi Aye, Sagaing Region, Myanmar (Burma)",MM
+2024-03-17 08:41:24,2024-03-17 15:11:24,21.434,98.723,10.0,3.0,"Wan Kawnghum, Shan, Myanmar (Burma)",MM
+2024-03-16 19:38:22,2024-03-17 02:08:22,20.706,100.069,3.0,2.1,"Tarlay, Shan, Myanmar (Burma)",MM
+2024-03-16 18:02:40,2024-03-17 00:32:40,25.6,95.37,10.0,3.3,"Kaung Hein, Sagaing Region, Myanmar (Burma)",MM
+2024-03-15 00:18:23,2024-03-15 06:48:23,21.03,99.854,1.0,2.2,"Wan Mu-hsö Hsensawmawng, Shan, Myanmar (Burma)",MM
+2024-03-14 23:37:39,2024-03-15 06:07:39,11.804,99.313,3.0,3.2,"Thebyu, Tanintharyi Region, Myanmar (Burma)",MM
+2024-03-14 05:35:18,2024-03-14 12:05:18,20.37,98.115,1.0,3.6,"Hangna, Shan, Myanmar (Burma)",MM
+2024-03-13 23:41:41,2024-03-14 06:11:41,21.028,99.941,1.0,2.3,"Wan Hkang Ho-paw, Shan, Myanmar (Burma)",MM
+2024-03-12 08:23:54,2024-03-12 14:53:54,23.55,94.47,165.0,3.6,"Gadu, Sagaing Region, Myanmar (Burma)",MM
+2024-03-12 06:12:27,2024-03-12 12:42:27,13.585,98.729,10.0,1.9,"Myinmoletkat, Tanintharyi Region, Myanmar (Burma)",MM
+2024-03-12 00:08:31,2024-03-12 06:38:31,18.104,96.655,3.0,2.7,"Babugon, Bago Region, Myanmar (Burma)",MM
+2024-03-11 21:20:48,2024-03-12 03:50:48,21.107,99.918,3.0,2.8,"Wan Hsenlong, Shan, Myanmar (Burma)",MM
+2024-03-11 16:20:09,2024-03-11 22:50:09,21.054,99.439,5.0,2.1,"Wan Patang-ngai, Shan, Myanmar (Burma)",MM
+2024-03-11 14:54:42,2024-03-11 21:24:42,17.91,96.805,10.0,3.7,"Madauk, Bago Region, Myanmar (Burma)",MM
+2024-03-11 11:59:29,2024-03-11 18:29:29,23.2,93.79,82.0,3.5,"Fort White, Chin State, Myanmar (Burma)",MM
+2024-03-10 18:00:13,2024-03-11 00:30:13,19.782,98.445,2.0,1.7,"Wan Punglong, Shan, Myanmar (Burma)",MM
+2024-03-10 02:44:28,2024-03-10 09:14:28,22.83,96.11,14.0,3.2,"War Hpyu Taung, Mandalay Region, Myanmar (Burma)",MM
+2024-03-10 02:16:44,2024-03-10 08:46:44,23.53,94.02,100.0,3.8,"Hpaidin, Chin State, Myanmar (Burma)",MM
+2024-03-08 07:07:32,2024-03-08 13:37:32,19.878,98.538,1.0,2.9,"Möng Hta, Shan, Myanmar (Burma)",MM
+2024-03-07 22:58:24,2024-03-08 05:28:24,23.2103,94.4668,100.738,4.2,,MM
+2024-03-07 15:47:42,2024-03-07 22:17:42,16.4451,94.6962,35.0,4.2,"Mekyaw, Ayeyarwady, Myanmar (Burma)",MM
+2024-03-07 09:04:46,2024-03-07 15:34:46,25.05,95.12,80.0,3.1,"Maungkan, Sagaing Region, Myanmar (Burma)",MM
+2024-03-06 22:41:09,2024-03-07 05:11:09,23.11,94.44,130.0,4.1,"Myaukchun, Sagaing Region, Myanmar (Burma)",MM
+2024-03-06 22:04:27,2024-03-07 04:34:27,24.75,95.23,10.0,3.2,"Kaukngo, Sagaing Region, Myanmar (Burma)",MM
+2024-03-06 20:53:42,2024-03-07 03:23:42,25.17,96.18,10.0,3.6,"Sanlaik, Kachin, Myanmar (Burma)",MM
+2024-03-06 13:01:57,2024-03-06 19:31:57,21.157,100.031,1.0,2.7,"Wan Möngtinno, Shan, Myanmar (Burma)",MM
+2024-03-05 11:52:58,2024-03-05 18:22:58,21.099,99.963,4.0,1.7,"Wan Hsenlong, Shan, Myanmar (Burma)",MM
+2024-03-05 08:42:07,2024-03-05 15:12:07,25.4,96.46,20.0,3.3,"Thunghkung, Kachin, Myanmar (Burma)",MM
+2024-03-04 14:11:14,2024-03-04 20:41:14,22.5,94.56,130.0,3.8,"Cheikpanngo, Sagaing Region, Myanmar (Burma)",MM
+2024-03-04 01:52:57,2024-03-04 08:22:57,21.047,99.864,1.0,2.4,"Wan Mu-hsö Hsensawmawng, Shan, Myanmar (Burma)",MM
+2024-03-04 00:36:08,2024-03-04 07:06:08,21.128,99.945,4.0,3.4,"Wan Hsenlong, Shan, Myanmar (Burma)",MM
+2024-03-04 00:04:00,2024-03-04 06:34:00,21.012,99.938,4.0,2.3,"Wan Hkang Ho-paw, Shan, Myanmar (Burma)",MM
+2024-03-01 12:21:59,2024-03-01 18:51:59,21.378,98.756,10.0,2.5,"Wan Kawnghum, Shan, Myanmar (Burma)",MM
+2024-03-01 09:49:50,2024-03-01 16:19:50,23.13,94.19,144.0,3.7,"Kale, Chin State, Myanmar (Burma)",MM

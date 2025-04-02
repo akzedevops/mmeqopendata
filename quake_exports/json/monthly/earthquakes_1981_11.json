@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1981-11-21 01:52:20",
+      "time_mmt": "1981-11-21 08:22:20",
+      "latitude": 22.693,
+      "longitude": 93.233,
+      "depth": 48.5,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1981-11-15 23:45:54",
+      "time_mmt": "1981-11-16 06:15:54",
+      "latitude": 25.647,
+      "longitude": 95.174,
+      "depth": 62.4,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

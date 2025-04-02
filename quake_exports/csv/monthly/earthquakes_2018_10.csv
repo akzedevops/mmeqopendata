@@ -1,0 +1,5 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2018-10-27 09:16:42,2018-10-27 15:46:42,19.1,95.61,4.0,5.0,"Bago Region, Myanmar (Burma)",MM
+2018-10-26 20:49:51,2018-10-27 03:19:51,24.72,95.24,115.0,4.3,"Yairipok, India",MM
+2018-10-10 10:28:04,2018-10-10 16:58:04,19.04,95.6,13.0,5.1,"Prome, Burma",MM
+2018-10-04 13:29:17,2018-10-04 19:59:17,19.6,96.42,30.0,4.5,"Kayin State, Myanmar (Burma)",MM

@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2002-06-07 18:30:21",
+      "time_mmt": "2002-06-08 01:00:21",
+      "latitude": 24.849,
+      "longitude": 95.305,
+      "depth": 148.2,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

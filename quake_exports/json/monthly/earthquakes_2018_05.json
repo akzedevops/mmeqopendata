@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-05-26 23:42:23",
+      "time_mmt": "2018-05-27 06:12:23",
+      "latitude": 23.0043,
+      "longitude": 94.6075,
+      "depth": 95.32,
+      "mag": 4.5,
+      "location": "Mingin, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-05-06 13:37:26",
+      "time_mmt": "2018-05-06 20:07:26",
+      "latitude": 24.6,
+      "longitude": 95.97,
+      "depth": 47.0,
+      "mag": 4.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

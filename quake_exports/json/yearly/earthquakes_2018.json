@@ -1,0 +1,914 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-01-25 00:08:26",
+      "time_mmt": "2018-01-25 06:38:26",
+      "latitude": 21.0,
+      "longitude": 99.81,
+      "depth": 10.0,
+      "mag": 3.7,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-24 23:57:04",
+      "time_mmt": "2018-01-25 06:27:04",
+      "latitude": 21.12,
+      "longitude": 99.89,
+      "depth": 10.0,
+      "mag": 3.6,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-24 19:21:38",
+      "time_mmt": "2018-01-25 01:51:38",
+      "latitude": 22.8,
+      "longitude": 94.48,
+      "depth": 107.0,
+      "mag": 4.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-22 07:37:59",
+      "time_mmt": "2018-01-22 14:07:59",
+      "latitude": 18.37,
+      "longitude": 96.13,
+      "depth": 10.0,
+      "mag": 4.7,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-20 10:06:46",
+      "time_mmt": "2018-01-20 16:36:46",
+      "latitude": 24.01,
+      "longitude": 94.72,
+      "depth": 85.0,
+      "mag": 4.2,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-18 02:03:30",
+      "time_mmt": "2018-01-18 08:33:30",
+      "latitude": 25.19,
+      "longitude": 95.02,
+      "depth": 89.0,
+      "mag": 4.5,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-16 11:23:02",
+      "time_mmt": "2018-01-16 17:53:02",
+      "latitude": 24.5605,
+      "longitude": 94.9791,
+      "depth": 103.26,
+      "mag": 4.1,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-14 17:49:55",
+      "time_mmt": "2018-01-15 00:19:55",
+      "latitude": 18.32,
+      "longitude": 96.21,
+      "depth": 10.0,
+      "mag": 4.7,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-13 23:29:44",
+      "time_mmt": "2018-01-14 05:59:44",
+      "latitude": 18.36,
+      "longitude": 96.09,
+      "depth": 2.0,
+      "mag": 4.6,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-13 08:19:46",
+      "time_mmt": "2018-01-13 14:49:46",
+      "latitude": 16.603,
+      "longitude": 95.866,
+      "depth": 10.0,
+      "mag": 3.5,
+      "location": "Yangon Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-12 15:23:55",
+      "time_mmt": "2018-01-12 21:53:55",
+      "latitude": 18.3661,
+      "longitude": 96.2332,
+      "depth": 10.0,
+      "mag": 4.8,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-12 04:16:07",
+      "time_mmt": "2018-01-12 10:46:07",
+      "latitude": 18.4907,
+      "longitude": 96.126,
+      "depth": 29.1,
+      "mag": 4.4,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 22:30:43",
+      "time_mmt": "2018-01-12 05:00:43",
+      "latitude": 18.3209,
+      "longitude": 96.0559,
+      "depth": 10.0,
+      "mag": 4.3,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 20:08:40",
+      "time_mmt": "2018-01-12 02:38:40",
+      "latitude": 18.54,
+      "longitude": 96.16,
+      "depth": 10.0,
+      "mag": 4.6,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 18:43:59",
+      "time_mmt": "2018-01-12 01:13:59",
+      "latitude": 18.4395,
+      "longitude": 96.0621,
+      "depth": 10.0,
+      "mag": 5.2,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 18:42:59",
+      "time_mmt": "2018-01-12 01:12:59",
+      "latitude": 18.4477,
+      "longitude": 96.1748,
+      "depth": 10.0,
+      "mag": 5.2,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 18:38:12",
+      "time_mmt": "2018-01-12 01:08:12",
+      "latitude": 18.3339,
+      "longitude": 96.0976,
+      "depth": 10.0,
+      "mag": 5.3,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-11 18:26:24",
+      "time_mmt": "2018-01-12 00:56:24",
+      "latitude": 18.363,
+      "longitude": 96.0795,
+      "depth": 10.0,
+      "mag": 6.0,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-07 06:47:14",
+      "time_mmt": "2018-01-07 13:17:14",
+      "latitude": 24.7561,
+      "longitude": 94.9132,
+      "depth": 22.77,
+      "mag": 5.5,
+      "location": "Shwe Pyi Aye, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-06 22:56:57",
+      "time_mmt": "2018-01-07 05:26:57",
+      "latitude": 17.715,
+      "longitude": 94.3801,
+      "depth": 35.14,
+      "mag": 4.1,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-01-04 15:00:39",
+      "time_mmt": "2018-01-04 21:30:39",
+      "latitude": 25.0102,
+      "longitude": 96.3972,
+      "depth": 47.43,
+      "mag": 4.4,
+      "location": "Hopin, Kachin, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-20 08:12:14",
+      "time_mmt": "2018-02-20 14:42:14",
+      "latitude": 22.8,
+      "longitude": 93.1,
+      "depth": 10.0,
+      "mag": 4.2,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-20 05:39:26",
+      "time_mmt": "2018-02-20 12:09:26",
+      "latitude": 20.09,
+      "longitude": 97.93,
+      "depth": 10.0,
+      "mag": 3.8,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-14 07:14:01",
+      "time_mmt": "2018-02-14 13:44:01",
+      "latitude": 18.72,
+      "longitude": 95.23,
+      "depth": 88.0,
+      "mag": 4.7,
+      "location": "Shwedaung, Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-09 04:41:43",
+      "time_mmt": "2018-02-09 11:11:43",
+      "latitude": 18.2133,
+      "longitude": 94.2882,
+      "depth": 28.72,
+      "mag": 4.2,
+      "location": "Rakhine, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-07 16:38:01",
+      "time_mmt": "2018-02-07 23:08:01",
+      "latitude": 18.1649,
+      "longitude": 96.1547,
+      "depth": 10.0,
+      "mag": 4.1,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-05 16:55:35",
+      "time_mmt": "2018-02-05 23:25:35",
+      "latitude": 18.28,
+      "longitude": 96.24,
+      "depth": 10.0,
+      "mag": 4.6,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-04 08:42:02",
+      "time_mmt": "2018-02-04 15:12:02",
+      "latitude": 16.2174,
+      "longitude": 96.5388,
+      "depth": 10.0,
+      "mag": 4.1,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-03 18:14:09",
+      "time_mmt": "2018-02-04 00:44:09",
+      "latitude": 20.61,
+      "longitude": 99.53,
+      "depth": 10.0,
+      "mag": 4.0,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-03 15:31:50",
+      "time_mmt": "2018-02-03 22:01:50",
+      "latitude": 20.61,
+      "longitude": 99.57,
+      "depth": 10.0,
+      "mag": 3.7,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-03 15:29:11",
+      "time_mmt": "2018-02-03 21:59:11",
+      "latitude": 20.52,
+      "longitude": 99.37,
+      "depth": 10.0,
+      "mag": 4.5,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-24 18:41:29",
+      "time_mmt": "2018-03-25 01:11:29",
+      "latitude": 21.7769,
+      "longitude": 94.8224,
+      "depth": 117.98,
+      "mag": 4.2,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-17 19:59:03",
+      "time_mmt": "2018-03-18 02:29:03",
+      "latitude": 18.3849,
+      "longitude": 96.151,
+      "depth": 19.05,
+      "mag": 5.1,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-15 16:58:20",
+      "time_mmt": "2018-03-15 23:28:20",
+      "latitude": 23.6408,
+      "longitude": 94.7295,
+      "depth": 107.15,
+      "mag": 4.3,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-09 22:08:38",
+      "time_mmt": "2018-03-10 04:38:38",
+      "latitude": 23.48,
+      "longitude": 98.3,
+      "depth": 10.0,
+      "mag": 4.4,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-07 21:13:08",
+      "time_mmt": "2018-03-08 03:43:08",
+      "latitude": 19.8346,
+      "longitude": 95.9152,
+      "depth": 10.0,
+      "mag": 5.3,
+      "location": "Naypyidaw Union Territory, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-04 10:48:11",
+      "time_mmt": "2018-03-04 17:18:11",
+      "latitude": 18.4835,
+      "longitude": 96.1895,
+      "depth": 13.96,
+      "mag": 4.9,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-29 17:58:56",
+      "time_mmt": "2018-04-30 00:28:56",
+      "latitude": 21.14,
+      "longitude": 94.45,
+      "depth": 80.0,
+      "mag": 4.5,
+      "location": "Thetkekyin, Magway Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-24 12:23:33",
+      "time_mmt": "2018-04-24 18:53:33",
+      "latitude": 18.37,
+      "longitude": 96.09,
+      "depth": 10.0,
+      "mag": 5.1,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-24 04:08:35",
+      "time_mmt": "2018-04-24 10:38:35",
+      "latitude": 22.9227,
+      "longitude": 94.6044,
+      "depth": 105.85,
+      "mag": 5.2,
+      "location": "Mingin, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-22 18:31:44",
+      "time_mmt": "2018-04-23 01:01:44",
+      "latitude": 18.38,
+      "longitude": 96.07,
+      "depth": 10.0,
+      "mag": 5.1,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-21 22:41:10",
+      "time_mmt": "2018-04-22 05:11:10",
+      "latitude": 18.33,
+      "longitude": 96.15,
+      "depth": 10.0,
+      "mag": 4.6,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-20 22:29:24",
+      "time_mmt": "2018-04-21 04:59:24",
+      "latitude": 18.3221,
+      "longitude": 96.1596,
+      "depth": 17.07,
+      "mag": 5.0,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-20 08:28:01",
+      "time_mmt": "2018-04-20 14:58:01",
+      "latitude": 25.19,
+      "longitude": 95.47,
+      "depth": 145.0,
+      "mag": 4.3,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-20 04:16:02",
+      "time_mmt": "2018-04-20 10:46:02",
+      "latitude": 18.39,
+      "longitude": 96.07,
+      "depth": 10.0,
+      "mag": 4.8,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-18 07:55:36",
+      "time_mmt": "2018-04-18 14:25:36",
+      "latitude": 16.7503,
+      "longitude": 95.8211,
+      "depth": 10.0,
+      "mag": 4.2,
+      "location": "Yangon Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-16 13:32:33",
+      "time_mmt": "2018-04-16 20:02:33",
+      "latitude": 16.1485,
+      "longitude": 95.6759,
+      "depth": 10.0,
+      "mag": 3.4,
+      "location": "Ayeyarwady, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-15 14:27:50",
+      "time_mmt": "2018-04-15 20:57:50",
+      "latitude": 16.1711,
+      "longitude": 95.7135,
+      "depth": 10.0,
+      "mag": 3.4,
+      "location": "Ayeyarwady, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-14 22:27:32",
+      "time_mmt": "2018-04-15 04:57:32",
+      "latitude": 16.2053,
+      "longitude": 95.7461,
+      "depth": 10.0,
+      "mag": 4.1,
+      "location": "Pyapon, Ayeyarwady, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-10 12:53:43",
+      "time_mmt": "2018-04-10 19:23:43",
+      "latitude": 16.29,
+      "longitude": 97.92,
+      "depth": 19.0,
+      "mag": 3.3,
+      "location": "Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-10 12:38:45",
+      "time_mmt": "2018-04-10 19:08:45",
+      "latitude": 16.25,
+      "longitude": 97.91,
+      "depth": 8.0,
+      "mag": 3.6,
+      "location": "Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-08 17:40:09",
+      "time_mmt": "2018-04-09 00:10:09",
+      "latitude": 22.5859,
+      "longitude": 96.0631,
+      "depth": 10.0,
+      "mag": 4.5,
+      "location": "Mandalay Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-04 15:21:23",
+      "time_mmt": "2018-04-04 21:51:23",
+      "latitude": 24.8474,
+      "longitude": 95.3484,
+      "depth": 126.09,
+      "mag": 4.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-04-02 11:42:14",
+      "time_mmt": "2018-04-02 18:12:14",
+      "latitude": 26.49,
+      "longitude": 97.05,
+      "depth": 40.0,
+      "mag": 4.7,
+      "location": "Kachin, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-05-26 23:42:23",
+      "time_mmt": "2018-05-27 06:12:23",
+      "latitude": 23.0043,
+      "longitude": 94.6075,
+      "depth": 95.32,
+      "mag": 4.5,
+      "location": "Mingin, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-05-06 13:37:26",
+      "time_mmt": "2018-05-06 20:07:26",
+      "latitude": 24.6,
+      "longitude": 95.97,
+      "depth": 47.0,
+      "mag": 4.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-27 13:02:30",
+      "time_mmt": "2018-06-27 19:32:30",
+      "latitude": 19.76,
+      "longitude": 96.05,
+      "depth": 10.0,
+      "mag": 4.8,
+      "location": "Naypyidaw Union Territory, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-26 00:02:16",
+      "time_mmt": "2018-06-26 06:32:16",
+      "latitude": 22.2092,
+      "longitude": 95.0342,
+      "depth": 21.81,
+      "mag": 4.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-19 11:06:26",
+      "time_mmt": "2018-06-19 17:36:26",
+      "latitude": 21.9448,
+      "longitude": 94.1572,
+      "depth": 84.27,
+      "mag": 4.3,
+      "location": "Magway Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-18 13:56:48",
+      "time_mmt": "2018-06-18 20:26:48",
+      "latitude": 16.4057,
+      "longitude": 96.334,
+      "depth": 67.79,
+      "mag": 4.3,
+      "location": "Yangon Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-17 13:42:37",
+      "time_mmt": "2018-06-17 20:12:37",
+      "latitude": 18.3759,
+      "longitude": 96.1915,
+      "depth": 24.07,
+      "mag": 4.6,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-17 13:21:30",
+      "time_mmt": "2018-06-17 19:51:30",
+      "latitude": 18.2846,
+      "longitude": 96.0789,
+      "depth": 10.0,
+      "mag": 5.0,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-05 23:12:32",
+      "time_mmt": "2018-06-06 05:42:32",
+      "latitude": 23.8585,
+      "longitude": 94.4873,
+      "depth": 82.01,
+      "mag": 4.7,
+      "location": "Pantha, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-06-05 16:33:54",
+      "time_mmt": "2018-06-05 23:03:54",
+      "latitude": 24.5969,
+      "longitude": 95.1002,
+      "depth": 110.91,
+      "mag": 4.8,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-25 14:23:02",
+      "time_mmt": "2018-07-25 20:53:02",
+      "latitude": 19.29,
+      "longitude": 96.9,
+      "depth": 10.0,
+      "mag": 4.5,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-20 06:36:35",
+      "time_mmt": "2018-07-20 13:06:35",
+      "latitude": 15.06,
+      "longitude": 96.69,
+      "depth": 10.0,
+      "mag": 4.0,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-13 12:07:58",
+      "time_mmt": "2018-07-13 18:37:58",
+      "latitude": 18.96,
+      "longitude": 94.79,
+      "depth": 10.0,
+      "mag": 4.7,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-07 00:44:29",
+      "time_mmt": "2018-07-07 07:14:29",
+      "latitude": 14.71,
+      "longitude": 96.67,
+      "depth": 10.0,
+      "mag": 4.2,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-04 20:34:52",
+      "time_mmt": "2018-07-05 03:04:52",
+      "latitude": 14.5383,
+      "longitude": 96.4654,
+      "depth": 10.42,
+      "mag": 5.1,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-07-01 15:10:37",
+      "time_mmt": "2018-07-01 21:40:37",
+      "latitude": 20.2592,
+      "longitude": 97.9109,
+      "depth": 10.0,
+      "mag": 4.6,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-09-20 15:41:26",
+      "time_mmt": "2018-09-20 22:11:26",
+      "latitude": 17.85,
+      "longitude": 97.44,
+      "depth": 10.0,
+      "mag": 4.1,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-09-10 16:57:40",
+      "time_mmt": "2018-09-10 23:27:40",
+      "latitude": 23.1567,
+      "longitude": 94.6719,
+      "depth": 101.03,
+      "mag": 4.5,
+      "location": "\u1005\u1005\u103a\u1000\u102d\u102f\u1004\u103a\u1038\u1010\u102d\u102f\u1004\u103a\u1038\u1012\u1031\u101e\u1000\u103c\u102e\u1038, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-09-07 06:30:29",
+      "time_mmt": "2018-09-07 13:00:29",
+      "latitude": 20.96,
+      "longitude": 100.01,
+      "depth": 10.0,
+      "mag": 3.6,
+      "location": "\u101b\u103e\u1019\u103a\u1038\u1015\u103c\u100a\u103a\u1014\u101a\u103a, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-09-01 19:19:46",
+      "time_mmt": "2018-09-02 01:49:46",
+      "latitude": 24.7533,
+      "longitude": 95.3651,
+      "depth": 149.02,
+      "mag": 4.5,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-08-18 12:03:49",
+      "time_mmt": "2018-08-18 18:33:49",
+      "latitude": 24.6758,
+      "longitude": 94.7739,
+      "depth": 85.0,
+      "mag": 4.5,
+      "location": "Shwe Pyi Aye, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-08-16 11:55:19",
+      "time_mmt": "2018-08-16 18:25:19",
+      "latitude": 23.94,
+      "longitude": 94.75,
+      "depth": 100.0,
+      "mag": 4.8,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-08-16 06:50:11",
+      "time_mmt": "2018-08-16 13:20:11",
+      "latitude": 16.0975,
+      "longitude": 96.494,
+      "depth": 10.0,
+      "mag": 4.3,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-08-15 18:25:43",
+      "time_mmt": "2018-08-16 00:55:43",
+      "latitude": 20.87,
+      "longitude": 100.18,
+      "depth": 10.0,
+      "mag": 3.7,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-10-27 09:16:42",
+      "time_mmt": "2018-10-27 15:46:42",
+      "latitude": 19.1,
+      "longitude": 95.61,
+      "depth": 4.0,
+      "mag": 5.0,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-10-26 20:49:51",
+      "time_mmt": "2018-10-27 03:19:51",
+      "latitude": 24.72,
+      "longitude": 95.24,
+      "depth": 115.0,
+      "mag": 4.3,
+      "location": "Yairipok, India",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-10-10 10:28:04",
+      "time_mmt": "2018-10-10 16:58:04",
+      "latitude": 19.04,
+      "longitude": 95.6,
+      "depth": 13.0,
+      "mag": 5.1,
+      "location": "Prome, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-10-04 13:29:17",
+      "time_mmt": "2018-10-04 19:59:17",
+      "latitude": 19.6,
+      "longitude": 96.42,
+      "depth": 30.0,
+      "mag": 4.5,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-29 03:57:37",
+      "time_mmt": "2018-11-29 10:27:37",
+      "latitude": 23.5476,
+      "longitude": 94.32,
+      "depth": 83.34,
+      "mag": 4.5,
+      "location": "Mawlaik, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-20 17:49:19",
+      "time_mmt": "2018-11-21 00:19:19",
+      "latitude": 20.2441,
+      "longitude": 93.6503,
+      "depth": 44.91,
+      "mag": 4.5,
+      "location": "Rakhine, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-19 19:03:07",
+      "time_mmt": "2018-11-20 01:33:07",
+      "latitude": 23.4306,
+      "longitude": 94.1988,
+      "depth": 10.0,
+      "mag": 4.4,
+      "location": "Mawlaik, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-19 04:07:53",
+      "time_mmt": "2018-11-19 10:37:53",
+      "latitude": 21.5,
+      "longitude": 94.39,
+      "depth": 80.0,
+      "mag": 4.9,
+      "location": "Pakokku, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-10 17:15:46",
+      "time_mmt": "2018-11-10 23:45:46",
+      "latitude": 23.9634,
+      "longitude": 93.3951,
+      "depth": 51.07,
+      "mag": 5.2,
+      "location": "Chin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-11-05 19:48:36",
+      "time_mmt": "2018-11-06 02:18:36",
+      "latitude": 19.9181,
+      "longitude": 95.4792,
+      "depth": 10.0,
+      "mag": 4.5,
+      "location": "Taungdwingyi, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-12-31 13:33:10",
+      "time_mmt": "2018-12-31 20:03:10",
+      "latitude": 21.7196,
+      "longitude": 93.4376,
+      "depth": 51.09,
+      "mag": 4.1,
+      "location": "Saiha, India",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-12-27 00:35:49",
+      "time_mmt": "2018-12-27 07:05:49",
+      "latitude": 23.38,
+      "longitude": 94.6,
+      "depth": 91.0,
+      "mag": 5.0,
+      "location": "Mawlaik, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-12-23 20:32:18",
+      "time_mmt": "2018-12-24 03:02:18",
+      "latitude": 26.48,
+      "longitude": 96.63,
+      "depth": 100.0,
+      "mag": 4.7,
+      "location": "Kachin, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

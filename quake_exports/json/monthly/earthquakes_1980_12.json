@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1980-12-31 02:32:56",
+      "time_mmt": "1980-12-31 09:02:56",
+      "latitude": 21.146,
+      "longitude": 93.627,
+      "depth": 46.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

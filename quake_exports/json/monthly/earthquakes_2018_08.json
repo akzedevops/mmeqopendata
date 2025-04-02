@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-08-18 12:03:49",
+      "time_mmt": "2018-08-18 18:33:49",
+      "latitude": 24.6758,
+      "longitude": 94.7739,
+      "depth": 85.0,
+      "mag": 4.5,
+      "location": "Shwe Pyi Aye, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-08-16 11:55:19",
+      "time_mmt": "2018-08-16 18:25:19",
+      "latitude": 23.94,
+      "longitude": 94.75,
+      "depth": 100.0,
+      "mag": 4.8,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-08-16 06:50:11",
+      "time_mmt": "2018-08-16 13:20:11",
+      "latitude": 16.0975,
+      "longitude": 96.494,
+      "depth": 10.0,
+      "mag": 4.3,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-08-15 18:25:43",
+      "time_mmt": "2018-08-16 00:55:43",
+      "latitude": 20.87,
+      "longitude": 100.18,
+      "depth": 10.0,
+      "mag": 3.7,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

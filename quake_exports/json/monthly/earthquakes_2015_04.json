@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2015-04-15 17:57:02",
+      "time_mmt": "2015-04-16 00:27:02",
+      "latitude": 24.39,
+      "longitude": 96.17,
+      "depth": 61.0,
+      "mag": 4.2,
+      "location": "Indaw, Sagaing, Republic of the Union of Myanmar",
+      "country": "MM"
+    }
+  ]
+}

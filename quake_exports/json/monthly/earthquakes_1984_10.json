@@ -1,0 +1,34 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1984-10-18 19:47:30",
+      "time_mmt": "1984-10-19 02:17:30",
+      "latitude": 23.994,
+      "longitude": 94.522,
+      "depth": 123.6,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1984-10-07 05:15:07",
+      "time_mmt": "1984-10-07 11:45:07",
+      "latitude": 24.578,
+      "longitude": 97.19,
+      "depth": 33.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1984-10-04 22:22:49",
+      "time_mmt": "1984-10-05 04:52:49",
+      "latitude": 15.56,
+      "longitude": 95.802,
+      "depth": 21.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

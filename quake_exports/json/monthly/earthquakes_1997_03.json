@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1997-03-25 14:17:26",
+      "time_mmt": "1997-03-25 20:47:26",
+      "latitude": 17.318,
+      "longitude": 94.634,
+      "depth": 33.0,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1997-03-25 04:02:47",
+      "time_mmt": "1997-03-25 10:32:47",
+      "latitude": 25.083,
+      "longitude": 98.273,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

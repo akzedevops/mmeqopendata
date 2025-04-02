@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2002-11-18 21:59:41",
+      "time_mmt": "2002-11-19 04:29:41",
+      "latitude": 21.73,
+      "longitude": 95.149,
+      "depth": 63.7,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2002-11-16 16:55:48",
+      "time_mmt": "2002-11-16 23:25:48",
+      "latitude": 17.41,
+      "longitude": 96.031,
+      "depth": 33.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2002-11-12 00:32:08",
+      "time_mmt": "2002-11-12 07:02:08",
+      "latitude": 24.511,
+      "longitude": 94.718,
+      "depth": 109.7,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2002-11-01 20:05:39",
+      "time_mmt": "2002-11-02 02:35:39",
+      "latitude": 22.554,
+      "longitude": 93.939,
+      "depth": 73.1,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

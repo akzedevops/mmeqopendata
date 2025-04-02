@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1992-02-15 18:51:09",
+      "time_mmt": "1992-02-16 01:21:09",
+      "latitude": 20.124,
+      "longitude": 93.76,
+      "depth": 33.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

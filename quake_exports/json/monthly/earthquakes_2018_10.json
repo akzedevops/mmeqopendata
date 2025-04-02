@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-10-27 09:16:42",
+      "time_mmt": "2018-10-27 15:46:42",
+      "latitude": 19.1,
+      "longitude": 95.61,
+      "depth": 4.0,
+      "mag": 5.0,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-10-26 20:49:51",
+      "time_mmt": "2018-10-27 03:19:51",
+      "latitude": 24.72,
+      "longitude": 95.24,
+      "depth": 115.0,
+      "mag": 4.3,
+      "location": "Yairipok, India",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-10-10 10:28:04",
+      "time_mmt": "2018-10-10 16:58:04",
+      "latitude": 19.04,
+      "longitude": 95.6,
+      "depth": 13.0,
+      "mag": 5.1,
+      "location": "Prome, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-10-04 13:29:17",
+      "time_mmt": "2018-10-04 19:59:17",
+      "latitude": 19.6,
+      "longitude": 96.42,
+      "depth": 30.0,
+      "mag": 4.5,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

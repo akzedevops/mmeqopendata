@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1976-09-29 15:24:48",
+      "time_mmt": "1976-09-29 21:54:48",
+      "latitude": 17.182,
+      "longitude": 94.12,
+      "depth": 36.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1976-09-24 00:09:52",
+      "time_mmt": "1976-09-24 06:39:52",
+      "latitude": 24.049,
+      "longitude": 95.014,
+      "depth": 164.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

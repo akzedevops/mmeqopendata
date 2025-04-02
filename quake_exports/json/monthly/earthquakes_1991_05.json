@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1991-05-28 20:04:50",
+      "time_mmt": "1991-05-29 02:34:50",
+      "latitude": 24.649,
+      "longitude": 94.364,
+      "depth": 142.3,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-05-25 17:07:34",
+      "time_mmt": "1991-05-25 23:37:34",
+      "latitude": 25.263,
+      "longitude": 95.17,
+      "depth": 85.8,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-05-12 13:16:13",
+      "time_mmt": "1991-05-12 19:46:13",
+      "latitude": 25.488,
+      "longitude": 98.261,
+      "depth": 33.0,
+      "mag": 3.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-05-11 17:34:08",
+      "time_mmt": "1991-05-12 00:04:08",
+      "latitude": 26.456,
+      "longitude": 96.237,
+      "depth": 107.1,
+      "mag": 4.9,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

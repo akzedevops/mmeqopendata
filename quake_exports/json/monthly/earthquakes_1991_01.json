@@ -1,0 +1,104 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1991-01-31 12:09:08",
+      "time_mmt": "1991-01-31 18:39:08",
+      "latitude": 23.574,
+      "longitude": 93.037,
+      "depth": 33.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-01-28 22:24:46",
+      "time_mmt": "1991-01-29 04:54:46",
+      "latitude": 26.029,
+      "longitude": 95.292,
+      "depth": 33.0,
+      "mag": 5.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-01-26 17:20:49",
+      "time_mmt": "1991-01-26 23:50:49",
+      "latitude": 24.733,
+      "longitude": 97.001,
+      "depth": 33.0,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-01-23 06:07:08",
+      "time_mmt": "1991-01-23 12:37:08",
+      "latitude": 24.733,
+      "longitude": 95.232,
+      "depth": 115.2,
+      "mag": 5.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-01-13 06:35:44",
+      "time_mmt": "1991-01-13 13:05:44",
+      "latitude": 23.848,
+      "longitude": 96.221,
+      "depth": 33.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-01-10 19:54:22",
+      "time_mmt": "1991-01-11 02:24:22",
+      "latitude": 23.499,
+      "longitude": 95.72,
+      "depth": 33.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-01-05 16:04:14",
+      "time_mmt": "1991-01-05 22:34:14",
+      "latitude": 24.012,
+      "longitude": 95.978,
+      "depth": 31.9,
+      "mag": 5.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-01-05 15:38:55",
+      "time_mmt": "1991-01-05 22:08:55",
+      "latitude": 23.8,
+      "longitude": 95.963,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-01-05 14:57:11",
+      "time_mmt": "1991-01-05 21:27:11",
+      "latitude": 23.613,
+      "longitude": 95.901,
+      "depth": 19.7,
+      "mag": 7.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-01-03 07:05:32",
+      "time_mmt": "1991-01-03 13:35:32",
+      "latitude": 24.67,
+      "longitude": 95.553,
+      "depth": 33.0,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

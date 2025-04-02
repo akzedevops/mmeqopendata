@@ -1,0 +1,34 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1980-04-22 01:46:35",
+      "time_mmt": "1980-04-22 08:16:35",
+      "latitude": 16.875,
+      "longitude": 94.899,
+      "depth": 33.0,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1980-04-18 04:20:05",
+      "time_mmt": "1980-04-18 10:50:05",
+      "latitude": 17.043,
+      "longitude": 94.843,
+      "depth": 38.0,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1980-04-04 08:19:21",
+      "time_mmt": "1980-04-04 14:49:21",
+      "latitude": 21.335,
+      "longitude": 93.804,
+      "depth": 51.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

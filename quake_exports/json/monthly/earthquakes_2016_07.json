@@ -1,0 +1,54 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2016-07-29 14:02:55",
+      "time_mmt": "2016-07-29 20:32:55",
+      "latitude": 21.86,
+      "longitude": 99.43,
+      "depth": 30.0,
+      "mag": 4.9,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-07-27 04:20:28",
+      "time_mmt": "2016-07-27 10:50:28",
+      "latitude": 21.5851,
+      "longitude": 94.6049,
+      "depth": 97.54,
+      "mag": 4.9,
+      "location": "Magway Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-07-20 03:23:43",
+      "time_mmt": "2016-07-20 09:53:43",
+      "latitude": 22.78,
+      "longitude": 94.44,
+      "depth": 92.0,
+      "mag": 4.2,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-07-05 09:43:44",
+      "time_mmt": "2016-07-05 16:13:44",
+      "latitude": 24.8082,
+      "longitude": 95.2124,
+      "depth": 98.55,
+      "mag": 4.4,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-07-01 19:22:40",
+      "time_mmt": "2016-07-02 01:52:40",
+      "latitude": 24.9506,
+      "longitude": 95.3854,
+      "depth": 132.32,
+      "mag": 4.5,
+      "location": "Nawngpu-Awng, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

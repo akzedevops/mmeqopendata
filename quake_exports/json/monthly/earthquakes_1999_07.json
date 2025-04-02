@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1999-07-15 10:35:20",
+      "time_mmt": "1999-07-15 17:05:20",
+      "latitude": 21.422,
+      "longitude": 99.345,
+      "depth": 33.0,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1999-07-05 21:44:15",
+      "time_mmt": "1999-07-06 04:14:15",
+      "latitude": 23.036,
+      "longitude": 93.805,
+      "depth": 54.3,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

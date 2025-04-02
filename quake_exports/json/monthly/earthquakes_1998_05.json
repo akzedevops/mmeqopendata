@@ -1,0 +1,34 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1998-05-06 19:56:13",
+      "time_mmt": "1998-05-07 02:26:13",
+      "latitude": 17.791,
+      "longitude": 94.343,
+      "depth": 33.0,
+      "mag": 4.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-05-06 15:40:45",
+      "time_mmt": "1998-05-06 22:10:45",
+      "latitude": 24.526,
+      "longitude": 97.603,
+      "depth": 33.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1998-05-02 08:36:50",
+      "time_mmt": "1998-05-02 15:06:50",
+      "latitude": 24.932,
+      "longitude": 95.311,
+      "depth": 121.5,
+      "mag": 5.5,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

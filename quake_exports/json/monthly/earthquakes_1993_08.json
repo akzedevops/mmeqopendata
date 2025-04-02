@@ -1,0 +1,34 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1993-08-27 11:45:50",
+      "time_mmt": "1993-08-27 18:15:50",
+      "latitude": 23.082,
+      "longitude": 95.878,
+      "depth": 33.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1993-08-17 22:56:44",
+      "time_mmt": "1993-08-18 05:26:44",
+      "latitude": 26.089,
+      "longitude": 95.665,
+      "depth": 105.7,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1993-08-02 14:41:45",
+      "time_mmt": "1993-08-02 21:11:45",
+      "latitude": 22.812,
+      "longitude": 93.567,
+      "depth": 74.5,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

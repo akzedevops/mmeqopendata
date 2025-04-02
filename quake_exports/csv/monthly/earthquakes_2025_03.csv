@@ -1,0 +1,339 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2025-03-31 22:47:43,2025-04-01 05:17:43,18.208,96.803,10.0,2.8,"Bogata Auk, Bago Region, Myanmar (Burma)",MM
+2025-03-31 22:18:30,2025-04-01 04:48:30,22.059,96.404,10.0,4.0,"Pyin Oo Lwin, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 21:56:13,2025-04-01 04:26:13,21.987,96.382,10.0,4.0,"Anesakhan, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 21:45:50,2025-04-01 04:15:50,20.261,96.206,10.0,3.6,"Nyaung Lunt, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-31 21:31:08,2025-04-01 04:01:08,19.011,97.705,6.0,1.8,"Kayah State, Myanmar (Burma)",MM
+2025-03-31 20:53:19,2025-04-01 03:23:19,19.944,97.93,1.0,2.2,"Ta Ho-pong, Shan, Myanmar (Burma)",MM
+2025-03-31 20:10:57,2025-04-01 02:40:57,18.885,96.555,2.0,2.4,"Dothaung, Bago Region, Myanmar (Burma)",MM
+2025-03-31 20:08:52,2025-04-01 02:38:52,18.405,96.849,2.0,2.3,"Bothet, Bago Region, Myanmar (Burma)",MM
+2025-03-31 19:58:17,2025-04-01 02:28:17,21.81,96.148,6.0,3.4,"Man Kyee Kine, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 19:23:38,2025-04-01 01:53:38,20.137,97.824,2.0,2.4,"Wan Hat, Shan, Myanmar (Burma)",MM
+2025-03-31 19:11:09,2025-04-01 01:41:09,21.9068,96.0099,10.0,4.1,"Mandalay, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 19:08:41,2025-04-01 01:38:41,19.965,97.805,3.0,1.8,"Ta Öngmu, Shan, Myanmar (Burma)",MM
+2025-03-31 19:04:04,2025-04-01 01:34:04,19.202,96.657,3.0,2.1,"Dedako, Kayin State, Myanmar (Burma)",MM
+2025-03-31 18:55:24,2025-04-01 01:25:24,20.13,97.724,1.0,2.0,"Kantu-awn, Shan, Myanmar (Burma)",MM
+2025-03-31 18:40:18,2025-04-01 01:10:18,21.815,96.219,10.0,3.3,"Ohn Chaw, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 18:23:46,2025-04-01 00:53:46,21.783,96.145,10.0,3.4,"Daunggyigwe, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 18:22:34,2025-04-01 00:52:34,19.623,96.228,10.0,2.6,"Aye Lar, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-31 17:54:35,2025-04-01 00:24:35,19.127,96.667,12.0,2.2,"Than Daung Gyi, Kayin State, Myanmar (Burma)",MM
+2025-03-31 17:24:14,2025-03-31 23:54:14,21.263,95.978,10.0,3.1,"Thabyeyoe, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 16:27:31,2025-03-31 22:57:31,21.379,96.71,10.0,3.2,"Sawbya, Shan, Myanmar (Burma)",MM
+2025-03-31 15:19:21,2025-03-31 21:49:21,18.729,96.867,10.0,2.2,"Yawchi, Kayin State, Myanmar (Burma)",MM
+2025-03-31 13:25:16,2025-03-31 19:55:16,19.906,98.013,3.0,2.8,"Ta Ho-pong, Shan, Myanmar (Burma)",MM
+2025-03-31 13:15:23,2025-03-31 19:45:23,19.717,98.382,2.0,1.9,"Wan Punglong, Shan, Myanmar (Burma)",MM
+2025-03-31 12:49:07,2025-03-31 19:19:07,18.673,96.55,10.0,3.4,"Zayatkyi, Bago Region, Myanmar (Burma)",MM
+2025-03-31 12:19:07,2025-03-31 18:49:07,20.884,96.308,10.0,3.3,"Pothanaing, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 12:12:22,2025-03-31 18:42:22,22.36,97.79,10.0,3.9,"Lenti, Shan, Myanmar (Burma)",MM
+2025-03-31 12:05:00,2025-03-31 18:35:00,21.112,96.227,7.0,3.3,"Nyaunggyat, Shan, Myanmar (Burma)",MM
+2025-03-31 11:49:55,2025-03-31 18:19:55,19.744,98.502,1.0,1.7,"Wan Hsenlong, Shan, Myanmar (Burma)",MM
+2025-03-31 11:17:58,2025-03-31 17:47:58,21.748,96.518,10.0,4.0,"Lema, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 11:00:41,2025-03-31 17:30:41,20.186,97.83,1.0,2.1,"Wan Hat, Shan, Myanmar (Burma)",MM
+2025-03-31 10:24:22,2025-03-31 16:54:22,21.822,96.648,10.0,3.8,"Kontha, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 10:11:30,2025-03-31 16:41:30,19.653,96.242,10.0,2.7,"Aunggon, နေပြည်တော် ပြည်တောင်စုနယ်မြေ, Myanmar (Burma)",MM
+2025-03-31 09:51:13,2025-03-31 16:21:13,19.061,96.323,10.0,3.6,"Kyun Kone, Bago Region, Myanmar (Burma)",MM
+2025-03-31 09:42:48,2025-03-31 16:12:48,19.991,97.969,4.0,4.1,"Ta Ho-pong, Shan, Myanmar (Burma)",MM
+2025-03-31 08:13:25,2025-03-31 14:43:25,20.147,96.435,10.0,3.5,"Kyaunggon, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-31 06:59:35,2025-03-31 13:29:35,18.613,96.349,10.0,2.8,"Nyaung Chay Htauk, Bago Region, Myanmar (Burma)",MM
+2025-03-31 05:48:22,2025-03-31 12:18:22,20.049,98.333,1.0,2.9,"Wan Umlong, Shan, Myanmar (Burma)",MM
+2025-03-31 05:47:00,2025-03-31 12:17:00,21.996,96.325,9.0,4.4,"Anesakhan, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 05:38:44,2025-03-31 12:08:44,18.966,96.313,10.0,3.0,"Kanbaukkyi, Bago Region, Myanmar (Burma)",MM
+2025-03-31 05:17:37,2025-03-31 11:47:37,21.696,96.335,10.0,4.5,"Gwebin, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 05:17:29,2025-03-31 11:47:29,20.31,92.2,10.0,3.7,,MM
+2025-03-31 05:05:35,2025-03-31 11:35:35,18.714,96.469,10.0,2.9,"Zayatkyi, Bago Region, Myanmar (Burma)",MM
+2025-03-31 04:54:02,2025-03-31 11:24:02,19.734,97.911,1.0,2.4,"Homein, Shan, Myanmar (Burma)",MM
+2025-03-31 03:56:17,2025-03-31 10:26:17,19.009,96.375,10.0,3.1,"Kaytumati, Bago Region, Myanmar (Burma)",MM
+2025-03-31 03:28:00,2025-03-31 09:58:00,19.021,96.832,4.0,2.6,"Pawe Doka, Kayin State, Myanmar (Burma)",MM
+2025-03-31 03:24:42,2025-03-31 09:54:42,20.253,98.542,4.0,2.6,"Zinbon, Kayin State, Myanmar (Burma)",MM
+2025-03-31 03:05:19,2025-03-31 09:35:19,21.849,96.726,10.0,3.7,"Kontha, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 02:29:43,2025-03-31 08:59:43,21.71,96.22,10.0,3.7,"Kado, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 02:01:12,2025-03-31 08:31:12,19.131,96.62,10.0,2.6,"Alegyaung Auk, Kayin State, Myanmar (Burma)",MM
+2025-03-31 01:46:36,2025-03-31 08:16:36,21.302,96.046,10.0,3.5,"Thakhutmyint, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 01:41:04,2025-03-31 08:11:04,19.812,96.386,10.0,2.8,"Kwedugyi, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-31 01:13:54,2025-03-31 07:43:54,21.806,96.363,10.0,3.6,"Thon-Daung-Ywa-Ma, Mandalay Region, Myanmar (Burma)",MM
+2025-03-31 00:23:05,2025-03-31 06:53:05,20.384,98.392,15.0,2.3,"Mong Pan, Shan, Myanmar (Burma)",MM
+2025-03-31 00:07:58,2025-03-31 06:37:58,21.9,96.535,10.0,4.0,"Baw, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 23:55:58,2025-03-31 06:25:58,21.796,96.432,15.0,4.2,"Ngapyawaing, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 23:22:03,2025-03-31 05:52:03,19.316,96.24,10.0,3.8,"Thagaya, Bago Region, Myanmar (Burma)",MM
+2025-03-30 23:08:49,2025-03-31 05:38:49,18.526,96.655,10.0,2.9,"Mon, Bago Region, Myanmar (Burma)",MM
+2025-03-30 22:07:35,2025-03-31 04:37:35,21.55,93.34,139.0,3.5,"Longat, Chin State, Myanmar (Burma)",MM
+2025-03-30 21:55:38,2025-03-31 04:25:38,20.171,98.417,5.0,2.9,"Wan Hpa, Shan, Myanmar (Burma)",MM
+2025-03-30 20:59:01,2025-03-31 03:29:01,20.24,96.436,10.0,3.1,"Kyaunggon, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-30 20:48:58,2025-03-31 03:18:58,20.041,96.214,10.0,3.0,"Shwemyo, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-30 20:16:30,2025-03-31 02:46:30,21.783,96.288,10.0,4.2,"Wagan, Magway Region, Myanmar (Burma)",MM
+2025-03-30 19:55:45,2025-03-31 02:25:45,20.644,96.016,10.0,2.8,"Pyawbwe, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 19:29:10,2025-03-31 01:59:10,21.974,96.242,9.0,3.4,"Yetaw, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 19:12:55,2025-03-31 01:42:55,19.018,96.81,3.0,2.9,"Pawe Doka, Kayin State, Myanmar (Burma)",MM
+2025-03-30 17:38:19,2025-03-31 00:08:19,19.143,96.865,10.0,2.0,"Kalamuchi, Kayin State, Myanmar (Burma)",MM
+2025-03-30 17:30:54,2025-03-31 00:00:54,22.259,96.491,10.0,4.2,"Mingon, Sagaing Region, Myanmar (Burma)",MM
+2025-03-30 17:03:52,2025-03-30 23:33:52,19.729,96.48,10.0,2.5,"Saungdaung Anauk, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-30 16:56:51,2025-03-30 23:26:51,18.538,96.506,3.0,2.2,"Amegon, Bago Region, Myanmar (Burma)",MM
+2025-03-30 16:53:09,2025-03-30 23:23:09,18.897,96.827,3.0,2.3,"ဘောဂလိမြို့, ကရင်ပြည်နယ်, Myanmar (Burma)",MM
+2025-03-30 16:26:31,2025-03-30 22:56:31,19.306,96.519,10.0,2.3,"Kyauktaga Auk, Kayin State, Myanmar (Burma)",MM
+2025-03-30 16:03:07,2025-03-30 22:33:07,26.52,96.57,105.0,3.6,"Shin Lon Ga, Kachin, Myanmar (Burma)",MM
+2025-03-30 15:25:32,2025-03-30 21:55:32,20.968,96.368,10.0,3.2,"Patchaung, Shan, Myanmar (Burma)",MM
+2025-03-30 14:30:29,2025-03-30 21:00:29,18.555,96.527,10.0,3.8,"Oakphyat, Bago Region, Myanmar (Burma)",MM
+2025-03-30 13:59:48,2025-03-30 20:29:48,16.471,97.769,2.0,2.3,"Kaw Bwee, Mon State, Myanmar (Burma)",MM
+2025-03-30 13:26:43,2025-03-30 19:56:43,19.271,96.389,10.0,2.9,"Sibaing, Bago Region, Myanmar (Burma)",MM
+2025-03-30 13:17:14,2025-03-30 19:47:14,20.077,97.988,4.0,2.5,"Wan Konlang, Shan, Myanmar (Burma)",MM
+2025-03-30 13:08:27,2025-03-30 19:38:27,21.902,96.08,10.0,4.1,"Mandalay, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 12:27:01,2025-03-30 18:57:01,21.782,96.695,10.0,3.4,"Kontha, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 10:32:44,2025-03-30 17:02:44,20.232,98.418,5.0,3.1,"Mong Pan, Shan, Myanmar (Burma)",MM
+2025-03-30 10:11:03,2025-03-30 16:41:03,19.924,96.361,10.0,3.1,"Yebyaungbyan, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-30 10:00:25,2025-03-30 16:30:25,21.952,96.623,10.0,3.5,"Thinkadon, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 09:25:31,2025-03-30 15:55:31,19.177,96.621,10.0,3.4,"Alegyaung Auk, Kayin State, Myanmar (Burma)",MM
+2025-03-30 09:00:59,2025-03-30 15:30:59,19.73,97.953,5.0,2.1,"Homein, Shan, Myanmar (Burma)",MM
+2025-03-30 08:37:57,2025-03-30 15:07:57,22.4993,95.9447,10.0,4.3,"Letpanhla, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 08:13:43,2025-03-30 14:43:43,20.174,97.914,2.0,2.2,"Wan Hat, Shan, Myanmar (Burma)",MM
+2025-03-30 08:11:11,2025-03-30 14:41:11,20.098,98.483,2.0,2.1,"Ta Hpa-leng, Shan, Myanmar (Burma)",MM
+2025-03-30 08:06:22,2025-03-30 14:36:22,20.108,98.535,10.0,2.8,"Ta Hpa-leng, Shan, Myanmar (Burma)",MM
+2025-03-30 07:22:20,2025-03-30 13:52:20,20.627,96.242,9.0,3.9,"Shwe Nyaung, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 07:08:01,2025-03-30 13:38:01,22.1993,95.9393,10.0,5.1,"Mandalay, Burma (Myanmar)",MM
+2025-03-30 06:45:02,2025-03-30 13:15:02,18.021,97.58,2.0,2.4,"Bwado, Kayin State, Myanmar (Burma)",MM
+2025-03-30 06:41:42,2025-03-30 13:11:42,19.022,96.35,10.0,2.9,"Kaytumati, Bago Region, Myanmar (Burma)",MM
+2025-03-30 06:01:27,2025-03-30 12:31:27,18.599,96.571,10.0,3.2,"Oakphyat, Bago Region, Myanmar (Burma)",MM
+2025-03-30 05:48:33,2025-03-30 12:18:33,18.619,96.492,10.0,2.5,Htantabin Township,MM
+2025-03-30 05:18:49,2025-03-30 11:48:49,19.359,96.234,10.0,2.8,"Myohla, Bago Region, Myanmar (Burma)",MM
+2025-03-30 05:12:36,2025-03-30 11:42:36,19.995,97.406,10.0,2.3,"Mak, Shan, Myanmar (Burma)",MM
+2025-03-30 05:08:00,2025-03-30 11:38:00,18.782,96.515,10.0,3.6,"Bomari, Bago Region, Myanmar (Burma)",MM
+2025-03-30 04:49:40,2025-03-30 11:19:40,19.642,96.468,10.0,2.8,,MM
+2025-03-30 04:16:21,2025-03-30 10:46:21,20.016,96.256,10.0,3.2,"Setkon, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-30 04:01:10,2025-03-30 10:31:10,21.021,96.176,10.0,3.6,"Alegan, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 03:47:14,2025-03-30 10:17:14,20.337,97.54,10.0,2.5,"Hpa-san, Shan, Myanmar (Burma)",MM
+2025-03-30 02:26:24,2025-03-30 08:56:24,18.676,96.563,10.0,3.0,"Zayatkyi, Bago Region, Myanmar (Burma)",MM
+2025-03-30 01:53:32,2025-03-30 08:23:32,20.228,98.326,3.0,3.0,"Wan Kyawng, Shan, Myanmar (Burma)",MM
+2025-03-30 01:50:12,2025-03-30 08:20:12,21.638,96.459,10.0,3.8,,MM
+2025-03-30 01:19:46,2025-03-30 07:49:46,19.063,96.323,10.0,3.7,"Kyun Kone, Bago Region, Myanmar (Burma)",MM
+2025-03-30 00:58:42,2025-03-30 07:28:42,21.4,95.61,10.0,3.8,"Natogyi, Mandalay Region, Myanmar (Burma)",MM
+2025-03-30 00:27:24,2025-03-30 06:57:24,21.393,96.399,10.0,3.7,"Myogyi, Shan, Myanmar (Burma)",MM
+2025-03-30 00:08:34,2025-03-30 06:38:34,20.56,96.89,20.0,3.9,"Myayni Gone, Shan, Myanmar (Burma)",MM
+2025-03-29 23:52:29,2025-03-30 06:22:29,19.65,96.421,7.0,3.4,"Mayandaung Atet, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 23:48:41,2025-03-30 06:18:41,19.801,96.33,10.0,3.2,"Yezin, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 23:27:35,2025-03-30 05:57:35,22.539,96.103,10.0,3.9,"Letpanhla, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 23:11:03,2025-03-30 05:41:03,21.647,96.388,10.0,3.6,"Gwebin, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 22:31:02,2025-03-30 05:01:02,18.686,96.542,10.0,3.6,"Zayatkyi, Bago Region, Myanmar (Burma)",MM
+2025-03-29 21:50:32,2025-03-30 04:20:32,22.89,95.54,10.0,3.5,"Aingbyaunggyaung, Sagaing Region, Myanmar (Burma)",MM
+2025-03-29 21:28:58,2025-03-30 03:58:58,20.062,97.92,2.0,2.2,"Wan Kongpao, Shan, Myanmar (Burma)",MM
+2025-03-29 21:09:54,2025-03-30 03:39:54,22.68,95.97,10.0,3.4,,MM
+2025-03-29 21:03:35,2025-03-30 03:33:35,18.498,96.48,14.0,2.9,"Phyu, Bago Region, Myanmar (Burma)",MM
+2025-03-29 20:48:58,2025-03-30 03:18:58,21.777,96.403,10.0,3.7,"Shwegyaung, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 20:25:35,2025-03-30 02:55:35,19.691,96.48,10.0,2.8,"Koywa, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 20:08:52,2025-03-30 02:38:52,19.191,96.519,10.0,3.0,"Karenchaung, Bago Region, Myanmar (Burma)",MM
+2025-03-29 20:04:38,2025-03-30 02:34:38,19.283,96.533,10.0,3.1,"Pebo, Kayin State, Myanmar (Burma)",MM
+2025-03-29 19:44:51,2025-03-30 02:14:51,19.822,97.76,11.0,2.3,"Ta-hsopteng, Shan, Myanmar (Burma)",MM
+2025-03-29 19:30:50,2025-03-30 02:00:50,19.457,97.449,10.0,3.6,"Dawhkaw-aw, Kayah State, Myanmar (Burma)",MM
+2025-03-29 19:09:14,2025-03-30 01:39:14,18.658,96.567,9.0,2.8,"Zayatkyi, Bago Region, Myanmar (Burma)",MM
+2025-03-29 19:05:44,2025-03-30 01:35:44,18.622,96.438,10.0,2.7,Oktwin Township,MM
+2025-03-29 18:04:21,2025-03-30 00:34:21,20.36,96.671,19.0,3.3,"Bampin, Shan, Myanmar (Burma)",MM
+2025-03-29 17:11:35,2025-03-29 23:41:35,18.714,96.507,16.0,3.3,,MM
+2025-03-29 17:02:28,2025-03-29 23:32:28,19.039,96.459,10.0,2.8,"Kaytumati, Bago Region, Myanmar (Burma)",MM
+2025-03-29 17:00:59,2025-03-29 23:30:59,18.749,96.47,10.0,3.3,,MM
+2025-03-29 16:54:41,2025-03-29 23:24:41,21.11,95.93,10.0,3.8,"Paukkan, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 16:32:50,2025-03-29 23:02:50,20.048,96.321,10.0,3.6,"Kintha, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 16:21:46,2025-03-29 22:51:46,21.69,96.171,8.0,3.3,"Bellin, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 16:13:16,2025-03-29 22:43:16,21.83,96.011,10.0,3.7,"Ye Lun Kyaw, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 15:28:37,2025-03-29 21:58:37,17.356,97.673,5.0,3.4,"Myaing Gyi Ngu, Kayin State, Myanmar (Burma)",MM
+2025-03-29 15:22:11,2025-03-29 21:52:11,19.803,96.307,10.0,2.5,"Yezin, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 15:19:18,2025-03-29 21:49:18,19.042,96.318,11.0,2.5,"Kyun Kone, Bago Region, Myanmar (Burma)",MM
+2025-03-29 14:59:23,2025-03-29 21:29:23,19.29,96.347,21.0,2.6,"Sibaing, Bago Region, Myanmar (Burma)",MM
+2025-03-29 14:48:40,2025-03-29 21:18:40,21.901,96.367,2.0,3.5,"Yatanarpon Cyber City, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 14:44:31,2025-03-29 21:14:31,18.182,96.619,19.0,2.9,"Kyauktaga, Bago Region, Myanmar (Burma)",MM
+2025-03-29 14:27:39,2025-03-29 20:57:39,20.83,96.208,10.0,3.2,"Hlaingdet, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 14:27:04,2025-03-29 20:57:04,19.707,97.802,10.0,1.8,"Kiu-neng, Shan, Myanmar (Burma)",MM
+2025-03-29 14:11:45,2025-03-29 20:41:45,19.595,96.396,10.0,2.6,"Seikuhudaung, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 13:47:26,2025-03-29 20:17:26,19.098,96.49,10.0,3.0,"Kanbin, Bago Region, Myanmar (Burma)",MM
+2025-03-29 13:32:38,2025-03-29 20:02:38,21.25,95.79,10.0,3.7,"Aungtha North, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 13:28:51,2025-03-29 19:58:51,18.879,96.463,10.0,2.7,"Taungoo, Bago Region, Myanmar (Burma)",MM
+2025-03-29 13:25:52,2025-03-29 19:55:52,19.643,97.819,1.0,1.9,"Daw Pawtu, Kayah State, Myanmar (Burma)",MM
+2025-03-29 12:56:05,2025-03-29 19:26:05,18.11,96.637,10.0,2.7,"Babugon, Bago Region, Myanmar (Burma)",MM
+2025-03-29 12:48:43,2025-03-29 19:18:43,19.997,98.333,10.0,1.9,"Wan Umlong, Shan, Myanmar (Burma)",MM
+2025-03-29 12:26:47,2025-03-29 18:56:47,18.828,96.512,10.0,2.6,"Tabye, Bago Region, Myanmar (Burma)",MM
+2025-03-29 12:22:18,2025-03-29 18:52:18,19.241,96.695,10.0,2.4,"Dedako, Kayin State, Myanmar (Burma)",MM
+2025-03-29 11:45:52,2025-03-29 18:15:52,19.2,96.395,10.0,2.7,"Hnawpin, Bago Region, Myanmar (Burma)",MM
+2025-03-29 11:41:32,2025-03-29 18:11:32,20.132,96.243,10.0,3.5,"Tatkon, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 11:38:31,2025-03-29 18:08:31,21.683,96.404,10.0,3.9,"Gwebin, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 11:17:48,2025-03-29 17:47:48,18.953,96.512,10.0,2.4,"Taungoo, Bago Region, Myanmar (Burma)",MM
+2025-03-29 10:46:24,2025-03-29 17:16:24,19.842,96.365,10.0,3.1,"Yezin, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 10:41:36,2025-03-29 17:11:36,19.096,96.517,10.0,3.0,"Thandaung, Kayin State, Myanmar (Burma)",MM
+2025-03-29 10:12:01,2025-03-29 16:42:01,19.079,96.588,10.0,3.4,"Thandaung, Kayin State, Myanmar (Burma)",MM
+2025-03-29 10:01:32,2025-03-29 16:31:32,18.869,96.482,10.0,3.2,"Htantabin, Bago Region, Myanmar (Burma)",MM
+2025-03-29 09:58:32,2025-03-29 16:28:32,19.023,97.456,1.0,2.3,"Ho-hwè-ko-sa-pa, Kayah State, Myanmar (Burma)",MM
+2025-03-29 09:20:47,2025-03-29 15:50:47,19.6791,96.0858,2.9,5.1,"Dekkhina Thiri, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 09:14:53,2025-03-29 15:44:53,18.995,96.491,10.0,2.8,"Taungoo, Bago Region, Myanmar (Burma)",MM
+2025-03-29 09:00:27,2025-03-29 15:30:27,18.728,96.526,10.0,2.9,"Zayatkyi, Bago Region, Myanmar (Burma)",MM
+2025-03-29 08:05:09,2025-03-29 14:35:09,19.941,98.192,3.0,2.2,"Wan Hsa-mu, Shan, Myanmar (Burma)",MM
+2025-03-29 07:59:55,2025-03-29 14:29:55,19.668,96.385,10.0,3.2,"Mayandaung Auk, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 07:23:55,2025-03-29 13:53:55,19.256,96.445,10.0,3.0,"Hnawpin, Bago Region, Myanmar (Burma)",MM
+2025-03-29 07:02:57,2025-03-29 13:32:57,19.264,96.441,10.0,3.5,"Sibaing, Bago Region, Myanmar (Burma)",MM
+2025-03-29 06:38:50,2025-03-29 13:08:50,19.188,96.513,10.0,3.0,"Karenchaung, Bago Region, Myanmar (Burma)",MM
+2025-03-29 06:23:59,2025-03-29 12:53:59,21.18,95.82,27.0,4.3,"Pindale, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 05:56:31,2025-03-29 12:26:31,21.402,98.441,12.0,3.0,"Hsaihkao, Shan, Myanmar (Burma)",MM
+2025-03-29 05:17:16,2025-03-29 11:47:16,19.271,96.327,10.0,3.6,Swar Wa Pauk,MM
+2025-03-29 05:03:48,2025-03-29 11:33:48,19.214,96.398,10.0,3.1,"Hnawpin, Bago Region, Myanmar (Burma)",MM
+2025-03-29 04:41:45,2025-03-29 11:11:45,18.788,96.489,10.0,2.9,,MM
+2025-03-29 04:26:26,2025-03-29 10:56:26,18.685,96.628,10.0,3.5,,MM
+2025-03-29 03:48:00,2025-03-29 10:18:00,19.923,96.577,10.0,3.3,"Thabyegon, Shan, Myanmar (Burma)",MM
+2025-03-29 03:42:50,2025-03-29 10:12:50,19.417,96.412,10.0,3.0,,MM
+2025-03-29 03:28:20,2025-03-29 09:58:20,18.696,96.3,10.0,2.8,"Bon Chaung, Bago Region, Myanmar (Burma)",MM
+2025-03-29 03:19:16,2025-03-29 09:49:16,20.182,95.737,10.0,3.6,"Shwebon, Magway Region, Myanmar (Burma)",MM
+2025-03-29 03:14:11,2025-03-29 09:44:11,19.404,96.56,10.0,2.9,"Keykadaw, Kayin State, Myanmar (Burma)",MM
+2025-03-29 02:39:26,2025-03-29 09:09:26,19.867,96.341,10.0,3.3,"Yebyaungbyan, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 02:23:36,2025-03-29 08:53:36,18.79,97.422,1.0,2.4,"Hwè Papük, Kayah State, Myanmar (Burma)",MM
+2025-03-29 02:08:28,2025-03-29 08:38:28,19.53,97.717,13.0,2.7,,MM
+2025-03-29 01:53:09,2025-03-29 08:23:09,18.834,96.58,3.0,3.1,,MM
+2025-03-29 01:46:00,2025-03-29 08:16:00,21.658,96.28,10.0,3.7,"Kado, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 01:38:37,2025-03-29 08:08:37,20.127,97.765,4.0,3.1,"Mawkmai, Shan, Myanmar (Burma)",MM
+2025-03-29 01:32:58,2025-03-29 08:02:58,19.881,96.317,10.0,3.0,"Shanywa (deserted), Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-29 01:20:15,2025-03-29 07:50:15,20.643,95.988,10.0,3.8,Pyawbwe Township,MM
+2025-03-29 01:15:17,2025-03-29 07:45:17,18.547,96.427,10.0,3.3,"Zeyawaddy, Bago Region, Myanmar (Burma)",MM
+2025-03-29 00:41:15,2025-03-29 07:11:15,20.481,96.299,10.0,3.8,"Nankwe, Mandalay Region, Myanmar (Burma)",MM
+2025-03-29 00:25:06,2025-03-29 06:55:06,18.7,96.704,2.0,3.4,"Alesengyaung, Kayin State, Myanmar (Burma)",MM
+2025-03-29 00:19:04,2025-03-29 06:49:04,19.497,97.589,1.0,2.3,"Hsop Mè-la-yu, Kayah State, Myanmar (Burma)",MM
+2025-03-29 00:12:17,2025-03-29 06:42:17,17.984,97.571,1.0,3.1,Hpapun Township,MM
+2025-03-28 23:59:49,2025-03-29 06:29:49,22.138,95.94,10.0,3.6,"Tahlaing, Sagaing Region, Myanmar (Burma)",MM
+2025-03-28 22:15:02,2025-03-29 04:45:02,18.34,96.458,10.0,3.1,"Ka Nyut Kwin, Bago Region, Myanmar (Burma)",MM
+2025-03-28 22:06:34,2025-03-29 04:36:34,21.661,96.375,10.0,3.4,"Gwebin, Mandalay Region, Myanmar (Burma)",MM
+2025-03-28 21:47:35,2025-03-29 04:17:35,19.385,96.602,5.0,2.8,"Keykadaw, Kayin State, Myanmar (Burma)",MM
+2025-03-28 21:38:59,2025-03-29 04:08:59,19.925,98.023,2.0,2.8,"Ta Ho-pong, Shan, Myanmar (Burma)",MM
+2025-03-28 21:34:40,2025-03-29 04:04:40,19.861,97.975,1.0,2.4,"Pang Tae Waet, Shan, Myanmar (Burma)",MM
+2025-03-28 21:30:24,2025-03-29 04:00:24,19.815,98.025,1.0,1.9,,MM
+2025-03-28 21:26:37,2025-03-29 03:56:37,19.209,96.425,10.0,2.8,"Hnawpin, Bago Region, Myanmar (Burma)",MM
+2025-03-28 21:23:28,2025-03-29 03:53:28,20.976,96.336,10.0,3.3,"Patchaung, Shan, Myanmar (Burma)",MM
+2025-03-28 21:11:56,2025-03-29 03:41:56,19.839,98.114,1.0,2.2,,MM
+2025-03-28 21:01:33,2025-03-29 03:31:33,19.899,98.011,10.0,2.0,"Ta Ho-pong, Shan, Myanmar (Burma)",MM
+2025-03-28 20:50:24,2025-03-29 03:20:24,19.737,96.279,10.0,2.9,"Thegyun, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-28 20:49:12,2025-03-29 03:19:12,19.205,96.214,10.0,2.8,"Baungdok, Bago Region, Myanmar (Burma)",MM
+2025-03-28 20:45:30,2025-03-29 03:15:30,18.943,96.783,10.0,2.2,"ဘောဂလိမြို့, ကရင်ပြည်နယ်, Myanmar (Burma)",MM
+2025-03-28 20:39:45,2025-03-29 03:09:45,18.61,96.805,10.0,2.3,"Awa-ein, Kayin State, Myanmar (Burma)",MM
+2025-03-28 20:16:44,2025-03-29 02:46:44,21.6,94.95,10.0,3.6,"Myaing, Magway Region, Myanmar (Burma)",MM
+2025-03-28 19:53:17,2025-03-29 02:23:17,19.274,96.512,10.0,2.7,"Pebo, Kayin State, Myanmar (Burma)",MM
+2025-03-28 19:46:54,2025-03-29 02:16:54,15.546,98.414,1.0,1.4,"Thabyu, Kayin State, Myanmar (Burma)",MM
+2025-03-28 19:24:52,2025-03-29 01:54:52,19.071,96.543,10.0,2.6,"Thandaung, Kayin State, Myanmar (Burma)",MM
+2025-03-28 19:13:29,2025-03-29 01:43:29,20.15,97.952,10.0,1.7,"Wan Hwè-ning, Shan, Myanmar (Burma)",MM
+2025-03-28 18:54:06,2025-03-29 01:24:06,22.243,96.204,10.0,3.6,"Lamaing, Mandalay Region, Myanmar (Burma)",MM
+2025-03-28 18:44:33,2025-03-29 01:14:33,19.842,96.294,10.0,3.1,"Yezin, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-28 18:40:20,2025-03-29 01:10:20,19.853,97.977,1.0,2.1,"Pang Tae Waet, Shan, Myanmar (Burma)",MM
+2025-03-28 18:38:08,2025-03-29 01:08:08,20.107,98.001,4.0,2.4,"Wan Hwè-ning, Shan, Myanmar (Burma)",MM
+2025-03-28 18:26:29,2025-03-29 00:56:29,22.15,95.41,10.0,4.2,"Aungchantha, Sagaing Region, Myanmar (Burma)",MM
+2025-03-28 18:24:33,2025-03-29 00:54:33,19.571,97.717,3.0,1.9,"Daw Pawtu, Kayah State, Myanmar (Burma)",MM
+2025-03-28 18:21:37,2025-03-29 00:51:37,19.267,96.195,10.0,2.6,"Yae Pyar Aye, Bago Region, Myanmar (Burma)",MM
+2025-03-28 18:19:30,2025-03-29 00:49:30,19.894,98.651,3.0,1.7,"Mone Hta, Shan, Myanmar (Burma)",MM
+2025-03-28 18:05:58,2025-03-29 00:35:58,19.219,96.329,10.0,3.5,"Aunggyantha, Bago Region, Myanmar (Burma)",MM
+2025-03-28 18:03:55,2025-03-29 00:33:55,20.487,96.335,10.0,3.4,"Nankwe, Mandalay Region, Myanmar (Burma)",MM
+2025-03-28 17:57:32,2025-03-29 00:27:32,20.138,98.064,1.0,1.8,"Üng-yao, Shan, Myanmar (Burma)",MM
+2025-03-28 17:51:30,2025-03-29 00:21:30,21.829,96.406,10.0,3.8,"Shwegyaung, Mandalay Region, Myanmar (Burma)",MM
+2025-03-28 17:47:02,2025-03-29 00:17:02,21.777,96.269,10.0,3.5,"Hngetkyithaik, Mandalay Region, Myanmar (Burma)",MM
+2025-03-28 17:41:53,2025-03-29 00:11:53,18.742,97.533,1.0,1.7,"Mei Se Nan, Kayah State, Myanmar (Burma)",MM
+2025-03-28 16:46:20,2025-03-28 23:16:20,20.2705,96.0878,10.0,4.5,"Letpan, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-28 16:19:59,2025-03-28 22:49:59,22.87,95.37,10.0,3.6,"ဆိမ့်, စစ်ကိုင်းတိုင်းဒေသကြီး, Myanmar (Burma)",MM
+2025-03-28 16:12:13,2025-03-28 22:42:13,18.03,96.656,10.0,3.3,"Pein Za Loke, Bago Region, Myanmar (Burma)",MM
+2025-03-28 16:04:29,2025-03-28 22:34:29,19.633,97.761,1.0,1.7,"Daw Pawtu, Kayah State, Myanmar (Burma)",MM
+2025-03-28 15:59:41,2025-03-28 22:29:41,18.737,96.613,10.0,2.8,"Alesengyaung, Kayin State, Myanmar (Burma)",MM
+2025-03-28 15:57:43,2025-03-28 22:27:43,18.823,96.277,10.0,3.7,"Letpangon, Bago Region, Myanmar (Burma)",MM
+2025-03-28 15:55:13,2025-03-28 22:25:13,19.546,97.679,2.0,2.4,"Mè-hsa-tè, Kayah State, Myanmar (Burma)",MM
+2025-03-28 15:46:48,2025-03-28 22:16:48,21.163,96.226,10.0,3.5,"Kanzwel, Mandalay Region, Myanmar (Burma)",MM
+2025-03-28 15:41:04,2025-03-28 22:11:04,19.424,97.673,1.0,1.8,"Hwè-yao, Kayah State, Myanmar (Burma)",MM
+2025-03-28 15:36:10,2025-03-28 22:06:10,19.012,96.314,10.0,3.9,"Kyun Kone, Bago Region, Myanmar (Burma)",MM
+2025-03-28 15:27:46,2025-03-28 21:57:46,20.444,97.34,4.0,2.5,"Hsohsa, Shan, Myanmar (Burma)",MM
+2025-03-28 15:17:28,2025-03-28 21:47:28,21.567,96.394,10.0,3.6,"Chaungzon, Mandalay Region, Myanmar (Burma)",MM
+2025-03-28 15:05:00,2025-03-28 21:35:00,19.821,96.227,10.0,3.1,"Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-28 15:03:11,2025-03-28 21:33:11,19.721,96.44,5.0,2.6,"Salu, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-28 14:49:19,2025-03-28 21:19:19,21.9984,95.9659,10.0,4.2,"Mandalay, Burma (Myanmar)",MM
+2025-03-28 14:43:04,2025-03-28 21:13:04,20.113,98.255,2.0,2.2,"Hkonglong, Shan, Myanmar (Burma)",MM
+2025-03-28 14:36:53,2025-03-28 21:06:53,19.859,98.056,2.0,2.3,"Loikwang, Shan, Myanmar (Burma)",MM
+2025-03-28 14:29:48,2025-03-28 20:59:48,19.072,97.436,4.0,2.1,"Ho-hwè-ko-sa-pa, Kayah State, Myanmar (Burma)",MM
+2025-03-28 14:24:32,2025-03-28 20:54:32,18.593,97.289,1.0,2.4,"Dwedo, Kayin State, Myanmar (Burma)",MM
+2025-03-28 14:20:17,2025-03-28 20:50:17,18.689,96.61,10.0,2.7,"Zayatkyi, Bago Region, Myanmar (Burma)",MM
+2025-03-28 14:11:30,2025-03-28 20:41:30,19.863,96.047,10.0,2.8,"Kyweshin, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-28 13:56:58,2025-03-28 20:26:58,18.943,96.491,10.0,3.1,"Taungoo, Bago Region, Myanmar (Burma)",MM
+2025-03-28 13:49:41,2025-03-28 20:19:41,18.675,96.524,37.0,2.6,"Zayatkyi, Bago Region, Myanmar (Burma)",MM
+2025-03-28 13:26:04,2025-03-28 19:56:04,19.514,96.138,10.0,2.8,"Aungtha, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-28 13:18:08,2025-03-28 19:48:08,21.64,96.931,10.0,3.4,"ဝဵင်းမႂ်ႇပႃႇတိုင်း, ရှမ်းပြည်နယ်, Myanmar (Burma)",MM
+2025-03-28 13:17:16,2025-03-28 19:47:16,18.624,96.9,2.0,2.5,"Kanekiywa, Bago Region, Myanmar (Burma)",MM
+2025-03-28 13:11:43,2025-03-28 19:41:43,18.079,96.489,10.0,2.7,"Myo Chaung, Bago Region, Myanmar (Burma)",MM
+2025-03-28 12:52:50,2025-03-28 19:22:50,21.9,94.67,10.0,3.8,"Mintainbin, Sagaing Region, Myanmar (Burma)",MM
+2025-03-28 12:36:50,2025-03-28 19:06:50,20.401,96.179,10.0,3.8,"Yamethin, Mandalay Region, Myanmar (Burma)",MM
+2025-03-28 12:21:56,2025-03-28 18:51:56,22.0108,95.9699,10.0,4.6,"Mandalay, Burma (Myanmar)",MM
+2025-03-28 12:13:55,2025-03-28 18:43:55,19.074,96.689,1.0,2.9,"Than Daung Gyi, Kayin State, Myanmar (Burma)",MM
+2025-03-28 12:09:57,2025-03-28 18:39:57,18.277,97.391,1.0,2.4,"Klothuhta Zayat, Kayin State, Myanmar (Burma)",MM
+2025-03-28 11:57:53,2025-03-28 18:27:53,19.78,98.432,10.0,2.9,"Wan Punglong, Shan, Myanmar (Burma)",MM
+2025-03-28 11:16:53,2025-03-28 17:46:53,22.6214,95.8636,18.0,4.5,"Kyauk Myaung, Sagaing Region, Myanmar (Burma)",MM
+2025-03-28 11:16:51,2025-03-28 17:46:51,23.2,96.6,10.0,4.0,"Ninhtauk, Shan, Myanmar (Burma)",MM
+2025-03-28 11:10:55,2025-03-28 17:40:55,19.214,96.3,10.0,3.3,"Baungdok, Bago Region, Myanmar (Burma)",MM
+2025-03-28 10:53:25,2025-03-28 17:23:25,19.801,97.959,1.0,2.8,"Pang Tae Waet, Shan, Myanmar (Burma)",MM
+2025-03-28 10:50:11,2025-03-28 17:20:11,19.325,96.494,10.0,3.0,"Kyauktaga Auk, Kayin State, Myanmar (Burma)",MM
+2025-03-28 10:28:54,2025-03-28 16:58:54,19.048,96.541,10.0,3.1,"Kanbin, Bago Region, Myanmar (Burma)",MM
+2025-03-28 09:55:36,2025-03-28 16:25:36,19.7619,96.1921,10.0,4.5,"Pyinmana, Burma (Myanmar)",MM
+2025-03-28 09:26:46,2025-03-28 15:56:46,21.6385,97.7004,10.0,4.1,"Loiham, Shan, Myanmar (Burma)",MM
+2025-03-28 09:18:28,2025-03-28 15:48:28,23.5224,95.3699,10.0,4.4,"Inma, Sagaing Region, Myanmar (Burma)",MM
+2025-03-28 09:11:46,2025-03-28 15:41:46,19.925,96.377,10.0,3.8,"Yebyaungbyan, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-28 08:52:00,2025-03-28 15:22:00,19.007,96.518,10.0,3.8,"Taungoo, Bago Region, Myanmar (Burma)",MM
+2025-03-28 08:45:57,2025-03-28 15:15:57,19.366,96.389,10.0,3.7,"Thagaya, Bago Region, Myanmar (Burma)",MM
+2025-03-28 07:57:00,2025-03-28 14:27:00,22.4788,95.8756,10.0,4.5,"Gwegon, Sagaing Region, Myanmar (Burma)",MM
+2025-03-28 07:50:43,2025-03-28 14:20:43,18.967,96.416,10.0,3.5,"Taungoo, Bago Region, Myanmar (Burma)",MM
+2025-03-28 07:42:36,2025-03-28 14:12:36,20.0222,96.8632,10.0,3.9,"Kawbyin, Bago Region, Myanmar (Burma)",MM
+2025-03-28 07:36:58,2025-03-28 14:06:58,22.7463,95.8757,10.0,4.6,"Shwebo, Myanmar",MM
+2025-03-28 07:33:37,2025-03-28 14:03:37,22.6466,95.7747,10.0,4.4,"Shwebo, Sagaing Region, Myanmar (Burma)",MM
+2025-03-28 07:27:47,2025-03-28 13:57:47,22.7236,95.8606,10.0,4.6,"Shwebo, Burma (Myanmar)",MM
+2025-03-28 06:45:45,2025-03-28 13:15:45,19.3005,96.2925,10.0,4.9,,MM
+2025-03-28 06:42:24,2025-03-28 13:12:24,21.898,95.8365,10.0,4.9,"Letpanzin, Mandalay Region, Myanmar (Burma)",MM
+2025-03-28 06:39:15,2025-03-28 13:09:15,19.9711,95.8212,10.0,4.8,"Kyayebo, Naypyidaw Union Territory, Myanmar (Burma)",MM
+2025-03-28 06:32:04,2025-03-28 13:02:04,21.7073,95.9692,10.0,6.7,"Sagaing, Myanmar",MM
+2025-03-28 06:20:52,2025-03-28 12:50:52,21.9963,95.9258,10.0,7.7,,MM
+2025-03-27 21:17:41,2025-03-28 03:47:41,15.421,94.739,10.0,3.6,,MM
+2025-03-27 12:28:56,2025-03-27 18:58:56,18.667,97.327,10.0,2.0,"Kayah State, Myanmar (Burma)",MM
+2025-03-26 19:05:28,2025-03-27 01:35:28,17.521,95.897,10.0,2.7,"Okekan, Yangon Region, Myanmar (Burma)",MM
+2025-03-26 13:24:34,2025-03-26 19:54:34,21.104,98.477,1.0,2.7,"Keng Hkam, Shan, Myanmar (Burma)",MM
+2025-03-24 18:57:31,2025-03-25 01:27:31,18.102,97.458,1.0,1.6,"Hpapun, Kayin State, Myanmar (Burma)",MM
+2025-03-24 16:22:54,2025-03-24 22:52:54,20.186,98.159,10.0,2.7,"Pongsan, Shan, Myanmar (Burma)",MM
+2025-03-24 13:39:21,2025-03-24 20:09:21,20.376,96.856,10.0,2.8,"Bankan, Shan, Myanmar (Burma)",MM
+2025-03-24 05:46:01,2025-03-24 12:16:01,19.119,96.258,10.0,2.8,"Kyun Kone, Bago Region, Myanmar (Burma)",MM
+2025-03-24 03:16:19,2025-03-24 09:46:19,20.637,98.346,1.0,2.4,"Wan Kengh Kam, Shan, Myanmar (Burma)",MM
+2025-03-23 17:40:56,2025-03-24 00:10:56,20.487,98.653,1.0,1.7,"Wan Hsa-la, Shan, Myanmar (Burma)",MM
+2025-03-23 15:17:34,2025-03-23 21:47:34,20.0,97.939,1.0,2.1,"Ta Ho-pong, Shan, Myanmar (Burma)",MM
+2025-03-20 16:16:10,2025-03-20 22:46:10,18.164,96.488,10.0,2.3,"Zalokkyi, Bago Region, Myanmar (Burma)",MM
+2025-03-19 10:58:16,2025-03-19 17:28:16,18.003,96.467,10.0,3.5,"Baingda, Bago Region, Myanmar (Burma)",MM
+2025-03-19 10:16:26,2025-03-19 16:46:26,17.972,96.477,10.0,3.0,"Baingda, Bago Region, Myanmar (Burma)",MM
+2025-03-19 09:25:37,2025-03-19 15:55:37,17.744,96.468,10.0,2.7,"Aye Thu Kha, Bago Region, Myanmar (Burma)",MM
+2025-03-18 07:48:59,2025-03-18 14:18:59,24.3636,94.8449,107.717,5.1,"Nyaunggon, Sagaing Region, Myanmar (Burma)",MM
+2025-03-16 13:17:52,2025-03-16 19:47:52,21.175,99.25,2.0,2.3,"Mawnkak, Shan, Myanmar (Burma)",MM
+2025-03-16 06:05:45,2025-03-16 12:35:45,21.815,98.564,10.0,3.1,"Wan Pan, Shan, Myanmar (Burma)",MM
+2025-03-15 21:13:53,2025-03-16 03:43:53,22.104,98.806,10.0,2.6,"Pang Yang, Shan, Myanmar (Burma)",MM
+2025-03-15 17:38:06,2025-03-16 00:08:06,21.406,100.714,1.0,2.4,"Bok Hsopnam, Shan, Myanmar (Burma)",MM
+2025-03-15 12:58:17,2025-03-15 19:28:17,21.153,99.602,5.0,2.3,"Shan, Myanmar (Burma)",MM
+2025-03-13 20:07:28,2025-03-14 02:37:28,15.053,96.698,10.0,3.2,Myanmar (Burma),MM
+2025-03-13 18:16:50,2025-03-14 00:46:50,14.998,96.694,10.0,2.9,Myanmar (Burma),MM
+2025-03-13 17:56:18,2025-03-14 00:26:18,14.767,96.376,10.0,3.9,Myanmar (Burma),MM
+2025-03-11 22:58:30,2025-03-12 05:28:30,23.04,93.87,10.0,3.2,"Khitam, Chin State, Myanmar (Burma)",MM
+2025-03-10 21:37:53,2025-03-11 04:07:53,21.192,99.964,1.0,3.1,"Wan Hkang, Shan, Myanmar (Burma)",MM
+2025-03-10 21:09:50,2025-03-11 03:39:50,17.901,95.894,4.0,3.1,"Sanbok, Bago Region, Myanmar (Burma)",MM
+2025-03-10 20:02:58,2025-03-11 02:32:58,21.101,99.575,1.0,2.2,"Pangkawkawm, Shan, Myanmar (Burma)",MM
+2025-03-09 15:58:58,2025-03-09 22:28:58,15.646,96.279,10.0,3.5,Myanmar (Burma),MM
+2025-03-09 07:55:14,2025-03-09 14:25:14,24.9112,95.2946,132.189,4.3,Homalin Township,MM
+2025-03-08 14:02:43,2025-03-08 20:32:43,19.967,97.76,10.0,1.9,"Wān Kongmakpin, Shan, Myanmar (Burma)",MM
+2025-03-08 02:52:27,2025-03-08 09:22:27,23.88,94.44,115.0,3.8,"Yuwa, Sagaing Region, Myanmar (Burma)",MM
+2025-03-07 23:03:35,2025-03-08 05:33:35,23.08,93.98,90.0,4.2,Falam Township,MM
+2025-03-06 21:17:54,2025-03-07 03:47:54,23.92,93.5,10.0,3.2,"Khuaivum, Chin State, Myanmar (Burma)",MM
+2025-03-06 14:48:48,2025-03-06 21:18:48,18.927,96.563,4.0,2.1,"Taungoo, Bago Region, Myanmar (Burma)",MM
+2025-03-05 15:44:04,2025-03-05 22:14:04,21.57,98.609,10.0,3.5,"Ka-lo, Shan, Myanmar (Burma)",MM
+2025-03-05 15:36:18,2025-03-05 22:06:18,21.676,98.555,10.0,3.1,"Wan Hpa, Shan, Myanmar (Burma)",MM
+2025-03-05 14:26:16,2025-03-05 20:56:16,21.576,98.495,10.0,2.6,"Wan Hpakha, Shan, Myanmar (Burma)",MM
+2025-03-05 14:11:37,2025-03-05 20:41:37,21.56,98.636,10.0,2.5,"Wan Ta-sing, Shan, Myanmar (Burma)",MM
+2025-03-05 13:54:02,2025-03-05 20:24:02,21.333,98.747,10.0,3.4,"Wan Kawnghum, Shan, Myanmar (Burma)",MM
+2025-03-05 13:40:02,2025-03-05 20:10:02,21.487,98.603,10.0,3.6,"Hai-leng, Shan, Myanmar (Burma)",MM
+2025-03-05 11:33:06,2025-03-05 18:03:06,21.46,98.587,10.0,3.0,"Holein, Shan, Myanmar (Burma)",MM
+2025-03-05 11:32:17,2025-03-05 18:02:17,24.87,97.088,10.0,3.5,"Tahona, Kachin, Myanmar (Burma)",MM
+2025-03-05 06:50:41,2025-03-05 13:20:41,24.5216,94.635,84.0,4.3,"Dokthida, Sagaing Region, Myanmar (Burma)",MM
+2025-03-05 05:36:35,2025-03-05 12:06:35,24.5929,94.6843,88.558,5.4,,MM
+2025-03-05 04:07:10,2025-03-05 10:37:10,17.322,97.474,10.0,2.9,"Laykay, Mon State, Myanmar (Burma)",MM
+2025-03-04 22:53:55,2025-03-05 05:23:55,17.023,96.003,10.0,3.1,"Htantabin, Yangon Region, Myanmar (Burma)",MM
+2025-03-04 22:50:48,2025-03-05 05:20:48,16.785,95.368,10.0,3.5,"Shwelaung, Ayeyarwady, Myanmar (Burma)",MM
+2025-03-04 22:24:05,2025-03-05 04:54:05,16.7338,95.714,10.0,4.7,"Maubin, Myanmar",MM
+2025-03-04 22:06:43,2025-03-05 04:36:43,16.8522,95.5569,10.0,5.1,"Maubin, Myanmar",MM
+2025-03-03 04:45:49,2025-03-03 11:15:49,24.85,95.93,10.0,4.2,"Meza, Kachin, Myanmar (Burma)",MM
+2025-03-03 03:33:02,2025-03-03 10:03:02,16.322,95.6218,10.0,4.5,"Pyapon, Myanmar",MM
+2025-03-02 04:22:17,2025-03-02 10:52:17,21.165,99.328,5.0,3.3,"Mawnkak, Shan, Myanmar (Burma)",MM
+2025-03-01 14:11:15,2025-03-01 20:41:15,19.564,97.825,5.0,2.7,"Daw Pawtu, Kayah State, Myanmar (Burma)",MM
+2025-03-01 08:57:00,2025-03-01 15:27:00,20.3696,95.0693,118.8,4.2,"Yenangyaung, Myanmar",MM
+2025-03-01 06:23:51,2025-03-01 12:53:51,26.61,95.34,14.0,3.4,"Hkamkaw Langma, Sagaing Region, Myanmar (Burma)",MM
+2025-03-01 03:01:19,2025-03-01 09:31:19,21.028,99.705,2.0,3.3,"Wan Hkang Ho-paw, Shan, Myanmar (Burma)",MM

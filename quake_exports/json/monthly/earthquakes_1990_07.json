@@ -1,0 +1,74 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1990-07-31 08:19:26",
+      "time_mmt": "1990-07-31 14:49:26",
+      "latitude": 24.95,
+      "longitude": 96.469,
+      "depth": 33.0,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1990-07-25 20:10:17",
+      "time_mmt": "1990-07-26 02:40:17",
+      "latitude": 17.791,
+      "longitude": 94.744,
+      "depth": 33.0,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1990-07-13 03:24:05",
+      "time_mmt": "1990-07-13 09:54:05",
+      "latitude": 23.623,
+      "longitude": 94.503,
+      "depth": 106.3,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1990-07-09 13:19:53",
+      "time_mmt": "1990-07-09 19:49:53",
+      "latitude": 15.308,
+      "longitude": 94.029,
+      "depth": 33.0,
+      "mag": 5.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1990-07-05 14:20:51",
+      "time_mmt": "1990-07-05 20:50:51",
+      "latitude": 22.676,
+      "longitude": 93.952,
+      "depth": 33.0,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1990-07-02 12:41:53",
+      "time_mmt": "1990-07-02 19:11:53",
+      "latitude": 19.56,
+      "longitude": 96.383,
+      "depth": 33.0,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1990-07-02 07:51:20",
+      "time_mmt": "1990-07-02 14:21:20",
+      "latitude": 15.171,
+      "longitude": 94.836,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1985-01-25 20:58:17",
+      "time_mmt": "1985-01-26 03:28:17",
+      "latitude": 23.337,
+      "longitude": 94.479,
+      "depth": 93.1,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1985-01-21 12:57:15",
+      "time_mmt": "1985-01-21 19:27:15",
+      "latitude": 24.765,
+      "longitude": 94.454,
+      "depth": 72.6,
+      "mag": 5.0,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

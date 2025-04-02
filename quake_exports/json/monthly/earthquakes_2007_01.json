@@ -1,0 +1,54 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2007-01-24 11:03:31",
+      "time_mmt": "2007-01-24 17:33:31",
+      "latitude": 24.702,
+      "longitude": 94.491,
+      "depth": 71.4,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-01-21 16:15:37",
+      "time_mmt": "2007-01-21 22:45:37",
+      "latitude": 23.549,
+      "longitude": 94.156,
+      "depth": 73.6,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-01-21 02:48:24",
+      "time_mmt": "2007-01-21 09:18:24",
+      "latitude": 22.56,
+      "longitude": 93.065,
+      "depth": 50.5,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-01-09 05:27:22",
+      "time_mmt": "2007-01-09 11:57:22",
+      "latitude": 19.193,
+      "longitude": 95.294,
+      "depth": 104.4,
+      "mag": 4.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-01-07 10:47:06",
+      "time_mmt": "2007-01-07 17:17:06",
+      "latitude": 22.023,
+      "longitude": 98.201,
+      "depth": 10.0,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

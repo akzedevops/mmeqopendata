@@ -1,0 +1,284 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2017-04-24 10:53:46",
+      "time_mmt": "2017-04-24 17:23:46",
+      "latitude": 23.4,
+      "longitude": 94.1,
+      "depth": 70.0,
+      "mag": 4.3,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-18 09:13:12",
+      "time_mmt": "2017-04-18 15:43:12",
+      "latitude": 20.9,
+      "longitude": 100.29,
+      "depth": 10.0,
+      "mag": 4.8,
+      "location": "Mong Lin, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 11:41:06",
+      "time_mmt": "2017-04-14 18:11:06",
+      "latitude": 16.24,
+      "longitude": 97.86,
+      "depth": 15.0,
+      "mag": 3.5,
+      "location": "Kada, Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 11:37:30",
+      "time_mmt": "2017-04-14 18:07:30",
+      "latitude": 16.17,
+      "longitude": 97.56,
+      "depth": 11.0,
+      "mag": 3.6,
+      "location": "Kyaikkhami, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 11:22:04",
+      "time_mmt": "2017-04-14 17:52:04",
+      "latitude": 16.11,
+      "longitude": 97.35,
+      "depth": 7.0,
+      "mag": 3.6,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 10:13:56",
+      "time_mmt": "2017-04-14 16:43:56",
+      "latitude": 16.19,
+      "longitude": 95.21,
+      "depth": 52.0,
+      "mag": 4.0,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 10:07:49",
+      "time_mmt": "2017-04-14 16:37:49",
+      "latitude": 15.98,
+      "longitude": 96.58,
+      "depth": 51.0,
+      "mag": 3.9,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 09:20:09",
+      "time_mmt": "2017-04-14 15:50:09",
+      "latitude": 16.26,
+      "longitude": 95.2,
+      "depth": 20.0,
+      "mag": 4.0,
+      "location": "Ayeyarwady, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 08:16:27",
+      "time_mmt": "2017-04-14 14:46:27",
+      "latitude": 15.91,
+      "longitude": 94.97,
+      "depth": 16.0,
+      "mag": 3.8,
+      "location": "Ayeyarwady, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 06:10:25",
+      "time_mmt": "2017-04-14 12:40:25",
+      "latitude": 16.44,
+      "longitude": 98.43,
+      "depth": 6.0,
+      "mag": 3.5,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 02:45:32",
+      "time_mmt": "2017-04-14 09:15:32",
+      "latitude": 16.27,
+      "longitude": 97.65,
+      "depth": 47.0,
+      "mag": 3.2,
+      "location": "Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 01:47:47",
+      "time_mmt": "2017-04-14 08:17:47",
+      "latitude": 16.19,
+      "longitude": 97.53,
+      "depth": 35.0,
+      "mag": 3.0,
+      "location": "Kwinkalein, Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-14 01:44:20",
+      "time_mmt": "2017-04-14 08:14:20",
+      "latitude": 16.17,
+      "longitude": 97.55,
+      "depth": 23.0,
+      "mag": 3.8,
+      "location": "Kyaikkhami, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 23:59:14",
+      "time_mmt": "2017-04-14 06:29:14",
+      "latitude": 17.43,
+      "longitude": 94.6,
+      "depth": 137.0,
+      "mag": 3.4,
+      "location": "Rakhine, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 23:37:34",
+      "time_mmt": "2017-04-14 06:07:34",
+      "latitude": 16.73,
+      "longitude": 94.92,
+      "depth": 4.0,
+      "mag": 3.5,
+      "location": "Ayeyarwady, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 22:40:35",
+      "time_mmt": "2017-04-14 05:10:35",
+      "latitude": 17.74,
+      "longitude": 94.89,
+      "depth": 132.0,
+      "mag": 3.8,
+      "location": "Ayeyarwady, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 21:51:56",
+      "time_mmt": "2017-04-14 04:21:56",
+      "latitude": 16.21,
+      "longitude": 97.9,
+      "depth": 6.0,
+      "mag": 3.6,
+      "location": "Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 20:39:23",
+      "time_mmt": "2017-04-14 03:09:23",
+      "latitude": 15.74,
+      "longitude": 96.36,
+      "depth": 28.0,
+      "mag": 3.8,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 20:25:31",
+      "time_mmt": "2017-04-14 02:55:31",
+      "latitude": 16.3,
+      "longitude": 98.23,
+      "depth": 12.0,
+      "mag": 3.6,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 20:24:54",
+      "time_mmt": "2017-04-14 02:54:54",
+      "latitude": 16.3,
+      "longitude": 98.26,
+      "depth": 11.0,
+      "mag": 3.4,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 19:25:54",
+      "time_mmt": "2017-04-14 01:55:54",
+      "latitude": 15.74,
+      "longitude": 96.61,
+      "depth": 26.0,
+      "mag": 3.9,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 18:23:49",
+      "time_mmt": "2017-04-14 00:53:49",
+      "latitude": 16.1,
+      "longitude": 97.74,
+      "depth": 20.0,
+      "mag": 3.4,
+      "location": "Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 13:07:52",
+      "time_mmt": "2017-04-13 19:37:52",
+      "latitude": 16.15,
+      "longitude": 98.39,
+      "depth": 4.0,
+      "mag": 3.6,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 11:50:20",
+      "time_mmt": "2017-04-13 18:20:20",
+      "latitude": 16.74,
+      "longitude": 94.36,
+      "depth": 120.0,
+      "mag": 4.0,
+      "location": "Sinma, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 11:38:08",
+      "time_mmt": "2017-04-13 18:08:08",
+      "latitude": 16.2,
+      "longitude": 97.53,
+      "depth": 30.0,
+      "mag": 3.4,
+      "location": "Kwinkalein, Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 11:12:11",
+      "time_mmt": "2017-04-13 17:42:11",
+      "latitude": 16.62,
+      "longitude": 98.44,
+      "depth": 42.0,
+      "mag": 2.9,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-13 11:09:25",
+      "time_mmt": "2017-04-13 17:39:25",
+      "latitude": 16.21,
+      "longitude": 97.23,
+      "depth": 29.0,
+      "mag": 3.1,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-04-12 17:34:33",
+      "time_mmt": "2017-04-13 00:04:33",
+      "latitude": 23.9,
+      "longitude": 93.9,
+      "depth": 10.0,
+      "mag": 3.2,
+      "location": "Chin State, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

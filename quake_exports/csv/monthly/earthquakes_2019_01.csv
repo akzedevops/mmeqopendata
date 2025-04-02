@@ -1,0 +1,4 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2019-01-28 03:52:39,2019-01-28 10:22:39,18.31,96.08,30.0,4.5,"Pyu, Burma",MM
+2019-01-25 14:29:05,2019-01-25 20:59:05,24.03,94.96,40.0,4.6,"Sagaing Region, Myanmar (Burma)",MM
+2019-01-16 21:39:35,2019-01-17 04:09:35,24.81,96.35,10.0,4.9,"Kachin, Myanmar (Burma)",MM

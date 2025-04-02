@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2016-10-26 02:21:59",
+      "time_mmt": "2016-10-26 08:51:59",
+      "latitude": 22.8923,
+      "longitude": 94.5887,
+      "depth": 110.08,
+      "mag": 5.0,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-10-11 17:41:01",
+      "time_mmt": "2016-10-12 00:11:01",
+      "latitude": 24.8327,
+      "longitude": 96.2656,
+      "depth": 32.52,
+      "mag": 4.5,
+      "location": "Kachin, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-10-11 07:30:14",
+      "time_mmt": "2016-10-11 14:00:14",
+      "latitude": 25.1998,
+      "longitude": 95.044,
+      "depth": 97.47,
+      "mag": 4.7,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-10-07 19:28:35",
+      "time_mmt": "2016-10-08 01:58:35",
+      "latitude": 22.87,
+      "longitude": 94.25,
+      "depth": 10.0,
+      "mag": 4.5,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

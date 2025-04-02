@@ -1,0 +1,64 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1991-03-27 22:08:04",
+      "time_mmt": "1991-03-28 04:38:04",
+      "latitude": 26.318,
+      "longitude": 97.226,
+      "depth": 33.0,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-03-27 18:30:58",
+      "time_mmt": "1991-03-28 01:00:58",
+      "latitude": 15.755,
+      "longitude": 95.705,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-03-27 05:00:16",
+      "time_mmt": "1991-03-27 11:30:16",
+      "latitude": 15.693,
+      "longitude": 96.188,
+      "depth": 33.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-03-11 07:54:34",
+      "time_mmt": "1991-03-11 14:24:34",
+      "latitude": 24.151,
+      "longitude": 95.923,
+      "depth": 33.0,
+      "mag": 3.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-03-07 20:58:48",
+      "time_mmt": "1991-03-08 03:28:48",
+      "latitude": 25.031,
+      "longitude": 95.337,
+      "depth": 109.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1991-03-01 14:00:13",
+      "time_mmt": "1991-03-01 20:30:13",
+      "latitude": 23.816,
+      "longitude": 95.878,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

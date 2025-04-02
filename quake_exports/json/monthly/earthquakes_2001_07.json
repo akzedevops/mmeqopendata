@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2001-07-17 02:45:01",
+      "time_mmt": "2001-07-17 09:15:01",
+      "latitude": 20.726,
+      "longitude": 92.687,
+      "depth": 33.0,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

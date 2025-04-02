@@ -1,0 +1,5 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2017-07-17 20:20:26,2017-07-18 02:50:26,24.9,95.0,113.0,4.0,"Sagaing Region, Myanmar (Burma)",MM
+2017-07-13 05:03:31,2017-07-13 11:33:31,23.49,94.51,90.0,4.8,"Sagaing Region, Myanmar (Burma)",MM
+2017-07-02 05:27:44,2017-07-02 11:57:44,24.32,94.64,80.0,4.7,"Sagaing Region, Myanmar (Burma)",MM
+2017-07-01 07:01:15,2017-07-01 13:31:15,23.79,94.69,100.0,5.0,"Sagaing Region, Myanmar (Burma)",MM

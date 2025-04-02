@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1978-01-08 06:32:58",
+      "time_mmt": "1978-01-08 13:02:58",
+      "latitude": 24.759,
+      "longitude": 95.172,
+      "depth": 100.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

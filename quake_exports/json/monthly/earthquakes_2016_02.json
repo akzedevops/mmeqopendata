@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2016-02-08 11:05:56",
+      "time_mmt": "2016-02-08 17:35:56",
+      "latitude": 24.7,
+      "longitude": 94.6,
+      "depth": 118.0,
+      "mag": 3.8,
+      "location": "Ongjia, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-02-07 23:31:09",
+      "time_mmt": "2016-02-08 06:01:09",
+      "latitude": 27.24,
+      "longitude": 98.42,
+      "depth": 20.0,
+      "mag": 4.5,
+      "location": "Kachin, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-02-07 23:31:01",
+      "time_mmt": "2016-02-08 06:01:01",
+      "latitude": 25.95,
+      "longitude": 99.39,
+      "depth": 60.0,
+      "mag": 4.8,
+      "location": "Kachin, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-02-01 19:48:37",
+      "time_mmt": "2016-02-02 02:18:37",
+      "latitude": 23.8,
+      "longitude": 93.8,
+      "depth": 111.0,
+      "mag": 3.8,
+      "location": "Chin State, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

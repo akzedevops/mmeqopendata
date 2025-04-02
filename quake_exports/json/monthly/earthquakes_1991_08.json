@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1991-08-04 12:38:24",
+      "time_mmt": "1991-08-04 19:08:24",
+      "latitude": 23.888,
+      "longitude": 95.859,
+      "depth": 42.6,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

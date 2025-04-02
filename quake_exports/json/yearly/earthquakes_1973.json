@@ -1,0 +1,124 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1973-03-24 00:27:32",
+      "time_mmt": "1973-03-24 06:57:32",
+      "latitude": 21.624,
+      "longitude": 98.323,
+      "depth": 33.0,
+      "mag": 4.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-02-10 04:25:29",
+      "time_mmt": "1973-02-10 10:55:29",
+      "latitude": 24.34,
+      "longitude": 94.413,
+      "depth": 74.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-06-01 13:03:01",
+      "time_mmt": "1973-06-01 19:33:01",
+      "latitude": 25.197,
+      "longitude": 98.579,
+      "depth": 33.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-05-23 01:57:53",
+      "time_mmt": "1973-05-23 08:27:53",
+      "latitude": 24.321,
+      "longitude": 94.852,
+      "depth": 63.0,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-07-31 21:06:14",
+      "time_mmt": "1973-08-01 03:36:14",
+      "latitude": 27.256,
+      "longitude": 97.092,
+      "depth": 33.0,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-07-27 20:23:50",
+      "time_mmt": "1973-07-28 02:53:50",
+      "latitude": 23.334,
+      "longitude": 94.51,
+      "depth": 79.0,
+      "mag": 5.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-07-12 21:31:03",
+      "time_mmt": "1973-07-13 04:01:03",
+      "latitude": 24.152,
+      "longitude": 95.035,
+      "depth": 135.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-07-04 21:04:46",
+      "time_mmt": "1973-07-05 03:34:46",
+      "latitude": 23.612,
+      "longitude": 94.841,
+      "depth": 127.0,
+      "mag": 5.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-08-15 09:00:54",
+      "time_mmt": "1973-08-15 15:30:54",
+      "latitude": 26.417,
+      "longitude": 95.472,
+      "depth": 41.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-10-30 02:45:00",
+      "time_mmt": "1973-10-30 09:15:00",
+      "latitude": 20.928,
+      "longitude": 93.215,
+      "depth": 32.0,
+      "mag": 4.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-12-26 01:42:21",
+      "time_mmt": "1973-12-26 08:12:21",
+      "latitude": 22.484,
+      "longitude": 93.363,
+      "depth": 50.0,
+      "mag": 5.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1973-12-04 12:48:50",
+      "time_mmt": "1973-12-04 19:18:50",
+      "latitude": 22.637,
+      "longitude": 94.056,
+      "depth": 63.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

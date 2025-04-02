@@ -1,0 +1,34 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2001-01-28 11:55:56",
+      "time_mmt": "2001-01-28 18:25:56",
+      "latitude": 23.021,
+      "longitude": 94.342,
+      "depth": 80.9,
+      "mag": 3.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2001-01-14 09:55:46",
+      "time_mmt": "2001-01-14 16:25:46",
+      "latitude": 22.227,
+      "longitude": 94.778,
+      "depth": 131.7,
+      "mag": 3.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2001-01-04 04:03:04",
+      "time_mmt": "2001-01-04 10:33:04",
+      "latitude": 21.172,
+      "longitude": 98.454,
+      "depth": 64.4,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

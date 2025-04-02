@@ -1,0 +1,6 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2016-07-29 14:02:55,2016-07-29 20:32:55,21.86,99.43,30.0,4.9,"Shan, Myanmar (Burma)",MM
+2016-07-27 04:20:28,2016-07-27 10:50:28,21.5851,94.6049,97.54,4.9,"Magway Region, Myanmar (Burma)",MM
+2016-07-20 03:23:43,2016-07-20 09:53:43,22.78,94.44,92.0,4.2,"Sagaing Region, Myanmar (Burma)",MM
+2016-07-05 09:43:44,2016-07-05 16:13:44,24.8082,95.2124,98.55,4.4,"Sagaing Region, Myanmar (Burma)",MM
+2016-07-01 19:22:40,2016-07-02 01:52:40,24.9506,95.3854,132.32,4.5,"Nawngpu-Awng, Sagaing Region, Myanmar (Burma)",MM

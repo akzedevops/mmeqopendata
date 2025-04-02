@@ -1,0 +1,114 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2007-04-29 22:24:48",
+      "time_mmt": "2007-04-30 04:54:48",
+      "latitude": 18.446,
+      "longitude": 94.312,
+      "depth": 56.6,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-04-29 18:40:10",
+      "time_mmt": "2007-04-30 01:10:10",
+      "latitude": 16.436,
+      "longitude": 94.057,
+      "depth": 31.5,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-04-26 05:23:49",
+      "time_mmt": "2007-04-26 11:53:49",
+      "latitude": 15.529,
+      "longitude": 96.151,
+      "depth": 31.6,
+      "mag": 4.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-04-25 18:35:35",
+      "time_mmt": "2007-04-26 01:05:35",
+      "latitude": 15.531,
+      "longitude": 96.209,
+      "depth": 10.0,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-04-25 17:49:25",
+      "time_mmt": "2007-04-26 00:19:25",
+      "latitude": 15.649,
+      "longitude": 96.386,
+      "depth": 58.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-04-19 10:43:15",
+      "time_mmt": "2007-04-19 17:13:15",
+      "latitude": 17.712,
+      "longitude": 96.174,
+      "depth": 10.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-04-16 17:02:54",
+      "time_mmt": "2007-04-16 23:32:54",
+      "latitude": 20.442,
+      "longitude": 95.955,
+      "depth": 23.1,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-04-10 17:17:07",
+      "time_mmt": "2007-04-10 23:47:07",
+      "latitude": 20.476,
+      "longitude": 93.649,
+      "depth": 60.8,
+      "mag": 0.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-04-10 16:10:14",
+      "time_mmt": "2007-04-10 22:40:14",
+      "latitude": 22.5,
+      "longitude": 94.466,
+      "depth": 83.5,
+      "mag": 3.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-04-05 08:42:16",
+      "time_mmt": "2007-04-05 15:12:16",
+      "latitude": 24.886,
+      "longitude": 95.207,
+      "depth": 125.2,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-04-01 08:21:32",
+      "time_mmt": "2007-04-01 14:51:32",
+      "latitude": 21.513,
+      "longitude": 94.775,
+      "depth": 111.6,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

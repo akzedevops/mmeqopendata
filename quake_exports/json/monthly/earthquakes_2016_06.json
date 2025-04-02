@@ -1,0 +1,44 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2016-06-27 07:22:13",
+      "time_mmt": "2016-06-27 13:52:13",
+      "latitude": 23.3,
+      "longitude": 94.0,
+      "depth": 5.0,
+      "mag": 4.2,
+      "location": "Chin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-06-22 21:55:23",
+      "time_mmt": "2016-06-23 04:25:23",
+      "latitude": 24.5,
+      "longitude": 94.4,
+      "depth": 11.0,
+      "mag": 3.9,
+      "location": "Min Thar, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-06-22 13:03:19",
+      "time_mmt": "2016-06-22 19:33:19",
+      "latitude": 22.73,
+      "longitude": 94.59,
+      "depth": 100.0,
+      "mag": 4.3,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-06-20 08:05:22",
+      "time_mmt": "2016-06-20 14:35:22",
+      "latitude": 20.63,
+      "longitude": 94.11,
+      "depth": 60.0,
+      "mag": 4.8,
+      "location": "Magway Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2016-08-24 10:34:55,2016-08-24 17:04:55,20.9192,94.5789,84.07,6.8,"Magway Region, Myanmar (Burma)",MM
+2016-08-23 02:11:13,2016-08-23 08:41:13,23.8942,94.6945,106.3,5.3,"Sagaing Region, Myanmar (Burma)",MM
+2016-08-01 10:01:08,2016-08-01 16:31:08,21.29,94.91,140.0,5.1,"Mandalay Region, Myanmar (Burma)",MM

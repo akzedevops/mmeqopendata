@@ -1,0 +1,54 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2017-10-27 11:17:44",
+      "time_mmt": "2017-10-27 17:47:44",
+      "latitude": 16.79,
+      "longitude": 96.1,
+      "depth": 20.0,
+      "mag": 3.4,
+      "location": "Gyaungwaing, Yangon Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-10-21 12:19:34",
+      "time_mmt": "2017-10-21 18:49:34",
+      "latitude": 16.27,
+      "longitude": 97.98,
+      "depth": 2.0,
+      "mag": 3.6,
+      "location": "Pathein, Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-10-21 11:53:09",
+      "time_mmt": "2017-10-21 18:23:09",
+      "latitude": 16.14,
+      "longitude": 95.23,
+      "depth": 59.0,
+      "mag": 3.5,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-10-21 11:24:27",
+      "time_mmt": "2017-10-21 17:54:27",
+      "latitude": 16.4,
+      "longitude": 94.87,
+      "depth": 74.0,
+      "mag": 3.7,
+      "location": "Ayeyarwady, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-10-02 18:13:51",
+      "time_mmt": "2017-10-03 00:43:51",
+      "latitude": 21.4218,
+      "longitude": 94.5291,
+      "depth": 96.74,
+      "mag": 4.6,
+      "location": "Magway Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2019-03-27 16:39:21",
+      "time_mmt": "2019-03-27 23:09:21",
+      "latitude": 18.9383,
+      "longitude": 94.3804,
+      "depth": 52.79,
+      "mag": 4.3,
+      "location": "Prome, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-03-25 20:04:46",
+      "time_mmt": "2019-03-26 02:34:46",
+      "latitude": 23.4028,
+      "longitude": 98.4577,
+      "depth": 15.59,
+      "mag": 4.6,
+      "location": "Nansan, China",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-03-25 08:43:23",
+      "time_mmt": "2019-03-25 15:13:23",
+      "latitude": 16.13,
+      "longitude": 97.01,
+      "depth": 10.0,
+      "mag": 3.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-03-20 23:37:42",
+      "time_mmt": "2019-03-21 06:07:42",
+      "latitude": 22.83,
+      "longitude": 93.87,
+      "depth": 40.0,
+      "mag": 4.3,
+      "location": "Chin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-03-18 16:54:30",
+      "time_mmt": "2019-03-18 23:24:30",
+      "latitude": 21.96,
+      "longitude": 94.59,
+      "depth": 100.0,
+      "mag": 4.7,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-03-13 13:44:04",
+      "time_mmt": "2019-03-13 20:14:04",
+      "latitude": 23.0247,
+      "longitude": 93.9379,
+      "depth": 78.57,
+      "mag": 4.5,
+      "location": "Chin State, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

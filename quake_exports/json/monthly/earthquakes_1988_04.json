@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1988-04-11 02:20:39",
+      "time_mmt": "1988-04-11 08:50:39",
+      "latitude": 27.013,
+      "longitude": 97.166,
+      "depth": 33.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

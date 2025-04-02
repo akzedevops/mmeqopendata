@@ -1,0 +1,54 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1989-08-27 15:20:45",
+      "time_mmt": "1989-08-27 21:50:45",
+      "latitude": 20.357,
+      "longitude": 98.813,
+      "depth": 9.4,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1989-08-20 04:42:35",
+      "time_mmt": "1989-08-20 11:12:35",
+      "latitude": 20.273,
+      "longitude": 99.322,
+      "depth": 33.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1989-08-20 04:36:59",
+      "time_mmt": "1989-08-20 11:06:59",
+      "latitude": 20.263,
+      "longitude": 99.163,
+      "depth": 33.0,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1989-08-10 16:49:52",
+      "time_mmt": "1989-08-10 23:19:52",
+      "latitude": 27.679,
+      "longitude": 97.188,
+      "depth": 33.0,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1989-08-09 16:01:25",
+      "time_mmt": "1989-08-09 22:31:25",
+      "latitude": 24.559,
+      "longitude": 94.707,
+      "depth": 85.7,
+      "mag": 5.2,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

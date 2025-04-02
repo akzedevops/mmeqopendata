@@ -1,0 +1,34 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1977-10-17 03:46:49",
+      "time_mmt": "1977-10-17 10:16:49",
+      "latitude": 25.885,
+      "longitude": 98.847,
+      "depth": 33.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1977-10-13 11:32:09",
+      "time_mmt": "1977-10-13 18:02:09",
+      "latitude": 23.484,
+      "longitude": 93.353,
+      "depth": 61.0,
+      "mag": 5.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1977-10-05 17:53:54",
+      "time_mmt": "1977-10-06 00:23:54",
+      "latitude": 26.72,
+      "longitude": 97.385,
+      "depth": 33.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

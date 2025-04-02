@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2010-01-19 00:03:08",
+      "time_mmt": "2010-01-19 06:33:08",
+      "latitude": 20.719,
+      "longitude": 94.809,
+      "depth": 99.7,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

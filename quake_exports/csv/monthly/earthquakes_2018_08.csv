@@ -1,0 +1,5 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2018-08-18 12:03:49,2018-08-18 18:33:49,24.6758,94.7739,85.0,4.5,"Shwe Pyi Aye, Sagaing Region, Myanmar (Burma)",MM
+2018-08-16 11:55:19,2018-08-16 18:25:19,23.94,94.75,100.0,4.8,"Sagaing Region, Myanmar (Burma)",MM
+2018-08-16 06:50:11,2018-08-16 13:20:11,16.0975,96.494,10.0,4.3,Myanmar (Burma),MM
+2018-08-15 18:25:43,2018-08-16 00:55:43,20.87,100.18,10.0,3.7,"Shan, Myanmar (Burma)",MM

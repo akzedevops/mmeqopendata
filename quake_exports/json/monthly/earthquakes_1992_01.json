@@ -1,0 +1,54 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1992-01-30 17:54:19",
+      "time_mmt": "1992-01-31 00:24:19",
+      "latitude": 22.736,
+      "longitude": 93.592,
+      "depth": 73.0,
+      "mag": 4.2,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1992-01-28 03:01:38",
+      "time_mmt": "1992-01-28 09:31:38",
+      "latitude": 21.056,
+      "longitude": 94.739,
+      "depth": 120.3,
+      "mag": 3.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1992-01-25 15:12:31",
+      "time_mmt": "1992-01-25 21:42:31",
+      "latitude": 26.07,
+      "longitude": 98.668,
+      "depth": 33.0,
+      "mag": 4.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1992-01-23 21:48:13",
+      "time_mmt": "1992-01-24 04:18:13",
+      "latitude": 20.377,
+      "longitude": 95.19,
+      "depth": 33.0,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1992-01-05 02:14:16",
+      "time_mmt": "1992-01-05 08:44:16",
+      "latitude": 21.507,
+      "longitude": 94.446,
+      "depth": 96.6,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

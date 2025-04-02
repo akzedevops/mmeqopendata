@@ -1,0 +1,124 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2019-10-29 14:58:44",
+      "time_mmt": "2019-10-29 21:28:44",
+      "latitude": 22.9,
+      "longitude": 93.95,
+      "depth": 0.0,
+      "mag": 4.0,
+      "location": "Zatual, Chin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-25 22:06:20",
+      "time_mmt": "2019-10-26 04:36:20",
+      "latitude": 18.4,
+      "longitude": 96.41,
+      "depth": 0.0,
+      "mag": 2.8,
+      "location": "Kyee Ma Noe, Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-25 22:04:44",
+      "time_mmt": "2019-10-26 04:34:44",
+      "latitude": 18.2,
+      "longitude": 96.22,
+      "depth": 0.0,
+      "mag": 3.4,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-24 15:17:15",
+      "time_mmt": "2019-10-24 21:47:15",
+      "latitude": 19.9,
+      "longitude": 96.92,
+      "depth": 0.0,
+      "mag": 2.9,
+      "location": "Long Pyin, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-24 03:39:22",
+      "time_mmt": "2019-10-24 10:09:22",
+      "latitude": 18.85,
+      "longitude": 95.99,
+      "depth": 0.0,
+      "mag": 3.3,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-23 10:50:45",
+      "time_mmt": "2019-10-23 17:20:45",
+      "latitude": 16.55,
+      "longitude": 98.22,
+      "depth": 0.0,
+      "mag": 2.1,
+      "location": "Kawkareik, Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-22 01:30:40",
+      "time_mmt": "2019-10-22 08:00:40",
+      "latitude": 19.28,
+      "longitude": 95.69,
+      "depth": 10.0,
+      "mag": 4.9,
+      "location": "Khoke Chaung, Magway Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-21 16:11:40",
+      "time_mmt": "2019-10-21 22:41:40",
+      "latitude": 20.15,
+      "longitude": 94.87,
+      "depth": 0.0,
+      "mag": 3.4,
+      "location": "Minbu, Magway Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-20 10:08:17",
+      "time_mmt": "2019-10-20 16:38:17",
+      "latitude": 20.26,
+      "longitude": 97.87,
+      "depth": 0.0,
+      "mag": 2.4,
+      "location": "Wan Tein, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-19 15:49:12",
+      "time_mmt": "2019-10-19 22:19:12",
+      "latitude": 20.53,
+      "longitude": 99.89,
+      "depth": 0.0,
+      "mag": 1.4,
+      "location": "Wan Long, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-18 16:48:10",
+      "time_mmt": "2019-10-18 23:18:10",
+      "latitude": 23.12,
+      "longitude": 94.3,
+      "depth": 80.0,
+      "mag": 4.9,
+      "location": "Inn Din, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-10-16 18:45:41",
+      "time_mmt": "2019-10-17 01:15:41",
+      "latitude": 23.12,
+      "longitude": 94.2,
+      "depth": 67.0,
+      "mag": 4.4,
+      "location": "Thit Chauk, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

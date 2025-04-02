@@ -1,0 +1,14 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2012-04-13 10:11:53",
+      "time_mmt": "2012-04-13 16:41:53",
+      "latitude": 25.244,
+      "longitude": 94.983,
+      "depth": 85.1,
+      "mag": 4.5,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

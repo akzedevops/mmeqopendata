@@ -1,0 +1,13 @@
+time_utc,time_mmt,latitude,longitude,depth,mag,location,country
+2019-10-29 14:58:44,2019-10-29 21:28:44,22.9,93.95,0.0,4.0,"Zatual, Chin State, Myanmar (Burma)",MM
+2019-10-25 22:06:20,2019-10-26 04:36:20,18.4,96.41,0.0,2.8,"Kyee Ma Noe, Bago Region, Myanmar (Burma)",MM
+2019-10-25 22:04:44,2019-10-26 04:34:44,18.2,96.22,0.0,3.4,"Bago Region, Myanmar (Burma)",MM
+2019-10-24 15:17:15,2019-10-24 21:47:15,19.9,96.92,0.0,2.9,"Long Pyin, Shan, Myanmar (Burma)",MM
+2019-10-24 03:39:22,2019-10-24 10:09:22,18.85,95.99,0.0,3.3,"Bago Region, Myanmar (Burma)",MM
+2019-10-23 10:50:45,2019-10-23 17:20:45,16.55,98.22,0.0,2.1,"Kawkareik, Kayin State, Myanmar (Burma)",MM
+2019-10-22 01:30:40,2019-10-22 08:00:40,19.28,95.69,10.0,4.9,"Khoke Chaung, Magway Region, Myanmar (Burma)",MM
+2019-10-21 16:11:40,2019-10-21 22:41:40,20.15,94.87,0.0,3.4,"Minbu, Magway Region, Myanmar (Burma)",MM
+2019-10-20 10:08:17,2019-10-20 16:38:17,20.26,97.87,0.0,2.4,"Wan Tein, Shan, Myanmar (Burma)",MM
+2019-10-19 15:49:12,2019-10-19 22:19:12,20.53,99.89,0.0,1.4,"Wan Long, Shan, Myanmar (Burma)",MM
+2019-10-18 16:48:10,2019-10-18 23:18:10,23.12,94.3,80.0,4.9,"Inn Din, Sagaing Region, Myanmar (Burma)",MM
+2019-10-16 18:45:41,2019-10-17 01:15:41,23.12,94.2,67.0,4.4,"Thit Chauk, Sagaing Region, Myanmar (Burma)",MM

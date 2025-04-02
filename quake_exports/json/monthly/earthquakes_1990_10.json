@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "1990-10-11 14:42:02",
+      "time_mmt": "1990-10-11 21:12:02",
+      "latitude": 21.232,
+      "longitude": 92.433,
+      "depth": 33.0,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "1990-10-03 10:07:21",
+      "time_mmt": "1990-10-03 16:37:21",
+      "latitude": 23.345,
+      "longitude": 94.325,
+      "depth": 68.4,
+      "mag": 3.9,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

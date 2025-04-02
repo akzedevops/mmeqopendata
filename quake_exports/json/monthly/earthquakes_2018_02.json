@@ -1,0 +1,104 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-02-20 08:12:14",
+      "time_mmt": "2018-02-20 14:42:14",
+      "latitude": 22.8,
+      "longitude": 93.1,
+      "depth": 10.0,
+      "mag": 4.2,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-20 05:39:26",
+      "time_mmt": "2018-02-20 12:09:26",
+      "latitude": 20.09,
+      "longitude": 97.93,
+      "depth": 10.0,
+      "mag": 3.8,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-14 07:14:01",
+      "time_mmt": "2018-02-14 13:44:01",
+      "latitude": 18.72,
+      "longitude": 95.23,
+      "depth": 88.0,
+      "mag": 4.7,
+      "location": "Shwedaung, Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-09 04:41:43",
+      "time_mmt": "2018-02-09 11:11:43",
+      "latitude": 18.2133,
+      "longitude": 94.2882,
+      "depth": 28.72,
+      "mag": 4.2,
+      "location": "Rakhine, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-07 16:38:01",
+      "time_mmt": "2018-02-07 23:08:01",
+      "latitude": 18.1649,
+      "longitude": 96.1547,
+      "depth": 10.0,
+      "mag": 4.1,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-05 16:55:35",
+      "time_mmt": "2018-02-05 23:25:35",
+      "latitude": 18.28,
+      "longitude": 96.24,
+      "depth": 10.0,
+      "mag": 4.6,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-04 08:42:02",
+      "time_mmt": "2018-02-04 15:12:02",
+      "latitude": 16.2174,
+      "longitude": 96.5388,
+      "depth": 10.0,
+      "mag": 4.1,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-03 18:14:09",
+      "time_mmt": "2018-02-04 00:44:09",
+      "latitude": 20.61,
+      "longitude": 99.53,
+      "depth": 10.0,
+      "mag": 4.0,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-03 15:31:50",
+      "time_mmt": "2018-02-03 22:01:50",
+      "latitude": 20.61,
+      "longitude": 99.57,
+      "depth": 10.0,
+      "mag": 3.7,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-02-03 15:29:11",
+      "time_mmt": "2018-02-03 21:59:11",
+      "latitude": 20.52,
+      "longitude": 99.37,
+      "depth": 10.0,
+      "mag": 4.5,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

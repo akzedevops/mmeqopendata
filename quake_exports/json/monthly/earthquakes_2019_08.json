@@ -1,0 +1,84 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2019-08-31 15:09:21",
+      "time_mmt": "2019-08-31 21:39:21",
+      "latitude": 22.7269,
+      "longitude": 95.5099,
+      "depth": 10.0,
+      "mag": 5.5,
+      "location": "Myo Thit, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-08-27 07:51:42",
+      "time_mmt": "2019-08-27 14:21:42",
+      "latitude": 20.02,
+      "longitude": 97.96,
+      "depth": 10.0,
+      "mag": 3.7,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-08-26 02:49:15",
+      "time_mmt": "2019-08-26 09:19:15",
+      "latitude": 26.5229,
+      "longitude": 96.0899,
+      "depth": 93.49,
+      "mag": 4.7,
+      "location": "Kachin, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-08-18 03:38:15",
+      "time_mmt": "2019-08-18 10:08:15",
+      "latitude": 18.54,
+      "longitude": 94.65,
+      "depth": 60.0,
+      "mag": 4.8,
+      "location": "Prome, Burma",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-08-18 03:24:23",
+      "time_mmt": "2019-08-18 09:54:23",
+      "latitude": 18.4865,
+      "longitude": 94.5107,
+      "depth": 40.29,
+      "mag": 5.3,
+      "location": "Rakhine, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-08-05 09:43:03",
+      "time_mmt": "2019-08-05 16:13:03",
+      "latitude": 25.6958,
+      "longitude": 96.6601,
+      "depth": 10.0,
+      "mag": 4.7,
+      "location": "Kachin, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-08-03 12:19:18",
+      "time_mmt": "2019-08-03 18:49:18",
+      "latitude": 25.48,
+      "longitude": 96.72,
+      "depth": 10.0,
+      "mag": 4.7,
+      "location": "Kachin, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2019-08-02 14:37:38",
+      "time_mmt": "2019-08-02 21:07:38",
+      "latitude": 23.6285,
+      "longitude": 94.6485,
+      "depth": 94.55,
+      "mag": 4.6,
+      "location": "Mawlaik, Burma",
+      "country": "MM"
+    }
+  ]
+}

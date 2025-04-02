@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2016-12-26 17:25:42",
+      "time_mmt": "2016-12-26 23:55:42",
+      "latitude": 22.763,
+      "longitude": 94.5877,
+      "depth": 104.09,
+      "mag": 4.2,
+      "location": "Bonmazin, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2016-12-08 07:46:20",
+      "time_mmt": "2016-12-08 14:16:20",
+      "latitude": 23.444,
+      "longitude": 94.8225,
+      "depth": 22.84,
+      "mag": 4.7,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

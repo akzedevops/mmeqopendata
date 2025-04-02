@@ -1,0 +1,64 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2017-05-25 19:27:34",
+      "time_mmt": "2017-05-26 01:57:34",
+      "latitude": 15.9,
+      "longitude": 97.33,
+      "depth": 3.0,
+      "mag": 3.5,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-05-25 18:37:54",
+      "time_mmt": "2017-05-26 01:07:54",
+      "latitude": 16.19,
+      "longitude": 97.92,
+      "depth": 5.0,
+      "mag": 3.5,
+      "location": "Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-05-25 17:27:24",
+      "time_mmt": "2017-05-25 23:57:24",
+      "latitude": 15.93,
+      "longitude": 97.6,
+      "depth": 16.0,
+      "mag": 3.6,
+      "location": "Mon State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-05-25 14:53:51",
+      "time_mmt": "2017-05-25 21:23:51",
+      "latitude": 17.04,
+      "longitude": 94.22,
+      "depth": 142.0,
+      "mag": 3.4,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-05-24 13:54:54",
+      "time_mmt": "2017-05-24 20:24:54",
+      "latitude": 23.9,
+      "longitude": 94.3,
+      "depth": 95.0,
+      "mag": 3.7,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2017-05-06 14:48:50",
+      "time_mmt": "2017-05-06 21:18:50",
+      "latitude": 23.8,
+      "longitude": 93.8,
+      "depth": 65.0,
+      "mag": 4.3,
+      "location": "Chin State, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

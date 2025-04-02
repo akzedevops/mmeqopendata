@@ -1,0 +1,234 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2020-09-29 22:56:02",
+      "time_mmt": "2020-09-30 05:26:02",
+      "latitude": 15.409,
+      "longitude": 95.398,
+      "depth": 20.0,
+      "mag": 3.7,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-29 20:20:23",
+      "time_mmt": "2020-09-30 02:50:23",
+      "latitude": 24.33,
+      "longitude": 95.48,
+      "depth": 11.0,
+      "mag": 2.9,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-25 20:08:31",
+      "time_mmt": "2020-09-26 02:38:31",
+      "latitude": 20.892,
+      "longitude": 98.154,
+      "depth": 10.0,
+      "mag": 3.1,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-20 01:59:05",
+      "time_mmt": "2020-09-20 08:29:05",
+      "latitude": 23.0,
+      "longitude": 93.76,
+      "depth": 60.0,
+      "mag": 5.0,
+      "location": "Chin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-19 10:24:49",
+      "time_mmt": "2020-09-19 16:54:49",
+      "latitude": 16.571,
+      "longitude": 98.505,
+      "depth": 10.0,
+      "mag": 2.4,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-18 17:53:39",
+      "time_mmt": "2020-09-19 00:23:39",
+      "latitude": 23.41,
+      "longitude": 94.51,
+      "depth": 20.0,
+      "mag": 4.3,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-15 18:12:00",
+      "time_mmt": "2020-09-16 00:42:00",
+      "latitude": 20.195,
+      "longitude": 99.254,
+      "depth": 1.0,
+      "mag": 3.3,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-15 18:00:58",
+      "time_mmt": "2020-09-16 00:30:58",
+      "latitude": 25.38,
+      "longitude": 95.06,
+      "depth": 155.0,
+      "mag": 3.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-15 08:50:43",
+      "time_mmt": "2020-09-15 15:20:43",
+      "latitude": 18.197,
+      "longitude": 96.859,
+      "depth": 10.0,
+      "mag": 2.6,
+      "location": "Thinganpinseik",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-13 17:05:09",
+      "time_mmt": "2020-09-13 23:35:09",
+      "latitude": 20.058,
+      "longitude": 98.476,
+      "depth": 2.0,
+      "mag": 2.2,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-13 15:22:02",
+      "time_mmt": "2020-09-13 21:52:02",
+      "latitude": 16.061,
+      "longitude": 96.622,
+      "depth": 16.0,
+      "mag": 3.4,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-13 15:10:45",
+      "time_mmt": "2020-09-13 21:40:45",
+      "latitude": 15.765,
+      "longitude": 96.428,
+      "depth": 14.0,
+      "mag": 4.5,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-12 17:55:34",
+      "time_mmt": "2020-09-13 00:25:34",
+      "latitude": 20.451,
+      "longitude": 97.97,
+      "depth": 10.0,
+      "mag": 1.9,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-12 17:10:23",
+      "time_mmt": "2020-09-12 23:40:23",
+      "latitude": 16.58,
+      "longitude": 98.549,
+      "depth": 2.0,
+      "mag": 2.1,
+      "location": "Palu",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-11 18:09:09",
+      "time_mmt": "2020-09-12 00:39:09",
+      "latitude": 24.77,
+      "longitude": 96.11,
+      "depth": 10.0,
+      "mag": 3.6,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-10 16:54:55",
+      "time_mmt": "2020-09-10 23:24:55",
+      "latitude": 23.9908,
+      "longitude": 94.8784,
+      "depth": 126.9,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-09 17:49:20",
+      "time_mmt": "2020-09-10 00:19:20",
+      "latitude": 21.603,
+      "longitude": 101.133,
+      "depth": 10.0,
+      "mag": 4.0,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-08 14:08:22",
+      "time_mmt": "2020-09-08 20:38:22",
+      "latitude": 16.554,
+      "longitude": 98.425,
+      "depth": 4.0,
+      "mag": 3.1,
+      "location": "Kayin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-07 12:14:13",
+      "time_mmt": "2020-09-07 18:44:13",
+      "latitude": 21.94,
+      "longitude": 94.38,
+      "depth": 64.0,
+      "mag": 4.06,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-07 06:28:25",
+      "time_mmt": "2020-09-07 12:58:25",
+      "latitude": 26.47,
+      "longitude": 95.85,
+      "depth": 10.0,
+      "mag": 4.3,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-05 16:40:40",
+      "time_mmt": "2020-09-05 23:10:40",
+      "latitude": 21.267,
+      "longitude": 99.474,
+      "depth": 2.0,
+      "mag": 2.3,
+      "location": "W\u0101n Panghsang",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-03 20:24:45",
+      "time_mmt": "2020-09-04 02:54:45",
+      "latitude": 24.4949,
+      "longitude": 94.4751,
+      "depth": 36.5,
+      "mag": 2.5,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2020-09-01 02:06:52",
+      "time_mmt": "2020-09-01 08:36:52",
+      "latitude": 26.37,
+      "longitude": 96.67,
+      "depth": 190.0,
+      "mag": 3.4,
+      "location": "Kachin, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

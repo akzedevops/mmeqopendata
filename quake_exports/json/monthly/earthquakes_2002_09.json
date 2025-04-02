@@ -1,0 +1,24 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2002-09-27 15:20:45",
+      "time_mmt": "2002-09-27 21:50:45",
+      "latitude": 23.176,
+      "longitude": 93.911,
+      "depth": 62.0,
+      "mag": 4.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2002-09-10 01:27:03",
+      "time_mmt": "2002-09-10 07:57:03",
+      "latitude": 26.605,
+      "longitude": 96.19,
+      "depth": 100.1,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

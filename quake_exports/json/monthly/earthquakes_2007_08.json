@@ -1,0 +1,94 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2007-08-26 03:20:31",
+      "time_mmt": "2007-08-26 09:50:31",
+      "latitude": 23.011,
+      "longitude": 93.666,
+      "depth": 131.9,
+      "mag": 3.8,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-08-18 00:56:18",
+      "time_mmt": "2007-08-18 07:26:18",
+      "latitude": 23.004,
+      "longitude": 94.594,
+      "depth": 121.8,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-08-16 05:16:20",
+      "time_mmt": "2007-08-16 11:46:20",
+      "latitude": 23.134,
+      "longitude": 94.151,
+      "depth": 10.0,
+      "mag": 4.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-08-15 03:04:15",
+      "time_mmt": "2007-08-15 09:34:15",
+      "latitude": 20.882,
+      "longitude": 94.176,
+      "depth": 75.3,
+      "mag": 4.1,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-08-13 08:28:51",
+      "time_mmt": "2007-08-13 14:58:51",
+      "latitude": 23.762,
+      "longitude": 93.873,
+      "depth": 65.5,
+      "mag": 4.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-08-13 02:02:57",
+      "time_mmt": "2007-08-13 08:32:57",
+      "latitude": 26.566,
+      "longitude": 97.167,
+      "depth": 10.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-08-10 12:35:17",
+      "time_mmt": "2007-08-10 19:05:17",
+      "latitude": 26.752,
+      "longitude": 97.274,
+      "depth": 35.0,
+      "mag": 4.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-08-10 01:47:11",
+      "time_mmt": "2007-08-10 08:17:11",
+      "latitude": 24.344,
+      "longitude": 94.79,
+      "depth": 100.8,
+      "mag": 4.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2007-08-04 18:52:13",
+      "time_mmt": "2007-08-05 01:22:13",
+      "latitude": 21.871,
+      "longitude": 94.94,
+      "depth": 125.2,
+      "mag": 3.9,
+      "location": "",
+      "country": "MM"
+    }
+  ]
+}

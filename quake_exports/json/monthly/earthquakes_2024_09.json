@@ -1,0 +1,574 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2024-09-30 21:56:53",
+      "time_mmt": "2024-10-01 04:26:53",
+      "latitude": 19.326,
+      "longitude": 97.019,
+      "depth": 2.0,
+      "mag": 2.8,
+      "location": "Hoyar, Kayah State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-30 18:17:46",
+      "time_mmt": "2024-10-01 00:47:46",
+      "latitude": 20.144,
+      "longitude": 98.74,
+      "depth": 2.0,
+      "mag": 1.6,
+      "location": "Wan Hsanghpaw, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-29 12:38:38",
+      "time_mmt": "2024-09-29 19:08:38",
+      "latitude": 15.213,
+      "longitude": 96.57,
+      "depth": 10.0,
+      "mag": 2.9,
+      "location": "Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-29 05:19:35",
+      "time_mmt": "2024-09-29 11:49:35",
+      "latitude": 21.032,
+      "longitude": 100.297,
+      "depth": 1.0,
+      "mag": 3.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-28 14:13:10",
+      "time_mmt": "2024-09-28 20:43:10",
+      "latitude": 19.989,
+      "longitude": 98.078,
+      "depth": 1.0,
+      "mag": 2.7,
+      "location": "Wan Konlang, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-27 22:39:41",
+      "time_mmt": "2024-09-28 05:09:41",
+      "latitude": 18.144,
+      "longitude": 96.21,
+      "depth": 10.0,
+      "mag": 3.9,
+      "location": "Atet Bandayaw, Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-27 01:20:21",
+      "time_mmt": "2024-09-27 07:50:21",
+      "latitude": 20.02,
+      "longitude": 97.841,
+      "depth": 10.0,
+      "mag": 2.0,
+      "location": "Wan Kongpao, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-26 20:33:02",
+      "time_mmt": "2024-09-27 03:03:02",
+      "latitude": 18.404,
+      "longitude": 96.487,
+      "depth": 10.0,
+      "mag": 2.3,
+      "location": "Nyaung Pin Thar, Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-26 15:15:30",
+      "time_mmt": "2024-09-26 21:45:30",
+      "latitude": 21.427,
+      "longitude": 98.397,
+      "depth": 10.0,
+      "mag": 2.5,
+      "location": "Longhsam, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-26 03:06:34",
+      "time_mmt": "2024-09-26 09:36:34",
+      "latitude": 20.879,
+      "longitude": 100.35,
+      "depth": 2.0,
+      "mag": 2.4,
+      "location": "Ai-nu, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-25 18:36:04",
+      "time_mmt": "2024-09-26 01:06:04",
+      "latitude": 16.896,
+      "longitude": 98.475,
+      "depth": 1.0,
+      "mag": 2.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-25 04:18:38",
+      "time_mmt": "2024-09-25 10:48:38",
+      "latitude": 20.258,
+      "longitude": 94.873,
+      "depth": 10.0,
+      "mag": 3.4,
+      "location": "Minbu, Magway Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-24 19:48:21",
+      "time_mmt": "2024-09-25 02:18:21",
+      "latitude": 21.003,
+      "longitude": 98.569,
+      "depth": 1.0,
+      "mag": 2.3,
+      "location": "Wan Hpai, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-24 16:49:12",
+      "time_mmt": "2024-09-24 23:19:12",
+      "latitude": 19.996,
+      "longitude": 97.857,
+      "depth": 3.0,
+      "mag": 2.0,
+      "location": "Ta \u00d6ngmu, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-24 16:26:01",
+      "time_mmt": "2024-09-24 22:56:01",
+      "latitude": 25.02,
+      "longitude": 95.13,
+      "depth": 10.0,
+      "mag": 3.5,
+      "location": "Maungkan, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-24 10:37:47",
+      "time_mmt": "2024-09-24 17:07:47",
+      "latitude": 21.1231,
+      "longitude": 94.8961,
+      "depth": 102.0,
+      "mag": 4.5,
+      "location": "Thuntekan, Mandalay Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-23 19:01:52",
+      "time_mmt": "2024-09-24 01:31:52",
+      "latitude": 23.89,
+      "longitude": 93.86,
+      "depth": 78.0,
+      "mag": 3.4,
+      "location": "Bualkuang, Chin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-23 16:45:54",
+      "time_mmt": "2024-09-23 23:15:54",
+      "latitude": 21.222,
+      "longitude": 100.033,
+      "depth": 1.0,
+      "mag": 3.3,
+      "location": "Wan Hkang, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-23 09:22:00",
+      "time_mmt": "2024-09-23 15:52:00",
+      "latitude": 21.234,
+      "longitude": 100.132,
+      "depth": 1.0,
+      "mag": 4.0,
+      "location": "Mongkaing, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-23 06:54:30",
+      "time_mmt": "2024-09-23 13:24:30",
+      "latitude": 21.195,
+      "longitude": 100.101,
+      "depth": 10.0,
+      "mag": 2.8,
+      "location": "Wan Hkang A-hko, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-22 16:44:54",
+      "time_mmt": "2024-09-22 23:14:54",
+      "latitude": 23.68,
+      "longitude": 94.16,
+      "depth": 90.0,
+      "mag": 3.5,
+      "location": "Pyaungbok, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-20 20:57:10",
+      "time_mmt": "2024-09-21 03:27:10",
+      "latitude": 20.758,
+      "longitude": 95.993,
+      "depth": 5.0,
+      "mag": 3.2,
+      "location": "Nyaungyan, Mandalay Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-20 17:48:17",
+      "time_mmt": "2024-09-21 00:18:17",
+      "latitude": 24.72,
+      "longitude": 94.77,
+      "depth": 80.0,
+      "mag": 3.5,
+      "location": "Shwe Pyi Aye, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-18 17:24:48",
+      "time_mmt": "2024-09-18 23:54:48",
+      "latitude": 21.063,
+      "longitude": 100.035,
+      "depth": 1.0,
+      "mag": 2.7,
+      "location": "Wan Hpya-langhsat, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-18 16:18:28",
+      "time_mmt": "2024-09-18 22:48:28",
+      "latitude": 19.49,
+      "longitude": 97.693,
+      "depth": 2.0,
+      "mag": 1.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-17 13:48:57",
+      "time_mmt": "2024-09-17 20:18:57",
+      "latitude": 20.19,
+      "longitude": 98.951,
+      "depth": 1.0,
+      "mag": 1.7,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-17 12:35:00",
+      "time_mmt": "2024-09-17 19:05:00",
+      "latitude": 20.12,
+      "longitude": 97.998,
+      "depth": 1.0,
+      "mag": 1.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-15 14:54:57",
+      "time_mmt": "2024-09-15 21:24:57",
+      "latitude": 20.74,
+      "longitude": 98.625,
+      "depth": 5.0,
+      "mag": 2.3,
+      "location": "Wan Ta-m\u00f6ng, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-15 14:17:08",
+      "time_mmt": "2024-09-15 20:47:08",
+      "latitude": 22.76,
+      "longitude": 93.97,
+      "depth": 122.0,
+      "mag": 4.3,
+      "location": "Hakha District",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-15 07:55:32",
+      "time_mmt": "2024-09-15 14:25:32",
+      "latitude": 24.82,
+      "longitude": 94.98,
+      "depth": 120.0,
+      "mag": 3.6,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-15 03:28:08",
+      "time_mmt": "2024-09-15 09:58:08",
+      "latitude": 19.93,
+      "longitude": 96.308,
+      "depth": 10.0,
+      "mag": 2.7,
+      "location": "Kyauklaing, Naypyidaw Union Territory, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-14 16:07:47",
+      "time_mmt": "2024-09-14 22:37:47",
+      "latitude": 20.595,
+      "longitude": 98.376,
+      "depth": 5.0,
+      "mag": 1.9,
+      "location": "Wan Kengh Kam, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-13 17:48:48",
+      "time_mmt": "2024-09-14 00:18:48",
+      "latitude": 20.144,
+      "longitude": 96.948,
+      "depth": 10.0,
+      "mag": 2.6,
+      "location": "Samka, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-12 22:40:19",
+      "time_mmt": "2024-09-13 05:10:19",
+      "latitude": 20.278,
+      "longitude": 97.144,
+      "depth": 1.0,
+      "mag": 2.1,
+      "location": "Chitiwabwa, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-12 19:39:13",
+      "time_mmt": "2024-09-13 02:09:13",
+      "latitude": 18.926,
+      "longitude": 97.476,
+      "depth": 1.0,
+      "mag": 2.4,
+      "location": "Loi Mun, Kayah State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-12 19:07:04",
+      "time_mmt": "2024-09-13 01:37:04",
+      "latitude": 17.036,
+      "longitude": 95.168,
+      "depth": 10.0,
+      "mag": 3.3,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-12 16:44:06",
+      "time_mmt": "2024-09-12 23:14:06",
+      "latitude": 20.529,
+      "longitude": 98.01,
+      "depth": 10.0,
+      "mag": 3.6,
+      "location": "Nammawlong, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-12 12:56:30",
+      "time_mmt": "2024-09-12 19:26:30",
+      "latitude": 20.696,
+      "longitude": 98.019,
+      "depth": 1.0,
+      "mag": 2.1,
+      "location": "Nawngleng, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-12 11:33:34",
+      "time_mmt": "2024-09-12 18:03:34",
+      "latitude": 20.665,
+      "longitude": 97.867,
+      "depth": 1.0,
+      "mag": 2.3,
+      "location": "Wan Kawngpang, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-11 21:32:33",
+      "time_mmt": "2024-09-12 04:02:33",
+      "latitude": 20.746,
+      "longitude": 97.786,
+      "depth": 5.0,
+      "mag": 2.1,
+      "location": "Hai Hpak, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-11 20:02:09",
+      "time_mmt": "2024-09-12 02:32:09",
+      "latitude": 20.7,
+      "longitude": 98.141,
+      "depth": 3.0,
+      "mag": 2.3,
+      "location": "Ho-ta, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-11 16:22:36",
+      "time_mmt": "2024-09-11 22:52:36",
+      "latitude": 20.331,
+      "longitude": 97.445,
+      "depth": 5.0,
+      "mag": 2.3,
+      "location": "Loimut, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-11 15:28:44",
+      "time_mmt": "2024-09-11 21:58:44",
+      "latitude": 20.217,
+      "longitude": 96.52,
+      "depth": 10.0,
+      "mag": 3.3,
+      "location": "Mandalay Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-11 12:38:54",
+      "time_mmt": "2024-09-11 19:08:54",
+      "latitude": 20.487,
+      "longitude": 98.605,
+      "depth": 1.0,
+      "mag": 2.0,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-11 07:18:24",
+      "time_mmt": "2024-09-11 13:48:24",
+      "latitude": 20.494,
+      "longitude": 98.135,
+      "depth": 4.0,
+      "mag": 2.4,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-10 14:41:02",
+      "time_mmt": "2024-09-10 21:11:02",
+      "latitude": 21.238,
+      "longitude": 100.023,
+      "depth": 4.0,
+      "mag": 2.3,
+      "location": "Wan Hkang, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-09 12:46:52",
+      "time_mmt": "2024-09-09 19:16:52",
+      "latitude": 23.06,
+      "longitude": 94.13,
+      "depth": 9.0,
+      "mag": 4.2,
+      "location": "Bogyi, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-08 20:09:56",
+      "time_mmt": "2024-09-09 02:39:56",
+      "latitude": 21.104,
+      "longitude": 99.963,
+      "depth": 5.0,
+      "mag": 2.1,
+      "location": "Wan Hsenlong, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-08 11:49:49",
+      "time_mmt": "2024-09-08 18:19:49",
+      "latitude": 20.515,
+      "longitude": 99.969,
+      "depth": 1.0,
+      "mag": 2.1,
+      "location": "Tachileik, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-08 02:39:46",
+      "time_mmt": "2024-09-08 09:09:46",
+      "latitude": 20.571,
+      "longitude": 99.915,
+      "depth": 4.0,
+      "mag": 2.9,
+      "location": "",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-06 12:13:49",
+      "time_mmt": "2024-09-06 18:43:49",
+      "latitude": 20.76,
+      "longitude": 98.5,
+      "depth": 5.0,
+      "mag": 3.0,
+      "location": "Wan Ta-m\u00f6ng, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-05 19:58:18",
+      "time_mmt": "2024-09-06 02:28:18",
+      "latitude": 23.16,
+      "longitude": 94.15,
+      "depth": 75.0,
+      "mag": 3.7,
+      "location": "Kale, Chin State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-05 17:50:29",
+      "time_mmt": "2024-09-06 00:20:29",
+      "latitude": 18.923,
+      "longitude": 97.48,
+      "depth": 4.0,
+      "mag": 3.1,
+      "location": "Loi Mun, Kayah State, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-04 21:46:12",
+      "time_mmt": "2024-09-05 04:16:12",
+      "latitude": 21.071,
+      "longitude": 98.55,
+      "depth": 4.0,
+      "mag": 2.7,
+      "location": "Wan Hpai, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-04 01:49:11",
+      "time_mmt": "2024-09-04 08:19:11",
+      "latitude": 23.32,
+      "longitude": 94.58,
+      "depth": 134.0,
+      "mag": 4.3,
+      "location": "Thickegyin, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-03 17:31:00",
+      "time_mmt": "2024-09-04 00:01:00",
+      "latitude": 21.154,
+      "longitude": 99.416,
+      "depth": 2.0,
+      "mag": 1.6,
+      "location": "Wan Pangkaw, Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2024-09-02 00:43:17",
+      "time_mmt": "2024-09-02 07:13:17",
+      "latitude": 23.57,
+      "longitude": 94.8,
+      "depth": 10.0,
+      "mag": 3.2,
+      "location": "Mawtongyi, Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}

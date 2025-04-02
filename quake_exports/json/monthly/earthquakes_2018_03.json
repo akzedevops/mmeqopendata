@@ -1,0 +1,64 @@
+{
+  "earthquakes": [
+    {
+      "time_utc": "2018-03-24 18:41:29",
+      "time_mmt": "2018-03-25 01:11:29",
+      "latitude": 21.7769,
+      "longitude": 94.8224,
+      "depth": 117.98,
+      "mag": 4.2,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-17 19:59:03",
+      "time_mmt": "2018-03-18 02:29:03",
+      "latitude": 18.3849,
+      "longitude": 96.151,
+      "depth": 19.05,
+      "mag": 5.1,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-15 16:58:20",
+      "time_mmt": "2018-03-15 23:28:20",
+      "latitude": 23.6408,
+      "longitude": 94.7295,
+      "depth": 107.15,
+      "mag": 4.3,
+      "location": "Sagaing Region, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-09 22:08:38",
+      "time_mmt": "2018-03-10 04:38:38",
+      "latitude": 23.48,
+      "longitude": 98.3,
+      "depth": 10.0,
+      "mag": 4.4,
+      "location": "Shan, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-07 21:13:08",
+      "time_mmt": "2018-03-08 03:43:08",
+      "latitude": 19.8346,
+      "longitude": 95.9152,
+      "depth": 10.0,
+      "mag": 5.3,
+      "location": "Naypyidaw Union Territory, Myanmar (Burma)",
+      "country": "MM"
+    },
+    {
+      "time_utc": "2018-03-04 10:48:11",
+      "time_mmt": "2018-03-04 17:18:11",
+      "latitude": 18.4835,
+      "longitude": 96.1895,
+      "depth": 13.96,
+      "mag": 4.9,
+      "location": "Bago Region, Myanmar (Burma)",
+      "country": "MM"
+    }
+  ]
+}
