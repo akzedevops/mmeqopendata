@@ -1,23 +1,23 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2019-11-30 18:11:52,2019-12-01 00:41:52,21.17,99.52,0.0,4.2,"Nam Hkat, Shan, Myanmar (Burma)",MM
-2019-11-30 16:09:06,2019-11-30 22:39:06,20.59,99.89,0.0,1.4,"Hpan Min, Shan, Myanmar (Burma)",MM
-2019-11-30 01:30:56,2019-11-30 08:00:56,18.82,97.66,0.0,2.7,"Daw Ka Dwee, Kayah State, Myanmar (Burma)",MM
-2019-11-28 14:39:15,2019-11-28 21:09:15,23.1379,96.0191,21.64,5.2,"Mandalay Region, Myanmar (Burma)",MM
-2019-11-26 14:00:43,2019-11-26 20:30:43,23.2,98.02,0.0,4.0,"Ho Pang Myin, Shan, Myanmar (Burma)",MM
-2019-11-26 11:05:57,2019-11-26 17:35:57,19.241,94.9451,59.76,5.4,"Than Bu La, Magway Region, Myanmar (Burma)",MM
-2019-11-26 09:36:10,2019-11-26 16:06:10,19.2,94.92,66.0,4.7,"Magway Region, Myanmar (Burma)",MM
-2019-11-26 03:53:46,2019-11-26 10:23:46,24.06,94.26,71.0,4.6,"Sagaing Region, Myanmar (Burma)",MM
-2019-11-23 22:43:46,2019-11-24 05:13:46,24.8793,96.3481,10.0,4.1,"Bhamo, Burma",MM
-2019-11-20 13:11:51,2019-11-20 19:41:51,20.64,97.71,0.0,3.1,"Mong Seik, Shan, Myanmar (Burma)",MM
-2019-11-15 15:47:32,2019-11-15 22:17:32,19.4,96.41,0.0,3.0,"Mi Chaung Aing, Bago Region, Myanmar (Burma)",MM
-2019-11-13 03:42:34,2019-11-13 10:12:34,21.24,98.67,0.0,3.6,"Tar Kaw, Shan, Myanmar (Burma)",MM
-2019-11-13 03:06:39,2019-11-13 09:36:39,20.14,98.66,10.0,3.5,"Me Kin, Shan, Myanmar (Burma)",MM
-2019-11-12 15:24:18,2019-11-12 21:54:18,16.7507,96.1807,10.0,3.4,"Yangon, Yangon Region, Myanmar (Burma)",MM
-2019-11-11 23:39:35,2019-11-12 06:09:35,19.73,97.67,0.0,2.3,"Ka Du Gyi, Shan, Myanmar (Burma)",MM
-2019-11-10 16:55:21,2019-11-10 23:25:21,21.27,97.84,0.0,2.7,"Wan Sang, Shan, Myanmar (Burma)",MM
-2019-11-09 08:41:24,2019-11-09 15:11:24,19.87,98.23,0.0,2.6,"Nawng Aw, Shan, Myanmar (Burma)",MM
-2019-11-07 17:58:38,2019-11-08 00:28:38,19.86,98.42,0.0,2.2,"Shan, Myanmar (Burma)",MM
-2019-11-07 16:59:21,2019-11-07 23:29:21,19.89,98.3,0.0,2.1,"Shan, Myanmar (Burma)",MM
-2019-11-07 16:33:49,2019-11-07 23:03:49,13.72,98.75,0.0,2.3,"Pyar Thar Chaung, Tanintharyi Region, Myanmar (Burma)",MM
-2019-11-03 10:46:03,2019-11-03 17:16:03,16.78,98.3,0.0,2.1,"Htee War Pa Law, Kayin State, Myanmar (Burma)",MM
-2019-11-02 12:48:35,2019-11-02 19:18:35,16.59,95.52,0.0,3.4,"Bon Da Yeik, Ayeyarwady, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+21.1700000,99.5200000,0.0000,4.20,ml,,,,,,th_6348,2019-11-30T18:11:52.000Z,"Nam Hkat, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1575138072,1575137512,1,,,2019-11-30 18:11:52,2019-12-01 00:41:52
+20.5900000,99.8900000,0.0000,1.40,ml,,,,,,th_6346,2019-11-30T16:09:06.000Z,"Hpan Min, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1575131086,1575130146,1,,,2019-11-30 16:09:06,2019-11-30 22:39:06
+18.8200000,97.6600000,0.0000,2.70,ml,,,,,,th_6340,2019-11-30T01:30:56.000Z,"Daw Ka Dwee, Kayah State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1575078197,1575077456,1,,,2019-11-30 01:30:56,2019-11-30 08:00:56
+23.1379000,96.0191000,21.6400,5.20,mww,,131,1.914,0.73,us,gfz2019xhwn,2019-12-05T08:26:14.134Z,"Mandalay Region, Myanmar (Burma)","55km WNW of Mogok, Burma",MM,Asia,earthquake,1574952551,1574951955,1,,,2019-11-28 14:39:15,2019-11-28 21:09:15
+23.2000000,98.0200000,0.0000,4.00,ml,,,,,,th_6297,2019-11-26T14:00:43.000Z,"Ho Pang Myin, Shan, Myanmar (Burma)",Myanmar-China Border Region,MM,Asia,earthquake,1574777986,1574776843,1,,,2019-11-26 14:00:43,2019-11-26 20:30:43
+19.2410000,94.9451000,59.7600,5.40,mww,,24,2.483,0.92,us,gfz2019xdym,2019-11-28T14:49:31.150Z,"Than Bu La, Magway Region, Myanmar (Burma)","26km WSW of Thayetmyo, Burma",MM,Asia,earthquake,1574766811,1574766357,1,,,2019-11-26 11:05:57,2019-11-26 17:35:57
+19.2000000,94.9200000,66.0000,4.70,mb,,,,,,th_6293,2019-11-26T10:27:00.000Z,"Magway Region, Myanmar (Burma)","20km SW of Thayetmyo, Burma",MM,Asia,earthquake,1574761601,1574760970,1,,,2019-11-26 09:36:10,2019-11-26 16:06:10
+24.0600000,94.2600000,71.0000,4.60,mb,,,,,,us70006d1q,2019-11-26T08:04:00.000Z,"Sagaing Region, Myanmar (Burma)","49km SE of Kakching, India",MM,Asia,earthquake,1574741671,1574740426,1,,,2019-11-26 03:53:46,2019-11-26 10:23:46
+24.8793000,96.3481000,10.0000,4.10,mb,,119,1.973,1.37,us,us70006caj,2019-11-24T10:53:25.642Z,"Bhamo, Burma","112km NW of Bhamo, Burma",MM,Asia,earthquake,1574551854,1574549026,1,,,2019-11-23 22:43:46,2019-11-24 05:13:46
+20.6400000,97.7100000,0.0000,3.10,ml,,,,,,th_6117,2019-11-20T13:11:51.000Z,"Mong Seik, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1574256255,1574255511,1,,,2019-11-20 13:11:51,2019-11-20 19:41:51
+19.4000000,96.4100000,0.0000,3.00,ml,,,,,,th_6105,2019-11-15T15:47:32.000Z,"Mi Chaung Aing, Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573904527,1573832852,1,,,2019-11-15 15:47:32,2019-11-15 22:17:32
+21.2400000,98.6700000,0.0000,3.60,ml,,,,,,th_6102,2019-11-13T03:42:34.000Z,"Tar Kaw, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573904528,1573616554,1,,,2019-11-13 03:42:34,2019-11-13 10:12:34
+20.1400000,98.6600000,10.0000,3.50,ml,,,,,,ems_201911_804974,2019-11-13T03:20:00.000Z,"Me Kin, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573615274,1573614399,1,,,2019-11-13 03:06:39,2019-11-13 09:36:39
+16.7507000,96.1807000,10.0000,3.40,mb_lg,,267,3.062,0.19,us,ems_201911_804932,2019-11-15T01:35:34.874Z,"Yangon, Yangon Region, Myanmar (Burma)","6km SSE of Rangoon, Burma",MM,Asia,earthquake,1573602203,1573572258,1,,,2019-11-12 15:24:18,2019-11-12 21:54:18
+19.7300000,97.6700000,0.0000,2.30,ml,,,,,,th_6098,2019-11-11T23:39:35.000Z,"Ka Du Gyi, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573904529,1573515575,1,,,2019-11-11 23:39:35,2019-11-12 06:09:35
+21.2700000,97.8400000,0.0000,2.70,ml,,,,,,th_6097,2019-11-10T16:55:21.000Z,"Wan Sang, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573904530,1573404921,1,,,2019-11-10 16:55:21,2019-11-10 23:25:21
+19.8700000,98.2300000,0.0000,2.60,ml,,,,,,th_6095,2019-11-09T08:41:24.000Z,"Nawng Aw, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573904530,1573288884,1,,,2019-11-09 08:41:24,2019-11-09 15:11:24
+19.8600000,98.4200000,0.0000,2.20,ml,,,,,,th_6093,2019-11-07T17:58:38.000Z,"Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573904531,1573149518,1,,,2019-11-07 17:58:38,2019-11-08 00:28:38
+19.8900000,98.3000000,0.0000,2.10,ml,,,,,,th_6092,2019-11-07T16:59:21.000Z,"Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573904531,1573145961,1,,,2019-11-07 16:59:21,2019-11-07 23:29:21
+13.7200000,98.7500000,0.0000,2.30,ml,,,,,,th_6094,2019-11-07T16:33:49.000Z,"Pyar Thar Chaung, Tanintharyi Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573904531,1573144429,1,,,2019-11-07 16:33:49,2019-11-07 23:03:49
+16.7800000,98.3000000,0.0000,2.10,ml,,,,,,th_6089,2019-11-03T10:46:03.000Z,"Htee War Pa Law, Kayin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573904533,1572777963,1,,,2019-11-03 10:46:03,2019-11-03 17:16:03
+16.5900000,95.5200000,0.0000,3.40,ml,,,,,,th_6086,2019-11-02T12:48:35.000Z,"Bon Da Yeik, Ayeyarwady, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1573904534,1572698915,1,,,2019-11-02 12:48:35,2019-11-02 19:18:35

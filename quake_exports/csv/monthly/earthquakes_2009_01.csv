@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2009-01-31 13:56:26,2009-01-31 20:26:26,15.703,95.96,10.0,4.5,,MM
-2009-01-29 22:46:03,2009-01-30 05:16:03,23.339,93.974,75.9,4.5,,MM
-2009-01-21 01:42:24,2009-01-21 08:12:24,15.646,96.038,35.0,5.0,,MM
-2009-01-16 09:31:49,2009-01-16 16:01:49,19.983,95.166,109.3,4.4,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+15.7030000,95.9600000,10.0000,4.50,mb,32,175.2,,1.1,us,usp000gtap,2014-11-07T01:38:16.480Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2009-01-31 13:56:26,2009-01-31 20:26:26
+23.3390000,93.9740000,75.9000,4.50,mb,30,145.3,,0.71,us,usp000gt8h,2014-11-07T01:38:16.222Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-01-29 22:46:03,2009-01-30 05:16:03
+15.6460000,96.0380000,35.0000,5.00,mwc,65,64.7,,1.26,us,usp000gsxc,2015-02-11T17:19:02.000Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2009-01-21 01:42:24,2009-01-21 08:12:24
+19.9830000,95.1660000,109.3000,4.40,mb,42,170.4,,0.72,us,usp000gsp9,2014-11-07T01:38:12.633Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-01-16 09:31:49,2009-01-16 16:01:49

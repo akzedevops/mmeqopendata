@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1977-01-29 05:10:52,1977-01-29 11:40:52,15.239,96.522,40.0,4.9,,MM
-1977-01-25 02:05:52,1977-01-25 08:35:52,17.327,94.167,25.0,4.8,,MM
-1977-01-07 21:02:55,1977-01-08 03:32:55,24.161,98.446,42.0,4.6,,MM
-1977-01-05 14:10:56,1977-01-05 20:40:56,25.433,95.178,104.0,4.8,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+15.2390000,96.5220000,40.0000,4.90,mb,,,,,us,usp0000mcy,2014-11-06T23:21:39.542Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1977-01-29 05:10:52,1977-01-29 11:40:52
+17.3270000,94.1670000,25.0000,4.80,mb,,,,,us,usp0000mba,2014-11-06T23:21:39.502Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1977-01-25 02:05:52,1977-01-25 08:35:52
+24.1610000,98.4460000,42.0000,4.60,mb,,,,,us,usp0000m3m,2014-11-06T23:21:39.260Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1977-01-07 21:02:55,1977-01-08 03:32:55
+25.4330000,95.1780000,104.0000,4.80,mb,,,,,us,usp0000m2k,2014-11-06T23:21:39.233Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1977-01-05 14:10:56,1977-01-05 20:40:56

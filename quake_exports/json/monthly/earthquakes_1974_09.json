@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1974-09-21 17:53:34",
-      "time_mmt": "1974-09-22 00:23:34",
-      "latitude": 24.169,
-      "longitude": 94.734,
-      "depth": 82.0,
-      "mag": 4.8,
+      "latitude": "24.1690000",
+      "longitude": "94.7340000",
+      "depth": "82.0000",
+      "mag": "4.80",
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "us",
+      "id": "usp0000845",
+      "updated": "2014-11-06T23:21:26.488Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar-India border region",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1974-09-21 17:53:34",
+      "time_mmt": "1974-09-22 00:23:34"
     }
   ]
 }

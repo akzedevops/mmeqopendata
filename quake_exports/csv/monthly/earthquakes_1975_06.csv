@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1975-06-28 21:32:02,1975-06-29 04:02:02,22.66,94.995,130.0,5.1,,MM
-1975-06-03 03:23:37,1975-06-03 09:53:37,26.551,97.001,32.0,5.4,,MM
-1975-06-03 00:59:11,1975-06-03 07:29:11,26.393,97.069,37.0,4.8,,MM
-1975-06-03 00:37:40,1975-06-03 07:07:40,26.592,96.99,27.0,5.2,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.6600000,94.9950000,130.0000,5.10,mb,,,,,us,usp0000btn,2014-11-06T23:21:31.050Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-06-28 21:32:02,1975-06-29 04:02:02
+26.5510000,97.0010000,32.0000,5.40,mb,,,,,us,usp0000b9u,2014-11-06T23:21:30.515Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-06-03 03:23:37,1975-06-03 09:53:37
+26.3930000,97.0690000,37.0000,4.80,mb,,,,,us,usp0000b9r,2014-11-06T23:21:30.513Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-06-03 00:59:11,1975-06-03 07:29:11
+26.5920000,96.9900000,27.0000,5.20,mb,,,,,us,usp0000b9q,2014-11-06T23:21:30.512Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-06-03 00:37:40,1975-06-03 07:07:40

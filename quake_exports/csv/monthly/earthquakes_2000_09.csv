@@ -1,2 +1,2 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2000-09-01 03:48:22,2000-09-01 10:18:22,22.385,94.231,65.7,3.8,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.3850000,94.2310000,65.7000,3.80,mb,17,,,0.93,us,usp0009zgp,2014-11-07T01:10:58.516Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2000-09-01 03:48:22,2000-09-01 10:18:22

@@ -1,9 +1,9 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2017-12-29 16:19:14,2017-12-29 22:49:14,26.72,96.14,75.0,4.7,"Kachin, Myanmar (Burma)",MM
-2017-12-28 20:23:34,2017-12-29 02:53:34,22.0579,94.4111,86.0,5.0,"Magway Region, Myanmar (Burma)",MM
-2017-12-27 18:12:31,2017-12-28 00:42:31,24.916,96.4515,55.55,4.2,"Kachin, Myanmar (Burma)",MM
-2017-12-23 20:42:01,2017-12-24 03:12:01,25.03,96.73,10.0,4.3,"Kachin, Myanmar (Burma)",MM
-2017-12-23 15:45:00,2017-12-23 22:15:00,23.4444,94.687,111.66,4.6,"Sagaing Region, Myanmar (Burma)",MM
-2017-12-23 15:45:00,2017-12-23 22:15:00,23.35,94.61,117.0,4.9,"Chin State, Myanmar (Burma)",MM
-2017-12-05 20:15:29,2017-12-06 02:45:29,16.53,94.98,86.0,4.2,"Ayeyarwady, Myanmar (Burma)",MM
-2017-12-03 09:47:14,2017-12-03 16:17:14,22.3675,94.5111,95.31,4.7,"Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+26.7200000,96.1400000,75.0000,4.70,mb,,,,,,ems_201712_638266,2017-12-30T10:21:00.000Z,"Kachin, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1514565372,1514564354,1,,,2017-12-29 16:19:14,2017-12-29 22:49:14
+22.0579000,94.4111000,86.0000,5.00,mww,,48,0.95,0.76,us,ems_201712_638126,2018-01-03T13:39:10.305Z,"Magway Region, Myanmar (Burma)","74km W of Monywa, Burma",MM,Asia,earthquake,1514493162,1514492614,1,,,2017-12-28 20:23:34,2017-12-29 02:53:34
+24.9160000,96.4515000,55.5500,4.20,mb,,123,2.074,0.98,us,us1000bws7,2017-12-31T21:51:59.040Z,"Kachin, Myanmar (Burma)","106km NW of Bhamo, Burma",MM,Asia,earthquake,1514757437,1514398351,1,,,2017-12-27 18:12:31,2017-12-28 00:42:31
+25.0300000,96.7300000,10.0000,4.30,mb,,,,,,ems_201712_637268,2017-12-23T23:21:00.000Z,"Kachin, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1514071408,1514061721,1,,,2017-12-23 20:42:01,2017-12-24 03:12:01
+23.4444000,94.6870000,111.6600,4.60,mb,,93,0.858,0.7,us,us1000bve1,2017-12-23T17:02:39.040Z,"Sagaing Region, Myanmar (Burma)","34km SE of Mawlaik, Burma",MM,Asia,earthquake,1514048873,1514043900,1,,,2017-12-23 15:45:00,2017-12-23 22:15:00
+23.3500000,94.6100000,117.0000,4.90,ml,,,,,,ems_201712_637226,2017-12-24T10:44:00.000Z,"Chin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1514047896,1514043900,1,,,2017-12-23 15:45:00,2017-12-23 22:15:00
+16.5300000,94.9800000,86.0000,4.20,ml,,,,,,20171205_141529_4.2,2017-12-05T20:15:29.000Z,"Ayeyarwady, Myanmar (Burma)","13609km al SUROESTE de  TIJUANA, BC",MM,Asia,earthquake,1512505851,1512504929,1,,,2017-12-05 20:15:29,2017-12-06 02:45:29
+22.3675000,94.5111000,95.3100,4.70,mb,,89,0.886,0.87,us,ems_201712_633808,2017-12-03T14:42:45.699Z,"Sagaing Region, Myanmar (Burma)","69km WNW of Monywa, Burma",MM,Asia,earthquake,1512295358,1512294434,1,,,2017-12-03 09:47:14,2017-12-03 16:17:14

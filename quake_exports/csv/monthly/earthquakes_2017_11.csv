@@ -1,3 +1,3 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2017-11-25 19:29:47,2017-11-26 01:59:47,19.4897,94.371,61.97,4.5,"Rakhine, Myanmar (Burma)",MM
-2017-11-20 08:48:02,2017-11-20 15:18:02,23.73,94.65,100.0,4.9,"Pantha, Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+19.4897000,94.3710000,61.9700,4.50,mb,,109,2.995,0.69,us,ems_201711_632388,2017-11-25T20:49:06.040Z,"Rakhine, Myanmar (Burma)","87km WNW of Thayetmyo, Burma",MM,Asia,earthquake,1511642995,1511638187,1,,,2017-11-25 19:29:47,2017-11-26 01:59:47
+23.7300000,94.6500000,100.0000,4.90,mb,,,,,,ems_201711_631367,2017-11-20T12:41:00.000Z,"Pantha, Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1511168646,1511167682,1,,,2017-11-20 08:48:02,2017-11-20 15:18:02

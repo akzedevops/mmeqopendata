@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1989-03-17 11:14:20,1989-03-17 17:44:20,22.111,97.798,33.0,3.7,,MM
-1989-03-17 11:08:08,1989-03-17 17:38:08,21.629,97.816,33.0,4.8,,MM
-1989-03-01 09:28:52,1989-03-01 15:58:52,21.62,97.787,10.0,4.6,,MM
-1989-03-01 03:25:05,1989-03-01 09:55:05,21.754,97.941,15.8,5.8,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.1110000,97.7980000,33.0000,3.70,mb,,,,0.7,us,usp0003t09,2014-11-07T00:43:49.537Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-17 11:14:20,1989-03-17 17:44:20
+21.6290000,97.8160000,33.0000,4.80,mb,,,,1.2,us,usp0003t08,2014-11-07T00:43:49.533Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-17 11:08:08,1989-03-17 17:38:08
+21.6200000,97.7870000,10.0000,4.60,mb,,,,1.3,us,usp0003sfq,2014-11-07T00:43:41.278Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-01 09:28:52,1989-03-01 15:58:52
+21.7540000,97.9410000,15.8000,5.80,mw,,,,1.1,us,usp0003sfa,2015-02-12T21:01:04.697Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-01 03:25:05,1989-03-01 09:55:05

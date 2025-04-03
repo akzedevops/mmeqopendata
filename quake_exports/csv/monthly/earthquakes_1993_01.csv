@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1993-01-23 09:39:28,1993-01-23 16:09:28,25.79,95.662,108.7,4.5,,MM
-1993-01-16 19:45:40,1993-01-17 02:15:40,15.587,95.93,33.0,4.3,,MM
-1993-01-01 23:49:47,1993-01-02 06:19:47,23.157,94.778,95.5,4.3,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+25.7900000,95.6620000,108.7000,4.50,mb,,,,1,us,usp0005m4m,2014-11-07T00:52:16.268Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-01-23 09:39:28,1993-01-23 16:09:28
+15.5870000,95.9300000,33.0000,4.30,mb,,,,1.5,us,usp0005kv1,2014-11-07T00:52:14.672Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1993-01-16 19:45:40,1993-01-17 02:15:40
+23.1570000,94.7780000,95.5000,4.30,mb,,,,0.5,us,usp0005k70,2014-11-07T00:52:09.530Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-01-01 23:49:47,1993-01-02 06:19:47

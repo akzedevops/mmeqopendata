@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1990-05-24 09:03:48",
-      "time_mmt": "1990-05-24 15:33:48",
-      "latitude": 26.6,
-      "longitude": 95.522,
-      "depth": 82.3,
-      "mag": 4.8,
+      "latitude": "26.6000000",
+      "longitude": "95.5220000",
+      "depth": "82.3000",
+      "mag": "4.80",
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "0.8",
+      "net": "us",
+      "id": "usp00049pn",
+      "updated": "2014-11-07T00:46:23.915Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar-India border region",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1990-05-24 09:03:48",
+      "time_mmt": "1990-05-24 15:33:48"
     }
   ]
 }

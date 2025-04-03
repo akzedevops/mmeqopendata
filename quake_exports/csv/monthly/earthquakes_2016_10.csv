@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2016-10-26 02:21:59,2016-10-26 08:51:59,22.8923,94.5887,110.08,5.0,"Sagaing Region, Myanmar (Burma)",MM
-2016-10-11 17:41:01,2016-10-12 00:11:01,24.8327,96.2656,32.52,4.5,"Kachin, Myanmar (Burma)",MM
-2016-10-11 07:30:14,2016-10-11 14:00:14,25.1998,95.044,97.47,4.7,"Sagaing Region, Myanmar (Burma)",MM
-2016-10-07 19:28:35,2016-10-08 01:58:35,22.87,94.25,10.0,4.5,"Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.8923000,94.5887000,110.0800,5.00,mb,,53,0.946,0.9,us,20161026_022158_5.0,2016-10-26T06:54:50.336Z,"Sagaing Region, Myanmar (Burma)","83km SSE of Mawlaik, Burma",MM,Asia,earthquake,0,1477448519,1,,,2016-10-26 02:21:59,2016-10-26 08:51:59
+24.8327000,96.2656000,32.5200,4.50,mb,,75,1.888,0.85,us,us20007d97,2016-10-12T16:43:30.040Z,"Kachin, Myanmar (Burma)","116km WNW of Bhamo, Burma",MM,Asia,earthquake,0,1476207661,1,,,2016-10-11 17:41:01,2016-10-12 00:11:01
+25.1998000,95.0440000,97.4700,4.70,mb,,109,1.179,0.79,us,20161011_073014_4.7,2016-10-11T07:52:36.040Z,"Sagaing Region, Myanmar (Burma)","75km SE of Phek, India",MM,Asia,earthquake,0,1476171014,1,,,2016-10-11 07:30:14,2016-10-11 14:00:14
+22.8700000,94.2500000,10.0000,4.50,mb,,,,,,20161007_192835_4.5,2016-10-07T19:28:35.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1475868515,1,,,2016-10-07 19:28:35,2016-10-08 01:58:35

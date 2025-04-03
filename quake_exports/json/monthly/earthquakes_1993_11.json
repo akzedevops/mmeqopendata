@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1993-11-17 19:26:12",
-      "time_mmt": "1993-11-18 01:56:12",
-      "latitude": 24.385,
-      "longitude": 94.703,
-      "depth": 112.5,
-      "mag": 4.1,
+      "latitude": "24.3850000",
+      "longitude": "94.7030000",
+      "depth": "112.5000",
+      "mag": "4.10",
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "0.3",
+      "net": "us",
+      "id": "usp00063ub",
+      "updated": "2014-11-07T00:54:25.350Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar-India border region",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1993-11-17 19:26:12",
+      "time_mmt": "1993-11-18 01:56:12"
     }
   ]
 }

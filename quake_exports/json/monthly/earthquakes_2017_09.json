@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "2017-09-15 01:36:47",
-      "time_mmt": "2017-09-15 08:06:47",
-      "latitude": 18.88,
-      "longitude": 94.88,
-      "depth": 40.0,
-      "mag": 4.8,
+      "latitude": "18.8800000",
+      "longitude": "94.8800000",
+      "depth": "40.0000",
+      "mag": "4.80",
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "20170915_0000006",
+      "updated": "2017-09-15T06:50:00.000Z",
       "location": "Myanmar (Burma)",
-      "country": "MM"
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1505440617",
+      "timestamp": "1505439407",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "2017-09-15 01:36:47",
+      "time_mmt": "2017-09-15 08:06:47"
     }
   ]
 }

@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2018-08-18 12:03:49,2018-08-18 18:33:49,24.6758,94.7739,85.0,4.5,"Shwe Pyi Aye, Sagaing Region, Myanmar (Burma)",MM
-2018-08-16 11:55:19,2018-08-16 18:25:19,23.94,94.75,100.0,4.8,"Sagaing Region, Myanmar (Burma)",MM
-2018-08-16 06:50:11,2018-08-16 13:20:11,16.0975,96.494,10.0,4.3,Myanmar (Burma),MM
-2018-08-15 18:25:43,2018-08-16 00:55:43,20.87,100.18,10.0,3.7,"Shan, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+24.6758000,94.7739000,85.0000,4.50,mb,,141,0.619,1.23,us,us1000gc6g,2018-08-25T05:46:02.040Z,"Shwe Pyi Aye, Sagaing Region, Myanmar (Burma)","71km E of Yairipok, India",MM,Asia,earthquake,1534594586,1534593829,1,,,2018-08-18 12:03:49,2018-08-18 18:33:49
+23.9400000,94.7500000,100.0000,4.80,mb,,,,,,us1000gaev,2018-08-16T20:42:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1534424304,1534420519,1,,,2018-08-16 11:55:19,2018-08-16 18:25:19
+16.0975000,96.4940000,10.0000,4.30,mb,,85,3.048,0.53,us,ems_201808_707058,2018-08-16T08:50:55.591Z,Myanmar (Burma),"73km S of Thongwa, Burma",MM,Asia,earthquake,1534403178,1534402211,1,,,2018-08-16 06:50:11,2018-08-16 13:20:11
+20.8700000,100.1800000,10.0000,3.70,ml,,,,,,ems_201808_706977,2018-08-15T18:50:00.000Z,"Shan, Myanmar (Burma)",Laos,MM,Asia,earthquake,1534359098,1534357543,1,,,2018-08-15 18:25:43,2018-08-16 00:55:43

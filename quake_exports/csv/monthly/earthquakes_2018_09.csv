@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2018-09-20 15:41:26,2018-09-20 22:11:26,17.85,97.44,10.0,4.1,"Kayin State, Myanmar (Burma)",MM
-2018-09-10 16:57:40,2018-09-10 23:27:40,23.1567,94.6719,101.03,4.5,"စစ်ကိုင်းတိုင်းဒေသကြီး, Myanmar (Burma)",MM
-2018-09-07 06:30:29,2018-09-07 13:00:29,20.96,100.01,10.0,3.6,"ရှမ်းပြည်နယ်, Myanmar (Burma)",MM
-2018-09-01 19:19:46,2018-09-02 01:49:46,24.7533,95.3651,149.02,4.5,"Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+17.8500000,97.4400000,10.0000,4.10,ml,,,,,,ems_201809_713936,2018-09-20T15:55:00.000Z,"Kayin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1537458974,1537458086,1,,,2018-09-20 15:41:26,2018-09-20 22:11:26
+23.1567000,94.6719000,101.0300,4.50,mb,,70,1.113,0.76,us,us2000hbyy,2018-09-12T05:27:51.841Z,"စစ်ကိုင်းတိုင်းဒေသကြီး, Myanmar (Burma)","58km SSE of Mawlaik, Burma",MM,Asia,earthquake,1536599843,1536598660,1,,,2018-09-10 16:57:40,2018-09-10 23:27:40
+20.9600000,100.0100000,10.0000,3.60,ml,,,,,,ems_201809_711518,2018-09-07T07:25:00.000Z,"ရှမ်းပြည်နယ်, Myanmar (Burma)",Laos,MM,Asia,earthquake,1536305179,1536301829,1,,,2018-09-07 06:30:29,2018-09-07 13:00:29
+24.7533000,95.3651000,149.0200,4.50,mb,,44,1.101,0.59,us,ems_201809_710506,2018-09-01T23:03:32.040Z,"Sagaing Region, Myanmar (Burma)","131km E of Yairipok, India",MM,Asia,earthquake,1535830298,1535829586,1,,,2018-09-01 19:19:46,2018-09-02 01:49:46

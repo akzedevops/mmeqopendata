@@ -1,6 +1,6 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2017-10-27 11:17:44,2017-10-27 17:47:44,16.79,96.1,20.0,3.4,"Gyaungwaing, Yangon Region, Myanmar (Burma)",MM
-2017-10-21 12:19:34,2017-10-21 18:49:34,16.27,97.98,2.0,3.6,"Pathein, Mon State, Myanmar (Burma)",MM
-2017-10-21 11:53:09,2017-10-21 18:23:09,16.14,95.23,59.0,3.5,Myanmar (Burma),MM
-2017-10-21 11:24:27,2017-10-21 17:54:27,16.4,94.87,74.0,3.7,"Ayeyarwady, Myanmar (Burma)",MM
-2017-10-02 18:13:51,2017-10-03 00:43:51,21.4218,94.5291,96.74,4.6,"Magway Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+16.7900000,96.1000000,20.0000,3.40,ml,,,,,,20171027_061744_3.4,2017-10-27T11:17:44.000Z,"Gyaungwaing, Yangon Region, Myanmar (Burma)","44km al SURESTE de TLACOLULA, OAX",MM,Asia,earthquake,1509123082,1509103064,1,,,2017-10-27 11:17:44,2017-10-27 17:47:44
+16.2700000,97.9800000,2.0000,3.60,ml,,,,,,20171021_071934_3.6,2017-10-21T12:19:34.000Z,"Pathein, Mon State, Myanmar (Burma)","13457km al SUROESTE de  TIJUANA, BC",MM,Asia,earthquake,1508688208,1508588374,1,,,2017-10-21 12:19:34,2017-10-21 18:49:34
+16.1400000,95.2300000,59.0000,3.50,ml,,,,,,20171021_065309_3.5,2017-10-21T11:53:09.000Z,Myanmar (Burma),"13631km al SUROESTE de  TIJUANA, BC",MM,Asia,earthquake,1508688210,1508586789,1,,,2017-10-21 11:53:09,2017-10-21 18:23:09
+16.4000000,94.8700000,74.0000,3.70,ml,,,,,,20171021_062427_3.7,2017-10-21T11:24:27.000Z,"Ayeyarwady, Myanmar (Burma)","13627km al SUROESTE de  TIJUANA, BC",MM,Asia,earthquake,1508688212,1508585067,1,,,2017-10-21 11:24:27,2017-10-21 17:54:27
+21.4218000,94.5291000,96.7400,4.60,mb,,69,1.489,0.78,us,20171002_0000189,2017-10-05T16:26:55.040Z,"Magway Region, Myanmar (Burma)","60km W of Pakokku, Burma",MM,Asia,earthquake,1507016948,1506968031,1,,,2017-10-02 18:13:51,2017-10-03 00:43:51

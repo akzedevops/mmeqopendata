@@ -1,18 +1,18 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2015-03-08 05:45:15,2015-03-08 12:15:15,22.57,95.85,10.0,4.4,"စစ်ကိုင်းတိုင်း, Republic of the Union of Myanmar",MM
-2015-04-15 17:57:02,2015-04-16 00:27:02,24.39,96.17,61.0,4.2,"Indaw, Sagaing, Republic of the Union of Myanmar",MM
-2015-05-21 12:43:34,2015-05-21 19:13:34,22.86,96.2,10.0,4.8,"Mandalay Region, Republic of the Union of Myanmar",MM
-2015-07-21 01:27:10,2015-07-21 07:57:10,19.1245,96.2692,26.21,4.7,"Bago Region, Myanmar (Burma)",MM
-2015-07-13 11:03:03,2015-07-13 17:33:03,26.48,96.52,100.0,4.6,"Kachin, Myanmar (Burma)",MM
-2015-08-12 02:44:51,2015-08-12 09:14:51,24.6516,94.8248,40.73,4.5,"Sagaing Region, Myanmar (Burma)",MM
-2015-08-10 17:05:24,2015-08-10 23:35:24,18.54,96.1,10.0,4.9,"Bago Region, Myanmar (Burma)",MM
-2015-09-25 20:28:38,2015-09-26 02:58:38,23.1025,94.4869,86.67,4.1,"Sagaing Region, Myanmar (Burma)",MM
-2015-09-22 13:19:20,2015-09-22 19:49:20,22.97,94.44,88.0,4.7,"Sagaing Region, Myanmar (Burma)",MM
-2015-09-17 18:34:16,2015-09-18 01:04:16,24.5661,94.6695,78.23,4.8,"Sagaing Region, Myanmar (Burma)",MM
-2015-10-27 13:50:48,2015-10-27 20:20:48,24.539,94.9835,87.24,4.2,"Sagaing Region, Myanmar (Burma)",MM
-2015-10-10 23:54:35,2015-10-11 06:24:35,24.2655,96.0382,49.96,4.5,"Indaw, Sagaing Region, Myanmar (Burma)",MM
-2015-10-02 11:29:23,2015-10-02 17:59:23,22.4638,93.3551,35.0,4.6,"Chin State, Myanmar (Burma)",MM
-2015-11-27 12:04:20,2015-11-27 18:34:20,22.6144,95.0403,23.25,4.6,"Sagaing Region, Myanmar (Burma)",MM
-2015-11-27 08:34:01,2015-11-27 15:04:01,22.56,94.87,40.0,5.1,"Sagaing Region, Myanmar (Burma)",MM
-2015-11-27 08:33:59,2015-11-27 15:03:59,22.4973,94.8237,22.42,5.5,"Sagaing Region, Myanmar (Burma)",MM
-2015-11-15 23:24:40,2015-11-16 05:54:40,24.6479,94.7378,95.6,4.5,"Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.5700000,95.8500000,10.0000,4.40,mb,,,,,,20150308_0000025,2015-03-08T07:03:00.000Z,"စစ်ကိုင်းတိုင်း, Republic of the Union of Myanmar",Myanmar,MM,Asia,earthquake,0,1425793515,1,,,2015-03-08 05:45:15,2015-03-08 12:15:15
+24.3900000,96.1700000,61.0000,4.20,mb,,,,,,20150415_0000071,2015-04-15T20:08:00.000Z,"Indaw, Sagaing, Republic of the Union of Myanmar",Myanmar,MM,Asia,earthquake,0,1429120622,1,,,2015-04-15 17:57:02,2015-04-16 00:27:02
+22.8600000,96.2000000,10.0000,4.80,m,,,,,,20150521_0000078,2015-05-21T14:14:00.000Z,"Mandalay Region, Republic of the Union of Myanmar",Myanmar,MM,Asia,earthquake,0,1432212214,1,,,2015-05-21 12:43:34,2015-05-21 19:13:34
+24.6516000,94.8248000,40.7300,4.50,mb,,115,2.841,0.57,us,20150812_0000008,2015-08-12T04:57:56.894Z,"Sagaing Region, Myanmar (Burma)","76km E of Yairipok, India",MM,Asia,earthquake,0,1439347491,1,,,2015-08-12 02:44:51,2015-08-12 09:14:51
+18.5400000,96.1000000,10.0000,4.90,m,,,,,,20150810_0000058,2015-08-10T18:47:00.000Z,"Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1439226324,1,,,2015-08-10 17:05:24,2015-08-10 23:35:24
+19.1245000,96.2692000,26.2100,4.70,mb,,98,1.611,0.88,us,20150721_0000001,2015-07-21T09:29:48.557Z,"Bago Region, Myanmar (Burma)","27km NW of Taungoo, Burma",MM,Asia,earthquake,0,1437442030,1,,,2015-07-21 01:27:10,2015-07-21 07:57:10
+26.4800000,96.5200000,100.0000,4.60,m,,,,,,20150713_0000051,2015-07-13T23:29:00.000Z,"Kachin, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1436785383,1,,,2015-07-13 11:03:03,2015-07-13 17:33:03
+23.1025000,94.4869000,86.6700,4.10,mb,,145,3.431,0.82,us,us20003p7w,2015-09-26T17:21:08.144Z,"Sagaing Region, Myanmar (Burma)","59km S of Mawlaik, Burma",MM,Asia,earthquake,0,1443212918,1,,,2015-09-25 20:28:38,2015-09-26 02:58:38
+22.9700000,94.4400000,88.0000,4.70,mb,,,,,,20150922_0000079,2015-09-23T06:41:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1442927960,1,,,2015-09-22 13:19:20,2015-09-22 19:49:20
+24.5661000,94.6695000,78.2300,4.80,mb,,52,2.739,0.8,us,20150917_0000162,2015-09-18T05:03:40.737Z,"Sagaing Region, Myanmar (Burma)","62km E of Yairipok, India",MM,Asia,earthquake,0,1442514856,1,,,2015-09-17 18:34:16,2015-09-18 01:04:16
+24.5390000,94.9835000,87.2400,4.20,mb,,117,3.015,1,us,20151027_0000083,2015-10-27T21:53:26.973Z,"Sagaing Region, Myanmar (Burma)","93km E of Yairipok, India",MM,Asia,earthquake,0,1445953848,1,,,2015-10-27 13:50:48,2015-10-27 20:20:48
+24.2655000,96.0382000,49.9600,4.50,mb,,82,4.012,0.51,us,20151010_0000109,2015-10-11T07:57:16.041Z,"Indaw, Sagaing Region, Myanmar (Burma)","121km W of Bhamo, Burma",MM,Asia,earthquake,0,1444521275,1,,,2015-10-10 23:54:35,2015-10-11 06:24:35
+22.4638000,93.3551000,35.0000,4.60,mb,,122,3.379,1.02,us,20151002_0000051,2015-10-02T19:31:57.174Z,"Chin State, Myanmar (Burma)","33km SW of Hakha, Burma",MM,Asia,earthquake,0,1443785363,1,,,2015-10-02 11:29:23,2015-10-02 17:59:23
+22.6144000,95.0403000,23.2500,4.60,mb,,63,4.135,0.63,us,20151127_0000051,2015-11-27T20:06:59.089Z,"Sagaing Region, Myanmar (Burma)","55km N of Monywa, Burma",MM,Asia,earthquake,0,1448625860,1,,,2015-11-27 12:04:20,2015-11-27 18:34:20
+22.5600000,94.8700000,40.0000,5.10,m,,,,,,20151127_0000029,2015-11-27T09:31:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1448613241,1,,,2015-11-27 08:34:01,2015-11-27 15:04:01
+22.4973000,94.8237000,22.4200,5.50,mb,,23,4.086,1.17,us,us100041nt,2015-11-28T04:19:45.273Z,"Sagaing Region, Myanmar (Burma)","52km NW of Monywa, Burma",MM,Asia,earthquake,0,1448613239,1,,,2015-11-27 08:33:59,2015-11-27 15:03:59
+24.6479000,94.7378000,95.6000,4.50,mb,,140,2.768,0.82,us,20151115_0000072,2015-11-16T02:57:03.174Z,"Sagaing Region, Myanmar (Burma)","67km E of Yairipok, India",MM,Asia,earthquake,0,1447629880,1,,,2015-11-15 23:24:40,2015-11-16 05:54:40

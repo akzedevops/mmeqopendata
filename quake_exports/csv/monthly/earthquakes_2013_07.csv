@@ -1,3 +1,3 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2013-07-19 01:53:52,2013-07-19 08:23:52,19.455,94.735,35.4,4.6,,MM
-2013-07-08 13:27:46,2013-07-08 19:57:46,24.138,95.795,58.4,4.3,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+19.4550000,94.7350000,35.4000,4.60,mb,33,155,,0.46,us,usp000k252,2014-11-07T01:51:18.075Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-07-19 01:53:52,2013-07-19 08:23:52
+24.1380000,95.7950000,58.4000,4.30,mb,14,158.3,,0.52,us,usp000k1u0,2014-11-07T01:51:14.368Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-07-08 13:27:46,2013-07-08 19:57:46

@@ -1,7 +1,7 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2018-03-24 18:41:29,2018-03-25 01:11:29,21.7769,94.8224,117.98,4.2,"Sagaing Region, Myanmar (Burma)",MM
-2018-03-17 19:59:03,2018-03-18 02:29:03,18.3849,96.151,19.05,5.1,"Bago Region, Myanmar (Burma)",MM
-2018-03-15 16:58:20,2018-03-15 23:28:20,23.6408,94.7295,107.15,4.3,"Sagaing Region, Myanmar (Burma)",MM
-2018-03-09 22:08:38,2018-03-10 04:38:38,23.48,98.3,10.0,4.4,"Shan, Myanmar (Burma)",MM
-2018-03-07 21:13:08,2018-03-08 03:43:08,19.8346,95.9152,10.0,5.3,"Naypyidaw Union Territory, Myanmar (Burma)",MM
-2018-03-04 10:48:11,2018-03-04 17:18:11,18.4835,96.1895,13.96,4.9,"Bago Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+21.7769000,94.8224000,117.9800,4.20,mb,,81,1.221,0.85,us,ems_201803_656021,2018-03-25T13:30:42.040Z,"Sagaing Region, Myanmar (Burma)","49km SW of Monywa, Burma",MM,Asia,earthquake,1521919679,1521916889,1,,,2018-03-24 18:41:29,2018-03-25 01:11:29
+18.3849000,96.1510000,19.0500,5.10,mb,,60,2.513,0.6,us,ems_201803_654753,2018-03-24T05:21:06.040Z,"Bago Region, Myanmar (Burma)","31km WSW of Pyu, Burma",MM,Asia,earthquake,1521317272,1521316743,1,,,2018-03-17 19:59:03,2018-03-18 02:29:03
+23.6408000,94.7295000,107.1500,4.30,mb,,76,0.705,0.75,us,us1000d4ub,2018-03-16T13:57:21.040Z,"Sagaing Region, Myanmar (Burma)","31km E of Mawlaik, Burma",MM,Asia,earthquake,1521147890,1521133100,1,,,2018-03-15 16:58:20,2018-03-15 23:28:20
+23.4800000,98.3000000,10.0000,4.40,mb,,,,,,ems_201803_653569,2018-03-10T11:03:00.000Z,"Shan, Myanmar (Burma)",Myanmar-china Border Region,MM,Asia,earthquake,1520636544,1520633318,1,,,2018-03-09 22:08:38,2018-03-10 04:38:38
+19.8346000,95.9152000,10.0000,5.30,mb,,48,1.402,1.01,us,ems_201803_653138,2018-03-11T15:39:06.742Z,"Naypyidaw Union Territory, Myanmar (Burma)","24km WNW of Nay Pyi Taw, Burma",MM,Asia,earthquake,1520458326,1520457188,1,,,2018-03-07 21:13:08,2018-03-08 03:43:08
+18.4835000,96.1895000,13.9600,4.90,mb,,66,2.408,0.88,us,ems_201803_652305,2018-03-07T21:42:14.480Z,"Bago Region, Myanmar (Burma)","25km W of Pyu, Burma",MM,Asia,earthquake,1520161032,1520160491,1,,,2018-03-04 10:48:11,2018-03-04 17:18:11

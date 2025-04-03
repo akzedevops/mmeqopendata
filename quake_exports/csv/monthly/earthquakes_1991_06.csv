@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1991-06-30 22:50:11,1991-07-01 05:20:11,20.822,96.61,33.0,4.2,,MM
-1991-06-25 20:34:57,1991-06-26 03:04:57,21.531,94.02,55.0,5.0,,MM
-1991-06-25 06:08:10,1991-06-25 12:38:10,23.263,94.478,104.1,4.0,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+20.8220000,96.6100000,33.0000,4.20,mb,,,,1.4,us,usp0004tmf,2014-11-07T00:48:47.967Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-06-30 22:50:11,1991-07-01 05:20:11
+21.5310000,94.0200000,55.0000,5.00,mb,,,,1,us,usp0004tdg,2014-11-07T00:48:47.254Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-06-25 20:34:57,1991-06-26 03:04:57
+23.2630000,94.4780000,104.1000,4.00,mb,,,,0.4,us,usp0004tcr,2014-11-07T00:48:47.198Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-06-25 06:08:10,1991-06-25 12:38:10

@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1971-05-31 05:14:00",
-      "time_mmt": "1971-05-31 11:44:00",
-      "latitude": 25.266,
-      "longitude": 96.505,
-      "depth": 20.0,
-      "mag": 6.1,
+      "latitude": "25.2660000",
+      "longitude": "96.5050000",
+      "depth": "20.0000",
+      "mag": "6.10",
+      "magType": "mw",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "is",
+      "id": "iscgem7851",
+      "updated": "2015-02-12T21:02:43.163Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1971-05-31 05:14:00",
+      "time_mmt": "1971-05-31 11:44:00"
     }
   ]
 }

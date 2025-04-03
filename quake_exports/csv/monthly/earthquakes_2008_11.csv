@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2008-11-29 06:54:53,2008-11-29 13:24:53,22.824,94.049,87.1,4.6,,MM
-2008-11-11 02:19:18,2008-11-11 08:49:18,19.367,95.512,83.1,4.7,,MM
-2008-11-11 02:18:45,2008-11-11 08:48:45,19.323,95.221,35.0,4.1,,MM
-2008-11-10 20:55:04,2008-11-11 03:25:04,23.023,94.572,108.0,4.7,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.8240000,94.0490000,87.1000,4.60,mb,64,77,,0.64,us,usp000gpnb,2014-11-07T01:37:48.917Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-11-29 06:54:53,2008-11-29 13:24:53
+19.3670000,95.5120000,83.1000,4.70,mb,64,76.8,,0.77,us,usp000gne4,2014-11-07T01:37:43.291Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-11-11 02:19:18,2008-11-11 08:49:18
+19.3230000,95.2210000,35.0000,4.10,mb,21,179.1,,1.2,us,usp000gne3,2014-11-07T01:37:43.289Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-11-11 02:18:45,2008-11-11 08:48:45
+23.0230000,94.5720000,108.0000,4.70,mb,108,66.2,,0.68,us,usp000gndr,2014-11-07T01:37:43.247Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-11-10 20:55:04,2008-11-11 03:25:04

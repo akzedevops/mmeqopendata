@@ -1,7 +1,7 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2018-07-25 14:23:02,2018-07-25 20:53:02,19.29,96.9,10.0,4.5,"Kayin State, Myanmar (Burma)",MM
-2018-07-20 06:36:35,2018-07-20 13:06:35,15.06,96.69,10.0,4.0,Myanmar (Burma),MM
-2018-07-13 12:07:58,2018-07-13 18:37:58,18.96,94.79,10.0,4.7,Myanmar (Burma),MM
-2018-07-07 00:44:29,2018-07-07 07:14:29,14.71,96.67,10.0,4.2,Myanmar (Burma),MM
-2018-07-04 20:34:52,2018-07-05 03:04:52,14.5383,96.4654,10.42,5.1,Myanmar (Burma),MM
-2018-07-01 15:10:37,2018-07-01 21:40:37,20.2592,97.9109,10.0,4.6,"Shan, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+19.2900000,96.9000000,10.0000,4.50,ml,,,,,,ems_201807_699180,2018-07-25T14:40:00.000Z,"Kayin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1532529668,1532528582,1,,,2018-07-25 14:23:02,2018-07-25 20:53:02
+15.0600000,96.6900000,10.0000,4.00,ml,,,,,,ems_201807_696207,2018-07-20T07:05:00.000Z,Myanmar (Burma),Near South Coast Of Myanmar,MM,Asia,earthquake,1532070405,1532068595,1,,,2018-07-20 06:36:35,2018-07-20 13:06:35
+18.9600000,94.7900000,10.0000,4.70,mb,,,,,,us2000g3y7,2018-07-13T14:20:00.000Z,Myanmar (Burma),Myanmar,MM,Asia,earthquake,1531486554,1531483678,1,,,2018-07-13 12:07:58,2018-07-13 18:37:58
+14.7100000,96.6700000,10.0000,4.20,ml,,,,,,ems_201807_688761,2018-07-07T01:05:00.000Z,Myanmar (Burma),"Andaman Islands, India Region",MM,Asia,earthquake,1530925572,1530924269,1,,,2018-07-07 00:44:29,2018-07-07 07:14:29
+14.5383000,96.4654000,10.4200,5.10,mww,,23,2.576,0.96,us,ems_201807_687708,2018-07-10T22:17:36.040Z,Myanmar (Burma),"193km WNW of Dawei, Burma",MM,Asia,earthquake,1530737230,1530736492,1,,,2018-07-04 20:34:52,2018-07-05 03:04:52
+20.2592000,97.9109000,10.0000,4.60,mb,,119,0.965,0.74,us,ems_201807_685718,2018-07-08T14:48:08.134Z,"Shan, Myanmar (Burma)","89km NNW of Sop Pong, Thailand",MM,Asia,earthquake,1530458849,1530457837,1,,,2018-07-01 15:10:37,2018-07-01 21:40:37

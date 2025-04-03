@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2018-10-27 09:16:42,2018-10-27 15:46:42,19.1,95.61,4.0,5.0,"Bago Region, Myanmar (Burma)",MM
-2018-10-26 20:49:51,2018-10-27 03:19:51,24.72,95.24,115.0,4.3,"Yairipok, India",MM
-2018-10-10 10:28:04,2018-10-10 16:58:04,19.04,95.6,13.0,5.1,"Prome, Burma",MM
-2018-10-04 13:29:17,2018-10-04 19:59:17,19.6,96.42,30.0,4.5,"Kayin State, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+19.1000000,95.6100000,4.0000,5.00,ml,,,,,,ems_201810_720692,2018-10-28T09:20:00.000Z,"Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1540632599,1540631802,1,,,2018-10-27 09:16:42,2018-10-27 15:46:42
+24.7200000,95.2400000,115.0000,4.30,mb,,,,,,us1000hhrq,2018-10-27T19:51:00.000Z,"Yairipok, India",Myanmar,MM,Asia,earthquake,1540592035,1540586991,1,,,2018-10-26 20:49:51,2018-10-27 03:19:51
+19.0400000,95.6000000,13.0000,5.10,mb,,,,,,us1000h9ws,2018-10-10T11:03:00.000Z,"Prome, Burma",Myanmar,MM,Asia,earthquake,1539168498,1539167284,1,,,2018-10-10 10:28:04,2018-10-10 16:58:04
+19.6000000,96.4200000,30.0000,4.50,mb,,,,,,ems_201810_716372,2018-10-04T14:48:00.000Z,"Kayin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1538661212,1538659757,1,,,2018-10-04 13:29:17,2018-10-04 19:59:17

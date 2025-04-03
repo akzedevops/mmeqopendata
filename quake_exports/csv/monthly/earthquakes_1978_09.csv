@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1978-09-30 09:04:31,1978-09-30 15:34:31,16.603,95.857,10.0,5.7,,MM
-1978-09-29 08:59:28,1978-09-29 15:29:28,21.381,94.722,96.0,4.5,,MM
-1978-09-18 19:29:59,1978-09-19 01:59:59,22.782,94.726,109.0,4.1,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+16.6030000,95.8570000,10.0000,5.70,ms,,,,,us,usp0000wt3,2015-02-12T23:45:20.709Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1978-09-30 09:04:31,1978-09-30 15:34:31
+21.3810000,94.7220000,96.0000,4.50,mb,,,,,us,usp0000wss,2014-11-06T23:21:52.605Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1978-09-29 08:59:28,1978-09-29 15:29:28
+22.7820000,94.7260000,109.0000,4.10,mb,,,,,us,usp0000wm8,2014-11-06T23:21:52.395Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1978-09-18 19:29:59,1978-09-19 01:59:59

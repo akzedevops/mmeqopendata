@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1987-10-10 02:04:48",
-      "time_mmt": "1987-10-10 08:34:48",
-      "latitude": 21.538,
-      "longitude": 98.286,
-      "depth": 33.0,
-      "mag": 4.4,
+      "latitude": "21.5380000",
+      "longitude": "98.2860000",
+      "depth": "33.0000",
+      "mag": "4.40",
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "0.9",
+      "net": "us",
+      "id": "usp000394d",
+      "updated": "2014-11-07T00:41:04.611Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1987-10-10 02:04:48",
+      "time_mmt": "1987-10-10 08:34:48"
     }
   ]
 }

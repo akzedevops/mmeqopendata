@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "2015-05-21 12:43:34",
-      "time_mmt": "2015-05-21 19:13:34",
-      "latitude": 22.86,
-      "longitude": 96.2,
-      "depth": 10.0,
-      "mag": 4.8,
+      "latitude": "22.8600000",
+      "longitude": "96.2000000",
+      "depth": "10.0000",
+      "mag": "4.80",
+      "magType": "m",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "20150521_0000078",
+      "updated": "2015-05-21T14:14:00.000Z",
       "location": "Mandalay Region, Republic of the Union of Myanmar",
-      "country": "MM"
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "1432212214",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "2015-05-21 12:43:34",
+      "time_mmt": "2015-05-21 19:13:34"
     }
   ]
 }

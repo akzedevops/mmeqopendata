@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2019-06-21 16:42:23,2019-06-21 23:12:23,25.84,95.95,120.0,4.2,"Sagaing Region, Myanmar (Burma)",MM
-2019-06-10 14:07:23,2019-06-10 20:37:23,20.33,99.02,10.0,3.9,"Shan, Myanmar (Burma)",MM
-2019-06-04 13:27:33,2019-06-04 19:57:33,25.0438,94.8809,62.35,4.6,"Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+25.8400000,95.9500000,120.0000,4.20,mb,,,,,,us600044cg,2019-06-22T14:53:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1561144939,1561135343,1,,,2019-06-21 16:42:23,2019-06-21 23:12:23
+20.3300000,99.0200000,10.0000,3.90,ml,,,,,,ems_201906_770571,2019-06-10T14:20:00.000Z,"Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1560176465,1560175643,1,,,2019-06-10 14:07:23,2019-06-10 20:37:23
+25.0438000,94.8809000,62.3500,4.60,mb,,80,0.967,0.56,us,us70003v97,2019-06-06T17:02:44.353Z,"Sagaing Region, Myanmar (Burma)","78km SSE of Phek, India",MM,Asia,earthquake,1559655852,1559654853,1,,,2019-06-04 13:27:33,2019-06-04 19:57:33

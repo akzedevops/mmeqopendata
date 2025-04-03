@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1973-03-24 00:27:32",
-      "time_mmt": "1973-03-24 06:57:32",
-      "latitude": 21.624,
-      "longitude": 98.323,
-      "depth": 33.0,
-      "mag": 4.9,
+      "latitude": "21.6240000",
+      "longitude": "98.3230000",
+      "depth": "33.0000",
+      "mag": "4.90",
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "us",
+      "id": "usp000011t",
+      "updated": "2014-11-06T23:21:10.432Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1973-03-24 00:27:32",
+      "time_mmt": "1973-03-24 06:57:32"
     }
   ]
 }

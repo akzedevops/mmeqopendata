@@ -1,2 +1,2 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1973-06-01 13:03:01,1973-06-01 19:33:01,25.197,98.579,33.0,5.1,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+25.1970000,98.5790000,33.0000,5.10,mb,,,,,us,usp0000203,2014-11-06T23:21:12.985Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1973-06-01 13:03:01,1973-06-01 19:33:01

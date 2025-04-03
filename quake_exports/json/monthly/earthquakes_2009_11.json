@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "2009-11-26 07:28:52",
-      "time_mmt": "2009-11-26 13:58:52",
-      "latitude": 24.956,
-      "longitude": 96.416,
-      "depth": 36.8,
-      "mag": 4.3,
+      "latitude": "24.9560000",
+      "longitude": "96.4160000",
+      "depth": "36.8000",
+      "mag": "4.30",
+      "magType": "mb",
+      "nst": "29",
+      "gap": "124.3",
+      "dmin": "",
+      "rms": "0.98",
+      "net": "us",
+      "id": "usp000h4eh",
+      "updated": "2014-11-07T01:40:08.869Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "2009-11-26 07:28:52",
+      "time_mmt": "2009-11-26 13:58:52"
     }
   ]
 }

@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1985-07-15 10:38:50",
-      "time_mmt": "1985-07-15 17:08:50",
-      "latitude": 19.238,
-      "longitude": 97.308,
-      "depth": 33.0,
-      "mag": 5.0,
+      "latitude": "19.2380000",
+      "longitude": "97.3080000",
+      "depth": "33.0000",
+      "mag": "5.00",
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "1.1",
+      "net": "us",
+      "id": "usp0002gtc",
+      "updated": "2014-11-07T00:36:52.041Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1985-07-15 10:38:50",
+      "time_mmt": "1985-07-15 17:08:50"
     }
   ]
 }

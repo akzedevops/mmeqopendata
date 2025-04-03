@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2015-11-27 12:04:20,2015-11-27 18:34:20,22.6144,95.0403,23.25,4.6,"Sagaing Region, Myanmar (Burma)",MM
-2015-11-27 08:34:01,2015-11-27 15:04:01,22.56,94.87,40.0,5.1,"Sagaing Region, Myanmar (Burma)",MM
-2015-11-27 08:33:59,2015-11-27 15:03:59,22.4973,94.8237,22.42,5.5,"Sagaing Region, Myanmar (Burma)",MM
-2015-11-15 23:24:40,2015-11-16 05:54:40,24.6479,94.7378,95.6,4.5,"Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.6144000,95.0403000,23.2500,4.60,mb,,63,4.135,0.63,us,20151127_0000051,2015-11-27T20:06:59.089Z,"Sagaing Region, Myanmar (Burma)","55km N of Monywa, Burma",MM,Asia,earthquake,0,1448625860,1,,,2015-11-27 12:04:20,2015-11-27 18:34:20
+22.5600000,94.8700000,40.0000,5.10,m,,,,,,20151127_0000029,2015-11-27T09:31:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1448613241,1,,,2015-11-27 08:34:01,2015-11-27 15:04:01
+22.4973000,94.8237000,22.4200,5.50,mb,,23,4.086,1.17,us,us100041nt,2015-11-28T04:19:45.273Z,"Sagaing Region, Myanmar (Burma)","52km NW of Monywa, Burma",MM,Asia,earthquake,0,1448613239,1,,,2015-11-27 08:33:59,2015-11-27 15:03:59
+24.6479000,94.7378000,95.6000,4.50,mb,,140,2.768,0.82,us,20151115_0000072,2015-11-16T02:57:03.174Z,"Sagaing Region, Myanmar (Burma)","67km E of Yairipok, India",MM,Asia,earthquake,0,1447629880,1,,,2015-11-15 23:24:40,2015-11-16 05:54:40

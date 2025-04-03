@@ -1,7 +1,7 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2019-03-27 16:39:21,2019-03-27 23:09:21,18.9383,94.3804,52.79,4.3,"Prome, Burma",MM
-2019-03-25 20:04:46,2019-03-26 02:34:46,23.4028,98.4577,15.59,4.6,"Nansan, China",MM
-2019-03-25 08:43:23,2019-03-25 15:13:23,16.13,97.01,10.0,3.9,,MM
-2019-03-20 23:37:42,2019-03-21 06:07:42,22.83,93.87,40.0,4.3,"Chin State, Myanmar (Burma)",MM
-2019-03-18 16:54:30,2019-03-18 23:24:30,21.96,94.59,100.0,4.7,"Sagaing Region, Myanmar (Burma)",MM
-2019-03-13 13:44:04,2019-03-13 20:14:04,23.0247,93.9379,78.57,4.5,"Chin State, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+18.9383000,94.3804000,52.7900,4.30,mb,,171,3.09,0.78,us,us1000jmhe,2019-03-27T21:23:42.040Z,"Prome, Burma","89km W of Prome, Burma",MM,Asia,earthquake,1553721834,1553704761,1,,,2019-03-27 16:39:21,2019-03-27 23:09:21
+23.4028000,98.4577000,15.5900,4.60,mb,,136,2.353,0.61,us,us1000jlgz,2019-03-25T20:42:34.040Z,"Nansan, China","56km SW of Nansan, China",MM,Asia,earthquake,1553546561,1553544286,1,,,2019-03-25 20:04:46,2019-03-26 02:34:46
+16.1300000,97.0100000,10.0000,3.90,ml,,,,,,ems_201903_753438,2019-03-25T09:05:00.000Z,,Near South Coast Of Myanmar,MM,Asia,earthquake,1553504764,1553503403,1,,,2019-03-25 08:43:23,2019-03-25 15:13:23
+22.8300000,93.8700000,40.0000,4.30,mb,,,,,,ems_201903_752393,2019-03-21T08:11:00.000Z,"Chin State, Myanmar (Burma)",Myanmar-india Border Region,MM,Asia,earthquake,1553126387,1553125062,1,,,2019-03-20 23:37:42,2019-03-21 06:07:42
+21.9600000,94.5900000,100.0000,4.70,ml,,,,,,ems_201903_751747,2019-03-19T07:42:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1552930178,1552928070,1,,,2019-03-18 16:54:30,2019-03-18 23:24:30
+23.0247000,93.9379000,78.5700,4.50,mb,,61,0.492,0.68,us,ems_201903_750574,2019-03-15T05:47:32.040Z,"Chin State, Myanmar (Burma)","28km ENE of Falam, Burma",MM,Asia,earthquake,1552487456,1552484644,1,,,2019-03-13 13:44:04,2019-03-13 20:14:04

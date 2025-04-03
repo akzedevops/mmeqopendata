@@ -1,6 +1,6 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1991-04-24 01:34:03,1991-04-24 08:04:03,20.499,97.972,33.0,4.4,,MM
-1991-04-21 06:57:24,1991-04-21 13:27:24,23.179,95.813,33.0,4.1,,MM
-1991-04-15 16:03:03,1991-04-15 22:33:03,23.925,93.807,33.0,3.5,,MM
-1991-04-01 05:45:20,1991-04-01 12:15:20,15.844,95.701,12.7,5.4,,MM
-1991-04-01 03:53:04,1991-04-01 10:23:04,15.746,95.738,15.0,6.0,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+20.4990000,97.9720000,33.0000,4.40,mb,,,,1,us,usp0004qrb,2014-11-07T00:48:26.892Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-04-24 01:34:03,1991-04-24 08:04:03
+23.1790000,95.8130000,33.0000,4.10,mb,,,,1.4,us,usp0004qky,2014-11-07T00:48:25.096Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-04-21 06:57:24,1991-04-21 13:27:24
+23.9250000,93.8070000,33.0000,3.50,mb,,,,1.4,us,usp0004qcg,2014-11-07T00:48:22.838Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1991-04-15 16:03:03,1991-04-15 22:33:03
+15.8440000,95.7010000,12.7000,5.40,ms,,,,1,us,usp0004ptq,2015-02-12T22:04:38.828Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1991-04-01 05:45:20,1991-04-01 12:15:20
+15.7460000,95.7380000,15.0000,6.00,mw,,,,1,us,usp0004pth,2015-02-12T23:49:25.968Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1991-04-01 03:53:04,1991-04-01 10:23:04

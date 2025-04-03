@@ -1,3 +1,3 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1990-08-02 19:08:55,1990-08-03 01:38:55,22.629,94.265,120.8,4.8,,MM
-1990-08-02 02:31:24,1990-08-02 09:01:24,24.626,94.987,170.5,4.7,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.6290000,94.2650000,120.8000,4.80,mb,,,,1.5,us,usp0004cvz,2014-11-07T00:46:52.197Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-08-02 19:08:55,1990-08-03 01:38:55
+24.6260000,94.9870000,170.5000,4.70,mb,,,,0.4,us,usp0004cup,2014-11-07T00:46:51.053Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-08-02 02:31:24,1990-08-02 09:01:24

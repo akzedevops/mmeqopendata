@@ -1,7 +1,7 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2018-11-29 03:57:37,2018-11-29 10:27:37,23.5476,94.32,83.34,4.5,"Mawlaik, Burma",MM
-2018-11-20 17:49:19,2018-11-21 00:19:19,20.2441,93.6503,44.91,4.5,"Rakhine, Myanmar (Burma)",MM
-2018-11-19 19:03:07,2018-11-20 01:33:07,23.4306,94.1988,10.0,4.4,"Mawlaik, Burma",MM
-2018-11-19 04:07:53,2018-11-19 10:37:53,21.5,94.39,80.0,4.9,"Pakokku, Burma",MM
-2018-11-10 17:15:46,2018-11-10 23:45:46,23.9634,93.3951,51.07,5.2,"Chin State, Myanmar (Burma)",MM
-2018-11-05 19:48:36,2018-11-06 02:18:36,19.9181,95.4792,10.0,4.5,"Taungdwingyi, Burma",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+23.5476000,94.3200000,83.3400,4.50,mb,,100,0.679,0.6,us,us1000hxrv,2018-11-30T04:27:33.040Z,"Mawlaik, Burma","13km SW of Mawlaik, Burma",MM,Asia,earthquake,1543464816,1543463857,1,,,2018-11-29 03:57:37,2018-11-29 10:27:37
+20.2441000,93.6503000,44.9100,4.50,mb,,118,2.386,0.94,us,us1000huhk,2018-11-21T16:03:14.040Z,"Rakhine, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1542742437,1542736159,1,,,2018-11-20 17:49:19,2018-11-21 00:19:19
+23.4306000,94.1988000,10.0000,4.40,mb,,90,0.8,1,us,us1000hu10,2018-11-25T14:26:43.040Z,"Mawlaik, Burma","31km SW of Mawlaik, Burma",MM,Asia,earthquake,1542665004,1542654187,1,,,2018-11-19 19:03:07,2018-11-20 01:33:07
+21.5000000,94.3900000,80.0000,4.90,mb,,,,,,us1000htsq,2018-11-19T07:51:00.000Z,"Pakokku, Burma",Myanmar,MM,Asia,earthquake,1542602323,1542600473,1,,,2018-11-19 04:07:53,2018-11-19 10:37:53
+23.9634000,93.3951000,51.0700,5.20,mww,,50,0.868,0.67,us,ems_201811_724524,2018-11-14T15:22:31.447Z,"Chin State, Myanmar (Burma)","49km SW of Churachandpur, India",MM,Asia,earthquake,1541870742,1541870146,1,,,2018-11-10 17:15:46,2018-11-10 23:45:46
+19.9181000,95.4792000,10.0000,4.50,mb,,162,1.686,0.62,us,us2000i74f,2018-11-06T10:21:09.471Z,"Taungdwingyi, Burma","13km SW of Taungdwingyi, Burma",MM,Asia,earthquake,1541460150,1541447316,1,,,2018-11-05 19:48:36,2018-11-06 02:18:36

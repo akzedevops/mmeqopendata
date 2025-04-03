@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1989-06-28 12:08:32,1989-06-28 18:38:32,23.851,94.387,75.6,5.0,,MM
-1989-06-25 09:50:01,1989-06-25 16:20:01,21.454,93.492,59.5,4.5,,MM
-1989-06-04 15:07:46,1989-06-04 21:37:46,23.443,99.325,10.0,5.0,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+23.8510000,94.3870000,75.6000,5.00,mb,,,,1,us,usp0003wrc,2014-11-07T00:44:24.581Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-06-28 12:08:32,1989-06-28 18:38:32
+21.4540000,93.4920000,59.5000,4.50,mb,,,,1.1,us,usp0003wmw,2014-11-07T00:44:24.128Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-06-25 09:50:01,1989-06-25 16:20:01
+23.4430000,99.3250000,10.0000,5.00,mb,,,,1.2,us,usp0003vz2,2014-11-07T00:44:20.687Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1989-06-04 15:07:46,1989-06-04 21:37:46

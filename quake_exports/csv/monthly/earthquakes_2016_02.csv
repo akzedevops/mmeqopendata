@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2016-02-08 11:05:56,2016-02-08 17:35:56,24.7,94.6,118.0,3.8,"Ongjia, Sagaing Region, Myanmar (Burma)",MM
-2016-02-07 23:31:09,2016-02-08 06:01:09,27.24,98.42,20.0,4.5,"Kachin, Myanmar (Burma)",MM
-2016-02-07 23:31:01,2016-02-08 06:01:01,25.95,99.39,60.0,4.8,"Kachin, Myanmar (Burma)",MM
-2016-02-01 19:48:37,2016-02-02 02:18:37,23.8,93.8,111.0,3.8,"Chin State, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+24.7000000,94.6000000,118.0000,3.80,ml,,,,,,2016-02-08_110556_3.8,2016-02-08T14:20:00.000Z,"Ongjia, Sagaing Region, Myanmar (Burma)",Myanmar-india Border Region,MM,Asia,earthquake,0,1454929556,1,,,2016-02-08 11:05:56,2016-02-08 17:35:56
+27.2400000,98.4200000,20.0000,4.50,mb,,,,,,us20004ym9,2016-02-08T07:45:00.000Z,"Kachin, Myanmar (Burma)",Myanmar-china Border Region,MM,Asia,earthquake,0,1454887869,1,,,2016-02-07 23:31:09,2016-02-08 06:01:09
+25.9500000,99.3900000,60.0000,4.80,mb,,,,,,20160207_0000089,2016-02-08T00:57:00.000Z,"Kachin, Myanmar (Burma)","Yunnan, China",MM,Asia,earthquake,0,1454887861,1,,,2016-02-07 23:31:01,2016-02-08 06:01:01
+23.8000000,93.8000000,111.0000,3.80,ml,,,,,,2016-02-01_194837_3.8,2016-02-01T21:45:00.000Z,"Chin State, Myanmar (Burma)",Myanmar-india Border Region,MM,Asia,earthquake,0,1454356117,1,,,2016-02-01 19:48:37,2016-02-02 02:18:37

@@ -1,2 +1,2 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2003-05-20 10:41:30,2003-05-20 17:11:30,23.325,93.619,67.3,4.0,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+23.3250000,93.6190000,67.3000,4.00,mb,14,177.5,,0.66,us,usp000bxk1,2014-11-07T01:18:39.062Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-05-20 10:41:30,2003-05-20 17:11:30

@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1979-05-31 19:40:28,1979-06-01 02:10:28,25.19,95.134,109.0,4.7,,MM
-1979-05-30 11:06:25,1979-05-30 17:36:25,22.101,94.682,122.0,4.4,,MM
-1979-05-29 00:39:52,1979-05-29 07:09:52,24.497,94.724,83.0,5.3,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+25.1900000,95.1340000,109.0000,4.70,mb,,,,,us,usp0001118,2014-11-06T23:22:01.800Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-05-31 19:40:28,1979-06-01 02:10:28
+22.1010000,94.6820000,122.0000,4.40,mb,,,,,us,usp0001106,2014-11-06T23:22:01.728Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-05-30 11:06:25,1979-05-30 17:36:25
+24.4970000,94.7240000,83.0000,5.30,mb,,,,,us,usp00010z7,2015-02-11T17:14:45.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1979-05-29 00:39:52,1979-05-29 07:09:52

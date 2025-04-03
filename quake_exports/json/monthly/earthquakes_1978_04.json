@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1978-04-27 10:18:41",
-      "time_mmt": "1978-04-27 16:48:41",
-      "latitude": 23.634,
-      "longitude": 94.626,
-      "depth": 59.0,
-      "mag": 4.5,
+      "latitude": "23.6340000",
+      "longitude": "94.6260000",
+      "depth": "59.0000",
+      "mag": "4.50",
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "us",
+      "id": "usp0000ua1",
+      "updated": "2014-11-06T23:21:48.761Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1978-04-27 10:18:41",
+      "time_mmt": "1978-04-27 16:48:41"
     }
   ]
 }

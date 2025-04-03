@@ -1,2 +1,2 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1981-01-14 01:02:59,1981-01-14 07:32:59,18.473,95.267,52.0,4.5,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+18.4730000,95.2670000,52.0000,4.50,mb,,,,,us,usp0001bqd,2014-11-06T23:24:28.655Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-01-14 01:02:59,1981-01-14 07:32:59

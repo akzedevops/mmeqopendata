@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2011-12-26 10:40:30,2011-12-26 17:10:30,23.355,94.255,73.8,4.7,,MM
-2011-12-24 15:14:16,2011-12-24 21:44:16,22.546,98.568,10.0,4.0,,MM
-2011-12-12 04:45:44,2011-12-12 11:15:44,24.886,95.26,122.4,4.6,,MM
-2011-12-10 11:44:18,2011-12-10 18:14:18,15.946,95.18,10.0,4.1,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+23.3550000,94.2550000,73.8000,4.70,mb,31,143.6,,0.57,us,usp000jcnm,2014-11-07T01:46:37.657Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-26 10:40:30,2011-12-26 17:10:30
+22.5460000,98.5680000,10.0000,4.00,mb,20,137.6,,0.9,us,usp000jckc,2014-11-07T01:46:37.113Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-24 15:14:16,2011-12-24 21:44:16
+24.8860000,95.2600000,122.4000,4.60,mb,31,84.8,,0.92,us,usp000jc3n,2014-11-07T01:46:33.197Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-12 04:45:44,2011-12-12 11:15:44
+15.9460000,95.1800000,10.0000,4.10,mb,13,105,,0.77,us,usp000jc12,2014-11-07T01:46:32.695Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-10 11:44:18,2011-12-10 18:14:18

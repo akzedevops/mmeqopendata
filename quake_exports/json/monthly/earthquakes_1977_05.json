@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1977-05-12 12:20:00",
-      "time_mmt": "1977-05-12 18:50:00",
-      "latitude": 21.747,
-      "longitude": 92.99,
-      "depth": 40.0,
-      "mag": 5.7,
+      "latitude": "21.7470000",
+      "longitude": "92.9900000",
+      "depth": "40.0000",
+      "mag": "5.70",
+      "magType": "ms",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "us",
+      "id": "usp0000nus",
+      "updated": "2015-02-12T22:22:28.946Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar-Bangladesh border region",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1977-05-12 12:20:00",
+      "time_mmt": "1977-05-12 18:50:00"
     }
   ]
 }

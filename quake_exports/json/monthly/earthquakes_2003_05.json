@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "2003-05-20 10:41:30",
-      "time_mmt": "2003-05-20 17:11:30",
-      "latitude": 23.325,
-      "longitude": 93.619,
-      "depth": 67.3,
-      "mag": 4.0,
+      "latitude": "23.3250000",
+      "longitude": "93.6190000",
+      "depth": "67.3000",
+      "mag": "4.00",
+      "magType": "mb",
+      "nst": "14",
+      "gap": "177.5",
+      "dmin": "",
+      "rms": "0.66",
+      "net": "us",
+      "id": "usp000bxk1",
+      "updated": "2014-11-07T01:18:39.062Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar-India border region",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "2003-05-20 10:41:30",
+      "time_mmt": "2003-05-20 17:11:30"
     }
   ]
 }

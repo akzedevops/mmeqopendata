@@ -1,3 +1,3 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1992-08-21 21:57:29,1992-08-22 04:27:29,22.576,93.541,33.0,4.3,,MM
-1992-08-06 22:16:32,1992-08-07 04:46:32,14.561,97.026,24.1,4.0,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.5760000,93.5410000,33.0000,4.30,mb,,,,0.9,us,usp0005cv1,2014-11-07T00:51:17.821Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1992-08-21 21:57:29,1992-08-22 04:27:29
+14.5610000,97.0260000,24.1000,4.00,mb,,,,1,us,usp0005c31,2014-11-07T00:51:14.109Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1992-08-06 22:16:32,1992-08-07 04:46:32

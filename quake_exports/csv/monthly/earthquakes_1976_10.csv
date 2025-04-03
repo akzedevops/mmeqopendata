@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1976-10-31 18:36:26,1976-11-01 01:06:26,26.48,96.559,33.0,4.8,,MM
-1976-10-16 07:12:24,1976-10-16 13:42:24,21.382,99.732,33.0,4.8,,MM
-1976-10-12 15:19:33,1976-10-12 21:49:33,24.484,98.805,33.0,5.0,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+26.4800000,96.5590000,33.0000,4.80,mb,,,,,us,usp0000k4r,2014-11-06T23:21:37.975Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-10-31 18:36:26,1976-11-01 01:06:26
+21.3820000,99.7320000,33.0000,4.80,mb,,,,,us,usp0000jvz,2014-11-06T23:21:37.728Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-10-16 07:12:24,1976-10-16 13:42:24
+24.4840000,98.8050000,33.0000,5.00,mb,,,,,us,usp0000juv,2014-11-06T23:21:37.699Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-10-12 15:19:33,1976-10-12 21:49:33

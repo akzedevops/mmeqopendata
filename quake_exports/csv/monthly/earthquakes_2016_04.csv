@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2016-04-22 07:50:43,2016-04-22 14:20:43,24.67,96.25,47.0,4.4,"Kachin, Myanmar (Burma)",MM
-2016-04-14 05:41:54,2016-04-14 12:11:54,23.72,94.14,75.0,4.7,"Chin State, Myanmar (Burma)",MM
-2016-04-13 13:55:17,2016-04-13 20:25:17,23.1329,94.8995,134.76,6.9,"Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+24.6700000,96.2500000,47.0000,4.40,mb,,,,,,20160422_0000056,2016-04-22T14:12:00.000Z,"Kachin, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1461311443,1,,,2016-04-22 07:50:43,2016-04-22 14:20:43
+23.7200000,94.1400000,75.0000,4.70,mb,,,,,,2016-04-14_054155_4.5,2016-04-14T07:48:00.000Z,"Chin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1460612514,1,,,2016-04-14 05:41:54,2016-04-14 12:11:54
+23.1329000,94.8995000,134.7600,6.90,mwb,,23,3.684,1.17,us,20160413_0000061,2016-04-14T16:26:41.046Z,"Sagaing Region, Myanmar (Burma)","74km SE of Mawlaik, Burma",MM,Asia,earthquake,0,1460555717,1,,,2016-04-13 13:55:17,2016-04-13 20:25:17

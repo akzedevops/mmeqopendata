@@ -1,2 +1,2 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2015-03-08 05:45:15,2015-03-08 12:15:15,22.57,95.85,10.0,4.4,"စစ်ကိုင်းတိုင်း, Republic of the Union of Myanmar",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.5700000,95.8500000,10.0000,4.40,mb,,,,,,20150308_0000025,2015-03-08T07:03:00.000Z,"စစ်ကိုင်းတိုင်း, Republic of the Union of Myanmar",Myanmar,MM,Asia,earthquake,0,1425793515,1,,,2015-03-08 05:45:15,2015-03-08 12:15:15

@@ -1,6 +1,6 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2017-03-30 10:34:53,2017-03-30 17:04:53,17.1534,95.9052,17.73,4.2,"Yangon Region, Myanmar (Burma)",MM
-2017-03-25 02:05:55,2017-03-25 08:35:55,25.07,95.09,100.0,4.5,"Sagaing Region, Myanmar (Burma)",MM
-2017-03-14 16:39:44,2017-03-14 23:09:44,26.66,97.5,10.0,4.5,"Kachin, Myanmar (Burma)",MM
-2017-03-13 14:19:06,2017-03-13 20:49:06,17.415,96.0107,10.0,5.1,"Yangon Region, Myanmar (Burma)",MM
-2017-03-06 21:30:07,2017-03-07 04:00:07,25.07,95.09,100.0,4.3,"Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+17.1534000,95.9052000,17.7300,4.20,mb,,166,0.372,0.48,us,20170330_0000105,2017-03-31T10:22:15.711Z,"Yangon Region, Myanmar (Burma)","30km ENE of Nyaungdon, Burma",MM,Asia,earthquake,0,1490870093,1,,,2017-03-30 10:34:53,2017-03-30 17:04:53
+25.0700000,95.0900000,100.0000,4.50,mb,,,,,,20170325_0000007,2017-03-25T08:38:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1490407555,1,,,2017-03-25 02:05:55,2017-03-25 08:35:55
+26.6600000,97.5000000,10.0000,4.50,mb,,,,,,20170314_0000127,2017-03-15T15:16:00.000Z,"Kachin, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1489509584,1,,,2017-03-14 16:39:44,2017-03-14 23:09:44
+17.4150000,96.0107000,10.0000,5.10,mb,,42,0.563,0.62,us,20170313_0000044,2017-03-15T14:53:40.211Z,"Yangon Region, Myanmar (Burma)","34km SE of Tharyarwady, Burma",MM,Asia,earthquake,0,1489414746,1,,,2017-03-13 14:19:06,2017-03-13 20:49:06
+25.0700000,95.0900000,100.0000,4.30,mb,,,,,,20170306_0000126,2017-03-07T07:40:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1488835807,1,,,2017-03-06 21:30:07,2017-03-07 04:00:07

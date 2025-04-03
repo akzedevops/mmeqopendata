@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1980-03-28 16:15:02",
-      "time_mmt": "1980-03-28 22:45:02",
-      "latitude": 23.904,
-      "longitude": 94.738,
-      "depth": 90.0,
-      "mag": 4.8,
+      "latitude": "23.9040000",
+      "longitude": "94.7380000",
+      "depth": "90.0000",
+      "mag": "4.80",
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "us",
+      "id": "usp00016a6",
+      "updated": "2014-11-06T23:24:19.692Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1980-03-28 16:15:02",
+      "time_mmt": "1980-03-28 22:45:02"
     }
   ]
 }

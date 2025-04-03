@@ -1,6 +1,6 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2000-08-29 14:51:33,2000-08-29 21:21:33,24.334,94.448,33.0,3.9,,MM
-2000-08-23 22:03:07,2000-08-24 04:33:07,20.747,94.577,33.0,3.8,,MM
-2000-08-23 16:31:54,2000-08-23 23:01:54,19.785,95.152,86.6,4.4,,MM
-2000-08-13 14:59:34,2000-08-13 21:29:34,24.67,94.742,65.8,4.3,,MM
-2000-08-02 17:58:28,2000-08-03 00:28:28,22.143,93.538,33.0,4.3,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+24.3340000,94.4480000,33.0000,3.90,mb,19,,,0.92,us,usp0009zbu,2014-11-07T01:10:56.306Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2000-08-29 14:51:33,2000-08-29 21:21:33
+20.7470000,94.5770000,33.0000,3.80,mb,25,,,1.14,us,usp0009z2e,2014-11-07T01:10:54.618Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2000-08-23 22:03:07,2000-08-24 04:33:07
+19.7850000,95.1520000,86.6000,4.40,mb,29,,,0.58,us,usp0009z1y,2014-11-07T01:10:54.571Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2000-08-23 16:31:54,2000-08-23 23:01:54
+24.6700000,94.7420000,65.8000,4.30,mb,35,,,1.05,us,usp0009yd1,2014-11-07T01:10:51.444Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2000-08-13 14:59:34,2000-08-13 21:29:34
+22.1430000,93.5380000,33.0000,4.30,mb,50,,,1.2,us,usp0009xnh,2014-11-07T01:10:47.530Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2000-08-02 17:58:28,2000-08-03 00:28:28

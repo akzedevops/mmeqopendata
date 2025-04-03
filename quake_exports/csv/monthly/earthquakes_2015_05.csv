@@ -1,2 +1,2 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2015-05-21 12:43:34,2015-05-21 19:13:34,22.86,96.2,10.0,4.8,"Mandalay Region, Republic of the Union of Myanmar",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.8600000,96.2000000,10.0000,4.80,m,,,,,,20150521_0000078,2015-05-21T14:14:00.000Z,"Mandalay Region, Republic of the Union of Myanmar",Myanmar,MM,Asia,earthquake,0,1432212214,1,,,2015-05-21 12:43:34,2015-05-21 19:13:34

@@ -1,9 +1,9 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2019-08-31 15:09:21,2019-08-31 21:39:21,22.7269,95.5099,10.0,5.5,"Myo Thit, Myanmar (Burma)",MM
-2019-08-27 07:51:42,2019-08-27 14:21:42,20.02,97.96,10.0,3.7,"Shan, Myanmar (Burma)",MM
-2019-08-26 02:49:15,2019-08-26 09:19:15,26.5229,96.0899,93.49,4.7,"Kachin, Myanmar (Burma)",MM
-2019-08-18 03:38:15,2019-08-18 10:08:15,18.54,94.65,60.0,4.8,"Prome, Burma",MM
-2019-08-18 03:24:23,2019-08-18 09:54:23,18.4865,94.5107,40.29,5.3,"Rakhine, Myanmar (Burma)",MM
-2019-08-05 09:43:03,2019-08-05 16:13:03,25.6958,96.6601,10.0,4.7,"Kachin, Myanmar (Burma)",MM
-2019-08-03 12:19:18,2019-08-03 18:49:18,25.48,96.72,10.0,4.7,"Kachin, Myanmar (Burma)",MM
-2019-08-02 14:37:38,2019-08-02 21:07:38,23.6285,94.6485,94.55,4.6,"Mawlaik, Burma",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.7269000,95.5099000,10.0000,5.50,mww,,31,1.766,0.55,us,gfz2019rbht,2019-09-03T15:12:52.040Z,"Myo Thit, Myanmar (Burma)","26km NW of Shwebo, Burma",MM,Asia,earthquake,1567264612,1567264161,1,,,2019-08-31 15:09:21,2019-08-31 21:39:21
+20.0200000,97.9600000,10.0000,3.70,ml,,,,,,ems_201908_788696,2019-08-27T08:05:00.000Z,"Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1566893154,1566892302,1,,,2019-08-27 07:51:42,2019-08-27 14:21:42
+26.5229000,96.0899000,93.4900,4.70,mb,,55,2.799,0.74,us,gfz2019qrfv,2019-08-26T07:52:56.973Z,"Kachin, Myanmar (Burma)","75km SE of Khonsa, India",MM,Asia,earthquake,1566788516,1566787755,1,,,2019-08-26 02:49:15,2019-08-26 09:19:15
+18.5400000,94.6500000,60.0000,4.80,mb,,,,,,us600056kk,2019-08-18T09:34:00.000Z,"Prome, Burma","73km WSW of Prome, Burma",MM,Asia,earthquake,1566100435,1566099495,1,,,2019-08-18 03:38:15,2019-08-18 10:08:15
+18.4865000,94.5107000,40.2900,5.30,mww,,62,3.287,0.63,us,gfz2019qcqy,2019-08-19T15:10:19.040Z,"Rakhine, Myanmar (Burma)","82km WSW of Prome, Burma",MM,Asia,earthquake,1566099261,1566098663,1,,,2019-08-18 03:24:23,2019-08-18 09:54:23
+25.6958000,96.6601000,10.0000,4.70,mb,,113,2.592,1.08,us,gfz2019pfjx,2019-08-05T13:19:45.040Z,"Kachin, Myanmar (Burma)","82km WNW of Myitkyina, Burma",MM,Asia,earthquake,1565001541,1564998183,1,,,2019-08-05 09:43:03,2019-08-05 16:13:03
+25.4800000,96.7200000,10.0000,4.70,mb,,,,,,gfz2019pbyb,2019-08-03T18:36:00.000Z,"Kachin, Myanmar (Burma)","55km WSW of Myitkyina, Burma",MM,Asia,earthquake,1564836126,1564834758,1,,,2019-08-03 12:19:18,2019-08-03 18:49:18
+23.6285000,94.6485000,94.5500,4.60,mb,,91,0.677,0.5,us,us60004zkl,2019-08-05T08:33:46.040Z,"Mawlaik, Burma","23km E of Mawlaik, Burma",MM,Asia,earthquake,1564994111,1564756658,1,,,2019-08-02 14:37:38,2019-08-02 21:07:38

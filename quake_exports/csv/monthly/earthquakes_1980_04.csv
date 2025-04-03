@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1980-04-22 01:46:35,1980-04-22 08:16:35,16.875,94.899,33.0,4.1,,MM
-1980-04-18 04:20:05,1980-04-18 10:50:05,17.043,94.843,38.0,4.2,,MM
-1980-04-04 08:19:21,1980-04-04 14:49:21,21.335,93.804,51.0,5.1,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+16.8750000,94.8990000,33.0000,4.10,mb,,,,,us,usp00016t3,2014-11-06T23:24:20.685Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1980-04-22 01:46:35,1980-04-22 08:16:35
+17.0430000,94.8430000,38.0000,4.20,mb,,,,,us,usp00016qb,2014-11-06T23:24:20.530Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-04-18 04:20:05,1980-04-18 10:50:05
+21.3350000,93.8040000,51.0000,5.10,mb,,,,,us,usp00016em,2014-11-06T23:24:19.978Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-04-04 08:19:21,1980-04-04 14:49:21

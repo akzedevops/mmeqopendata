@@ -1,2 +1,2 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2015-04-15 17:57:02,2015-04-16 00:27:02,24.39,96.17,61.0,4.2,"Indaw, Sagaing, Republic of the Union of Myanmar",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+24.3900000,96.1700000,61.0000,4.20,mb,,,,,,20150415_0000071,2015-04-15T20:08:00.000Z,"Indaw, Sagaing, Republic of the Union of Myanmar",Myanmar,MM,Asia,earthquake,0,1429120622,1,,,2015-04-15 17:57:02,2015-04-16 00:27:02

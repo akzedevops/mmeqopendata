@@ -1,9 +1,9 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2018-06-27 13:02:30,2018-06-27 19:32:30,19.76,96.05,10.0,4.8,"Naypyidaw Union Territory, Myanmar (Burma)",MM
-2018-06-26 00:02:16,2018-06-26 06:32:16,22.2092,95.0342,21.81,4.6,"Sagaing Region, Myanmar (Burma)",MM
-2018-06-19 11:06:26,2018-06-19 17:36:26,21.9448,94.1572,84.27,4.3,"Magway Region, Myanmar (Burma)",MM
-2018-06-18 13:56:48,2018-06-18 20:26:48,16.4057,96.334,67.79,4.3,"Yangon Region, Myanmar (Burma)",MM
-2018-06-17 13:42:37,2018-06-17 20:12:37,18.3759,96.1915,24.07,4.6,"Bago Region, Myanmar (Burma)",MM
-2018-06-17 13:21:30,2018-06-17 19:51:30,18.2846,96.0789,10.0,5.0,"Bago Region, Myanmar (Burma)",MM
-2018-06-05 23:12:32,2018-06-06 05:42:32,23.8585,94.4873,82.01,4.7,"Pantha, Sagaing Region, Myanmar (Burma)",MM
-2018-06-05 16:33:54,2018-06-05 23:03:54,24.5969,95.1002,110.91,4.8,"Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+19.7600000,96.0500000,10.0000,4.80,mb,,,,,,ems_201806_683479,2018-06-27T14:20:00.000Z,"Naypyidaw Union Territory, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1530105485,1530104550,1,,,2018-06-27 13:02:30,2018-06-27 19:32:30
+22.2092000,95.0342000,21.8100,4.60,mb,,122,1.395,0.46,us,ems_201806_682578,2018-06-26T00:59:47.070Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1529972360,1529971336,1,,,2018-06-26 00:02:16,2018-06-26 06:32:16
+21.9448000,94.1572000,84.2700,4.30,mb,,172,0.865,0.63,us,ems_201806_678691,2018-06-19T11:29:44.040Z,"Magway Region, Myanmar (Burma)","95km SE of Hakha, Burma",MM,Asia,earthquake,1529407823,1529406386,1,,,2018-06-19 11:06:26,2018-06-19 17:36:26
+16.4057000,96.3340000,67.7900,4.30,mb,,109,3.219,0.9,us,ems_201806_678285,2018-06-18T15:12:19.040Z,"Yangon Region, Myanmar (Burma)","39km SSE of Rangoon District, Burma",MM,Asia,earthquake,1529334773,1529330208,1,,,2018-06-18 13:56:48,2018-06-18 20:26:48
+18.3759000,96.1915000,24.0700,4.60,mb,,130,2.509,0.45,us,ems_201806_677735,2018-06-17T17:46:41.143Z,"Bago Region, Myanmar (Burma)","28km WSW of Pyu, Burma",MM,Asia,earthquake,1529244887,1529242957,1,,,2018-06-17 13:42:37,2018-06-17 20:12:37
+18.2846000,96.0789000,10.0000,5.00,mww,,62,2.63,0.45,us,ems_201806_677691,2018-06-18T03:28:59.125Z,"Bago Region, Myanmar (Burma)","43km WSW of Pyu, Burma",MM,Asia,earthquake,1529242170,1529241690,1,,,2018-06-17 13:21:30,2018-06-17 19:51:30
+23.8585000,94.4873000,82.0100,4.70,mb,,26,0.407,0.89,us,ems_201806_672513,2018-06-12T05:22:11.150Z,"Pantha, Sagaing Region, Myanmar (Burma)","25km NNE of Mawlaik, Burma",MM,Asia,earthquake,1528240886,1528240352,1,,,2018-06-05 23:12:32,2018-06-06 05:42:32
+24.5969000,95.1002000,110.9100,4.80,mb,,25,0.815,1.02,us,ems_201806_672448,2018-06-11T20:23:51.040Z,"Sagaing Region, Myanmar (Burma)","104km E of Yairipok, India",MM,Asia,earthquake,1528216961,1528216434,1,,,2018-06-05 16:33:54,2018-06-05 23:03:54

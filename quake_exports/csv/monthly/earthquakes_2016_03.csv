@@ -1,6 +1,6 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2016-03-23 10:50:03,2016-03-23 17:20:03,24.56,96.0271,62.66,4.4,"Sagaing Region, Myanmar (Burma)",MM
-2016-03-22 11:49:12,2016-03-22 18:19:12,26.1,95.3,49.0,3.7,"Sagaing Region, Myanmar (Burma)",MM
-2016-03-07 12:23:01,2016-03-07 18:53:01,22.7785,93.968,48.79,4.5,"Chin State, Myanmar (Burma)",MM
-2016-03-07 03:14:00,2016-03-07 09:44:00,21.05,95.11,124.0,4.9,"Magway Region, Myanmar (Burma)",MM
-2016-03-07 03:13:58,2016-03-07 09:43:58,20.98,95.0238,100.99,4.6,"Mandalay Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+24.5600000,96.0271000,62.6600,4.40,mb,,113,3.913,0.74,us,us20005c0c,2016-03-23T18:52:32.090Z,"Sagaing Region, Myanmar (Burma)","126km WNW of Bhamo, Burma",MM,Asia,earthquake,0,1458730203,1,,,2016-03-23 10:50:03,2016-03-23 17:20:03
+26.1000000,95.3000000,49.0000,3.70,ml,,,,,,2016-03-22_114912_3.7,2016-03-22T11:49:12.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar-india(nagaland) Border Region,MM,Asia,earthquake,0,1458647352,1,,,2016-03-22 11:49:12,2016-03-22 18:19:12
+22.7785000,93.9680000,48.7900,4.50,mb,,167,3.38,0.4,us,20160307_0000043,2016-03-07T20:25:45.262Z,"Chin State, Myanmar (Burma)","32km ESE of Falam, Burma",MM,Asia,earthquake,0,1457353381,1,,,2016-03-07 12:23:01,2016-03-07 18:53:01
+21.0500000,95.1100000,124.0000,4.90,m,,,,,,20160307_0000012,2016-03-07T07:37:00.000Z,"Magway Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1457320440,1,,,2016-03-07 03:14:00,2016-03-07 09:44:00
+20.9800000,95.0238000,100.9900,4.60,mb,,46,3.22,1.09,us,us10004vst,2016-03-11T02:57:30.234Z,"Mandalay Region, Myanmar (Burma)","24km ENE of Chauk, Burma",MM,Asia,earthquake,0,1457320438,1,,,2016-03-07 03:13:58,2016-03-07 09:43:58

@@ -1,6 +1,6 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1987-04-29 05:15:34,1987-04-29 11:45:34,24.124,94.655,103.9,5.1,,MM
-1987-04-29 00:15:27,1987-04-29 06:45:27,22.457,93.593,49.1,5.3,,MM
-1987-04-06 23:28:37,1987-04-07 05:58:37,26.469,95.898,101.7,4.5,,MM
-1987-04-03 05:48:00,1987-04-03 12:18:00,24.817,95.226,151.6,4.6,,MM
-1987-04-01 16:01:48,1987-04-01 22:31:48,21.954,98.464,33.0,4.7,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+24.1240000,94.6550000,103.9000,5.10,mb,,,,0.9,us,usp00034ju,2014-11-07T00:40:17.823Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-04-29 05:15:34,1987-04-29 11:45:34
+22.4570000,93.5930000,49.1000,5.30,mb,,,,1,us,usp00034jr,2014-11-07T00:40:17.785Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-04-29 00:15:27,1987-04-29 06:45:27
+26.4690000,95.8980000,101.7000,4.50,mb,,,,0.7,us,usp00033z0,2014-11-07T00:40:12.905Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-04-06 23:28:37,1987-04-07 05:58:37
+24.8170000,95.2260000,151.6000,4.60,mb,,,,0.8,us,usp00033vr,2014-11-07T00:40:11.914Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-04-03 05:48:00,1987-04-03 12:18:00
+21.9540000,98.4640000,33.0000,4.70,mb,,,,1.1,us,usp00033u6,2014-11-07T00:40:11.123Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-04-01 16:01:48,1987-04-01 22:31:48

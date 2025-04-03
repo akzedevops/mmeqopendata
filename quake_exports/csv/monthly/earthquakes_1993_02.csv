@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1993-02-17 02:28:22,1993-02-17 08:58:22,22.711,94.378,125.2,4.4,,MM
-1993-02-14 16:48:26,1993-02-14 23:18:26,22.422,94.917,33.0,4.5,,MM
-1993-02-07 13:02:44,1993-02-07 19:32:44,21.736,94.806,121.6,4.0,,MM
-1993-02-04 03:23:22,1993-02-04 09:53:22,23.048,94.428,133.5,3.7,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+22.7110000,94.3780000,125.2000,4.40,mb,,,,0.6,us,usp0005n74,2014-11-07T00:52:24.796Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-02-17 02:28:22,1993-02-17 08:58:22
+22.4220000,94.9170000,33.0000,4.50,mb,,,,1.4,us,usp0005n37,2014-11-07T00:52:24.279Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-02-14 16:48:26,1993-02-14 23:18:26
+21.7360000,94.8060000,121.6000,4.00,mb,,,,0.5,us,usp0005mrn,2014-11-07T00:52:22.474Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-02-07 13:02:44,1993-02-07 19:32:44
+23.0480000,94.4280000,133.5000,3.70,mb,,,,0.7,us,usp0005mkh,2014-11-07T00:52:21.040Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-02-04 03:23:22,1993-02-04 09:53:22

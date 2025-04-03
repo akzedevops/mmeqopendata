@@ -1,7 +1,7 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2017-01-29 21:36:19,2017-01-30 04:06:19,26.95,97.61,150.0,4.4,"Kachin, Myanmar (Burma)",MM
-2017-01-21 21:49:18,2017-01-22 04:19:18,19.8203,94.7544,70.14,4.3,"Magway Region, Myanmar (Burma)",MM
-2017-01-12 09:32:07,2017-01-12 16:02:07,26.38,95.43,64.0,4.8,"Sagaing Region, Myanmar (Burma)",MM
-2017-01-04 14:28:07,2017-01-04 20:58:07,22.9502,94.6704,121.9,4.6,"Sagaing Region, Myanmar (Burma)",MM
-2017-01-03 18:49:53,2017-01-04 01:19:53,23.3202,94.5079,89.66,5.1,"Sagaing Region, Myanmar (Burma)",MM
-2017-01-01 16:54:06,2017-01-01 23:24:06,21.1208,98.4506,64.29,4.6,"Shan, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+26.9500000,97.6100000,150.0000,4.40,mb,,,,,,20170129_213619_4.4,2017-01-29T21:36:19.000Z,"Kachin, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1485725779,1,,,2017-01-29 21:36:19,2017-01-30 04:06:19
+19.8203000,94.7544000,70.1400,4.30,mb,,48,3.007,0.75,us,us10007unu,2017-01-21T22:30:11.040Z,"Magway Region, Myanmar (Burma)","40km SSW of Magway, Burma",MM,Asia,earthquake,0,1485035358,1,,,2017-01-21 21:49:18,2017-01-22 04:19:18
+26.3800000,95.4300000,64.0000,4.80,mb,,,,,,20170112_093207_4.8,2017-01-12T09:32:07.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar-india Border Region,MM,Asia,earthquake,0,1484213527,1,,,2017-01-12 09:32:07,2017-01-12 16:02:07
+22.9502000,94.6704000,121.9000,4.60,mb,,89,1.318,0.76,us,20170104_142807_4.6,2017-01-04T14:44:43.040Z,"Sagaing Region, Myanmar (Burma)","79km SSE of Mawlaik, Burma",MM,Asia,earthquake,0,1483540087,1,,,2017-01-04 14:28:07,2017-01-04 20:58:07
+23.3202000,94.5079000,89.6600,5.10,mb,,46,0.925,0.99,us,20170103_184953_5.3,2017-01-05T16:28:32.790Z,"Sagaing Region, Myanmar (Burma)","35km SSE of Mawlaik, Burma",MM,Asia,earthquake,0,1483469393,1,,,2017-01-03 18:49:53,2017-01-04 01:19:53
+21.1208000,98.4506000,64.2900,4.60,mb,,98,1.075,0.47,us,us10007p3t,2017-01-03T19:46:54.040Z,"Shan, Myanmar (Burma)","149km NW of Mae Ai, Thailand",MM,Asia,earthquake,0,1483289646,1,,,2017-01-01 16:54:06,2017-01-01 23:24:06

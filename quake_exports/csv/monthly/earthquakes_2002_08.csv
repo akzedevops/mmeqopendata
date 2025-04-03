@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2002-08-24 18:11:54,2002-08-25 00:41:54,26.85,96.459,33.0,3.8,,MM
-2002-08-18 21:07:19,2002-08-19 03:37:19,17.616,97.571,33.0,4.4,,MM
-2002-08-16 16:32:33,2002-08-16 23:02:33,24.683,94.926,139.5,3.9,,MM
-2002-08-03 16:28:46,2002-08-03 22:58:46,22.194,93.388,74.3,3.8,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+26.8500000,96.4590000,33.0000,3.80,mb,9,,,0.69,us,usp000baj6,2014-11-07T01:16:19.981Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-08-24 18:11:54,2002-08-25 00:41:54
+17.6160000,97.5710000,33.0000,4.40,mb,22,,,0.71,us,usp000ba5k,2014-11-07T01:16:17.527Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-08-18 21:07:19,2002-08-19 03:37:19
+24.6830000,94.9260000,139.5000,3.90,mb,10,,,0.78,us,usp000ba11,2014-11-07T01:16:16.691Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-08-16 16:32:33,2002-08-16 23:02:33
+22.1940000,93.3880000,74.3000,3.80,mb,9,,,0.54,us,usp000b98n,2014-11-07T01:16:12.761Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-08-03 16:28:46,2002-08-03 22:58:46

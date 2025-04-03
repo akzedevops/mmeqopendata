@@ -1,14 +1,30 @@
 {
   "earthquakes": [
     {
-      "time_utc": "1992-02-15 18:51:09",
-      "time_mmt": "1992-02-16 01:21:09",
-      "latitude": 20.124,
-      "longitude": 93.76,
-      "depth": 33.0,
-      "mag": 3.8,
+      "latitude": "20.1240000",
+      "longitude": "93.7600000",
+      "depth": "33.0000",
+      "mag": "3.80",
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "1.3",
+      "net": "us",
+      "id": "usp000534d",
+      "updated": "2014-11-07T00:50:06.154Z",
       "location": "",
-      "country": "MM"
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "0",
+      "timestamp": "0",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "",
+      "time_utc": "1992-02-15 18:51:09",
+      "time_mmt": "1992-02-16 01:21:09"
     }
   ]
 }

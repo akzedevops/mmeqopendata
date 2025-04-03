@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2016-08-24 10:34:55,2016-08-24 17:04:55,20.9192,94.5789,84.07,6.8,"Magway Region, Myanmar (Burma)",MM
-2016-08-23 02:11:13,2016-08-23 08:41:13,23.8942,94.6945,106.3,5.3,"Sagaing Region, Myanmar (Burma)",MM
-2016-08-01 10:01:08,2016-08-01 16:31:08,21.29,94.91,140.0,5.1,"Mandalay Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+20.9192000,94.5789000,84.0700,6.80,mwp,,24,1.797,1.35,us,us10006gbf,2016-08-29T15:23:10.490Z,"Magway Region, Myanmar (Burma)","25km W of Chauk, Burma",MM,Asia,earthquake,0,1472034895,1,,,2016-08-24 10:34:55,2016-08-24 17:04:55
+23.8942000,94.6945000,106.3000,5.30,mb,,39,0.491,1.2,us,20160823_0000010,2016-08-26T11:40:56.478Z,"Sagaing Region, Myanmar (Burma)","40km NE of Mawlaik, Burma",MM,Asia,earthquake,0,1471918273,1,,,2016-08-23 02:11:13,2016-08-23 08:41:13
+21.2900000,94.9100000,140.0000,5.10,mb,,,,,,20160801_0000030,2016-08-01T14:39:00.000Z,"Mandalay Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1470045668,1,,,2016-08-01 10:01:08,2016-08-01 16:31:08

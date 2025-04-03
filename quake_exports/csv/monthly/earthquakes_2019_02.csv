@@ -1,6 +1,6 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2019-02-23 22:10:58,2019-02-24 04:40:58,21.15,99.78,10.0,3.5,"Shan, Myanmar (Burma)",MM
-2019-02-07 08:49:37,2019-02-07 15:19:37,25.98,96.8,10.0,4.3,"Myitkyina, Burma",MM
-2019-02-06 16:21:25,2019-02-06 22:51:25,23.9028,94.3342,33.82,4.4,"Sagaing Region, Myanmar (Burma)",MM
-2019-02-02 17:32:35,2019-02-03 00:02:35,25.2227,95.2064,100.67,4.2,"Phek, India",MM
-2019-02-01 13:30:33,2019-02-01 20:00:33,20.22,98.37,10.0,3.6,"Shan, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+21.1500000,99.7800000,10.0000,3.50,ml,,,,,,ems_201902_746897,2019-02-23T22:30:00.000Z,"Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1550961045,1550959858,1,,,2019-02-23 22:10:58,2019-02-24 04:40:58
+25.9800000,96.8000000,10.0000,4.30,mb,,,,,,us2000jenq,2019-02-08T07:00:00.000Z,"Myitkyina, Burma",Myanmar,MM,Asia,earthquake,1549530282,1549529377,1,,,2019-02-07 08:49:37,2019-02-07 15:19:37
+23.9028000,94.3342000,33.8200,4.40,mb,,64,0.326,0.82,us,ems_201902_743648,2019-02-07T23:36:37.040Z,"Sagaing Region, Myanmar (Burma)","31km NNW of Mawlaik, Burma",MM,Asia,earthquake,1549582627,1549470085,1,,,2019-02-06 16:21:25,2019-02-06 22:51:25
+25.2227000,95.2064000,100.6700,4.20,mb,,65,1.287,0.74,us,us2000jcfu,2019-02-05T19:58:26.040Z,"Phek, India","86km SE of Phek, India",MM,Asia,earthquake,1549133693,1549128755,1,,,2019-02-02 17:32:35,2019-02-03 00:02:35
+20.2200000,98.3700000,10.0000,3.60,ml,,,,,,ems_201902_742227,2019-02-01T13:40:00.000Z,"Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1549028450,1549027833,1,,,2019-02-01 13:30:33,2019-02-01 20:00:33

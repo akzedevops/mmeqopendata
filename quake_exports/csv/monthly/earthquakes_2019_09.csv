@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2019-09-10 20:18:44,2019-09-11 02:48:44,16.2305,95.0566,10.0,4.6,"Myit Gyi Boe, Ayeyarwady, Myanmar (Burma)",MM
-2019-09-06 10:09:48,2019-09-06 16:39:48,21.22,94.73,100.0,4.8,"Inn Kan, Magway Region, Myanmar (Burma)",MM
-2019-09-03 19:18:39,2019-09-04 01:48:39,25.0893,95.0376,87.47,4.5,"Kaw Yar, Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+16.2305000,95.0566000,10.0000,4.60,mb,,109,4.132,0.97,us,ems_201909_791607,2019-09-13T18:37:57.040Z,"Myit Gyi Boe, Ayeyarwady, Myanmar (Burma)","27km SW of Mawlamyinegyunn, Burma",MM,Asia,earthquake,1568167586,1568146724,1,,,2019-09-10 20:18:44,2019-09-11 02:48:44
+21.2200000,94.7300000,100.0000,4.80,mb,,,,,,gfz2019rlww,2019-09-06T11:16:00.000Z,"Inn Kan, Magway Region, Myanmar (Burma)","37km NNW of Chauk, Burma",MM,Asia,earthquake,1567765311,1567764588,1,,,2019-09-06 10:09:48,2019-09-06 16:39:48
+25.0893000,95.0376000,87.4700,4.50,mb,,66,1.087,0.86,us,gfz2019rhcm,2019-09-04T16:12:07.040Z,"Kaw Yar, Sagaing Region, Myanmar (Burma)","83km SE of Phek, India",MM,Asia,earthquake,1567590508,1567538319,1,,,2019-09-03 19:18:39,2019-09-04 01:48:39

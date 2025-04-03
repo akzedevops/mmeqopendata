@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1998-11-30 12:00:48,1998-11-30 18:30:48,17.101,96.106,10.0,4.5,,MM
-1998-11-17 15:30:50,1998-11-17 22:00:50,24.686,96.373,100.0,4.3,,MM
-1998-11-14 06:14:34,1998-11-14 12:44:34,22.943,94.801,33.0,4.0,,MM
-1998-11-10 08:39:50,1998-11-10 15:09:50,21.168,94.032,77.5,4.6,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+17.1010000,96.1060000,10.0000,4.50,mb,,,,0.9,us,usp0008yzf,2014-11-07T01:06:31.579Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-30 12:00:48,1998-11-30 18:30:48
+24.6860000,96.3730000,100.0000,4.30,mb,,,,1.04,us,usp0008ybh,2014-11-07T01:06:27.668Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-17 15:30:50,1998-11-17 22:00:50
+22.9430000,94.8010000,33.0000,4.00,mb,,,,1.14,us,usp0008y61,2014-11-07T01:06:26.964Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-14 06:14:34,1998-11-14 12:44:34
+21.1680000,94.0320000,77.5000,4.60,mb,,,,0.57,us,usp0008xyw,2014-11-07T01:06:26.130Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-10 08:39:50,1998-11-10 15:09:50

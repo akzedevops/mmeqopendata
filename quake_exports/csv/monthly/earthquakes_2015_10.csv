@@ -1,4 +1,4 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2015-10-27 13:50:48,2015-10-27 20:20:48,24.539,94.9835,87.24,4.2,"Sagaing Region, Myanmar (Burma)",MM
-2015-10-10 23:54:35,2015-10-11 06:24:35,24.2655,96.0382,49.96,4.5,"Indaw, Sagaing Region, Myanmar (Burma)",MM
-2015-10-02 11:29:23,2015-10-02 17:59:23,22.4638,93.3551,35.0,4.6,"Chin State, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+24.5390000,94.9835000,87.2400,4.20,mb,,117,3.015,1,us,20151027_0000083,2015-10-27T21:53:26.973Z,"Sagaing Region, Myanmar (Burma)","93km E of Yairipok, India",MM,Asia,earthquake,0,1445953848,1,,,2015-10-27 13:50:48,2015-10-27 20:20:48
+24.2655000,96.0382000,49.9600,4.50,mb,,82,4.012,0.51,us,20151010_0000109,2015-10-11T07:57:16.041Z,"Indaw, Sagaing Region, Myanmar (Burma)","121km W of Bhamo, Burma",MM,Asia,earthquake,0,1444521275,1,,,2015-10-10 23:54:35,2015-10-11 06:24:35
+22.4638000,93.3551000,35.0000,4.60,mb,,122,3.379,1.02,us,20151002_0000051,2015-10-02T19:31:57.174Z,"Chin State, Myanmar (Burma)","33km SW of Hakha, Burma",MM,Asia,earthquake,0,1443785363,1,,,2015-10-02 11:29:23,2015-10-02 17:59:23

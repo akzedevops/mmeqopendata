@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2016-06-27 07:22:13,2016-06-27 13:52:13,23.3,94.0,5.0,4.2,"Chin State, Myanmar (Burma)",MM
-2016-06-22 21:55:23,2016-06-23 04:25:23,24.5,94.4,11.0,3.9,"Min Thar, Sagaing Region, Myanmar (Burma)",MM
-2016-06-22 13:03:19,2016-06-22 19:33:19,22.73,94.59,100.0,4.3,"Sagaing Region, Myanmar (Burma)",MM
-2016-06-20 08:05:22,2016-06-20 14:35:22,20.63,94.11,60.0,4.8,"Magway Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+23.3000000,94.0000000,5.0000,4.20,ml,,,,,,2016-06-27_072213_4.2,2016-06-27T07:22:13.000Z,"Chin State, Myanmar (Burma)",India (mizoram) -mayanmar Border Region,MM,Asia,earthquake,0,1467012133,1,,,2016-06-27 07:22:13,2016-06-27 13:52:13
+24.5000000,94.4000000,11.0000,3.90,ml,,,,,,2016-06-22_215523_3.9,2016-06-22T21:55:23.000Z,"Min Thar, Sagaing Region, Myanmar (Burma)","Ukhrul, Manipur",MM,Asia,earthquake,0,1466632523,1,,,2016-06-22 21:55:23,2016-06-23 04:25:23
+22.7300000,94.5900000,100.0000,4.30,m,,,,,,20160622_0000045,2016-06-23T09:17:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1466600599,1,,,2016-06-22 13:03:19,2016-06-22 19:33:19
+20.6300000,94.1100000,60.0000,4.80,mb,,,,,,20160620_0000046,2016-06-20T10:48:00.000Z,"Magway Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1466409922,1,,,2016-06-20 08:05:22,2016-06-20 14:35:22

@@ -1,3 +1,3 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2015-08-12 02:44:51,2015-08-12 09:14:51,24.6516,94.8248,40.73,4.5,"Sagaing Region, Myanmar (Burma)",MM
-2015-08-10 17:05:24,2015-08-10 23:35:24,18.54,96.1,10.0,4.9,"Bago Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+24.6516000,94.8248000,40.7300,4.50,mb,,115,2.841,0.57,us,20150812_0000008,2015-08-12T04:57:56.894Z,"Sagaing Region, Myanmar (Burma)","76km E of Yairipok, India",MM,Asia,earthquake,0,1439347491,1,,,2015-08-12 02:44:51,2015-08-12 09:14:51
+18.5400000,96.1000000,10.0000,4.90,m,,,,,,20150810_0000058,2015-08-10T18:47:00.000Z,"Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,0,1439226324,1,,,2015-08-10 17:05:24,2015-08-10 23:35:24

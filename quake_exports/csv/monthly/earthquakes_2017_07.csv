@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2017-07-17 20:20:26,2017-07-18 02:50:26,24.9,95.0,113.0,4.0,"Sagaing Region, Myanmar (Burma)",MM
-2017-07-13 05:03:31,2017-07-13 11:33:31,23.49,94.51,90.0,4.8,"Sagaing Region, Myanmar (Burma)",MM
-2017-07-02 05:27:44,2017-07-02 11:57:44,24.32,94.64,80.0,4.7,"Sagaing Region, Myanmar (Burma)",MM
-2017-07-01 07:01:15,2017-07-01 13:31:15,23.79,94.69,100.0,5.0,"Sagaing Region, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+24.9000000,95.0000000,113.0000,4.00,ml,,,,,,20170717_0000080,2017-07-17T20:40:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1500324051,1500322826,1,,,2017-07-17 20:20:26,2017-07-18 02:50:26
+23.4900000,94.5100000,90.0000,4.80,mb,,,,,,20170713_0000015,2017-07-13T06:45:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1499923070,1499922211,1,,,2017-07-13 05:03:31,2017-07-13 11:33:31
+24.3200000,94.6400000,80.0000,4.70,mb,,,,,,20170702_0000018,2017-07-02T07:19:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar-india Border Region,MM,Asia,earthquake,1498973892,1498973264,1,,,2017-07-02 05:27:44,2017-07-02 11:57:44
+23.7900000,94.6900000,100.0000,5.00,m,,,,,,20170701_070115_5.0,2017-07-01T19:56:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1498893200,1498892475,1,,,2017-07-01 07:01:15,2017-07-01 13:31:15

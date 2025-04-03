@@ -1,5 +1,5 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-1990-12-30 01:30:54,1990-12-30 08:00:54,15.052,94.376,33.0,4.5,,MM
-1990-12-28 08:11:00,1990-12-28 14:41:00,23.081,93.873,33.0,4.4,,MM
-1990-12-12 06:36:53,1990-12-12 13:06:53,20.072,98.43,33.0,4.3,,MM
-1990-12-10 11:56:56,1990-12-10 18:26:56,20.84,92.577,155.7,3.8,,MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+15.0520000,94.3760000,33.0000,4.50,mb,,,,1.1,us,usp0004jyw,2014-11-07T00:47:40.515Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1990-12-30 01:30:54,1990-12-30 08:00:54
+23.0810000,93.8730000,33.0000,4.40,mb,,,,1,us,usp0004jw1,2014-11-07T00:47:40.157Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-12-28 08:11:00,1990-12-28 14:41:00
+20.0720000,98.4300000,33.0000,4.30,mb,,,,1.2,us,usp0004j0p,2014-11-07T00:47:36.326Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-12-12 06:36:53,1990-12-12 13:06:53
+20.8400000,92.5770000,155.7000,3.80,mb,,,,1.5,us,usp0004hy2,2014-11-07T00:47:35.912Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-12-10 11:56:56,1990-12-10 18:26:56

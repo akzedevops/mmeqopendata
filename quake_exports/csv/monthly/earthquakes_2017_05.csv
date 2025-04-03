@@ -1,7 +1,7 @@
-time_utc,time_mmt,latitude,longitude,depth,mag,location,country
-2017-05-25 19:27:34,2017-05-26 01:57:34,15.9,97.33,3.0,3.5,Myanmar (Burma),MM
-2017-05-25 18:37:54,2017-05-26 01:07:54,16.19,97.92,5.0,3.5,"Mon State, Myanmar (Burma)",MM
-2017-05-25 17:27:24,2017-05-25 23:57:24,15.93,97.6,16.0,3.6,"Mon State, Myanmar (Burma)",MM
-2017-05-25 14:53:51,2017-05-25 21:23:51,17.04,94.22,142.0,3.4,Myanmar (Burma),MM
-2017-05-24 13:54:54,2017-05-24 20:24:54,23.9,94.3,95.0,3.7,"Sagaing Region, Myanmar (Burma)",MM
-2017-05-06 14:48:50,2017-05-06 21:18:50,23.8,93.8,65.0,4.3,"Chin State, Myanmar (Burma)",MM
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+15.9000000,97.3300000,3.0000,3.50,ml,,,,,,20170525_142734_3.5,2017-05-25T19:27:34.000Z,Myanmar (Burma),"13530km al SUROESTE de  TIJUANA, BC",MM,Asia,earthquake,1495806767,1495740454,1,,,2017-05-25 19:27:34,2017-05-26 01:57:34
+16.1900000,97.9200000,5.0000,3.50,ml,,,,,,20170525_133754_3.5,2017-05-25T18:37:54.000Z,"Mon State, Myanmar (Burma)","13468km al SUROESTE de  TIJUANA, BC",MM,Asia,earthquake,1495806806,1495737474,1,,,2017-05-25 18:37:54,2017-05-26 01:07:54
+15.9300000,97.6000000,16.0000,3.60,ml,,,,,,20170525_122724_3.6,2017-05-25T17:27:24.000Z,"Mon State, Myanmar (Burma)","13510km al SUROESTE de  TIJUANA, BC",MM,Asia,earthquake,1495806910,1495733244,1,,,2017-05-25 17:27:24,2017-05-25 23:57:24
+17.0400000,94.2200000,142.0000,3.40,ml,,,,,,20170525_095351_3.4,2017-05-25T14:53:51.000Z,Myanmar (Burma),"13603km al SUROESTE de  TIJUANA, BC",MM,Asia,earthquake,1495806911,1495724031,1,,,2017-05-25 14:53:51,2017-05-25 21:23:51
+23.9000000,94.3000000,95.0000,3.70,ml,,,,,,20170524_0000091,2017-05-24T15:01:00.000Z,"Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1495638087,1495634094,1,,,2017-05-24 13:54:54,2017-05-24 20:24:54
+23.8000000,93.8000000,65.0000,4.30,mb,,,,,,20170506_0000088,2017-05-08T04:20:00.000Z,"Chin State, Myanmar (Burma)",Myanmar-india Border Region,MM,Asia,earthquake,1494089692,1494082130,1,,,2017-05-06 14:48:50,2017-05-06 21:18:50
