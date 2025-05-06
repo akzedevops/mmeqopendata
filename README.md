@@ -1,12 +1,20 @@
 # Earthquake Data Analysis
 
 ## Description
+This Python project provides comprehensive tools for collecting, analyzing, and visualizing earthquake data, with the main focus on earthquake events in California. It leverages data from various sources, primarily the ANSS Comprehensive Earthquake Catalog (ComCat), to perform analysis and generate insightful visualizations. The project offers the following key features:
+* **Data Export:** `dataexport.py` retrieves earthquake data from ComCat and exports it in CSV and JSON formats.
+* **Data Analysis:** `advanalysis.py` and `adv2analysis.py` perform in-depth analysis on earthquake data, including temporal analysis (earthquake frequency over time) and magnitude analysis (distribution of earthquake magnitudes).
+* **Data Visualization:** `visualizer.py` generates map-based visualizations and charts to display earthquake locations, magnitude distribution, and other analytical insights.
+* **Fault Line Integration**: The project uses the `fault_lines.json` file to visualize earthquakes in relation to fault lines.
 
-This Python project provides tools for collecting, analyzing, and visualizing earthquake data. It includes scripts for data export, performing various types of analysis on earthquake events, and visualizing the results.
+This project is suitable for researchers, data analysts, and anyone interested in exploring earthquake patterns and trends. The current version support `python 3.8+`
+
 
 ## Installation
 
 To set up the project and install the necessary dependencies, please follow these steps:
+
+### Prerequisites
 
 ### 1. Install pip
 
