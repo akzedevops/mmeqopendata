@@ -1,4 +1,4 @@
-name: Daily Data Fetch
+name: Daily Data Fetch and Update
 
 on:
   schedule:
@@ -6,17 +6,19 @@ on:
   workflow_dispatch: #allow to run manually
 
 jobs:
-  fetch_data:
+  fetch_and_update:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for proper commit detection
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9' # Use the python version of your project
+          python-version: '3.9'
 
       - name: Install dependencies
         run: |
@@ -25,3 +27,11 @@ jobs:
 
       - name: Run dataexport.py
         run: python dataexport.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add .
+          git commit -m "feat: Update earthquake data [skip ci]" || echo "No changes to commit"
+          git push origin main
