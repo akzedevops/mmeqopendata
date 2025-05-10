@@ -34,4 +34,4 @@ jobs:
           git config --global user.email "action@github.com"
           git add .
           git commit -m "feat: Update earthquake data [skip ci]" || echo "No changes to commit"
-          git push origin main
+          git push origin master
