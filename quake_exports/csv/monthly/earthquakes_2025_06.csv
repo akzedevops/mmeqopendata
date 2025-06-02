@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+20.2260000,98.0190000,10.0000,3.90,ml,,,,,,th_14553_202506010007,2025-06-01T00:21:36.000Z,"Wan Mawngkawk, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1748736986,1748736421,0,,"20.23,98.02",2025-06-01 00:07:01,2025-06-01 06:37:01
