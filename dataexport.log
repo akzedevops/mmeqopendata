@@ -1694,3 +1694,9 @@
 2025-06-08 02:11:53 - INFO - 
 📅 Saving yearly and combined files...
 2025-06-08 02:11:53 - INFO - 🏁 All done! Earthquake data is up to date!
+2025-06-09 02:09:04 - INFO - Last updated date: 2025-06-01
+2025-06-09 02:09:04 - INFO - 🚀 Processing 1 months of earthquake data...
+2025-06-09 02:09:04 - ERROR - ❌ Error fetching data (2025-06-01 → 2025-06-30): HTTPSConnectionPool(host='mmeq.akze.me', port=443): Max retries exceeded with url: /api/myanmar-quakes?from=2025-06-01&to=2025-06-30 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f4a56159dc0>: Failed to resolve 'mmeq.akze.me' ([Errno -2] Name or service not known)"))
+2025-06-09 02:09:04 - INFO - 
+📅 Saving yearly and combined files...
+2025-06-09 02:09:04 - INFO - 🏁 All done! Earthquake data is up to date!
