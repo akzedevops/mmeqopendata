@@ -9,7 +9,7 @@ import pytz
 import json
 
 # --- CONFIG SECTION ---
-API_URL = "https://mmeq.akze.me/api/myanmar-quakes"
+API_URL = "https://mmeq.akze.net/api/myanmar-quakes"
 START_YEAR = 1950
 END_DATE = datetime.utcnow() - timedelta(days=1)
 EXPORT_DIR = "quake_exports"
