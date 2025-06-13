@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "21.1270000",
+      "longitude": "99.8550000",
+      "depth": "10.0000",
+      "mag": "3.70",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_14657_202506120406",
+      "updated": "2025-06-12T04:21:36.000Z",
+      "location": "Yangka, Shan, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1749701714",
+      "timestamp": "1749701185",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "21.13,99.86",
+      "time_utc": "2025-06-12 04:06:25",
+      "time_mmt": "2025-06-12 10:36:25"
+    },
+    {
       "latitude": "21.8530000",
       "longitude": "96.2000000",
       "depth": "10.0000",
