@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "18.7150000",
+      "longitude": "96.3790000",
+      "depth": "10.0000",
+      "mag": "2.60",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_14693_202506170001",
+      "updated": "2025-06-17T00:01:53.000Z",
+      "location": "Kywebwe, Bago Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1750118937",
+      "timestamp": "1750118513",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "18.72,96.38",
+      "time_utc": "2025-06-17 00:01:53",
+      "time_mmt": "2025-06-17 06:31:53"
+    },
+    {
       "latitude": "18.7320000",
       "longitude": "96.5720000",
       "depth": "10.0000",
