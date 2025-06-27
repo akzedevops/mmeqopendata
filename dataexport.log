@@ -1833,3 +1833,9 @@
 2025-06-26 02:04:12 - INFO - 
 📅 Saving yearly and combined files...
 2025-06-26 02:04:12 - INFO - 🏁 All done! Earthquake data is up to date!
+2025-06-27 02:05:11 - INFO - Last updated date: 2025-06-24
+2025-06-27 02:05:11 - INFO - 🚀 Processing 1 months of earthquake data...
+2025-06-27 02:05:12 - ERROR - ❌ Error fetching data (2025-06-01 → 2025-06-30): 502 Server Error: Bad Gateway for url: https://mmeq.akze.net/api/myanmar-quakes?from=2025-06-01&to=2025-06-30
+2025-06-27 02:05:12 - INFO - 
+📅 Saving yearly and combined files...
+2025-06-27 02:05:12 - INFO - 🏁 All done! Earthquake data is up to date!
