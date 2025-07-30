@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "21.8310000",
+      "longitude": "96.4500000",
+      "depth": "10.0000",
+      "mag": "3.40",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_15186_202507281713",
+      "updated": "2025-07-28T17:28:42.000Z",
+      "location": "Shwegyaung, Mandalay Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1753723556",
+      "timestamp": "1753722835",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "21.83,96.45",
+      "time_utc": "2025-07-28 17:13:55",
+      "time_mmt": "2025-07-28 23:43:55"
+    },
+    {
       "latitude": "21.7000000",
       "longitude": "96.0300000",
       "depth": "160.0000",
