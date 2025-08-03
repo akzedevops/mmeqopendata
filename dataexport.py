@@ -65,10 +65,11 @@ def generate_date_ranges() -> List[Tuple[int, int, str, str]]:
     needing update, starting from the last updated date.
     """
     last_updated = get_last_updated_date()
+    # Start from the first day of the next month after last_updated
+    current = (last_updated.replace(day=1) + relativedelta(months=1))
     date_ranges = []
-    current = last_updated + timedelta(days=1)
     while current <= END_DATE.date():
-        dt_from = current.replace(day=1)
+        dt_from = current
         dt_to = (dt_from + relativedelta(months=1)) - timedelta(days=1)
         from_date = dt_from.strftime("%Y-%m-%d")
         to_date = dt_to.strftime("%Y-%m-%d")
@@ -96,36 +97,40 @@ def validate_quake_data(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     df["time"] = pd.to_datetime(df["time"], errors="coerce", utc=True)
     df.dropna(subset=["time", "latitude", "longitude", "depth", "mag"], inplace=True)
-    df = df[df["time"].between(pd.Timestamp("1950-01-01", tz=utc_zone), pd.Timestamp(END_DATE, tz=utc_zone))]
+    df = df[df["time"].between(pd.Timestamp(f"{START_YEAR}-01-01", tz=utc_zone), pd.Timestamp(END_DATE, tz=utc_zone))]
     df["time_utc"] = df["time"].dt.strftime("%Y-%m-%d %H:%M:%S")
     df["time_mmt"] = df["time"].dt.tz_convert(myanmar_zone).dt.strftime("%Y-%m-%d %H:%M:%S")
     df.drop(columns=["time"], inplace=True)
     return df
 
 def deduplicate_csv(path: str):
-    """Remove any duplicate rows in a CSV file based on all columns."""
+    """Remove duplicate rows based on key columns from a CSV file."""
     if not os.path.exists(path):
         return
     try:
         df = pd.read_csv(path)
-        df.drop_duplicates(inplace=True)
+        key_columns = ["time_utc", "latitude", "longitude", "depth", "mag"]
+        if all(k in df.columns for k in key_columns):
+            df.drop_duplicates(subset=key_columns, inplace=True)
+        else:
+            df.drop_duplicates(inplace=True)
         df.to_csv(path, index=False)
     except Exception as e:
         logging.warning(f"Failed to deduplicate {path}: {e}")
 
-def save_to_csv(df: pd.DataFrame, path: str):
-    """Append DataFrame to CSV, avoiding duplicate rows."""
+def save_to_csv(df: pd.DataFrame, path: str, mode='a'):
+    """Save DataFrame to CSV; append by default, but can overwrite with mode='w'."""
     if df.empty:
         return
-    write_header = not os.path.exists(path)
-    df.to_csv(path, mode="a", index=False, header=write_header)
+    write_header = not os.path.exists(path) or mode == 'w'
+    df.to_csv(path, mode=mode, index=False, header=write_header)
     deduplicate_csv(path)
 
 def save_to_json(df: pd.DataFrame, path: str):
     """Save DataFrame as a JSON file."""
     if df.empty:
         return
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump({"earthquakes": df.to_dict(orient="records")}, f, indent=2)
 
 def process_month(year: int, month: int, from_date: str, to_date: str) -> Tuple[int, int, pd.DataFrame]:
@@ -140,28 +145,37 @@ def main():
     combined_df = pd.DataFrame()
     yearly_dfs: Dict[int, pd.DataFrame] = {}
 
-    # Download & process in parallel
+    # Download & process monthly data in parallel
     with ThreadPoolExecutor(max_workers=10) as executor:
-        futures = [executor.submit(process_month, y, m, fd, td)
-                   for y, m, fd, td in date_ranges]
+        futures = [executor.submit(process_month, y, m, fd, td) for y, m, fd, td in date_ranges]
         for future in as_completed(futures):
             year, month, df_valid = future.result()
             if df_valid.empty:
                 continue
+
+            # Save monthly files individually (no concurrency issues)
             monthly_csv = os.path.join(EXPORT_DIR, "csv/monthly", f"earthquakes_{year}_{month:02d}.csv")
             monthly_json = os.path.join(EXPORT_DIR, "json/monthly", f"earthquakes_{year}_{month:02d}.json")
-            save_to_csv(df_valid, monthly_csv)
+            save_to_csv(df_valid, monthly_csv, mode='w')
             save_to_json(df_valid, monthly_json)
+
+            # Collect data for yearly and combined save, no file writes here
             yearly_dfs[year] = pd.concat([yearly_dfs.get(year, pd.DataFrame()), df_valid], ignore_index=True)
             combined_df = pd.concat([combined_df, df_valid], ignore_index=True)
             logging.info(f"✅ Updated {year}-{month:02d}: {len(df_valid)} records")
 
+    # Save yearly and combined files once after all months processed (overwrite mode)
     logging.info("\n📅 Saving yearly and combined files...")
     for year, ydf in yearly_dfs.items():
-        save_to_csv(ydf, os.path.join(EXPORT_DIR, "csv/yearly", f"earthquakes_{year}.csv"))
-        save_to_json(ydf, os.path.join(EXPORT_DIR, "json/yearly", f"earthquakes_{year}.json"))
-    save_to_csv(combined_df, os.path.join(EXPORT_DIR, "csv/combined/earthquakes_combined.csv"))
-    save_to_json(combined_df, os.path.join(EXPORT_DIR, "json/combined/earthquakes_combined.json"))
+        yearly_csv_path = os.path.join(EXPORT_DIR, "csv/yearly", f"earthquakes_{year}.csv")
+        yearly_json_path = os.path.join(EXPORT_DIR, "json/yearly", f"earthquakes_{year}.json")
+        save_to_csv(ydf, yearly_csv_path, mode='w')
+        save_to_json(ydf, yearly_json_path)
+    combined_csv_path = os.path.join(EXPORT_DIR, "csv/combined/earthquakes_combined.csv")
+    combined_json_path = os.path.join(EXPORT_DIR, "json/combined/earthquakes_combined.json")
+    save_to_csv(combined_df, combined_csv_path, mode='w')
+    save_to_json(combined_df, combined_json_path)
+
     logging.info("🏁 All done! Earthquake data is up to date!")
 
 if __name__ == "__main__":
