@@ -1,0 +1,5 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+21.491,97.768,10.0,2.8,ml,,,,,,th_15213_202508020132,2025-08-02T01:32:28.000Z,"Takmawk, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1754102208,1754098348,0,,"21.49,97.77",2025-08-02 01:32:28,2025-08-02 08:02:28
+19.941,96.451,5.0,2.7,ml,,,,,,th_15211_202508011646,2025-08-01T16:46:57.000Z,"Hlawegyi Bhamo, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1754067792,1754066817,0,,"19.94,96.45",2025-08-01 16:46:57,2025-08-01 23:16:57
+18.484,96.54,2.0,2.7,ml,,,,,,th_15209_202508011034,2025-08-01T10:34:35.000Z,"Oakphyat, Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1754045039,1754044475,0,,"18.48,96.54",2025-08-01 10:34:35,2025-08-01 17:04:35
+19.836,98.064,1.0,2.3,ml,,,,,,th_15208_202508010059,2025-08-01T00:59:58.000Z,"Loikwang, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1754010428,1754009998,0,,"19.84,98.06",2025-08-01 00:59:58,2025-08-01 07:29:58
