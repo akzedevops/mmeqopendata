@@ -2154,3 +2154,10 @@
 2025-08-11 07:33:13 - INFO - No new months to fetch. Nothing to do.
 2025-08-11 07:54:16 - INFO - Last updated date (from combined CSV): 2025-08-02
 2025-08-11 07:54:16 - INFO - No new months to fetch. Nothing to do.
+2025-08-11 07:57:11 - INFO - Last updated date: 2025-08-02
+2025-08-11 07:57:11 - INFO - 🚀 Processing 1 months of earthquake data...
+2025-08-11 07:57:13 - INFO - ✅ Data fetched for 2025-08-01 → 2025-08-31
+2025-08-11 07:57:13 - INFO - ✅ Updated 2025-08: 56 records
+2025-08-11 07:57:13 - INFO - 
+📅 Saving yearly and combined files...
+2025-08-11 07:57:13 - INFO - 🏁 All done! Earthquake data is up to date!
