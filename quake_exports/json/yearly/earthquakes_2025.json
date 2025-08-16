@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "19.9200000",
+      "longitude": "97.9640000",
+      "depth": "10.0000",
+      "mag": "1.60",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_15308_202508141722",
+      "updated": "2025-08-14T17:22:22.000Z",
+      "location": "Ta Ho-pong, Shan, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1755192490",
+      "timestamp": "1755192142",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "19.92,97.96",
+      "time_utc": "2025-08-14 17:22:22",
+      "time_mmt": "2025-08-14 23:52:22"
+    },
+    {
       "latitude": "19.6290000",
       "longitude": "97.7080000",
       "depth": "10.0000",
