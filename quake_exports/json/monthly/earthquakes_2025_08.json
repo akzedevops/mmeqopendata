@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "20.6240000",
+      "longitude": "97.7370000",
+      "depth": "10.0000",
+      "mag": "2.10",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_15309_202508150646",
+      "updated": "2025-08-15T06:46:44.000Z",
+      "location": "Hwe-aw, Shan, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1755298690",
+      "timestamp": "1755240404",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "20.62,97.74",
+      "time_utc": "2025-08-15 06:46:44",
+      "time_mmt": "2025-08-15 13:16:44"
+    },
+    {
       "latitude": "19.9200000",
       "longitude": "97.9640000",
       "depth": "10.0000",
