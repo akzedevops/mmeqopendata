@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+14.963,96.467,10.0,3.5,ml,,,,,,th_15399_202509010042,2025-09-01T07:56:51.000Z,Myanmar (Burma),Myanmar (Burma),MM,Asia,earthquake,1756713273,1756687365,0,,"14.96,96.47",2025-09-01 00:42:45,2025-09-01 07:12:45
