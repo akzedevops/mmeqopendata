@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "20.2790000",
+      "longitude": "98.0680000",
+      "depth": "10.0000",
+      "mag": "2.00",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_15520_202509232301",
+      "updated": "2025-09-23T23:01:13.000Z",
+      "location": "Langkho, Shan, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1758672037",
+      "timestamp": "1758668473",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "20.28,98.07",
+      "time_utc": "2025-09-23 23:01:13",
+      "time_mmt": "2025-09-24 05:31:13"
+    },
+    {
       "latitude": "21.1718000",
       "longitude": "95.6911000",
       "depth": "124.5000",
