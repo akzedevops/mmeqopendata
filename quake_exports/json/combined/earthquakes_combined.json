@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "15.7720000",
+      "longitude": "96.8250000",
+      "depth": "10.0000",
+      "mag": "3.30",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_15529_202509260549",
+      "updated": "2025-09-26T22:42:39.000Z",
+      "location": "Myanmar (Burma)",
+      "place": "Near South Coast of Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1758926495",
+      "timestamp": "1758865743",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "15.77,96.83",
+      "time_utc": "2025-09-26 05:49:03",
+      "time_mmt": "2025-09-26 12:19:03"
+    },
+    {
       "latitude": "21.9410000",
       "longitude": "99.2860000",
       "depth": "10.0000",
