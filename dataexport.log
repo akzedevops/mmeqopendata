@@ -2518,3 +2518,10 @@
 2025-10-01 00:35:44 - INFO - 
 📅 Saving yearly and combined files...
 2025-10-01 00:35:45 - INFO - 🏁 All done! Earthquake data is up to date!
+2025-10-02 00:30:13 - INFO - Last updated date: 2025-09-29
+2025-10-02 00:30:13 - INFO - 🚀 Processing 1 months of earthquake data...
+2025-10-02 00:30:15 - INFO - ✅ Data fetched for 2025-09-01 → 2025-09-30
+2025-10-02 00:30:15 - INFO - ✅ Updated 2025-09: 124 records
+2025-10-02 00:30:15 - INFO - 
+📅 Saving yearly and combined files...
+2025-10-02 00:30:15 - INFO - 🏁 All done! Earthquake data is up to date!
