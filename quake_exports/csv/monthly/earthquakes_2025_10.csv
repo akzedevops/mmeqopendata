@@ -1,0 +1,5 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+17.819,96.492,10.0,3.3,ml,,,,,,th_15561_202510012340,2025-10-01T23:49:53.000Z,"Mayangyaung, Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1759362342,1759362023,0,,"17.82,96.49",2025-10-01 23:40:23,2025-10-02 06:10:23
+20.13,98.741,10.0,2.2,ml,,,,,,th_15560_202510012156,2025-10-01T21:56:50.000Z,"Wan Hsanghpaw, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1759356306,1759355810,0,,"20.13,98.74",2025-10-01 21:56:50,2025-10-02 04:26:50
+26.57,96.43,10.0,3.1,ml,,,,,,in_NTZZNWEzdlMyaG9JMEsvMVZxMUtuQT09,2025-10-01T20:56:48.000Z,"Jagun, Kachin, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1759352206,1759351767,0,,"26.57,96.43",2025-10-01 20:49:27,2025-10-02 03:19:27
+19.447,95.096,10.0,3.5,ml,,,,,,th_15558_202510010446,2025-10-01T04:46:45.000Z,"Tawmyinthar, Magway Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1759294887,1759294005,0,,"19.45,95.10",2025-10-01 04:46:45,2025-10-01 11:16:45
