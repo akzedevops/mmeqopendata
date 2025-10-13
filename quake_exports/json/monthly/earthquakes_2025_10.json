@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "19.6820000",
+      "longitude": "96.2700000",
+      "depth": "10.0000",
+      "mag": "2.60",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_15611_202510111545",
+      "updated": "2025-10-11T15:45:56.000Z",
+      "location": "Pawsankhaw, Naypyidaw Union Territory, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1760198109",
+      "timestamp": "1760197556",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "19.68,96.27",
+      "time_utc": "2025-10-11 15:45:56",
+      "time_mmt": "2025-10-11 22:15:56"
+    },
+    {
       "latitude": "21.5020000",
       "longitude": "98.3250000",
       "depth": "10.0000",
