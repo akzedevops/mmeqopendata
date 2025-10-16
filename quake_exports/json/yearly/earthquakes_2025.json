@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "20.1150000",
+      "longitude": "98.7490000",
+      "depth": "2.0000",
+      "mag": "2.10",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_15633_202510140257",
+      "updated": "2025-10-14T02:57:54.000Z",
+      "location": "Wan Pawm\u00f6ng, Shan, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1760411155",
+      "timestamp": "1760410674",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "20.12,98.75",
+      "time_utc": "2025-10-14 02:57:54",
+      "time_mmt": "2025-10-14 09:27:54"
+    },
+    {
       "latitude": "19.9470000",
       "longitude": "97.8460000",
       "depth": "10.0000",
