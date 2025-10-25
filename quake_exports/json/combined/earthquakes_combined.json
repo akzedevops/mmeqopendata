@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "20.0420000",
+      "longitude": "97.9380000",
+      "depth": "10.0000",
+      "mag": "2.00",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_15690_202510231426",
+      "updated": "2025-10-23T14:26:18.000Z",
+      "location": "Wan Kongpao, Shan, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1761229944",
+      "timestamp": "1761229578",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "20.04,97.94",
+      "time_utc": "2025-10-23 14:26:18",
+      "time_mmt": "2025-10-23 20:56:18"
+    },
+    {
       "latitude": "20.0270000",
       "longitude": "97.1310000",
       "depth": "10.0000",
