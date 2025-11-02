@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "21.6620000",
+      "longitude": "96.3510000",
+      "depth": "10.0000",
+      "mag": "3.20",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_15725_202510310413",
+      "updated": "2025-10-31T04:28:37.000Z",
+      "location": "Gwebin, Mandalay Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1761884800",
+      "timestamp": "1761884017",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "21.66,96.35",
+      "time_utc": "2025-10-31 04:13:37",
+      "time_mmt": "2025-10-31 10:43:37"
+    },
+    {
       "latitude": "18.7300000",
       "longitude": "96.5820000",
       "depth": "10.0000",
