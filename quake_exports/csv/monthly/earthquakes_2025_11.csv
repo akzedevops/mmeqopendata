@@ -63,3 +63,4 @@ latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,pl
 20.458,98.357,10.0,2.1,ml,,,,,,th_15814_202511161817,2025-11-16T18:17:01.000Z,"Wan Namhok, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1763317402,1763317021,0,,"20.46,98.36",2025-11-16 18:17:01,2025-11-17 00:47:01
 19.697,96.22,10.0,2.8,ml,,,,,,th_15811_202511160817,2025-11-16T08:17:03.000Z,"Zigon, Mandalay Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1763281320,1763281023,0,,"19.70,96.22",2025-11-16 08:17:03,2025-11-16 14:47:03
 20.349,96.338,10.0,2.7,ml,,,,,,th_15810_202511160229,2025-11-16T02:29:05.000Z,"Bwetywa, Mandalay Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1763260577,1763260145,0,,"20.35,96.34",2025-11-16 02:29:05,2025-11-16 08:59:05
+21.66,93.34,40.0,4.0,ml,,,,,,ems_202511_1900311,2025-11-17T01:21:28.000Z,"Paihang, Chin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1763342084,1763341478,1,,"21.61,93.31",2025-11-17 01:04:38,2025-11-17 07:34:38

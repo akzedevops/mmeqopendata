@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "21.6600000",
+      "longitude": "93.3400000",
+      "depth": "40.0000",
+      "mag": "4.00",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "ems_202511_1900311",
+      "updated": "2025-11-17T01:21:28.000Z",
+      "location": "Paihang, Chin State, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1763342084",
+      "timestamp": "1763341478",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "21.61,93.31",
+      "time_utc": "2025-11-17 01:04:38",
+      "time_mmt": "2025-11-17 07:34:38"
+    },
+    {
       "latitude": "19.1500000",
       "longitude": "96.4670000",
       "depth": "10.0000",
