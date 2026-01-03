@@ -1,0 +1,7 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+21.241,95.99,10.0,2.8,ml,,,,,,th_16018_202601012019,2026-01-01T20:19:28.000Z,"Kangyi, Mandalay Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1767299188,1767298768,0,,"21.24,95.99",2026-01-01 20:19:28,2026-01-02 02:49:28
+20.267,97.94,1.0,2.3,ml,,,,,,th_16017_202601011735,2026-01-01T17:35:42.000Z,"Wan Nalin, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1767289260,1767288942,0,,"20.27,97.94",2026-01-01 17:35:42,2026-01-02 00:05:42
+22.559,96.18,10.0,4.4,ml,,,,,,ems_202601_1923635,2026-01-01T14:14:44.000Z,"Kokko, Mandalay Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1767276896,1767276199,0,,"22.56,96.18",2026-01-01 14:03:19,2026-01-01 20:33:19
+22.8215,95.9255,11.5,4.9,mb,,,,,,gfz2026abaj,2026-01-02T21:28:19.000Z,"Hamantha, Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1767274073,1767273540,0,,"22.80,95.98",2026-01-01 13:19:00,2026-01-01 19:49:00
+18.986,96.345,10.0,3.4,ml,,,,,,th_16014_202601011210,2026-01-01T12:21:39.000Z,"Kaytumati, Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1767269810,1767269422,0,,"18.99,96.35",2026-01-01 12:10:22,2026-01-01 18:40:22
+21.5,96.656,10.0,3.2,ml,,,,,,th_16013_202601010741,2026-01-01T08:00:35.000Z,"Mezaliywa, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1767254229,1767253319,0,,"21.50,96.66",2026-01-01 07:41:59,2026-01-01 14:11:59
