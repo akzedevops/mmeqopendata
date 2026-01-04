@@ -8897,3 +8897,4 @@ latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,pl
 22.8215,95.9255,11.5,4.9,mb,,,,,,gfz2026abaj,2026-01-02T21:28:19.000Z,"Hamantha, Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1767274073,1767273540,0,,"22.80,95.98",2026-01-01 13:19:00,2026-01-01 19:49:00
 18.986,96.345,10.0,3.4,ml,,,,,,th_16014_202601011210,2026-01-01T12:21:39.000Z,"Kaytumati, Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1767269810,1767269422,0,,"18.99,96.35",2026-01-01 12:10:22,2026-01-01 18:40:22
 21.5,96.656,10.0,3.2,ml,,,,,,th_16013_202601010741,2026-01-01T08:00:35.000Z,"Mezaliywa, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1767254229,1767253319,0,,"21.50,96.66",2026-01-01 07:41:59,2026-01-01 14:11:59
+19.099,95.787,10.0,2.9,ml,,,,,,th_16020_202601021141,2026-01-02T11:41:46.000Z,"Ma-umyaung, Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1767355206,1767354106,0,,"19.10,95.79",2026-01-02 11:41:46,2026-01-02 18:11:46

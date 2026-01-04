@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "19.0990000",
+      "longitude": "95.7870000",
+      "depth": "10.0000",
+      "mag": "2.90",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_16020_202601021141",
+      "updated": "2026-01-02T11:41:46.000Z",
+      "location": "Ma-umyaung, Bago Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1767355206",
+      "timestamp": "1767354106",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "19.10,95.79",
+      "time_utc": "2026-01-02 11:41:46",
+      "time_mmt": "2026-01-02 18:11:46"
+    },
+    {
       "latitude": "21.2410000",
       "longitude": "95.9900000",
       "depth": "10.0000",
