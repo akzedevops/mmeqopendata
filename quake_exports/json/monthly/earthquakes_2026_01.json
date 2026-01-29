@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "22.0300000",
+      "longitude": "94.2600000",
+      "depth": "139.0000",
+      "mag": "3.40",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "in_Wi9hQk53VS9IWUtyMVpaeXhUWnZjZz09",
+      "updated": "2026-01-27T07:34:36.000Z",
+      "location": "Chaing, Magway Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1769499815",
+      "timestamp": "1769499276",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "22.03,94.26",
+      "time_utc": "2026-01-27 07:34:36",
+      "time_mmt": "2026-01-27 14:04:36"
+    },
+    {
       "latitude": "19.7410000",
       "longitude": "96.2410000",
       "depth": "10.0000",
