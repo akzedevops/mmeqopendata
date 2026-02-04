@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "19.3050000",
+      "longitude": "96.4650000",
+      "depth": "10.0000",
+      "mag": "2.20",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_16178_202602022021",
+      "updated": "2026-02-02T20:21:50.000Z",
+      "location": "Kyauktaga Auk, Kayin State, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1770064363",
+      "timestamp": "1770063710",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "19.31,96.47",
+      "time_utc": "2026-02-02 20:21:50",
+      "time_mmt": "2026-02-03 02:51:50"
+    },
+    {
       "latitude": "20.4900000",
       "longitude": "98.5100000",
       "depth": "10.0000",
