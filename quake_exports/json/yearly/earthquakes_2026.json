@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "24.7600000",
+      "longitude": "94.7400000",
+      "depth": "85.0000",
+      "mag": "3.90",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "in_NjVGRzVsOUZBN0VlbHVubHZqRGtTUT09",
+      "updated": "2026-02-06T21:42:38.000Z",
+      "location": "Gwedaukkon, Sagaing Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1770414152",
+      "timestamp": "1770413505",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "24.76,94.74",
+      "time_utc": "2026-02-06 21:31:45",
+      "time_mmt": "2026-02-07 04:01:45"
+    },
+    {
       "latitude": "23.5194000",
       "longitude": "94.9543000",
       "depth": "10.0000",
