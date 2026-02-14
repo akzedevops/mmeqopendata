@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "23.9100000",
+      "longitude": "93.8500000",
+      "depth": "35.0000",
+      "mag": "2.80",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "in_bkh5SnVuMEVBMmxBZGFNZklrYTYvQT09",
+      "updated": "2026-02-12T23:28:32.000Z",
+      "location": "Bualkuang, Chin State, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1770938607",
+      "timestamp": "1770938080",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "23.91,93.85",
+      "time_utc": "2026-02-12 23:14:40",
+      "time_mmt": "2026-02-13 05:44:40"
+    },
+    {
       "latitude": "20.0130000",
       "longitude": "96.3260000",
       "depth": "15.0000",
