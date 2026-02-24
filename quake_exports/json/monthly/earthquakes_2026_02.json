@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "22.5100000",
+      "longitude": "93.4800000",
+      "depth": "90.0000",
+      "mag": "3.40",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "in_cHd4RnVVMC9IWlE4UDF3cFljb3M5Zz09",
+      "updated": "2026-02-22T03:07:31.000Z",
+      "location": "Cong Thia, Chin State, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1771729632",
+      "timestamp": "1771724509",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "22.51,93.48",
+      "time_utc": "2026-02-22 01:41:49",
+      "time_mmt": "2026-02-22 08:11:49"
+    },
+    {
       "latitude": "25.9700000",
       "longitude": "96.1700000",
       "depth": "65.0000",
