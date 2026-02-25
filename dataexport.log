@@ -3542,3 +3542,10 @@
 2026-02-24 00:41:15 - INFO - 
 📅 Saving yearly and combined files...
 2026-02-24 00:41:16 - INFO - 🏁 All done! Earthquake data is up to date!
+2026-02-25 00:47:05 - INFO - Last updated date: 2026-02-22
+2026-02-25 00:47:05 - INFO - 🚀 Processing 1 months of earthquake data...
+2026-02-25 00:47:06 - INFO - ✅ Data fetched for 2026-02-01 → 2026-02-28
+2026-02-25 00:47:06 - INFO - ✅ Updated 2026-02: 79 records
+2026-02-25 00:47:06 - INFO - 
+📅 Saving yearly and combined files...
+2026-02-25 00:47:07 - INFO - 🏁 All done! Earthquake data is up to date!
