@@ -1,3 +1,5 @@
 latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
 22.541,97.33,10.0,4.4,ml,,,,,,ems_202603_1954676,2026-03-04T11:56:56.000Z,"Loi-mawk, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1772625427,1772624170,0,,"22.54,97.33",2026-03-04 11:36:10,2026-03-04 18:06:10
 19.092,96.257,10.0,2.8,ml,,,,,,th_16332_202603040410,2026-03-04T04:10:33.000Z,"Kyun Kone, Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1772601310,1772597433,0,,"19.09,96.26",2026-03-04 04:10:33,2026-03-04 10:40:33
+21.8237,93.7926,55.0,4.6,mb,,,,,,in_S010TGxkOG43M0wzazZPOUV6L045dz09,2026-03-05T15:49:28.000Z,"Khuabawi, Chin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1772719066,1772718525,0,,"21.63,93.22",2026-03-05 13:48:45,2026-03-05 20:18:45
+19.762,96.397,10.0,2.3,ml,,,,,,th_16334_202603050846,2026-03-05T08:46:05.000Z,"Yitpyak, Naypyidaw Union Territory, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1772700723,1772700365,0,,"19.76,96.40",2026-03-05 08:46:05,2026-03-05 15:16:05
