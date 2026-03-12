@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "19.0240000",
+      "longitude": "96.4080000",
+      "depth": "10.0000",
+      "mag": "2.30",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_16374_202603101517",
+      "updated": "2026-03-10T15:17:14.000Z",
+      "location": "Kaytumati, Bago Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1773156247",
+      "timestamp": "1773155834",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "19.02,96.41",
+      "time_utc": "2026-03-10 15:17:14",
+      "time_mmt": "2026-03-10 21:47:14"
+    },
+    {
       "latitude": "26.5100000",
       "longitude": "96.0300000",
       "depth": "96.0000",

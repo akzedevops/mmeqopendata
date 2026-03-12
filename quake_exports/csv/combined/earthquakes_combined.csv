@@ -9148,3 +9148,4 @@ latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,pl
 19.769,97.714,4.0,1.9,ml,,,,,,th_16362_202603081459,2026-03-08T14:59:27.000Z,"Ta-hsopteng, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1772982485,1772981967,0,,"19.77,97.71",2026-03-08 14:59:27,2026-03-08 21:29:27
 19.684,96.887,10.0,2.3,ml,,,,,,th_16361_202603081255,2026-03-08T12:55:06.000Z,"Kaba, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1772982461,1772974506,0,,"19.68,96.89",2026-03-08 12:55:06,2026-03-08 19:25:06
 15.888,98.162,10.0,3.2,ml,,,,,,th_16352_202603080128,2026-03-08T01:42:40.000Z,"Danon, Kayin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1772933986,1772933290,0,,"15.89,98.16",2026-03-08 01:28:10,2026-03-08 07:58:10
+19.024,96.408,10.0,2.3,ml,,,,,,th_16374_202603101517,2026-03-10T15:17:14.000Z,"Kaytumati, Bago Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1773156247,1773155834,0,,"19.02,96.41",2026-03-10 15:17:14,2026-03-10 21:47:14
