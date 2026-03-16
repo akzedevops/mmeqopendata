@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "23.3700000",
+      "longitude": "97.5200000",
+      "depth": "90.0000",
+      "mag": "4.40",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "in_c082aHhBKzllNGNweTNzZFl4ajVGQT09",
+      "updated": "2026-03-14T03:58:24.000Z",
+      "location": "Hwe-lao, Shan, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1773461256",
+      "timestamp": "1773460704",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "23.37,97.52",
+      "time_utc": "2026-03-14 03:58:24",
+      "time_mmt": "2026-03-14 10:28:24"
+    },
+    {
       "latitude": "19.6720000",
       "longitude": "96.1750000",
       "depth": "10.0000",
