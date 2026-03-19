@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "19.0650000",
+      "longitude": "96.6920000",
+      "depth": "10.0000",
+      "mag": "2.30",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_16398_202603171420",
+      "updated": "2026-03-17T14:20:19.000Z",
+      "location": "Than Daung Gyi, Kayin State, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1773757877",
+      "timestamp": "1773757219",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "19.07,96.69",
+      "time_utc": "2026-03-17 14:20:19",
+      "time_mmt": "2026-03-17 20:50:19"
+    },
+    {
       "latitude": "19.6810000",
       "longitude": "96.2200000",
       "depth": "10.0000",

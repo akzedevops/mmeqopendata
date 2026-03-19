@@ -9166,3 +9166,4 @@ latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,pl
 22.707,96.301,10.0,4.1,ml,,,,,,ems_202603_1960835,2026-03-15T08:42:35.000Z,"Namwa, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1773564161,1773563425,0,,"22.71,96.30",2026-03-15 08:30:25,2026-03-15 15:00:25
 19.681,96.22,10.0,2.9,ml,,,,,,th_16396_202603161430,2026-03-16T14:30:41.000Z,"Zigon, Mandalay Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1773672200,1773671441,0,,"19.68,96.22",2026-03-16 14:30:41,2026-03-16 21:00:41
 23.64,94.15,85.0,2.8,ml,,,,,,ems_202603_1961312,2026-03-16T07:42:32.000Z,"Pyaungbok, Sagaing Region, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1773646564,1773639505,0,,"23.64,94.15",2026-03-16 05:38:25,2026-03-16 12:08:25
+19.065,96.692,10.0,2.3,ml,,,,,,th_16398_202603171420,2026-03-17T14:20:19.000Z,"Than Daung Gyi, Kayin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1773757877,1773757219,0,,"19.07,96.69",2026-03-17 14:20:19,2026-03-17 20:50:19
