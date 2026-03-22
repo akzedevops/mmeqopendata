@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "22.9380000",
+      "longitude": "96.3370000",
+      "depth": "10.0000",
+      "mag": "3.40",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_16409_202603201020",
+      "updated": "2026-03-20T10:35:37.000Z",
+      "location": "Shwenyaungbin, Mandalay Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1774002651",
+      "timestamp": "1774002018",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "22.94,96.34",
+      "time_utc": "2026-03-20 10:20:18",
+      "time_mmt": "2026-03-20 16:50:18"
+    },
+    {
       "latitude": "20.3060000",
       "longitude": "96.0160000",
       "depth": "10.0000",
