@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": "23.1330000",
+      "longitude": "93.9350000",
+      "depth": "106.0000",
+      "mag": "3.50",
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "in_a0R4RXdKbHU0bXpSTGNWdXNVU2x5Zz09",
+      "updated": "2026-03-22T07:21:35.000Z",
+      "location": "Kale, Chin State, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1774164052",
+      "timestamp": "1774161070",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "23.13,93.94",
+      "time_utc": "2026-03-22 06:31:10",
+      "time_mmt": "2026-03-22 13:01:10"
+    },
+    {
       "latitude": "19.3930000",
       "longitude": "96.4840000",
       "depth": "10.0000",
