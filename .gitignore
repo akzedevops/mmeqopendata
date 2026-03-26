@@ -1,1 +1,23 @@
-.venv
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+
+# Generated outputs (analysis/visualization)
+*.png
+*.html
+cluster_maps/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

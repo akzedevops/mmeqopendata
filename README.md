@@ -1,8 +1,8 @@
-# Earthquake Data Analysis
+# Myanmar Earthquake Open Data
 
 ## Description
-This Python project provides comprehensive tools for collecting, analyzing, and visualizing earthquake data, with the main focus on earthquake events in California. It leverages data from various sources, primarily the ANSS Comprehensive Earthquake Catalog (ComCat), to perform analysis and generate insightful visualizations. The project offers the following key features:
-* **Data Export:** `dataexport.py` retrieves earthquake data from ComCat and exports it in CSV and JSON formats.
+This Python project provides comprehensive tools for collecting, analyzing, and visualizing earthquake data, with the main focus on earthquake events in Myanmar. It leverages data from the Myanmar Earthquake API (`mmeq.akze.net`), covering records from 1950 to the present, to perform analysis and generate insightful visualizations. The project offers the following key features:
+* **Data Export:** `dataexport.py` retrieves earthquake data from the Myanmar Earthquake API and exports it in CSV and JSON formats.
 * **Data Analysis:** `advanalysis.py` and `adv2analysis.py` perform in-depth analysis on earthquake data, including temporal analysis (earthquake frequency over time) and magnitude analysis (distribution of earthquake magnitudes).
 * **Data Visualization:** `visualizer.py` generates map-based visualizations and charts to display earthquake locations, magnitude distribution, and other analytical insights.
 * **Fault Line Integration**: The project uses the `fault_lines.json` file to visualize earthquakes in relation to fault lines.
