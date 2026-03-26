@@ -117,6 +117,8 @@ def validate_quake_data(df: pd.DataFrame) -> pd.DataFrame:
         return df
     df = df.copy()
     df["time"] = pd.to_datetime(df["time"], errors="coerce", utc=True)
+    for col in ["latitude", "longitude", "depth", "mag"]:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
     df.dropna(subset=["time", "latitude", "longitude", "depth", "mag"], inplace=True)
     df = df[df["time"].between(pd.Timestamp("1950-01-01", tz=utc_zone), pd.Timestamp(END_DATE, tz=utc_zone))]
     # Apply bounds validation using the defined constants
