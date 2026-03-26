@@ -5,6 +5,8 @@ import logging
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib3.util import Retry
+from requests.adapters import HTTPAdapter
 import pytz
 import json
 from typing import List, Tuple, Dict
@@ -44,13 +46,30 @@ logging.getLogger().addHandler(console_handler)
 for subdir in EXPORT_SUBDIRS:
     os.makedirs(os.path.join(EXPORT_DIR, subdir), exist_ok=True)
 
+# --- HTTP SESSION with retry + connection pooling ---
+def _build_session() -> requests.Session:
+    session = requests.Session()
+    retries = Retry(
+        total=3,
+        backoff_factor=0.5,
+        status_forcelist=[502, 503, 504],
+    )
+    session.mount("https://", HTTPAdapter(max_retries=retries))
+    return session
+
+_session = _build_session()
+
+
 def get_last_updated_date() -> datetime.date:
     """Return the last updated date from the combined CSV, or START_YEAR if not found."""
+    path = os.path.join(EXPORT_DIR, "csv/combined/earthquakes_combined.csv")
     try:
-        path = os.path.join(EXPORT_DIR, "csv/combined/earthquakes_combined.csv")
         if not os.path.exists(path):
             raise FileNotFoundError()
-        df = pd.read_csv(path, usecols=["time_utc"])
+        # Read only the time column; use tail to avoid loading all rows into memory
+        row_count = sum(1 for _ in open(path)) - 1  # exclude header
+        skip = max(0, row_count - 500)
+        df = pd.read_csv(path, usecols=["time_utc"], skiprows=range(1, skip + 1) if skip else None)
         df["time_utc"] = pd.to_datetime(df["time_utc"], errors="coerce", utc=True)
         last_date = df["time_utc"].max().date()
         logging.info(f"Last updated date: {last_date}")
@@ -58,6 +77,7 @@ def get_last_updated_date() -> datetime.date:
     except Exception as e:
         logging.warning(f"Fallback to start year due to: {e}")
         return datetime(START_YEAR, 1, 1).date()
+
 
 def generate_date_ranges() -> List[Tuple[int, int, str, str]]:
     """
@@ -76,11 +96,12 @@ def generate_date_ranges() -> List[Tuple[int, int, str, str]]:
         current += relativedelta(months=1)
     return date_ranges
 
+
 def fetch_quake_data(from_date: str, to_date: str) -> pd.DataFrame:
     """Fetch earthquake data from API for the given date range."""
     url = f"{API_URL}?from={from_date}&to={to_date}"
     try:
-        response = requests.get(url, timeout=30)
+        response = _session.get(url, timeout=(5, 30))
         response.raise_for_status()
         data = response.json()
         logging.info(f"✅ Data fetched for {from_date} → {to_date}")
@@ -88,6 +109,7 @@ def fetch_quake_data(from_date: str, to_date: str) -> pd.DataFrame:
     except Exception as e:
         logging.error(f"❌ Error fetching data ({from_date} → {to_date}): {e}")
         return pd.DataFrame()
+
 
 def validate_quake_data(df: pd.DataFrame) -> pd.DataFrame:
     """Clean and validate the earthquake DataFrame, add formatted columns."""
@@ -97,10 +119,16 @@ def validate_quake_data(df: pd.DataFrame) -> pd.DataFrame:
     df["time"] = pd.to_datetime(df["time"], errors="coerce", utc=True)
     df.dropna(subset=["time", "latitude", "longitude", "depth", "mag"], inplace=True)
     df = df[df["time"].between(pd.Timestamp("1950-01-01", tz=utc_zone), pd.Timestamp(END_DATE, tz=utc_zone))]
+    # Apply bounds validation using the defined constants
+    df = df[df["latitude"].between(MIN_LAT, MAX_LAT)]
+    df = df[df["longitude"].between(MIN_LON, MAX_LON)]
+    df = df[df["depth"].between(MIN_DEPTH, MAX_DEPTH)]
+    df = df[df["mag"].between(MIN_MAG, MAX_MAG)]
     df["time_utc"] = df["time"].dt.strftime("%Y-%m-%d %H:%M:%S")
     df["time_mmt"] = df["time"].dt.tz_convert(myanmar_zone).dt.strftime("%Y-%m-%d %H:%M:%S")
     df.drop(columns=["time"], inplace=True)
     return df
+
 
 def deduplicate_csv(path: str):
     """Remove any duplicate rows in a CSV file based on all columns."""
@@ -113,13 +141,16 @@ def deduplicate_csv(path: str):
     except Exception as e:
         logging.warning(f"Failed to deduplicate {path}: {e}")
 
-def save_to_csv(df: pd.DataFrame, path: str):
-    """Append DataFrame to CSV, avoiding duplicate rows."""
+
+def save_to_csv(df: pd.DataFrame, path: str, dedup: bool = False):
+    """Append DataFrame to CSV. Pass dedup=True to deduplicate after writing."""
     if df.empty:
         return
     write_header = not os.path.exists(path)
     df.to_csv(path, mode="a", index=False, header=write_header)
-    deduplicate_csv(path)
+    if dedup:
+        deduplicate_csv(path)
+
 
 def save_to_json(df: pd.DataFrame, path: str):
     """Save DataFrame as a JSON file."""
@@ -128,17 +159,33 @@ def save_to_json(df: pd.DataFrame, path: str):
     with open(path, "w") as f:
         json.dump({"earthquakes": df.to_dict(orient="records")}, f, indent=2)
 
+
+def load_combined_json(path: str) -> List[dict]:
+    """Load existing combined JSON records, returning an empty list if not found."""
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path) as f:
+            return json.load(f).get("earthquakes", [])
+    except Exception as e:
+        logging.warning(f"Could not load existing combined JSON: {e}")
+        return []
+
+
 def process_month(year: int, month: int, from_date: str, to_date: str) -> Tuple[int, int, pd.DataFrame]:
     """Fetch, validate, and return quake data for a single month."""
     df_raw = fetch_quake_data(from_date, to_date)
     df_valid = validate_quake_data(df_raw)
     return (year, month, df_valid)
 
+
 def main():
     date_ranges = generate_date_ranges()
     logging.info(f"🚀 Processing {len(date_ranges)} months of earthquake data...")
-    combined_df = pd.DataFrame()
-    yearly_dfs: Dict[int, pd.DataFrame] = {}
+
+    # Collect results into lists — avoids O(n²) pd.concat in a loop
+    all_frames: List[pd.DataFrame] = []
+    yearly_frames: Dict[int, List[pd.DataFrame]] = {}
 
     # Download & process in parallel
     with ThreadPoolExecutor(max_workers=10) as executor:
@@ -152,17 +199,42 @@ def main():
             monthly_json = os.path.join(EXPORT_DIR, "json/monthly", f"earthquakes_{year}_{month:02d}.json")
             save_to_csv(df_valid, monthly_csv)
             save_to_json(df_valid, monthly_json)
-            yearly_dfs[year] = pd.concat([yearly_dfs.get(year, pd.DataFrame()), df_valid], ignore_index=True)
-            combined_df = pd.concat([combined_df, df_valid], ignore_index=True)
+            yearly_frames.setdefault(year, []).append(df_valid)
+            all_frames.append(df_valid)
             logging.info(f"✅ Updated {year}-{month:02d}: {len(df_valid)} records")
 
+    if not all_frames:
+        logging.info("🏁 No new data to process.")
+        return
+
+    # Concat once per year and once for combined — O(n) instead of O(n²)
     logging.info("\n📅 Saving yearly and combined files...")
-    for year, ydf in yearly_dfs.items():
-        save_to_csv(ydf, os.path.join(EXPORT_DIR, "csv/yearly", f"earthquakes_{year}.csv"))
+    for year, frames in yearly_frames.items():
+        ydf = pd.concat(frames, ignore_index=True)
+        save_to_csv(ydf, os.path.join(EXPORT_DIR, "csv/yearly", f"earthquakes_{year}.csv"), dedup=True)
         save_to_json(ydf, os.path.join(EXPORT_DIR, "json/yearly", f"earthquakes_{year}.json"))
-    save_to_csv(combined_df, os.path.join(EXPORT_DIR, "csv/combined/earthquakes_combined.csv"))
-    save_to_json(combined_df, os.path.join(EXPORT_DIR, "json/combined/earthquakes_combined.json"))
+
+    combined_df = pd.concat(all_frames, ignore_index=True)
+    combined_csv = os.path.join(EXPORT_DIR, "csv/combined/earthquakes_combined.csv")
+    combined_json = os.path.join(EXPORT_DIR, "json/combined/earthquakes_combined.json")
+
+    save_to_csv(combined_df, combined_csv, dedup=True)
+
+    # Merge new records into existing combined JSON so history is preserved
+    existing_records = load_combined_json(combined_json)
+    new_records = combined_df.to_dict(orient="records")
+    seen = set()
+    merged = []
+    for record in existing_records + new_records:
+        key = (record.get("time_utc"), record.get("latitude"), record.get("longitude"))
+        if key not in seen:
+            seen.add(key)
+            merged.append(record)
+    with open(combined_json, "w") as f:
+        json.dump({"earthquakes": merged}, f, indent=2)
+
     logging.info("🏁 All done! Earthquake data is up to date!")
+
 
 if __name__ == "__main__":
     main()
