@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": 21.326,
+      "longitude": 99.751,
+      "depth": 10.0,
+      "mag": 2.5,
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_16449_202603301357",
+      "updated": "2026-03-30T13:57:59.000Z",
+      "location": "Kyaing Tong, Shan, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1774879643",
+      "timestamp": "1774879079",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "21.33,99.75",
+      "time_utc": "2026-03-30 13:57:59",
+      "time_mmt": "2026-03-30 20:27:59"
+    },
+    {
       "latitude": 25.91,
       "longitude": 95.368,
       "depth": 10.0,
