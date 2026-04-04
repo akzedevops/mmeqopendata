@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt
+25.304,95.556,10.0,3.0,ml,,,,,,ems_202604_1971242,2026-04-02T18:21:29.000Z,"Dimpi, Chin State, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1775152967,1775152414,1,,"23.30,93.70",2026-04-02 17:53:34,2026-04-03 00:23:34

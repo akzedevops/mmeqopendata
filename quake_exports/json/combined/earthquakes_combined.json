@@ -3483,6 +3483,32 @@
       "initialPosition": "19.99,97.93",
       "time_utc": "2026-03-31 13:32:31",
       "time_mmt": "2026-03-31 20:02:31"
+    },
+    {
+      "latitude": 25.304,
+      "longitude": 95.556,
+      "depth": 10.0,
+      "mag": 3.0,
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "ems_202604_1971242",
+      "updated": "2026-04-02T18:21:29.000Z",
+      "location": "Dimpi, Chin State, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1775152967",
+      "timestamp": "1775152414",
+      "locationInferred": "1",
+      "state": "",
+      "initialPosition": "23.30,93.70",
+      "time_utc": "2026-04-02 17:53:34",
+      "time_mmt": "2026-04-03 00:23:34"
     }
   ]
 }
