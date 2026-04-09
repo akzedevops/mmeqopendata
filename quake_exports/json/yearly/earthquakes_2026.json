@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": 21.588,
+      "longitude": 96.105,
+      "depth": 10.0,
+      "mag": 3.3,
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_16469_202604071210",
+      "updated": "2026-04-07T12:21:32.000Z",
+      "location": "Kyaukse, Mandalay Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1775564500",
+      "timestamp": "1775563822",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "21.59,96.11",
+      "time_utc": "2026-04-07 12:10:22",
+      "time_mmt": "2026-04-07 18:40:22"
+    },
+    {
       "latitude": 19.408,
       "longitude": 97.739,
       "depth": 5.0,
