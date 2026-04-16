@@ -1,6 +1,32 @@
 {
   "earthquakes": [
     {
+      "latitude": 18.911,
+      "longitude": 96.368,
+      "depth": 10.0,
+      "mag": 2.2,
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_16497_202604142231",
+      "updated": "2026-04-14T22:31:26.000Z",
+      "location": "Taungoo, Bago Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1776206536",
+      "timestamp": "1776205886",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "18.91,96.37",
+      "time_utc": "2026-04-14 22:31:26",
+      "time_mmt": "2026-04-15 05:01:26"
+    },
+    {
       "latitude": 20.01,
       "longitude": 97.343,
       "depth": 10.0,
