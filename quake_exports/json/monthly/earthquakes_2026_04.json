@@ -1,6 +1,33 @@
 {
   "earthquakes": [
     {
+      "latitude": 25.402,
+      "longitude": 95.108,
+      "depth": 100.0,
+      "mag": 3.7,
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "in_STRjZkc5REdsR0FKWkVteFdwWGFTUT09",
+      "updated": "2026-04-16T21:35:35.000Z",
+      "location": "Awthaw, Sagaing Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1776375311",
+      "timestamp": "1776374380",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "25.40,95.11",
+      "shakemapURL": "",
+      "time_utc": "2026-04-16 21:19:40",
+      "time_mmt": "2026-04-17 03:49:40"
+    },
+    {
       "latitude": 19.151,
       "longitude": 96.478,
       "depth": 7.0,
