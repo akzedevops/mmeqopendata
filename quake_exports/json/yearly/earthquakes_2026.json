@@ -1,6 +1,33 @@
 {
   "earthquakes": [
     {
+      "latitude": 26.4428,
+      "longitude": 96.0679,
+      "depth": 86.0,
+      "mag": 4.3,
+      "magType": "mb",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "in_RFdzaGdCaW9sNWNVTlRvUU40MisxZz09",
+      "updated": "2026-04-17T14:04:11.000Z",
+      "location": "Ngajatzup, Kachin, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1776416471",
+      "timestamp": "1776416015",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "26.57,96.03",
+      "shakemapURL": "",
+      "time_utc": "2026-04-17 08:53:35",
+      "time_mmt": "2026-04-17 15:23:35"
+    },
+    {
       "latitude": 25.402,
       "longitude": 95.108,
       "depth": 100.0,
