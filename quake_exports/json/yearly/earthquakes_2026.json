@@ -1,6 +1,33 @@
 {
   "earthquakes": [
     {
+      "latitude": 18.088,
+      "longitude": 96.469,
+      "depth": 10.0,
+      "mag": 2.6,
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_16529_202604232123",
+      "updated": "2026-04-23T21:23:01.000Z",
+      "location": "Myo Chaung, Bago Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1776980119",
+      "timestamp": "1776979381",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "18.09,96.47",
+      "shakemapURL": "",
+      "time_utc": "2026-04-23 21:23:01",
+      "time_mmt": "2026-04-24 03:53:01"
+    },
+    {
       "latitude": 18.667,
       "longitude": 96.484,
       "depth": 10.0,
