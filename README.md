@@ -1,76 +1,66 @@
 # Myanmar Earthquake Open Data
 
-A Python toolkit for collecting, analyzing, and visualizing earthquake data in Myanmar. Built on top of the [Myanmar Earthquake API](https://mmeq.akze.net), covering records from 1950 to present. Daily automated updates via GitHub Actions.
+A Python toolkit for collecting, analyzing, and visualizing earthquake data in Myanmar. Built on the [Myanmar Earthquake API](https://mmeq.akze.net), covering records from 1950 to present. Includes dam risk assessment, aftershock forecasting, and automated report generation.
+
+**Live dashboard:** [https://akzedevops.github.io/mmeqopendata/](https://akzedevops.github.io/mmeqopendata/)
 
 ## Features
 
-- **Data Pipeline** — Fetch earthquake data from the API month-by-month in parallel, validate, deduplicate, and export as monthly/yearly/combined CSV + JSON
-- **CLI Interface** — Single `mmeq` command with subcommands for export, analysis, and visualization
-- **Temporal Analysis** — Monthly frequency trends, magnitude distribution histograms, magnitude vs depth scatter plots
-- **Spatial Clustering** — DBSCAN density-based clustering with depth-colored markers, magnitude-scaled sizes, annotated seismic zone labels, convex hull boundaries, and interactive basemap
-- **Seismology Module** — b-value estimation (Gutenberg-Richter law), magnitude of completeness (Mc), temporal declustering (Gardner-Knopoff)
-- **Interactive Map** — Folium-based HTML map with circle markers, marker clustering, heatmap layer, fault line overlay, and date range legends
-- **Configurable** — All parameters configurable via `config.py` or environment variables (API URL, file paths, DBSCAN params, map center, etc.)
-- **Tested** — 39 unit tests covering data validation, date range generation, CSV/JSON I/O, deduplication, seismology, and clustering
-- **CI/CD** — GitHub Actions workflow runs daily at midnight UTC to fetch new data and auto-commit
+- **Data Pipeline** — Fetch earthquake data from the API month-by-month in parallel, validate, deduplicate, export as CSV + JSON
+- **Interactive Map** — Folium HTML map with magnitude-colored markers, heatmap, fault lines, dam overlay (CartoDB tiles)
+- **Dam Risk Scoring** — 254 dams scored by PGA, fault proximity, and structural exposure (25 Critical, 180 High risk)
+- **Aftershock Forecasting** — Modified Omori law with decay parameter estimation
+- **Plotly Dashboard** — 6-panel interactive dashboard (timeline, depth, FMD, mag-vs-depth, monthly counts, dam risk)
+- **3D Cross-Section** — lat/lon/depth visualization along the Sagaing Fault
+- **Animated Timeline** — Month-by-month earthquake progression (TimestampedGeoJson)
+- **Population Exposure** — Estimated population within radius of earthquake/dam sites
+- **PDF Reports** — Auto-generated comprehensive report with statistics and risk tables
+- **Spatial Clustering** — DBSCAN with depth-colored markers, magnitude-scaled sizes, convex hull boundaries
+- **Seismology** — b-value (Gutenberg-Richter), magnitude of completeness (Mc), temporal declustering
+- **GitHub Pages** — Auto-deployed site with all interactive outputs
+- **CI/CD** — Daily data fetch + report generation + Pages deployment
 
 ## Requirements
 
 - Python 3.9+
-- See `requirements.txt` for all dependencies
 
 ## Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/mmeqopendata.git
+git clone https://github.com/akzedevops/mmeqopendata.git
 cd mmeqopendata
-
-# Create and activate a virtual environment
 python3 -m venv .venv
-source .venv/bin/activate        # Linux/macOS
-# .venv\Scripts\activate         # Windows
-
-# Install as an editable package with CLI
-pip install -e .
-
-# Or install with dev dependencies (for running tests)
+source .venv/bin/activate
 pip install -e ".[dev]"
 ```
 
 ## Quick Start
 
 ```bash
-# Fetch latest earthquake data from the API
+# Fetch latest earthquake data
 mmeq export
 
-# Run all analyses (temporal + clustering + seismology)
+# Generate full report (all analyses + all outputs)
+mmeq report --output ./report
+
+# Individual commands
 mmeq analyze --type all
-
-# Generate interactive map with magnitude filter
 mmeq visualize --min-mag 3.0
-
-# Run seismology analysis with declustering
 mmeq analyze --type seismology --decluster
-
-# Show help
-mmeq --help
-mmeq analyze --help
-mmeq visualize --help
 ```
 
 ## CLI Reference
 
 ### `mmeq export`
 
-Fetches earthquake data from the Myanmar Earthquake API and exports it as CSV and JSON.
+Fetches earthquake data from the API and exports as CSV/JSON.
 
 ```bash
 mmeq export                    # Fetch all pending months
 mmeq export --workers 5        # Use 5 parallel threads (default: 10)
 ```
 
-**Output structure:**
+Output structure:
 ```
 quake_exports/
 ├── csv/
@@ -85,114 +75,127 @@ quake_exports/
 
 ### `mmeq analyze`
 
-Runs analyses on the earthquake data and generates charts and statistics.
+Run analyses on earthquake data.
 
 ```bash
 mmeq analyze --type all                          # Run everything
-mmeq analyze --type temporal                      # Frequency trends, magnitude distribution, depth scatter
-mmeq analyze --type clustering                    # DBSCAN spatial clustering with map
-mmeq analyze --type seismology                    # b-value, magnitude of completeness
-mmeq analyze --type seismology --decluster        # Also run temporal declustering
-mmeq analyze --min-mag 4.0                        # Only analyze M4.0+ events
-mmeq analyze --mc 3.5                             # Override magnitude of completeness
-mmeq analyze --output ./my_results                # Custom output directory
-mmeq analyze --data path/to/custom.csv            # Use a different data file
+mmeq analyze --type temporal                      # Frequency, distribution, depth charts
+mmeq analyze --type clustering                    # DBSCAN cluster map with dam overlay
+mmeq analyze --type seismology                    # b-value, Mc, declustering
+mmeq analyze --type seismology --decluster        # Include temporal declustering
+mmeq analyze --dam-risk                           # Dams within seismic cluster zones
+mmeq analyze --min-mag 4.0 --mc 3.5               # Filter and override Mc
+mmeq analyze --no-dams                            # Disable dam overlay on cluster map
 ```
 
-**Analysis types:**
-
-| Type | Outputs | Description |
+| Type | Output | Description |
 |---|---|---|
-| `temporal` | `monthly_frequency_trends.png`, `magnitude_distribution.png`, `mag_vs_depth_relationship.png` | Time-series and distribution charts |
-| `clustering` | `earthquake_clusters.png` | DBSCAN cluster map with depth-colored markers, zone annotations, 3 legends |
-| `seismology` | Console summary | b-value (Gutenberg-Richter), magnitude of completeness, optional declustering |
-
-**Seismology output example:**
-```
-Seismological Summary:
-  b-value: 0.331
-  a-value: 4.620
-  Mc (completeness): 2.2
-  Total events: 9,242
-  Main shocks: 3,237 (after declustering)
-  Removed (aftershocks): 6,005
-```
+| `temporal` | 3 PNG charts | Monthly frequency, magnitude distribution, mag-vs-depth |
+| `clustering` | `earthquake_clusters.png` | DBSCAN map with depth colors, zone labels, dams |
+| `seismology` | Console summary | b-value, a-value, Mc, optional declustering |
 
 ### `mmeq visualize`
 
-Generates an interactive Folium HTML map with earthquake markers, heatmap, and fault lines.
+Interactive Folium HTML map.
 
 ```bash
-mmeq visualize                                  # All events, all layers
-mmeq visualize --min-mag 4.0                    # Only M4.0+
-mmeq visualize --no-heatmap                     # Disable heatmap layer
-mmeq visualize --no-cluster                     # Disable marker clustering
-mmeq visualize --no-markers                     # Disable circle markers
-mmeq visualize --output ./maps                  # Custom output directory
+mmeq visualize                      # All events, all layers
+mmeq visualize --min-mag 4.0        # Only M4.0+
+mmeq visualize --no-heatmap         # Disable heatmap
+mmeq visualize --no-dams            # Disable dam overlay
 ```
 
-**Map features:**
-- Circle markers colored by magnitude (green < 3, orange 3–5, red 5+)
-- Marker radius scaled by magnitude
-- Marker clustering for performance (collapsible groups)
-- Heatmap layer showing earthquake density
-- Fault line overlay from `fault_lines.json`
-- Dynamic legend with date range and magnitude scale
-- Layer control to toggle features on/off
+Map features: magnitude-colored circle markers, marker clustering, heatmap layer, fault line overlay, dam overlay (254 dams, color-coded by status), CartoDB tiles.
 
-## Legacy Scripts
+### `mmeq report`
 
-The original standalone scripts are still included and work without installing the package:
+Full pipeline: all analyses + all outputs in one command.
 
 ```bash
-python dataexport.py        # Fetch and export data (same as mmeq export)
-python advanalysis.py       # Temporal + clustering analysis
-python adv2analysis.py      # Decade-by-decade clustering with fault lines
-python visualizer.py        # Interactive Folium map
+mmeq report --output ./report       # Generate everything
+mmeq report --no-pdf                # Skip PDF
+mmeq report --no-3d                 # Skip 3D cross-section
+mmeq report --no-forecast           # Skip aftershock forecast
+mmeq report --no-dashboard          # Skip Plotly dashboard
+mmeq report --no-animated           # Skip animated map
+mmeq report --no-population         # Skip population exposure
+mmeq report --no-dams               # Skip dam risk analysis
 ```
+
+| Output | File | Description |
+|---|---|---|
+| Interactive Map | `enhanced_earthquake_map.html` | Folium map with earthquakes, faults, dams |
+| Dashboard | `dashboard.html` | 6-panel Plotly interactive dashboard |
+| 3D View | `depth_cross_section.html` | 3D lat/lon/depth scatter |
+| Animation | `animated_earthquake_map.html` | Time-series earthquake progression |
+| PDF Report | `myanmar_earthquake_report.pdf` | Comprehensive report with tables |
+| Dam Risk | `dam_risk_scores.csv` | 254 dams with PGA, fault distance, risk grade |
+| Population | `population_exposure.csv` | People within 50km of major earthquakes |
+
+## Dam Risk Assessment
+
+254 dams from [Open Development Mekong](https://data.opendevelopmentmekong.net/en/dataset/myanmar-dams) (IFC/WLE, CC BY-SA 4.0).
+
+**Scoring methodology:**
+
+| Component | Weight | Source |
+|---|---|---|
+| Seismic (PGA) | 35% | Boore & Joyner (1997) attenuation from M7.7 mainshock |
+| Fault proximity | 30% | Distance to nearest fault segment |
+| Mainshock proximity | 20% | Distance to M7.7 epicenter |
+| Structural exposure | 15% | Dam height, capacity, storage volume |
+
+**Results (254 dams):**
+
+| Grade | Count | Criteria |
+|---|---|---|
+| Critical | 25 | Composite score >= 7 |
+| High | 180 | 5 <= score < 7 |
+| Moderate | 44 | 3 <= score < 5 |
+| Low | 5 | score < 3 |
+
+**Dam properties:**
+- 160 completed, 51 proposed, 14 planned, 9 under construction
+- Functions: 117 irrigation, 93 hydropower, 21 multi-purpose, 5 water supply
+
+## Aftershock Forecasting
+
+Modified Omori law parameters fitted to the M7.7 aftershock sequence:
+
+```
+K (productivity): fitted from aftershock density
+c (time offset):  fitted from early decay
+p (decay exponent): typically 0.8-1.2
+```
+
+Forecasts expected number of M>=3 aftershocks at 7, 30, and 90 day windows.
 
 ## Project Structure
 
 ```
-mmeqopendata/
-├── src/mmeq/                        # Main package
-│   ├── __init__.py                  # Package metadata (version)
-│   ├── cli.py                       # CLI entry point (argparse)
-│   ├── config.py                    # All configuration constants + env var overrides
-│   ├── export/
-│   │   ├── __init__.py
-│   │   ├── fetcher.py               # API fetching, date range generation
-│   │   └── writer.py                # CSV/JSON save, validation, deduplication
-│   ├── analysis/
-│   │   ├── __init__.py
-│   │   ├── clustering.py            # DBSCAN clustering + map plotting
-│   │   ├── temporal.py              # Frequency, magnitude distribution, depth charts
-│   │   └── seismology.py            # b-value, Mc, declustering
-│   └── visualization/
-│       ├── __init__.py
-│       └── map.py                   # Folium interactive map builder
-├── tests/
-│   ├── test_validate.py             # Data validation tests (10 tests)
-│   ├── test_dateranges.py           # Date ranges, CSV/JSON I/O, dedup (17 tests)
-│   └── test_seismology.py           # b-value, Mc, declustering, DBSCAN (12 tests)
-├── scripts/
-│   └── run_cli.py                   # Thin entry-point script
-├── .github/workflows/
-│   └── daily_data_fetch.yml         # CI: daily data fetch + auto-commit
-├── dataexport.py                    # Legacy standalone export script
-├── advanalysis.py                   # Legacy standalone analysis script
-├── adv2analysis.py                  # Legacy standalone clustering script
-├── visualizer.py                    # Legacy standalone visualization script
-├── fault_lines.json                 # Plate boundary data for map overlay
-├── pyproject.toml                   # Package configuration
-├── requirements.txt                 # Python dependencies
-├── LICENSE                          # MIT License
-└── README.md
+src/mmeq/
+├── __init__.py
+├── cli.py                          # CLI entry point (4 subcommands)
+├── config.py                       # Config constants + env var overrides
+├── export/
+│   ├── fetcher.py                  # API fetching, date range generation
+│   └── writer.py                   # CSV/JSON save, validation, dedup
+├── analysis/
+│   ├── aftershock.py               # Modified Omori law forecast
+│   ├── clustering.py               # DBSCAN clustering + map + dam overlay
+│   ├── dam_risk.py                 # PGA estimation, fault distance, risk scoring
+│   ├── population.py               # Population exposure estimation
+│   ├── seismology.py               # b-value, Mc, declustering
+│   └── temporal.py                 # Frequency, distribution, depth charts
+└── visualization/
+    ├── animated_map.py             # TimestampedGeoJson timeline
+    ├── cross_section.py            # 3D depth visualization
+    ├── dashboard.py                # Plotly 6-panel dashboard
+    ├── map.py                      # Folium interactive map
+    └── report.py                   # PDF report generation
 ```
 
 ## Configuration
-
-All settings can be overridden via environment variables:
 
 | Variable | Default | Description |
 |---|---|---|
@@ -205,281 +208,72 @@ All settings can be overridden via environment variables:
 
 ## Data Fields
 
-Each earthquake record contains:
-
 | Field | Type | Description |
 |---|---|---|
 | `time_utc` | datetime | UTC timestamp |
 | `time_mmt` | datetime | Myanmar Standard Time (UTC+6:30) |
-| `latitude` | float | Latitude (-90 to 90) |
-| `longitude` | float | Longitude (-180 to 180) |
-| `depth` | float | Depth in km (0 to 700) |
-| `mag` | float | Magnitude (0 to 10) |
+| `latitude` | float | Latitude |
+| `longitude` | float | Longitude |
+| `depth` | float | Depth in km |
+| `mag` | float | Magnitude |
 | `magType` | string | Magnitude type (ml, mb, mw, mww, etc.) |
 | `location` | string | Descriptive location name |
-| `place` | string | Region/place |
-| `country` | string | Country code (MM) |
 | `id` | string | Unique event identifier |
-
-## Cluster Map Legend
-
-The clustering analysis produces a map with three legends:
-
-**Depth (marker color):**
-- Red — Shallow (0–30 km), most destructive
-- Orange — Intermediate (30–70 km)
-- Blue — Deep (70–300 km)
-- Dark Blue — Very Deep (300+ km)
-
-**Magnitude (marker size):** Larger dots = stronger earthquakes
-
-**Seismic Zones (upper right):** Each cluster labeled with region name, event count, and maximum earthquake with date
 
 ## Running Tests
 
 ```bash
-# Install dev dependencies
 pip install -e ".[dev]"
-
-# Run all tests
 pytest tests/ -v
-
-# Run with coverage
 pytest tests/ -v --cov=mmeq
 ```
 
-## Automated Data Updates
+39 tests covering data validation, date ranges, CSV/JSON I/O, deduplication, seismology, and clustering.
 
-A GitHub Actions workflow (`.github/workflows/daily_data_fetch.yml`) runs daily at midnight UTC to:
-1. Fetch new earthquake data from the API
-2. Update CSV and JSON exports
-3. Auto-commit changes to the repository
+## CI/CD
 
-## Myanmar Earthquake API Documentation
+Two GitHub Actions workflows:
 
-The earthquake data used by this project comes from the **Myanmar Earthquake API** at `https://mmeq.akze.net`.
+| Workflow | Trigger | Description |
+|---|---|---|
+| `daily_data_fetch.yml` | Daily at midnight UTC | Fetch new data, auto-commit |
+| `report_and_pages.yml` | Push to master | Generate report, deploy to Pages |
 
-### Base URL
+The daily workflow triggers the report workflow after data updates, so the live site stays current.
 
-```
-https://mmeq.akze.net/api/myanmar-quakes
-```
+## Data Sources
+
+| Data | Source | License |
+|---|---|---|
+| Earthquakes | [Myanmar Earthquake API](https://mmeq.akze.net) (USGS/ISC) | Open |
+| Dams | [Open Development Mekong](https://data.opendevelopmentmekong.net/en/dataset/myanmar-dams) (IFC/WLE) | CC BY-SA 4.0 |
+| Fault lines | USGS plate boundary data | Public domain |
+| PGA model | Boore & Joyner (1997) | Academic |
+
+## API Reference
 
 ### Endpoints
 
-#### Get earthquakes by date range
-
 ```
-GET /api/myanmar-quakes?from=YYYY-MM-DD&to=YYYY-MM-DD
-```
-
-Returns all earthquake events that occurred between `from` and `to` dates (inclusive).
-
-**Parameters:**
-
-| Parameter | Required | Format | Description |
-|---|---|---|---|
-| `from` | Yes (with `to`) | `YYYY-MM-DD` | Start date |
-| `to` | Yes (with `from`) | `YYYY-MM-DD` | End date |
-
-#### Get earthquakes by single date
-
-```
-GET /api/myanmar-quakes?date=YYYY-MM-DD
+GET https://mmeq.akze.net/api/myanmar-quakes?from=YYYY-MM-DD&to=YYYY-MM-DD
+GET https://mmeq.akze.net/api/myanmar-quakes?date=YYYY-MM-DD
 ```
 
-Returns all earthquake events that occurred on the specified date.
+### Example
 
-**Parameters:**
-
-| Parameter | Required | Format | Description |
-|---|---|---|---|
-| `date` | Yes (standalone) | `YYYY-MM-DD` | Specific date |
-
-### Example Requests
-
-**Date range (one month):**
-```bash
-curl "https://mmeq.akze.net/api/myanmar-quakes?from=2025-03-01&to=2025-03-31"
-```
-
-**Single day:**
-```bash
-curl "https://mmeq.akze.net/api/myanmar-quakes?date=2025-03-28"
-```
-
-**Python with requests:**
 ```python
-import requests
-
-response = requests.get(
-    "https://mmeq.akze.net/api/myanmar-quakes",
-    params={"from": "2025-03-28", "to": "2025-03-28"}
-)
-data = response.json()
-for quake in data["earthquakes"]:
-    print(f"M{quake['mag']} at {quake['location']} ({quake['time']})")
-```
-
-**JavaScript (fetch):**
-```javascript
-const res = await fetch(
-  "https://mmeq.akze.net/api/myanmar-quakes?from=2025-03-01&to=2025-03-31"
-);
-const data = await res.json();
-console.log(`Found ${data.earthquakes.length} earthquakes`);
-```
-
-### Response Format
-
-All responses return JSON with a single `earthquakes` array:
-
-```json
-{
-  "earthquakes": [
-    {
-      "time": "2025-03-28T06:20:52.000Z",
-      "latitude": "21.9963000",
-      "longitude": "95.9258000",
-      "depth": "10.0000",
-      "mag": "7.70",
-      "magType": "mww",
-      "nst": "245",
-      "gap": "24",
-      "dmin": "3.481",
-      "rms": "0.9",
-      "net": "us",
-      "id": "gfz2025gbpv",
-      "updated": "2025-04-02T21:26:26.980Z",
-      "location": "2025 Mandalay, Burma (Myanmar) Earthquake",
-      "place": "4km NE of Sagaing, Burma (Myanmar)",
-      "country": "MM",
-      "continent": "Asia",
-      "type": "earthquake",
-      "timeAdded": "1743143314",
-      "timestamp": "1743142852",
-      "locationInferred": "0",
-      "state": "",
-      "initialPosition": "22.07,96.12",
-      "shakemapURL": ""
-    }
-  ]
-}
-```
-
-### Response Fields
-
-| Field | Type | Description |
-|---|---|---|
-| `time` | string (ISO 8601) | UTC timestamp of the earthquake (e.g., `"2025-03-28T06:20:52.000Z"`) |
-| `latitude` | string | Latitude in decimal degrees |
-| `longitude` | string | Longitude in decimal degrees |
-| `depth` | string | Depth in kilometers |
-| `mag` | string | Earthquake magnitude |
-| `magType` | string | Magnitude type: `ml` (local), `mb` (body), `ms` (surface), `mw`/`mww` (moment), etc. |
-| `nst` | string | Number of seismic stations used |
-| `gap` | string | Azimuthal gap in degrees |
-| `dmin` | string | Minimum distance to stations in degrees |
-| `rms` | string | Root-mean-square travel time residual |
-| `net` | string | Contributing network (e.g., `us`, `th`, `in`) |
-| `id` | string | Unique event identifier |
-| `updated` | string (ISO 8601) | Last update timestamp |
-| `location` | string | Descriptive location name (e.g., `"Mandalay, Mandalay Region, Myanmar (Burma)"`) |
-| `place` | string | Short place description or country name |
-| `country` | string | ISO country code (`MM` for Myanmar) |
-| `continent` | string | Continent (`Asia`) |
-| `type` | string | Event type (`"earthquake"`) |
-| `timeAdded` | string | Unix timestamp when added to the database |
-| `timestamp` | string | Unix timestamp of the event |
-| `locationInferred` | string | `"1"` if location was inferred, `"0"` if precise |
-| `state` | string | State/region (often empty) |
-| `initialPosition` | string | Original coordinates as `"lat,lon"` before refinement |
-| `shakemapURL` | string | URL to ShakeMap image (if available) |
-
-### Error Responses
-
-**Missing parameters** (HTTP 200 with error message):
-```json
-{
-  "error": "Provide either ?date=YYYY-MM-DD or ?from=YYYY-MM-DD&to=YYYY-MM-DD"
-}
-```
-
-**Invalid date format** (HTTP 400):
-- Returns when date parameters are not in `YYYY-MM-DD` format
-
-### Data Coverage
-
-- **Time range**: 1950 to present
-- **Geographic scope**: Primarily Myanmar and surrounding regions
-- **Magnitude range**: All detectable events (typically M1.0+)
-- **Update frequency**: Data is continuously updated from global seismic networks
-- **Sources**: USGS, Thai Meteorological Department, Indian Meteorological Department, GFZ, and others
-
-### Rate Limits
-
-The API is free and open. No authentication or API key is required. Be respectful with request frequency — avoid polling more than once per second.
-
-### Data Sources
-
-Earthquake data is aggregated from:
-- [USGS Earthquake Hazards Program](https://earthquake.usgs.gov)
-- [GFZ German Research Centre for Geosciences](https://www.gfz-potsdam.de)
-- [Thai Meteorological Department](https://www.tmd.go.th)
-- [ISC (International Seismological Centre)](https://www.isc.ac.uk)
-- Regional seismic networks
-
-### Using This API in Your Own Projects
-
-**Plain curl:**
-```bash
-# Get all earthquakes from March 2025
-curl -s "https://mmeq.akze.net/api/myanmar-quakes?from=2025-03-01&to=2025-03-31" \
-  | python3 -m json.tool > earthquakes_march_2025.json
-```
-
-**Pandas DataFrame:**
-```python
-import pandas as pd
 import requests
 
 resp = requests.get(
     "https://mmeq.akze.net/api/myanmar-quakes",
     params={"from": "2025-03-01", "to": "2025-03-31"}
 )
-df = pd.DataFrame(resp.json()["earthquakes"])
-
-# Convert numeric fields
-for col in ["latitude", "longitude", "depth", "mag"]:
-    df[col] = pd.to_numeric(df[col], errors="coerce")
-
-df["time"] = pd.to_datetime(df["time"])
-
-print(f"Loaded {len(df)} earthquakes")
-print(f"Largest: M{df['mag'].max()} on {df.loc[df['mag'].idxmax(), 'time']}")
+for q in resp.json()["earthquakes"]:
+    print(f"M{q['mag']} at {q['location']}")
 ```
 
-**Filtering large events:**
-```python
-# Only M5.0+ earthquakes
-resp = requests.get(
-    "https://mmeq.akze.net/api/myanmar-quakes",
-    params={"from": "2024-01-01", "to": "2025-12-31"}
-)
-df = pd.DataFrame(resp.json()["earthquakes"])
-df["mag"] = pd.to_numeric(df["mag"])
-major = df[df["mag"] >= 5.0].sort_values("mag", ascending=False)
-print(major[["time", "mag", "depth", "location"]].to_string())
-```
+No authentication required. Free and open. Avoid polling more than once per second.
 
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-## Data Source
-
-Earthquake data is provided by the [Myanmar Earthquake API](https://mmeq.akze.net). Fault line data from global plate boundary datasets.
-
-## Contact
-
-For questions or issues, contact aungkhantzawd@gmail.com or open a GitHub issue.
+MIT License — see [LICENSE](LICENSE).
