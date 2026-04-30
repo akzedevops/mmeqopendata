@@ -1,4 +1,5 @@
 import logging
+import os
 import warnings
 import pandas as pd
 import numpy as np
@@ -76,6 +77,54 @@ def _name_cluster(lat: float, lon: float) -> str:
     return f"Region ({lat:.1f}N, {lon:.1f}E)"
 
 
+def dams_in_seismic_zones(
+    df: pd.DataFrame,
+    eps: float = DBSCAN_EPS,
+    min_samples: int = DBSCAN_MIN_SAMPLES,
+) -> pd.DataFrame:
+    df = df.copy()
+    df["cluster"] = run_dbscan(df, eps=eps, min_samples=min_samples)
+    stats = _cluster_stats(df)
+    dams_df = _load_dams()
+    if dams_df is None or dams_df.empty:
+        logger.warning("No dam data available for risk analysis")
+        return pd.DataFrame()
+
+    from shapely.geometry import Point
+
+    results = []
+    real_clusters = sorted(c for c in stats if c != -1)
+    for _, dam in dams_df.iterrows():
+        dam_pt = Point(dam["longitude"], dam["latitude"])
+        for c in real_clusters:
+            sub = df[df["cluster"] == c]
+            pts = sub[["longitude", "latitude"]].values
+            if len(pts) < 3:
+                continue
+            from shapely.geometry import MultiPoint
+            hull = MultiPoint([tuple(p) for p in pts]).convex_hull
+            if hull.contains(dam_pt):
+                s = stats[c]
+                results.append({
+                    "dam_name": dam["name"],
+                    "dam_lat": dam["latitude"],
+                    "dam_lon": dam["longitude"],
+                    "cluster_id": c,
+                    "cluster_name": s["name"].split("\n")[0].strip(),
+                    "cluster_events": s["count"],
+                    "cluster_max_mag": s["mag_max"],
+                    "cluster_max_mag_date": s["max_mag_date"],
+                    "cluster_avg_depth": round(s["avg_depth"], 1),
+                })
+                break
+
+    risk_df = pd.DataFrame(results)
+    if not risk_df.empty:
+        risk_df = risk_df.sort_values("cluster_max_mag", ascending=False).reset_index(drop=True)
+    logger.info(f"Found {len(risk_df)} dams within seismic cluster zones")
+    return risk_df
+
+
 def run_dbscan(
     df: pd.DataFrame,
     eps: float = DBSCAN_EPS,
@@ -120,6 +169,39 @@ def _cluster_stats(df: pd.DataFrame) -> Dict[int, dict]:
     return stats
 
 
+def _load_dams() -> Optional[pd.DataFrame]:
+    candidates = [
+        os.path.join(os.getcwd(), "myanmar_dams.geojson"),
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "myanmar_dams.geojson"),
+    ]
+    dams_path = None
+    for p in candidates:
+        p = os.path.normpath(p)
+        if os.path.exists(p):
+            dams_path = p
+            break
+    if dams_path is None:
+        return None
+    import json
+    with open(dams_path, encoding="utf-8") as f:
+        data = json.load(f)
+    rows = []
+    for feat in data.get("features", []):
+        coords = feat["geometry"]["coordinates"]
+        props = feat.get("properties", {})
+        rows.append({
+            "longitude": coords[0],
+            "latitude": coords[1],
+            "name": props.get("name", "Unnamed Dam"),
+            "status": props.get("status", ""),
+            "function": props.get("function", ""),
+            "capacity_mw": props.get("capacity_mw", ""),
+            "height_m": props.get("height_m", ""),
+            "river": props.get("river", ""),
+        })
+    return pd.DataFrame(rows)
+
+
 def plot_clusters_on_map(
     df: pd.DataFrame,
     title: str,
@@ -127,6 +209,7 @@ def plot_clusters_on_map(
     faults_gdf: Optional[object] = None,
     eps: float = DBSCAN_EPS,
     min_samples: int = DBSCAN_MIN_SAMPLES,
+    show_dams: bool = True,
 ) -> None:
     if not HAS_VIZ:
         logger.error("Missing optional deps: scikit-learn, geopandas, contextily, matplotlib")
@@ -201,6 +284,22 @@ def plot_clusters_on_map(
         faults_gdf = faults_gdf.to_crs(epsg=3857) if faults_gdf.crs != "EPSG:3857" else faults_gdf
         faults_gdf.plot(ax=ax, color="purple", linewidth=1.2, alpha=0.6, zorder=2)
 
+    if show_dams:
+        dams_df = _load_dams()
+        if dams_df is not None and not dams_df.empty:
+            dams_gdf = gpd.GeoDataFrame(
+                dams_df,
+                geometry=gpd.points_from_xy(dams_df.longitude, dams_df.latitude),
+                crs="EPSG:4326",
+            ).to_crs(epsg=3857)
+            ax.scatter(
+                dams_gdf.geometry.x, dams_gdf.geometry.y,
+                s=40, c="#2196F3", marker="^", alpha=0.8,
+                edgecolors="white", linewidths=0.5, zorder=15,
+                label=f"Dams ({len(dams_gdf)})",
+            )
+            logger.info(f"Plotted {len(dams_gdf)} dams on cluster map")
+
     margin = 400000
     ax.set_xlim(gdf.total_bounds[0] - margin, gdf.total_bounds[2] + margin)
     ax.set_ylim(gdf.total_bounds[1] - margin, gdf.total_bounds[3] + margin)
@@ -226,6 +325,11 @@ def plot_clusters_on_map(
     )
     if faults_gdf is not None:
         depth_handles.append(Line2D([0], [0], color="purple", linewidth=2, label="Fault Lines"))
+    if show_dams:
+        depth_handles.append(
+            Line2D([0], [0], marker="^", color="w", markerfacecolor="#2196F3",
+                   markersize=10, label="Dams", markeredgecolor="grey", markeredgewidth=0.5)
+        )
 
     legend1 = ax.legend(
         handles=depth_handles,

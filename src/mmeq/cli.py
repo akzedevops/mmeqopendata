@@ -22,7 +22,7 @@ from mmeq.analysis.temporal import (
     magnitude_vs_depth,
 )
 from mmeq.analysis.seismology import b_value, magnitude_of_completeness, decluster_catalog
-from mmeq.analysis.clustering import run_dbscan, plot_clusters_on_map
+from mmeq.analysis.clustering import run_dbscan, plot_clusters_on_map, dams_in_seismic_zones
 
 
 def setup_logging(verbose: bool = False) -> None:
@@ -162,6 +162,7 @@ def cmd_analyze(args) -> None:
                 title="Earthquake Clusters in Myanmar (DBSCAN)",
                 filename=os.path.join(args.output, "earthquake_clusters.png"),
                 faults_gdf=faults,
+                show_dams=not args.no_dams,
             )
         except ImportError:
             logging.error("Install geopandas, contextily, scikit-learn for clustering")
@@ -178,6 +179,20 @@ def cmd_analyze(args) -> None:
             mainshocks = decluster_catalog(df)
             print(f"  Main shocks: {len(mainshocks)}")
             print(f"  Removed (aftershocks): {len(df) - len(mainshocks)}")
+
+    if args.dam_risk or ("seismology" in types and args.dam_risk):
+        risk_df = dams_in_seismic_zones(df)
+        if not risk_df.empty:
+            risk_csv = os.path.join(args.output, "dam_seismic_risk.csv")
+            risk_df.to_csv(risk_csv, index=False)
+            print(f"\nDam-Seismic Risk Analysis:")
+            print(f"  Dams in seismic zones: {len(risk_df)}")
+            for _, row in risk_df.head(20).iterrows():
+                print(f"    {row['dam_name']}: in {row['cluster_name']} "
+                      f"(max M{row['cluster_max_mag']:.1f}, {row['cluster_events']} events)")
+            print(f"  Full report: {risk_csv}")
+        else:
+            print("\nNo dams found within seismic cluster zones.")
 
     print(f"\nAnalysis complete. Outputs saved to {args.output}/")
 
@@ -196,8 +211,120 @@ def cmd_visualize(args) -> None:
         show_heatmap=not args.no_heatmap,
         show_markers=not args.no_markers,
         cluster_markers=not args.no_cluster,
+        show_dams=not args.no_dams,
     )
     print(f"Map saved to {output_path}")
+
+
+def _build_interactive_map(df, output_dir, min_mag=0.0):
+    from mmeq.visualization.map import build_earthquake_map
+    path = os.path.join(output_dir, "enhanced_earthquake_map.html")
+    build_earthquake_map(df, output_path=path, min_mag=min_mag, show_dams=True)
+    return path
+
+
+def cmd_report(args) -> None:
+    from mmeq.analysis.dam_risk import dam_risk_scores
+    from mmeq.analysis.aftershock import modified_omori_forecast
+    from mmeq.analysis.population import estimate_population_exposure
+    from mmeq.visualization.dashboard import build_dashboard
+    from mmeq.visualization.cross_section import depth_cross_section
+    from mmeq.visualization.animated_map import build_animated_map
+    from mmeq.visualization.report import generate_pdf_report
+
+    df = load_data(args.data)
+    os.makedirs(args.output, exist_ok=True)
+
+    if args.min_mag:
+        df = df[df["mag"] >= args.min_mag]
+        logging.info(f"Filtered to mag >= {args.min_mag}: {len(df)} records")
+
+    b, a, mc = b_value(df["mag"], min_mag=args.mc if args.mc else None)
+    logging.info(f"b={b:.3f}, a={a:.3f}, Mc={mc:.1f}")
+
+    risk_df = None
+    if not args.no_dams:
+        logging.info("Computing dam risk scores...")
+        risk_df = dam_risk_scores(df, b, a, mc)
+        if not risk_df.empty:
+            risk_csv = os.path.join(args.output, "dam_risk_scores.csv")
+            risk_df.to_csv(risk_csv, index=False)
+            logging.info(f"Dam risk scores saved -> {risk_csv}")
+            grades = risk_df["risk_grade"].value_counts()
+            print(f"\nDam Risk Assessment:")
+            for g in ["Critical", "High", "Moderate", "Low"]:
+                if g in grades.index:
+                    print(f"  {g}: {grades[g]} dams")
+            print(f"  Top risk: {risk_df.iloc[0]['name']} ({risk_df.iloc[0]['composite_risk']:.1f})")
+
+    forecast_df = None
+    forecast_params = None
+    if not args.no_forecast:
+        logging.info("Running aftershock forecast...")
+        forecast_df, forecast_params = modified_omori_forecast(df, min_mag=3.0)
+        if forecast_params:
+            print(f"\nAftershock Forecast (p={forecast_params['p']:.2f}):")
+            print(f"  Expected M>=3 in 7d: {forecast_params['expected_aftershocks_7d']:.0f}")
+            print(f"  Expected M>=3 in 30d: {forecast_params['expected_aftershocks_30d']:.0f}")
+            print(f"  Expected M>=3 in 90d: {forecast_params['expected_aftershocks_90d']:.0f}")
+
+    if not args.no_dashboard:
+        logging.info("Building Plotly dashboard...")
+        build_dashboard(
+            df,
+            risk_df=risk_df,
+            forecast_params=forecast_params,
+            forecast_df=forecast_df,
+            output_path=os.path.join(args.output, "dashboard.html"),
+        )
+        print(f"  Dashboard: {args.output}/dashboard.html")
+
+    if not args.no_3d:
+        logging.info("Building 3D cross-section...")
+        depth_cross_section(
+            df,
+            output_path=os.path.join(args.output, "depth_cross_section.html"),
+        )
+        print(f"  3D view: {args.output}/depth_cross_section.html")
+
+    if not args.no_animated:
+        logging.info("Building animated timeline map...")
+        build_animated_map(
+            df,
+            output_path=os.path.join(args.output, "animated_earthquake_map.html"),
+            min_mag=args.min_mag,
+        )
+        print(f"  Animated map: {args.output}/animated_earthquake_map.html")
+
+    if not args.no_population:
+        logging.info("Computing population exposure...")
+        exposure_df = estimate_population_exposure(df, radius_km=50)
+        if not exposure_df.empty:
+            exposure_csv = os.path.join(args.output, "population_exposure.csv")
+            exposure_df.to_csv(exposure_csv, index=False)
+            print(f"\nPopulation Exposure (top 5):")
+            for _, row in exposure_df.head(5).iterrows():
+                print(f"  {row['name']}: {row['population_within_50km']:,} people within 50km")
+
+    if not args.no_pdf:
+        logging.info("Generating interactive map for report...")
+        map_path = _build_interactive_map(df, args.output, args.min_mag)
+
+        logging.info("Generating PDF report...")
+        generate_pdf_report(
+            df,
+            risk_df=risk_df,
+            forecast_params=forecast_params,
+            b_value=b,
+            a_value=a,
+            mc=mc,
+            output_path=os.path.join(args.output, "myanmar_earthquake_report.pdf"),
+            map_image=os.path.join(args.output, "earthquake_clusters.png") if not args.no_clusters else None,
+            cluster_image=os.path.join(args.output, "earthquake_clusters.png") if not args.no_clusters else None,
+        )
+        print(f"  PDF report: {args.output}/myanmar_earthquake_report.pdf")
+
+    print(f"\nFull report generated in {args.output}/")
 
 
 def main() -> None:
@@ -227,6 +354,8 @@ def main() -> None:
     p_analyze.add_argument("--min-mag", type=float, default=0.0, help="Minimum magnitude filter")
     p_analyze.add_argument("--mc", type=float, default=None, help="Override magnitude of completeness")
     p_analyze.add_argument("--decluster", action="store_true", help="Run declustering")
+    p_analyze.add_argument("--no-dams", action="store_true", help="Disable dam overlay on cluster map")
+    p_analyze.add_argument("--dam-risk", action="store_true", help="Analyze dams in seismic zones")
 
     # --- visualize ---
     p_viz = subparsers.add_parser("visualize", help="Generate interactive map")
@@ -236,6 +365,22 @@ def main() -> None:
     p_viz.add_argument("--no-heatmap", action="store_true", help="Disable heatmap layer")
     p_viz.add_argument("--no-markers", action="store_true", help="Disable marker layer")
     p_viz.add_argument("--no-cluster", action="store_true", help="Disable marker clustering")
+    p_viz.add_argument("--no-dams", action="store_true", help="Disable dam overlay")
+
+    # --- report (full pipeline) ---
+    p_report = subparsers.add_parser("report", help="Generate full report with all analyses")
+    p_report.add_argument("--data", default=None, help="Path to CSV (default: combined)")
+    p_report.add_argument("--output", default=OUTPUT_DIR, help="Output directory")
+    p_report.add_argument("--min-mag", type=float, default=0.0, help="Minimum magnitude filter")
+    p_report.add_argument("--mc", type=float, default=None, help="Override magnitude of completeness")
+    p_report.add_argument("--no-dams", action="store_true", help="Skip dam risk analysis")
+    p_report.add_argument("--no-forecast", action="store_true", help="Skip aftershock forecast")
+    p_report.add_argument("--no-dashboard", action="store_true", help="Skip Plotly dashboard")
+    p_report.add_argument("--no-3d", action="store_true", help="Skip 3D cross-section")
+    p_report.add_argument("--no-animated", action="store_true", help="Skip animated map")
+    p_report.add_argument("--no-population", action="store_true", help="Skip population exposure")
+    p_report.add_argument("--no-pdf", action="store_true", help="Skip PDF generation")
+    p_report.add_argument("--no-clusters", action="store_true", help="Skip cluster map image")
 
     args = parser.parse_args()
     setup_logging(args.verbose)
@@ -246,6 +391,8 @@ def main() -> None:
         cmd_analyze(args)
     elif args.command == "visualize":
         cmd_visualize(args)
+    elif args.command == "report":
+        cmd_report(args)
     else:
         parser.print_help()
         sys.exit(1)

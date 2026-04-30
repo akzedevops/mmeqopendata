@@ -18,6 +18,7 @@ build/
 *.png
 *.html
 cluster_maps/
+!docs/**
 
 # IDE
 .vscode/

@@ -34,9 +34,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -e ".[dev]"
+          pip install plotly fpdf2
 
-      - name: Run dataexport
+      - name: Run data export
         run: python dataexport.py
 
       - name: Commit and push changes
@@ -46,3 +47,10 @@ jobs:
           git add quake_exports/
           git diff --cached --quiet || git commit -m "feat: Update earthquake data [skip ci]"
           git push origin master
+
+      - name: Trigger report generation
+        if: success()
+        run: |
+          gh workflow run report_and_pages.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

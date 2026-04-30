@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myanmar Earthquake Open Data</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; }
+        .header { background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); color: white; padding: 40px 20px; text-align: center; }
+        .header h1 { font-size: 2.2em; margin-bottom: 8px; }
+        .header p { font-size: 1.1em; opacity: 0.85; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 30px 20px; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .stat-card { background: white; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .stat-card .number { font-size: 2em; font-weight: 700; color: #0f3460; }
+        .stat-card .label { font-size: 0.9em; color: #666; margin-top: 4px; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 40px; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 15px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 6px 25px rgba(0,0,0,0.12); }
+        .card-header { padding: 16px 20px; font-weight: 600; font-size: 1.1em; display: flex; align-items: center; gap: 10px; }
+        .card-header.map { background: #0f3460; color: white; }
+        .card-header.dashboard { background: #2d6a4f; color: white; }
+        .card-header.three-d { background: #7b2cbf; color: white; }
+        .card-header.animated { background: #e76f51; color: white; }
+        .card-header.report { background: #264653; color: white; }
+        .card-header.data { background: #457b9d; color: white; }
+        .card-body { padding: 16px 20px; }
+        .card-body p { font-size: 0.9em; color: #555; line-height: 1.5; margin-bottom: 12px; }
+        .btn { display: inline-block; padding: 8px 20px; border-radius: 6px; text-decoration: none; font-size: 0.9em; font-weight: 500; transition: opacity 0.2s; }
+        .btn:hover { opacity: 0.85; }
+        .btn-primary { background: #0f3460; color: white; }
+        .btn-green { background: #2d6a4f; color: white; }
+        .btn-purple { background: #7b2cbf; color: white; }
+        .btn-orange { background: #e76f51; color: white; }
+        .btn-teal { background: #264653; color: white; }
+        .btn-blue { background: #457b9d; color: white; }
+        .footer { text-align: center; padding: 30px; color: #999; font-size: 0.85em; }
+        .footer a { color: #0f3460; text-decoration: none; }
+        .risk-table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+        .risk-table th { background: #f0f0f0; padding: 8px; text-align: left; border-bottom: 2px solid #ddd; }
+        .risk-table td { padding: 6px 8px; border-bottom: 1px solid #eee; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; font-weight: 600; color: white; }
+        .badge-critical { background: #d62728; }
+        .badge-high { background: #ff7f0e; }
+        .badge-moderate { background: #ffdd57; color: #333; }
+        .badge-low { background: #2ca02c; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Myanmar Earthquake Open Data</h1>
+        <p>Seismic monitoring, dam risk assessment &amp; aftershock forecasting</p>
+    </div>
+
+    <div class="container">
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number" id="total-events">9,242</div>
+                <div class="label">Earthquake Events</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="max-mag">M7.7</div>
+                <div class="label">Largest Event (1988-11-06)</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="dams-at-risk">205</div>
+                <div class="label">Dams at Critical/High Risk</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="pop-exposed">1.77M</div>
+                <div class="label">People near M7.7 Epicenter</div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-header map">&#127758; Interactive Earthquake Map</div>
+                <div class="card-body">
+                    <p>Folium map with earthquake markers, heatmap, fault lines, and dam overlay. Magnitude-scaled markers with depth coloring and seismic zone clustering.</p>
+                    <a href="report/enhanced_earthquake_map.html" class="btn btn-primary" target="_blank">Open Map</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header dashboard">&#128202; Analytical Dashboard</div>
+                <div class="card-body">
+                    <p>Interactive Plotly dashboard with magnitude timeline, depth distribution, frequency-magnitude, mag-vs-depth scatter, monthly counts, and top dam risk scores.</p>
+                    <a href="report/dashboard.html" class="btn btn-green" target="_blank">Open Dashboard</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header three-d">&#127760; 3D Depth Cross-Section</div>
+                <div class="card-body">
+                    <p>3D visualization of earthquake hypocenters showing the subduction geometry along the Sagaing Fault. Color-coded by depth class (shallow, intermediate, deep).</p>
+                    <a href="report/depth_cross_section.html" class="btn btn-purple" target="_blank">Open 3D View</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header animated">&#9200; Animated Timeline</div>
+                <div class="card-body">
+                    <p>Time-series animation showing earthquake progression month-by-month. Play through decades of seismic activity or scrub the timeline manually.</p>
+                    <a href="report/animated_earthquake_map.html" class="btn btn-orange" target="_blank">Open Animation</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header report">&#128196; PDF Report</div>
+                <div class="card-body">
+                    <p>Comprehensive PDF report with executive summary, seismic statistics, dam risk assessment table, aftershock forecast, and population exposure analysis.</p>
+                    <a href="report/myanmar_earthquake_report.pdf" class="btn btn-teal" target="_blank">Download PDF</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header data">&#128230; Raw Data</div>
+                <div class="card-body">
+                    <p>Download dam risk scores (254 dams with PGA, fault distance, composite risk grading) and population exposure data as CSV.</p>
+                    <a href="report/dam_risk_scores.csv" class="btn btn-blue" download>Dam Risk CSV</a>
+                    <a href="report/population_exposure.csv" class="btn btn-blue" download style="margin-left:8px">Population CSV</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 30px;">
+            <div class="card-header report">&#9888;&#65039; Top 10 Critical Risk Dams</div>
+            <div class="card-body">
+                <table class="risk-table" id="risk-table">
+                    <thead>
+                        <tr><th>#</th><th>Dam</th><th>PGA (g)</th><th>Dist to Fault</th><th>Risk Score</th><th>Grade</th></tr>
+                    </thead>
+                    <tbody id="risk-tbody"></tbody>
+                </table>
+                <p style="margin-top:12px;font-size:0.85em;color:#888;">Full table in <a href="report/dam_risk_scores.csv">dam_risk_scores.csv</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Data: <a href="https://mmeq.akze.net">mmeq.akze.net</a> | Dams: <a href="https://data.opendevelopmentmekong.net/en/dataset/myanmar-dams">Open Development Mekong</a> (CC BY-SA 4.0)</p>
+        <p>Built with mmeq-opendata toolkit | <a href="https://github.com/akzedevops/mmeqopendata">GitHub</a></p>
+    </div>
+
+    <script>
+    fetch('report/dam_risk_scores.csv')
+        .then(r => r.text())
+        .then(text => {
+            const lines = text.trim().split('\n');
+            const tbody = document.getElementById('risk-tbody');
+            for (let i = 1; i <= Math.min(10, lines.length - 1); i++) {
+                const cols = lines[i].split(',');
+                const grade = (cols[19] || '').replace(/"/g, '');
+                const gradeClass = grade.toLowerCase();
+                const row = document.createElement('tr');
+                row.innerHTML = `<td>${i}</td><td>${cols[0].replace(/"/g,'')}</td><td>${cols[13]}</td><td>${cols[12]} km</td><td>${cols[18]}</td><td><span class="badge badge-${gradeClass}">${grade}</span></td>`;
+                tbody.appendChild(row);
+            }
+        })
+        .catch(() => {});
+    </script>
+</body>
+</html>

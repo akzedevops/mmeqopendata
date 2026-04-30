@@ -1,0 +1,7117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.287,
+          19.648
+        ]
+      },
+      "properties": {
+        "name": "Baluchaung 1",
+        "status": "Complete",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Baluchaung",
+        "state": "Kayah",
+        "basin": "Thanlwin",
+        "capacity_mw": 28,
+        "height_m": "11",
+        "year": "1992",
+        "reservoir_area_km2": 0.0,
+        "total_storage_mcm": "2",
+        "crest_length_m": null,
+        "catchment_area_km2": 7872,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.358,
+          19.557
+        ]
+      },
+      "properties": {
+        "name": "Baluchaung 2",
+        "status": "Complete",
+        "dam_type": "Weir",
+        "function": "Hydropower",
+        "river": "Baluchaung",
+        "state": "Kayah",
+        "basin": "Thanlwin",
+        "capacity_mw": 168,
+        "height_m": "-",
+        "year": "1974",
+        "reservoir_area_km2": 0.0,
+        "total_storage_mcm": "-",
+        "crest_length_m": null,
+        "catchment_area_km2": 7910,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.397,
+          19.546
+        ]
+      },
+      "properties": {
+        "name": "Baluchaung 3",
+        "status": "Complete",
+        "dam_type": "Intake",
+        "function": "Hydropower",
+        "river": "Baluchaung",
+        "state": "Kayah",
+        "basin": "Thanlwin",
+        "capacity_mw": 52,
+        "height_m": "-",
+        "year": "2014",
+        "reservoir_area_km2": 0.0,
+        "total_storage_mcm": "-",
+        "crest_length_m": null,
+        "catchment_area_km2": 8042,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.781918,
+          20.484592
+        ]
+      },
+      "properties": {
+        "name": "Baluchaung (upper)",
+        "status": "Under Construction",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Baluchaung",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 30,
+        "height_m": "35",
+        "year": "2019",
+        "reservoir_area_km2": 9.7,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 356,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.848496,
+          18.255561
+        ]
+      },
+      "properties": {
+        "name": "Bawgata",
+        "status": "Proposed",
+        "dam_type": "Rockfill",
+        "function": "Hydropower",
+        "river": "Bawgata",
+        "state": "Bago",
+        "basin": "Sittaung",
+        "capacity_mw": 160,
+        "height_m": "80",
+        "year": "2020",
+        "reservoir_area_km2": 19.4,
+        "total_storage_mcm": "835",
+        "crest_length_m": null,
+        "catchment_area_km2": 260,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.243546,
+          17.519723
+        ]
+      },
+      "properties": {
+        "name": "Belin",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Bilin River",
+        "state": "Mon",
+        "basin": "Bilin",
+        "capacity_mw": 280,
+        "height_m": "131",
+        "year": "2021",
+        "reservoir_area_km2": 310.0,
+        "total_storage_mcm": "9711",
+        "crest_length_m": null,
+        "catchment_area_km2": 2250,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.0818,
+          20.76609
+        ]
+      },
+      "properties": {
+        "name": "Buywa (upper)",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Multi-purpose",
+        "river": "Mon Chaung",
+        "state": "Magway",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 150,
+        "height_m": "138",
+        "year": "2019",
+        "reservoir_area_km2": 76.2,
+        "total_storage_mcm": "721",
+        "crest_length_m": null,
+        "catchment_area_km2": 2305,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.150833,
+          20.658056
+        ]
+      },
+      "properties": {
+        "name": "Buywa",
+        "status": "Under Construction",
+        "dam_type": "",
+        "function": "Multi-purpose",
+        "river": "Mon Chaung",
+        "state": "Magway",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 42,
+        "height_m": "46",
+        "year": "2018",
+        "reservoir_area_km2": 38.1,
+        "total_storage_mcm": "209",
+        "crest_length_m": null,
+        "catchment_area_km2": 3108,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.12572,
+          25.8905
+        ]
+      },
+      "properties": {
+        "name": "Chipwi",
+        "status": "Proposed",
+        "dam_type": "CFRD",
+        "function": "Hydropower",
+        "river": "N'Mai  Hka",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 3400,
+        "height_m": "203",
+        "year": "2020",
+        "reservoir_area_km2": 27.7,
+        "total_storage_mcm": "1910",
+        "crest_length_m": null,
+        "catchment_area_km2": 21734,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.184039,
+          25.806073
+        ]
+      },
+      "properties": {
+        "name": "Chipwi Nge",
+        "status": "Complete",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Chipwi Hka",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 99,
+        "height_m": "48",
+        "year": "2013",
+        "reservoir_area_km2": 0.1,
+        "total_storage_mcm": "1",
+        "crest_length_m": null,
+        "catchment_area_km2": 552,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.525448,
+          24.421451
+        ]
+      },
+      "properties": {
+        "name": "Dapein 1",
+        "status": "Complete",
+        "dam_type": "Concrete",
+        "function": "Hydropower",
+        "river": "Dapein",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 240,
+        "height_m": "46",
+        "year": "2011",
+        "reservoir_area_km2": 0.4,
+        "total_storage_mcm": "22",
+        "crest_length_m": null,
+        "catchment_area_km2": 6002,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.4214,
+          24.36827
+        ]
+      },
+      "properties": {
+        "name": "Dapein 2",
+        "status": "Proposed",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Dapein",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 140,
+        "height_m": "59",
+        "year": "2022",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "55",
+        "crest_length_m": null,
+        "catchment_area_km2": 6220,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.404455,
+          21.68723
+        ]
+      },
+      "properties": {
+        "name": "Deedoke",
+        "status": "Proposed",
+        "dam_type": "RCC Gravity Dam",
+        "function": "Hydropower",
+        "river": "Lower Myitnge",
+        "state": "Mandalay",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 60,
+        "height_m": "27",
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "13",
+        "crest_length_m": 620.0,
+        "catchment_area_km2": 28695,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.907021,
+          25.511556
+        ]
+      },
+      "properties": {
+        "name": "Dum Ban",
+        "status": "Proposed",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "N'Mai  Hka Tributary",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 130,
+        "height_m": "81",
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "34",
+        "crest_length_m": null,
+        "catchment_area_km2": 660,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.580461,
+          26.051936
+        ]
+      },
+      "properties": {
+        "name": "Gaw Lan",
+        "status": "Proposed",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Naw Chang  Hka",
+        "state": "Kachin",
+        "basin": "",
+        "capacity_mw": 120,
+        "height_m": "47",
+        "year": "2026",
+        "reservoir_area_km2": 6.7,
+        "total_storage_mcm": "1",
+        "crest_length_m": null,
+        "catchment_area_km2": 740,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.399722,
+          19.211667
+        ]
+      },
+      "properties": {
+        "name": "Hawkham (upper)",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Pawn",
+        "state": "Kayah",
+        "basin": "Thanlwin",
+        "capacity_mw": 180,
+        "height_m": "72",
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "333",
+        "crest_length_m": null,
+        "catchment_area_km2": 16884,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.720928,
+          21.341291
+        ]
+      },
+      "properties": {
+        "name": "He Kou",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Lwe",
+        "state": "Shan",
+        "basin": "Mekong",
+        "capacity_mw": 138,
+        "height_m": null,
+        "year": "2025",
+        "reservoir_area_km2": 6.5,
+        "total_storage_mcm": "68",
+        "crest_length_m": null,
+        "catchment_area_km2": 15103,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.429523,
+          26.023865
+        ]
+      },
+      "properties": {
+        "name": "Hkankawn",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Naw Chang  Hka",
+        "state": "Kachin",
+        "basin": "",
+        "capacity_mw": 140,
+        "height_m": "42",
+        "year": "2026",
+        "reservoir_area_km2": 2.0,
+        "total_storage_mcm": "5",
+        "crest_length_m": null,
+        "catchment_area_km2": 1326,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.34309,
+          26.598389
+        ]
+      },
+      "properties": {
+        "name": "Pisa",
+        "status": "Proposed",
+        "dam_type": "CFRD",
+        "function": "Hydropower",
+        "river": "N'Mai  Hka",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 2000,
+        "height_m": "153",
+        "year": "2030",
+        "reservoir_area_km2": 7.9,
+        "total_storage_mcm": "535",
+        "crest_length_m": null,
+        "catchment_area_km2": 16689,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.296955,
+          25.322227
+        ]
+      },
+      "properties": {
+        "name": "Tamanthi",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Chindwin",
+        "state": "Sagaing",
+        "basin": "Chindwin",
+        "capacity_mw": 1200,
+        "height_m": "74",
+        "year": null,
+        "reservoir_area_km2": 509.0,
+        "total_storage_mcm": "20922",
+        "crest_length_m": null,
+        "catchment_area_km2": 109,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.747,
+          17.528
+        ]
+      },
+      "properties": {
+        "name": "Hutgyi",
+        "status": "Proposed",
+        "dam_type": "RCC Gravity Dam",
+        "function": "Hydropower",
+        "river": "Thanlwin Mainstem",
+        "state": "Kayin",
+        "basin": "Thanlwin",
+        "capacity_mw": 1360,
+        "height_m": "118",
+        "year": "2020",
+        "reservoir_area_km2": 27.1,
+        "total_storage_mcm": "509",
+        "crest_length_m": null,
+        "catchment_area_km2": 311167,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.220825,
+          18.896717
+        ]
+      },
+      "properties": {
+        "name": "Kabaung",
+        "status": "Complete",
+        "dam_type": "Rock/Embankment?",
+        "function": "Multi-purpose",
+        "river": "Kabaung Chaung",
+        "state": "Bago",
+        "basin": "Sittaung",
+        "capacity_mw": 30,
+        "height_m": "61",
+        "year": "2008",
+        "reservoir_area_km2": 150.0,
+        "total_storage_mcm": "1468",
+        "crest_length_m": null,
+        "catchment_area_km2": 1083,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.29305,
+          20.598345
+        ]
+      },
+      "properties": {
+        "name": "Keng Tawng",
+        "status": "Complete",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Nam Teng",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 54,
+        "height_m": "27",
+        "year": "2009",
+        "reservoir_area_km2": 0.1,
+        "total_storage_mcm": "61",
+        "crest_length_m": null,
+        "catchment_area_km2": 8450,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.184077,
+          20.74558
+        ]
+      },
+      "properties": {
+        "name": "Keng Tawng (upper)",
+        "status": "Under Construction",
+        "dam_type": "Rockfill",
+        "function": "Hydropower",
+        "river": "Nam Teng",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 51,
+        "height_m": "56",
+        "year": "2019",
+        "reservoir_area_km2": 23.3,
+        "total_storage_mcm": "128",
+        "crest_length_m": null,
+        "catchment_area_km2": 7510,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.500985,
+          21.617799
+        ]
+      },
+      "properties": {
+        "name": "Keng Tong",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Lwe",
+        "state": "Shan",
+        "basin": "Mekong",
+        "capacity_mw": 170,
+        "height_m": null,
+        "year": "2025",
+        "reservoir_area_km2": 8.4,
+        "total_storage_mcm": "32",
+        "crest_length_m": null,
+        "catchment_area_km2": 4543,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5619,
+          21.3469
+        ]
+      },
+      "properties": {
+        "name": "Keng Yang",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Lwe",
+        "state": "Shan",
+        "basin": "Mekong",
+        "capacity_mw": 70,
+        "height_m": null,
+        "year": "2025",
+        "reservoir_area_km2": 5.4,
+        "total_storage_mcm": "41",
+        "crest_length_m": null,
+        "catchment_area_km2": 14260,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.376808,
+          26.849507
+        ]
+      },
+      "properties": {
+        "name": "Khaunglanphu",
+        "status": "Proposed",
+        "dam_type": "CFRD",
+        "function": "Hydropower",
+        "river": "N'Mai  Hka",
+        "state": "Kachin",
+        "basin": "",
+        "capacity_mw": 2700,
+        "height_m": "223",
+        "year": "2030",
+        "reservoir_area_km2": 32.9,
+        "total_storage_mcm": "3100",
+        "crest_length_m": null,
+        "catchment_area_km2": 14655,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.321037,
+          21.160437
+        ]
+      },
+      "properties": {
+        "name": "Kinda",
+        "status": "Complete",
+        "dam_type": "Rockfill",
+        "function": "Multi-purpose",
+        "river": "Panlaung Chaung",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 56,
+        "height_m": "72",
+        "year": "1990",
+        "reservoir_area_km2": 28.6,
+        "total_storage_mcm": "1078",
+        "crest_length_m": 620.0,
+        "catchment_area_km2": 2240,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.363854,
+          18.420367
+        ]
+      },
+      "properties": {
+        "name": "Kun Chaung",
+        "status": "Complete",
+        "dam_type": "Earth/Rock",
+        "function": "Multi-purpose",
+        "river": "Kun Chaung",
+        "state": "Bago",
+        "basin": "",
+        "capacity_mw": 60,
+        "height_m": "73",
+        "year": "2012",
+        "reservoir_area_km2": 150.0,
+        "total_storage_mcm": "1468",
+        "crest_length_m": null,
+        "catchment_area_km2": 855,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.611111,
+          23.531667
+        ]
+      },
+      "properties": {
+        "name": "KunLong",
+        "status": "Proposed",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Thanlwin Mainstem",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 1400,
+        "height_m": "103",
+        "year": "2023",
+        "reservoir_area_km2": 65.4,
+        "total_storage_mcm": "691",
+        "crest_length_m": null,
+        "catchment_area_km2": 128989,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.416,
+          20.331
+        ]
+      },
+      "properties": {
+        "name": "Kyee Ohn Kyee Wa",
+        "status": "Complete",
+        "dam_type": "Earth",
+        "function": "Multi-purpose",
+        "river": "Mon Chaung",
+        "state": "Magway",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 74,
+        "height_m": "50",
+        "year": "2012",
+        "reservoir_area_km2": 32.8,
+        "total_storage_mcm": "571",
+        "crest_length_m": null,
+        "catchment_area_km2": 5100,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.277743,
+          26.043012
+        ]
+      },
+      "properties": {
+        "name": "Lawngdin",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Naw Chang  Hka",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 600,
+        "height_m": "79",
+        "year": "2026",
+        "reservoir_area_km2": 12.4,
+        "total_storage_mcm": "67",
+        "crest_length_m": null,
+        "catchment_area_km2": 2080,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.350503,
+          20.857443
+        ]
+      },
+      "properties": {
+        "name": "Lemro 1",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Le Mro",
+        "state": "Chin",
+        "basin": "Rakhine",
+        "capacity_mw": 600,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": 36.0,
+        "total_storage_mcm": "9129",
+        "crest_length_m": null,
+        "catchment_area_km2": 6535,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.77695,
+          26.491779
+        ]
+      },
+      "properties": {
+        "name": "Laza",
+        "status": "Proposed",
+        "dam_type": "CFRD",
+        "function": "Hydropower",
+        "river": "Mali Hka",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 1900,
+        "height_m": "196",
+        "year": "2025",
+        "reservoir_area_km2": 245.5,
+        "total_storage_mcm": "11780",
+        "crest_length_m": null,
+        "catchment_area_km2": 15291,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.268689,
+          20.740347
+        ]
+      },
+      "properties": {
+        "name": "Lemro 2",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Le Mro",
+        "state": "Rakhine",
+        "basin": "Rakhine",
+        "capacity_mw": 90,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": 193.0,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 8355,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.408611,
+          19.555
+        ]
+      },
+      "properties": {
+        "name": "Nam Pawn (lower)",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Pawn",
+        "state": "Kayah",
+        "basin": "Thanlwin",
+        "capacity_mw": 105,
+        "height_m": "88",
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "526",
+        "crest_length_m": null,
+        "catchment_area_km2": 7860,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.65,
+          20.456389
+        ]
+      },
+      "properties": {
+        "name": "Mong Ton",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Thanlwin Mainstem",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 7000,
+        "height_m": "241",
+        "year": "2030",
+        "reservoir_area_km2": 870.0,
+        "total_storage_mcm": "39800",
+        "crest_length_m": null,
+        "catchment_area_km2": 183265,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.943248,
+          22.804356
+        ]
+      },
+      "properties": {
+        "name": "Manipur",
+        "status": "Under Construction",
+        "dam_type": "",
+        "function": "Multi-purpose",
+        "river": "Manipur",
+        "state": "Chin",
+        "basin": "Chindwin",
+        "capacity_mw": 380,
+        "height_m": "168",
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "1643",
+        "crest_length_m": null,
+        "catchment_area_km2": 11549,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.55727,
+          22.97469
+        ]
+      },
+      "properties": {
+        "name": "Mantong",
+        "status": "Proposed",
+        "dam_type": "CFRD",
+        "function": "Hydropower",
+        "river": "Nam Ma",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 225,
+        "height_m": "109",
+        "year": "2024",
+        "reservoir_area_km2": 10.5,
+        "total_storage_mcm": "1215",
+        "crest_length_m": 518.0,
+        "catchment_area_km2": 3936,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.255325,
+          20.479942
+        ]
+      },
+      "properties": {
+        "name": "Mone Chaung",
+        "status": "Complete",
+        "dam_type": "Rockfill",
+        "function": "Multi-purpose",
+        "river": "Mon Chaung",
+        "state": "Magway",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 75,
+        "height_m": "61",
+        "year": "2004",
+        "reservoir_area_km2": 41.5,
+        "total_storage_mcm": "832",
+        "crest_length_m": null,
+        "catchment_area_km2": 3695,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.325821,
+          21.39699
+        ]
+      },
+      "properties": {
+        "name": "Mongwa",
+        "status": "Complete",
+        "dam_type": "Gravity Dam",
+        "function": "Hydropower",
+        "river": "Nam Lwe",
+        "state": "Shan",
+        "basin": "Mekong",
+        "capacity_mw": 66,
+        "height_m": "51",
+        "year": "2017",
+        "reservoir_area_km2": 8.0,
+        "total_storage_mcm": "78",
+        "crest_length_m": null,
+        "catchment_area_km2": 13800,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.535,
+          25.715
+        ]
+      },
+      "properties": {
+        "name": "Myitsone",
+        "status": "Suspended",
+        "dam_type": "CFRD",
+        "function": "Hydropower",
+        "river": "Ayeyarwady",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 6000,
+        "height_m": "140",
+        "year": null,
+        "reservoir_area_km2": 397.0,
+        "total_storage_mcm": "13190",
+        "crest_length_m": 1310.0,
+        "catchment_area_km2": 48782,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.036944,
+          21.992222
+        ]
+      },
+      "properties": {
+        "name": "Myittha",
+        "status": "Complete",
+        "dam_type": "Earth",
+        "function": "Multi-purpose",
+        "river": "Myittha",
+        "state": "Magway",
+        "basin": "Chindwin",
+        "capacity_mw": 40,
+        "height_m": "63",
+        "year": "2017",
+        "reservoir_area_km2": 12.2,
+        "total_storage_mcm": "325",
+        "crest_length_m": null,
+        "catchment_area_km2": 1813,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.39144,
+          21.46349
+        ]
+      },
+      "properties": {
+        "name": "Myogyi",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Multi-purpose",
+        "river": "Zawgyi River",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 30,
+        "height_m": "79",
+        "year": "2015",
+        "reservoir_area_km2": 9.7,
+        "total_storage_mcm": "443",
+        "crest_length_m": null,
+        "catchment_area_km2": 3873,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.950044,
+          21.733821
+        ]
+      },
+      "properties": {
+        "name": "Nam Hka",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Hka",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 210,
+        "height_m": "120",
+        "year": "2025",
+        "reservoir_area_km2": 75.1,
+        "total_storage_mcm": "450",
+        "crest_length_m": null,
+        "catchment_area_km2": 7827,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.124079,
+          22.560266
+        ]
+      },
+      "properties": {
+        "name": "Nam Hsim",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Myitnge Upper",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 30,
+        "height_m": null,
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 1368,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.248615,
+          22.155565
+        ]
+      },
+      "properties": {
+        "name": "Nam Lang",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Myitnge Upper",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 210,
+        "height_m": null,
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 6664,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.811427,
+          25.369858
+        ]
+      },
+      "properties": {
+        "name": "Nam Li",
+        "status": "Proposed",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "N'Mai  Hka Tributary",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 165,
+        "height_m": "44",
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "2",
+        "crest_length_m": null,
+        "catchment_area_km2": 418,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.241026,
+          20.742516
+        ]
+      },
+      "properties": {
+        "name": "Nam Lin",
+        "status": "Proposed",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Nam Lin",
+        "state": "Shan",
+        "basin": "Mekong",
+        "capacity_mw": 36,
+        "height_m": "26",
+        "year": "2021",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "14",
+        "crest_length_m": null,
+        "catchment_area_km2": 2614,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.911001,
+          23.944341
+        ]
+      },
+      "properties": {
+        "name": "Nam Paw",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Paw Creek",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 20,
+        "height_m": "54",
+        "year": "2019",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "52",
+        "crest_length_m": null,
+        "catchment_area_km2": 1025,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.437368,
+          20.062121
+        ]
+      },
+      "properties": {
+        "name": "Nam Pawn (upper)",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Pawn",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 150,
+        "height_m": "10",
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "7",
+        "crest_length_m": null,
+        "catchment_area_km2": 3352,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.713906,
+          25.090722
+        ]
+      },
+      "properties": {
+        "name": "Nam Tabak I",
+        "status": "Proposed",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Namtamhpak",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 141,
+        "height_m": "56",
+        "year": "2027",
+        "reservoir_area_km2": 2.2,
+        "total_storage_mcm": "15",
+        "crest_length_m": null,
+        "catchment_area_km2": 1121,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.319365,
+          22.720943
+        ]
+      },
+      "properties": {
+        "name": "Nam Tu",
+        "status": "Proposed",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Myitnge Upper",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 100,
+        "height_m": "114",
+        "year": "2021",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 6832,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.450483,
+          19.7412
+        ]
+      },
+      "properties": {
+        "name": "Nancho",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Sin The Chaung",
+        "state": "Naypyitaw",
+        "basin": "Sittaung",
+        "capacity_mw": 40,
+        "height_m": "72",
+        "year": "2013",
+        "reservoir_area_km2": 0.3,
+        "total_storage_mcm": "9",
+        "crest_length_m": null,
+        "catchment_area_km2": 821,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.499151,
+          22.987464
+        ]
+      },
+      "properties": {
+        "name": "Naopha",
+        "status": "Proposed",
+        "dam_type": "RCC Gravity Dam",
+        "function": "Hydropower",
+        "river": "Thanlwin Mainstem",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 1200,
+        "height_m": "90",
+        "year": "2026",
+        "reservoir_area_km2": 23.8,
+        "total_storage_mcm": "857",
+        "crest_length_m": 265.0,
+        "catchment_area_km2": 141127,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.335,
+          19.785
+        ]
+      },
+      "properties": {
+        "name": "Paung Laung (lower)",
+        "status": "Complete",
+        "dam_type": "RCC",
+        "function": "Multi-purpose",
+        "river": "Paung Laung Chaung",
+        "state": "Naypyitaw",
+        "basin": "Sittaung",
+        "capacity_mw": 280,
+        "height_m": "131",
+        "year": "2005",
+        "reservoir_area_km2": 17.0,
+        "total_storage_mcm": "690",
+        "crest_length_m": null,
+        "catchment_area_km2": 4381,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.508,
+          19.86
+        ]
+      },
+      "properties": {
+        "name": "Paung Laung (middle)",
+        "status": "Proposed",
+        "dam_type": "RCC",
+        "function": "Hydropower",
+        "river": "Paung Laung Chaung",
+        "state": "Mandalay",
+        "basin": "Sittaung",
+        "capacity_mw": 100,
+        "height_m": "110",
+        "year": "2021",
+        "reservoir_area_km2": 9.6,
+        "total_storage_mcm": "429",
+        "crest_length_m": null,
+        "catchment_area_km2": 2722,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.598,
+          19.756
+        ]
+      },
+      "properties": {
+        "name": "Paung Laung (upper)",
+        "status": "Complete",
+        "dam_type": "RCC",
+        "function": "Hydropower",
+        "river": "Paung Laung Chaung",
+        "state": "Mandalay",
+        "basin": "Sittaung",
+        "capacity_mw": 140,
+        "height_m": "98",
+        "year": "2015",
+        "reservoir_area_km2": 61.0,
+        "total_storage_mcm": "1286",
+        "crest_length_m": null,
+        "catchment_area_km2": 2572,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.456152,
+          20.209251
+        ]
+      },
+      "properties": {
+        "name": "Hpak Nam",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Pawn",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 105,
+        "height_m": "20",
+        "year": "62",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "20",
+        "crest_length_m": null,
+        "catchment_area_km2": 3151,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.43497,
+          20.118443
+        ]
+      },
+      "properties": {
+        "name": "Hpi Hseng",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Pawn",
+        "state": "Shan",
+        "basin": "Thanlwin",
+        "capacity_mw": 45,
+        "height_m": "10",
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "4",
+        "crest_length_m": null,
+        "catchment_area_km2": 3265,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.351028,
+          18.506214
+        ]
+      },
+      "properties": {
+        "name": "Phyu Chaung",
+        "status": "Complete",
+        "dam_type": "Rockfill",
+        "function": "Multi-purpose",
+        "river": "Pyu Chaung",
+        "state": "Bago",
+        "basin": "Sittaung",
+        "capacity_mw": 40,
+        "height_m": "75",
+        "year": "2015",
+        "reservoir_area_km2": 24.0,
+        "total_storage_mcm": "780",
+        "crest_length_m": null,
+        "catchment_area_km2": 1093,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.090192,
+          27.525941
+        ]
+      },
+      "properties": {
+        "name": "Renan",
+        "status": "Proposed",
+        "dam_type": "CFRD",
+        "function": "Hydropower",
+        "river": "N'Mai  Hka",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 1200,
+        "height_m": "159",
+        "year": "2030",
+        "reservoir_area_km2": 9.2,
+        "total_storage_mcm": "1183",
+        "crest_length_m": null,
+        "catchment_area_km2": 11123,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.326937,
+          22.348646
+        ]
+      },
+      "properties": {
+        "name": "Sedawgyi",
+        "status": "Complete",
+        "dam_type": "Rockfill",
+        "function": "Multi-purpose",
+        "river": "Ma Gyi Chaung",
+        "state": "Mandalay",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 25,
+        "height_m": "41",
+        "year": "1989",
+        "reservoir_area_km2": 40.5,
+        "total_storage_mcm": "448",
+        "crest_length_m": null,
+        "catchment_area_km2": 3424,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.20626,
+          22.74764
+        ]
+      },
+      "properties": {
+        "name": "Sedawgyi (upper)",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Multi-purpose",
+        "river": "Ma Gyi Chaung",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 64,
+        "height_m": "73",
+        "year": null,
+        "reservoir_area_km2": 24.0,
+        "total_storage_mcm": "593",
+        "crest_length_m": null,
+        "catchment_area_km2": 2640,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.935001,
+          17.970227
+        ]
+      },
+      "properties": {
+        "name": "Shwegyin",
+        "status": "Complete",
+        "dam_type": "Rockfill",
+        "function": "Hydropower",
+        "river": "Shwegyin River",
+        "state": "Bago",
+        "basin": "Sittaung",
+        "capacity_mw": 75,
+        "height_m": "57",
+        "year": "2011",
+        "reservoir_area_km2": 58.4,
+        "total_storage_mcm": "2080",
+        "crest_length_m": null,
+        "catchment_area_km2": 878,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.506,
+          23.698
+        ]
+      },
+      "properties": {
+        "name": "Shweli 1",
+        "status": "Complete",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Shweli",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 600,
+        "height_m": "47",
+        "year": "2009",
+        "reservoir_area_km2": 1.1,
+        "total_storage_mcm": "24.11",
+        "crest_length_m": 177.0,
+        "catchment_area_km2": 12597,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.31235,
+          23.6531
+        ]
+      },
+      "properties": {
+        "name": "Shweli 2",
+        "status": "Proposed",
+        "dam_type": "CFRD",
+        "function": "Hydropower",
+        "river": "Shweli",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 520,
+        "height_m": "92",
+        "year": "2021",
+        "reservoir_area_km2": 27.9,
+        "total_storage_mcm": "72",
+        "crest_length_m": null,
+        "catchment_area_km2": 13265,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.769,
+          23.315
+        ]
+      },
+      "properties": {
+        "name": "Shweli 3",
+        "status": "Under Construction",
+        "dam_type": "RCC",
+        "function": "Hydropower",
+        "river": "Shweli",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 1050,
+        "height_m": "122",
+        "year": "2020",
+        "reservoir_area_km2": 118.0,
+        "total_storage_mcm": "5464",
+        "crest_length_m": null,
+        "catchment_area_km2": 14810,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.176054,
+          21.359543
+        ]
+      },
+      "properties": {
+        "name": "Suo Lwe",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Lwe",
+        "state": "Shan",
+        "basin": "Mekong",
+        "capacity_mw": 240,
+        "height_m": "-",
+        "year": "2025",
+        "reservoir_area_km2": 40.9,
+        "total_storage_mcm": "1338",
+        "crest_length_m": null,
+        "catchment_area_km2": 7315,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.94,
+          12.777
+        ]
+      },
+      "properties": {
+        "name": "Taninthayi",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Taninthayi",
+        "state": "Tanintharyi",
+        "basin": "Tanintharyi",
+        "capacity_mw": 600,
+        "height_m": "-",
+        "year": null,
+        "reservoir_area_km2": 585.0,
+        "total_storage_mcm": "27086",
+        "crest_length_m": null,
+        "catchment_area_km2": 9870,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.381,
+          18.64
+        ]
+      },
+      "properties": {
+        "name": "Thahtay",
+        "status": "Under Construction",
+        "dam_type": "Zone type/Rockfill",
+        "function": "Hydropower",
+        "river": "Thahtay",
+        "state": "Rakhine",
+        "basin": "Rakhine",
+        "capacity_mw": 111,
+        "height_m": "91",
+        "year": "2020",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 1293,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.35833,
+          23.305918
+        ]
+      },
+      "properties": {
+        "name": "Thapanzeik",
+        "status": "Complete",
+        "dam_type": "Earth",
+        "function": "Multi-purpose",
+        "river": "Mu River",
+        "state": "Sagaing",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 30,
+        "height_m": "33",
+        "year": "2002",
+        "reservoir_area_km2": 397.1,
+        "total_storage_mcm": "3552",
+        "crest_length_m": null,
+        "catchment_area_km2": 9338,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.619907,
+          18.914102
+        ]
+      },
+      "properties": {
+        "name": "Thauk Ye Khat 2",
+        "status": "Complete",
+        "dam_type": "Earth",
+        "function": "Hydropower",
+        "river": "Thauk Ye Khat",
+        "state": "Kayin",
+        "basin": "Sittaung",
+        "capacity_mw": 120,
+        "height_m": "94",
+        "year": "2014",
+        "reservoir_area_km2": 13.8,
+        "total_storage_mcm": "444",
+        "crest_length_m": null,
+        "catchment_area_km2": 2175,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.360249,
+          25.963646
+        ]
+      },
+      "properties": {
+        "name": "Tongxinqiao",
+        "status": "Proposed",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Naw Chang  Hka",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 340,
+        "height_m": "63",
+        "year": "2026",
+        "reservoir_area_km2": 8.8,
+        "total_storage_mcm": "5",
+        "crest_length_m": null,
+        "catchment_area_km2": 1743,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.292511,
+          26.403585
+        ]
+      },
+      "properties": {
+        "name": "Wutsok",
+        "status": "Proposed",
+        "dam_type": "CFRD",
+        "function": "Hydropower",
+        "river": "N'Mai  Hka",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 1800,
+        "height_m": "165",
+        "year": "2030",
+        "reservoir_area_km2": 6.3,
+        "total_storage_mcm": "605",
+        "crest_length_m": null,
+        "catchment_area_km2": 18225,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.446152,
+          18.085211
+        ]
+      },
+      "properties": {
+        "name": "Yenwe",
+        "status": "Complete",
+        "dam_type": "Earth",
+        "function": "Multi-purpose",
+        "river": "Ye Nwe Chaung",
+        "state": "Bago",
+        "basin": "Sittaung",
+        "capacity_mw": 25,
+        "height_m": "77",
+        "year": "2007",
+        "reservoir_area_km2": 76.7,
+        "total_storage_mcm": "149",
+        "crest_length_m": null,
+        "catchment_area_km2": 793,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.474077,
+          21.675196
+        ]
+      },
+      "properties": {
+        "name": "Yeywa",
+        "status": "Complete",
+        "dam_type": "RCC",
+        "function": "Hydropower",
+        "river": "Lower Myitnge",
+        "state": "Mandalay",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 790,
+        "height_m": "132",
+        "year": "2010",
+        "reservoir_area_km2": 59.0,
+        "total_storage_mcm": "2630",
+        "crest_length_m": 690.0,
+        "catchment_area_km2": 28206,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.87313,
+          21.96024
+        ]
+      },
+      "properties": {
+        "name": "Yeywa (middle)",
+        "status": "Proposed",
+        "dam_type": "RCC/Arch dam",
+        "function": "Hydropower",
+        "river": "Lower Myitnge",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 700,
+        "height_m": "160",
+        "year": "2020",
+        "reservoir_area_km2": 11.0,
+        "total_storage_mcm": "454",
+        "crest_length_m": null,
+        "catchment_area_km2": 25490,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.046741,
+          22.254093
+        ]
+      },
+      "properties": {
+        "name": "Yeywa (upper)",
+        "status": "Under Construction",
+        "dam_type": "RCC",
+        "function": "Hydropower",
+        "river": "Lower Myitnge",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 280,
+        "height_m": "97",
+        "year": "2019",
+        "reservoir_area_km2": 26.9,
+        "total_storage_mcm": "341",
+        "crest_length_m": null,
+        "catchment_area_km2": 21700,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.521257,
+          19.131059
+        ]
+      },
+      "properties": {
+        "name": "Ywathit",
+        "status": "Proposed",
+        "dam_type": "RCC Gravity Dam",
+        "function": "Hydropower",
+        "river": "Thanlwin Mainstem",
+        "state": "Kayah",
+        "basin": "Thanlwin",
+        "capacity_mw": 4000,
+        "height_m": "167",
+        "year": "2030",
+        "reservoir_area_km2": 43.5,
+        "total_storage_mcm": "10757",
+        "crest_length_m": null,
+        "catchment_area_km2": 208984,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.19898,
+          17.755818
+        ]
+      },
+      "properties": {
+        "name": "Zaungtu",
+        "status": "Complete",
+        "dam_type": "Embankment",
+        "function": "Hydropower",
+        "river": "Bago River",
+        "state": "Bago",
+        "basin": "Myit Mo Hka & Bago",
+        "capacity_mw": 20,
+        "height_m": "45",
+        "year": "2000",
+        "reservoir_area_km2": 14.9,
+        "total_storage_mcm": "407",
+        "crest_length_m": null,
+        "catchment_area_km2": 1098,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.90147,
+          21.3833
+        ]
+      },
+      "properties": {
+        "name": "Zawgyi I",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Zawgyi River",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 18,
+        "height_m": "-",
+        "year": "1995",
+        "reservoir_area_km2": 0.0,
+        "total_storage_mcm": "-",
+        "crest_length_m": null,
+        "catchment_area_km2": 1406,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.8726,
+          21.5648
+        ]
+      },
+      "properties": {
+        "name": "Zawgyi II",
+        "status": "Complete",
+        "dam_type": "Earth",
+        "function": "Multi-purpose",
+        "river": "Zawgyi River",
+        "state": "Shan",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 12,
+        "height_m": "44",
+        "year": "2011",
+        "reservoir_area_km2": 38.5,
+        "total_storage_mcm": "639",
+        "crest_length_m": null,
+        "catchment_area_km2": 1907,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.6135,
+          24.98458
+        ]
+      },
+      "properties": {
+        "name": "Mali",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Mali Creek",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 11,
+        "height_m": null,
+        "year": "2006",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 290,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.650627,
+          25.119755
+        ]
+      },
+      "properties": {
+        "name": "Nam Tabak II",
+        "status": "Proposed",
+        "dam_type": "CG",
+        "function": "Hydropower",
+        "river": "Namtamhpak",
+        "state": "Kachin",
+        "basin": "Ayeyarwady",
+        "capacity_mw": 144,
+        "height_m": "27",
+        "year": "2027",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 1289,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.375,
+          20.662222
+        ]
+      },
+      "properties": {
+        "name": "Mong Hsat",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Hkoke",
+        "state": "Shan",
+        "basin": "Mekong",
+        "capacity_mw": 30,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 1284,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.52987,
+          26.309687
+        ]
+      },
+      "properties": {
+        "name": "Tawog Hka",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Nam Lanog Hka",
+        "state": "Kachin",
+        "basin": "Chindwin",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 76,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.46829,
+          26.718029
+        ]
+      },
+      "properties": {
+        "name": "Ta Rung Hka",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Ta Rung Hka",
+        "state": "Kachin",
+        "basin": "Chindwin",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 4837,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.95008,
+          26.294175
+        ]
+      },
+      "properties": {
+        "name": "Ta Nai Hka",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Ta Nai Hka",
+        "state": "Kachin",
+        "basin": "Chindwin",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 2095,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.719624,
+          18.938587
+        ]
+      },
+      "properties": {
+        "name": "Thauk Ye Khat 1",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Thauk Ye Khat",
+        "state": "Kayin",
+        "basin": "Sittaung",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 1621,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.34081,
+          18.29496
+        ]
+      },
+      "properties": {
+        "name": "Yunzalin",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "",
+        "state": "Kayin",
+        "basin": "Thanlwin",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 1365,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.348758,
+          16.305021
+        ]
+      },
+      "properties": {
+        "name": "Lam Pha",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Lam Pha",
+        "state": "Kayin",
+        "basin": "Thanlwin",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 81,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.073495,
+          21.334187
+        ]
+      },
+      "properties": {
+        "name": "Mi Chaung",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Mi Chaung",
+        "state": "Chin",
+        "basin": "Rakhine",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 1296,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.294431,
+          24.865948
+        ]
+      },
+      "properties": {
+        "name": "U Yu Chaung",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Uyu",
+        "state": "Sagaing",
+        "basin": "Chindwin",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 9495,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.331205,
+          11.769949
+        ]
+      },
+      "properties": {
+        "name": "Thein Kun Chaung",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Thein Kun",
+        "state": "Tanintharyi",
+        "basin": "Tanintharyi",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 1248,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.227161,
+          12.132896
+        ]
+      },
+      "properties": {
+        "name": "Tha Gyet Chaung",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Tha Gyet",
+        "state": "Tanintharyi",
+        "basin": "Tanintharyi",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 1104,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.858324,
+          10.775209
+        ]
+      },
+      "properties": {
+        "name": "Glohong Kra",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Glohong Kra",
+        "state": "Tanintharyi",
+        "basin": "Tanintharyi",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 60,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.915769,
+          15.682011
+        ]
+      },
+      "properties": {
+        "name": "Myet Taw Chaung",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Myet Taw Chaung",
+        "state": "Kayin",
+        "basin": "Thanlwin",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 31,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.712866,
+          19.37089
+        ]
+      },
+      "properties": {
+        "name": "Mindon",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "",
+        "state": "Magway",
+        "basin": "Ayeyarwady",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 676,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.493902,
+          18.386144
+        ]
+      },
+      "properties": {
+        "name": "Than Dwe",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Than Dwe",
+        "state": "Rakhine",
+        "basin": "Rakhine",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 738,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.576508,
+          17.950012
+        ]
+      },
+      "properties": {
+        "name": "Kyein Ta Li",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Kyein Ta Li",
+        "state": "Rakhine",
+        "basin": "Rakhine",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 880,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.34667,
+          20.196337
+        ]
+      },
+      "properties": {
+        "name": "Nam Hkok",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "Nam Hkoke",
+        "state": "Shan",
+        "basin": "Mekong",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 2736,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.652188,
+          20.893779
+        ]
+      },
+      "properties": {
+        "name": "Saing Din",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "",
+        "state": "Rakhine",
+        "basin": "Rakhine",
+        "capacity_mw": 77,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 926,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.98167,
+          12.829406
+        ]
+      },
+      "properties": {
+        "name": "Sar Ra Wa Chaung",
+        "status": "Identified Sites",
+        "dam_type": "",
+        "function": "",
+        "river": "",
+        "state": "Tanintharyi",
+        "basin": "Tanintharyi",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": 1565,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.796146,
+          18.362836
+        ]
+      },
+      "properties": {
+        "name": "Bawbin",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Bawbin",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2002",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "120.56",
+        "crest_length_m": 277.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.528459,
+          19.313794
+        ]
+      },
+      "properties": {
+        "name": "Bewt Gyi",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.035673,
+          17.376582
+        ]
+      },
+      "properties": {
+        "name": "Gyobyu",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Water Supply",
+        "river": "Gyobyu Chaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1940",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "75",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.580082,
+          21.999294
+        ]
+      },
+      "properties": {
+        "name": "Hlaing Chaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2006",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "6.624",
+        "crest_length_m": 1371.533069,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.11125,
+          16.97279
+        ]
+      },
+      "properties": {
+        "name": "Hlaw Ga",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Water Supply",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "54",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.257973,
+          22.159941
+        ]
+      },
+      "properties": {
+        "name": "Htanzaloke",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Htanzaloke",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1996",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "3.454",
+        "crest_length_m": 335.2636391,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.135034,
+          16.838848
+        ]
+      },
+      "properties": {
+        "name": "Inya",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Water Supply",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1883",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.308665,
+          19.043285
+        ]
+      },
+      "properties": {
+        "name": "Kanggyigone",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "In Yone",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2000",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "7.53",
+        "crest_length_m": 869.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.887794,
+          17.9571
+        ]
+      },
+      "properties": {
+        "name": "Kantin-BeeLin",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Kantin-BeeLin",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2002",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "165.36",
+        "crest_length_m": 335.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.072583,
+          17.991848
+        ]
+      },
+      "properties": {
+        "name": "Kanyin",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Kanyin",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2012",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "183.619",
+        "crest_length_m": 1142.944224,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.798928,
+          22.933678
+        ]
+      },
+      "properties": {
+        "name": "Kaukkwe",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Kaukkwe",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2006",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "6.212",
+        "crest_length_m": 329.1679366,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.011249,
+          18.450999
+        ]
+      },
+      "properties": {
+        "name": "Khawar",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Khawar",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2004",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "15.477",
+        "crest_length_m": 594.3309966,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.693168,
+          19.908676
+        ]
+      },
+      "properties": {
+        "name": "Kinmundaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Kinmundaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1990",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "12.982",
+        "crest_length_m": 487.6562024,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.708602,
+          22.666332
+        ]
+      },
+      "properties": {
+        "name": "Kintat",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Mu",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1997",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "47.237",
+        "crest_length_m": 1913.745809,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.458244,
+          21.107401
+        ]
+      },
+      "properties": {
+        "name": "Kyauktalone (1)",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Kyauktalone",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1993",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "6.46",
+        "crest_length_m": 969.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.469553,
+          21.076999
+        ]
+      },
+      "properties": {
+        "name": "Kyauktalone (2) - Modulating Dam",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Kyauktalone",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2001",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "12.8",
+        "crest_length_m": 423.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.169943,
+          20.425297
+        ]
+      },
+      "properties": {
+        "name": "Kyee Ni",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.664076,
+          23.08728
+        ]
+      },
+      "properties": {
+        "name": "Kyeebin-et",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Indaw Pauk",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2001",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "54.27",
+        "crest_length_m": 2347.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.417348,
+          20.331771
+        ]
+      },
+      "properties": {
+        "name": "Kyeeon Kyeewa",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Mone",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2012",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.65751,
+          21.054113
+        ]
+      },
+      "properties": {
+        "name": "Kyin-tha",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2003",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "2.58",
+        "crest_length_m": 579.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.746971,
+          26.1973
+        ]
+      },
+      "properties": {
+        "name": "Laiza",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Malikha",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2021",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.406111,
+          26.595833
+        ]
+      },
+      "properties": {
+        "name": "Lakin",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "May Hka",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2026",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.15673,
+          20.445332
+        ]
+      },
+      "properties": {
+        "name": "Ledaingzin",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Paung Kwe",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2001",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "5.86",
+        "crest_length_m": 610.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.400088,
+          22.053801
+        ]
+      },
+      "properties": {
+        "name": "Letpan",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Htan Pin Su",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2003",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "5.959",
+        "crest_length_m": 1219.140506,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.525593,
+          23.14541
+        ]
+      },
+      "properties": {
+        "name": "Linban",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2009",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "12.56",
+        "crest_length_m": 2987.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.081046,
+          18.106536
+        ]
+      },
+      "properties": {
+        "name": "Ma Mya",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Ma Mya",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2007",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "86.38",
+        "crest_length_m": 3596.464493,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.868121,
+          19.033781
+        ]
+      },
+      "properties": {
+        "name": "Maday",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Maday",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2007",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "66.636",
+        "crest_length_m": 585.1874429,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.096806,
+          22.593002
+        ]
+      },
+      "properties": {
+        "name": "Male-Nattaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Male-Nattaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2007",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "70.69",
+        "crest_length_m": 3612.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.423262,
+          20.096772
+        ]
+      },
+      "properties": {
+        "name": "Manchaung (Mann)",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Mann Creek",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "148.018",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.865057,
+          20.875818
+        ]
+      },
+      "properties": {
+        "name": "Meikhtila",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.768566,
+          24.835331
+        ]
+      },
+      "properties": {
+        "name": "Mēntóu xī",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Měng nǎi hé",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.930558,
+          21.938771
+        ]
+      },
+      "properties": {
+        "name": "Middle Yeywa",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Myitnge",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.909904,
+          18.117447
+        ]
+      },
+      "properties": {
+        "name": "Min Hla",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Min Hla",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2003",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "53.86",
+        "crest_length_m": 928.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.259852,
+          20.478481
+        ]
+      },
+      "properties": {
+        "name": "Mone",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Mone",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2004",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.577462,
+          23.145283
+        ]
+      },
+      "properties": {
+        "name": "Mone Yin",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Nam Swam",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2008",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "31.961",
+        "crest_length_m": 518.134715,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.816231,
+          21.615887
+        ]
+      },
+      "properties": {
+        "name": "Myaing Chaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Myaing Chaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1992",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "4.936",
+        "crest_length_m": 783.2977751,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.719008,
+          21.672793
+        ]
+      },
+      "properties": {
+        "name": "Myotha",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Ku Htaw",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "1128",
+        "crest_length_m": 20.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.214678,
+          22.41452
+        ]
+      },
+      "properties": {
+        "name": "Myothit",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Myothit",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2004",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "9.21",
+        "crest_length_m": 792.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.16702,
+          20.395229
+        ]
+      },
+      "properties": {
+        "name": "Nagar",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Nagar",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "7.762",
+        "crest_length_m": 929.5946358,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.307334,
+          22.857605
+        ]
+      },
+      "properties": {
+        "name": "Namtu",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.036264,
+          17.850106
+        ]
+      },
+      "properties": {
+        "name": "Nankathu",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Nankathu",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2000",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "49.36",
+        "crest_length_m": 487.6562024,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.722506,
+          21.800573
+        ]
+      },
+      "properties": {
+        "name": "Nat Thar Taw",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Nat Thar Taw",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2003",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "6.15",
+        "crest_length_m": 1871.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.884964,
+          20.684856
+        ]
+      },
+      "properties": {
+        "name": "Natkar",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2013",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "13.94",
+        "crest_length_m": 1044.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.48095,
+          20.409266
+        ]
+      },
+      "properties": {
+        "name": "Natmouk",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "124.582",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.160508,
+          17.355585
+        ]
+      },
+      "properties": {
+        "name": "Nga Moe Yeik",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Water Supply",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1995",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "222",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.107695,
+          21.168644
+        ]
+      },
+      "properties": {
+        "name": "Ngathayauk",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Chaung Ma Gyi",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2006",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "8.61",
+        "crest_length_m": 2301.127705,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.041531,
+          21.902657
+        ]
+      },
+      "properties": {
+        "name": "Ngwe Thar",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2004",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "18.811",
+        "crest_length_m": 1609.265468,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.5687,
+          21.659382
+        ]
+      },
+      "properties": {
+        "name": "North Pinle",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Pinle",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1996",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "12.3",
+        "crest_length_m": 1052.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.67744,
+          22.053354
+        ]
+      },
+      "properties": {
+        "name": "North Yamar (1)",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1998",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "17.339",
+        "crest_length_m": 3169.765315,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.303983,
+          22.008236
+        ]
+      },
+      "properties": {
+        "name": "Nwegway",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1993",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "3.701",
+        "crest_length_m": 1158.183481,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.14163,
+          18.797819
+        ]
+      },
+      "properties": {
+        "name": "Nyaung-gaing",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Nyaung-gaing",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1999",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "21.6",
+        "crest_length_m": 1128.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.819567,
+          20.789507
+        ]
+      },
+      "properties": {
+        "name": "Nyaunggone",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2005",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "4.035",
+        "crest_length_m": 1950.62481,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.610306,
+          19.212315
+        ]
+      },
+      "properties": {
+        "name": "Pade",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Pade",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2005",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "40.6",
+        "crest_length_m": 731.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.525824,
+          20.291535
+        ]
+      },
+      "properties": {
+        "name": "Palin",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Palin",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2001",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "15.06",
+        "crest_length_m": 1298.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.289919,
+          26.476081
+        ]
+      },
+      "properties": {
+        "name": "Pashe",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "N'Mai",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2021",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.589723,
+          21.81169
+        ]
+      },
+      "properties": {
+        "name": "Paunggadaw",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Paunggadaw",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2002",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "9.717",
+        "crest_length_m": 868.6376105,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.095995,
+          17.509063
+        ]
+      },
+      "properties": {
+        "name": "Paunglinn",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Paunglinn",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2004",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "147.03",
+        "crest_length_m": 681.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.637255,
+          23.013559
+        ]
+      },
+      "properties": {
+        "name": "Pegyi",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Pegyi",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2006",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "9.7",
+        "crest_length_m": 591.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.070568,
+          22.021024
+        ]
+      },
+      "properties": {
+        "name": "Phaunggada",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2005",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "9.165",
+        "crest_length_m": 1331.911003,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.385556,
+          26.827594
+        ]
+      },
+      "properties": {
+        "name": "Phizaw",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "May Hka",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2026",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.042454,
+          17.245914
+        ]
+      },
+      "properties": {
+        "name": "Phugyi",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Water Supply",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "222",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.300929,
+          20.712043
+        ]
+      },
+      "properties": {
+        "name": "Pinn Chaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Pinn Chaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1998",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "23.25",
+        "crest_length_m": 671.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.247579,
+          20.808545
+        ]
+      },
+      "properties": {
+        "name": "Popa",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.136176,
+          20.938996
+        ]
+      },
+      "properties": {
+        "name": "Samon",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Samon",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1993",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "9.733",
+        "crest_length_m": 4266.991771,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.066611,
+          21.981113
+        ]
+      },
+      "properties": {
+        "name": "Sarlingyi",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Sarlingyi",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2004",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "5.699",
+        "crest_length_m": 1097.226455,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.323053,
+          22.348589
+        ]
+      },
+      "properties": {
+        "name": "Sedawgyi",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Multi-purpose",
+        "river": "Chaung Ma Gyi",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1989",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "446.49",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.597897,
+          20.839191
+        ]
+      },
+      "properties": {
+        "name": "Shanma-Nge",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2009",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "26.61",
+        "crest_length_m": 2073.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.252426,
+          18.710748
+        ]
+      },
+      "properties": {
+        "name": "Shwedaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Kalar Chaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1992",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "6.61",
+        "crest_length_m": 238.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.9989,
+          22.33525
+        ]
+      },
+      "properties": {
+        "name": "Shwezaye",
+        "status": "Cancelled",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Chindwin",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "n/a",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.16705,
+          21.496183
+        ]
+      },
+      "properties": {
+        "name": "Sin Chaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Sin Chaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1994",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "3.961",
+        "crest_length_m": 472.7217312,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.305956,
+          21.118182
+        ]
+      },
+      "properties": {
+        "name": "Sindewa",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Sindewa",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1996",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "14.76",
+        "crest_length_m": 1250.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.436115,
+          22.074457
+        ]
+      },
+      "properties": {
+        "name": "Sinlan",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Sinlan",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2002",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "8.421",
+        "crest_length_m": 202.6821091,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.028495,
+          22.598882
+        ]
+      },
+      "properties": {
+        "name": "South Khayan",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Khayan",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1993",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "14.69",
+        "crest_length_m": 185.9189272,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.492622,
+          18.959728
+        ]
+      },
+      "properties": {
+        "name": "South Nawin (2)",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "South Nawin",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1994",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "25.91",
+        "crest_length_m": 945.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.549981,
+          21.641813
+        ]
+      },
+      "properties": {
+        "name": "South Pinle",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Pinle",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1994",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "10.46",
+        "crest_length_m": 960.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.736177,
+          21.821946
+        ]
+      },
+      "properties": {
+        "name": "South Yamar",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Yamar Taung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2000",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "21.027",
+        "crest_length_m": 1795.184395,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.584486,
+          20.169512
+        ]
+      },
+      "properties": {
+        "name": "Sunchaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Sun Creek",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "38.515",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.416244,
+          21.417041
+        ]
+      },
+      "properties": {
+        "name": "Sunlun",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Sunlun",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1994",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "5.66",
+        "crest_length_m": 945.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.578598,
+          18.922544
+        ]
+      },
+      "properties": {
+        "name": "Taungnawin",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Taungnawin Creek",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "354.009",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.969404,
+          20.452426
+        ]
+      },
+      "properties": {
+        "name": "Taungnyo",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Taungnyo",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1996",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "258.99",
+        "crest_length_m": 1036.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.476952,
+          21.268241
+        ]
+      },
+      "properties": {
+        "name": "Taungtha",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Taungtha",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1997",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "6.15",
+        "crest_length_m": 731.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.864282,
+          20.515519
+        ]
+      },
+      "properties": {
+        "name": "Thaphan Chaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Thaphan Chaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1990",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "7.429",
+        "crest_length_m": 749.7714112,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.354794,
+          23.306586
+        ]
+      },
+      "properties": {
+        "name": "Thapanzeik",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Multi-purpose",
+        "river": "Mu",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2002",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "3552.48",
+        "crest_length_m": 6884.181652,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.262088,
+          22.240321
+        ]
+      },
+      "properties": {
+        "name": "Thazi",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Thazi",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1995",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "8.141",
+        "crest_length_m": 990.5516611,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.866928,
+          17.816109
+        ]
+      },
+      "properties": {
+        "name": "The-gaw",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "The-gaw",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2000",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "64.79",
+        "crest_length_m": 1600.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.210114,
+          20.711113
+        ]
+      },
+      "properties": {
+        "name": "Thettaw",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Thettaw",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1995",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "18.696",
+        "crest_length_m": 1359.341664,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.712494,
+          20.971218
+        ]
+      },
+      "properties": {
+        "name": "Thinbon",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Thinbon",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2003",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "25.83",
+        "crest_length_m": 1681.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.932945,
+          21.51692
+        ]
+      },
+      "properties": {
+        "name": "Thirinandar",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2004",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "2.11",
+        "crest_length_m": 945.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.951677,
+          17.739216
+        ]
+      },
+      "properties": {
+        "name": "Thonze",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Thonze",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2002",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "293.1",
+        "crest_length_m": 402.316367,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.963157,
+          25.48725
+        ]
+      },
+      "properties": {
+        "name": "Tum Baing",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Tum Baing Hka",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.037043,
+          20.803853
+        ]
+      },
+      "properties": {
+        "name": "Upper Bu",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2021",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.162877,
+          22.240208
+        ]
+      },
+      "properties": {
+        "name": "Upper Yeywa",
+        "status": "Under Construction",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Myitnge",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2018",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": 243.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.609994,
+          18.622783
+        ]
+      },
+      "properties": {
+        "name": "Wegyi",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Wegyi",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2000",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "310.97",
+        "crest_length_m": 1271.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.396977,
+          21.092847
+        ]
+      },
+      "properties": {
+        "name": "Welaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Welaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1998",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "24.81",
+        "crest_length_m": 1692.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.517982,
+          19.790566
+        ]
+      },
+      "properties": {
+        "name": "Yanpe",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Yanpe",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2003",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "43.36",
+        "crest_length_m": 5059.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.09707,
+          23.53123
+        ]
+      },
+      "properties": {
+        "name": "Yazagyo",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Multi-purpose",
+        "river": "Nay Yin Za Yar",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2015",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.879027,
+          27.727616
+        ]
+      },
+      "properties": {
+        "name": "Yenam",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "May Hka",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2026",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.572117,
+          19.962479
+        ]
+      },
+      "properties": {
+        "name": "Yinshe",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2002",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "3.21",
+        "crest_length_m": 152.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.873564,
+          21.565078
+        ]
+      },
+      "properties": {
+        "name": "Zawgyi",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Zawgyi",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1995",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "639",
+        "crest_length_m": 777.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.782275,
+          21.28973
+        ]
+      },
+      "properties": {
+        "name": "Zeedaw",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Nyaung Oat",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2000",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "35.55",
+        "crest_length_m": 1448.0,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.720291,
+          20.811847
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.81N 95.72E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.798634,
+          21.37304
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.37N 95.80E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.810878,
+          21.340483
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.34N 95.81E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.660486,
+          23.361809
+        ]
+      },
+      "properties": {
+        "name": "Dam near 23.36N 95.66E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.577322,
+          23.132152
+        ]
+      },
+      "properties": {
+        "name": "Dam near 23.13N 95.58E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1998",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "23.247",
+        "crest_length_m": 670.5272783,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.601787,
+          20.114814
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.11N 95.60E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.342022,
+          20.775632
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.78N 95.34E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.44187,
+          19.06693
+        ]
+      },
+      "properties": {
+        "name": "Dam near 19.07N 95.44E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.467041,
+          20.704069
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.70N 95.47E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.075001,
+          20.468555
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.47N 96.08E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.718861,
+          18.533566
+        ]
+      },
+      "properties": {
+        "name": "Dam near 18.53N 95.72E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.89696,
+          20.597321
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.60N 95.90E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.826486,
+          20.726713
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.73N 95.83E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.903834,
+          20.721658
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.72N 95.90E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.02702,
+          20.854343
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.85N 96.03E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.833504,
+          21.038121
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.04N 95.83E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.831831,
+          21.050036
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.05N 95.83E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.728497,
+          21.013475
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.01N 95.73E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.846709,
+          21.739152
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.74N 95.85E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.892268,
+          21.773814
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.77N 95.89E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.8671,
+          21.468135
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.47N 95.87E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.252143,
+          18.651777
+        ]
+      },
+      "properties": {
+        "name": "Dam near 18.65N 95.25E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.169439,
+          20.583214
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.58N 96.17E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.862392,
+          22.09474
+        ]
+      },
+      "properties": {
+        "name": "Dam near 22.09N 95.86E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.35271,
+          20.768534
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.77N 95.35E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.355246,
+          20.762818
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.76N 95.36E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.383724,
+          20.740185
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.74N 95.38E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.386066,
+          20.758838
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.76N 95.39E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.400055,
+          20.751761
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.75N 95.40E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.424149,
+          20.720078
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.72N 95.42E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.540688,
+          21.546729
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.55N 95.54E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.534877,
+          21.505946
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.51N 95.53E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.518783,
+          21.385758
+        ]
+      },
+      "properties": {
+        "name": "Dam near 21.39N 95.52E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.367835,
+          20.869511
+        ]
+      },
+      "properties": {
+        "name": "Dam near 20.87N 94.37E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Multi-purpose",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.855019,
+          18.281025
+        ]
+      },
+      "properties": {
+        "name": "Dam near 18.28N 95.86E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.014876,
+          17.623217
+        ]
+      },
+      "properties": {
+        "name": "Dam near 17.62N 96.01E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.366141,
+          17.548282
+        ]
+      },
+      "properties": {
+        "name": "Dam near 17.55N 96.37E",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.417853,
+          19.480045
+        ]
+      },
+      "properties": {
+        "name": "Lower Nam Pawn",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Pawn",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.097256,
+          19.792636
+        ]
+      },
+      "properties": {
+        "name": "Mobyè",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Balu Chaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1971",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "826.852",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.772066,
+          22.056938
+        ]
+      },
+      "properties": {
+        "name": "Nam Hka",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Hka",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.163331,
+          19.555742
+        ]
+      },
+      "properties": {
+        "name": "Ngwedaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Ngwetaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1965",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "826.852",
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.657402,
+          16.411455
+        ]
+      },
+      "properties": {
+        "name": "Shwenattaung",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Shwenattaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "1996",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "69.104",
+        "crest_length_m": 1584.882658,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.689153,
+          20.478991
+        ]
+      },
+      "properties": {
+        "name": "Upper Baluchaung 1",
+        "status": "Under Construction",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Balchuang",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2016",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.344749,
+          19.177977
+        ]
+      },
+      "properties": {
+        "name": "Upper Haw Kham",
+        "status": "Proposed",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Pawn",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2031",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.40098,
+          19.995674
+        ]
+      },
+      "properties": {
+        "name": "Upper Nam Pawn",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Nam Pawn",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.601643,
+          23.423472
+        ]
+      },
+      "properties": {
+        "name": "Upper Salween",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Salween",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2025",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.648021,
+          20.938172
+        ]
+      },
+      "properties": {
+        "name": "Wanpon",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Irrigation",
+        "river": "Wanpon",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2005",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": "4.23",
+        "crest_length_m": 4.87,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.359484,
+          18.632617
+        ]
+      },
+      "properties": {
+        "name": "Weigyi",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Salween",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.732943,
+          19.777904
+        ]
+      },
+      "properties": {
+        "name": "Ywathit",
+        "status": "Planned",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Salween",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": "2025",
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.31465,
+          19.572117
+        ]
+      },
+      "properties": {
+        "name": "Baluchaung Dam",
+        "status": "Complete",
+        "dam_type": "",
+        "function": "Hydropower",
+        "river": "Baluchaung",
+        "state": "",
+        "basin": "",
+        "capacity_mw": null,
+        "height_m": null,
+        "year": null,
+        "reservoir_area_km2": null,
+        "total_storage_mcm": null,
+        "crest_length_m": null,
+        "catchment_area_km2": null,
+        "source": "Open Development Mekong / IFC / WLE",
+        "source_license": "CC BY-SA 4.0"
+      }
+    }
+  ]
+}

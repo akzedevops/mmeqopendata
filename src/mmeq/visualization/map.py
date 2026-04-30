@@ -15,6 +15,8 @@ from mmeq.config import (
     OUTPUT_DIR,
 )
 
+DAMS_PATH = os.path.join(os.getcwd(), "myanmar_dams.geojson")
+
 logger = logging.getLogger(__name__)
 
 
@@ -34,10 +36,12 @@ def build_earthquake_map(
     df: pd.DataFrame,
     output_path: Optional[str] = None,
     fault_lines_path: Optional[str] = None,
+    dams_path: Optional[str] = None,
     min_mag: float = 0.0,
     show_heatmap: bool = True,
     show_markers: bool = True,
     cluster_markers: bool = True,
+    show_dams: bool = True,
 ) -> str:
     if "time_utc" not in df.columns or "mag" not in df.columns:
         raise ValueError("DataFrame must have 'time_utc' and 'mag' columns")
@@ -46,6 +50,8 @@ def build_earthquake_map(
         output_path = os.path.join(OUTPUT_DIR, "enhanced_earthquake_map.html")
     if fault_lines_path is None:
         fault_lines_path = FAULT_LINES_PATH
+    if dams_path is None:
+        dams_path = DAMS_PATH
 
     df = df[df["mag"] >= min_mag].copy()
     df["time_utc"] = pd.to_datetime(df["time_utc"])
@@ -56,7 +62,7 @@ def build_earthquake_map(
     quake_map = folium.Map(
         location=MAP_CENTER,
         zoom_start=MAP_ZOOM,
-        tiles="OpenStreetMap",
+        tiles="CartoDB positron",
     )
 
     if show_markers:
@@ -98,6 +104,50 @@ def build_earthquake_map(
     else:
         logger.warning(f"Fault lines file not found: {fault_lines_path}")
 
+    if show_dams and dams_path and os.path.exists(dams_path):
+        import json as _json
+        dams_layer = folium.FeatureGroup(name="Dams")
+        with open(dams_path, encoding="utf-8") as f:
+            dams_data = _json.load(f)
+        for feat in dams_data.get("features", []):
+            props = feat.get("properties", {})
+            coords = feat["geometry"]["coordinates"]
+            name = props.get("name", "Unnamed Dam")
+            status = props.get("status", "")
+            func = props.get("function", "")
+            capacity = props.get("capacity_mw", "")
+            height = props.get("height_m", "")
+            river = props.get("river", "")
+            popup_html = f"<b>Dam:</b> {name}"
+            if status:
+                popup_html += f"<br><b>Status:</b> {status}"
+            if func:
+                popup_html += f"<br><b>Function:</b> {func}"
+            if capacity:
+                popup_html += f"<br><b>Capacity:</b> {capacity} MW"
+            if height:
+                popup_html += f"<br><b>Height:</b> {height} m"
+            if river:
+                popup_html += f"<br><b>River:</b> {river}"
+            icon_color = "blue"
+            if status == "Complete":
+                icon_color = "blue"
+            elif status in ("Proposed", "Planned", "Identified Sites"):
+                icon_color = "lightblue"
+            elif status == "Under Construction":
+                icon_color = "orange"
+            elif status == "Suspended":
+                icon_color = "red"
+            folium.Marker(
+                location=[coords[1], coords[0]],
+                icon=folium.Icon(icon="tint", color=icon_color, prefix="fa"),
+                popup=folium.Popup(popup_html, max_width=300),
+            ).add_to(dams_layer)
+        dams_layer.add_to(quake_map)
+        logger.info(f"Added {len(dams_data.get('features', []))} dams to map")
+    elif show_dams:
+        logger.warning(f"Dams file not found: {dams_path}")
+
     if show_heatmap:
         heatmap_layer = folium.FeatureGroup(name="Earthquake Heatmap")
         heat_data = df[["latitude", "longitude"]].values.tolist()
@@ -113,7 +163,8 @@ def build_earthquake_map(
         <i style="background: green; width: 10px; height: 10px; border-radius: 50%; display: inline-block;"></i> Magnitude &lt; {MAG_THRESHOLDS['low']}<br>
         <i style="background: orange; width: 10px; height: 10px; border-radius: 50%; display: inline-block;"></i> {MAG_THRESHOLDS['low']} &le; Magnitude &lt; {MAG_THRESHOLDS['medium']}<br>
         <i style="background: red; width: 10px; height: 10px; border-radius: 50%; display: inline-block;"></i> Magnitude &ge; {MAG_THRESHOLDS['medium']}<br>
-        <i style="background: purple; width: 15px; height: 3px; display: inline-block;"></i> Fault Lines<br><br>
+        <i style="background: purple; width: 15px; height: 3px; display: inline-block;"></i> Fault Lines<br>
+        <i style="background: #2196F3; width: 10px; height: 10px; border-radius: 50%; display: inline-block;"></i> Dams<br><br>
         <b>Data Range:</b><br>{start_date} – {end_date}
     </div>
     """
