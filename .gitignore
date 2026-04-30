@@ -1,10 +1,15 @@
 # Virtual environment
 .venv/
+venv/
 
 # Python cache
 __pycache__/
 *.pyc
 *.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
 
 # Logs
 *.log
@@ -21,3 +26,15 @@ cluster_maps/
 # OS
 .DS_Store
 Thumbs.db
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environment
+.env
+
+# IDX
+.idx/

@@ -1,8 +1,9 @@
 import os
+import sys
 import requests
 import pandas as pd
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from dateutil.relativedelta import relativedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib3.util import Retry
@@ -14,7 +15,7 @@ from typing import List, Tuple, Dict
 # --- CONFIG SECTION ---
 API_URL = "https://mmeq.akze.net/api/myanmar-quakes"
 START_YEAR = 1950
-END_DATE = datetime.utcnow() - timedelta(days=1)
+END_DATE = datetime.now(timezone.utc) - timedelta(days=1)
 EXPORT_DIR = "quake_exports"
 LOG_FILE = "dataexport.log"
 
@@ -120,7 +121,8 @@ def validate_quake_data(df: pd.DataFrame) -> pd.DataFrame:
     for col in ["latitude", "longitude", "depth", "mag"]:
         df[col] = pd.to_numeric(df[col], errors="coerce")
     df.dropna(subset=["time", "latitude", "longitude", "depth", "mag"], inplace=True)
-    df = df[df["time"].between(pd.Timestamp("1950-01-01", tz=utc_zone), pd.Timestamp(END_DATE, tz=utc_zone))]
+    end_ts = pd.Timestamp(END_DATE).tz_localize("UTC") if pd.Timestamp(END_DATE).tzinfo is None else pd.Timestamp(END_DATE)
+    df = df[df["time"].between(pd.Timestamp("1950-01-01", tz=utc_zone), end_ts)]
     # Apply bounds validation using the defined constants
     df = df[df["latitude"].between(MIN_LAT, MAX_LAT)]
     df = df[df["longitude"].between(MIN_LON, MAX_LON)]
@@ -185,16 +187,21 @@ def main():
     date_ranges = generate_date_ranges()
     logging.info(f"🚀 Processing {len(date_ranges)} months of earthquake data...")
 
-    # Collect results into lists — avoids O(n²) pd.concat in a loop
     all_frames: List[pd.DataFrame] = []
     yearly_frames: Dict[int, List[pd.DataFrame]] = {}
+    has_error = False
 
-    # Download & process in parallel
     with ThreadPoolExecutor(max_workers=10) as executor:
-        futures = [executor.submit(process_month, y, m, fd, td)
-                   for y, m, fd, td in date_ranges]
+        futures = {executor.submit(process_month, y, m, fd, td): (y, m)
+                   for y, m, fd, td in date_ranges}
         for future in as_completed(futures):
-            year, month, df_valid = future.result()
+            try:
+                year, month, df_valid = future.result()
+            except Exception:
+                has_error = True
+                y, m = futures[future]
+                logging.error(f"❌ Failed to process {y}-{m:02d}")
+                continue
             if df_valid.empty:
                 continue
             monthly_csv = os.path.join(EXPORT_DIR, "csv/monthly", f"earthquakes_{year}_{month:02d}.csv")
@@ -207,9 +214,10 @@ def main():
 
     if not all_frames:
         logging.info("🏁 No new data to process.")
+        if has_error:
+            sys.exit(1)
         return
 
-    # Concat once per year and once for combined — O(n) instead of O(n²)
     logging.info("\n📅 Saving yearly and combined files...")
     for year, frames in yearly_frames.items():
         ydf = pd.concat(frames, ignore_index=True)
@@ -222,7 +230,6 @@ def main():
 
     save_to_csv(combined_df, combined_csv, dedup=True)
 
-    # Merge new records into existing combined JSON so history is preserved
     existing_records = load_combined_json(combined_json)
     new_records = combined_df.to_dict(orient="records")
     seen = set()
@@ -232,10 +239,12 @@ def main():
         if key not in seen:
             seen.add(key)
             merged.append(record)
-    with open(combined_json, "w") as f:
-        json.dump({"earthquakes": merged}, f, indent=2)
+    with open(combined_json, "w", encoding="utf-8") as f:
+        json.dump({"earthquakes": merged}, f, indent=2, ensure_ascii=False)
 
     logging.info("🏁 All done! Earthquake data is up to date!")
+    if has_error:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
