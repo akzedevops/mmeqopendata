@@ -130,10 +130,30 @@ def run_dbscan(
     eps: float = DBSCAN_EPS,
     min_samples: int = DBSCAN_MIN_SAMPLES,
 ) -> pd.Series:
+    """
+    Run DBSCAN clustering on earthquake locations using UTM-projected coordinates.
+    eps is in degrees and converted to meters for metric clustering
+    (1 deg ~ 111 km). This ensures physically correct distance calculations.
+    """
     if "latitude" not in df.columns or "longitude" not in df.columns:
         raise ValueError("DataFrame must have 'latitude' and 'longitude' columns")
-    coords = df[["latitude", "longitude"]]
-    db = DBSCAN(eps=eps, min_samples=min_samples).fit(coords)
+
+    lats = df["latitude"].values
+    lons = df["longitude"].values
+
+    utm_zone = int((lons.mean() + 180) / 6) + 1
+    eps_m = eps * 111.0 * 1000.0
+
+    try:
+        import pyproj
+        proj = pyproj.Proj(proj="utm", zone=utm_zone, ellps="WGS84")
+        x, y = proj(lons, lats)
+        coords = np.column_stack([x, y])
+        db = DBSCAN(eps=eps_m, min_samples=min_samples, metric="euclidean").fit(coords)
+    except ImportError:
+        coords = df[["latitude", "longitude"]].values
+        db = DBSCAN(eps=eps, min_samples=min_samples).fit(coords)
+
     return pd.Series(db.labels_, index=df.index, name="cluster")
 
 

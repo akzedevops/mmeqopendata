@@ -1,7 +1,7 @@
 import logging
 import numpy as np
 import pandas as pd
-from typing import Tuple, Optional
+from typing import Tuple, Optional, Dict, List
 
 logger = logging.getLogger(__name__)
 
@@ -37,7 +37,10 @@ def magnitude_of_completeness(
     bin_width: float = 0.1,
 ) -> float:
     """
-    Estimate magnitude of completeness (Mc) using the maximum curvature method.
+    Estimate magnitude of completeness (Mc) using the maximum curvature method
+    with a stability correction.
+    The raw max-curvature method tends to underestimate Mc by 0.1-0.2 units
+    (Woessner & Wiemer 2005), so we apply a correction of +0.2.
     """
     magnitudes = magnitudes.dropna()
     if magnitudes.empty:
@@ -46,8 +49,62 @@ def magnitude_of_completeness(
     bins = np.arange(magnitudes.min(), magnitudes.max() + bin_width, bin_width)
     hist, bin_edges = np.histogram(magnitudes, bins=bins)
     max_idx = np.argmax(hist)
-    mc = bin_edges[max_idx]
+    mc = bin_edges[max_idx] + 0.2
     return round(mc, 1)
+
+
+def b_value_stability(
+    magnitudes: pd.Series,
+    mc_range: np.ndarray = None,
+    bin_width: float = 0.1,
+) -> List[Dict]:
+    """
+    Compute b-value at multiple Mc thresholds to assess stability.
+    Returns list of dicts with mc, b, a, n for each threshold.
+    """
+    magnitudes = magnitudes.dropna()
+    if mc_range is None:
+        mc_range = np.arange(2.0, 6.1, 0.5)
+    results = []
+    for mc in mc_range:
+        mags = magnitudes[magnitudes >= mc]
+        if len(mags) < 20:
+            continue
+        mean_mag = mags.mean()
+        b = np.log10(np.e) / (mean_mag - (mc - bin_width / 2))
+        a = np.log10(len(mags)) + b * mc
+        results.append({"mc": round(mc, 1), "b": round(b, 3), "a": round(a, 3), "n": len(mags)})
+    return results
+
+
+def multi_period_b_value(
+    df: pd.DataFrame,
+    periods: List[Tuple[int, int]] = None,
+    mc: float = None,
+) -> List[Dict]:
+    """
+    Compute b-value for different time periods to assess catalog homogeneity.
+    """
+    if periods is None:
+        periods = [
+            (1970, 1999), (2000, 2009), (2010, 2019), (2020, 2026),
+        ]
+    results = []
+    for start, end in periods:
+        sub = df[(df["time_utc"].dt.year >= start) & (df["time_utc"].dt.year <= end)]
+        if len(sub) < 50:
+            continue
+        mc_used = mc if mc is not None else magnitude_of_completeness(sub["mag"])
+        b, a, mc_actual = b_value(sub["mag"], min_mag=mc_used)
+        results.append({
+            "period": f"{start}-{end}",
+            "n_total": len(sub),
+            "n_above_mc": len(sub[sub["mag"] >= mc_actual]),
+            "mc": mc_actual,
+            "b": round(b, 3),
+            "a": round(a, 3),
+        })
+    return results
 
 
 def decluster_catalog(

@@ -17,8 +17,18 @@ build/
 # Generated outputs (analysis/visualization)
 *.png
 *.html
+*.pdf
 cluster_maps/
 !docs/**
+!paper/figures/**
+!paper/main.pdf
+
+# DEM tiles (2+ GB)
+dem_tiles/
+
+# Generated reports and data exports
+report/
+dam_seismic_risk.csv
 
 # IDE
 .vscode/
