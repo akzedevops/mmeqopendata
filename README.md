@@ -255,6 +255,223 @@ A GitHub Actions workflow (`.github/workflows/daily_data_fetch.yml`) runs daily 
 2. Update CSV and JSON exports
 3. Auto-commit changes to the repository
 
+## Myanmar Earthquake API Documentation
+
+The earthquake data used by this project comes from the **Myanmar Earthquake API** at `https://mmeq.akze.net`.
+
+### Base URL
+
+```
+https://mmeq.akze.net/api/myanmar-quakes
+```
+
+### Endpoints
+
+#### Get earthquakes by date range
+
+```
+GET /api/myanmar-quakes?from=YYYY-MM-DD&to=YYYY-MM-DD
+```
+
+Returns all earthquake events that occurred between `from` and `to` dates (inclusive).
+
+**Parameters:**
+
+| Parameter | Required | Format | Description |
+|---|---|---|---|
+| `from` | Yes (with `to`) | `YYYY-MM-DD` | Start date |
+| `to` | Yes (with `from`) | `YYYY-MM-DD` | End date |
+
+#### Get earthquakes by single date
+
+```
+GET /api/myanmar-quakes?date=YYYY-MM-DD
+```
+
+Returns all earthquake events that occurred on the specified date.
+
+**Parameters:**
+
+| Parameter | Required | Format | Description |
+|---|---|---|---|
+| `date` | Yes (standalone) | `YYYY-MM-DD` | Specific date |
+
+### Example Requests
+
+**Date range (one month):**
+```bash
+curl "https://mmeq.akze.net/api/myanmar-quakes?from=2025-03-01&to=2025-03-31"
+```
+
+**Single day:**
+```bash
+curl "https://mmeq.akze.net/api/myanmar-quakes?date=2025-03-28"
+```
+
+**Python with requests:**
+```python
+import requests
+
+response = requests.get(
+    "https://mmeq.akze.net/api/myanmar-quakes",
+    params={"from": "2025-03-28", "to": "2025-03-28"}
+)
+data = response.json()
+for quake in data["earthquakes"]:
+    print(f"M{quake['mag']} at {quake['location']} ({quake['time']})")
+```
+
+**JavaScript (fetch):**
+```javascript
+const res = await fetch(
+  "https://mmeq.akze.net/api/myanmar-quakes?from=2025-03-01&to=2025-03-31"
+);
+const data = await res.json();
+console.log(`Found ${data.earthquakes.length} earthquakes`);
+```
+
+### Response Format
+
+All responses return JSON with a single `earthquakes` array:
+
+```json
+{
+  "earthquakes": [
+    {
+      "time": "2025-03-28T06:20:52.000Z",
+      "latitude": "21.9963000",
+      "longitude": "95.9258000",
+      "depth": "10.0000",
+      "mag": "7.70",
+      "magType": "mww",
+      "nst": "245",
+      "gap": "24",
+      "dmin": "3.481",
+      "rms": "0.9",
+      "net": "us",
+      "id": "gfz2025gbpv",
+      "updated": "2025-04-02T21:26:26.980Z",
+      "location": "2025 Mandalay, Burma (Myanmar) Earthquake",
+      "place": "4km NE of Sagaing, Burma (Myanmar)",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1743143314",
+      "timestamp": "1743142852",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "22.07,96.12",
+      "shakemapURL": ""
+    }
+  ]
+}
+```
+
+### Response Fields
+
+| Field | Type | Description |
+|---|---|---|
+| `time` | string (ISO 8601) | UTC timestamp of the earthquake (e.g., `"2025-03-28T06:20:52.000Z"`) |
+| `latitude` | string | Latitude in decimal degrees |
+| `longitude` | string | Longitude in decimal degrees |
+| `depth` | string | Depth in kilometers |
+| `mag` | string | Earthquake magnitude |
+| `magType` | string | Magnitude type: `ml` (local), `mb` (body), `ms` (surface), `mw`/`mww` (moment), etc. |
+| `nst` | string | Number of seismic stations used |
+| `gap` | string | Azimuthal gap in degrees |
+| `dmin` | string | Minimum distance to stations in degrees |
+| `rms` | string | Root-mean-square travel time residual |
+| `net` | string | Contributing network (e.g., `us`, `th`, `in`) |
+| `id` | string | Unique event identifier |
+| `updated` | string (ISO 8601) | Last update timestamp |
+| `location` | string | Descriptive location name (e.g., `"Mandalay, Mandalay Region, Myanmar (Burma)"`) |
+| `place` | string | Short place description or country name |
+| `country` | string | ISO country code (`MM` for Myanmar) |
+| `continent` | string | Continent (`Asia`) |
+| `type` | string | Event type (`"earthquake"`) |
+| `timeAdded` | string | Unix timestamp when added to the database |
+| `timestamp` | string | Unix timestamp of the event |
+| `locationInferred` | string | `"1"` if location was inferred, `"0"` if precise |
+| `state` | string | State/region (often empty) |
+| `initialPosition` | string | Original coordinates as `"lat,lon"` before refinement |
+| `shakemapURL` | string | URL to ShakeMap image (if available) |
+
+### Error Responses
+
+**Missing parameters** (HTTP 200 with error message):
+```json
+{
+  "error": "Provide either ?date=YYYY-MM-DD or ?from=YYYY-MM-DD&to=YYYY-MM-DD"
+}
+```
+
+**Invalid date format** (HTTP 400):
+- Returns when date parameters are not in `YYYY-MM-DD` format
+
+### Data Coverage
+
+- **Time range**: 1950 to present
+- **Geographic scope**: Primarily Myanmar and surrounding regions
+- **Magnitude range**: All detectable events (typically M1.0+)
+- **Update frequency**: Data is continuously updated from global seismic networks
+- **Sources**: USGS, Thai Meteorological Department, Indian Meteorological Department, GFZ, and others
+
+### Rate Limits
+
+The API is free and open. No authentication or API key is required. Be respectful with request frequency — avoid polling more than once per second.
+
+### Data Sources
+
+Earthquake data is aggregated from:
+- [USGS Earthquake Hazards Program](https://earthquake.usgs.gov)
+- [GFZ German Research Centre for Geosciences](https://www.gfz-potsdam.de)
+- [Thai Meteorological Department](https://www.tmd.go.th)
+- [ISC (International Seismological Centre)](https://www.isc.ac.uk)
+- Regional seismic networks
+
+### Using This API in Your Own Projects
+
+**Plain curl:**
+```bash
+# Get all earthquakes from March 2025
+curl -s "https://mmeq.akze.net/api/myanmar-quakes?from=2025-03-01&to=2025-03-31" \
+  | python3 -m json.tool > earthquakes_march_2025.json
+```
+
+**Pandas DataFrame:**
+```python
+import pandas as pd
+import requests
+
+resp = requests.get(
+    "https://mmeq.akze.net/api/myanmar-quakes",
+    params={"from": "2025-03-01", "to": "2025-03-31"}
+)
+df = pd.DataFrame(resp.json()["earthquakes"])
+
+# Convert numeric fields
+for col in ["latitude", "longitude", "depth", "mag"]:
+    df[col] = pd.to_numeric(df[col], errors="coerce")
+
+df["time"] = pd.to_datetime(df["time"])
+
+print(f"Loaded {len(df)} earthquakes")
+print(f"Largest: M{df['mag'].max()} on {df.loc[df['mag'].idxmax(), 'time']}")
+```
+
+**Filtering large events:**
+```python
+# Only M5.0+ earthquakes
+resp = requests.get(
+    "https://mmeq.akze.net/api/myanmar-quakes",
+    params={"from": "2024-01-01", "to": "2025-12-31"}
+)
+df = pd.DataFrame(resp.json()["earthquakes"])
+df["mag"] = pd.to_numeric(df["mag"])
+major = df[df["mag"] >= 5.0].sort_values("mag", ascending=False)
+print(major[["time", "mag", "depth", "location"]].to_string())
+```
+
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
