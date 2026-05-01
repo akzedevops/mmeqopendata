@@ -50,9 +50,24 @@ if os.path.exists("fault_lines.json"):
     faults = gpd.read_file("fault_lines.json")
     faults_clipped = faults.cx[92:102, 9:29]
 
+# Myanmar country border for map backgrounds
+myanmar_border = None
+_border_path = os.path.join("data", "admin", "mmr_admin1.geojson")
+if os.path.exists(_border_path):
+    import geopandas as gpd
+    myanmar_border = gpd.read_file(_border_path)
+
+
+def _add_border(ax):
+    """Add Myanmar state borders as light grey background to a map axis."""
+    if myanmar_border is not None:
+        myanmar_border.boundary.plot(ax=ax, color="#bbb", linewidth=0.5, zorder=0)
+        myanmar_border.plot(ax=ax, color="#f0f0f0", edgecolor="#bbb", linewidth=0.5, alpha=0.4, zorder=0)
+
 # ========== Figure 1: Study area map ==========
 fig, ax = plt.subplots(figsize=(10, 12))
 
+_add_border(ax)
 ax.scatter(df["longitude"], df["latitude"], s=df["mag"].clip(1)**1.8 * 2,
            c=df["depth"], cmap="RdYlBu_r", alpha=0.4, edgecolors="none",
            norm=Normalize(vmin=0, vmax=150), zorder=2)
@@ -193,6 +208,7 @@ print("Figure 3: Depth distribution")
 # ========== Figure 4: Dam risk map ==========
 fig, ax = plt.subplots(figsize=(10, 12))
 
+_add_border(ax)
 grade_colors = {"Critical": "#d62728", "High": "#ff7f0e", "Moderate": "#ffdd57", "Low": "#2ca02c"}
 for grade, color in grade_colors.items():
     sub = risk[risk["risk_grade"] == grade]
@@ -354,6 +370,7 @@ print("Figure 8: Dam types")
 # ========== Figure 9: Vs30 map ==========
 fig, ax = plt.subplots(figsize=(10, 12))
 
+_add_border(ax)
 vs30_data = pd.read_csv("report/dam_vs30.csv")
 vs30_colors_map = {290: "#d62728", 360: "#ff7f0e", 460: "#ffdd57", 600: "#98df8a",
                    760: "#2ca02c", 900: "#1f77b4", 1100: "#08306b"}
@@ -435,6 +452,7 @@ logging.basicConfig(level=logging.INFO)
 
 fig, ax = plt.subplots(figsize=(10, 12))
 
+_add_border(ax)
 grid_lats, grid_lons, dcfs_grid = compute_coulomb_grid(
     lat_min=17.0, lat_max=27.0, lon_min=93.5, lon_max=100.0, resolution=0.3
 )
