@@ -1,5 +1,6 @@
 import os
 import json
+import logging
 import math
 import numpy as np
 import pandas as pd
@@ -328,7 +329,7 @@ plt.close()
 print("Figure 7: Risk distribution + sensitivity")
 
 # ========== Figure 8: Dam status and function ==========
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
 
 status_counts = dams_df["status"].value_counts()
 ax1.barh(status_counts.index, status_counts.values, color=["#2196F3","#90CAF9","#FF9800","#B0BEC5","#B0BEC5","#EF5350","#B0BEC5"])
@@ -344,8 +345,9 @@ ax2.set_title("Dam Function")
 for i, v in enumerate(func_counts.values):
     ax2.text(v + 1, i, str(v), va="center")
 
-fig.savefig(f"{OUT}/fig8_dam_types.pdf")
-fig.savefig(f"{OUT}/fig8_dam_types.png")
+fig.tight_layout(w_pad=4)
+fig.savefig(f"{OUT}/fig8_dam_types.pdf", dpi=300, bbox_inches="tight")
+fig.savefig(f"{OUT}/fig8_dam_types.png", dpi=300, bbox_inches="tight")
 plt.close()
 print("Figure 8: Dam types")
 
@@ -425,5 +427,167 @@ fig.savefig(f"{OUT}/fig10_hazard_curves.pdf")
 fig.savefig(f"{OUT}/fig10_hazard_curves.png")
 plt.close()
 print("Figure 10: Hazard curves")
+
+# ========== Figure 11: Coulomb stress transfer map ==========
+from src.mmeq.analysis.coulomb import compute_coulomb_grid, compute_coulomb_at_dams, build_rupture_segments
+
+logging.basicConfig(level=logging.INFO)
+
+fig, ax = plt.subplots(figsize=(10, 12))
+
+grid_lats, grid_lons, dcfs_grid = compute_coulomb_grid(
+    lat_min=17.0, lat_max=27.0, lon_min=93.5, lon_max=100.0, resolution=0.3
+)
+
+vmax = 2.0
+im = ax.pcolormesh(
+    grid_lons, grid_lats, dcfs_grid,
+    cmap="RdBu_r", vmin=-vmax, vmax=vmax, shading="auto", alpha=0.7, zorder=1
+)
+cb = plt.colorbar(im, ax=ax, label="ΔCFS (MPa)", shrink=0.6, pad=0.02)
+cb.ax.tick_params(labelsize=9)
+
+coulomb_dams = compute_coulomb_at_dams()
+for r in coulomb_dams:
+    c = "#d62728" if r["dcfs_mpa"] > 0.001 else ("#1f77b4" if r["dcfs_mpa"] < -0.001 else "#888888")
+    s = min(80, max(15, abs(r["dcfs_mpa"]) * 20))
+    ax.scatter(r["longitude"], r["latitude"], s=s, c=c, marker="^",
+               edgecolors="k", linewidths=0.3, zorder=3)
+
+segments = build_rupture_segments()
+for seg in segments:
+    ax.plot(
+        [seg["start_lon"], seg["end_lon"]],
+        [seg["start_lat"], seg["end_lat"]],
+        "k-", linewidth=3, zorder=4
+    )
+    ax.plot(
+        [seg["start_lon"], seg["end_lon"]],
+        [seg["start_lat"], seg["end_lat"]],
+        "yellow", linewidth=1.5, zorder=5
+    )
+
+ax.plot(95.925, 22.001, "*", color="red", markersize=20, markeredgecolor="k",
+        markeredgewidth=1, zorder=6)
+ax.annotate("Mw 7.7\nEpicenter", (95.925, 22.001), textcoords="offset points",
+            xytext=(10, 5), fontsize=9, fontweight="bold", color="red")
+
+if faults_clipped is not None:
+    faults_clipped.plot(ax=ax, color="gray", linewidth=0.8, alpha=0.4, zorder=0)
+
+triggered = sum(1 for r in coulomb_dams if r["stress_regime"] == "Triggered")
+shadow = sum(1 for r in coulomb_dams if r["stress_regime"] == "Shadow")
+neutral = sum(1 for r in coulomb_dams if r["stress_regime"] == "Neutral")
+
+legend_elements = [
+    Line2D([0], [0], marker="^", color="w", markerfacecolor="#d62728", markersize=8, label=f"Triggered ({triggered})"),
+    Line2D([0], [0], marker="^", color="w", markerfacecolor="#1f77b4", markersize=8, label=f"Shadow ({shadow})"),
+    Line2D([0], [0], marker="^", color="w", markerfacecolor="#888888", markersize=8, label=f"Neutral ({neutral})"),
+    Line2D([0], [0], color="yellow", linewidth=2, label="2025 Rupture"),
+    Line2D([0], [0], marker="*", color="w", markerfacecolor="red", markersize=14, label="Epicenter"),
+]
+ax.legend(handles=legend_elements, loc="lower left", fontsize=9)
+
+ax.set_xlim(93.5, 100)
+ax.set_ylim(17, 27)
+ax.set_xlabel("Longitude (°E)")
+ax.set_ylabel("Latitude (°N)")
+ax.set_title("Coulomb Stress Transfer from 2025 Mw 7.7 Rupture")
+ax.set_aspect(1.0 / math.cos(math.radians(22)))
+ax.grid(True, alpha=0.2)
+fig.savefig(f"{OUT}/fig11_coulomb_stress.pdf")
+fig.savefig(f"{OUT}/fig11_coulomb_stress.png")
+plt.close()
+print("Figure 11: Coulomb stress transfer")
+
+# ========== Figure 12: Dam fragility curves ==========
+from src.mmeq.analysis.fragility import (
+    generate_fragility_curves, damage_state_probabilities, DAMAGE_STATE_LABELS
+)
+
+fig, axes = plt.subplots(1, 3, figsize=(14, 5.5), sharey=True)
+
+colors_frag = {"P(Slight)": "#4CAF50", "P(Moderate)": "#FF9800", "P(Extensive)": "#F44336", "P(Complete)": "#9C27B0"}
+
+for idx, dam_type in enumerate(["earthfill", "concrete", "rockfill"]):
+    ax = axes[idx]
+    fc = generate_fragility_curves(dam_type)
+    for ds in ["P(Slight)", "P(Moderate)", "P(Extensive)", "P(Complete)"]:
+        ax.plot(fc["pga_g"], fc[ds], linewidth=2, label=ds, color=colors_frag[ds])
+    ax.set_xlabel("PGA (g)")
+    ax.set_title(f"{dam_type.capitalize()} Dams")
+    ax.set_xlim(0, 2)
+    ax.set_ylim(0, 1)
+    ax.grid(True, alpha=0.3)
+    if idx == 0:
+        ax.set_ylabel("Probability of Exceedance")
+    ax.legend(fontsize=8, loc="lower right")
+
+fig.suptitle("Seismic Fragility Curves by Dam Type", fontsize=14)
+fig.tight_layout(rect=[0, 0, 1, 0.95], w_pad=3)
+fig.savefig(f"{OUT}/fig12_fragility_curves.pdf")
+fig.savefig(f"{OUT}/fig12_fragility_curves.png")
+plt.close()
+print("Figure 12: Fragility curves")
+
+# ========== Figure 13: Monte Carlo PGA uncertainty ==========
+from src.mmeq.analysis.dam_risk import monte_carlo_pga
+from src.mmeq.analysis.seismology import b_value as calc_b2
+
+b_mc, a_mc, mc_mc = calc_b2(df["mag"], min_mag=4.0)
+
+mc_df = monte_carlo_pga(df, n_iterations=1000)
+
+fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+
+ax1 = axes[0]
+mc_sorted = mc_df.sort_values("pga_p50_g", ascending=False).reset_index(drop=True)
+x_pos = np.arange(min(50, len(mc_sorted)))
+
+ax1.errorbar(
+    x_pos,
+    mc_sorted["pga_p50_g"].values[:50],
+    yerr=[
+        mc_sorted["pga_p50_g"].values[:50] - mc_sorted["pga_p05_g"].values[:50],
+        mc_sorted["pga_p95_g"].values[:50] - mc_sorted["pga_p50_g"].values[:50],
+    ],
+    fmt="o", markersize=3, linewidth=0.8, color="#1f77b4", ecolor="#aec7e8",
+    label="Median ± 90% CI", zorder=2
+)
+ax1.axhline(0.1, color="green", linestyle="--", alpha=0.5, label="0.1g threshold")
+ax1.axhline(0.2, color="orange", linestyle="--", alpha=0.5, label="0.2g threshold")
+ax1.set_xlabel("Dam Rank (by median PGA)")
+ax1.set_ylabel("PGA (g)")
+ax1.set_title("Monte Carlo PGA Uncertainty (1000 iterations)")
+ax1.legend(fontsize=8)
+ax1.grid(True, alpha=0.3)
+
+ax2 = axes[1]
+pga_all = mc_df["pga_p50_g"].values
+p_gt_01 = mc_df["prob_pga_gt_0.1g"].values
+p_gt_02 = mc_df["prob_pga_gt_0.2g"].values
+
+ax2.scatter(pga_all, p_gt_02, s=15, alpha=0.5, c="#d62728", label="P(PGA>0.2g)")
+ax2.scatter(pga_all, p_gt_01, s=15, alpha=0.3, c="#2ca02c", label="P(PGA>0.1g)")
+ax2.set_xlabel("Median PGA (g)")
+ax2.set_ylabel("Exceedance Probability")
+ax2.set_title("PGA Exceedance Probabilities")
+ax2.legend(fontsize=8)
+ax2.grid(True, alpha=0.3)
+
+n_gt02 = (mc_df["prob_pga_gt_0.2g"] > 0.5).sum()
+n_gt01 = (mc_df["prob_pga_gt_0.1g"] > 0.5).sum()
+ax2.annotate(
+    f"{n_gt01} dams P>50% exceed 0.1g\n{n_gt02} dams P>50% exceed 0.2g",
+    xy=(0.05, 0.95), xycoords="axes fraction", fontsize=9,
+    va="top", ha="left",
+    bbox=dict(boxstyle="round,pad=0.3", facecolor="wheat", alpha=0.8)
+)
+
+fig.tight_layout()
+fig.savefig(f"{OUT}/fig13_monte_carlo_pga.pdf")
+fig.savefig(f"{OUT}/fig13_monte_carlo_pga.png")
+plt.close()
+print("Figure 13: Monte Carlo PGA")
 
 print("\nAll figures saved to", OUT)

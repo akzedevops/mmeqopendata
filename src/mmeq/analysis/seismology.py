@@ -1,4 +1,5 @@
 import logging
+import math
 import numpy as np
 import pandas as pd
 from typing import Tuple, Optional, Dict, List
@@ -146,7 +147,7 @@ def decluster_catalog(
             continue
 
         dlat = lats[candidates] - lats[i]
-        dlon = lons[candidates] - lons[i]
+        dlon = (lons[candidates] - lons[i]) * math.cos(math.radians(lats[i]))
         dists = np.sqrt(dlat**2 + dlon**2) * 111.0
         close = candidates[dists <= distance_km]
         is_mainshock[close] = False

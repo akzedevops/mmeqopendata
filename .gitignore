@@ -49,3 +49,9 @@ htmlcov/
 
 # IDX
 .idx/
+
+# Large data files (download via scripts)
+data/gem_faults/gem_active_faults_full.geojson
+data/worldpop/*.tif
+data/shakemap/grid.xml
+dem_tiles/
