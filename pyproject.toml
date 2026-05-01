@@ -25,6 +25,7 @@ dependencies = [
     "folium>=0.14,<1",
     "plotly>=5.15,<7",
     "fpdf2>=2.7,<3",
+    "scipy>=1.11,<2",
 ]
 
 [project.optional-dependencies]

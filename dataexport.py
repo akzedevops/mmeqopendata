@@ -131,6 +131,12 @@ def validate_quake_data(df: pd.DataFrame) -> pd.DataFrame:
     df["time_utc"] = df["time"].dt.strftime("%Y-%m-%d %H:%M:%S")
     df["time_mmt"] = df["time"].dt.tz_convert(myanmar_zone).dt.strftime("%Y-%m-%d %H:%M:%S")
     df.drop(columns=["time"], inplace=True)
+    # Enrich with state/region and nearest city/village
+    try:
+        from mmeq.analysis.geocoder import enrich_dataframe
+        df = enrich_dataframe(df)
+    except Exception as e:
+        logging.warning(f"Geocoding enrichment skipped: {e}")
     return df
 
 
