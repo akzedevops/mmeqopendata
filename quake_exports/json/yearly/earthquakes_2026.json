@@ -25,7 +25,9 @@
       "initialPosition": "16.72,95.72",
       "shakemapURL": "",
       "time_utc": "2026-04-29 20:29:10",
-      "time_mmt": "2026-04-30 02:59:10"
+      "time_mmt": "2026-04-30 02:59:10",
+      "state_region": "Ayeyarwady",
+      "nearest_city": "Yangon"
     },
     {
       "latitude": 16.689,
@@ -52,7 +54,9 @@
       "initialPosition": "16.69,95.67",
       "shakemapURL": "",
       "time_utc": "2026-04-29 19:40:37",
-      "time_mmt": "2026-04-30 02:10:37"
+      "time_mmt": "2026-04-30 02:10:37",
+      "state_region": "Ayeyarwady",
+      "nearest_city": "Yangon"
     },
     {
       "latitude": 21.934,
@@ -79,7 +83,9 @@
       "initialPosition": "21.93,96.12",
       "shakemapURL": "",
       "time_utc": "2026-04-29 18:19:33",
-      "time_mmt": "2026-04-30 00:49:33"
+      "time_mmt": "2026-04-30 00:49:33",
+      "state_region": "Mandalay",
+      "nearest_city": "Mandalay"
     },
     {
       "latitude": 21.601,
@@ -106,7 +112,9 @@
       "initialPosition": "21.60,96.04",
       "shakemapURL": "",
       "time_utc": "2026-04-29 08:50:20",
-      "time_mmt": "2026-04-29 15:20:20"
+      "time_mmt": "2026-04-29 15:20:20",
+      "state_region": "Mandalay",
+      "nearest_city": "Sagaing"
     },
     {
       "latitude": 18.657,
@@ -133,7 +141,9 @@
       "initialPosition": "18.66,96.37",
       "shakemapURL": "",
       "time_utc": "2026-04-29 06:01:19",
-      "time_mmt": "2026-04-29 12:31:19"
+      "time_mmt": "2026-04-29 12:31:19",
+      "state_region": "Bago",
+      "nearest_city": "Taungoo"
     },
     {
       "latitude": 24.973,
@@ -160,7 +170,9 @@
       "initialPosition": "24.97,95.19",
       "shakemapURL": "",
       "time_utc": "2026-04-28 17:21:19",
-      "time_mmt": "2026-04-28 23:51:19"
+      "time_mmt": "2026-04-28 23:51:19",
+      "state_region": "Saigang",
+      "nearest_city": "Bhamo"
     },
     {
       "latitude": 23.966,
@@ -187,7 +199,9 @@
       "initialPosition": "23.97,94.22",
       "shakemapURL": "",
       "time_utc": "2026-04-28 16:35:09",
-      "time_mmt": "2026-04-28 23:05:09"
+      "time_mmt": "2026-04-28 23:05:09",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 21.597,
@@ -214,7 +228,9 @@
       "initialPosition": "21.60,96.58",
       "shakemapURL": "",
       "time_utc": "2026-04-28 14:03:41",
-      "time_mmt": "2026-04-28 20:33:41"
+      "time_mmt": "2026-04-28 20:33:41",
+      "state_region": "Mandalay",
+      "nearest_city": "Pyin Oo Lwin"
     },
     {
       "latitude": 26.513,
@@ -241,7 +257,9 @@
       "initialPosition": "26.51,95.39",
       "shakemapURL": "",
       "time_utc": "2026-04-28 06:00:50",
-      "time_mmt": "2026-04-28 12:30:50"
+      "time_mmt": "2026-04-28 12:30:50",
+      "state_region": "Saigang",
+      "nearest_city": "Putao"
     },
     {
       "latitude": 16.396,
@@ -268,7 +286,9 @@
       "initialPosition": "16.40,96.57",
       "shakemapURL": "",
       "time_utc": "2026-04-28 04:30:49",
-      "time_mmt": "2026-04-28 11:00:49"
+      "time_mmt": "2026-04-28 11:00:49",
+      "state_region": "",
+      "nearest_city": "Yangon"
     },
     {
       "latitude": 18.341,
@@ -295,7 +315,9 @@
       "initialPosition": "18.34,96.86",
       "shakemapURL": "",
       "time_utc": "2026-04-27 15:02:34",
-      "time_mmt": "2026-04-27 21:32:34"
+      "time_mmt": "2026-04-27 21:32:34",
+      "state_region": "Bago",
+      "nearest_city": "Taungoo"
     },
     {
       "latitude": 20.982,
@@ -322,7 +344,9 @@
       "initialPosition": "20.98,96.69",
       "shakemapURL": "",
       "time_utc": "2026-04-27 04:31:51",
-      "time_mmt": "2026-04-27 11:01:51"
+      "time_mmt": "2026-04-27 11:01:51",
+      "state_region": "Shan",
+      "nearest_city": "Taunggyi"
     },
     {
       "latitude": 24.763,
@@ -349,7 +373,9 @@
       "initialPosition": "24.76,95.06",
       "shakemapURL": "",
       "time_utc": "2026-04-26 20:45:01",
-      "time_mmt": "2026-04-27 03:15:01"
+      "time_mmt": "2026-04-27 03:15:01",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 20.366,
@@ -376,7 +402,9 @@
       "initialPosition": "20.37,96.14",
       "shakemapURL": "",
       "time_utc": "2026-04-26 16:15:40",
-      "time_mmt": "2026-04-26 22:45:40"
+      "time_mmt": "2026-04-26 22:45:40",
+      "state_region": "Mandalay",
+      "nearest_city": "Meiktila"
     },
     {
       "latitude": 20.113,
@@ -391,7 +419,7 @@
       "net": "",
       "id": "th_16544_202604260745",
       "updated": "2026-04-26T07:45:00.000Z",
-      "location": "Wan Hw\u00e8-ning, Shan, Myanmar (Burma)",
+      "location": "Wan Hwè-ning, Shan, Myanmar (Burma)",
       "place": "Myanmar",
       "country": "MM",
       "continent": "Asia",
@@ -403,7 +431,9 @@
       "initialPosition": "20.11,98.00",
       "shakemapURL": "",
       "time_utc": "2026-04-26 07:45:00",
-      "time_mmt": "2026-04-26 14:15:00"
+      "time_mmt": "2026-04-26 14:15:00",
+      "state_region": "Shan",
+      "nearest_city": "Loikaw"
     },
     {
       "latitude": 20.54,
@@ -430,7 +460,9 @@
       "initialPosition": "20.54,96.06",
       "shakemapURL": "",
       "time_utc": "2026-04-25 21:43:25",
-      "time_mmt": "2026-04-26 04:13:25"
+      "time_mmt": "2026-04-26 04:13:25",
+      "state_region": "Mandalay",
+      "nearest_city": "Meiktila"
     },
     {
       "latitude": 23.972,
@@ -457,7 +489,9 @@
       "initialPosition": "24.11,94.55",
       "shakemapURL": "",
       "time_utc": "2026-04-25 21:27:22",
-      "time_mmt": "2026-04-26 03:57:22"
+      "time_mmt": "2026-04-26 03:57:22",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 21.283,
@@ -484,7 +518,9 @@
       "initialPosition": "21.22,94.65",
       "shakemapURL": "",
       "time_utc": "2026-04-25 15:15:11",
-      "time_mmt": "2026-04-25 21:45:11"
+      "time_mmt": "2026-04-25 21:45:11",
+      "state_region": "Magway",
+      "nearest_city": "Bagan"
     },
     {
       "latitude": 20.423,
@@ -511,7 +547,9 @@
       "initialPosition": "20.42,96.85",
       "shakemapURL": "",
       "time_utc": "2026-04-25 04:33:01",
-      "time_mmt": "2026-04-25 11:03:01"
+      "time_mmt": "2026-04-25 11:03:01",
+      "state_region": "Shan",
+      "nearest_city": "Inle Lake"
     },
     {
       "latitude": 18.253,
@@ -538,7 +576,9 @@
       "initialPosition": "18.25,96.74",
       "shakemapURL": "",
       "time_utc": "2026-04-25 03:36:27",
-      "time_mmt": "2026-04-25 10:06:27"
+      "time_mmt": "2026-04-25 10:06:27",
+      "state_region": "Bago",
+      "nearest_city": "Taungoo"
     },
     {
       "latitude": 19.983,
@@ -565,7 +605,9 @@
       "initialPosition": "19.98,96.34",
       "shakemapURL": "",
       "time_utc": "2026-04-25 01:49:42",
-      "time_mmt": "2026-04-25 08:19:42"
+      "time_mmt": "2026-04-25 08:19:42",
+      "state_region": "Mandalay",
+      "nearest_city": "Nay Pyi Taw"
     },
     {
       "latitude": 25.21,
@@ -592,7 +634,9 @@
       "initialPosition": "25.21,94.82",
       "shakemapURL": "",
       "time_utc": "2026-04-24 18:30:59",
-      "time_mmt": "2026-04-25 01:00:59"
+      "time_mmt": "2026-04-25 01:00:59",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 26.544,
@@ -619,7 +663,9 @@
       "initialPosition": "26.54,95.42",
       "shakemapURL": "",
       "time_utc": "2026-04-24 16:37:57",
-      "time_mmt": "2026-04-24 23:07:57"
+      "time_mmt": "2026-04-24 23:07:57",
+      "state_region": "Saigang",
+      "nearest_city": "Putao"
     },
     {
       "latitude": 21.79,
@@ -646,7 +692,9 @@
       "initialPosition": "21.79,94.80",
       "shakemapURL": "",
       "time_utc": "2026-04-24 11:30:03",
-      "time_mmt": "2026-04-24 18:00:03"
+      "time_mmt": "2026-04-24 18:00:03",
+      "state_region": "Magway",
+      "nearest_city": "Monywa"
     },
     {
       "latitude": 15.505,
@@ -673,7 +721,9 @@
       "initialPosition": "15.70,95.98",
       "shakemapURL": "",
       "time_utc": "2026-04-24 07:03:03",
-      "time_mmt": "2026-04-24 13:33:03"
+      "time_mmt": "2026-04-24 13:33:03",
+      "state_region": "",
+      "nearest_city": "Yangon"
     },
     {
       "latitude": 15.257,
@@ -700,7 +750,9 @@
       "initialPosition": "15.26,96.52",
       "shakemapURL": "",
       "time_utc": "2026-04-24 06:57:12",
-      "time_mmt": "2026-04-24 13:27:12"
+      "time_mmt": "2026-04-24 13:27:12",
+      "state_region": "",
+      "nearest_city": "Mawlamyine"
     },
     {
       "latitude": 21.995,
@@ -727,7 +779,9 @@
       "initialPosition": "22.00,96.82",
       "shakemapURL": "",
       "time_utc": "2026-04-24 01:33:47",
-      "time_mmt": "2026-04-24 08:03:47"
+      "time_mmt": "2026-04-24 08:03:47",
+      "state_region": "Shan",
+      "nearest_city": "Pyin Oo Lwin"
     },
     {
       "latitude": 18.088,
@@ -754,7 +808,9 @@
       "initialPosition": "18.09,96.47",
       "shakemapURL": "",
       "time_utc": "2026-04-23 21:23:01",
-      "time_mmt": "2026-04-24 03:53:01"
+      "time_mmt": "2026-04-24 03:53:01",
+      "state_region": "Bago",
+      "nearest_city": "Bago"
     },
     {
       "latitude": 18.667,
@@ -781,7 +837,9 @@
       "initialPosition": "18.67,96.48",
       "shakemapURL": "",
       "time_utc": "2026-04-22 14:26:32",
-      "time_mmt": "2026-04-22 20:56:32"
+      "time_mmt": "2026-04-22 20:56:32",
+      "state_region": "Bago",
+      "nearest_city": "Taungoo"
     },
     {
       "latitude": 20.32,
@@ -808,7 +866,9 @@
       "initialPosition": "20.32,97.88",
       "shakemapURL": "",
       "time_utc": "2026-04-21 17:47:07",
-      "time_mmt": "2026-04-22 00:17:07"
+      "time_mmt": "2026-04-22 00:17:07",
+      "state_region": "Shan",
+      "nearest_city": "Loikaw"
     },
     {
       "latitude": 23.8588,
@@ -835,7 +895,9 @@
       "initialPosition": "23.94,94.06",
       "shakemapURL": "",
       "time_utc": "2026-04-21 14:24:36",
-      "time_mmt": "2026-04-21 20:54:36"
+      "time_mmt": "2026-04-21 20:54:36",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 21.214,
@@ -862,7 +924,9 @@
       "initialPosition": "21.21,99.35",
       "shakemapURL": "",
       "time_utc": "2026-04-21 08:43:56",
-      "time_mmt": "2026-04-21 15:13:56"
+      "time_mmt": "2026-04-21 15:13:56",
+      "state_region": "Shan",
+      "nearest_city": "Kengtung"
     },
     {
       "latitude": 24.613,
@@ -889,7 +953,9 @@
       "initialPosition": "24.65,94.58",
       "shakemapURL": "",
       "time_utc": "2026-04-21 00:29:33",
-      "time_mmt": "2026-04-21 06:59:33"
+      "time_mmt": "2026-04-21 06:59:33",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 23.228,
@@ -916,7 +982,9 @@
       "initialPosition": "23.24,94.61",
       "shakemapURL": "",
       "time_utc": "2026-04-21 00:08:28",
-      "time_mmt": "2026-04-21 06:38:28"
+      "time_mmt": "2026-04-21 06:38:28",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 23.061,
@@ -943,7 +1011,9 @@
       "initialPosition": "23.06,94.17",
       "shakemapURL": "",
       "time_utc": "2026-04-20 16:01:43",
-      "time_mmt": "2026-04-20 22:31:43"
+      "time_mmt": "2026-04-20 22:31:43",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 19.735,
@@ -970,7 +1040,9 @@
       "initialPosition": "19.74,96.17",
       "shakemapURL": "",
       "time_utc": "2026-04-20 15:22:30",
-      "time_mmt": "2026-04-20 21:52:30"
+      "time_mmt": "2026-04-20 21:52:30",
+      "state_region": "Mandalay",
+      "nearest_city": "Nay Pyi Taw"
     },
     {
       "latitude": 19.575,
@@ -997,7 +1069,9 @@
       "initialPosition": "19.58,97.58",
       "shakemapURL": "",
       "time_utc": "2026-04-20 13:01:32",
-      "time_mmt": "2026-04-20 19:31:32"
+      "time_mmt": "2026-04-20 19:31:32",
+      "state_region": "Kayah",
+      "nearest_city": "Loikaw"
     },
     {
       "latitude": 22.572,
@@ -1024,7 +1098,9 @@
       "initialPosition": "22.57,94.63",
       "shakemapURL": "",
       "time_utc": "2026-04-20 04:37:36",
-      "time_mmt": "2026-04-20 11:07:36"
+      "time_mmt": "2026-04-20 11:07:36",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 20.34,
@@ -1051,7 +1127,9 @@
       "initialPosition": "20.34,98.46",
       "shakemapURL": "",
       "time_utc": "2026-04-20 03:22:59",
-      "time_mmt": "2026-04-20 09:52:59"
+      "time_mmt": "2026-04-20 09:52:59",
+      "state_region": "Shan",
+      "nearest_city": "Loikaw"
     },
     {
       "latitude": 26.4428,
@@ -1078,7 +1156,9 @@
       "initialPosition": "26.57,96.03",
       "shakemapURL": "",
       "time_utc": "2026-04-17 08:53:35",
-      "time_mmt": "2026-04-17 15:23:35"
+      "time_mmt": "2026-04-17 15:23:35",
+      "state_region": "Kachin",
+      "nearest_city": "Putao"
     },
     {
       "latitude": 25.402,
@@ -1105,7 +1185,9 @@
       "initialPosition": "25.40,95.11",
       "shakemapURL": "",
       "time_utc": "2026-04-16 21:19:40",
-      "time_mmt": "2026-04-17 03:49:40"
+      "time_mmt": "2026-04-17 03:49:40",
+      "state_region": "Saigang",
+      "nearest_city": "Myitkyina"
     },
     {
       "latitude": 19.151,
@@ -1132,7 +1214,9 @@
       "initialPosition": "19.15,96.48",
       "shakemapURL": "",
       "time_utc": "2026-04-15 19:40:40",
-      "time_mmt": "2026-04-16 02:10:40"
+      "time_mmt": "2026-04-16 02:10:40",
+      "state_region": "Bago",
+      "nearest_city": "Taungoo"
     },
     {
       "latitude": 21.318,
@@ -1159,7 +1243,9 @@
       "initialPosition": "21.32,99.31",
       "shakemapURL": "",
       "time_utc": "2026-04-15 18:54:24",
-      "time_mmt": "2026-04-16 01:24:24"
+      "time_mmt": "2026-04-16 01:24:24",
+      "state_region": "Shan",
+      "nearest_city": "Kengtung"
     },
     {
       "latitude": 18.911,
@@ -1186,7 +1272,9 @@
       "initialPosition": "18.91,96.37",
       "shakemapURL": "",
       "time_utc": "2026-04-14 22:31:26",
-      "time_mmt": "2026-04-15 05:01:26"
+      "time_mmt": "2026-04-15 05:01:26",
+      "state_region": "Bago",
+      "nearest_city": "Taungoo"
     },
     {
       "latitude": 20.01,
@@ -1213,7 +1301,9 @@
       "initialPosition": "20.01,97.34",
       "shakemapURL": "",
       "time_utc": "2026-04-13 22:32:45",
-      "time_mmt": "2026-04-14 05:02:45"
+      "time_mmt": "2026-04-14 05:02:45",
+      "state_region": "Shan",
+      "nearest_city": "Loikaw"
     },
     {
       "latitude": 26.825,
@@ -1240,7 +1330,9 @@
       "initialPosition": "26.83,96.14",
       "shakemapURL": "",
       "time_utc": "2026-04-13 18:51:47",
-      "time_mmt": "2026-04-14 01:21:47"
+      "time_mmt": "2026-04-14 01:21:47",
+      "state_region": "Saigang",
+      "nearest_city": "Putao"
     },
     {
       "latitude": 20.176,
@@ -1255,7 +1347,7 @@
       "net": "",
       "id": "th_16491_202604131829",
       "updated": "2026-04-13T18:29:24.000Z",
-      "location": "Wan Pawm\u00f6ng, Shan, Myanmar (Burma)",
+      "location": "Wan Pawmöng, Shan, Myanmar (Burma)",
       "place": "Myanmar",
       "country": "MM",
       "continent": "Asia",
@@ -1267,7 +1359,9 @@
       "initialPosition": "20.18,98.81",
       "shakemapURL": "",
       "time_utc": "2026-04-13 18:29:24",
-      "time_mmt": "2026-04-14 00:59:24"
+      "time_mmt": "2026-04-14 00:59:24",
+      "state_region": "Shan",
+      "nearest_city": "Kengtung"
     },
     {
       "latitude": 21.114,
@@ -1294,7 +1388,9 @@
       "initialPosition": "21.11,95.96",
       "shakemapURL": "",
       "time_utc": "2026-04-13 07:58:42",
-      "time_mmt": "2026-04-13 14:28:42"
+      "time_mmt": "2026-04-13 14:28:42",
+      "state_region": "Mandalay",
+      "nearest_city": "Meiktila"
     },
     {
       "latitude": 18.757,
@@ -1321,7 +1417,9 @@
       "initialPosition": "18.76,96.47",
       "shakemapURL": "",
       "time_utc": "2026-04-12 21:06:57",
-      "time_mmt": "2026-04-13 03:36:57"
+      "time_mmt": "2026-04-13 03:36:57",
+      "state_region": "Bago",
+      "nearest_city": "Taungoo"
     },
     {
       "latitude": 17.624,
@@ -1348,7 +1446,9 @@
       "initialPosition": "17.62,97.57",
       "shakemapURL": "",
       "time_utc": "2026-04-12 08:40:20",
-      "time_mmt": "2026-04-12 15:10:20"
+      "time_mmt": "2026-04-12 15:10:20",
+      "state_region": "Kayin",
+      "nearest_city": "Hpa-An"
     },
     {
       "latitude": 22.482,
@@ -1375,7 +1475,9 @@
       "initialPosition": "22.48,95.98",
       "shakemapURL": "",
       "time_utc": "2026-04-12 05:18:52",
-      "time_mmt": "2026-04-12 11:48:52"
+      "time_mmt": "2026-04-12 11:48:52",
+      "state_region": "Mandalay",
+      "nearest_city": "Shwebo"
     },
     {
       "latitude": 19.634,
@@ -1402,7 +1504,9 @@
       "initialPosition": "19.63,94.98",
       "shakemapURL": "",
       "time_utc": "2026-04-12 03:53:16",
-      "time_mmt": "2026-04-12 10:23:16"
+      "time_mmt": "2026-04-12 10:23:16",
+      "state_region": "Magway",
+      "nearest_city": "Magway"
     },
     {
       "latitude": 19.795,
@@ -1429,7 +1533,9 @@
       "initialPosition": "19.80,96.46",
       "shakemapURL": "",
       "time_utc": "2026-04-12 02:59:50",
-      "time_mmt": "2026-04-12 09:29:50"
+      "time_mmt": "2026-04-12 09:29:50",
+      "state_region": "Mandalay",
+      "nearest_city": "Nay Pyi Taw"
     },
     {
       "latitude": 20.075,
@@ -1456,7 +1562,9 @@
       "initialPosition": "20.08,98.23",
       "shakemapURL": "",
       "time_utc": "2026-04-12 00:49:38",
-      "time_mmt": "2026-04-12 07:19:38"
+      "time_mmt": "2026-04-12 07:19:38",
+      "state_region": "Shan",
+      "nearest_city": "Loikaw"
     },
     {
       "latitude": 23.141,
@@ -1483,7 +1591,9 @@
       "initialPosition": "23.14,96.07",
       "shakemapURL": "",
       "time_utc": "2026-04-11 22:59:26",
-      "time_mmt": "2026-04-12 05:29:26"
+      "time_mmt": "2026-04-12 05:29:26",
+      "state_region": "Mandalay",
+      "nearest_city": "Mogok"
     },
     {
       "latitude": 27.014,
@@ -1510,7 +1620,9 @@
       "initialPosition": "27.01,96.26",
       "shakemapURL": "",
       "time_utc": "2026-04-10 22:10:02",
-      "time_mmt": "2026-04-11 04:40:02"
+      "time_mmt": "2026-04-11 04:40:02",
+      "state_region": "Saigang",
+      "nearest_city": "Putao"
     },
     {
       "latitude": 24.985,
@@ -1537,7 +1649,9 @@
       "initialPosition": "24.99,94.87",
       "shakemapURL": "",
       "time_utc": "2026-04-10 10:29:13",
-      "time_mmt": "2026-04-10 16:59:13"
+      "time_mmt": "2026-04-10 16:59:13",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 20.669,
@@ -1564,7 +1678,9 @@
       "initialPosition": "20.67,96.13",
       "shakemapURL": "",
       "time_utc": "2026-04-09 23:55:10",
-      "time_mmt": "2026-04-10 06:25:10"
+      "time_mmt": "2026-04-10 06:25:10",
+      "state_region": "Mandalay",
+      "nearest_city": "Meiktila"
     },
     {
       "latitude": 21.222,
@@ -1591,7 +1707,9 @@
       "initialPosition": "21.22,98.55",
       "shakemapURL": "",
       "time_utc": "2026-04-09 21:40:33",
-      "time_mmt": "2026-04-10 04:10:33"
+      "time_mmt": "2026-04-10 04:10:33",
+      "state_region": "Shan",
+      "nearest_city": "Kengtung"
     },
     {
       "latitude": 25.1808,
@@ -1618,7 +1736,9 @@
       "initialPosition": "25.28,94.93",
       "shakemapURL": "",
       "time_utc": "2026-04-09 20:02:23",
-      "time_mmt": "2026-04-10 02:32:23"
+      "time_mmt": "2026-04-10 02:32:23",
+      "state_region": "Saigang",
+      "nearest_city": "Myitkyina"
     },
     {
       "latitude": 20.084,
@@ -1645,7 +1765,9 @@
       "initialPosition": "20.08,95.82",
       "shakemapURL": "",
       "time_utc": "2026-04-09 15:02:11",
-      "time_mmt": "2026-04-09 21:32:11"
+      "time_mmt": "2026-04-09 21:32:11",
+      "state_region": "Mandalay",
+      "nearest_city": "Naypyidaw"
     },
     {
       "latitude": 22.579,
@@ -1672,7 +1794,9 @@
       "initialPosition": "22.58,96.40",
       "shakemapURL": "",
       "time_utc": "2026-04-09 14:00:27",
-      "time_mmt": "2026-04-09 20:30:27"
+      "time_mmt": "2026-04-09 20:30:27",
+      "state_region": "Shan",
+      "nearest_city": "Mogok"
     },
     {
       "latitude": 21.631,
@@ -1699,7 +1823,9 @@
       "initialPosition": "21.63,95.85",
       "shakemapURL": "",
       "time_utc": "2026-04-08 14:08:37",
-      "time_mmt": "2026-04-08 20:38:37"
+      "time_mmt": "2026-04-08 20:38:37",
+      "state_region": "Mandalay",
+      "nearest_city": "Sagaing"
     },
     {
       "latitude": 20.636,
@@ -1726,7 +1852,9 @@
       "initialPosition": "20.64,95.01",
       "shakemapURL": "",
       "time_utc": "2026-04-08 01:15:04",
-      "time_mmt": "2026-04-08 07:45:04"
+      "time_mmt": "2026-04-08 07:45:04",
+      "state_region": "Mandalay",
+      "nearest_city": "Magway"
     },
     {
       "latitude": 21.588,
@@ -1753,7 +1881,9 @@
       "initialPosition": "21.59,96.11",
       "shakemapURL": "",
       "time_utc": "2026-04-07 12:10:22",
-      "time_mmt": "2026-04-07 18:40:22"
+      "time_mmt": "2026-04-07 18:40:22",
+      "state_region": "Mandalay",
+      "nearest_city": "Sagaing"
     },
     {
       "latitude": 19.408,
@@ -1768,7 +1898,7 @@
       "net": "",
       "id": "th_16467_202604062039",
       "updated": "2026-04-06T20:39:34.000Z",
-      "location": "Daw Hs\u00e8-kawl\u00e8, Kayah State, Myanmar (Burma)",
+      "location": "Daw Hsè-kawlè, Kayah State, Myanmar (Burma)",
       "place": "Myanmar",
       "country": "MM",
       "continent": "Asia",
@@ -1780,7 +1910,9 @@
       "initialPosition": "19.41,97.74",
       "shakemapURL": "",
       "time_utc": "2026-04-06 20:39:34",
-      "time_mmt": "2026-04-07 03:09:34"
+      "time_mmt": "2026-04-07 03:09:34",
+      "state_region": "Kayah",
+      "nearest_city": "Loikaw"
     },
     {
       "latitude": 19.085,
@@ -1807,7 +1939,9 @@
       "initialPosition": "19.09,96.37",
       "shakemapURL": "",
       "time_utc": "2026-04-06 09:09:08",
-      "time_mmt": "2026-04-06 15:39:08"
+      "time_mmt": "2026-04-06 15:39:08",
+      "state_region": "Bago",
+      "nearest_city": "Taungoo"
     },
     {
       "latitude": 26.522,
@@ -1834,7 +1968,9 @@
       "initialPosition": "26.52,96.47",
       "shakemapURL": "",
       "time_utc": "2026-04-06 03:05:32",
-      "time_mmt": "2026-04-06 09:35:32"
+      "time_mmt": "2026-04-06 09:35:32",
+      "state_region": "Kachin",
+      "nearest_city": "Putao"
     },
     {
       "latitude": 24.411,
@@ -1861,7 +1997,9 @@
       "initialPosition": "24.41,94.56",
       "shakemapURL": "",
       "time_utc": "2026-04-05 23:24:22",
-      "time_mmt": "2026-04-06 05:54:22"
+      "time_mmt": "2026-04-06 05:54:22",
+      "state_region": "Saigang",
+      "nearest_city": "Kalay"
     },
     {
       "latitude": 18.647,
@@ -1888,7 +2026,9 @@
       "initialPosition": "18.65,97.64",
       "shakemapURL": "",
       "time_utc": "2026-04-05 13:04:27",
-      "time_mmt": "2026-04-05 19:34:27"
+      "time_mmt": "2026-04-05 19:34:27",
+      "state_region": "Kayah",
+      "nearest_city": "Loikaw"
     },
     {
       "latitude": 24.998,
@@ -1915,7 +2055,9 @@
       "initialPosition": "25.00,96.65",
       "shakemapURL": "",
       "time_utc": "2026-04-04 13:24:06",
-      "time_mmt": "2026-04-04 19:54:06"
+      "time_mmt": "2026-04-04 19:54:06",
+      "state_region": "Kachin",
+      "nearest_city": "Myitkyina"
     },
     {
       "latitude": 20.329,
@@ -1942,7 +2084,9 @@
       "initialPosition": "20.33,98.14",
       "shakemapURL": "",
       "time_utc": "2026-04-04 04:30:03",
-      "time_mmt": "2026-04-04 11:00:03"
+      "time_mmt": "2026-04-04 11:00:03",
+      "state_region": "Shan",
+      "nearest_city": "Loikaw"
     },
     {
       "latitude": 20.754,
@@ -1969,7 +2113,9 @@
       "initialPosition": "20.75,96.05",
       "shakemapURL": "",
       "time_utc": "2026-04-03 16:44:53",
-      "time_mmt": "2026-04-03 23:14:53"
+      "time_mmt": "2026-04-03 23:14:53",
+      "state_region": "Mandalay",
+      "nearest_city": "Meiktila"
     },
     {
       "latitude": 20.86,
@@ -1996,7 +2142,9 @@
       "initialPosition": "20.86,96.12",
       "shakemapURL": "",
       "time_utc": "2026-04-03 16:32:42",
-      "time_mmt": "2026-04-03 23:02:42"
+      "time_mmt": "2026-04-03 23:02:42",
+      "state_region": "Mandalay",
+      "nearest_city": "Meiktila"
     },
     {
       "latitude": 25.304,
@@ -2023,7 +2171,9 @@
       "initialPosition": "23.30,93.70",
       "shakemapURL": "",
       "time_utc": "2026-04-02 17:53:34",
-      "time_mmt": "2026-04-03 00:23:34"
+      "time_mmt": "2026-04-03 00:23:34",
+      "state_region": "Saigang",
+      "nearest_city": "Myitkyina"
     }
   ]
 }
