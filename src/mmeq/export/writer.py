@@ -56,6 +56,14 @@ def validate_quake_data(
         df["time"].dt.tz_convert(myanmar_zone).dt.strftime("%Y-%m-%d %H:%M:%S")
     )
     df.drop(columns=["time"], inplace=True)
+
+    # Enrich with state/region and nearest city
+    try:
+        from mmeq.analysis.geocoder import enrich_dataframe
+        df = enrich_dataframe(df)
+    except Exception as e:
+        logger.warning("Geocoding enrichment skipped: %s", e)
+
     return df
 
 
@@ -63,7 +71,7 @@ def deduplicate_csv(path: str) -> None:
     if not os.path.exists(path):
         return
     try:
-        df = pd.read_csv(path)
+        df = pd.read_csv(path, on_bad_lines="skip")
         before = len(df)
         df.drop_duplicates(inplace=True)
         if len(df) < before:
