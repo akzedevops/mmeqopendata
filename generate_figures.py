@@ -609,3 +609,53 @@ plt.close()
 print("Figure 13: Monte Carlo PGA")
 
 print("\nAll figures saved to", OUT)
+
+# ========== Figure 14: OSM Building Exposure ==========
+try:
+    from mmeq.analysis.osm_exposure import compute_building_exposure
+    from mmeq.analysis.finite_fault import load_rupture_trace
+
+    bldg_df = compute_building_exposure()
+    trace = load_rupture_trace()
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 7))
+
+    _add_border(ax1)
+    _add_border(ax2)
+
+    mmi_colors = {
+        "Severe (VIII)": "#d32f2f", "Very Strong (VII)": "#f57c00",
+        "Strong (VI)": "#fbc02d", "Moderate (V)": "#4caf50", "Light (IV-)": "#90a4ae",
+    }
+    for mmi in ["Light (IV-)", "Moderate (V)", "Strong (VI)", "Very Strong (VII)", "Severe (VIII)"]:
+        sub = bldg_df[bldg_df["mmi_label"] == mmi]
+        ax1.scatter(sub["lon"], sub["lat"], s=1, c=mmi_colors[mmi], alpha=0.5,
+                    label=f"{mmi} ({len(sub):,})")
+
+    trace_lons = [t[0] for t in trace]
+    trace_lats = [t[1] for t in trace]
+    ax1.plot(trace_lons, trace_lats, "k-", linewidth=1.5, label="2025 Rupture")
+    ax1.set_xlim(94, 99); ax1.set_ylim(17, 27.5)
+    ax1.set_xlabel("Longitude (°E)"); ax1.set_ylabel("Latitude (°N)")
+    ax1.set_title("(a) Building Exposure by Shaking Intensity")
+    ax1.legend(loc="lower left", fontsize=7, markerscale=5)
+
+    for cat, marker, color in [("hospital", "P", "#d32f2f"), ("school", "s", "#1565c0")]:
+        sub = bldg_df[(bldg_df["category"] == cat) & (bldg_df["pga_g"] > 0.05)]
+        ax2.scatter(sub["lon"], sub["lat"], s=sub["pga_g"] * 80, c=color, alpha=0.6,
+                    marker=marker, label=f"{cat.title()} ({len(sub):,} > 0.05g)")
+
+    ax2.plot(trace_lons, trace_lats, "k-", linewidth=1.5, label="2025 Rupture")
+    ax2.set_xlim(94, 99); ax2.set_ylim(17, 27.5)
+    ax2.set_xlabel("Longitude (°E)"); ax2.set_ylabel("Latitude (°N)")
+    ax2.set_title("(b) Schools & Hospitals in Shaking Zones")
+    ax2.legend(loc="lower left", fontsize=8, markerscale=2)
+
+    fig.suptitle("OSM Critical Infrastructure Exposure — 2025 Mw 7.7 (with site Vs30)", fontsize=13, y=0.98)
+    plt.tight_layout(rect=[0, 0, 1, 0.95], w_pad=3)
+    fig.savefig(f"{OUT}/fig14_building_exposure.pdf")
+    fig.savefig(f"{OUT}/fig14_building_exposure.png")
+    plt.close()
+    print("Figure 14: Building exposure")
+except Exception as e:
+    print(f"Figure 14 skipped: {e}")
