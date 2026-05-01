@@ -153,6 +153,22 @@ Beyond single-event PGA, each dam gets a full hazard curve using the Cornell-McG
 
 The 475-year PGA (10% chance of exceedance in 50 years) ranges from 0.09g to 1.31g across the dam portfolio, with a mean of 0.31g. 32 dams exceed 0.5g at this return period.
 
+## Building Exposure from OpenStreetMap
+
+34,224 critical infrastructure sites pulled from OSM via Overpass API — schools, hospitals, clinics, police stations, fire stations, universities, and places of worship within the shaking zone.
+
+For each building, PGA is estimated using the same ASK08 GMPE with rupture distance to the combined fault trace.
+
+| Shaking Intensity | Buildings |
+|---|---|
+| Severe (VIII) | ~4,800 |
+| Very Strong (VII) | ~5,300 |
+| Strong (VI) | ~5,000 |
+
+1,402 schools and 632 hospitals had PGA above 0.1g.
+
+Validated against the USGS ShakeMap grid — Naypyidaw prediction is 0.43g vs USGS 0.55g (ratio 0.79). Near-fault underprediction is expected because this was a supershear rupture.
+
 ## Figures
 
 13 figures in [`paper/figures/`](paper/figures/) (300 DPI, PDF + PNG):
@@ -172,6 +188,7 @@ The 475-year PGA (10% chance of exceedance in 50 years) ranges from 0.09g to 1.3
 | fig11 | Coulomb stress transfer from the 2025 rupture |
 | fig12 | Fragility curves (slight / moderate / extensive damage) |
 | fig13 | Monte Carlo PGA sensitivity |
+| fig14 | OSM building exposure map |
 
 Regenerate all:
 ```bash
@@ -195,6 +212,7 @@ src/mmeq/
 │   ├── finite_fault.py             # USGS finite fault model loader
 │   ├── fragility.py                # Dam fragility curves
 │   ├── gem_faults.py               # GEM Global Active Faults loader
+│   ├── osm_exposure.py             # OSM building exposure analysis
 │   ├── population.py               # Population exposure
 │   ├── population_raster.py        # WorldPop raster-based exposure
 │   ├── seismology.py               # b-value, Mc, declustering
@@ -229,6 +247,7 @@ Override defaults with environment variables:
 | Fault lines | USGS plate boundary data | Public domain |
 | ShakeMap / Finite Fault | [USGS event us7000pn9s](https://earthquake.usgs.gov/earthquakes/eventpage/us7000pn9s) | Public domain |
 | Active faults | [GEM Global Active Faults](https://github.com/GEMScienceTools/gem-global-active-faults) | CC BY-SA 4.0 |
+| Buildings | [OpenStreetMap](https://www.openstreetmap.org/) via Overpass API | ODbL |
 | Population | [WorldPop](https://www.worldpop.org/) Myanmar 1km grid | CC BY 4.0 |
 | Elevation | [Copernicus DEM 30m](https://copernicus-dem-30m.s3.eu-central-1.amazonaws.com/) | Open |
 | PGA model | Abrahamson & Silva (2008) NGA-West1 | Academic |

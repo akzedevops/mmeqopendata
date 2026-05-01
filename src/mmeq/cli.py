@@ -306,6 +306,26 @@ def cmd_report(args) -> None:
             for _, row in exposure_df.head(5).iterrows():
                 print(f"  {row['name']}: {row['population_within_50km']:,} people within 50km")
 
+    if not getattr(args, 'no_buildings', False):
+        try:
+            from mmeq.analysis.osm_exposure import compute_building_exposure, exposure_summary
+            logging.info("Computing OSM building exposure...")
+            bldg_df = compute_building_exposure()
+            bldg_csv = os.path.join(args.output, "building_exposure.csv")
+            bldg_df.to_csv(bldg_csv, index=False)
+            summary = exposure_summary(bldg_df)
+            print(f"\nBuilding Exposure ({len(bldg_df)} structures):")
+            for mmi in ["Severe (VIII)", "Very Strong (VII)", "Strong (VI)"]:
+                if mmi in bldg_df["mmi_label"].values:
+                    n = (bldg_df["mmi_label"] == mmi).sum()
+                    print(f"  {mmi}: {n:,}")
+            schools_high = len(bldg_df[(bldg_df["category"] == "school") & (bldg_df["pga_g"] > 0.1)])
+            hospitals_high = len(bldg_df[(bldg_df["category"] == "hospital") & (bldg_df["pga_g"] > 0.1)])
+            print(f"  Schools > 0.1g: {schools_high}")
+            print(f"  Hospitals > 0.1g: {hospitals_high}")
+        except Exception as e:
+            logging.warning("OSM building exposure failed: %s", e)
+
     if not args.no_pdf:
         logging.info("Generating interactive map for report...")
         map_path = _build_interactive_map(df, args.output, args.min_mag)
@@ -323,6 +343,52 @@ def cmd_report(args) -> None:
             cluster_image=os.path.join(args.output, "earthquake_clusters.png") if not args.no_clusters else None,
         )
         print(f"  PDF report: {args.output}/myanmar_earthquake_report.pdf")
+
+    if not args.no_coulomb:
+        from mmeq.analysis.coulomb import compute_coulomb_at_dams
+        logging.info("Computing Coulomb stress transfer...")
+        coulomb_results = compute_coulomb_at_dams()
+        if coulomb_results:
+            import json as _json
+            coulomb_path = os.path.join(args.output, "coulomb_stress_dams.json")
+            with open(coulomb_path, "w") as f:
+                _json.dump(coulomb_results, f, indent=2)
+            n_trig = sum(1 for r in coulomb_results if r["stress_regime"] == "Triggered")
+            n_shad = sum(1 for r in coulomb_results if r["stress_regime"] == "Shadow")
+            print(f"\nCoulomb Stress Transfer:")
+            print(f"  Triggered (ΔCFS>0): {n_trig} dams")
+            print(f"  Stress shadow (ΔCFS<0): {n_shad} dams")
+            print(f"  Results: {coulomb_path}")
+
+    if not args.no_fragility:
+        from mmeq.analysis.fragility import compute_dam_fragilities
+        logging.info("Computing dam fragility analysis...")
+        frag_results = compute_dam_fragilities(risk_df)
+        if frag_results:
+            import json as _json
+            frag_path = os.path.join(args.output, "dam_fragility.json")
+            with open(frag_path, "w") as f:
+                _json.dump(frag_results, f, indent=2)
+            ds_counts = {}
+            for r in frag_results:
+                ds = r["most_likely_damage"]
+                ds_counts[ds] = ds_counts.get(ds, 0) + 1
+            print(f"\nDam Fragility Analysis:")
+            for ds in ["None", "Slight", "Moderate", "Extensive", "Complete"]:
+                print(f"  {ds}: {ds_counts.get(ds, 0)} dams")
+            print(f"  Results: {frag_path}")
+
+    if not args.no_montecarlo:
+        from mmeq.analysis.dam_risk import monte_carlo_pga
+        logging.info(f"Running Monte Carlo PGA (1000 iterations)...")
+        mc_df = monte_carlo_pga(df, n_iterations=1000)
+        if not mc_df.empty:
+            mc_path = os.path.join(args.output, "monte_carlo_pga.csv")
+            mc_df.to_csv(mc_path, index=False)
+            print(f"\nMonte Carlo PGA Uncertainty (1000 iterations):")
+            print(f"  Median PGA range: {mc_df['pga_p50_g'].min():.4f}-{mc_df['pga_p50_g'].max():.4f}g")
+            print(f"  Dams with P(PGA>0.2g)>50%: {(mc_df['prob_pga_gt_0.2g'] > 0.5).sum()}")
+            print(f"  Results: {mc_path}")
 
     print(f"\nFull report generated in {args.output}/")
 
@@ -379,8 +445,12 @@ def main() -> None:
     p_report.add_argument("--no-3d", action="store_true", help="Skip 3D cross-section")
     p_report.add_argument("--no-animated", action="store_true", help="Skip animated map")
     p_report.add_argument("--no-population", action="store_true", help="Skip population exposure")
+    p_report.add_argument("--no-buildings", action="store_true", help="Skip OSM building exposure")
     p_report.add_argument("--no-pdf", action="store_true", help="Skip PDF generation")
     p_report.add_argument("--no-clusters", action="store_true", help="Skip cluster map image")
+    p_report.add_argument("--no-coulomb", action="store_true", help="Skip Coulomb stress analysis")
+    p_report.add_argument("--no-fragility", action="store_true", help="Skip dam fragility analysis")
+    p_report.add_argument("--no-montecarlo", action="store_true", help="Skip Monte Carlo PGA")
 
     args = parser.parse_args()
     setup_logging(args.verbose)

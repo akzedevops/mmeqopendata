@@ -33,6 +33,7 @@
 After the devastating March 2025 earthquake in Myanmar, I wanted to understand how many of the country's 254 dams are actually at risk.
 This write-up documents a hobby project that pulls earthquake data from a public API, scores every dam for seismic risk, and runs probabilistic hazard analysis---all with open-source Python tools.
 The corrected Abrahamson \& Silva (2008) ground-motion model, validated against the actual Naypyidaw recording (predicted 0.51$g$ vs.\ observed 0.57$g$), shows that about half the dams sit in zones of significant seismic hazard.
+An OpenStreetMap-based exposure analysis finds over 1,400 schools and 630 hospitals in areas that experienced strong-to-severe shaking.
 Everything---code, data, interactive maps---is on GitHub.
 \end{abstract}
 
@@ -80,6 +81,7 @@ Population grid & WorldPop 2020 (1\,km) & CC BY 4.0 \\
 ShakeMap stations & USGS ShakeMap (us7000pn9s) & Public domain \\
 Finite fault model & USGS (Goldberg et al.\ 2025) & Public domain \\
 Surface rupture & USGS (Reitman et al.\ 2025) & Public domain \\
+Buildings (34,224) & OpenStreetMap (Overpass API) & ODbL \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -336,6 +338,28 @@ That's significantly more than the city-based estimate of 1.8M, because it captu
     \label{fig:temporal}
 \end{figure}
 
+
+% ============================================================
+\section{Building Exposure from OpenStreetMap}
+% ============================================================
+
+Beyond dams, I pulled 34,224 critical infrastructure sites from OpenStreetMap---schools, hospitals, clinics, police stations, fire stations, universities, and places of worship---within the shaking zone.
+For each building, I computed rupture distance to the combined fault trace and estimated PGA using the same ASK08 GMPE.
+
+The results are sobering.
+About 4,800 structures experienced Severe (MMI~VIII) shaking, and another 5,300 experienced Very Strong (MMI~VII).
+Among these: 1,402 schools and 632 hospitals had PGA above 0.1$g$.
+
+I validated against the USGS ShakeMap grid.
+At Naypyidaw, our prediction is 0.43$g$ vs USGS 0.55$g$ (ratio 0.79)---reasonable for a pure GMPE without the 1,244 DYFI felt reports that USGS incorporates.
+Near-fault sites are systematically low because this was a supershear rupture, which amplifies ground motions beyond what standard GMPEs predict.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig14_building_exposure.png}
+    \caption{OSM critical infrastructure exposure. (a) All 34,224 buildings colored by estimated shaking intensity. (b) Schools and hospitals in shaking zones, sized by PGA.}
+    \label{fig:building_exposure}
+\end{figure}
 
 % ============================================================
 \section{What I Learned}
