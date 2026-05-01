@@ -27,7 +27,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('pyproject.toml') }}
           restore-keys: |
             ${{ runner.os }}-pip-
 
@@ -50,6 +50,7 @@ jobs:
 
       - name: Trigger report generation
         if: success()
+        continue-on-error: true
         run: |
           gh workflow run report_and_pages.yml
         env:
