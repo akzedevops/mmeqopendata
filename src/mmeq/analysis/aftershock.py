@@ -125,3 +125,57 @@ def modified_omori_forecast(
         f"expected in next 30 days, p={p:.2f}"
     )
     return forecast_df, params
+
+
+def aftershock_probability_grid(
+    K: float, c: float, p: float,
+    mainshock_lat: float = 22.01, mainshock_lon: float = 95.94, mainshock_mag: float = 7.7,
+    forecast_days: int = 30, min_mag: float = 5.0,
+    grid_spacing: float = 0.1, radius_deg: float = 5.0,
+) -> pd.DataFrame:
+    """Generate spatial probability grid for aftershocks using Omori + ETAS kernel.
+
+    Uses power-law spatial decay from the rupture zone (Wells & Coppersmith
+    scaling for rupture length) combined with temporal Omori forecast.
+
+    Returns DataFrame with lat, lon, probability columns.
+    """
+    # Temporal: expected number of M>=min_mag aftershocks in forecast window
+    # Assume mainshock happened ~30 days ago for current forecast
+    t_start = 30 * 24  # hours since mainshock
+    t_end = (30 + forecast_days) * 24
+    if p == 1.0:
+        n_expected = K * (np.log(t_end + c) - np.log(t_start + c))
+    else:
+        n_expected = K / (1 - p) * ((t_end + c) ** (1 - p) - (t_start + c) ** (1 - p))
+
+    # Scale for minimum magnitude (Gutenberg-Richter with b=1)
+    n_expected *= 10 ** (-(min_mag - 3.0))
+
+    # Spatial kernel: power-law decay from rupture zone
+    # Rupture length ~ 475 km for M7.7 (Wells & Coppersmith)
+    rupture_half_len = 237.5 / 111.0  # degrees
+    d_param = 0.05  # characteristic distance in degrees
+    q = 1.5  # power-law exponent
+
+    lats = np.arange(mainshock_lat - radius_deg, mainshock_lat + radius_deg, grid_spacing)
+    lons = np.arange(mainshock_lon - radius_deg, mainshock_lon + radius_deg, grid_spacing)
+    grid_lat, grid_lon = np.meshgrid(lats, lons, indexing="ij")
+
+    # Distance from nearest point on rupture (simplified as N-S line)
+    dist_along = np.clip(grid_lat - mainshock_lat, -rupture_half_len, rupture_half_len)
+    dist_perp = (grid_lon - mainshock_lon) * np.cos(np.radians(mainshock_lat))
+    dist_from_rupture = np.sqrt((grid_lat - mainshock_lat - dist_along) ** 2 + dist_perp ** 2)
+
+    # Power-law kernel
+    kernel = (1 + (dist_from_rupture / d_param) ** 2) ** (-q)
+    kernel /= kernel.sum()  # normalize
+
+    prob = n_expected * kernel
+
+    rows = []
+    for i in range(len(lats)):
+        for j in range(len(lons)):
+            if prob[i, j] > 1e-6:
+                rows.append({"lat": lats[i], "lon": lons[j], "probability": prob[i, j]})
+    return pd.DataFrame(rows)

@@ -1,7 +1,7 @@
-"""Offline reverse geocoder for Myanmar states/regions.
+"""Offline reverse geocoder for Myanmar administrative divisions.
 
-Uses geoBoundaries ADM1 polygons to map lat/lon to state/region name.
-Uses OSM place nodes (74K villages/towns/cities) for nearest place lookup.
+Uses geoBoundaries polygons (ADM1=state, ADM2=district, ADM3=township)
+and 74K OSM place nodes for nearest place lookup with distance.
 """
 
 import csv
@@ -11,45 +11,62 @@ import math
 import os
 
 from shapely.geometry import Point, shape
+from shapely.strtree import STRtree
 
 logger = logging.getLogger(__name__)
 
 _DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "..", "data")
-_ADMIN_PATH = os.path.join(_DATA_DIR, "admin", "mmr_admin1.geojson")
+_ADMIN1_PATH = os.path.join(_DATA_DIR, "admin", "mmr_admin1.geojson")
+_ADMIN2_PATH = os.path.join(_DATA_DIR, "admin", "mmr_admin2.geojson")
+_ADMIN3_PATH = os.path.join(_DATA_DIR, "admin", "mmr_admin3.geojson")
 _PLACES_PATH = os.path.join(_DATA_DIR, "osm", "myanmar_places.csv")
 
-_admin_shapes = None
+_admin_cache = {}  # level -> (names, tree, geoms)
 _place_tree = None
 _place_names = None
+_place_coords = None
+
+EARTH_R = 6371.0  # km
 
 
-def _load_admin():
-    global _admin_shapes
-    if _admin_shapes is not None:
-        return _admin_shapes
-    if not os.path.exists(_ADMIN_PATH):
-        logger.warning("Admin boundaries not found: %s", _ADMIN_PATH)
-        _admin_shapes = []
-        return _admin_shapes
-    with open(_ADMIN_PATH) as f:
+def _load_admin(level, path):
+    if level in _admin_cache:
+        return _admin_cache[level]
+    if not os.path.exists(path):
+        logger.warning("Admin boundaries not found: %s", path)
+        _admin_cache[level] = ([], None, [])
+        return _admin_cache[level]
+    with open(path) as f:
         data = json.load(f)
-    _admin_shapes = [
-        (feat["properties"]["shapeName"], shape(feat["geometry"]))
-        for feat in data["features"]
-    ]
-    return _admin_shapes
+    names = []
+    geoms = []
+    for feat in data["features"]:
+        names.append(feat["properties"]["shapeName"])
+        geoms.append(shape(feat["geometry"]))
+    tree = STRtree(geoms)
+    _admin_cache[level] = (names, tree, geoms)
+    return _admin_cache[level]
+
+
+def _query_admin(lat, lon, level, path):
+    names, tree, geoms = _load_admin(level, path)
+    if tree is None:
+        return ""
+    pt = Point(lon, lat)
+    idx = tree.query(pt)
+    for i in idx:
+        if geoms[i].contains(pt):
+            return names[i]
+    return ""
 
 
 def _load_places():
-    """Load OSM places and build a KD-tree for fast nearest-neighbor lookup."""
-    global _place_tree, _place_names
+    global _place_tree, _place_names, _place_coords
     if _place_tree is not None:
         return
-
     if not os.path.exists(_PLACES_PATH):
         logger.warning("Places file not found: %s", _PLACES_PATH)
-        _place_tree = None
-        _place_names = []
+        _place_tree = _place_names = _place_coords = None
         return
 
     import numpy as np
@@ -57,65 +74,78 @@ def _load_places():
 
     coords = []
     names = []
+    latlons = []
     with open(_PLACES_PATH, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            lat = float(row["lat"])
-            lon = float(row["lon"])
+        for row in csv.DictReader(f):
+            lat, lon = float(row["lat"]), float(row["lon"])
             name = row["name_en"] or row["name"]
-            place_type = row["place"]
-            coords.append((lat, lon))
-            names.append((name, place_type))
+            rlat, rlon = math.radians(lat), math.radians(lon)
+            coords.append((math.cos(rlat) * math.cos(rlon),
+                           math.cos(rlat) * math.sin(rlon),
+                           math.sin(rlat)))
+            names.append((name, row["place"]))
+            latlons.append((lat, lon))
 
-    # Convert to 3D cartesian for accurate nearest-neighbor on a sphere
-    arr = []
-    for lat, lon in coords:
-        rlat, rlon = math.radians(lat), math.radians(lon)
-        arr.append((math.cos(rlat) * math.cos(rlon), math.cos(rlat) * math.sin(rlon), math.sin(rlat)))
-
-    _place_tree = cKDTree(arr)
+    _place_tree = cKDTree(coords)
     _place_names = names
+    _place_coords = latlons
     logger.info("Loaded %d OSM places for geocoding", len(names))
 
 
-def get_state(lat: float, lon: float) -> str:
-    """Return Myanmar state/region name for a lat/lon point, or empty string."""
-    admin = _load_admin()
-    pt = Point(lon, lat)
-    for name, polygon in admin:
-        if polygon.contains(pt):
-            return name
-    return ""
+def _haversine_km(lat1, lon1, lat2, lon2):
+    rlat1, rlon1 = math.radians(lat1), math.radians(lon1)
+    rlat2, rlon2 = math.radians(lat2), math.radians(lon2)
+    dlat, dlon = rlat2 - rlat1, rlon2 - rlon1
+    a = math.sin(dlat / 2) ** 2 + math.cos(rlat1) * math.cos(rlat2) * math.sin(dlon / 2) ** 2
+    return EARTH_R * 2 * math.asin(min(1, math.sqrt(a)))
 
 
-def get_nearest_place(lat: float, lon: float) -> tuple:
-    """Return (name, place_type) of the nearest OSM place node."""
+def get_state(lat, lon):
+    return _query_admin(lat, lon, 1, _ADMIN1_PATH)
+
+
+def get_district(lat, lon):
+    return _query_admin(lat, lon, 2, _ADMIN2_PATH)
+
+
+def get_township(lat, lon):
+    return _query_admin(lat, lon, 3, _ADMIN3_PATH)
+
+
+def get_nearest_place(lat, lon):
+    """Return (name, place_type, distance_km) of nearest OSM place."""
     _load_places()
     if _place_tree is None:
-        return ("", "")
-    rlat = math.radians(lat)
-    rlon = math.radians(lon)
-    xyz = (math.cos(rlat) * math.cos(rlon), math.cos(rlat) * math.sin(rlon), math.sin(rlat))
+        return ("", "", 0.0)
+    rlat, rlon = math.radians(lat), math.radians(lon)
+    xyz = (math.cos(rlat) * math.cos(rlon),
+           math.cos(rlat) * math.sin(rlon),
+           math.sin(rlat))
     _, idx = _place_tree.query(xyz)
-    return _place_names[idx]
+    name, ptype = _place_names[idx]
+    plat, plon = _place_coords[idx]
+    dist = _haversine_km(lat, lon, plat, plon)
+    return (name, ptype, round(dist, 1))
 
 
 def enrich_dataframe(df):
-    """Add 'state_region', 'nearest_city', and 'place_type' columns."""
-    _load_admin()
+    """Add state_region, district, township, nearest_city, place_type, distance_km."""
     _load_places()
-
-    states = []
-    cities = []
-    place_types = []
+    states, districts, townships = [], [], []
+    cities, ptypes, dists = [], [], []
     for _, row in df.iterrows():
         lat, lon = row["latitude"], row["longitude"]
         states.append(get_state(lat, lon))
-        name, ptype = get_nearest_place(lat, lon)
+        districts.append(get_district(lat, lon))
+        townships.append(get_township(lat, lon))
+        name, pt, d = get_nearest_place(lat, lon)
         cities.append(name)
-        place_types.append(ptype)
-
+        ptypes.append(pt)
+        dists.append(d)
     df["state_region"] = states
+    df["district"] = districts
+    df["township"] = townships
     df["nearest_city"] = cities
-    df["place_type"] = place_types
+    df["place_type"] = ptypes
+    df["distance_km"] = dists
     return df

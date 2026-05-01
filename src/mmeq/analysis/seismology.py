@@ -159,3 +159,29 @@ def decluster_catalog(
         f"({len(df) - len(mainshocks)} removed)"
     )
     return mainshocks
+
+
+def seismic_gap_analysis(df: pd.DataFrame, lon_range=(94, 98), lat_range=(16, 28), bin_size=0.5) -> pd.DataFrame:
+    """Compute cumulative seismic moment release by latitude along the Sagaing Fault.
+
+    Returns DataFrame with lat_bin, moment_nm, equivalent_mw, event_count.
+    Low-moment bins indicate potential seismic gaps.
+    """
+    corridor = df[
+        (df["longitude"].between(*lon_range)) & (df["latitude"].between(*lat_range))
+    ].copy()
+    corridor["moment"] = 10 ** (1.5 * corridor["mag"] + 9.05)
+    corridor["lat_bin"] = (corridor["latitude"] / bin_size).round() * bin_size
+
+    result = corridor.groupby("lat_bin").agg(
+        moment_nm=("moment", "sum"),
+        event_count=("mag", "count"),
+        max_mag=("mag", "max"),
+    ).reindex(np.arange(lat_range[0], lat_range[1], bin_size), fill_value=0)
+    result.index.name = "lat_bin"
+    result["equivalent_mw"] = np.where(
+        result["moment_nm"] > 0,
+        (np.log10(result["moment_nm"]) - 9.05) / 1.5,
+        0,
+    )
+    return result.reset_index()
