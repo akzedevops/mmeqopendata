@@ -11,42 +11,37 @@
         .header h1 { font-size: 2.2em; margin-bottom: 8px; }
         .header p { font-size: 1.1em; opacity: 0.85; }
         .container { max-width: 1100px; margin: 0 auto; padding: 30px 20px; }
-        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-bottom: 40px; }
-        .stat-card { background: white; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
-        .stat-card .number { font-size: 2em; font-weight: 700; color: #0f3460; }
-        .stat-card .label { font-size: 0.9em; color: #666; margin-top: 4px; }
-        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 40px; }
-        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 15px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
-        .card:hover { transform: translateY(-3px); box-shadow: 0 6px 25px rgba(0,0,0,0.12); }
-        .card-header { padding: 16px 20px; font-weight: 600; font-size: 1.1em; display: flex; align-items: center; gap: 10px; }
-        .card-header.map { background: #0f3460; color: white; }
-        .card-header.dashboard { background: #2d6a4f; color: white; }
-        .card-header.three-d { background: #7b2cbf; color: white; }
-        .card-header.animated { background: #e76f51; color: white; }
-        .card-header.report { background: #264653; color: white; }
-        .card-header.data { background: #457b9d; color: white; }
-        .card-header.buildings { background: #c2185b; color: white; }
-        .card-body { padding: 16px 20px; }
-        .card-body p { font-size: 0.9em; color: #555; line-height: 1.5; margin-bottom: 12px; }
-        .btn { display: inline-block; padding: 8px 20px; border-radius: 6px; text-decoration: none; font-size: 0.9em; font-weight: 500; transition: opacity 0.2s; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 36px; }
+        .stat-card { background: white; border-radius: 10px; padding: 18px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .stat-card .number { font-size: 1.9em; font-weight: 700; color: #0f3460; }
+        .stat-card .label { font-size: 0.85em; color: #666; margin-top: 4px; }
+        .section-title { font-size: 1.3em; font-weight: 600; margin: 32px 0 16px; color: #1a1a2e; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-bottom: 32px; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+        .card-header { padding: 14px 18px; font-weight: 600; font-size: 1.05em; color: white; }
+        .card-body { padding: 14px 18px; }
+        .card-body p { font-size: 0.88em; color: #555; line-height: 1.5; margin-bottom: 12px; }
+        .btn { display: inline-block; padding: 7px 16px; border-radius: 6px; text-decoration: none; font-size: 0.85em; font-weight: 500; transition: opacity 0.2s; color: white; margin: 3px 2px; }
         .btn:hover { opacity: 0.85; }
-        .btn-primary { background: #0f3460; color: white; }
-        .btn-green { background: #2d6a4f; color: white; }
-        .btn-purple { background: #7b2cbf; color: white; }
-        .btn-orange { background: #e76f51; color: white; }
-        .btn-teal { background: #264653; color: white; }
-        .btn-blue { background: #457b9d; color: white; }
-        .btn-pink { background: #c2185b; color: white; }
-        .footer { text-align: center; padding: 30px; color: #999; font-size: 0.85em; }
-        .footer a { color: #0f3460; text-decoration: none; }
+        .bg-map { background: #0f3460; } .bg-dash { background: #2d6a4f; } .bg-3d { background: #7b2cbf; }
+        .bg-anim { background: #e76f51; } .bg-report { background: #264653; } .bg-data { background: #457b9d; }
+        .bg-bldg { background: #c2185b; }
+        .data-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 12px; }
+        .data-item { background: #f8f9fa; border-radius: 8px; padding: 12px; text-align: center; }
+        .data-item .dl-label { font-size: 0.8em; color: #666; margin-bottom: 6px; }
+        .explorer { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); margin-bottom: 32px; }
+        .explorer h3 { font-size: 1.1em; margin-bottom: 12px; }
+        .explorer-controls { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+        .explorer select { padding: 8px 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 0.9em; min-width: 120px; }
+        .explorer .info { font-size: 0.85em; color: #666; margin-top: 8px; }
         .risk-table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
         .risk-table th { background: #f0f0f0; padding: 8px; text-align: left; border-bottom: 2px solid #ddd; }
         .risk-table td { padding: 6px 8px; border-bottom: 1px solid #eee; }
         .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; font-weight: 600; color: white; }
-        .badge-critical { background: #d62728; }
-        .badge-high { background: #ff7f0e; }
-        .badge-moderate { background: #ffdd57; color: #333; }
-        .badge-low { background: #2ca02c; }
+        .badge-critical { background: #d62728; } .badge-high { background: #ff7f0e; }
+        .footer { text-align: center; padding: 24px; color: #999; font-size: 0.82em; }
+        .footer a { color: #0f3460; text-decoration: none; }
     </style>
 </head>
 <body>
@@ -57,130 +52,170 @@
 
     <div class="container">
         <div class="stats">
-            <div class="stat-card">
-                <div class="number">9,242</div>
-                <div class="label">Earthquake Events</div>
-            </div>
-            <div class="stat-card">
-                <div class="number">M7.7</div>
-                <div class="label">2025 Mandalay Earthquake</div>
-            </div>
-            <div class="stat-card">
-                <div class="number">137</div>
-                <div class="label">Dams at Critical/High Risk</div>
-            </div>
-            <div class="stat-card">
-                <div class="number">34,224</div>
-                <div class="label">Buildings Assessed</div>
-            </div>
-            <div class="stat-card">
-                <div class="number">2.9M</div>
-                <div class="label">People within 50km</div>
-            </div>
+            <div class="stat-card"><div class="number">9,242</div><div class="label">Earthquake Events</div></div>
+            <div class="stat-card"><div class="number">M7.7</div><div class="label">2025 Mandalay Earthquake</div></div>
+            <div class="stat-card"><div class="number">137</div><div class="label">Dams Critical/High Risk</div></div>
+            <div class="stat-card"><div class="number">34,224</div><div class="label">Buildings Assessed</div></div>
+            <div class="stat-card"><div class="number">2.9M</div><div class="label">People within 50km</div></div>
         </div>
 
+        <div class="section-title">&#127758; Interactive Visualizations</div>
         <div class="cards">
             <div class="card">
-                <div class="card-header map">&#127758; Interactive Earthquake Map</div>
+                <div class="card-header bg-map">Earthquake Map</div>
                 <div class="card-body">
-                    <p>9,242 earthquakes with magnitude-scaled markers, heatmap, fault lines, and 254 dams. Includes the 2025 M7.7 Sagaing Fault rupture trace.</p>
-                    <a href="report/enhanced_earthquake_map.html" class="btn btn-primary" target="_blank">Open Map</a>
+                    <p>9,242 earthquakes with heatmap, fault lines, and 254 dams including the 2025 M7.7 rupture trace.</p>
+                    <a href="report/enhanced_earthquake_map.html" class="btn bg-map" target="_blank">Open Map</a>
                 </div>
             </div>
-
             <div class="card">
-                <div class="card-header dashboard">&#128202; Analytical Dashboard</div>
+                <div class="card-header bg-dash">Dashboard</div>
                 <div class="card-body">
-                    <p>6-panel Plotly dashboard — magnitude timeline, depth distribution, frequency-magnitude, mag-vs-depth, monthly counts, and top dam risk scores.</p>
-                    <a href="report/dashboard.html" class="btn btn-green" target="_blank">Open Dashboard</a>
+                    <p>6-panel Plotly dashboard — timeline, depth, frequency-magnitude, mag-vs-depth, monthly counts, dam risk.</p>
+                    <a href="report/dashboard.html" class="btn bg-dash" target="_blank">Open Dashboard</a>
                 </div>
             </div>
-
             <div class="card">
-                <div class="card-header three-d">&#127760; 3D Depth Cross-Section</div>
+                <div class="card-header bg-3d">3D Depth View</div>
                 <div class="card-body">
-                    <p>3D visualization of earthquake hypocenters along the Sagaing Fault. Color-coded by depth — shallow crustal events dominate.</p>
-                    <a href="report/depth_cross_section.html" class="btn btn-purple" target="_blank">Open 3D View</a>
+                    <p>3D earthquake hypocenters along the Sagaing Fault, color-coded by depth.</p>
+                    <a href="report/depth_cross_section.html" class="btn bg-3d" target="_blank">Open 3D</a>
                 </div>
             </div>
-
             <div class="card">
-                <div class="card-header animated">&#9200; Animated Timeline</div>
+                <div class="card-header bg-anim">Animated Timeline</div>
                 <div class="card-body">
-                    <p>Month-by-month earthquake progression from 1970 to present. Watch the 2025 M7.7 aftershock sequence light up central Myanmar.</p>
-                    <a href="report/animated_earthquake_map.html" class="btn btn-orange" target="_blank">Open Animation</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header buildings">&#127963; Building Exposure</div>
-                <div class="card-body">
-                    <p>34,224 schools, hospitals, and critical buildings from OpenStreetMap with site-specific Vs30. 2,166 schools and 901 hospitals experienced PGA above 0.1g.</p>
-                    <a href="report/building_exposure.csv" class="btn btn-pink" download>Download CSV</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header report">&#128196; Write-up (PDF)</div>
-                <div class="card-body">
-                    <p>17-page hobby write-up with 14 figures — dam risk scoring, GMPE validation, Coulomb stress, fragility curves, and building exposure.</p>
-                    <a href="../paper/main.pdf" class="btn btn-teal" target="_blank">Read PDF</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header data">&#128230; Data Downloads</div>
-                <div class="card-body">
-                    <p>Dam risk scores (254 dams), building exposure (34K sites), population exposure, sensitivity analysis — all as CSV.</p>
-                    <a href="report/dam_risk_scores.csv" class="btn btn-blue" download>Dam Risk</a>
-                    <a href="report/building_exposure.csv" class="btn btn-blue" download style="margin-left:6px">Buildings</a>
-                    <a href="report/population_exposure.csv" class="btn btn-blue" download style="margin-left:6px">Population</a>
+                    <p>Month-by-month earthquake progression from 1970 to present. Watch the 2025 aftershock sequence.</p>
+                    <a href="report/animated_earthquake_map.html" class="btn bg-anim" target="_blank">Open Animation</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" style="margin-bottom: 30px;">
-            <div class="card-header report">&#9888;&#65039; Top 10 Critical Risk Dams</div>
-            <div class="card-body">
-                <table class="risk-table" id="risk-table">
-                    <thead>
-                        <tr><th>#</th><th>Dam</th><th>PGA (g)</th><th>Dist to Fault</th><th>Risk Score</th><th>Grade</th></tr>
-                    </thead>
-                    <tbody id="risk-tbody"></tbody>
-                </table>
-                <p style="margin-top:12px;font-size:0.85em;color:#888;">Full table in <a href="report/dam_risk_scores.csv">dam_risk_scores.csv</a></p>
+        <div class="section-title">&#128202; Reports &amp; Analysis</div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-header bg-report">Write-up (PDF)</div>
+                <div class="card-body">
+                    <p>17-page hobby write-up — dam risk, GMPE validation, Coulomb stress, fragility, building exposure, HAZUS loss estimates.</p>
+                    <a href="report/paper.pdf" class="btn bg-report" target="_blank">Read PDF</a>
+                </div>
             </div>
+            <div class="card">
+                <div class="card-header bg-bldg">Building Exposure</div>
+                <div class="card-body">
+                    <p>34,224 schools, hospitals, and critical buildings with site-specific Vs30. 2,166 schools and 901 hospitals above 0.1g PGA.</p>
+                    <a href="report/building_exposure.csv" class="btn bg-bldg" download>Download CSV (4.3 MB)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">&#128230; Data Downloads</div>
+        <div class="explorer">
+            <h3>Dam Risk &amp; Exposure Data</h3>
+            <div class="data-grid">
+                <div class="data-item">
+                    <div class="dl-label">Dam Risk Scores (254 dams)</div>
+                    <a href="report/dam_risk_scores.csv" class="btn bg-data" download>CSV</a>
+                </div>
+                <div class="data-item">
+                    <div class="dl-label">Building Exposure (34K sites)</div>
+                    <a href="report/building_exposure.csv" class="btn bg-bldg" download>CSV</a>
+                </div>
+                <div class="data-item">
+                    <div class="dl-label">Population Exposure</div>
+                    <a href="report/population_exposure.csv" class="btn bg-data" download>CSV</a>
+                </div>
+                <div class="data-item">
+                    <div class="dl-label">Monte Carlo PGA</div>
+                    <a href="report/monte_carlo_pga.csv" class="btn bg-data" download>CSV</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="explorer">
+            <h3>&#127744; Earthquake Data Explorer</h3>
+            <p style="font-size:0.88em;color:#555;margin-bottom:12px;">Download earthquake records by year. Includes lat, lon, depth, magnitude, state/region, district, township, nearest village, and distance.</p>
+            <div class="explorer-controls">
+                <select id="year-select">
+                    <option value="">Select year...</option>
+                </select>
+                <select id="format-select">
+                    <option value="csv">CSV</option>
+                    <option value="json">JSON</option>
+                </select>
+                <a id="dl-btn" class="btn bg-data" href="#" download style="pointer-events:none;opacity:0.5;">Download</a>
+                <a id="dl-combined" class="btn bg-report" href="https://raw.githubusercontent.com/akzedevops/mmeqopendata/master/quake_exports/csv/combined/earthquakes_combined.csv" download>All Years (CSV)</a>
+            </div>
+            <div class="info" id="year-info"></div>
+        </div>
+
+        <div class="explorer">
+            <h3>&#9888;&#65039; Top 10 Critical Risk Dams</h3>
+            <table class="risk-table">
+                <thead><tr><th>#</th><th>Dam</th><th>PGA (g)</th><th>Fault Dist</th><th>Score</th><th>Grade</th></tr></thead>
+                <tbody id="risk-tbody"></tbody>
+            </table>
+            <p style="margin-top:10px;font-size:0.82em;color:#888;">Full table: <a href="report/dam_risk_scores.csv">dam_risk_scores.csv</a></p>
         </div>
     </div>
 
     <div class="footer">
-        <p>Data: <a href="https://mmeq.akze.net">Myanmar Earthquake API</a> | Dams: <a href="https://data.opendevelopmentmekong.net/en/dataset/myanmar-dams">Open Development Mekong</a> | Buildings: <a href="https://www.openstreetmap.org/">OpenStreetMap</a></p>
-        <p><a href="https://github.com/akzedevops/mmeqopendata">GitHub</a> — MIT License</p>
+        <p>Data: <a href="https://mmeq.akze.net">Myanmar Earthquake API</a> · <a href="https://data.opendevelopmentmekong.net/en/dataset/myanmar-dams">Open Development Mekong</a> · <a href="https://www.openstreetmap.org/">OpenStreetMap</a> · <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us7000pn9s">USGS ShakeMap</a></p>
+        <p><a href="https://github.com/akzedevops/mmeqopendata">GitHub</a> · MIT License</p>
     </div>
 
     <script>
-    fetch('report/dam_risk_scores.csv')
-        .then(r => r.text())
-        .then(text => {
-            const lines = text.trim().split('\n');
-            const headers = lines[0].split(',').map(h => h.replace(/"/g, ''));
-            const nameIdx = 0;
-            const pgaIdx = headers.indexOf('pga_g');
-            const faultIdx = headers.indexOf('fault_distance_km');
-            const scoreIdx = headers.indexOf('composite_score');
-            const gradeIdx = headers.indexOf('risk_grade');
-            const tbody = document.getElementById('risk-tbody');
-            let count = 0;
-            for (let i = 1; i < lines.length && count < 10; i++) {
-                const cols = lines[i].split(',').map(c => c.replace(/"/g, ''));
-                if (cols[gradeIdx] !== 'Critical') continue;
-                count++;
-                const row = document.createElement('tr');
-                row.innerHTML = `<td>${count}</td><td>${cols[nameIdx]}</td><td>${parseFloat(cols[pgaIdx]).toFixed(3)}</td><td>${parseFloat(cols[faultIdx]).toFixed(1)} km</td><td>${parseFloat(cols[scoreIdx]).toFixed(1)}</td><td><span class="badge badge-critical">Critical</span></td>`;
-                tbody.appendChild(row);
-            }
-        })
-        .catch(() => {});
+    const REPO = 'https://raw.githubusercontent.com/akzedevops/mmeqopendata/master/quake_exports';
+    const YEARS = {
+        2026:350,2025:2554,2024:621,2023:722,2022:1897,2021:467,2020:388,
+        2019:89,2018:91,2017:87,2016:36,2015:17,2013:11,2012:71,2011:71,
+        2010:28,2009:37,2008:122,2007:83,2006:61,2005:75,2004:108,2003:104,
+        2002:36,2001:44,2000:40,1999:32,1998:41,1997:45,1996:70,1995:72,
+        1994:35,1993:41,1992:63,1991:50,1990:43,1989:59,1988:87,1987:33,
+        1986:30,1985:24,1984:30,1983:32,1982:21,1981:33,1980:22,1979:27,
+        1978:28,1977:16,1976:46,1975:24,1974:14,1973:12,1971:1,1970:1
+    };
+
+    const sel = document.getElementById('year-select');
+    const fmt = document.getElementById('format-select');
+    const btn = document.getElementById('dl-btn');
+    const info = document.getElementById('year-info');
+
+    Object.entries(YEARS).forEach(([y, n]) => {
+        const opt = document.createElement('option');
+        opt.value = y; opt.textContent = `${y} (${n.toLocaleString()} events)`;
+        sel.appendChild(opt);
+    });
+
+    function updateLink() {
+        const y = sel.value, f = fmt.value;
+        if (!y) { btn.style.pointerEvents='none'; btn.style.opacity='0.5'; btn.href='#'; info.textContent=''; return; }
+        const ext = f === 'csv' ? 'csv' : 'json';
+        const dir = f === 'csv' ? 'csv/yearly' : 'json/yearly';
+        btn.href = `${REPO}/${dir}/earthquakes_${y}.${ext}`;
+        btn.style.pointerEvents='auto'; btn.style.opacity='1';
+        btn.textContent = `Download ${y}.${ext}`;
+        info.textContent = `${YEARS[y].toLocaleString()} earthquake records · Columns: lat, lon, depth, mag, state_region, district, township, nearest_city, place_type, distance_km`;
+    }
+    sel.onchange = updateLink;
+    fmt.onchange = updateLink;
+
+    // Dam risk table
+    fetch('report/dam_risk_scores.csv').then(r=>r.text()).then(text=>{
+        const lines=text.trim().split('\n');
+        const h=lines[0].split(',').map(s=>s.replace(/"/g,''));
+        const ni=0,pi=h.indexOf('pga_g'),fi=h.indexOf('fault_distance_km'),si=h.indexOf('composite_score'),gi=h.indexOf('risk_grade');
+        const tbody=document.getElementById('risk-tbody');
+        let c=0;
+        for(let i=1;i<lines.length&&c<10;i++){
+            const cols=lines[i].split(',').map(s=>s.replace(/"/g,''));
+            if(cols[gi]!=='Critical')continue;
+            c++;
+            const tr=document.createElement('tr');
+            tr.innerHTML=`<td>${c}</td><td>${cols[ni]}</td><td>${parseFloat(cols[pi]).toFixed(3)}</td><td>${parseFloat(cols[fi]).toFixed(1)} km</td><td>${parseFloat(cols[si]).toFixed(1)}</td><td><span class="badge badge-critical">Critical</span></td>`;
+            tbody.appendChild(tr);
+        }
+    }).catch(()=>{});
     </script>
 </body>
 </html>
