@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-23.082,95.878,33.0,4.4,mb,,,,1.3,us,usp0005zav,2014-11-07T00:53:49.335Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-08-27 11:45:50,1993-08-27 18:15:50,Saigang,Chaung Shey,village
-26.089,95.665,105.7,4.3,mb,,,,1.1,us,usp0005yrp,2014-11-07T00:53:45.688Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1993-08-17 22:56:44,1993-08-18 05:26:44,Saigang,Longshaodji,village
-22.812,93.567,74.5,4.8,mb,,,,0.9,us,usp0005xuj,2014-11-07T00:53:38.082Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1993-08-02 14:41:45,1993-08-02 21:11:45,Chin,Dokthek,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+23.082,95.878,33.0,4.4,mb,,,,1.3,us,usp0005zav,2014-11-07T00:53:49.335Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-08-27 11:45:50,1993-08-27 18:15:50,Saigang,Kanbalu,Kanbalu,Chaung Shey,village,1.5
+26.089,95.665,105.7,4.3,mb,,,,1.1,us,usp0005yrp,2014-11-07T00:53:45.688Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1993-08-17 22:56:44,1993-08-18 05:26:44,Saigang,Hkamti,Hkamti,Longshaodji,village,2.6
+22.812,93.567,74.5,4.8,mb,,,,0.9,us,usp0005xuj,2014-11-07T00:53:38.082Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1993-08-02 14:41:45,1993-08-02 21:11:45,Chin,Falam,Falam,Dokthek,village,0.8

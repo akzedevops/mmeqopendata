@@ -1,12 +1,12 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-16.78,96.17,10.0,3.4,ml,4,320.0,,0.62,us,usp000jywp,2014-11-07T01:49:54.705Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-30 13:37:02,2013-01-30 20:07:02,Yangon,Yangon,city
-23.61,94.707,110.9,4.7,mb,62,63.3,,0.61,us,usp000jyeh,2014-11-07T01:49:50.197Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-15 11:17:00,2013-01-15 17:47:00,Saigang,Taing Thar,village
-25.329,95.048,93.0,5.8,mww,482,14.7,,0.99,us,usp000jy3c,2014-11-07T01:49:47.954Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-09 01:41:53,2013-01-09 08:11:53,Saigang,Tawai,village
-24.886,94.002,73.8,4.4,mb,55,86.6,,0.8,us,usp000jxs4,2014-11-07T01:49:45.407Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2013-01-03 05:47:27,2013-01-03 12:17:27,,Sawombung,village
-22.624,94.02,63.8,4.4,mb,48,78.2,,0.99,us,usp000jxre,2014-11-07T01:49:44.701Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-02 17:25:40,2013-01-02 23:55:40,Chin,ရွေမြစ်သာ,village
-22.802,94.093,54.6,4.3,mb,51,69.0,,0.98,us,usp000k0aj,2014-11-07T01:50:35.451Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-04-18 03:00:00,2013-04-18 09:30:00,Saigang,Tin Thar,village
-24.107,97.943,65.4,4.2,mb,17,157.9,,1.12,us,usp000k126,2014-11-07T01:50:58.836Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2013-06-01 15:54:48,2013-06-01 22:24:48,,勐力村(旧),village
-18.84,95.638,66.9,4.3,mb,17,167.0,,0.54,us,usp000k115,2014-11-07T01:50:55.719Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-05-30 10:31:20,2013-05-30 17:01:20,Bago,Oke Hpo,village
-15.196,96.28,23.8,4.3,mb,31,67.0,,1.0,us,usp000k0m2,2014-11-07T01:50:45.563Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2013-05-07 21:04:54,2013-05-08 03:34:54,,Aung Hlaing,village
-19.455,94.735,35.4,4.6,mb,33,155.0,,0.46,us,usp000k252,2014-11-07T01:51:18.075Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-07-19 01:53:52,2013-07-19 08:23:52,Magway,Pan Pin Kone,village
-24.138,95.795,58.4,4.3,mb,14,158.3,,0.52,us,usp000k1u0,2014-11-07T01:51:14.368Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-07-08 13:27:46,2013-07-08 19:57:46,Saigang,Taw Shaw,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+16.78,96.17,10.0,3.4,ml,4,320.0,,0.62,us,usp000jywp,2014-11-07T01:49:54.705Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-30 13:37:02,2013-01-30 20:07:02,Yangon,Yangon (East),Pazundaung,Yangon,city,2.1
+23.61,94.707,110.9,4.7,mb,62,63.3,,0.61,us,usp000jyeh,2014-11-07T01:49:50.197Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-15 11:17:00,2013-01-15 17:47:00,Saigang,Mawlaik,Mawlaik,Taing Thar,village,5.0
+25.329,95.048,93.0,5.8,mww,482,14.7,,0.99,us,usp000jy3c,2014-11-07T01:49:47.954Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-09 01:41:53,2013-01-09 08:11:53,Saigang,Hkamti,Homalin,Tawai,village,4.6
+24.886,94.002,73.8,4.4,mb,55,86.6,,0.8,us,usp000jxs4,2014-11-07T01:49:45.407Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2013-01-03 05:47:27,2013-01-03 12:17:27,,,,Sawombung,village,2.0
+22.624,94.02,63.8,4.4,mb,48,78.2,,0.99,us,usp000jxre,2014-11-07T01:49:44.701Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-02 17:25:40,2013-01-02 23:55:40,Chin,Hakha,Hakha,ရွေမြစ်သာ,village,4.5
+22.802,94.093,54.6,4.3,mb,51,69.0,,0.98,us,usp000k0aj,2014-11-07T01:50:35.451Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-04-18 03:00:00,2013-04-18 09:30:00,Saigang,Kale,Kale,Tin Thar,village,1.8
+24.107,97.943,65.4,4.2,mb,17,157.9,,1.12,us,usp000k126,2014-11-07T01:50:58.836Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2013-06-01 15:54:48,2013-06-01 22:24:48,,,,勐力村(旧),village,1.6
+18.84,95.638,66.9,4.3,mb,17,167.0,,0.54,us,usp000k115,2014-11-07T01:50:55.719Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-05-30 10:31:20,2013-05-30 17:01:20,Bago,Pyay,Paukkhaung,Oke Hpo,village,1.0
+15.196,96.28,23.8,4.3,mb,31,67.0,,1.0,us,usp000k0m2,2014-11-07T01:50:45.563Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2013-05-07 21:04:54,2013-05-08 03:34:54,,,,Aung Hlaing,village,105.7
+19.455,94.735,35.4,4.6,mb,33,155.0,,0.46,us,usp000k252,2014-11-07T01:51:18.075Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-07-19 01:53:52,2013-07-19 08:23:52,Magway,Thayet,Mindon,Pan Pin Kone,village,0.8
+24.138,95.795,58.4,4.3,mb,14,158.3,,0.52,us,usp000k1u0,2014-11-07T01:51:14.368Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-07-08 13:27:46,2013-07-08 19:57:46,Saigang,Katha,Wuntho,Taw Shaw,village,6.5

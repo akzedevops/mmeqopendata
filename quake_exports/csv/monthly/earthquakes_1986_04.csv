@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.839,94.523,115.3,5.1,mw,,,,0.8,us,usp0002t6u,2015-02-11T17:15:22.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-04-26 00:25:59,1986-04-26 06:55:59,Saigang,Taung Kone,village
-24.983,95.356,146.9,4.5,mb,,,,0.7,us,usp0002t1j,2014-11-07T00:38:14.735Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-04-20 00:03:12,1986-04-20 06:33:12,Saigang,Zay Di Seik,village
-24.46,94.807,85.2,5.0,mb,,,,1.0,us,usp0002szj,2014-11-07T00:38:14.153Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1986-04-17 13:15:57,1986-04-17 19:45:57,Saigang,Lwin U,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.839,94.523,115.3,5.1,mw,,,,0.8,us,usp0002t6u,2015-02-11T17:15:22.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-04-26 00:25:59,1986-04-26 06:55:59,Saigang,Kale,Mingin,Taung Kone,village,1.7
+24.983,95.356,146.9,4.5,mb,,,,0.7,us,usp0002t1j,2014-11-07T00:38:14.735Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-04-20 00:03:12,1986-04-20 06:33:12,Saigang,Hkamti,Homalin,Zay Di Seik,village,7.6
+24.46,94.807,85.2,5.0,mb,,,,1.0,us,usp0002szj,2014-11-07T00:38:14.153Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1986-04-17 13:15:57,1986-04-17 19:45:57,Saigang,Mawlaik,Paungbyin,Lwin U,village,4.2

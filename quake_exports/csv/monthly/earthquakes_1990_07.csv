@@ -1,8 +1,8 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.95,96.469,33.0,4.2,mb,,,,1.6,us,usp0004cs3,2014-11-07T00:46:47.862Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-31 08:19:26,1990-07-31 14:49:26,Kachin,Taung U Lwin,village
-17.791,94.744,33.0,4.8,mb,,,,1.0,us,usp0004cht,2014-11-07T00:46:46.217Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-25 20:10:17,1990-07-26 02:40:17,Rakhine,Gyo Lein,village
-23.623,94.503,106.3,4.2,mb,,,,1.5,us,usp0004bs8,2014-11-07T00:46:40.969Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-13 03:24:05,1990-07-13 09:54:05,Saigang,Taung In,village
-15.308,94.029,33.0,5.0,mb,,,,1.4,us,usp0004bkn,2014-11-07T00:46:39.766Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-09 13:19:53,1990-07-09 19:49:53,,Pyi Thar Yar,village
-22.676,93.952,33.0,4.1,mb,,,,0.2,us,usp0004bdy,2014-11-07T00:46:38.452Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-07-05 14:20:51,1990-07-05 20:50:51,Chin,Ruan,village
-19.56,96.383,33.0,4.0,mb,,,,1.0,us,usp0004b99,2014-11-07T00:46:37.263Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-02 12:41:53,1990-07-02 19:11:53,Mandalay,Than Ma Ye,village
-15.171,94.836,33.0,4.3,mb,,,,0.9,us,usp0004b8u,2014-11-07T00:46:37.097Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-02 07:51:20,1990-07-02 14:21:20,,Kwin Pauk,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.95,96.469,33.0,4.2,mb,,,,1.6,us,usp0004cs3,2014-11-07T00:46:47.862Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-31 08:19:26,1990-07-31 14:49:26,Kachin,Mohnyin,Mohnyin,Taung U Lwin,village,1.0
+17.791,94.744,33.0,4.8,mb,,,,1.0,us,usp0004cht,2014-11-07T00:46:46.217Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-25 20:10:17,1990-07-26 02:40:17,Rakhine,Thandwe,Gwa,Gyo Lein,village,18.0
+23.623,94.503,106.3,4.2,mb,,,,1.5,us,usp0004bs8,2014-11-07T00:46:40.969Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-13 03:24:05,1990-07-13 09:54:05,Saigang,Mawlaik,Mawlaik,Taung In,village,2.7
+15.308,94.029,33.0,5.0,mb,,,,1.4,us,usp0004bkn,2014-11-07T00:46:39.766Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-09 13:19:53,1990-07-09 19:49:53,,,,Pyi Thar Yar,village,72.7
+22.676,93.952,33.0,4.1,mb,,,,0.2,us,usp0004bdy,2014-11-07T00:46:38.452Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-07-05 14:20:51,1990-07-05 20:50:51,Chin,Hakha,Hakha,Ruan,village,10.1
+19.56,96.383,33.0,4.0,mb,,,,1.0,us,usp0004b99,2014-11-07T00:46:37.263Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-02 12:41:53,1990-07-02 19:11:53,Mandalay,Det Khi Na,Lewe,Than Ma Ye,village,2.4
+15.171,94.836,33.0,4.3,mb,,,,0.9,us,usp0004b8u,2014-11-07T00:46:37.097Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1990-07-02 07:51:20,1990-07-02 14:21:20,,,,Kwin Pauk,village,65.4

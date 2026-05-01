@@ -1,3 +1,3 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.349,94.41,33.0,4.7,mb,,,,1.3,us,usp00022bb,2014-11-07T00:34:32.158Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1984-02-28 23:50:32,1984-02-29 06:20:32,Saigang,Pwint Kar,village
-24.785,94.745,42.5,4.9,mb,,,,1.2,us,usp000223f,2014-11-07T00:34:31.181Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1984-02-19 09:29:48,1984-02-19 15:59:48,Saigang,Kyauk Kyoe,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.349,94.41,33.0,4.7,mb,,,,1.3,us,usp00022bb,2014-11-07T00:34:32.158Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1984-02-28 23:50:32,1984-02-29 06:20:32,Saigang,Yinmarbin,Kani,Pwint Kar,village,20.2
+24.785,94.745,42.5,4.9,mb,,,,1.2,us,usp000223f,2014-11-07T00:34:31.181Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1984-02-19 09:29:48,1984-02-19 15:59:48,Saigang,Hkamti,Homalin,Kyauk Kyoe,village,2.3

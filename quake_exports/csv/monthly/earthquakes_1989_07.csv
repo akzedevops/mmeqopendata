@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.456,94.033,33.0,4.5,mb,,,,0.7,us,usp0003xuu,2014-11-07T00:44:35.422Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1989-07-30 13:17:25,1989-07-30 19:47:25,,Beaularam,village
-22.809,94.56,107.7,5.6,mw,,,,0.9,us,usp0003xb1,2015-02-11T17:15:45.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-07-15 00:09:16,1989-07-15 06:39:16,Saigang,Laung Kyin,village
-23.544,94.351,67.7,4.5,mb,,,,1.1,us,usp0003x76,2014-11-07T00:44:32.683Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-07-10 14:46:54,1989-07-10 21:16:54,Saigang,Man Hpar Lay,village
-24.569,95.896,33.0,4.9,mb,,,,0.9,us,usp0003wvv,2014-11-07T00:44:29.111Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-07-02 07:55:16,1989-07-02 14:25:16,Saigang,He Chein,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.456,94.033,33.0,4.5,mb,,,,0.7,us,usp0003xuu,2014-11-07T00:44:35.422Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1989-07-30 13:17:25,1989-07-30 19:47:25,,,,Beaularam,village,0.2
+22.809,94.56,107.7,5.6,mw,,,,0.9,us,usp0003xb1,2015-02-11T17:15:45.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-07-15 00:09:16,1989-07-15 06:39:16,Saigang,Kale,Mingin,Laung Kyin,village,2.2
+23.544,94.351,67.7,4.5,mb,,,,1.1,us,usp0003x76,2014-11-07T00:44:32.683Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-07-10 14:46:54,1989-07-10 21:16:54,Saigang,Kale,Kalewa,Man Hpar Lay,village,6.3
+24.569,95.896,33.0,4.9,mb,,,,0.9,us,usp0003wvv,2014-11-07T00:44:29.111Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-07-02 07:55:16,1989-07-02 14:25:16,Saigang,Katha,Banmauk,He Chein,village,3.3

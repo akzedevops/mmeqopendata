@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-20.32,94.395,69.8,5.1,mw,,,,0.9,us,usp0003n42,2015-02-11T17:15:39.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-10-23 11:43:09,1988-10-23 18:13:09,Magway,Wun Lo,village
-21.995,95.422,33.0,4.4,mb,,,,0.5,us,usp0003mry,2014-11-07T00:42:57.741Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-10-12 18:54:16,1988-10-13 01:24:16,Saigang,Kone,village
-24.683,94.693,34.7,4.5,mb,,,,1.1,us,usp0003mp8,2014-11-07T00:42:57.145Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1988-10-09 22:05:00,1988-10-10 04:35:00,Saigang,Shwe Pyi Aye,town
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+20.32,94.395,69.8,5.1,mw,,,,0.9,us,usp0003n42,2015-02-11T17:15:39.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-10-23 11:43:09,1988-10-23 18:13:09,Magway,Minbu,Sidoktaya,Wun Lo,village,1.7
+21.995,95.422,33.0,4.4,mb,,,,0.5,us,usp0003mry,2014-11-07T00:42:57.741Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-10-12 18:54:16,1988-10-13 01:24:16,Saigang,Sagaing,Myinmu,Kone,village,1.1
+24.683,94.693,34.7,4.5,mb,,,,1.1,us,usp0003mp8,2014-11-07T00:42:57.145Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1988-10-09 22:05:00,1988-10-10 04:35:00,Saigang,Hkamti,Homalin,Shwe Pyi Aye,town,3.9

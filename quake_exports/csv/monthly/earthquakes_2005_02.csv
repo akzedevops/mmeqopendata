@@ -1,10 +1,10 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.938,94.528,116.8,4.0,mb,11,160.4,,0.43,us,usp000dh6g,2014-11-07T01:25:05.540Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-28 13:54:19,2005-02-28 20:24:19,Saigang,Yon Thar,village
-23.614,94.552,94.8,4.4,mb,39,132.1,,1.08,us,usp000dgqp,2014-11-07T01:25:02.541Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-22 07:46:28,2005-02-22 14:16:28,Saigang,Kaung Kway,village
-25.473,95.019,76.3,4.2,mb,26,86.8,,1.03,us,usp000dgpj,2014-11-07T01:25:02.298Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-21 23:07:05,2005-02-22 05:37:05,Saigang,Tikun Old,village
-21.193,93.525,54.4,4.3,mb,28,117.7,,0.63,us,usp000dgpf,2014-11-07T01:25:02.291Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-21 22:41:27,2005-02-22 05:11:27,Chin,Lon Du,village
-25.204,96.439,53.4,3.8,mb,19,124.9,,0.79,us,usp000dgp2,2014-11-07T01:25:02.267Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-21 18:26:15,2005-02-22 00:56:15,Kachin,Ma Na Hkaw,village
-24.428,94.537,69.7,5.2,mwc,199,61.4,,0.9,us,usp000dg6x,2015-02-11T17:17:57.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-02-15 13:05:49,2005-02-15 19:35:49,Saigang,Ywar Thar,village
-19.819,95.803,16.0,4.8,mwc,195,55.2,,0.71,us,usp000dfq3,2015-02-11T17:17:57.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-08 07:20:58,2005-02-08 13:50:58,Magway,Thone Gwa,village
-22.97,94.329,97.3,4.4,mb,19,87.0,,0.79,us,usp000dfpg,2014-11-07T01:24:57.152Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-08 01:36:49,2005-02-08 08:06:49,Saigang,Thein Kone,village
-26.125,95.563,75.5,4.9,mwc,236,59.7,,0.75,us,usp000dffd,2015-02-11T17:17:56.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-02-03 20:13:29,2005-02-04 02:43:29,Saigang,Hat Ti,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.938,94.528,116.8,4.0,mb,11,160.4,,0.43,us,usp000dh6g,2014-11-07T01:25:05.540Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-28 13:54:19,2005-02-28 20:24:19,Saigang,Kale,Mingin,Yon Thar,village,4.5
+23.614,94.552,94.8,4.4,mb,39,132.1,,1.08,us,usp000dgqp,2014-11-07T01:25:02.541Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-22 07:46:28,2005-02-22 14:16:28,Saigang,Mawlaik,Mawlaik,Kaung Kway,village,2.7
+25.473,95.019,76.3,4.2,mb,26,86.8,,1.03,us,usp000dgpj,2014-11-07T01:25:02.298Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-21 23:07:05,2005-02-22 05:37:05,Saigang,Hkamti,Lay Shi,Tikun Old,village,2.6
+21.193,93.525,54.4,4.3,mb,28,117.7,,0.63,us,usp000dgpf,2014-11-07T01:25:02.291Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-21 22:41:27,2005-02-22 05:11:27,Chin,Mindat,Mindat,Lon Du,village,4.1
+25.204,96.439,53.4,3.8,mb,19,124.9,,0.79,us,usp000dgp2,2014-11-07T01:25:02.267Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-21 18:26:15,2005-02-22 00:56:15,Kachin,Mohnyin,Mohnyin,Ma Na Hkaw,village,3.9
+24.428,94.537,69.7,5.2,mwc,199,61.4,,0.9,us,usp000dg6x,2015-02-11T17:17:57.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-02-15 13:05:49,2005-02-15 19:35:49,Saigang,Tamu,Tamu,Ywar Thar,village,7.0
+19.819,95.803,16.0,4.8,mwc,195,55.2,,0.71,us,usp000dfq3,2015-02-11T17:17:57.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-08 07:20:58,2005-02-08 13:50:58,Magway,Magway,Taungdwingyi,Thone Gwa,village,7.4
+22.97,94.329,97.3,4.4,mb,19,87.0,,0.79,us,usp000dfpg,2014-11-07T01:24:57.152Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-02-08 01:36:49,2005-02-08 08:06:49,Saigang,Kale,Mingin,Thein Kone,village,2.7
+26.125,95.563,75.5,4.9,mwc,236,59.7,,0.75,us,usp000dffd,2015-02-11T17:17:56.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-02-03 20:13:29,2005-02-04 02:43:29,Saigang,Hkamti,Hkamti,Hat Ti,village,1.8

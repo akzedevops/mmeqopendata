@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.849,95.305,148.2,4.0,mb,14,,,1.19,us,usp000b5qy,2014-11-07T01:15:47.136Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-06-07 18:30:21,2002-06-08 01:00:21,Saigang,Kyoet Pin,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.849,95.305,148.2,4.0,mb,14,,,1.19,us,usp000b5qy,2014-11-07T01:15:47.136Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-06-07 18:30:21,2002-06-08 01:00:21,Saigang,Hkamti,Homalin,Kyoet Pin,village,1.1

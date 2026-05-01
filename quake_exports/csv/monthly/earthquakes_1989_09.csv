@@ -1,10 +1,10 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-20.236,98.848,13.1,5.8,mw,,,,1.2,us,usp000406y,2015-02-12T20:08:12.472Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-30 18:19:23,1989-10-01 00:49:23,Shan,Hpar Chei,village
-20.349,98.821,23.9,4.9,mb,,,,1.0,us,usp000406k,2014-11-07T00:44:55.248Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-30 08:40:22,1989-09-30 15:10:22,Shan,Ho Hwayt,village
-20.205,98.51,33.0,4.3,mb,,,,1.3,us,usp000404k,2014-11-07T00:44:54.999Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-28 22:50:11,1989-09-29 05:20:11,Shan,Ho Hpai,village
-19.353,97.673,33.0,4.6,mb,,,,0.9,us,usp000404j,2014-11-07T00:44:54.997Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-28 22:09:58,1989-09-29 04:39:58,Kayah,Ban Mai Sa Pe,village
-20.329,98.822,10.8,5.8,mw,,,,1.2,us,usp000404h,2015-02-12T22:14:34.062Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-28 21:52:17,1989-09-29 04:22:17,Shan,Ho Hwayt,village
-20.214,98.746,33.0,4.1,mb,,,,1.1,us,usp000404g,2014-11-07T00:44:54.971Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-28 21:43:10,1989-09-29 04:13:10,Shan,Ho Hwayt,village
-23.221,99.678,33.0,4.2,mb,,,,1.4,us,usp0004039,2014-11-07T00:44:54.869Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1989-09-27 18:37:50,1989-09-28 01:07:50,,Ankang,town
-23.02,94.598,85.3,3.8,mb,,,,1.6,us,usp0003zzp,2014-11-07T00:44:54.086Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-25 02:09:07,1989-09-25 08:39:07,Saigang,Mauk Tet,village
-20.697,94.968,134.0,5.4,mw,,,,0.9,us,usp0003zyq,2015-02-11T17:15:46.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-24 10:55:20,1989-09-24 17:25:20,Magway,Than Bo,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+20.236,98.848,13.1,5.8,mw,,,,1.2,us,usp000406y,2015-02-12T20:08:12.472Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-30 18:19:23,1989-10-01 00:49:23,Shan,Monghsat,Mongton,Hpar Chei,village,6.8
+20.349,98.821,23.9,4.9,mb,,,,1.0,us,usp000406k,2014-11-07T00:44:55.248Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-30 08:40:22,1989-09-30 15:10:22,Shan,Monghsat,Mongton,Ho Hwayt,village,1.0
+20.205,98.51,33.0,4.3,mb,,,,1.3,us,usp000404k,2014-11-07T00:44:54.999Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-28 22:50:11,1989-09-29 05:20:11,Shan,Langkho,Mongpan,Ho Hpai,village,17.4
+19.353,97.673,33.0,4.6,mb,,,,0.9,us,usp000404j,2014-11-07T00:44:54.997Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-28 22:09:58,1989-09-29 04:39:58,Kayah,Loikaw,Shadaw,Ban Mai Sa Pe,village,21.0
+20.329,98.822,10.8,5.8,mw,,,,1.2,us,usp000404h,2015-02-12T22:14:34.062Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-28 21:52:17,1989-09-29 04:22:17,Shan,Monghsat,Mongton,Ho Hwayt,village,3.0
+20.214,98.746,33.0,4.1,mb,,,,1.1,us,usp000404g,2014-11-07T00:44:54.971Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-28 21:43:10,1989-09-29 04:13:10,Shan,Monghsat,Mongton,Ho Hwayt,village,17.2
+23.221,99.678,33.0,4.2,mb,,,,1.4,us,usp0004039,2014-11-07T00:44:54.869Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1989-09-27 18:37:50,1989-09-28 01:07:50,,,,Ankang,town,7.9
+23.02,94.598,85.3,3.8,mb,,,,1.6,us,usp0003zzp,2014-11-07T00:44:54.086Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-25 02:09:07,1989-09-25 08:39:07,Saigang,Kale,Mingin,Mauk Tet,village,5.5
+20.697,94.968,134.0,5.4,mw,,,,0.9,us,usp0003zyq,2015-02-11T17:15:46.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-09-24 10:55:20,1989-09-24 17:25:20,Magway,Magway,Chauk,Than Bo,village,1.5

@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-25.236,96.289,50.0,5.1,ms,,,,,us,usp000146d,2015-02-11T17:14:47.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-11-25 02:40:49,1979-11-25 09:10:49,Kachin,Nam Mee Lawng,village
-22.768,95.949,33.0,4.7,mb,,,,,us,usp00013z7,2014-11-06T23:22:07.281Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-11-12 01:31:17,1979-11-12 08:01:17,Saigang,Koke Tet,village
-22.001,93.941,70.0,4.5,mb,,,,,us,usp00013vy,2014-11-06T23:22:07.149Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1979-11-07 06:42:50,1979-11-07 13:12:50,Chin,Ramsi,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+25.236,96.289,50.0,5.1,ms,,,,,us,usp000146d,2015-02-11T17:14:47.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-11-25 02:40:49,1979-11-25 09:10:49,Kachin,Mohnyin,Mohnyin,Nam Mee Lawng,village,4.6
+22.768,95.949,33.0,4.7,mb,,,,,us,usp00013z7,2014-11-06T23:22:07.281Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-11-12 01:31:17,1979-11-12 08:01:17,Saigang,Shwebo,Khin-U,Koke Tet,village,2.1
+22.001,93.941,70.0,4.5,mb,,,,,us,usp00013vy,2014-11-06T23:22:07.149Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1979-11-07 06:42:50,1979-11-07 13:12:50,Chin,Mindat,Matupi,Ramsi,village,3.5

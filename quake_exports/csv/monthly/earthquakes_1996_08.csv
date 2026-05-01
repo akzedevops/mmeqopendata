@@ -1,9 +1,9 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-20.489,97.935,33.0,4.4,mb,,,,1.2,us,usp0007p0e,2014-11-07T01:01:01.351Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-24 20:02:40,1996-08-25 02:32:40,Shan,ဝၢၼ်ႈမႂ်ႇလူင်ၸၢမ်,village
-24.119,94.988,120.0,4.4,mb,,,,0.7,us,usp0007nu2,2014-11-07T01:01:00.157Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-08-20 08:30:10,1996-08-20 15:00:10,Saigang,Haw Zaung,village
-24.42,94.973,33.0,4.1,mb,,,,0.5,us,usp0007np7,2014-11-07T01:00:59.439Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-08-16 23:39:38,1996-08-17 06:09:38,Saigang,Sat Htaing,village
-24.713,95.299,33.0,4.2,mb,,,,1.2,us,usp0007nd3,2014-11-07T01:00:58.086Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-10 22:43:37,1996-08-11 05:13:37,Saigang,Khon Tan,village
-23.907,96.772,85.2,4.3,mb,,,,0.8,us,usp0007n7e,2014-11-07T01:00:56.690Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-07 14:36:33,1996-08-07 21:06:33,Shan,Kun Taw,village
-25.35,95.54,100.0,3.9,mb,,,,0.9,us,usp0007n68,2014-11-07T01:00:56.497Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-06 06:21:04,1996-08-06 12:51:04,Saigang,,village
-24.898,95.279,125.0,4.5,mb,,,,0.7,us,usp0007n62,2014-11-07T01:00:56.467Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-06 03:04:32,1996-08-06 09:34:32,Saigang,Tin Kyit,village
-21.487,94.479,100.0,3.5,mb,,,,0.4,us,usp0007n18,2014-11-07T01:00:54.925Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-02 21:07:04,1996-08-03 03:37:04,Magway,Kyauk Tan,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+20.489,97.935,33.0,4.4,mb,,,,1.2,us,usp0007p0e,2014-11-07T01:01:01.351Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-24 20:02:40,1996-08-25 02:32:40,Shan,Langkho,Mongnai,ဝၢၼ်ႈမႂ်ႇလူင်ၸၢမ်,village,3.6
+24.119,94.988,120.0,4.4,mb,,,,0.7,us,usp0007nu2,2014-11-07T01:01:00.157Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-08-20 08:30:10,1996-08-20 15:00:10,Saigang,Mawlaik,Paungbyin,Haw Zaung,village,6.8
+24.42,94.973,33.0,4.1,mb,,,,0.5,us,usp0007np7,2014-11-07T01:00:59.439Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-08-16 23:39:38,1996-08-17 06:09:38,Saigang,Mawlaik,Paungbyin,Sat Htaing,village,5.0
+24.713,95.299,33.0,4.2,mb,,,,1.2,us,usp0007nd3,2014-11-07T01:00:58.086Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-10 22:43:37,1996-08-11 05:13:37,Saigang,Hkamti,Homalin,Khon Tan,village,4.6
+23.907,96.772,85.2,4.3,mb,,,,0.8,us,usp0007n7e,2014-11-07T01:00:56.690Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-07 14:36:33,1996-08-07 21:06:33,Shan,Mongmit,Mabein,Kun Taw,village,16.2
+25.35,95.54,100.0,3.9,mb,,,,0.9,us,usp0007n68,2014-11-07T01:00:56.497Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-06 06:21:04,1996-08-06 12:51:04,Saigang,Hkamti,Hkamti,,village,17.3
+24.898,95.279,125.0,4.5,mb,,,,0.7,us,usp0007n62,2014-11-07T01:00:56.467Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-06 03:04:32,1996-08-06 09:34:32,Saigang,Hkamti,Homalin,Tin Kyit,village,2.3
+21.487,94.479,100.0,3.5,mb,,,,0.4,us,usp0007n18,2014-11-07T01:00:54.925Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-08-02 21:07:04,1996-08-03 03:37:04,Magway,Pakokku,Pauk,Kyauk Tan,village,1.0

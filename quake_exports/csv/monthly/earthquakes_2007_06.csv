@@ -1,11 +1,11 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-25.429,96.581,52.7,5.2,mwc,147,49.5,,0.82,us,usp000ff4h,2015-02-11T17:18:37.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-29 23:24:00,2007-06-30 05:54:00,Kachin,Ka Htan Yang,village
-25.946,94.24,15.4,4.8,mb,78,67.2,,1.1,us,usp000fev8,2014-11-07T01:32:45.999Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-06-25 18:09:50,2007-06-26 00:39:50,,Gukhanyu,village
-21.348,99.994,10.0,4.3,mb,13,116.4,,0.82,us,usp000fena,2014-11-07T01:32:45.231Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-23 16:45:19,2007-06-23 23:15:19,Shan,Hta Pang Long,village
-21.552,99.909,12.2,5.4,mwc,205,46.1,,1.16,us,usp000femh,2015-02-11T17:18:36.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-23 08:27:48,2007-06-23 14:57:48,Shan,Wan Pong,village
-21.473,99.779,22.0,5.6,mwb,280,29.9,,0.87,us,usp000femg,2015-02-12T23:25:35.467Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-23 08:17:19,2007-06-23 14:47:19,Shan,Mong Wa (Upper),village
-21.504,99.836,16.3,4.3,mb,38,98.6,,1.08,us,usp000femd,2014-11-07T01:32:45.056Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-23 06:53:55,2007-06-23 13:23:55,Shan,Wan Lan,village
-24.979,95.376,10.0,4.0,mb,24,144.1,,1.36,us,usp000fege,2014-11-07T01:32:44.610Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-21 14:26:21,2007-06-21 20:56:21,Saigang,Zay Di Seik,village
-26.065,96.823,46.1,4.2,mb,45,120.1,,0.84,us,usp000fdsj,2014-11-07T01:32:40.952Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-10 19:41:26,2007-06-11 02:11:26,Kachin,Ting Kauk,village
-23.626,96.129,10.0,0.0,,7,133.0,,1.19,us,usp000fds8,2014-11-07T01:32:40.918Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-10 16:18:43,2007-06-10 22:48:43,Mandalay,Inn Net,village
-25.308,94.742,81.3,0.0,,13,138.1,,0.87,us,usp000fdbc,2014-11-07T01:32:38.930Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-06-04 08:31:51,2007-06-04 15:01:51,Saigang,,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+25.429,96.581,52.7,5.2,mwc,147,49.5,,0.82,us,usp000ff4h,2015-02-11T17:18:37.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-29 23:24:00,2007-06-30 05:54:00,Kachin,Mohnyin,Hpakant,Ka Htan Yang,village,10.0
+25.946,94.24,15.4,4.8,mb,78,67.2,,1.1,us,usp000fev8,2014-11-07T01:32:45.999Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-06-25 18:09:50,2007-06-26 00:39:50,,,,Gukhanyu,village,2.8
+21.348,99.994,10.0,4.3,mb,13,116.4,,0.82,us,usp000fena,2014-11-07T01:32:45.231Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-23 16:45:19,2007-06-23 23:15:19,Shan,Kengtung,Mongla,Hta Pang Long,village,9.0
+21.552,99.909,12.2,5.4,mwc,205,46.1,,1.16,us,usp000femh,2015-02-11T17:18:36.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-23 08:27:48,2007-06-23 14:57:48,Shan,Kengtung,Mongla,Wan Pong,village,4.8
+21.473,99.779,22.0,5.6,mwb,280,29.9,,0.87,us,usp000femg,2015-02-12T23:25:35.467Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-23 08:17:19,2007-06-23 14:47:19,Shan,Kengtung,Kengtung,Mong Wa (Upper),village,2.0
+21.504,99.836,16.3,4.3,mb,38,98.6,,1.08,us,usp000femd,2014-11-07T01:32:45.056Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-23 06:53:55,2007-06-23 13:23:55,Shan,Kengtung,Mongla,Wan Lan,village,3.9
+24.979,95.376,10.0,4.0,mb,24,144.1,,1.36,us,usp000fege,2014-11-07T01:32:44.610Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-21 14:26:21,2007-06-21 20:56:21,Saigang,Hkamti,Homalin,Zay Di Seik,village,5.9
+26.065,96.823,46.1,4.2,mb,45,120.1,,0.84,us,usp000fdsj,2014-11-07T01:32:40.952Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-10 19:41:26,2007-06-11 02:11:26,Kachin,Myitkyina,Tanai,Ting Kauk,village,9.8
+23.626,96.129,10.0,0.0,,7,133.0,,1.19,us,usp000fds8,2014-11-07T01:32:40.918Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-06-10 16:18:43,2007-06-10 22:48:43,Mandalay,Pyinoolwin,Thabeikkyin,Inn Net,village,3.2
+25.308,94.742,81.3,0.0,,13,138.1,,0.87,us,usp000fdbc,2014-11-07T01:32:38.930Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-06-04 08:31:51,2007-06-04 15:01:51,Saigang,Hkamti,Lay Shi,,village,1.5

@@ -1,10 +1,10 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-25.055,95.254,107.5,4.9,mb,,,,0.9,us,usp0006xu5,2014-11-07T00:57:58.268Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-21 21:37:09,1995-05-22 04:07:09,Saigang,Ton Ma Lauk,village
-17.899,96.457,11.4,6.1,ms,,,,1.1,us,usp0006xgf,2015-02-12T23:41:00.982Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-16 21:48:05,1995-05-17 04:18:05,Bago,Oke Shit Kone,village
-22.785,94.51,108.7,4.5,mb,,,,1.4,us,usp0006x8r,2014-11-07T00:57:54.773Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-13 06:35:10,1995-05-13 13:05:10,Saigang,Pa Thay (South),village
-24.17,95.421,100.0,3.8,mb,,,,0.8,us,usp0006x57,2014-11-07T00:57:54.322Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-10 00:51:01,1995-05-10 07:21:01,Saigang,In Gyin Thar,village
-25.29,95.155,91.8,5.2,mw,,,,0.9,us,usp0006x4b,2015-02-11T17:16:25.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-09 09:54:20,1995-05-09 16:24:20,Saigang,Saw Pa Ka,village
-24.839,95.059,117.5,4.7,mb,,,,0.8,us,usp0006x3m,2014-11-07T00:57:54.088Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-08 23:25:37,1995-05-09 05:55:37,Saigang,Aung Thar Nyein,village
-24.905,95.142,120.4,4.5,mb,,,,1.2,us,usp0006wym,2014-11-07T00:57:53.417Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-06 02:30:55,1995-05-06 09:00:55,Saigang,Moe Lin,village
-24.987,95.294,117.5,6.4,mwb,,,,1.0,us,usp0006wyk,2015-02-12T23:40:31.570Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-06 01:59:07,1995-05-06 08:29:07,Saigang,Naung Moe,village
-25.325,95.014,164.6,4.5,mb,,,,0.7,us,usp0006wuq,2014-11-07T00:57:52.462Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-04 13:26:40,1995-05-04 19:56:40,Saigang,Tawai,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+25.055,95.254,107.5,4.9,mb,,,,0.9,us,usp0006xu5,2014-11-07T00:57:58.268Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-21 21:37:09,1995-05-22 04:07:09,Saigang,Hkamti,Homalin,Ton Ma Lauk,village,15.8
+17.899,96.457,11.4,6.1,ms,,,,1.1,us,usp0006xgf,2015-02-12T23:41:00.982Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-16 21:48:05,1995-05-17 04:18:05,Bago,Bago,Daik-U,Oke Shit Kone,village,5.9
+22.785,94.51,108.7,4.5,mb,,,,1.4,us,usp0006x8r,2014-11-07T00:57:54.773Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-13 06:35:10,1995-05-13 13:05:10,Saigang,Kale,Mingin,Pa Thay (South),village,1.0
+24.17,95.421,100.0,3.8,mb,,,,0.8,us,usp0006x57,2014-11-07T00:57:54.322Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-10 00:51:01,1995-05-10 07:21:01,Saigang,Katha,Pinlebu,In Gyin Thar,village,0.8
+25.29,95.155,91.8,5.2,mw,,,,0.9,us,usp0006x4b,2015-02-11T17:16:25.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-09 09:54:20,1995-05-09 16:24:20,Saigang,Hkamti,Homalin,Saw Pa Ka,village,3.1
+24.839,95.059,117.5,4.7,mb,,,,0.8,us,usp0006x3m,2014-11-07T00:57:54.088Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-08 23:25:37,1995-05-09 05:55:37,Saigang,Hkamti,Homalin,Aung Thar Nyein,village,1.3
+24.905,95.142,120.4,4.5,mb,,,,1.2,us,usp0006wym,2014-11-07T00:57:53.417Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-06 02:30:55,1995-05-06 09:00:55,Saigang,Hkamti,Homalin,Moe Lin,village,5.5
+24.987,95.294,117.5,6.4,mwb,,,,1.0,us,usp0006wyk,2015-02-12T23:40:31.570Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-06 01:59:07,1995-05-06 08:29:07,Saigang,Hkamti,Homalin,Naung Moe,village,9.2
+25.325,95.014,164.6,4.5,mb,,,,0.7,us,usp0006wuq,2014-11-07T00:57:52.462Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-05-04 13:26:40,1995-05-04 19:56:40,Saigang,Hkamti,Lay Shi,Tawai,village,4.5

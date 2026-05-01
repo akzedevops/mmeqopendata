@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-21.73,95.149,63.7,4.0,mb,18,,,0.8,us,usp000bhyr,2014-11-07T01:17:09.216Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-11-18 21:59:41,2002-11-19 04:29:41,Magway,Kan Ma Taw,village
-17.41,96.031,33.0,4.7,mb,15,,,0.56,us,usp000bhtp,2014-11-07T01:17:08.563Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-11-16 16:55:48,2002-11-16 23:25:48,Yangon,Kyar Chaung,village
-24.511,94.718,109.7,4.2,mb,14,,,0.64,us,usp000bhfy,2014-11-07T01:17:06.868Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-11-12 00:32:08,2002-11-12 07:02:08,Saigang,Oe Bo Ka Tauk,village
-22.554,93.939,73.1,4.2,mb,24,,,0.7,us,usp000bfuc,2014-11-07T01:16:55.175Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-11-01 20:05:39,2002-11-02 02:35:39,Chin,Chaung Gwa,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+21.73,95.149,63.7,4.0,mb,18,,,0.8,us,usp000bhyr,2014-11-07T01:17:09.216Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-11-18 21:59:41,2002-11-19 04:29:41,Magway,Pakokku,Yesagyo,Kan Ma Taw,village,2.8
+17.41,96.031,33.0,4.7,mb,15,,,0.56,us,usp000bhtp,2014-11-07T01:17:08.563Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-11-16 16:55:48,2002-11-16 23:25:48,Yangon,Yangon (North),Taikkyi,Kyar Chaung,village,3.1
+24.511,94.718,109.7,4.2,mb,14,,,0.64,us,usp000bhfy,2014-11-07T01:17:06.868Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-11-12 00:32:08,2002-11-12 07:02:08,Saigang,Mawlaik,Paungbyin,Oe Bo Ka Tauk,village,0.7
+22.554,93.939,73.1,4.2,mb,24,,,0.7,us,usp000bfuc,2014-11-07T01:16:55.175Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-11-01 20:05:39,2002-11-02 02:35:39,Chin,Hakha,Hakha,Chaung Gwa,village,9.1

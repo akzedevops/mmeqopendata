@@ -1,9 +1,9 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-19.238,95.615,10.0,5.0,mwc,268,37.5,,0.92,us,usp000fhgr,2015-02-11T17:18:38.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-31 08:43:41,2007-07-31 15:13:41,Magway,Inn Gyi Kone,village
-19.297,95.587,10.0,0.0,,9,182.4,,1.02,us,usp000fhgg,2014-11-07T01:33:05.694Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-31 06:05:59,2007-07-31 12:35:59,Magway,Gway Cho,village
-19.26,95.592,10.0,4.4,mb,21,112.1,,0.8,us,usp000fhg6,2014-11-07T01:33:05.676Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-31 04:06:08,2007-07-31 10:36:08,Magway,Kayin San,village
-19.324,95.674,10.0,4.7,mb,37,99.3,,0.71,us,usp000fhfy,2014-11-07T01:33:05.622Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-31 02:34:19,2007-07-31 09:04:19,Magway,Ngahlauk,village
-19.311,95.611,14.2,5.6,mwb,542,18.0,,0.76,us,usp000fhfj,2015-02-12T20:15:45.911Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-30 22:42:05,2007-07-31 05:12:05,Magway,,village
-20.59,99.207,10.0,0.0,,12,130.5,,0.9,us,usp000fhap,2014-11-07T01:33:04.940Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-28 21:33:57,2007-07-29 04:03:57,Shan,Mae Moet,village
-20.559,94.348,10.0,4.0,mb,7,190.2,,1.38,us,usp000fh6n,2014-11-07T01:33:04.371Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-27 07:11:16,2007-07-27 13:41:16,Magway,Ta Hnyaunt Tin,village
-24.157,94.599,95.8,4.3,mb,10,172.2,,0.6,us,usp000fgqr,2014-11-07T01:33:01.091Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-07-20 17:01:01,2007-07-20 23:31:01,Saigang,Me Tin,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+19.238,95.615,10.0,5.0,mwc,268,37.5,,0.92,us,usp000fhgr,2015-02-11T17:18:38.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-31 08:43:41,2007-07-31 15:13:41,Magway,Thayet,Aunglan,Inn Gyi Kone,village,1.4
+19.297,95.587,10.0,0.0,,9,182.4,,1.02,us,usp000fhgg,2014-11-07T01:33:05.694Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-31 06:05:59,2007-07-31 12:35:59,Magway,Thayet,Aunglan,Gway Cho,village,1.6
+19.26,95.592,10.0,4.4,mb,21,112.1,,0.8,us,usp000fhg6,2014-11-07T01:33:05.676Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-31 04:06:08,2007-07-31 10:36:08,Magway,Thayet,Aunglan,Kayin San,village,0.5
+19.324,95.674,10.0,4.7,mb,37,99.3,,0.71,us,usp000fhfy,2014-11-07T01:33:05.622Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-31 02:34:19,2007-07-31 09:04:19,Magway,Thayet,Aunglan,Ngahlauk,village,3.1
+19.311,95.611,14.2,5.6,mwb,542,18.0,,0.76,us,usp000fhfj,2015-02-12T20:15:45.911Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-30 22:42:05,2007-07-31 05:12:05,Magway,Thayet,Aunglan,,village,1.3
+20.59,99.207,10.0,0.0,,12,130.5,,0.9,us,usp000fhap,2014-11-07T01:33:04.940Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-28 21:33:57,2007-07-29 04:03:57,Shan,Monghsat,Monghsat,Mae Moet,village,1.5
+20.559,94.348,10.0,4.0,mb,7,190.2,,1.38,us,usp000fh6n,2014-11-07T01:33:04.371Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-07-27 07:11:16,2007-07-27 13:41:16,Magway,Minbu,Salin,Ta Hnyaunt Tin,village,4.6
+24.157,94.599,95.8,4.3,mb,10,172.2,,0.6,us,usp000fgqr,2014-11-07T01:33:01.091Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-07-20 17:01:01,2007-07-20 23:31:01,Saigang,Mawlaik,Paungbyin,Me Tin,village,0.7

@@ -1,3 +1,3 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-21.232,92.433,33.0,4.0,mb,,,,1.3,us,usp0004fmu,2014-11-07T00:47:16.370Z,,Myanmar-Bangladesh border region,MM,Asia,earthquake,0,0,1,,,1990-10-11 14:42:02,1990-10-11 21:12:02,Rakhine,Nga/Myin Baw Kha Mway,village
-23.345,94.325,68.4,3.9,mb,,,,0.4,us,usp0004far,2014-11-07T00:47:13.371Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-10-03 10:07:21,1990-10-03 16:37:21,Saigang,Kyar Pin,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+21.232,92.433,33.0,4.0,mb,,,,1.3,us,usp0004fmu,2014-11-07T00:47:16.370Z,,Myanmar-Bangladesh border region,MM,Asia,earthquake,0,0,1,,,1990-10-11 14:42:02,1990-10-11 21:12:02,Rakhine,Maungdaw,Buthidaung,Nga/Myin Baw Kha Mway,village,2.0
+23.345,94.325,68.4,3.9,mb,,,,0.4,us,usp0004far,2014-11-07T00:47:13.371Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-10-03 10:07:21,1990-10-03 16:37:21,Saigang,Kale,Kalewa,Kyar Pin,village,1.0

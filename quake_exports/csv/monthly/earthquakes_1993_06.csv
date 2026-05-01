@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.558,95.595,33.0,4.3,mb,,,,1.0,us,usp0005v4f,2014-11-07T00:53:19.027Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-06-24 21:59:06,1993-06-25 04:29:06,Saigang,Naung Kut,village
-22.929,99.12,33.0,4.4,mb,,,,1.4,us,usp0005udv,2014-11-07T00:53:14.367Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1993-06-11 23:27:21,1993-06-12 05:57:21,Shan,羊宗,village
-23.417,99.997,10.0,4.7,mb,,,,0.9,us,usp0005txv,2014-11-07T00:53:09.710Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1993-06-03 01:15:37,1993-06-03 07:45:37,,Xiaobazi,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.558,95.595,33.0,4.3,mb,,,,1.0,us,usp0005v4f,2014-11-07T00:53:19.027Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-06-24 21:59:06,1993-06-25 04:29:06,Saigang,Katha,Banmauk,Naung Kut,village,5.5
+22.929,99.12,33.0,4.4,mb,,,,1.4,us,usp0005udv,2014-11-07T00:53:14.367Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1993-06-11 23:27:21,1993-06-12 05:57:21,Shan,Hopang,Pangwaun,羊宗,village,1.6
+23.417,99.997,10.0,4.7,mb,,,,0.9,us,usp0005txv,2014-11-07T00:53:09.710Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1993-06-03 01:15:37,1993-06-03 07:45:37,,,,Xiaobazi,village,1.7

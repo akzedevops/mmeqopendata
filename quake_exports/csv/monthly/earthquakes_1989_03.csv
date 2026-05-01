@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.111,97.798,33.0,3.7,mb,,,,0.7,us,usp0003t09,2014-11-07T00:43:49.537Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-17 11:14:20,1989-03-17 17:44:20,Shan,Man Shoe,village
-21.629,97.816,33.0,4.8,mb,,,,1.2,us,usp0003t08,2014-11-07T00:43:49.533Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-17 11:08:08,1989-03-17 17:38:08,Shan,Pang Hlaing,village
-21.62,97.787,10.0,4.6,mb,,,,1.3,us,usp0003sfq,2014-11-07T00:43:41.278Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-01 09:28:52,1989-03-01 15:58:52,Shan,,village
-21.754,97.941,15.8,5.8,mw,,,,1.1,us,usp0003sfa,2015-02-12T21:01:04.697Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-01 03:25:05,1989-03-01 09:55:05,Shan,Mat Waung,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.111,97.798,33.0,3.7,mb,,,,0.7,us,usp0003t09,2014-11-07T00:43:49.537Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-17 11:14:20,1989-03-17 17:44:20,Shan,Kyaukme,Hsipaw,Man Shoe,village,1.1
+21.629,97.816,33.0,4.8,mb,,,,1.2,us,usp0003t08,2014-11-07T00:43:49.533Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-17 11:08:08,1989-03-17 17:38:08,Shan,Loilen,Mongkaing,Pang Hlaing,village,2.6
+21.62,97.787,10.0,4.6,mb,,,,1.3,us,usp0003sfq,2014-11-07T00:43:41.278Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-01 09:28:52,1989-03-01 15:58:52,Shan,Loilen,Mongkaing,,village,1.9
+21.754,97.941,15.8,5.8,mw,,,,1.1,us,usp0003sfa,2015-02-12T21:01:04.697Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1989-03-01 03:25:05,1989-03-01 09:55:05,Shan,Loilen,Kyethi,Mat Waung,village,2.4

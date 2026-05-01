@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-25.235,94.917,128.7,4.6,mb,,,,0.59,us,usp000886u,2014-11-07T01:03:32.388Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1997-09-28 14:32:39,1997-09-28 21:02:39,Saigang,Thaya,village
-23.056,94.29,90.9,4.0,mb,,,,0.65,us,usp000884j,2014-11-07T01:03:31.853Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-09-27 10:43:20,1997-09-27 17:13:20,Saigang,Sa Khan Gyi,village
-20.873,98.491,33.0,4.2,mb,,,,0.82,us,usp00087ty,2014-11-07T01:03:30.373Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-09-21 13:18:34,1997-09-21 19:48:34,Shan,Hsi Pawt,village
-25.543,96.642,33.0,3.8,mb,,,,0.7,us,usp00087a6,2014-11-07T01:03:27.965Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-09-08 17:05:05,1997-09-08 23:35:05,Kachin,Loi Hseng,village
-24.485,94.495,100.0,4.4,mb,,,,0.83,us,usp000873u,2014-11-07T01:03:26.823Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1997-09-04 02:02:54,1997-09-04 08:32:54,Saigang,Tone Kyaw,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+25.235,94.917,128.7,4.6,mb,,,,0.59,us,usp000886u,2014-11-07T01:03:32.388Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1997-09-28 14:32:39,1997-09-28 21:02:39,Saigang,Hkamti,Lay Shi,Thaya,village,10.8
+23.056,94.29,90.9,4.0,mb,,,,0.65,us,usp000884j,2014-11-07T01:03:31.853Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-09-27 10:43:20,1997-09-27 17:13:20,Saigang,Kale,Kalewa,Sa Khan Gyi,village,1.2
+20.873,98.491,33.0,4.2,mb,,,,0.82,us,usp00087ty,2014-11-07T01:03:30.373Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-09-21 13:18:34,1997-09-21 19:48:34,Shan,Langkho,Mongnai,Hsi Pawt,village,3.6
+25.543,96.642,33.0,3.8,mb,,,,0.7,us,usp00087a6,2014-11-07T01:03:27.965Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-09-08 17:05:05,1997-09-08 23:35:05,Kachin,Mohnyin,Hpakant,Loi Hseng,village,3.5
+24.485,94.495,100.0,4.4,mb,,,,0.83,us,usp000873u,2014-11-07T01:03:26.823Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1997-09-04 02:02:54,1997-09-04 08:32:54,Saigang,Tamu,Tamu,Tone Kyaw,village,1.0

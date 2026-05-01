@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-23.208,94.547,74.0,4.8,mb,,,,,us,usp00013kb,2014-11-06T23:22:06.647Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-10-19 15:13:21,1979-10-19 21:43:21,Saigang,Sin Aing Ma,village
-21.654,94.754,125.0,4.4,mb,,,,,us,usp00013b4,2014-11-06T23:22:06.062Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-10-09 17:27:43,1979-10-09 23:57:43,Magway,Baunt Bin,village
-18.114,94.816,56.0,5.6,mb,,,,,us,usp000137y,2015-02-12T20:20:07.301Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-10-03 11:35:14,1979-10-03 18:05:14,Rakhine,Chin Chaung,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+23.208,94.547,74.0,4.8,mb,,,,,us,usp00013kb,2014-11-06T23:22:06.647Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-10-19 15:13:21,1979-10-19 21:43:21,Saigang,Kale,Kalewa,Sin Aing Ma,village,4.1
+21.654,94.754,125.0,4.4,mb,,,,,us,usp00013b4,2014-11-06T23:22:06.062Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-10-09 17:27:43,1979-10-09 23:57:43,Magway,Pakokku,Myaing,Baunt Bin,village,0.6
+18.114,94.816,56.0,5.6,mb,,,,,us,usp000137y,2015-02-12T20:20:07.301Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-10-03 11:35:14,1979-10-03 18:05:14,Rakhine,Thandwe,Thandwe,Chin Chaung,village,28.0

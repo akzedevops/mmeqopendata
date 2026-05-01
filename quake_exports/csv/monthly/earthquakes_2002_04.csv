@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.648,94.886,33.0,4.3,mb,18,,,1.12,us,usp000b2m0,2014-11-07T01:15:26.022Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-04-17 20:17:51,2002-04-18 02:47:51,Saigang,Bon Si,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.648,94.886,33.0,4.3,mb,18,,,1.12,us,usp000b2m0,2014-11-07T01:15:26.022Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-04-17 20:17:51,2002-04-18 02:47:51,Saigang,Hkamti,Homalin,Bon Si,village,6.6

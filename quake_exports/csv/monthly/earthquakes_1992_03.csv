@@ -1,10 +1,10 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-21.328,98.668,33.0,4.2,mb,,,,1.2,us,usp00054y8,2014-11-07T00:50:19.603Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-28 02:50:12,1992-03-28 09:20:12,Shan,Wan Wein,village
-20.462,93.916,50.0,4.1,mb,,,,0.9,us,usp00054x2,2014-11-07T00:50:19.372Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-27 07:53:42,1992-03-27 14:23:42,Rakhine,Lone Ton,village
-20.927,94.586,96.7,5.6,mw,,,,1.0,us,usp00054wj,2015-02-12T21:13:27.464Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-27 00:05:20,1992-03-27 06:35:20,Magway,Yae Ma,village
-24.874,95.231,106.0,5.2,mw,,,,1.0,us,usp00054ud,2015-02-11T17:16:02.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-25 22:32:34,1992-03-26 05:02:34,Saigang,Laung Hpaung,village
-22.941,94.043,129.4,4.7,mb,,,,1.1,us,usp00054rk,2014-11-07T00:50:18.476Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-24 02:02:22,1992-03-24 08:32:22,Saigang,Khway Kyin,village
-26.784,97.399,33.0,4.9,mb,,,,0.9,us,usp00054qn,2014-11-07T00:50:18.414Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-23 08:21:44,1992-03-23 14:51:44,Kachin,land mark,village
-25.971,95.613,33.0,4.3,mb,,,,0.8,us,usp00054pa,2014-11-07T00:50:18.169Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-22 14:28:24,1992-03-22 20:58:24,Saigang,Ka Toe,village
-23.218,94.713,83.0,4.6,mb,,,,1.3,us,usp000540j,2014-11-07T00:50:14.895Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-08 11:25:33,1992-03-08 17:55:33,Saigang,Thitsar Pann,town
-23.414,94.573,83.7,4.0,mb,,,,1.4,us,usp00053pz,2014-11-07T00:50:11.090Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-01 15:37:23,1992-03-01 22:07:23,Saigang,Hin Tin,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+21.328,98.668,33.0,4.2,mb,,,,1.2,us,usp00054y8,2014-11-07T00:50:19.603Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-28 02:50:12,1992-03-28 09:20:12,Shan,Kengtung,Mongping,Wan Wein,village,1.7
+20.462,93.916,50.0,4.1,mb,,,,0.9,us,usp00054x2,2014-11-07T00:50:19.372Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-27 07:53:42,1992-03-27 14:23:42,Rakhine,Kyaukpyu,Ann,Lone Ton,village,23.3
+20.927,94.586,96.7,5.6,mw,,,,1.0,us,usp00054wj,2015-02-12T21:13:27.464Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-27 00:05:20,1992-03-27 06:35:20,Magway,Minbu,Salin,Yae Ma,village,0.7
+24.874,95.231,106.0,5.2,mw,,,,1.0,us,usp00054ud,2015-02-11T17:16:02.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-25 22:32:34,1992-03-26 05:02:34,Saigang,Hkamti,Homalin,Laung Hpaung,village,3.2
+22.941,94.043,129.4,4.7,mb,,,,1.1,us,usp00054rk,2014-11-07T00:50:18.476Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-24 02:02:22,1992-03-24 08:32:22,Saigang,Kale,Kale,Khway Kyin,village,1.7
+26.784,97.399,33.0,4.9,mb,,,,0.9,us,usp00054qn,2014-11-07T00:50:18.414Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-23 08:21:44,1992-03-23 14:51:44,Kachin,Puta-O,Sumprabum,land mark,village,16.8
+25.971,95.613,33.0,4.3,mb,,,,0.8,us,usp00054pa,2014-11-07T00:50:18.169Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-22 14:28:24,1992-03-22 20:58:24,Saigang,Hkamti,Hkamti,Ka Toe,village,3.3
+23.218,94.713,83.0,4.6,mb,,,,1.3,us,usp000540j,2014-11-07T00:50:14.895Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-08 11:25:33,1992-03-08 17:55:33,Saigang,Kale,Mingin,Thitsar Pann,town,8.7
+23.414,94.573,83.7,4.0,mb,,,,1.4,us,usp00053pz,2014-11-07T00:50:11.090Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-03-01 15:37:23,1992-03-01 22:07:23,Saigang,Mawlaik,Mawlaik,Hin Tin,village,10.2

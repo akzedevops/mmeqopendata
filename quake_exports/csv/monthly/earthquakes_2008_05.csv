@@ -1,10 +1,10 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-26.074,98.705,44.4,3.7,mb,20,130.9,,0.6,us,usp000g834,2014-11-07T01:36:07.761Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2008-05-30 00:22:48,2008-05-30 06:52:48,,洛玛村,village
-23.409,94.759,122.1,4.1,mb,18,78.8,,1.0,us,usp000g81u,2014-11-07T01:36:07.584Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-29 13:05:44,2008-05-29 19:35:44,Saigang,Chin Chaung,village
-21.778,94.15,10.0,0.0,,7,181.6,,0.55,us,usp000g7zx,2014-11-07T01:36:07.375Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-28 19:40:39,2008-05-29 02:10:39,Magway,Kyauk Oke,village
-22.812,94.122,78.9,3.5,mb,14,156.4,,0.68,us,usp000g7yc,2014-11-07T01:36:07.221Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-28 03:38:26,2008-05-28 10:08:26,Saigang,Shar Taw,village
-22.259,94.219,65.5,3.9,mb,18,118.0,,0.71,us,usp000g7vd,2014-11-07T01:36:06.757Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-27 01:46:18,2008-05-27 08:16:18,Magway,ကွမ်းဇဲ (ဝီကီ နေရာလွဲ),village
-24.352,95.077,133.1,4.4,mb,46,98.3,,0.69,us,usp000g7cv,2014-11-07T01:36:04.071Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-21 08:00:02,2008-05-21 14:30:02,Saigang,Thet Lar Kaung Maung,village
-18.606,96.242,10.0,4.0,mb,18,146.4,,0.87,us,usp000g746,2014-11-07T01:36:02.312Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-18 01:17:48,2008-05-18 07:47:48,Bago,Nat Yae Twin Ywar Haung,village
-24.309,96.029,67.6,4.4,mb,31,133.7,,0.96,us,usp000g6xx,2014-11-07T01:36:01.135Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-16 04:44:11,2008-05-16 11:14:11,Saigang,Kyun Taw,village
-21.463,94.577,96.9,4.0,mb,10,186.4,,0.87,us,usp000g5m8,2014-11-07T01:35:51.607Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-06 04:36:50,2008-05-06 11:06:50,Magway,Sa Hpe,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+26.074,98.705,44.4,3.7,mb,20,130.9,,0.6,us,usp000g834,2014-11-07T01:36:07.761Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2008-05-30 00:22:48,2008-05-30 06:52:48,,,,洛玛村,village,9.0
+23.409,94.759,122.1,4.1,mb,18,78.8,,1.0,us,usp000g81u,2014-11-07T01:36:07.584Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-29 13:05:44,2008-05-29 19:35:44,Saigang,Kale,Kalewa,Chin Chaung,village,7.7
+21.778,94.15,10.0,0.0,,7,181.6,,0.55,us,usp000g7zx,2014-11-07T01:36:07.375Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-28 19:40:39,2008-05-29 02:10:39,Magway,Gangaw,Tilin,Kyauk Oke,village,2.5
+22.812,94.122,78.9,3.5,mb,14,156.4,,0.68,us,usp000g7yc,2014-11-07T01:36:07.221Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-28 03:38:26,2008-05-28 10:08:26,Saigang,Kale,Kale,Shar Taw,village,0.2
+22.259,94.219,65.5,3.9,mb,18,118.0,,0.71,us,usp000g7vd,2014-11-07T01:36:06.757Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-27 01:46:18,2008-05-27 08:16:18,Magway,Gangaw,Gangaw,ကွမ်းဇဲ (ဝီကီ နေရာလွဲ),village,3.3
+24.352,95.077,133.1,4.4,mb,46,98.3,,0.69,us,usp000g7cv,2014-11-07T01:36:04.071Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-21 08:00:02,2008-05-21 14:30:02,Saigang,Mawlaik,Paungbyin,Thet Lar Kaung Maung,village,4.2
+18.606,96.242,10.0,4.0,mb,18,146.4,,0.87,us,usp000g746,2014-11-07T01:36:02.312Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-18 01:17:48,2008-05-18 07:47:48,Bago,Taungoo,Phyu,Nat Yae Twin Ywar Haung,village,16.0
+24.309,96.029,67.6,4.4,mb,31,133.7,,0.96,us,usp000g6xx,2014-11-07T01:36:01.135Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-16 04:44:11,2008-05-16 11:14:11,Saigang,Katha,Indaw,Kyun Taw,village,0.6
+21.463,94.577,96.9,4.0,mb,10,186.4,,0.87,us,usp000g5m8,2014-11-07T01:35:51.607Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-05-06 04:36:50,2008-05-06 11:06:50,Magway,Pakokku,Pauk,Sa Hpe,village,0.9

@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.76,94.66,90.9,3.7,mb,,,,0.95,us,usp0009kae,2014-11-07T01:09:11.681Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1999-12-26 02:44:38,1999-12-26 09:14:38,Saigang,Molnoi,village
-24.178,94.717,96.7,4.6,mb,,,,0.66,us,usp0009k48,2014-11-07T01:09:10.635Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1999-12-22 00:28:12,1999-12-22 06:58:12,Saigang,Lan Lay Gwa,village
-24.517,97.774,52.1,4.6,mb,,,,0.87,us,usp0009k26,2014-11-07T01:09:10.370Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1999-12-20 11:46:54,1999-12-20 18:16:54,,芒岭,village
-21.125,94.457,83.0,4.5,mb,,,,0.79,us,usp0009jdp,2014-11-07T01:09:05.298Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-12-02 20:45:44,1999-12-03 03:15:44,Magway,Htun,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.76,94.66,90.9,3.7,mb,,,,0.95,us,usp0009kae,2014-11-07T01:09:11.681Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1999-12-26 02:44:38,1999-12-26 09:14:38,Saigang,Hkamti,Homalin,Molnoi,village,4.7
+24.178,94.717,96.7,4.6,mb,,,,0.66,us,usp0009k48,2014-11-07T01:09:10.635Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1999-12-22 00:28:12,1999-12-22 06:58:12,Saigang,Mawlaik,Paungbyin,Lan Lay Gwa,village,1.1
+24.517,97.774,52.1,4.6,mb,,,,0.87,us,usp0009k26,2014-11-07T01:09:10.370Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1999-12-20 11:46:54,1999-12-20 18:16:54,,,,芒岭,village,0.6
+21.125,94.457,83.0,4.5,mb,,,,0.79,us,usp0009jdp,2014-11-07T01:09:05.298Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-12-02 20:45:44,1999-12-03 03:15:44,Magway,Pakokku,Seikphyu,Htun,village,1.0

@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-23.272,94.729,111.6,4.1,mb,15,146.0,,0.58,us,usp000hgww,2014-11-07T01:42:03.068Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2010-07-27 14:23:46,2010-07-27 20:53:46,Saigang,Thitsar Pann,town
-16.136,94.568,10.0,4.0,mb,15,181.8,,0.7,us,usp000hgss,2014-11-07T01:42:01.430Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2010-07-25 13:31:52,2010-07-25 20:01:52,Ayeyarwady,Thea Kone,village
-16.345,94.611,10.0,4.6,mb,28,99.5,,0.87,us,usp000hgs8,2014-11-07T01:42:01.222Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2010-07-25 08:57:03,2010-07-25 15:27:03,Ayeyarwady,Aung Ba,village
-22.272,93.595,67.2,4.6,mb,56,71.0,,0.71,us,usp000hfa9,2014-11-07T01:41:53.345Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2010-07-15 01:30:32,2010-07-15 08:00:32,Chin,Phaizawng,village
-25.309,96.747,35.0,4.4,mb,20,139.0,,1.21,us,usp000heu0,2014-11-07T01:41:49.643Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2010-07-02 18:20:25,2010-07-03 00:50:25,Kachin,Saung Hkar,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+23.272,94.729,111.6,4.1,mb,15,146.0,,0.58,us,usp000hgww,2014-11-07T01:42:03.068Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2010-07-27 14:23:46,2010-07-27 20:53:46,Saigang,Kale,Kalewa,Thitsar Pann,town,5.7
+16.136,94.568,10.0,4.0,mb,15,181.8,,0.7,us,usp000hgss,2014-11-07T01:42:01.430Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2010-07-25 13:31:52,2010-07-25 20:01:52,Ayeyarwady,Pathein,Ngapudaw,Thea Kone,village,1.0
+16.345,94.611,10.0,4.6,mb,28,99.5,,0.87,us,usp000hgs8,2014-11-07T01:42:01.222Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2010-07-25 08:57:03,2010-07-25 15:27:03,Ayeyarwady,Pathein,Ngapudaw,Aung Ba,village,0.8
+22.272,93.595,67.2,4.6,mb,56,71.0,,0.71,us,usp000hfa9,2014-11-07T01:41:53.345Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2010-07-15 01:30:32,2010-07-15 08:00:32,Chin,Hakha,Hakha,Phaizawng,village,1.6
+25.309,96.747,35.0,4.4,mb,20,139.0,,1.21,us,usp000heu0,2014-11-07T01:41:49.643Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2010-07-02 18:20:25,2010-07-03 00:50:25,Kachin,Mohnyin,Mogaung,Saung Hkar,village,5.2

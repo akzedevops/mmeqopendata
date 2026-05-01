@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-27.442,96.756,52.0,4.9,mb,,,,,us,usp0001094,2014-11-06T23:22:00.469Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1979-04-25 02:21:52,1979-04-25 08:51:52,,,village
-24.127,94.045,85.0,4.3,mb,,,,,us,usp0001042,2014-11-06T23:22:00.274Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1979-04-18 08:04:24,1979-04-18 14:34:24,,Khangbarol,village
-15.252,96.458,33.0,4.0,mb,,,,,us,usp0000zw9,2014-11-06T23:21:59.777Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1979-04-08 21:05:44,1979-04-09 03:35:44,,Ban Dar Pin,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+27.442,96.756,52.0,4.9,mb,,,,,us,usp0001094,2014-11-06T23:22:00.469Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1979-04-25 02:21:52,1979-04-25 08:51:52,,,,,village,16.7
+24.127,94.045,85.0,4.3,mb,,,,,us,usp0001042,2014-11-06T23:22:00.274Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1979-04-18 08:04:24,1979-04-18 14:34:24,,,,Khangbarol,village,2.4
+15.252,96.458,33.0,4.0,mb,,,,,us,usp0000zw9,2014-11-06T23:21:59.777Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1979-04-08 21:05:44,1979-04-09 03:35:44,,,,Ban Dar Pin,village,115.2

@@ -1,7 +1,7 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-26.031,95.307,93.2,4.4,mb,32,123.2,,0.98,us,usp000ftk1,2014-11-07T01:34:16.217Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-11-30 08:44:23,2007-11-30 15:14:23,Saigang,Jokke,village
-23.39,94.675,114.8,5.1,mb,56,40.9,,0.74,us,usp000ftj2,2014-11-07T01:34:16.089Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-11-29 19:00:22,2007-11-30 01:30:22,Saigang,Thitsar Pann,town
-22.141,94.201,46.6,4.2,mb,61,145.8,,0.62,us,usp000fted,2014-11-07T01:34:15.611Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-11-27 23:37:05,2007-11-28 06:07:05,Magway,Lel Ma,village
-21.86,94.641,100.6,4.6,mb,18,165.1,,0.39,us,usp000fsdy,2014-11-07T01:34:09.776Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-11-12 12:57:57,2007-11-12 19:27:57,Magway,Hlay Gyi Taung,village
-23.034,94.218,112.0,3.5,mb,17,160.7,,0.62,us,usp000fs3c,2014-11-07T01:34:07.949Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-11-07 02:27:05,2007-11-07 08:57:05,Saigang,Sa Khan Gyi,village
-23.748,93.787,79.3,0.0,,16,159.1,,0.66,us,usp000frr6,2014-11-07T01:34:04.265Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-11-01 04:09:52,2007-11-01 10:39:52,Chin,Anlun,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+26.031,95.307,93.2,4.4,mb,32,123.2,,0.98,us,usp000ftk1,2014-11-07T01:34:16.217Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-11-30 08:44:23,2007-11-30 15:14:23,Saigang,Hkamti,Lahe,Jokke,village,3.1
+23.39,94.675,114.8,5.1,mb,56,40.9,,0.74,us,usp000ftj2,2014-11-07T01:34:16.089Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-11-29 19:00:22,2007-11-30 01:30:22,Saigang,Kale,Kalewa,Thitsar Pann,town,11.4
+22.141,94.201,46.6,4.2,mb,61,145.8,,0.62,us,usp000fted,2014-11-07T01:34:15.611Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-11-27 23:37:05,2007-11-28 06:07:05,Magway,Gangaw,Gangaw,Lel Ma,village,2.5
+21.86,94.641,100.6,4.6,mb,18,165.1,,0.39,us,usp000fsdy,2014-11-07T01:34:09.776Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-11-12 12:57:57,2007-11-12 19:27:57,Magway,Pakokku,Myaing,Hlay Gyi Taung,village,1.9
+23.034,94.218,112.0,3.5,mb,17,160.7,,0.62,us,usp000fs3c,2014-11-07T01:34:07.949Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-11-07 02:27:05,2007-11-07 08:57:05,Saigang,Kale,Kalewa,Sa Khan Gyi,village,6.9
+23.748,93.787,79.3,0.0,,16,159.1,,0.66,us,usp000frr6,2014-11-07T01:34:04.265Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-11-01 04:09:52,2007-11-01 10:39:52,Chin,Falam,Tonzang,Anlun,village,3.7

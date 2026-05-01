@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-21.075,93.099,43.0,4.4,mb,,,,0.8,us,usp0002aep,2014-11-07T00:35:54.464Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1984-12-26 21:35:42,1984-12-27 04:05:42,Rakhine,Ku Wa,village
-24.356,94.838,97.8,4.2,mb,,,,1.0,us,usp00029w8,2014-11-07T00:35:50.950Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1984-12-08 23:47:01,1984-12-09 06:17:01,Saigang,Thet Kei Kyin,village
-27.811,96.758,33.0,4.5,mb,,,,1.4,us,usp00029ra,2014-11-07T00:35:49.074Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1984-12-03 05:32:57,1984-12-03 12:02:57,,Hawai,city
-27.409,96.807,33.0,5.3,mb,,,,1.1,us,usp00029r9,2014-11-07T00:35:49.062Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1984-12-03 04:17:42,1984-12-03 10:47:42,,Kito,village
-26.656,96.835,33.0,4.5,mb,,,,1.1,us,usp00029qr,2014-11-07T00:35:48.670Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1984-12-02 15:20:39,1984-12-02 21:50:39,Kachin,Shin Long Gar,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+21.075,93.099,43.0,4.4,mb,,,,0.8,us,usp0002aep,2014-11-07T00:35:54.464Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1984-12-26 21:35:42,1984-12-27 04:05:42,Rakhine,Mrauk-U,Kyauktaw,Ku Wa,village,6.3
+24.356,94.838,97.8,4.2,mb,,,,1.0,us,usp00029w8,2014-11-07T00:35:50.950Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1984-12-08 23:47:01,1984-12-09 06:17:01,Saigang,Mawlaik,Paungbyin,Thet Kei Kyin,village,1.4
+27.811,96.758,33.0,4.5,mb,,,,1.4,us,usp00029ra,2014-11-07T00:35:49.074Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1984-12-03 05:32:57,1984-12-03 12:02:57,,,,Hawai,city,9.8
+27.409,96.807,33.0,5.3,mb,,,,1.1,us,usp00029r9,2014-11-07T00:35:49.062Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1984-12-03 04:17:42,1984-12-03 10:47:42,,,,Kito,village,17.0
+26.656,96.835,33.0,4.5,mb,,,,1.1,us,usp00029qr,2014-11-07T00:35:48.670Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1984-12-02 15:20:39,1984-12-02 21:50:39,Kachin,Myitkyina,Tanai,Shin Long Gar,village,25.9

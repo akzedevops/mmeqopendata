@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-16.875,94.899,33.0,4.1,mb,,,,,us,usp00016t3,2014-11-06T23:24:20.685Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1980-04-22 01:46:35,1980-04-22 08:16:35,Ayeyarwady,Kyee Kan Kyun,village
-17.043,94.843,38.0,4.2,mb,,,,,us,usp00016qb,2014-11-06T23:24:20.530Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-04-18 04:20:05,1980-04-18 10:50:05,Ayeyarwady,Lin Tar Kya,village
-21.335,93.804,51.0,5.1,mb,,,,,us,usp00016em,2014-11-06T23:24:19.978Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-04-04 08:19:21,1980-04-04 14:49:21,Chin,Chaing,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+16.875,94.899,33.0,4.1,mb,,,,,us,usp00016t3,2014-11-06T23:24:20.685Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1980-04-22 01:46:35,1980-04-22 08:16:35,Ayeyarwady,Pathein,Kangyidaunt,Kyee Kan Kyun,village,0.9
+17.043,94.843,38.0,4.2,mb,,,,,us,usp00016qb,2014-11-06T23:24:20.530Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-04-18 04:20:05,1980-04-18 10:50:05,Ayeyarwady,Pathein,Thabaung,Lin Tar Kya,village,1.1
+21.335,93.804,51.0,5.1,mb,,,,,us,usp00016em,2014-11-06T23:24:19.978Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-04-04 08:19:21,1980-04-04 14:49:21,Chin,Mindat,Mindat,Chaing,village,3.0

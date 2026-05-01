@@ -1,7 +1,7 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-15.234,96.257,13.8,4.8,mb,,,,1.0,us,usp0007cyc,2014-11-07T00:59:53.750Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1996-02-15 07:19:08,1996-02-15 13:49:08,,Tha Yet Pin Seik,village
-24.27,95.141,147.4,4.3,mb,,,,0.6,us,usp0007cra,2014-11-07T00:59:52.350Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-02-11 11:56:35,1996-02-11 18:26:35,Saigang,Tha Yet Kone,village
-23.437,94.675,124.3,4.6,mb,,,,1.0,us,usp0007ckp,2014-11-07T00:59:51.822Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-02-08 21:38:21,1996-02-09 04:08:21,Saigang,Kyaung Gyi,village
-23.835,93.328,33.0,4.3,mb,,,,1.4,us,usp0007ck7,2014-11-07T00:59:51.790Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-02-08 15:54:01,1996-02-08 22:24:01,,Kawlbem,village
-21.124,96.995,33.0,4.1,mb,,,,1.1,us,usp0007cd6,2014-11-07T00:59:50.900Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-02-05 14:36:04,1996-02-05 21:06:04,Shan,Pin Long,village
-18.862,95.664,33.0,4.3,mb,,,,1.0,us,usp0007ccy,2014-11-07T00:59:50.870Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-02-05 12:16:52,1996-02-05 18:46:52,Bago,Htu Pauk,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+15.234,96.257,13.8,4.8,mb,,,,1.0,us,usp0007cyc,2014-11-07T00:59:53.750Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1996-02-15 07:19:08,1996-02-15 13:49:08,,,,Tha Yet Pin Seik,village,101.0
+24.27,95.141,147.4,4.3,mb,,,,0.6,us,usp0007cra,2014-11-07T00:59:52.350Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-02-11 11:56:35,1996-02-11 18:26:35,Saigang,Mawlaik,Paungbyin,Tha Yet Kone,village,9.0
+23.437,94.675,124.3,4.6,mb,,,,1.0,us,usp0007ckp,2014-11-07T00:59:51.822Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-02-08 21:38:21,1996-02-09 04:08:21,Saigang,Kale,Kalewa,Kyaung Gyi,village,13.6
+23.835,93.328,33.0,4.3,mb,,,,1.4,us,usp0007ck7,2014-11-07T00:59:51.790Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-02-08 15:54:01,1996-02-08 22:24:01,,,,Kawlbem,village,4.6
+21.124,96.995,33.0,4.1,mb,,,,1.1,us,usp0007cd6,2014-11-07T00:59:50.900Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-02-05 14:36:04,1996-02-05 21:06:04,Shan,Taunggyi,Lawksawk,Pin Long,village,1.8
+18.862,95.664,33.0,4.3,mb,,,,1.0,us,usp0007ccy,2014-11-07T00:59:50.870Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-02-05 12:16:52,1996-02-05 18:46:52,Bago,Pyay,Paukkhaung,Htu Pauk,village,0.5

@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-21.64,94.444,95.5,4.9,mb,,,,0.8,us,usp0002tu9,2014-11-07T00:38:22.734Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-05-09 23:02:26,1986-05-10 05:32:26,Magway,Ta Yaw Kaing,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+21.64,94.444,95.5,4.9,mb,,,,0.8,us,usp0002tu9,2014-11-07T00:38:22.734Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-05-09 23:02:26,1986-05-10 05:32:26,Magway,Pakokku,Pauk,Ta Yaw Kaing,village,1.6

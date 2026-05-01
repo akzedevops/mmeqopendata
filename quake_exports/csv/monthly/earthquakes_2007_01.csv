@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.702,94.491,71.4,4.7,mb,19,146.2,,1.06,us,usp000f3fz,2014-11-07T01:31:27.012Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-01-24 11:03:31,2007-01-24 17:33:31,,Meiti,village
-23.549,94.156,73.6,4.0,mb,28,123.0,,0.72,us,usp000f35z,2014-11-07T01:31:25.720Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-01-21 16:15:37,2007-01-21 22:45:37,Saigang,Yan Myo Aung,village
-22.56,93.065,50.5,4.0,mb,23,115.5,,0.97,us,usp000f33s,2014-11-07T01:31:25.035Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-01-21 02:48:24,2007-01-21 09:18:24,,Bualpul,village
-19.193,95.294,104.4,4.9,mwc,252,67.3,,0.71,us,usp000f212,2015-02-11T17:18:29.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-01-09 05:27:22,2007-01-09 11:57:22,Magway,Than Bo Gyi,village
-22.023,98.201,10.0,4.8,mwc,101,57.4,,0.73,us,usp000f1vu,2015-02-11T17:18:28.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-01-07 10:47:06,2007-01-07 17:17:06,Shan,Kun Kyawng,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.702,94.491,71.4,4.7,mb,19,146.2,,1.06,us,usp000f3fz,2014-11-07T01:31:27.012Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-01-24 11:03:31,2007-01-24 17:33:31,,,,Meiti,village,0.9
+23.549,94.156,73.6,4.0,mb,28,123.0,,0.72,us,usp000f35z,2014-11-07T01:31:25.720Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-01-21 16:15:37,2007-01-21 22:45:37,Saigang,Kale,Kale,Yan Myo Aung,village,3.9
+22.56,93.065,50.5,4.0,mb,23,115.5,,0.97,us,usp000f33s,2014-11-07T01:31:25.035Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-01-21 02:48:24,2007-01-21 09:18:24,,,,Bualpul,village,3.3
+19.193,95.294,104.4,4.9,mwc,252,67.3,,0.71,us,usp000f212,2015-02-11T17:18:29.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-01-09 05:27:22,2007-01-09 11:57:22,Magway,Thayet,Aunglan,Than Bo Gyi,village,0.8
+22.023,98.201,10.0,4.8,mwc,101,57.4,,0.73,us,usp000f1vu,2015-02-11T17:18:28.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-01-07 10:47:06,2007-01-07 17:17:06,Shan,Loilen,Kyethi,Kun Kyawng,village,2.8

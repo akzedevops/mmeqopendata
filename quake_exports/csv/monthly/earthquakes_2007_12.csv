@@ -1,10 +1,10 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.155,94.356,95.2,3.9,mb,14,174.9,,0.38,us,usp000fved,2014-11-07T01:34:30.411Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-28 00:05:58,2007-12-28 06:35:58,Saigang,Kant That,village
-23.606,94.641,100.5,3.9,mb,32,146.1,,0.87,us,usp000fv24,2014-11-07T01:34:28.260Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-23 03:36:44,2007-12-23 10:06:44,Saigang,Kyoke Thar,village
-24.85,96.374,10.0,4.0,mb,21,150.4,,1.17,us,usp000fv19,2014-11-07T01:34:28.175Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-22 18:08:43,2007-12-23 00:38:43,Kachin,Bon Chaung,village
-26.399,96.784,35.0,3.9,mb,15,162.9,,0.97,us,usp000fuz4,2014-11-07T01:34:27.850Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-21 21:59:52,2007-12-22 04:29:52,Kachin,La Mon,village
-23.477,93.86,42.0,4.4,mb,45,109.4,,1.17,us,usp000fug3,2014-11-07T01:34:25.570Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-12-15 04:24:29,2007-12-15 10:54:29,Chin,Thenzang,village
-24.307,94.314,76.3,4.3,mb,25,115.7,,0.71,us,usp000fu8w,2014-11-07T01:34:23.746Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-12-11 13:45:11,2007-12-11 20:15:11,,,village
-23.495,94.565,113.3,5.0,mwc,159,44.7,,1.03,us,usp000ftze,2015-02-11T17:18:44.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-07 06:56:33,2007-12-07 13:26:33,Saigang,Htaw Thar,village
-24.265,94.134,97.0,0.0,,17,151.2,,0.73,us,usp000ftzc,2014-11-07T01:34:22.102Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-12-07 06:51:57,2007-12-07 13:21:57,,,village
-20.792,93.51,35.0,0.0,,6,207.0,,0.78,us,usp000ftqm,2014-11-07T01:34:20.178Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-02 13:21:25,2007-12-02 19:51:25,Chin,Mauk Chaung Wa,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.155,94.356,95.2,3.9,mb,14,174.9,,0.38,us,usp000fved,2014-11-07T01:34:30.411Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-28 00:05:58,2007-12-28 06:35:58,Saigang,Yinmarbin,Kani,Kant That,village,9.5
+23.606,94.641,100.5,3.9,mb,32,146.1,,0.87,us,usp000fv24,2014-11-07T01:34:28.260Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-23 03:36:44,2007-12-23 10:06:44,Saigang,Mawlaik,Mawlaik,Kyoke Thar,village,1.9
+24.85,96.374,10.0,4.0,mb,21,150.4,,1.17,us,usp000fv19,2014-11-07T01:34:28.175Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-22 18:08:43,2007-12-23 00:38:43,Kachin,Mohnyin,Mohnyin,Bon Chaung,village,0.5
+26.399,96.784,35.0,3.9,mb,15,162.9,,0.97,us,usp000fuz4,2014-11-07T01:34:27.850Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-21 21:59:52,2007-12-22 04:29:52,Kachin,Myitkyina,Tanai,La Mon,village,7.3
+23.477,93.86,42.0,4.4,mb,45,109.4,,1.17,us,usp000fug3,2014-11-07T01:34:25.570Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-12-15 04:24:29,2007-12-15 10:54:29,Chin,Falam,Tedim,Thenzang,village,2.8
+24.307,94.314,76.3,4.3,mb,25,115.7,,0.71,us,usp000fu8w,2014-11-07T01:34:23.746Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-12-11 13:45:11,2007-12-11 20:15:11,,,,,village,0.7
+23.495,94.565,113.3,5.0,mwc,159,44.7,,1.03,us,usp000ftze,2015-02-11T17:18:44.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-07 06:56:33,2007-12-07 13:26:33,Saigang,Mawlaik,Mawlaik,Htaw Thar,village,7.4
+24.265,94.134,97.0,0.0,,17,151.2,,0.73,us,usp000ftzc,2014-11-07T01:34:22.102Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-12-07 06:51:57,2007-12-07 13:21:57,,,,,village,1.8
+20.792,93.51,35.0,0.0,,6,207.0,,0.78,us,usp000ftqm,2014-11-07T01:34:20.178Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-12-02 13:21:25,2007-12-02 19:51:25,Chin,Mindat,Paletwa,Mauk Chaung Wa,village,6.1

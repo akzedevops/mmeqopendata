@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.956,96.416,36.8,4.3,mb,29,124.3,,0.98,us,usp000h4eh,2014-11-07T01:40:08.869Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-11-26 07:28:52,2009-11-26 13:58:52,Kachin,Kwin Gyi,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.956,96.416,36.8,4.3,mb,29,124.3,,0.98,us,usp000h4eh,2014-11-07T01:40:08.869Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-11-26 07:28:52,2009-11-26 13:58:52,Kachin,Mohnyin,Mohnyin,Kwin Gyi,village,0.8

@@ -88,8 +88,12 @@ def save_to_csv(
 ) -> None:
     if df.empty:
         return
-    write_header = not os.path.exists(path)
-    df.to_csv(path, mode="a", index=False, header=write_header)
+    if os.path.exists(path):
+        existing = pd.read_csv(path, on_bad_lines="skip")
+        df = pd.concat([existing, df], ignore_index=True)
+        if dedup:
+            df.drop_duplicates(inplace=True)
+    df.to_csv(path, index=False)
     if dedup:
         deduplicate_csv(path)
 

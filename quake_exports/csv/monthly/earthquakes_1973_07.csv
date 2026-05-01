@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-27.256,97.092,33.0,4.8,mb,,,,,us,usp00002y1,2014-11-06T23:21:17.414Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1973-07-31 21:06:14,1973-08-01 03:36:14,Kachin,Vijaynagar,village
-23.334,94.51,79.0,5.3,mb,,,,,us,usp00002w3,2014-11-06T23:21:16.563Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1973-07-27 20:23:50,1973-07-28 02:53:50,Saigang,Khan Ni (Khan Ti),village
-24.152,95.035,135.0,4.4,mb,,,,,us,usp00002pm,2014-11-06T23:21:14.647Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1973-07-12 21:31:03,1973-07-13 04:01:03,Saigang,Haw Zaung,village
-23.612,94.841,127.0,5.2,mb,,,,,us,usp00002j2,2014-11-06T23:21:14.115Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1973-07-04 21:04:46,1973-07-05 03:34:46,Saigang,Inn Taw,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+27.256,97.092,33.0,4.8,mb,,,,,us,usp00002y1,2014-11-06T23:21:17.414Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1973-07-31 21:06:14,1973-08-01 03:36:14,Kachin,Puta-O,Puta-O,Vijaynagar,village,11.6
+23.334,94.51,79.0,5.3,mb,,,,,us,usp00002w3,2014-11-06T23:21:16.563Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1973-07-27 20:23:50,1973-07-28 02:53:50,Saigang,Kale,Kalewa,Khan Ni (Khan Ti),village,6.0
+24.152,95.035,135.0,4.4,mb,,,,,us,usp00002pm,2014-11-06T23:21:14.647Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1973-07-12 21:31:03,1973-07-13 04:01:03,Saigang,Mawlaik,Paungbyin,Haw Zaung,village,7.0
+23.612,94.841,127.0,5.2,mb,,,,,us,usp00002j2,2014-11-06T23:21:14.115Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1973-07-04 21:04:46,1973-07-05 03:34:46,Saigang,Mawlaik,Mawlaik,Inn Taw,village,9.7

@@ -1,8 +1,8 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-19.711,94.546,79.4,4.1,mb,,,,0.2,us,usp0003jaz,2014-11-07T00:42:33.353Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-28 17:22:27,1988-07-28 23:52:27,Magway,Kauk Ka Lein,village
-15.364,94.057,107.6,3.9,mb,,,,0.8,us,usp0003j2s,2014-11-07T00:42:31.674Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-21 21:37:53,1988-07-22 04:07:53,,Pyi Thar Yar,village
-18.906,94.841,62.3,4.6,mb,,,,0.5,us,usp0003j1x,2014-11-07T00:42:31.619Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-21 06:53:42,1988-07-21 13:23:42,Bago,Yaung Gyi,village
-26.568,96.179,33.0,4.8,mb,,,,0.5,us,usp0003hsx,2014-11-07T00:42:30.414Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-11 23:22:43,1988-07-12 05:52:43,Kachin,Shingbwiyang,town
-22.267,93.882,33.0,4.5,mb,,,,0.3,us,usp0003hsb,2014-11-07T00:42:30.377Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1988-07-11 05:53:43,1988-07-11 12:23:43,Chin,Cangva,village
-25.064,95.372,129.4,4.8,mb,,,,0.9,us,usp0003hr8,2014-11-07T00:42:30.248Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-10 03:31:30,1988-07-10 10:01:30,Saigang,Tin Chei,village
-22.078,94.251,85.3,5.1,mw,,,,0.9,us,usp0003hj4,2015-02-11T17:15:37.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-03 08:19:18,1988-07-03 14:49:18,Magway,Me,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+19.711,94.546,79.4,4.1,mb,,,,0.2,us,usp0003jaz,2014-11-07T00:42:33.353Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-28 17:22:27,1988-07-28 23:52:27,Magway,Thayet,Minhla,Kauk Ka Lein,village,2.7
+15.364,94.057,107.6,3.9,mb,,,,0.8,us,usp0003j2s,2014-11-07T00:42:31.674Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-21 21:37:53,1988-07-22 04:07:53,,,,Pyi Thar Yar,village,65.9
+18.906,94.841,62.3,4.6,mb,,,,0.5,us,usp0003j1x,2014-11-07T00:42:31.619Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-21 06:53:42,1988-07-21 13:23:42,Bago,Pyay,Padaung,Yaung Gyi,village,11.1
+26.568,96.179,33.0,4.8,mb,,,,0.5,us,usp0003hsx,2014-11-07T00:42:30.414Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-11 23:22:43,1988-07-12 05:52:43,Kachin,Myitkyina,Tanai,Shingbwiyang,town,14.4
+22.267,93.882,33.0,4.5,mb,,,,0.3,us,usp0003hsb,2014-11-07T00:42:30.377Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1988-07-11 05:53:43,1988-07-11 12:23:43,Chin,Hakha,Hakha,Cangva,village,4.4
+25.064,95.372,129.4,4.8,mb,,,,0.9,us,usp0003hr8,2014-11-07T00:42:30.248Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-10 03:31:30,1988-07-10 10:01:30,Saigang,Hkamti,Homalin,Tin Chei,village,13.6
+22.078,94.251,85.3,5.1,mw,,,,0.9,us,usp0003hj4,2015-02-11T17:15:37.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-07-03 08:19:18,1988-07-03 14:49:18,Magway,Gangaw,Gangaw,Me,village,8.2

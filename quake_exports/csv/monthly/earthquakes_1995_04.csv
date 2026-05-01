@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.809,95.307,136.9,4.4,mb,,,,0.5,us,usp0006wfu,2014-11-07T00:57:46.749Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-04-28 08:03:09,1995-04-28 14:33:09,Saigang,Thet Kei Taung,village
-24.671,94.771,43.5,4.4,mb,,,,0.8,us,usp0006w30,2014-11-07T00:57:44.591Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1995-04-21 22:01:01,1995-04-22 04:31:01,Saigang,Shwe Pyi Aye,town
-24.468,94.579,33.0,4.3,mb,,,,1.2,us,usp0006vf2,2014-11-07T00:57:41.058Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1995-04-10 09:34:29,1995-04-10 16:04:29,Saigang,Ywar Thar,village
-24.44,94.607,38.6,4.6,mb,,,,0.9,us,usp0006vdt,2014-11-07T00:57:40.879Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1995-04-09 10:16:39,1995-04-09 16:46:39,Saigang,Wea Het,village
-25.086,96.107,20.0,4.7,ms,,,,1.2,us,usp0006v44,2014-11-07T00:57:39.028Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-04-04 05:46:14,1995-04-04 12:16:14,Kachin,Mong Poke,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.809,95.307,136.9,4.4,mb,,,,0.5,us,usp0006wfu,2014-11-07T00:57:46.749Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-04-28 08:03:09,1995-04-28 14:33:09,Saigang,Hkamti,Homalin,Thet Kei Taung,village,1.3
+24.671,94.771,43.5,4.4,mb,,,,0.8,us,usp0006w30,2014-11-07T00:57:44.591Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1995-04-21 22:01:01,1995-04-22 04:31:01,Saigang,Hkamti,Homalin,Shwe Pyi Aye,town,4.3
+24.468,94.579,33.0,4.3,mb,,,,1.2,us,usp0006vf2,2014-11-07T00:57:41.058Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1995-04-10 09:34:29,1995-04-10 16:04:29,Saigang,Hkamti,Homalin,Ywar Thar,village,7.5
+24.44,94.607,38.6,4.6,mb,,,,0.9,us,usp0006vdt,2014-11-07T00:57:40.879Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1995-04-09 10:16:39,1995-04-09 16:46:39,Saigang,Hkamti,Homalin,Wea Het,village,6.4
+25.086,96.107,20.0,4.7,ms,,,,1.2,us,usp0006v44,2014-11-07T00:57:39.028Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-04-04 05:46:14,1995-04-04 12:16:14,Kachin,Mohnyin,Mohnyin,Mong Poke,village,6.9

@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-25.228,96.463,43.8,4.2,mb,23,141.3,,1.0,us,usp000gxa9,2014-11-07T01:38:59.147Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-05-19 07:34:59,2009-05-19 14:04:59,Kachin,Aung Chan Thar,village
-24.577,94.555,74.0,4.7,mb,83,67.3,,0.96,us,usp000gx51,2014-11-07T01:38:57.335Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-05-15 15:06:32,2009-05-15 21:36:32,Saigang,Tha Nan (San Pya),village
-23.504,94.726,113.0,4.7,mb,38,115.4,,0.82,us,usp000gwv4,2014-11-07T01:38:55.311Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-05-05 09:23:02,2009-05-05 15:53:02,Saigang,Kyaung Gyi,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+25.228,96.463,43.8,4.2,mb,23,141.3,,1.0,us,usp000gxa9,2014-11-07T01:38:59.147Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-05-19 07:34:59,2009-05-19 14:04:59,Kachin,Mohnyin,Mohnyin,Aung Chan Thar,village,2.8
+24.577,94.555,74.0,4.7,mb,83,67.3,,0.96,us,usp000gx51,2014-11-07T01:38:57.335Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-05-15 15:06:32,2009-05-15 21:36:32,Saigang,Tamu,Tamu,Tha Nan (San Pya),village,1.8
+23.504,94.726,113.0,4.7,mb,38,115.4,,0.82,us,usp000gwv4,2014-11-07T01:38:55.311Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-05-05 09:23:02,2009-05-05 15:53:02,Saigang,Mawlaik,Mawlaik,Kyaung Gyi,village,9.1

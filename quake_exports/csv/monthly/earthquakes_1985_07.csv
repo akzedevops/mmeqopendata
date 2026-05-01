@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-19.238,97.308,33.0,5.0,mb,,,,1.1,us,usp0002gtc,2014-11-07T00:36:52.041Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1985-07-15 10:38:50,1985-07-15 17:08:50,Kayah,Bu Khu,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+19.238,97.308,33.0,5.0,mb,,,,1.1,us,usp0002gtc,2014-11-07T00:36:52.041Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1985-07-15 10:38:50,1985-07-15 17:08:50,Kayah,Bawlake,Bawlake,Bu Khu,village,7.6

@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.855,94.309,99.4,4.4,mb,,,,0.83,us,usp0007s6c,2014-11-07T01:01:27.681Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-10-31 04:47:44,1996-10-31 11:17:44,Saigang,Peik Ka Yar,village
-21.638,93.766,70.0,4.3,mb,,,,0.48,us,usp0007s12,2014-11-07T01:01:26.400Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-10-27 17:02:57,1996-10-27 23:32:57,Chin,Gawnglaung,village
-21.929,98.982,33.0,4.7,mb,,,,0.7,us,usp0007rju,2014-11-07T01:01:23.446Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-10-17 16:38:07,1996-10-17 23:08:07,Shan,Man Wein,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.855,94.309,99.4,4.4,mb,,,,0.83,us,usp0007s6c,2014-11-07T01:01:27.681Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-10-31 04:47:44,1996-10-31 11:17:44,Saigang,Kale,Mingin,Peik Ka Yar,village,3.1
+21.638,93.766,70.0,4.3,mb,,,,0.48,us,usp0007s12,2014-11-07T01:01:26.400Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-10-27 17:02:57,1996-10-27 23:32:57,Chin,Mindat,Mindat,Gawnglaung,village,2.6
+21.929,98.982,33.0,4.7,mb,,,,0.7,us,usp0007rju,2014-11-07T01:01:23.446Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-10-17 16:38:07,1996-10-17 23:08:07,Shan,Matman,Matman,Man Wein,village,3.7

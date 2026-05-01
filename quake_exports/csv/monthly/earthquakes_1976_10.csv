@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-26.48,96.559,33.0,4.8,mb,,,,,us,usp0000k4r,2014-11-06T23:21:37.975Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-10-31 18:36:26,1976-11-01 01:06:26,Kachin,Daik Hpar,village
-21.382,99.732,33.0,4.8,mb,,,,,us,usp0000jvz,2014-11-06T23:21:37.728Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-10-16 07:12:24,1976-10-16 13:42:24,Shan,Wan Hseng Loi Ywar Haung,village
-24.484,98.805,33.0,5.0,mb,,,,,us,usp0000juv,2014-11-06T23:21:37.699Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-10-12 15:19:33,1976-10-12 21:49:33,,Zaotangtou,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+26.48,96.559,33.0,4.8,mb,,,,,us,usp0000k4r,2014-11-06T23:21:37.975Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-10-31 18:36:26,1976-11-01 01:06:26,Kachin,Myitkyina,Tanai,Daik Hpar,village,6.2
+21.382,99.732,33.0,4.8,mb,,,,,us,usp0000jvz,2014-11-06T23:21:37.728Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-10-16 07:12:24,1976-10-16 13:42:24,Shan,Kengtung,Kengtung,Wan Hseng Loi Ywar Haung,village,1.1
+24.484,98.805,33.0,5.0,mb,,,,,us,usp0000juv,2014-11-06T23:21:37.699Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-10-12 15:19:33,1976-10-12 21:49:33,,,,Zaotangtou,village,5.9

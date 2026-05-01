@@ -1,8 +1,8 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-20.53,94.144,33.0,4.6,mb,,,,1.2,us,usp0006dbk,2014-11-07T00:55:32.697Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-05-29 14:52:58,1994-05-29 21:22:58,Magway,ပုံဆိပ်,village
-20.477,93.994,33.0,4.6,mb,,,,0.9,us,usp0006dbj,2014-11-07T00:55:32.694Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-05-29 14:35:54,1994-05-29 21:05:54,Magway,Chi Chaung,village
-20.556,94.16,35.6,6.5,mw,,,,1.0,us,usp0006dbh,2015-02-12T21:20:29.613Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-05-29 14:11:50,1994-05-29 20:41:50,Magway,Chi Chaung,village
-24.585,94.494,98.8,4.7,mb,,,,0.7,us,usp0006d9q,2014-11-07T00:55:32.281Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-05-28 07:12:30,1994-05-28 13:42:30,Saigang,Tha Nan (San Pya),village
-25.474,94.987,33.0,4.0,mb,,,,1.2,us,usp0006cq1,2014-11-07T00:55:29.131Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-05-17 09:02:55,1994-05-17 15:32:55,Saigang,Peinnekone,village
-24.802,94.548,76.3,5.0,mb,,,,1.1,us,usp0006c4k,2014-11-07T00:55:26.715Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-05-05 10:43:02,1994-05-05 17:13:02,,Lakhan Khuman,village
-25.895,95.643,104.0,4.8,mb,,,,1.2,us,usp0006c43,2014-11-07T00:55:26.663Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-05-05 06:04:02,1994-05-05 12:34:02,Saigang,,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+20.53,94.144,33.0,4.6,mb,,,,1.2,us,usp0006dbk,2014-11-07T00:55:32.697Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-05-29 14:52:58,1994-05-29 21:22:58,Magway,Minbu,Sidoktaya,ပုံဆိပ်,village,6.6
+20.477,93.994,33.0,4.6,mb,,,,0.9,us,usp0006dbj,2014-11-07T00:55:32.694Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-05-29 14:35:54,1994-05-29 21:05:54,Magway,Minbu,Sidoktaya,Chi Chaung,village,20.8
+20.556,94.16,35.6,6.5,mw,,,,1.0,us,usp0006dbh,2015-02-12T21:20:29.613Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-05-29 14:11:50,1994-05-29 20:41:50,Magway,Minbu,Sidoktaya,Chi Chaung,village,4.2
+24.585,94.494,98.8,4.7,mb,,,,0.7,us,usp0006d9q,2014-11-07T00:55:32.281Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-05-28 07:12:30,1994-05-28 13:42:30,Saigang,Tamu,Tamu,Tha Nan (San Pya),village,6.4
+25.474,94.987,33.0,4.0,mb,,,,1.2,us,usp0006cq1,2014-11-07T00:55:29.131Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-05-17 09:02:55,1994-05-17 15:32:55,Saigang,Hkamti,Lay Shi,Peinnekone,village,2.2
+24.802,94.548,76.3,5.0,mb,,,,1.1,us,usp0006c4k,2014-11-07T00:55:26.715Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-05-05 10:43:02,1994-05-05 17:13:02,,,,Lakhan Khuman,village,1.9
+25.895,95.643,104.0,4.8,mb,,,,1.2,us,usp0006c43,2014-11-07T00:55:26.663Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-05-05 06:04:02,1994-05-05 12:34:02,Saigang,Hkamti,Hkamti,,village,5.3

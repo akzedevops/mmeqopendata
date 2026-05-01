@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-26.85,96.459,33.0,3.8,mb,9,,,0.69,us,usp000baj6,2014-11-07T01:16:19.981Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-08-24 18:11:54,2002-08-25 00:41:54,Kachin,Ta Hket,village
-17.616,97.571,33.0,4.4,mb,22,,,0.71,us,usp000ba5k,2014-11-07T01:16:17.527Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-08-18 21:07:19,2002-08-19 03:37:19,Kayin,Shwe Hpa Lar Kya (Middle),village
-24.683,94.926,139.5,3.9,mb,10,,,0.78,us,usp000ba11,2014-11-07T01:16:16.691Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-08-16 16:32:33,2002-08-16 23:02:33,Saigang,Auk Hman Kin,village
-22.194,93.388,74.3,3.8,mb,9,,,0.54,us,usp000b98n,2014-11-07T01:16:12.761Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-08-03 16:28:46,2002-08-03 22:58:46,Chin,Hriangpi (B),village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+26.85,96.459,33.0,3.8,mb,9,,,0.69,us,usp000baj6,2014-11-07T01:16:19.981Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-08-24 18:11:54,2002-08-25 00:41:54,Kachin,Myitkyina,Tanai,Ta Hket,village,24.7
+17.616,97.571,33.0,4.4,mb,22,,,0.71,us,usp000ba5k,2014-11-07T01:16:17.527Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2002-08-18 21:07:19,2002-08-19 03:37:19,Kayin,Hpapun,Hpapun,Shwe Hpa Lar Kya (Middle),village,1.8
+24.683,94.926,139.5,3.9,mb,10,,,0.78,us,usp000ba11,2014-11-07T01:16:16.691Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-08-16 16:32:33,2002-08-16 23:02:33,Saigang,Hkamti,Homalin,Auk Hman Kin,village,2.3
+22.194,93.388,74.3,3.8,mb,9,,,0.54,us,usp000b98n,2014-11-07T01:16:12.761Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2002-08-03 16:28:46,2002-08-03 22:58:46,Chin,Mindat,Matupi,Hriangpi (B),village,1.2

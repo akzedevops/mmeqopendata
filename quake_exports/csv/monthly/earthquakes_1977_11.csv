@@ -1,3 +1,3 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.158,94.749,33.0,4.4,mb,,,,,us,usp0000rv7,2014-11-06T23:21:45.672Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1977-11-29 01:53:40,1977-11-29 08:23:40,Saigang,Pan Ma Htone,village
-25.05,96.391,33.0,4.4,mb,,,,,us,usp0000rr9,2014-11-06T23:21:45.454Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1977-11-24 21:06:52,1977-11-25 03:36:52,Kachin,Inn Thar,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.158,94.749,33.0,4.4,mb,,,,,us,usp0000rv7,2014-11-06T23:21:45.672Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1977-11-29 01:53:40,1977-11-29 08:23:40,Saigang,Yinmarbin,Yinmarbin,Pan Ma Htone,village,0.8
+25.05,96.391,33.0,4.4,mb,,,,,us,usp0000rr9,2014-11-06T23:21:45.454Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1977-11-24 21:06:52,1977-11-25 03:36:52,Kachin,Mohnyin,Mohnyin,Inn Thar,village,3.0

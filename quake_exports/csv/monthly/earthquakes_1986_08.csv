@@ -1,3 +1,3 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.555,94.085,94.8,4.5,mb,,,,1.1,us,usp0002x7g,2014-11-07T00:38:51.898Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-08-16 22:44:50,1986-08-17 05:14:50,Magway,Hnan Khar,village
-22.689,94.196,75.1,4.5,mb,,,,1.2,us,usp0002x7e,2014-11-07T00:38:51.890Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-08-16 22:36:49,1986-08-17 05:06:49,Saigang,လယ်ကြီး (အရှေ့),village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.555,94.085,94.8,4.5,mb,,,,1.1,us,usp0002x7g,2014-11-07T00:38:51.898Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-08-16 22:44:50,1986-08-17 05:14:50,Magway,Gangaw,Gangaw,Hnan Khar,village,0.1
+22.689,94.196,75.1,4.5,mb,,,,1.2,us,usp0002x7e,2014-11-07T00:38:51.890Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-08-16 22:36:49,1986-08-17 05:06:49,Saigang,Kale,Kale,လယ်ကြီး (အရှေ့),village,6.3

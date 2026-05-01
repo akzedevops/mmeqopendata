@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.817,95.137,110.4,4.8,mb,,,,1.4,us,usp0002kqb,2014-11-07T00:37:19.123Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1985-10-12 05:50:14,1985-10-12 12:20:14,Saigang,Naung Taw,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.817,95.137,110.4,4.8,mb,,,,1.4,us,usp0002kqb,2014-11-07T00:37:19.123Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1985-10-12 05:50:14,1985-10-12 12:20:14,Saigang,Hkamti,Homalin,Naung Taw,village,2.3

@@ -153,13 +153,15 @@ def deduplicate_csv(path: str):
 
 
 def save_to_csv(df: pd.DataFrame, path: str, dedup: bool = False):
-    """Append DataFrame to CSV. Pass dedup=True to deduplicate after writing."""
+    """Save DataFrame to CSV, merging with existing data if present."""
     if df.empty:
         return
-    write_header = not os.path.exists(path)
-    df.to_csv(path, mode="a", index=False, header=write_header)
-    if dedup:
-        deduplicate_csv(path)
+    if os.path.exists(path):
+        existing = pd.read_csv(path, on_bad_lines="skip")
+        df = pd.concat([existing, df], ignore_index=True)
+        if dedup:
+            df.drop_duplicates(inplace=True)
+    df.to_csv(path, index=False)
 
 
 def save_to_json(df: pd.DataFrame, path: str):

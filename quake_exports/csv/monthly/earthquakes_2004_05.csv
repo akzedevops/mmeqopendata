@@ -1,15 +1,15 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-27.186,97.229,41.7,4.1,mb,18,127.2,,1.04,us,usp000cw6f,2014-11-07T01:22:24.132Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-05-25 13:07:40,2004-05-25 19:37:40,Kachin,Nam Ton Hku,village
-27.099,97.219,35.0,5.0,mwc,124,70.5,,1.03,us,usp000cw44,2015-02-11T17:17:44.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-05-24 22:01:02,2004-05-25 04:31:02,Kachin,Nam Ton Hku,village
-22.741,93.577,163.0,4.5,mb,12,139.2,,1.06,us,usp000cw1w,2014-11-07T01:22:23.610Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-05-24 02:34:12,2004-05-24 09:04:12,Chin,Chuncung,village
-24.685,95.19,104.0,4.6,mb,148,50.1,,0.92,us,usp000cw1t,2014-11-07T01:22:23.591Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-24 01:39:54,2004-05-24 08:09:54,Saigang,Nan Hpei,village
-24.41,94.693,105.5,0.0,,11,183.0,,0.69,us,usp000cvr9,2014-11-07T01:22:21.975Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-05-21 06:15:32,2004-05-21 12:45:32,Saigang,Taung Taw,village
-19.663,95.775,3.6,0.0,,15,170.7,,0.8,us,usp000cvkc,2014-11-07T01:22:21.163Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-19 16:17:49,2004-05-19 22:47:49,Mandalay,Da Lant Chun,village
-23.276,94.22,102.4,4.5,mb,24,147.3,,0.68,us,usp000cv65,2014-11-07T01:22:19.440Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-16 04:57:18,2004-05-16 11:27:18,Saigang,Nat Gyi Kone,village
-24.305,94.055,82.8,0.0,,15,151.4,,0.79,us,usp000cv04,2014-11-07T01:22:18.500Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-05-14 04:16:47,2004-05-14 10:46:47,,,village
-23.035,94.159,60.0,0.0,,12,160.9,,0.85,us,usp000cumw,2014-11-07T01:22:16.554Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-10 09:21:53,2004-05-10 15:51:53,Saigang,Pauk Taw (East),village
-20.68,98.602,20.0,0.0,,10,163.5,,1.31,us,usp000cucy,2014-11-07T01:22:15.678Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-07 18:18:03,2004-05-08 00:48:03,Shan,Nge Taung,village
-22.332,94.331,104.1,0.0,,10,167.2,,1.24,us,usp000cubt,2014-11-07T01:22:15.550Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-07 04:41:21,2004-05-07 11:11:21,Saigang,ကွမ်းဇဲ (ဝီကီ နေရာလွဲ),village
-24.709,97.26,40.6,0.0,,17,121.4,,1.03,us,usp000cu3y,2014-11-07T01:22:14.218Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2004-05-03 23:04:24,2004-05-04 05:34:24,Kachin,Man Ping,village
-23.272,94.18,83.0,4.0,mb,11,161.1,,0.74,us,usp000ctz1,2014-11-07T01:22:12.319Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-02 01:14:16,2004-05-02 07:44:16,Saigang,Nat Gyi Kone,village
-23.342,94.256,91.7,0.0,,11,159.0,,1.05,us,usp000cty6,2014-11-07T01:22:12.121Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-01 19:11:54,2004-05-02 01:41:54,Saigang,Yaw Su,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+27.186,97.229,41.7,4.1,mb,18,127.2,,1.04,us,usp000cw6f,2014-11-07T01:22:24.132Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-05-25 13:07:40,2004-05-25 19:37:40,Kachin,Puta-O,Puta-O,Nam Ton Hku,village,14.5
+27.099,97.219,35.0,5.0,mwc,124,70.5,,1.03,us,usp000cw44,2015-02-11T17:17:44.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-05-24 22:01:02,2004-05-25 04:31:02,Kachin,Puta-O,Puta-O,Nam Ton Hku,village,23.5
+22.741,93.577,163.0,4.5,mb,12,139.2,,1.06,us,usp000cw1w,2014-11-07T01:22:23.610Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-05-24 02:34:12,2004-05-24 09:04:12,Chin,Hakha,Hakha,Chuncung,village,3.4
+24.685,95.19,104.0,4.6,mb,148,50.1,,0.92,us,usp000cw1t,2014-11-07T01:22:23.591Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-24 01:39:54,2004-05-24 08:09:54,Saigang,Hkamti,Homalin,Nan Hpei,village,0.6
+24.41,94.693,105.5,0.0,,11,183.0,,0.69,us,usp000cvr9,2014-11-07T01:22:21.975Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-05-21 06:15:32,2004-05-21 12:45:32,Saigang,Hkamti,Homalin,Taung Taw,village,1.1
+19.663,95.775,3.6,0.0,,15,170.7,,0.8,us,usp000cvkc,2014-11-07T01:22:21.163Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-19 16:17:49,2004-05-19 22:47:49,Mandalay,Det Khi Na,Lewe,Da Lant Chun,village,1.8
+23.276,94.22,102.4,4.5,mb,24,147.3,,0.68,us,usp000cv65,2014-11-07T01:22:19.440Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-16 04:57:18,2004-05-16 11:27:18,Saigang,Kale,Kale,Nat Gyi Kone,village,5.5
+24.305,94.055,82.8,0.0,,15,151.4,,0.79,us,usp000cv04,2014-11-07T01:22:18.500Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-05-14 04:16:47,2004-05-14 10:46:47,,,,,village,1.6
+23.035,94.159,60.0,0.0,,12,160.9,,0.85,us,usp000cumw,2014-11-07T01:22:16.554Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-10 09:21:53,2004-05-10 15:51:53,Saigang,Kale,Kale,Pauk Taw (East),village,6.0
+20.68,98.602,20.0,0.0,,10,163.5,,1.31,us,usp000cucy,2014-11-07T01:22:15.678Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-07 18:18:03,2004-05-08 00:48:03,Shan,Monghsat,Mongton,Nge Taung,village,7.9
+22.332,94.331,104.1,0.0,,10,167.2,,1.24,us,usp000cubt,2014-11-07T01:22:15.550Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-07 04:41:21,2004-05-07 11:11:21,Saigang,Kale,Mingin,ကွမ်းဇဲ (ဝီကီ နေရာလွဲ),village,16.4
+24.709,97.26,40.6,0.0,,17,121.4,,1.03,us,usp000cu3y,2014-11-07T01:22:14.218Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2004-05-03 23:04:24,2004-05-04 05:34:24,Kachin,Bhamo,Momauk,Man Ping,village,5.9
+23.272,94.18,83.0,4.0,mb,11,161.1,,0.74,us,usp000ctz1,2014-11-07T01:22:12.319Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-02 01:14:16,2004-05-02 07:44:16,Saigang,Kale,Kale,Nat Gyi Kone,village,3.0
+23.342,94.256,91.7,0.0,,11,159.0,,1.05,us,usp000cty6,2014-11-07T01:22:12.121Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-05-01 19:11:54,2004-05-02 01:41:54,Saigang,Kale,Kalewa,Yaw Su,village,6.2

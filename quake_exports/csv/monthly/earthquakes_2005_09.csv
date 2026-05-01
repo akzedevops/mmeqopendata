@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.561,94.781,84.0,5.7,mwb,490.0,16.9,,0.78,us,usp000dznh,2015-02-12T23:37:11.949Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-09-18 07:25:59,2005-09-18 13:55:59,Saigang,Nan Khan,village
-24.56,94.78,84.0,5.7,mwc,,,,,gc,gcmt200509,2015-02-11T17:18:07.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-09-18 07:25:59,2005-09-18 13:55:59,Saigang,Nan Khan,village
-24.307,94.324,61.8,0.0,,6.0,193.0,,0.52,us,usp000dyrf,2014-11-07T01:27:00.285Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-09-04 11:42:05,2005-09-04 18:12:05,Saigang,,village
-23.764,94.24,59.8,3.8,mb,19.0,100.9,,0.76,us,usp000dykw,2014-11-07T01:26:59.210Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-09-02 15:36:31,2005-09-02 22:06:31,Saigang,Tein Ka Yar (Myanmar),village
-24.592,94.859,35.0,0.0,,8.0,154.3,,1.12,us,usp000dyg1,2014-11-07T01:26:57.628Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-09-01 07:26:33,2005-09-01 13:56:33,Saigang,Nan Khan,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.561,94.781,84.0,5.7,mwb,490.0,16.9,,0.78,us,usp000dznh,2015-02-12T23:37:11.949Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-09-18 07:25:59,2005-09-18 13:55:59,Saigang,Hkamti,Homalin,Nan Khan,village,3.8
+24.56,94.78,84.0,5.7,mwc,,,,,gc,gcmt200509,2015-02-11T17:18:07.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-09-18 07:25:59,2005-09-18 13:55:59,Saigang,Hkamti,Homalin,Nan Khan,village,3.8
+24.307,94.324,61.8,0.0,,6.0,193.0,,0.52,us,usp000dyrf,2014-11-07T01:27:00.285Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-09-04 11:42:05,2005-09-04 18:12:05,Saigang,Tamu,Tamu,,village,0.6
+23.764,94.24,59.8,3.8,mb,19.0,100.9,,0.76,us,usp000dykw,2014-11-07T01:26:59.210Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-09-02 15:36:31,2005-09-02 22:06:31,Saigang,Mawlaik,Mawlaik,Tein Ka Yar (Myanmar),village,7.6
+24.592,94.859,35.0,0.0,,8.0,154.3,,1.12,us,usp000dyg1,2014-11-07T01:26:57.628Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-09-01 07:26:33,2005-09-01 13:56:33,Saigang,Hkamti,Homalin,Nan Khan,village,10.2

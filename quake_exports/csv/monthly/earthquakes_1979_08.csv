@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-25.981,95.208,128.0,4.1,mb,,,,,us,usp00012hx,2014-11-06T23:22:04.916Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-08-21 05:56:27,1979-08-21 12:26:27,Saigang,Htan Par Kway,town
-24.204,94.939,110.0,5.0,mb,,,,,us,usp00012c5,2014-11-06T23:22:04.704Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1979-08-11 20:32:07,1979-08-12 03:02:07,Saigang,Par Kwe,village
-25.085,98.858,10.0,4.7,mb,,,,,us,usp000129z,2014-11-06T23:22:04.622Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1979-08-08 17:00:48,1979-08-08 23:30:48,,龙井,village
-25.73,95.115,155.0,4.6,mb,,,,,us,usp000126c,2014-11-06T23:22:04.390Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-08-01 08:58:29,1979-08-01 15:28:29,Saigang,,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+25.981,95.208,128.0,4.1,mb,,,,,us,usp00012hx,2014-11-06T23:22:04.916Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-08-21 05:56:27,1979-08-21 12:26:27,Saigang,Hkamti,Lahe,Htan Par Kway,town,3.7
+24.204,94.939,110.0,5.0,mb,,,,,us,usp00012c5,2014-11-06T23:22:04.704Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1979-08-11 20:32:07,1979-08-12 03:02:07,Saigang,Mawlaik,Paungbyin,Par Kwe,village,2.3
+25.085,98.858,10.0,4.7,mb,,,,,us,usp000129z,2014-11-06T23:22:04.622Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1979-08-08 17:00:48,1979-08-08 23:30:48,,,,龙井,village,3.6
+25.73,95.115,155.0,4.6,mb,,,,,us,usp000126c,2014-11-06T23:22:04.390Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-08-01 08:58:29,1979-08-01 15:28:29,Saigang,Hkamti,Hkamti,,village,11.4

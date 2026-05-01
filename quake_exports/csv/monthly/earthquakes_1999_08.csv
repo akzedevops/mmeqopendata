@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.34,94.642,117.3,3.9,mb,,,,0.87,us,usp0009dk8,2014-11-07T01:08:19.801Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-08-24 20:10:18,1999-08-25 02:40:18,Saigang,Nyaung Pin Lel,village
-18.245,96.245,18.3,4.5,mb,,,,0.83,us,usp0009d2w,2014-11-07T01:08:16.558Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-08-15 16:23:46,1999-08-15 22:53:46,Bago,Sar Byin Village,village
-18.389,96.228,18.4,5.2,mwc,,,,0.92,us,usp0009d2v,2015-02-11T17:16:58.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-08-15 16:18:35,1999-08-15 22:48:35,Bago,Sar Byin Village,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.34,94.642,117.3,3.9,mb,,,,0.87,us,usp0009dk8,2014-11-07T01:08:19.801Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-08-24 20:10:18,1999-08-25 02:40:18,Saigang,Yinmarbin,Kani,Nyaung Pin Lel,village,1.8
+18.245,96.245,18.3,4.5,mb,,,,0.83,us,usp0009d2w,2014-11-07T01:08:16.558Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-08-15 16:23:46,1999-08-15 22:53:46,Bago,Bago,Kyauktaga,Sar Byin Village,village,9.2
+18.389,96.228,18.4,5.2,mwc,,,,0.92,us,usp0009d2v,2015-02-11T17:16:58.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-08-15 16:18:35,1999-08-15 22:48:35,Bago,Bago,Kyauktaga,Sar Byin Village,village,12.4

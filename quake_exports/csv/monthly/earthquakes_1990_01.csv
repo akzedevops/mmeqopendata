@@ -1,7 +1,7 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-25.185,96.424,33.0,4.7,mb,,,,1.1,us,usp00044n3,2014-11-07T00:45:35.371Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-01-23 15:40:53,1990-01-23 22:10:53,Kachin,Ma Na Hkaw,village
-25.047,95.364,141.8,4.7,mb,,,,1.3,us,usp000444b,2014-11-07T00:45:31.747Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-01-11 11:14:43,1990-01-11 17:44:43,Saigang,Tin Chei,village
-24.516,94.682,86.5,5.2,mb,,,,1.0,us,usp000442q,2014-11-07T00:45:31.551Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-01-10 06:37:54,1990-01-10 13:07:54,Saigang,Saik Kun,village
-22.466,94.552,122.5,4.8,mb,,,,0.9,us,usp000442n,2014-11-07T00:45:31.546Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-01-10 06:11:06,1990-01-10 12:41:06,Saigang,Pwint Kar,village
-24.753,95.241,119.2,6.3,mw,,,,1.1,us,usp0004421,2015-02-12T21:57:22.896Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-01-09 18:51:29,1990-01-10 01:21:29,Saigang,Naung Thea,village
-20.142,98.752,49.5,4.3,mb,,,,0.7,us,usp0004400,2014-11-07T00:45:30.209Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-01-07 23:35:09,1990-01-08 06:05:09,Shan,Wufu,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+25.185,96.424,33.0,4.7,mb,,,,1.1,us,usp00044n3,2014-11-07T00:45:35.371Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-01-23 15:40:53,1990-01-23 22:10:53,Kachin,Mohnyin,Mohnyin,Ma Na Hkaw,village,4.3
+25.047,95.364,141.8,4.7,mb,,,,1.3,us,usp000444b,2014-11-07T00:45:31.747Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-01-11 11:14:43,1990-01-11 17:44:43,Saigang,Hkamti,Homalin,Tin Chei,village,12.4
+24.516,94.682,86.5,5.2,mb,,,,1.0,us,usp000442q,2014-11-07T00:45:31.551Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-01-10 06:37:54,1990-01-10 13:07:54,Saigang,Hkamti,Homalin,Saik Kun,village,2.1
+22.466,94.552,122.5,4.8,mb,,,,0.9,us,usp000442n,2014-11-07T00:45:31.546Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-01-10 06:11:06,1990-01-10 12:41:06,Saigang,Yinmarbin,Kani,Pwint Kar,village,8.4
+24.753,95.241,119.2,6.3,mw,,,,1.1,us,usp0004421,2015-02-12T21:57:22.896Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-01-09 18:51:29,1990-01-10 01:21:29,Saigang,Hkamti,Homalin,Naung Thea,village,3.6
+20.142,98.752,49.5,4.3,mb,,,,0.7,us,usp0004400,2014-11-07T00:45:30.209Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-01-07 23:35:09,1990-01-08 06:05:09,Shan,Monghsat,Mongton,Wufu,village,17.2

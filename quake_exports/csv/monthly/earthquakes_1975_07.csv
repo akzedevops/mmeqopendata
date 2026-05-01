@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-26.509,96.387,33.0,5.2,mb,,,,,us,usp0000c4u,2014-11-06T23:21:31.347Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-07-23 03:03:11,1975-07-23 09:33:11,Kachin,Daik Hpar,village
-21.544,94.698,178.0,4.8,mb,,,,,us,usp0000bya,2014-11-06T23:21:31.147Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-07-09 11:30:39,1975-07-09 18:00:39,Magway,Ywar Thit Kone,village
-21.508,94.76,94.0,4.6,mb,,,,,us,usp0000by2,2014-11-06T23:21:31.143Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-07-08 19:36:43,1975-07-09 02:06:43,Magway,Kyit Tee,village
-21.485,94.7,157.0,6.5,mb,,,,,us,usp0000bxy,2015-02-12T22:28:41.823Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-07-08 12:04:42,1975-07-08 18:34:42,Magway,Htauk Shar Pin,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+26.509,96.387,33.0,5.2,mb,,,,,us,usp0000c4u,2014-11-06T23:21:31.347Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-07-23 03:03:11,1975-07-23 09:33:11,Kachin,Myitkyina,Tanai,Daik Hpar,village,11.4
+21.544,94.698,178.0,4.8,mb,,,,,us,usp0000bya,2014-11-06T23:21:31.147Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-07-09 11:30:39,1975-07-09 18:00:39,Magway,Pakokku,Pauk,Ywar Thit Kone,village,1.2
+21.508,94.76,94.0,4.6,mb,,,,,us,usp0000by2,2014-11-06T23:21:31.143Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-07-08 19:36:43,1975-07-09 02:06:43,Magway,Pakokku,Myaing,Kyit Tee,village,0.2
+21.485,94.7,157.0,6.5,mb,,,,,us,usp0000bxy,2015-02-12T22:28:41.823Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1975-07-08 12:04:42,1975-07-08 18:34:42,Magway,Pakokku,Pauk,Htauk Shar Pin,village,1.3

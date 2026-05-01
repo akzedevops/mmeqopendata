@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-16.517,95.988,97.6,4.6,mb,,,,0.62,us,usp0009grg,2014-11-07T01:08:47.029Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1999-10-28 17:06:24,1999-10-28 23:36:24,Yangon,Tha Pyu San,village
-24.797,95.239,145.4,4.3,mb,,,,0.86,us,usp0009g8e,2014-11-07T01:08:44.555Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-10-19 17:34:18,1999-10-20 00:04:18,Saigang,Naung Khan,village
-27.538,97.399,72.2,4.5,mb,,,,0.8,us,usp0009fnf,2014-11-07T01:08:41.139Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1999-10-10 05:20:18,1999-10-10 11:50:18,Kachin,Hton Htu,village
-23.751,94.759,126.6,4.3,mb,,,,1.01,us,usp0009fgy,2014-11-07T01:08:40.497Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-10-06 10:23:28,1999-10-06 16:53:28,Saigang,Law Thar,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+16.517,95.988,97.6,4.6,mb,,,,0.62,us,usp0009grg,2014-11-07T01:08:47.029Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1999-10-28 17:06:24,1999-10-28 23:36:24,Yangon,Yangon (South),Kungyangon,Tha Pyu San,village,0.8
+24.797,95.239,145.4,4.3,mb,,,,0.86,us,usp0009g8e,2014-11-07T01:08:44.555Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-10-19 17:34:18,1999-10-20 00:04:18,Saigang,Hkamti,Homalin,Naung Khan,village,1.6
+27.538,97.399,72.2,4.5,mb,,,,0.8,us,usp0009fnf,2014-11-07T01:08:41.139Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1999-10-10 05:20:18,1999-10-10 11:50:18,Kachin,Puta-O,Puta-O,Hton Htu,village,2.1
+23.751,94.759,126.6,4.3,mb,,,,1.01,us,usp0009fgy,2014-11-07T01:08:40.497Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-10-06 10:23:28,1999-10-06 16:53:28,Saigang,Mawlaik,Mawlaik,Law Thar,village,8.3

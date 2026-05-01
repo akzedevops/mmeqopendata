@@ -1,3 +1,3 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-21.113,94.755,124.8,4.5,mb,,,,1.0,us,usp00035sg,2014-11-07T00:40:32.523Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-06-14 07:19:17,1987-06-14 13:49:17,Magway,Saing Hpyu,village
-23.667,94.49,33.0,4.5,mb,,,,1.1,us,usp00035pa,2014-11-07T00:40:31.979Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-06-10 03:15:42,1987-06-10 09:45:42,Saigang,Ywar Thit,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+21.113,94.755,124.8,4.5,mb,,,,1.0,us,usp00035sg,2014-11-07T00:40:32.523Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-06-14 07:19:17,1987-06-14 13:49:17,Magway,Pakokku,Pakokku,Saing Hpyu,village,2.2
+23.667,94.49,33.0,4.5,mb,,,,1.1,us,usp00035pa,2014-11-07T00:40:31.979Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-06-10 03:15:42,1987-06-10 09:45:42,Saigang,Mawlaik,Mawlaik,Ywar Thit,village,2.7

@@ -1,7 +1,7 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.562,97.807,35.0,4.2,mb,32,122.8,,0.98,us,usp000g548,2014-11-07T01:35:45.136Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2008-04-29 15:02:56,2008-04-29 21:32:56,,弄腮,village
-24.618,97.805,35.0,4.0,mb,27,128.3,,1.1,us,usp000g4zj,2014-11-07T01:35:44.413Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2008-04-27 18:09:55,2008-04-28 00:39:55,,,village
-23.942,94.477,98.8,4.3,mb,41,67.8,,0.89,us,usp000g4cg,2014-11-07T01:35:40.865Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-04-20 00:30:07,2008-04-20 07:00:07,Saigang,Ma Gyi Tan,village
-22.209,99.717,35.0,0.0,,8,142.0,,1.2,us,usp000g3fs,2014-11-07T01:35:34.489Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2008-04-09 16:42:06,2008-04-09 23:12:06,,Nuofu,town
-22.553,94.376,101.1,3.9,mb,23,110.8,,0.61,us,usp000g36q,2014-11-07T01:35:31.983Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-04-06 02:23:15,2008-04-06 08:53:15,Saigang,Thit Khauk,village
-26.106,96.915,30.2,4.6,mb,117,102.2,,0.61,us,usp000g32d,2014-11-07T01:35:29.863Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-04-03 22:12:54,2008-04-04 04:42:54,Kachin,,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.562,97.807,35.0,4.2,mb,32,122.8,,0.98,us,usp000g548,2014-11-07T01:35:45.136Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2008-04-29 15:02:56,2008-04-29 21:32:56,,,,弄腮,village,1.0
+24.618,97.805,35.0,4.0,mb,27,128.3,,1.1,us,usp000g4zj,2014-11-07T01:35:44.413Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2008-04-27 18:09:55,2008-04-28 00:39:55,,,,,village,3.7
+23.942,94.477,98.8,4.3,mb,41,67.8,,0.89,us,usp000g4cg,2014-11-07T01:35:40.865Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-04-20 00:30:07,2008-04-20 07:00:07,Saigang,Tamu,Tamu,Ma Gyi Tan,village,7.0
+22.209,99.717,35.0,0.0,,8,142.0,,1.2,us,usp000g3fs,2014-11-07T01:35:34.489Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2008-04-09 16:42:06,2008-04-09 23:12:06,,,,Nuofu,town,2.1
+22.553,94.376,101.1,3.9,mb,23,110.8,,0.61,us,usp000g36q,2014-11-07T01:35:31.983Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-04-06 02:23:15,2008-04-06 08:53:15,Saigang,Kale,Mingin,Thit Khauk,village,9.5
+26.106,96.915,30.2,4.6,mb,117,102.2,,0.61,us,usp000g32d,2014-11-07T01:35:29.863Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-04-03 22:12:54,2008-04-04 04:42:54,Kachin,Myitkyina,Tanai,,village,16.4

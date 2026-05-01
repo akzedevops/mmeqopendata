@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.444,94.781,33.0,4.7,mb,,,,,us,usp00018xc,2014-11-06T23:24:24.351Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-07-16 20:55:28,1980-07-17 03:25:28,Saigang,Kyun Ywar,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.444,94.781,33.0,4.7,mb,,,,,us,usp00018xc,2014-11-06T23:24:24.351Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-07-16 20:55:28,1980-07-17 03:25:28,Saigang,Yinmarbin,Kani,Kyun Ywar,village,3.8

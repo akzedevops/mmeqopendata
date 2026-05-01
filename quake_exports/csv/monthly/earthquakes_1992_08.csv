@@ -1,3 +1,3 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.576,93.541,33.0,4.3,mb,,,,0.9,us,usp0005cv1,2014-11-07T00:51:17.821Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1992-08-21 21:57:29,1992-08-22 04:27:29,Chin,Lichia,village
-14.561,97.026,24.1,4.0,mb,,,,1.0,us,usp0005c31,2014-11-07T00:51:14.109Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1992-08-06 22:16:32,1992-08-07 04:46:32,,Ma Yan Ywar,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.576,93.541,33.0,4.3,mb,,,,0.9,us,usp0005cv1,2014-11-07T00:51:17.821Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1992-08-21 21:57:29,1992-08-22 04:27:29,Chin,Hakha,Hakha,Lichia,village,1.5
+14.561,97.026,24.1,4.0,mb,,,,1.0,us,usp0005c31,2014-11-07T00:51:14.109Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1992-08-06 22:16:32,1992-08-07 04:46:32,,,,Ma Yan Ywar,village,89.4

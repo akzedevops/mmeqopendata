@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-17.791,94.343,33.0,4.9,mb,,,,0.83,us,usp0008mkf,2014-11-07T01:05:11.031Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-05-06 19:56:13,1998-05-07 02:26:13,,Gyai Kauk,village
-24.526,97.603,33.0,3.8,mb,,,,1.32,us,usp0008mk6,2014-11-07T01:05:10.990Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1998-05-06 15:40:45,1998-05-06 22:10:45,,建边村,village
-24.932,95.311,121.5,5.5,mwc,,,,0.83,us,usp0008maa,2015-02-11T17:16:48.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-05-02 08:36:50,1998-05-02 15:06:50,Saigang,Naung Moe,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+17.791,94.343,33.0,4.9,mb,,,,0.83,us,usp0008mkf,2014-11-07T01:05:11.031Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-05-06 19:56:13,1998-05-07 02:26:13,,,,Gyai Kauk,village,16.2
+24.526,97.603,33.0,3.8,mb,,,,1.32,us,usp0008mk6,2014-11-07T01:05:10.990Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1998-05-06 15:40:45,1998-05-06 22:10:45,,,,建边村,village,9.7
+24.932,95.311,121.5,5.5,mwc,,,,0.83,us,usp0008maa,2015-02-11T17:16:48.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-05-02 08:36:50,1998-05-02 15:06:50,Saigang,Hkamti,Homalin,Naung Moe,village,2.8

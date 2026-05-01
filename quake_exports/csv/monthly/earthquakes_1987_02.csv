@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.245,94.789,112.8,4.6,mb,,,,1.0,us,usp00032h3,2014-11-07T00:39:52.149Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-02-15 19:26:29,1987-02-16 01:56:29,Saigang,Auk Taung,village
-23.126,94.135,55.4,4.8,mb,,,,1.2,us,usp00032f1,2014-11-07T00:39:51.649Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-02-13 19:20:16,1987-02-14 01:50:16,Saigang,Au Du,village
-24.309,95.14,33.0,3.4,mb,,,,1.0,us,usp00032az,2014-11-07T00:39:50.049Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-02-09 15:21:24,1987-02-09 21:51:24,Saigang,Taung Boet Hla,village
-23.652,94.639,82.8,4.6,mb,,,,0.5,us,usp0003280,2014-11-07T00:39:47.963Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-02-07 04:39:36,1987-02-07 11:09:36,Saigang,Kyoke Thar,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.245,94.789,112.8,4.6,mb,,,,1.0,us,usp00032h3,2014-11-07T00:39:52.149Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-02-15 19:26:29,1987-02-16 01:56:29,Saigang,Mawlaik,Paungbyin,Auk Taung,village,1.7
+23.126,94.135,55.4,4.8,mb,,,,1.2,us,usp00032f1,2014-11-07T00:39:51.649Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-02-13 19:20:16,1987-02-14 01:50:16,Saigang,Kale,Kale,Au Du,village,2.3
+24.309,95.14,33.0,3.4,mb,,,,1.0,us,usp00032az,2014-11-07T00:39:50.049Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-02-09 15:21:24,1987-02-09 21:51:24,Saigang,Mawlaik,Paungbyin,Taung Boet Hla,village,10.6
+23.652,94.639,82.8,4.6,mb,,,,0.5,us,usp0003280,2014-11-07T00:39:47.963Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-02-07 04:39:36,1987-02-07 11:09:36,Saigang,Mawlaik,Mawlaik,Kyoke Thar,village,3.3

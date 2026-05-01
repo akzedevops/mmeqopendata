@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-20.067,94.768,74.2,4.6,mb,,,,1.0,us,usp0003and,2014-11-07T00:41:16.183Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-11-28 22:17:15,1987-11-29 04:47:15,Magway,Zee Aing,village
-25.607,95.937,33.0,4.4,mb,,,,0.8,us,usp0003anb,2014-11-07T00:41:16.178Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-11-28 20:25:56,1987-11-29 02:55:56,Saigang,Mu Don,village
-22.396,99.663,33.0,4.6,mb,,,,1.4,us,usp0003ahx,2014-11-07T00:41:15.576Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1987-11-25 13:09:47,1987-11-25 19:39:47,,勐白,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+20.067,94.768,74.2,4.6,mb,,,,1.0,us,usp0003and,2014-11-07T00:41:16.183Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-11-28 22:17:15,1987-11-29 04:47:15,Magway,Minbu,Minbu,Zee Aing,village,4.7
+25.607,95.937,33.0,4.4,mb,,,,0.8,us,usp0003anb,2014-11-07T00:41:16.178Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-11-28 20:25:56,1987-11-29 02:55:56,Saigang,Hkamti,Hkamti,Mu Don,village,10.5
+22.396,99.663,33.0,4.6,mb,,,,1.4,us,usp0003ahx,2014-11-07T00:41:15.576Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1987-11-25 13:09:47,1987-11-25 19:39:47,,,,勐白,village,3.9

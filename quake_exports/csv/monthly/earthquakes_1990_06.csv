@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-23.808,93.761,170.2,4.2,mb,,,,0.9,us,usp0004b5p,2014-11-07T00:46:34.460Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-06-30 02:28:13,1990-06-30 08:58:13,Chin,Khuangkhan,village
-22.767,93.859,87.9,4.3,mb,,,,0.7,us,usp0004axk,2014-11-07T00:46:33.607Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-06-24 02:35:15,1990-06-24 09:05:15,Chin,Haiphai,village
-24.976,94.019,60.7,4.5,mb,,,,1.1,us,usp0004agw,2014-11-07T00:46:31.863Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-06-14 15:28:21,1990-06-14 21:58:21,,Pukhao Khabam,village
-23.666,94.502,83.7,4.4,mb,,,,1.2,us,usp0004a4w,2014-11-07T00:46:29.226Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-06-04 21:40:24,1990-06-05 04:10:24,Saigang,Ywar Thit,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+23.808,93.761,170.2,4.2,mb,,,,0.9,us,usp0004b5p,2014-11-07T00:46:34.460Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-06-30 02:28:13,1990-06-30 08:58:13,Chin,Falam,Tonzang,Khuangkhan,village,4.0
+22.767,93.859,87.9,4.3,mb,,,,0.7,us,usp0004axk,2014-11-07T00:46:33.607Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-06-24 02:35:15,1990-06-24 09:05:15,Chin,Hakha,Hakha,Haiphai,village,5.5
+24.976,94.019,60.7,4.5,mb,,,,1.1,us,usp0004agw,2014-11-07T00:46:31.863Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-06-14 15:28:21,1990-06-14 21:58:21,,,,Pukhao Khabam,village,0.6
+23.666,94.502,83.7,4.4,mb,,,,1.2,us,usp0004a4w,2014-11-07T00:46:29.226Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-06-04 21:40:24,1990-06-05 04:10:24,Saigang,Mawlaik,Mawlaik,Ywar Thit,village,3.7

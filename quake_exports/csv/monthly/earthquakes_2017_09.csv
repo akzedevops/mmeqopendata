@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-18.88,94.88,40.0,4.8,mb,,,,,,20170915_0000006,2017-09-15T06:50:00.000Z,Myanmar (Burma),Myanmar,MM,Asia,earthquake,1505440617,1505439407,1,,,2017-09-15 01:36:47,2017-09-15 08:06:47,Bago,Yaung Gyi,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+18.88,94.88,40.0,4.8,mb,,,,,,20170915_0000006,2017-09-15T06:50:00.000Z,Myanmar (Burma),Myanmar,MM,Asia,earthquake,1505440617,1505439407,1,,,2017-09-15 01:36:47,2017-09-15 08:06:47,Bago,Pyay,Padaung,Yaung Gyi,village,6.9

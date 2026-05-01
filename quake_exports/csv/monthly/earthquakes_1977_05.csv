@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-21.747,92.99,40.0,5.7,ms,,,,,us,usp0000nus,2015-02-12T22:22:28.946Z,,Myanmar-Bangladesh border region,MM,Asia,earthquake,0,0,1,,,1977-05-12 12:20:00,1977-05-12 18:50:00,Chin,Ma Au,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+21.747,92.99,40.0,5.7,ms,,,,,us,usp0000nus,2015-02-12T22:22:28.946Z,,Myanmar-Bangladesh border region,MM,Asia,earthquake,0,0,1,,,1977-05-12 12:20:00,1977-05-12 18:50:00,Chin,Mindat,Paletwa,Ma Au,village,3.0

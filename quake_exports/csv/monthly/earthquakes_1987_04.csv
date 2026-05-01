@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.124,94.655,103.9,5.1,mb,,,,0.9,us,usp00034ju,2014-11-07T00:40:17.823Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-04-29 05:15:34,1987-04-29 11:45:34,Saigang,Ah Hlaw,village
-22.457,93.593,49.1,5.3,mb,,,,1.0,us,usp00034jr,2014-11-07T00:40:17.785Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-04-29 00:15:27,1987-04-29 06:45:27,Chin,,village
-26.469,95.898,101.7,4.5,mb,,,,0.7,us,usp00033z0,2014-11-07T00:40:12.905Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-04-06 23:28:37,1987-04-07 05:58:37,Saigang,Hansin,village
-24.817,95.226,151.6,4.6,mb,,,,0.8,us,usp00033vr,2014-11-07T00:40:11.914Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-04-03 05:48:00,1987-04-03 12:18:00,Saigang,Naung Pat,village
-21.954,98.464,33.0,4.7,mb,,,,1.1,us,usp00033u6,2014-11-07T00:40:11.123Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-04-01 16:01:48,1987-04-01 22:31:48,Shan,Pang Lai,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.124,94.655,103.9,5.1,mb,,,,0.9,us,usp00034ju,2014-11-07T00:40:17.823Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-04-29 05:15:34,1987-04-29 11:45:34,Saigang,Mawlaik,Paungbyin,Ah Hlaw,village,4.5
+22.457,93.593,49.1,5.3,mb,,,,1.0,us,usp00034jr,2014-11-07T00:40:17.785Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-04-29 00:15:27,1987-04-29 06:45:27,Chin,Hakha,Hakha,,village,3.6
+26.469,95.898,101.7,4.5,mb,,,,0.7,us,usp00033z0,2014-11-07T00:40:12.905Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1987-04-06 23:28:37,1987-04-07 05:58:37,Saigang,Hkamti,Hkamti,Hansin,village,12.5
+24.817,95.226,151.6,4.6,mb,,,,0.8,us,usp00033vr,2014-11-07T00:40:11.914Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-04-03 05:48:00,1987-04-03 12:18:00,Saigang,Hkamti,Homalin,Naung Pat,village,1.1
+21.954,98.464,33.0,4.7,mb,,,,1.1,us,usp00033u6,2014-11-07T00:40:11.123Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1987-04-01 16:01:48,1987-04-01 22:31:48,Shan,Loilen,Monghsu,Pang Lai,village,0.4

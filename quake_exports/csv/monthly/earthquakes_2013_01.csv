@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-16.78,96.17,10.0,3.4,ml,4,320.0,,0.62,us,usp000jywp,2014-11-07T01:49:54.705Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-30 13:37:02,2013-01-30 20:07:02,Yangon,Yangon,city
-23.61,94.707,110.9,4.7,mb,62,63.3,,0.61,us,usp000jyeh,2014-11-07T01:49:50.197Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-15 11:17:00,2013-01-15 17:47:00,Saigang,Taing Thar,village
-25.329,95.048,93.0,5.8,mww,482,14.7,,0.99,us,usp000jy3c,2014-11-07T01:49:47.954Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-09 01:41:53,2013-01-09 08:11:53,Saigang,Tawai,village
-24.886,94.002,73.8,4.4,mb,55,86.6,,0.8,us,usp000jxs4,2014-11-07T01:49:45.407Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2013-01-03 05:47:27,2013-01-03 12:17:27,,Sawombung,village
-22.624,94.02,63.8,4.4,mb,48,78.2,,0.99,us,usp000jxre,2014-11-07T01:49:44.701Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-02 17:25:40,2013-01-02 23:55:40,Chin,ရွေမြစ်သာ,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+16.78,96.17,10.0,3.4,ml,4,320.0,,0.62,us,usp000jywp,2014-11-07T01:49:54.705Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-30 13:37:02,2013-01-30 20:07:02,Yangon,Yangon (East),Pazundaung,Yangon,city,2.1
+23.61,94.707,110.9,4.7,mb,62,63.3,,0.61,us,usp000jyeh,2014-11-07T01:49:50.197Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-15 11:17:00,2013-01-15 17:47:00,Saigang,Mawlaik,Mawlaik,Taing Thar,village,5.0
+25.329,95.048,93.0,5.8,mww,482,14.7,,0.99,us,usp000jy3c,2014-11-07T01:49:47.954Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-09 01:41:53,2013-01-09 08:11:53,Saigang,Hkamti,Homalin,Tawai,village,4.6
+24.886,94.002,73.8,4.4,mb,55,86.6,,0.8,us,usp000jxs4,2014-11-07T01:49:45.407Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2013-01-03 05:47:27,2013-01-03 12:17:27,,,,Sawombung,village,2.0
+22.624,94.02,63.8,4.4,mb,48,78.2,,0.99,us,usp000jxre,2014-11-07T01:49:44.701Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-01-02 17:25:40,2013-01-02 23:55:40,Chin,Hakha,Hakha,ရွေမြစ်သာ,village,4.5

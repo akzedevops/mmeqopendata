@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.05,95.416,74.3,4.3,mb,,,,1.2,us,usp0004ej7,2014-11-07T00:47:06.396Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-09-10 14:48:17,1990-09-10 21:18:17,Saigang,Kyun Pin Thar,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.05,95.416,74.3,4.3,mb,,,,1.2,us,usp0004ej7,2014-11-07T00:47:06.396Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-09-10 14:48:17,1990-09-10 21:18:17,Saigang,Katha,Pinlebu,Kyun Pin Thar,village,3.2

@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-15.052,94.376,33.0,4.5,mb,,,,1.1,us,usp0004jyw,2014-11-07T00:47:40.515Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1990-12-30 01:30:54,1990-12-30 08:00:54,,Pyi Thar Yar,village
-23.081,93.873,33.0,4.4,mb,,,,1.0,us,usp0004jw1,2014-11-07T00:47:40.157Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-12-28 08:11:00,1990-12-28 14:41:00,Chin,Nimzawl,village
-20.072,98.43,33.0,4.3,mb,,,,1.2,us,usp0004j0p,2014-11-07T00:47:36.326Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-12-12 06:36:53,1990-12-12 13:06:53,Shan,Nawng Lum,village
-20.84,92.577,155.7,3.8,mb,,,,1.5,us,usp0004hy2,2014-11-07T00:47:35.912Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-12-10 11:56:56,1990-12-10 18:26:56,Rakhine,"Aung Kyin Mying ( Mrokhami, Burma, Rakhine)",village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+15.052,94.376,33.0,4.5,mb,,,,1.1,us,usp0004jyw,2014-11-07T00:47:40.515Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1990-12-30 01:30:54,1990-12-30 08:00:54,,,,Pyi Thar Yar,village,88.7
+23.081,93.873,33.0,4.4,mb,,,,1.0,us,usp0004jw1,2014-11-07T00:47:40.157Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1990-12-28 08:11:00,1990-12-28 14:41:00,Chin,Falam,Falam,Nimzawl,village,2.9
+20.072,98.43,33.0,4.3,mb,,,,1.2,us,usp0004j0p,2014-11-07T00:47:36.326Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-12-12 06:36:53,1990-12-12 13:06:53,Shan,Langkho,Mongpan,Nawng Lum,village,21.2
+20.84,92.577,155.7,3.8,mb,,,,1.5,us,usp0004hy2,2014-11-07T00:47:35.912Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1990-12-10 11:56:56,1990-12-10 18:26:56,Rakhine,Maungdaw,Buthidaung,"Aung Kyin Mying ( Mrokhami, Burma, Rakhine)",village,0.4

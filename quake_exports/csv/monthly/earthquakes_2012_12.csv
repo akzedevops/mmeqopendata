@@ -1,14 +1,14 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.96,95.96,37.3,4.2,mb,25,154.5,,0.74,us,usp000jxm8,2014-11-07T01:49:41.030Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-30 10:43:41,2012-12-30 17:13:41,Saigang,Ywar Thar Yar,village
-22.794,95.92,3.8,4.4,mb,24,132.2,,1.03,us,usp000jxe8,2014-11-07T01:49:39.924Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-26 15:20:40,2012-12-26 21:50:40,Saigang,Thin Paung,village
-22.783,95.908,18.0,4.9,mb,75,74.3,,0.72,us,usp000jxe7,2014-11-07T01:49:39.918Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-26 13:59:46,2012-12-26 20:29:46,Saigang,Thin Paung,village
-23.208,96.18,35.0,4.4,mb,39,129.4,,0.87,us,usp000jxe1,2014-11-07T01:49:39.870Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-26 08:48:47,2012-12-26 15:18:47,Mandalay,Kyauk Hpyu,village
-22.443,94.782,134.4,5.5,mww,213,19.6,,0.94,us,usp000jx9b,2014-11-07T01:49:38.640Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-22 16:41:45,2012-12-22 23:11:45,Saigang,Kyun Ywar,village
-22.862,95.99,10.0,4.7,mb,53,74.3,,0.78,us,usp000jx66,2014-11-07T01:49:38.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-20 05:56:04,2012-12-20 12:26:04,Mandalay,Thabeikkyin,town
-25.399,96.61,32.1,4.6,mb,73,45.2,,0.93,us,usp000jx3x,2014-11-07T01:49:37.601Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-18 11:51:57,2012-12-18 18:21:57,Kachin,Ka Htan Yang,village
-19.333,95.652,38.3,4.4,mb,59,78.9,,1.22,us,usp000jx3b,2014-11-07T01:49:37.457Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-18 01:32:46,2012-12-18 08:02:46,Magway,Ta Loke Pin,village
-22.745,95.874,10.0,4.7,mb,65,65.9,,0.67,us,usp000jwxp,2014-11-07T01:49:36.137Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-14 02:17:30,2012-12-14 08:47:30,Saigang,Tha Min Kya,village
-23.117,96.041,10.0,4.3,mb,19,152.6,,1.05,us,usp000jwx5,2014-11-07T01:49:35.910Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-13 16:13:23,2012-12-13 22:43:23,Mandalay,Twin Nge,village
-23.192,93.892,67.5,4.2,mb,57,107.0,,0.74,us,usp000jwu5,2014-11-07T01:49:35.408Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-12-11 07:19:04,2012-12-11 13:49:04,Chin,Theizang,village
-25.019,95.094,105.1,4.2,mb,39,117.3,,0.8,us,usp000jwfx,2014-11-07T01:49:32.848Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-05 08:05:03,2012-12-05 14:35:03,Saigang,Chaung Son,village
-23.11,95.889,35.4,4.6,mb,67,75.7,,0.83,us,usp000jwd3,2014-11-07T01:49:31.879Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-03 11:55:27,2012-12-03 18:25:27,Saigang,Chaung Shey,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.96,95.96,37.3,4.2,mb,25,154.5,,0.74,us,usp000jxm8,2014-11-07T01:49:41.030Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-30 10:43:41,2012-12-30 17:13:41,Saigang,Kanbalu,Kanbalu,Ywar Thar Yar,village,1.3
+22.794,95.92,3.8,4.4,mb,24,132.2,,1.03,us,usp000jxe8,2014-11-07T01:49:39.924Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-26 15:20:40,2012-12-26 21:50:40,Saigang,Shwebo,Khin-U,Thin Paung,village,0.9
+22.783,95.908,18.0,4.9,mb,75,74.3,,0.72,us,usp000jxe7,2014-11-07T01:49:39.918Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-26 13:59:46,2012-12-26 20:29:46,Saigang,Shwebo,Khin-U,Thin Paung,village,1.4
+23.208,96.18,35.0,4.4,mb,39,129.4,,0.87,us,usp000jxe1,2014-11-07T01:49:39.870Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-26 08:48:47,2012-12-26 15:18:47,Mandalay,Pyinoolwin,Thabeikkyin,Kyauk Hpyu,village,11.3
+22.443,94.782,134.4,5.5,mww,213,19.6,,0.94,us,usp000jx9b,2014-11-07T01:49:38.640Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-22 16:41:45,2012-12-22 23:11:45,Saigang,Yinmarbin,Kani,Kyun Ywar,village,3.8
+22.862,95.99,10.0,4.7,mb,53,74.3,,0.78,us,usp000jx66,2014-11-07T01:49:38.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-20 05:56:04,2012-12-20 12:26:04,Mandalay,Pyinoolwin,Thabeikkyin,Thabeikkyin,town,3.0
+25.399,96.61,32.1,4.6,mb,73,45.2,,0.93,us,usp000jx3x,2014-11-07T01:49:37.601Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-18 11:51:57,2012-12-18 18:21:57,Kachin,Mohnyin,Hpakant,Ka Htan Yang,village,11.6
+19.333,95.652,38.3,4.4,mb,59,78.9,,1.22,us,usp000jx3b,2014-11-07T01:49:37.457Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-18 01:32:46,2012-12-18 08:02:46,Magway,Thayet,Aunglan,Ta Loke Pin,village,2.2
+22.745,95.874,10.0,4.7,mb,65,65.9,,0.67,us,usp000jwxp,2014-11-07T01:49:36.137Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-14 02:17:30,2012-12-14 08:47:30,Saigang,Shwebo,Khin-U,Tha Min Kya,village,0.2
+23.117,96.041,10.0,4.3,mb,19,152.6,,1.05,us,usp000jwx5,2014-11-07T01:49:35.910Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-13 16:13:23,2012-12-13 22:43:23,Mandalay,Pyinoolwin,Thabeikkyin,Twin Nge,village,2.4
+23.192,93.892,67.5,4.2,mb,57,107.0,,0.74,us,usp000jwu5,2014-11-07T01:49:35.408Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-12-11 07:19:04,2012-12-11 13:49:04,Chin,Falam,Tedim,Theizang,village,1.1
+25.019,95.094,105.1,4.2,mb,39,117.3,,0.8,us,usp000jwfx,2014-11-07T01:49:32.848Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-05 08:05:03,2012-12-05 14:35:03,Saigang,Hkamti,Homalin,Chaung Son,village,5.3
+23.11,95.889,35.4,4.6,mb,67,75.7,,0.83,us,usp000jwd3,2014-11-07T01:49:31.879Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-12-03 11:55:27,2012-12-03 18:25:27,Saigang,Kanbalu,Kanbalu,Chaung Shey,village,4.6

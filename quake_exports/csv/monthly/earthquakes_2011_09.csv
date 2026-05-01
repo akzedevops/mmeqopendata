@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.258,98.241,40.6,4.2,mb,13,138.7,,0.68,us,usp000j8ft,2014-11-07T01:45:56.815Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2011-09-23 21:38:38,2011-09-24 04:08:38,,户弄,village
-23.647,95.067,139.3,4.7,mb,39,53.3,,0.9,us,usp000j8db,2014-11-07T01:45:56.422Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-09-22 14:17:34,2011-09-22 20:47:34,Saigang,Nan That,village
-25.002,95.178,116.8,4.5,mb,24,71.6,,0.75,us,usp000j89h,2014-11-07T01:45:55.330Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-09-19 08:04:13,2011-09-19 14:34:13,Saigang,Chaung Son,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.258,98.241,40.6,4.2,mb,13,138.7,,0.68,us,usp000j8ft,2014-11-07T01:45:56.815Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2011-09-23 21:38:38,2011-09-24 04:08:38,,,,户弄,village,0.8
+23.647,95.067,139.3,4.7,mb,39,53.3,,0.9,us,usp000j8db,2014-11-07T01:45:56.422Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-09-22 14:17:34,2011-09-22 20:47:34,Saigang,Kanbalu,Kyunhla,Nan That,village,4.1
+25.002,95.178,116.8,4.5,mb,24,71.6,,0.75,us,usp000j89h,2014-11-07T01:45:55.330Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-09-19 08:04:13,2011-09-19 14:34:13,Saigang,Hkamti,Homalin,Chaung Son,village,12.0

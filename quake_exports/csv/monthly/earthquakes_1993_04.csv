@@ -1,10 +1,10 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-24.622,95.952,33.0,4.3,mb,,,,0.7,us,usp0005rdh,2014-11-07T00:52:50.425Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-19 02:46:01,1993-04-19 09:16:01,Saigang,Khaung Tone,village
-26.519,96.479,22.8,4.6,mb,,,,1.3,us,usp0005r67,2014-11-07T00:52:49.159Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-14 20:04:09,1993-04-15 02:34:09,Kachin,Daik Hpar,village
-24.598,94.697,125.4,4.3,mb,,,,0.7,us,usp0005r50,2014-11-07T00:52:49.058Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1993-04-14 06:18:17,1993-04-14 12:48:17,Saigang,Ywar Thar,village
-26.36,96.232,85.5,4.3,mb,,,,0.6,us,usp0005r4c,2014-11-07T00:52:48.956Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-13 20:47:08,1993-04-14 03:17:08,Kachin,Da Lu,village
-22.351,94.197,85.0,4.7,mb,,,,0.9,us,usp0005r3y,2014-11-07T00:52:48.892Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-13 15:59:36,1993-04-13 22:29:36,Magway,Taung Lel,village
-23.926,94.126,74.5,4.6,mb,,,,1.2,us,usp0005r07,2014-11-07T00:52:48.392Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-11 05:34:27,1993-04-11 12:04:27,,,village
-24.815,96.576,33.0,4.4,mb,,,,1.0,us,usp0005qjg,2014-11-07T00:52:44.795Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-02 21:09:51,1993-04-03 03:39:51,Kachin,Nam Saw Law,village
-23.149,94.445,91.3,4.6,mb,,,,0.9,us,usp0005qgt,2014-11-07T00:52:43.608Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-01 18:41:35,1993-04-02 01:11:35,Saigang,Than Pu Yar,village
-23.232,94.498,104.7,5.1,mw,,,,1.0,us,usp0005qgn,2015-02-11T17:16:10.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-01 16:30:11,1993-04-01 23:00:11,Saigang,Khan Ni (Khan Ti),village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+24.622,95.952,33.0,4.3,mb,,,,0.7,us,usp0005rdh,2014-11-07T00:52:50.425Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-19 02:46:01,1993-04-19 09:16:01,Saigang,Katha,Banmauk,Khaung Tone,village,1.3
+26.519,96.479,22.8,4.6,mb,,,,1.3,us,usp0005r67,2014-11-07T00:52:49.159Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-14 20:04:09,1993-04-15 02:34:09,Kachin,Myitkyina,Tanai,Daik Hpar,village,3.0
+24.598,94.697,125.4,4.3,mb,,,,0.7,us,usp0005r50,2014-11-07T00:52:49.058Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1993-04-14 06:18:17,1993-04-14 12:48:17,Saigang,Hkamti,Homalin,Ywar Thar,village,1.1
+26.36,96.232,85.5,4.3,mb,,,,0.6,us,usp0005r4c,2014-11-07T00:52:48.956Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-13 20:47:08,1993-04-14 03:17:08,Kachin,Myitkyina,Tanai,Da Lu,village,2.3
+22.351,94.197,85.0,4.7,mb,,,,0.9,us,usp0005r3y,2014-11-07T00:52:48.892Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-13 15:59:36,1993-04-13 22:29:36,Magway,Gangaw,Gangaw,Taung Lel,village,4.7
+23.926,94.126,74.5,4.6,mb,,,,1.2,us,usp0005r07,2014-11-07T00:52:48.392Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-11 05:34:27,1993-04-11 12:04:27,,,,,village,3.5
+24.815,96.576,33.0,4.4,mb,,,,1.0,us,usp0005qjg,2014-11-07T00:52:44.795Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-02 21:09:51,1993-04-03 03:39:51,Kachin,Mohnyin,Mohnyin,Nam Saw Law,village,13.4
+23.149,94.445,91.3,4.6,mb,,,,0.9,us,usp0005qgt,2014-11-07T00:52:43.608Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-01 18:41:35,1993-04-02 01:11:35,Saigang,Kale,Mingin,Than Pu Yar,village,3.3
+23.232,94.498,104.7,5.1,mw,,,,1.0,us,usp0005qgn,2015-02-11T17:16:10.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1993-04-01 16:30:11,1993-04-01 23:00:11,Saigang,Kale,Kalewa,Khan Ni (Khan Ti),village,7.8

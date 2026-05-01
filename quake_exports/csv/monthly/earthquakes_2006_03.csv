@@ -1,10 +1,10 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-23.184,93.851,61.0,5.1,mwc,173,62.0,,0.85,us,usp000ecy7,2015-02-11T17:18:15.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2006-03-25 20:13:30,2006-03-26 02:43:30,Chin,Ngalzang,village
-23.975,94.565,35.0,3.9,mb,11,177.7,,0.41,us,usp000ectn,2014-11-07T01:28:34.697Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-24 04:07:47,2006-03-24 10:37:47,Saigang,Tha Ngar,village
-24.685,94.073,46.4,4.4,mb,17,114.2,,1.08,us,usp000ecme,2014-11-07T01:28:34.025Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2006-03-21 07:29:34,2006-03-21 13:59:34,,Changamdabi,village
-19.264,95.685,21.3,3.9,mb,18,111.2,,0.68,us,usp000ecg4,2014-11-07T01:28:33.416Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-19 16:19:41,2006-03-19 22:49:41,Magway,Tin Taw,village
-21.098,94.266,118.8,4.2,mb,11,178.5,,0.45,us,usp000ec2p,2014-11-07T01:28:31.319Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-13 12:44:57,2006-03-13 19:14:57,Magway,Thone Lan Pyayt,village
-19.973,95.838,65.2,4.2,mb,18,111.6,,0.69,us,usp000ebj7,2014-11-07T01:28:28.985Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-06 15:22:42,2006-03-06 21:52:42,Mandalay,Gway Cho,village
-19.626,95.43,35.0,4.1,mb,15,133.4,,0.93,us,usp000eb95,2014-11-07T01:28:27.521Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-03 07:44:08,2006-03-03 14:14:08,Magway,Thar Si,village
-21.116,94.469,112.8,5.2,mb,20,168.8,,0.82,us,usp000eb7p,2014-11-07T01:28:27.330Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-03 01:36:06,2006-03-03 08:06:06,Magway,Htun,village
-24.268,94.526,77.9,4.9,mwc,92,52.2,,1.15,us,usp000eb6g,2015-02-11T17:18:13.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2006-03-02 17:16:59,2006-03-02 23:46:59,Saigang,Ton Ma Na,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+23.184,93.851,61.0,5.1,mwc,173,62.0,,0.85,us,usp000ecy7,2015-02-11T17:18:15.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2006-03-25 20:13:30,2006-03-26 02:43:30,Chin,Falam,Tedim,Ngalzang,village,0.3
+23.975,94.565,35.0,3.9,mb,11,177.7,,0.41,us,usp000ectn,2014-11-07T01:28:34.697Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-24 04:07:47,2006-03-24 10:37:47,Saigang,Mawlaik,Paungbyin,Tha Ngar,village,4.3
+24.685,94.073,46.4,4.4,mb,17,114.2,,1.08,us,usp000ecme,2014-11-07T01:28:34.025Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2006-03-21 07:29:34,2006-03-21 13:59:34,,,,Changamdabi,village,0.8
+19.264,95.685,21.3,3.9,mb,18,111.2,,0.68,us,usp000ecg4,2014-11-07T01:28:33.416Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-19 16:19:41,2006-03-19 22:49:41,Magway,Thayet,Aunglan,Tin Taw,village,1.7
+21.098,94.266,118.8,4.2,mb,11,178.5,,0.45,us,usp000ec2p,2014-11-07T01:28:31.319Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-13 12:44:57,2006-03-13 19:14:57,Magway,Gangaw,Saw,Thone Lan Pyayt,village,2.3
+19.973,95.838,65.2,4.2,mb,18,111.6,,0.69,us,usp000ebj7,2014-11-07T01:28:28.985Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-06 15:22:42,2006-03-06 21:52:42,Mandalay,Oke Ta Ra,Oke Ta Ra Thi Ri,Gway Cho,village,4.8
+19.626,95.43,35.0,4.1,mb,15,133.4,,0.93,us,usp000eb95,2014-11-07T01:28:27.521Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-03 07:44:08,2006-03-03 14:14:08,Magway,Thayet,Sinbaungwe,Thar Si,village,2.9
+21.116,94.469,112.8,5.2,mb,20,168.8,,0.82,us,usp000eb7p,2014-11-07T01:28:27.330Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-03-03 01:36:06,2006-03-03 08:06:06,Magway,Pakokku,Seikphyu,Htun,village,0.6
+24.268,94.526,77.9,4.9,mwc,92,52.2,,1.15,us,usp000eb6g,2015-02-11T17:18:13.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2006-03-02 17:16:59,2006-03-02 23:46:59,Saigang,Tamu,Tamu,Ton Ma Na,village,12.1

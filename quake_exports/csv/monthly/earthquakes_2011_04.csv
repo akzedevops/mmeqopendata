@@ -1,9 +1,9 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-26.027,97.045,35.0,4.0,mb,21,139.9,,1.18,us,usp000j0s1,2014-11-07T01:44:39.197Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-29 14:25:48,2011-04-29 20:55:48,Kachin,,village
-25.361,95.099,105.0,4.3,mb,50,110.9,,0.6,us,usp000j0r9,2014-11-07T01:44:38.993Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-29 02:39:20,2011-04-29 09:09:20,Saigang,,village
-23.857,96.067,47.3,4.3,mb,25,142.8,,0.95,us,usp000j0de,2014-11-07T01:44:36.356Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-22 08:13:16,2011-04-22 14:43:16,Saigang,Me Zar Lay,village
-24.487,94.561,84.9,4.5,mb,69,58.1,,0.69,us,usp000j07t,2014-11-07T01:44:35.235Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2011-04-19 03:34:07,2011-04-19 10:04:07,Saigang,Ywar Thar,village
-26.119,95.279,85.1,4.1,mb,27,146.0,,0.55,us,usp000j06h,2014-11-07T01:44:35.019Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2011-04-18 09:33:31,2011-04-18 16:03:31,Saigang,Tsupao,village
-26.923,97.2,29.2,4.4,mb,37,115.0,,0.62,us,usp000hzk8,2014-11-07T01:44:30.613Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-09 03:33:01,2011-04-09 10:03:01,Kachin,land mark,village
-21.654,94.679,103.9,4.5,mb,43,68.9,,0.79,us,usp000hzh3,2014-11-07T01:44:30.306Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-08 05:39:38,2011-04-08 12:09:38,Magway,Kyauk Khwet,village
-22.09,94.806,118.6,4.2,mb,31,68.2,,0.78,us,usp000hzew,2014-11-07T01:44:29.811Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-07 10:34:40,2011-04-07 17:04:40,Saigang,Lar Boet,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+26.027,97.045,35.0,4.0,mb,21,139.9,,1.18,us,usp000j0s1,2014-11-07T01:44:39.197Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-29 14:25:48,2011-04-29 20:55:48,Kachin,Myitkyina,Tanai,,village,14.3
+25.361,95.099,105.0,4.3,mb,50,110.9,,0.6,us,usp000j0r9,2014-11-07T01:44:38.993Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-29 02:39:20,2011-04-29 09:09:20,Saigang,Hkamti,Homalin,,village,4.3
+23.857,96.067,47.3,4.3,mb,25,142.8,,0.95,us,usp000j0de,2014-11-07T01:44:36.356Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-22 08:13:16,2011-04-22 14:43:16,Saigang,Katha,Tigyaing,Me Zar Lay,village,0.9
+24.487,94.561,84.9,4.5,mb,69,58.1,,0.69,us,usp000j07t,2014-11-07T01:44:35.235Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2011-04-19 03:34:07,2011-04-19 10:04:07,Saigang,Tamu,Tamu,Ywar Thar,village,5.4
+26.119,95.279,85.1,4.1,mb,27,146.0,,0.55,us,usp000j06h,2014-11-07T01:44:35.019Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2011-04-18 09:33:31,2011-04-18 16:03:31,Saigang,Hkamti,Lahe,Tsupao,village,2.4
+26.923,97.2,29.2,4.4,mb,37,115.0,,0.62,us,usp000hzk8,2014-11-07T01:44:30.613Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-09 03:33:01,2011-04-09 10:03:01,Kachin,Myitkyina,Tanai,land mark,village,29.7
+21.654,94.679,103.9,4.5,mb,43,68.9,,0.79,us,usp000hzh3,2014-11-07T01:44:30.306Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-08 05:39:38,2011-04-08 12:09:38,Magway,Pakokku,Myaing,Kyauk Khwet,village,1.5
+22.09,94.806,118.6,4.2,mb,31,68.2,,0.78,us,usp000hzew,2014-11-07T01:44:29.811Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-04-07 10:34:40,2011-04-07 17:04:40,Saigang,Yinmarbin,Yinmarbin,Lar Boet,village,0.6

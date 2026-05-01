@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-21.905,94.732,116.0,4.7,mb,,,,0.9,us,usp0001jm0,2014-11-07T00:30:51.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1982-02-12 16:00:05,1982-02-12 22:30:05,Saigang,Thar Yar Kone,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+21.905,94.732,116.0,4.7,mb,,,,0.9,us,usp0001jm0,2014-11-07T00:30:51.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1982-02-12 16:00:05,1982-02-12 22:30:05,Saigang,Yinmarbin,Pale,Thar Yar Kone,village,0.2

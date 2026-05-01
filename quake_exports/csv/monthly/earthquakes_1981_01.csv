@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-18.473,95.267,52.0,4.5,mb,,,,,us,usp0001bqd,2014-11-06T23:24:28.655Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-01-14 01:02:59,1981-01-14 07:32:59,Bago,Thar Yar Kone,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+18.473,95.267,52.0,4.5,mb,,,,,us,usp0001bqd,2014-11-06T23:24:28.655Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-01-14 01:02:59,1981-01-14 07:32:59,Bago,Pyay,Shwedaung,Thar Yar Kone,village,0.8

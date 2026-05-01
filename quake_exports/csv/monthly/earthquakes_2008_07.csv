@@ -1,10 +1,10 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-23.582,94.596,86.7,3.9,mb,28,127.1,,0.8,us,usp000gdby,2014-11-07T01:36:43.889Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-28 23:02:49,2008-07-29 05:32:49,Saigang,Man Nwe,village
-23.577,94.642,94.2,5.2,mb,276,53.7,,0.69,us,usp000gd9n,2014-11-07T01:36:43.553Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-27 22:42:05,2008-07-28 05:12:05,Saigang,Kyoke Thar,village
-21.787,94.272,67.9,4.4,mb,48,69.8,,1.07,us,usp000gd99,2014-11-07T01:36:43.470Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-27 19:05:23,2008-07-28 01:35:23,Magway,Shaw Hpyu Pin,village
-22.973,94.006,40.3,4.0,mb,36,108.7,,0.85,us,usp000gd7f,2014-11-07T01:36:43.322Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-27 01:04:55,2008-07-27 07:34:55,Saigang,Har Khar,village
-22.899,94.416,103.8,4.2,mb,38,112.9,,0.74,us,usp000gd4m,2014-11-07T01:36:42.963Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-25 18:09:39,2008-07-26 00:39:39,Saigang,In Kyin Taung,village
-25.049,95.066,103.8,4.4,mb,15,173.5,,1.18,us,usp000gcgq,2014-11-07T01:36:39.926Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-18 13:10:02,2008-07-18 19:40:02,Saigang,Man Maw,village
-26.707,96.538,129.0,3.7,mb,6,146.2,,0.22,us,usp000gbsh,2014-11-07T01:36:36.304Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-09 23:18:22,2008-07-10 05:48:22,Kachin,Ta Ron,village
-22.665,94.352,100.1,3.9,mb,19,115.8,,0.67,us,usp000gbq3,2014-11-07T01:36:35.963Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-09 05:03:19,2008-07-09 11:33:19,Saigang,Za Na Hpoke,village
-25.972,95.33,72.0,4.9,mwc,112,65.0,,0.78,us,usp000gbh9,2015-02-11T17:18:53.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-07 02:50:36,2008-07-07 09:20:36,Saigang,Maw Law,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+23.582,94.596,86.7,3.9,mb,28,127.1,,0.8,us,usp000gdby,2014-11-07T01:36:43.889Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-28 23:02:49,2008-07-29 05:32:49,Saigang,Mawlaik,Mawlaik,Man Nwe,village,1.2
+23.577,94.642,94.2,5.2,mb,276,53.7,,0.69,us,usp000gd9n,2014-11-07T01:36:43.553Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-27 22:42:05,2008-07-28 05:12:05,Saigang,Mawlaik,Mawlaik,Kyoke Thar,village,5.1
+21.787,94.272,67.9,4.4,mb,48,69.8,,1.07,us,usp000gd99,2014-11-07T01:36:43.470Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-27 19:05:23,2008-07-28 01:35:23,Magway,Gangaw,Tilin,Shaw Hpyu Pin,village,2.9
+22.973,94.006,40.3,4.0,mb,36,108.7,,0.85,us,usp000gd7f,2014-11-07T01:36:43.322Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-27 01:04:55,2008-07-27 07:34:55,Saigang,Kale,Kale,Har Khar,village,1.1
+22.899,94.416,103.8,4.2,mb,38,112.9,,0.74,us,usp000gd4m,2014-11-07T01:36:42.963Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-25 18:09:39,2008-07-26 00:39:39,Saigang,Kale,Mingin,In Kyin Taung,village,2.1
+25.049,95.066,103.8,4.4,mb,15,173.5,,1.18,us,usp000gcgq,2014-11-07T01:36:39.926Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-18 13:10:02,2008-07-18 19:40:02,Saigang,Hkamti,Homalin,Man Maw,village,2.0
+26.707,96.538,129.0,3.7,mb,6,146.2,,0.22,us,usp000gbsh,2014-11-07T01:36:36.304Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-09 23:18:22,2008-07-10 05:48:22,Kachin,Myitkyina,Tanai,Ta Ron,village,14.1
+22.665,94.352,100.1,3.9,mb,19,115.8,,0.67,us,usp000gbq3,2014-11-07T01:36:35.963Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-09 05:03:19,2008-07-09 11:33:19,Saigang,Kale,Mingin,Za Na Hpoke,village,4.1
+25.972,95.33,72.0,4.9,mwc,112,65.0,,0.78,us,usp000gbh9,2015-02-11T17:18:53.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2008-07-07 02:50:36,2008-07-07 09:20:36,Saigang,Hkamti,Hkamti,Maw Law,village,3.4

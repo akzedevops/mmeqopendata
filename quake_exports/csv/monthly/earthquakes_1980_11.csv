@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.716,93.897,33.0,5.3,mb,,,,,us,usp0001awm,2015-02-11T17:14:51.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1980-11-20 18:14:11,1980-11-21 00:44:11,Chin,Haiphai,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.716,93.897,33.0,5.3,mb,,,,,us,usp0001awm,2015-02-11T17:14:51.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1980-11-20 18:14:11,1980-11-21 00:44:11,Chin,Hakha,Hakha,Haiphai,village,8.2

@@ -1,7 +1,7 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-25.784,96.545,39.6,4.7,mb,,,,1.2,us,usp0001uvw,2014-11-07T00:33:03.327Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-30 17:28:48,1983-04-30 23:58:48,Kachin,Wa Ra Zut,village
-22.053,94.34,100.0,5.1,mb,,,,0.9,us,usp0001uj1,2015-02-11T17:15:04.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-17 23:16:34,1983-04-18 05:46:34,Magway,Kant That,village
-22.833,94.399,108.6,4.7,mb,,,,1.0,us,usp0001ue9,2014-11-07T00:32:58.857Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-13 21:07:20,1983-04-14 03:37:20,Saigang,Kyauk Tan,village
-19.744,94.382,51.9,4.7,mb,,,,1.3,us,usp0001u78,2014-11-07T00:32:56.798Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-06 04:34:08,1983-04-06 11:04:08,Magway,Pa Bway,village
-21.912,93.675,92.3,4.3,mb,,,,1.2,us,usp0001u3r,2014-11-07T00:32:53.654Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-01 04:24:08,1983-04-01 10:54:08,Chin,Lungring,village
-15.142,96.379,33.0,4.0,mb,,,,0.7,us,usp0001u3m,2014-11-07T00:32:53.590Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-01 01:41:52,1983-04-01 08:11:52,,Tha Yet Pin Seik,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+25.784,96.545,39.6,4.7,mb,,,,1.2,us,usp0001uvw,2014-11-07T00:33:03.327Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-30 17:28:48,1983-04-30 23:58:48,Kachin,Mohnyin,Hpakant,Wa Ra Zut,village,9.6
+22.053,94.34,100.0,5.1,mb,,,,0.9,us,usp0001uj1,2015-02-11T17:15:04.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-17 23:16:34,1983-04-18 05:46:34,Magway,Gangaw,Gangaw,Kant That,village,2.1
+22.833,94.399,108.6,4.7,mb,,,,1.0,us,usp0001ue9,2014-11-07T00:32:58.857Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-13 21:07:20,1983-04-14 03:37:20,Saigang,Kale,Mingin,Kyauk Tan,village,3.5
+19.744,94.382,51.9,4.7,mb,,,,1.3,us,usp0001u78,2014-11-07T00:32:56.798Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-06 04:34:08,1983-04-06 11:04:08,Magway,Minbu,Ngape,Pa Bway,village,9.6
+21.912,93.675,92.3,4.3,mb,,,,1.2,us,usp0001u3r,2014-11-07T00:32:53.654Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-01 04:24:08,1983-04-01 10:54:08,Chin,Mindat,Matupi,Lungring,village,1.5
+15.142,96.379,33.0,4.0,mb,,,,0.7,us,usp0001u3m,2014-11-07T00:32:53.590Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1983-04-01 01:41:52,1983-04-01 08:11:52,,,,Tha Yet Pin Seik,village,117.4

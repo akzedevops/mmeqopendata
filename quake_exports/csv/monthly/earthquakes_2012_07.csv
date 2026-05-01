@@ -1,10 +1,10 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-22.935,94.299,75.3,5.7,mwb,481,12.2,,0.87,us,usp000jpkd,2014-11-07T01:48:24.855Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-07-29 02:21:12,2012-07-29 08:51:12,Saigang,Khin U,village
-25.059,96.725,10.0,4.3,mb,8,148.5,,0.82,us,usp000jpa3,2014-11-07T01:48:22.526Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-07-22 03:08:48,2012-07-22 09:38:48,Kachin,Ban Mauk Kone,village
-24.998,96.427,22.6,5.1,mb,166,41.4,,1.01,us,usp000jpa0,2014-11-07T01:48:22.278Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-07-22 02:11:12,2012-07-22 08:41:12,Kachin,LwinOo,village
-23.054,93.074,47.6,4.4,mb,41,86.9,,0.75,us,usp000jp3e,2014-11-07T01:48:20.597Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-07-17 06:00:41,2012-07-17 12:30:41,,,village
-25.437,96.546,41.1,4.4,mb,25,143.2,,0.84,us,usp000jp33,2014-11-07T01:48:20.554Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-07-16 23:16:12,2012-07-17 05:46:12,Kachin,Ka Htan Yang,village
-25.424,94.48,52.1,5.2,mwb,278,18.9,,0.91,us,usp000jp0s,2014-11-07T01:48:20.013Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-07-14 19:55:17,2012-07-15 02:25:17,,Kharasom,village
-25.347,96.529,31.0,5.1,mb,151,40.8,,1.12,us,usp000jntd,2014-11-07T01:48:17.794Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-07-09 20:13:07,2012-07-10 02:43:07,Kachin,Aing Lay Tu,village
-25.587,94.723,58.2,4.3,mb,38,66.2,,0.74,us,usp000jney,2014-11-07T01:48:13.280Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-07-01 04:54:04,2012-07-01 11:24:04,,,village
-25.592,94.696,58.0,5.6,mwb,279,17.6,,1.08,us,usp000jnev,2014-11-07T01:48:12.828Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-07-01 04:13:52,2012-07-01 10:43:52,,,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+22.935,94.299,75.3,5.7,mwb,481,12.2,,0.87,us,usp000jpkd,2014-11-07T01:48:24.855Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-07-29 02:21:12,2012-07-29 08:51:12,Saigang,Kale,Mingin,Khin U,village,1.5
+25.059,96.725,10.0,4.3,mb,8,148.5,,0.82,us,usp000jpa3,2014-11-07T01:48:22.526Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-07-22 03:08:48,2012-07-22 09:38:48,Kachin,Mohnyin,Mogaung,Ban Mauk Kone,village,8.1
+24.998,96.427,22.6,5.1,mb,166,41.4,,1.01,us,usp000jpa0,2014-11-07T01:48:22.278Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-07-22 02:11:12,2012-07-22 08:41:12,Kachin,Mohnyin,Mohnyin,LwinOo,village,0.5
+23.054,93.074,47.6,4.4,mb,41,86.9,,0.75,us,usp000jp3e,2014-11-07T01:48:20.597Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-07-17 06:00:41,2012-07-17 12:30:41,,,,,village,2.9
+25.437,96.546,41.1,4.4,mb,25,143.2,,0.84,us,usp000jp33,2014-11-07T01:48:20.554Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-07-16 23:16:12,2012-07-17 05:46:12,Kachin,Mohnyin,Hpakant,Ka Htan Yang,village,12.0
+25.424,94.48,52.1,5.2,mwb,278,18.9,,0.91,us,usp000jp0s,2014-11-07T01:48:20.013Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-07-14 19:55:17,2012-07-15 02:25:17,,,,Kharasom,village,3.6
+25.347,96.529,31.0,5.1,mb,151,40.8,,1.12,us,usp000jntd,2014-11-07T01:48:17.794Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-07-09 20:13:07,2012-07-10 02:43:07,Kachin,Mohnyin,Mohnyin,Aing Lay Tu,village,8.0
+25.587,94.723,58.2,4.3,mb,38,66.2,,0.74,us,usp000jney,2014-11-07T01:48:13.280Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-07-01 04:54:04,2012-07-01 11:24:04,,,,,village,6.1
+25.592,94.696,58.0,5.6,mwb,279,17.6,,1.08,us,usp000jnev,2014-11-07T01:48:12.828Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-07-01 04:13:52,2012-07-01 10:43:52,,,,,village,7.5

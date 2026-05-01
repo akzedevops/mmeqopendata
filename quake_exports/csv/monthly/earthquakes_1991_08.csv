@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-23.888,95.859,42.6,4.7,mb,,,,1,us,usp0004uzp,2014-11-07T00:49:02.885Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-08-04 12:38:24,1991-08-04 19:08:24,Saigang,Ywar Thit,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+23.888,95.859,42.6,4.7,mb,,,,1,us,usp0004uzp,2014-11-07T00:49:02.885Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-08-04 12:38:24,1991-08-04 19:08:24,Saigang,Katha,Kawlin,Ywar Thit,village,2.8

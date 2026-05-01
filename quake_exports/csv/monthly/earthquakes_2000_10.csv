@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
-26.89,96.753,107.7,4.2,mb,17,,,0.61,us,usp000a1tv,2014-11-07T01:11:16.646Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2000-10-15 15:32:30,2000-10-15 22:02:30,Kachin,Khalot,village
-23.866,94.863,116.5,5.6,mwc,252,,,0.77,us,usp000a1m4,2015-02-11T17:17:09.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2000-10-11 09:42:09,2000-10-11 16:12:09,Saigang,Ywar Thar,village
-24.38,97.81,33.0,5.4,mwc,201,,,0.99,us,usp000a1bk,2015-02-11T17:17:08.000Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2000-10-06 12:05:40,2000-10-06 18:35:40,,Hudao,village
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+26.89,96.753,107.7,4.2,mb,17,,,0.61,us,usp000a1tv,2014-11-07T01:11:16.646Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2000-10-15 15:32:30,2000-10-15 22:02:30,Kachin,Myitkyina,Tanai,Khalot,village,29.8
+23.866,94.863,116.5,5.6,mwc,252,,,0.77,us,usp000a1m4,2015-02-11T17:17:09.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2000-10-11 09:42:09,2000-10-11 16:12:09,Saigang,Mawlaik,Paungbyin,Ywar Thar,village,11.2
+24.38,97.81,33.0,5.4,mwc,201,,,0.99,us,usp000a1bk,2015-02-11T17:17:08.000Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2000-10-06 12:05:40,2000-10-06 18:35:40,,,,Hudao,village,6.7
