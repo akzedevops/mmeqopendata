@@ -51,7 +51,7 @@ def build_animated_map(
                 "coordinates": [float(row["longitude"]), float(row["latitude"])],
             },
             "properties": {
-                "time": t.isoformat(),
+                "time": t.strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "style": {
                     "color": color,
                     "radius": radius,
