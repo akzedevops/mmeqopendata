@@ -33,7 +33,7 @@
 After the devastating March 2025 earthquake in Myanmar, I wanted to understand how many of the country's 254 dams are actually at risk.
 This write-up documents a hobby project that pulls earthquake data from a public API, scores every dam for seismic risk, and runs probabilistic hazard analysis---all with open-source Python tools.
 The corrected Abrahamson \& Silva (2008) ground-motion model, validated against the actual Naypyidaw recording (predicted 0.51$g$ vs.\ observed 0.57$g$), shows that about half the dams sit in zones of significant seismic hazard.
-An OpenStreetMap-based exposure analysis finds over 1,400 schools and 630 hospitals in areas that experienced strong-to-severe shaking.
+An OpenStreetMap-based exposure analysis finds over 2,100 schools and 900 hospitals in areas that experienced strong-to-severe shaking.
 Everything---code, data, interactive maps---is on GitHub.
 \end{abstract}
 
@@ -347,11 +347,15 @@ Beyond dams, I pulled 34,224 critical infrastructure sites from OpenStreetMap---
 For each building, I computed rupture distance to the combined fault trace and estimated PGA using the same ASK08 GMPE.
 
 The results are sobering.
-About 4,800 structures experienced Severe (MMI~VIII) shaking, and another 5,300 experienced Very Strong (MMI~VII).
-Among these: 1,402 schools and 632 hospitals had PGA above 0.1$g$.
+About 5,700 structures experienced Severe (MMI~VIII) shaking, and another 6,200 experienced Very Strong (MMI~VII).
+Among these: 2,166 schools and 901 hospitals had PGA above 0.1$g$.
+
+Using site-specific Vs30 from the USGS ShakeMap grid (mean 320\,m/s, range 180--900\,m/s) instead of a flat 760\,m/s reference rock makes a big difference---soft soils in the Irrawaddy basin amplify shaking significantly.
 
 I validated against the USGS ShakeMap grid.
 At Naypyidaw, our prediction is 0.43$g$ vs USGS 0.55$g$ (ratio 0.79)---reasonable for a pure GMPE without the 1,244 DYFI felt reports that USGS incorporates.
+
+Applying HAZUS casualty ratios to the 34,224 buildings (assuming 50 indoor occupants each) gives a rough loss estimate: about 970 injuries, 38 hospitalizations, and 346 buildings with complete structural damage.
 Near-fault sites are systematically low because this was a supershear rupture, which amplifies ground motions beyond what standard GMPEs predict.
 
 \begin{figure}[htbp]

@@ -161,11 +161,13 @@ For each building, PGA is estimated using the same ASK08 GMPE with rupture dista
 
 | Shaking Intensity | Buildings |
 |---|---|
-| Severe (VIII) | ~4,800 |
-| Very Strong (VII) | ~5,300 |
-| Strong (VI) | ~5,000 |
+| Severe (VIII) | ~5,700 |
+| Very Strong (VII) | ~6,200 |
+| Strong (VI) | ~8,100 |
 
-1,402 schools and 632 hospitals had PGA above 0.1g.
+2,166 schools and 901 hospitals had PGA above 0.1g.
+
+Uses site-specific Vs30 from the USGS ShakeMap grid (mean 320 m/s) — soft soils in the Irrawaddy basin amplify shaking significantly compared to reference rock.
 
 Validated against the USGS ShakeMap grid — Naypyidaw prediction is 0.43g vs USGS 0.55g (ratio 0.79). Near-fault underprediction is expected because this was a supershear rupture.
 
