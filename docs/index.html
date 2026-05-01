@@ -42,6 +42,10 @@
         .badge-critical { background: #d62728; } .badge-high { background: #ff7f0e; }
         .footer { text-align: center; padding: 24px; color: #999; font-size: 0.82em; }
         .footer a { color: #0f3460; text-decoration: none; }
+        .fig-thumb { display:block; background:#f8f9fa; border-radius:8px; overflow:hidden; text-decoration:none; transition:transform 0.2s,box-shadow 0.2s; }
+        .fig-thumb:hover { transform:translateY(-2px); box-shadow:0 4px 15px rgba(0,0,0,0.12); }
+        .fig-thumb img { width:100%; height:150px; object-fit:cover; display:block; }
+        .fig-thumb span { display:block; padding:8px; font-size:0.8em; color:#333; text-align:center; }
     </style>
 </head>
 <body>
@@ -129,6 +133,14 @@
                     <div class="dl-label">Monte Carlo PGA</div>
                     <a href="report/monte_carlo_pga.csv" class="btn bg-data" download>CSV</a>
                 </div>
+                <div class="data-item">
+                    <div class="dl-label">Coulomb Stress (dams)</div>
+                    <a href="report/coulomb_stress_dams.json" class="btn bg-data" download>JSON</a>
+                </div>
+                <div class="data-item">
+                    <div class="dl-label">Dam Fragility</div>
+                    <a href="report/dam_fragility.json" class="btn bg-data" download>JSON</a>
+                </div>
             </div>
         </div>
 
@@ -147,6 +159,27 @@
                 <a id="dl-combined" class="btn bg-report" href="https://raw.githubusercontent.com/akzedevops/mmeqopendata/master/quake_exports/csv/combined/earthquakes_combined.csv" download>All Years (CSV)</a>
             </div>
             <div class="info" id="year-info"></div>
+        </div>
+
+        <div class="section-title">&#127912; Figures Gallery</div>
+        <div class="explorer">
+            <p style="font-size:0.88em;color:#555;margin-bottom:14px;">14 figures from the write-up (300 DPI). Click to view full size.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;">
+                <a href="report/figures/fig1_study_area.png" target="_blank" class="fig-thumb"><img src="report/figures/fig1_study_area.png" alt="Study area"><span>1. Seismicity &amp; Dams</span></a>
+                <a href="report/figures/fig2_fmd.png" target="_blank" class="fig-thumb"><img src="report/figures/fig2_fmd.png" alt="FMD"><span>2. Frequency-Magnitude</span></a>
+                <a href="report/figures/fig3_depth.png" target="_blank" class="fig-thumb"><img src="report/figures/fig3_depth.png" alt="Depth"><span>3. Depth Distribution</span></a>
+                <a href="report/figures/fig4_dam_risk_map.png" target="_blank" class="fig-thumb"><img src="report/figures/fig4_dam_risk_map.png" alt="Dam risk"><span>4. Dam Risk Map</span></a>
+                <a href="report/figures/fig5_pga_attenuation.png" target="_blank" class="fig-thumb"><img src="report/figures/fig5_pga_attenuation.png" alt="PGA"><span>5. PGA Attenuation</span></a>
+                <a href="report/figures/fig6_temporal.png" target="_blank" class="fig-thumb"><img src="report/figures/fig6_temporal.png" alt="Temporal"><span>6. Temporal Evolution</span></a>
+                <a href="report/figures/fig7_risk_distribution.png" target="_blank" class="fig-thumb"><img src="report/figures/fig7_risk_distribution.png" alt="Risk dist"><span>7. Risk Distribution</span></a>
+                <a href="report/figures/fig8_dam_types.png" target="_blank" class="fig-thumb"><img src="report/figures/fig8_dam_types.png" alt="Dam types"><span>8. Dam Types</span></a>
+                <a href="report/figures/fig9_vs30_map.png" target="_blank" class="fig-thumb"><img src="report/figures/fig9_vs30_map.png" alt="Vs30"><span>9. Vs30 Map</span></a>
+                <a href="report/figures/fig10_hazard_curves.png" target="_blank" class="fig-thumb"><img src="report/figures/fig10_hazard_curves.png" alt="Hazard"><span>10. Hazard Curves</span></a>
+                <a href="report/figures/fig11_coulomb_stress.png" target="_blank" class="fig-thumb"><img src="report/figures/fig11_coulomb_stress.png" alt="Coulomb"><span>11. Coulomb Stress</span></a>
+                <a href="report/figures/fig12_fragility_curves.png" target="_blank" class="fig-thumb"><img src="report/figures/fig12_fragility_curves.png" alt="Fragility"><span>12. Fragility Curves</span></a>
+                <a href="report/figures/fig13_monte_carlo_pga.png" target="_blank" class="fig-thumb"><img src="report/figures/fig13_monte_carlo_pga.png" alt="Monte Carlo"><span>13. Monte Carlo PGA</span></a>
+                <a href="report/figures/fig14_building_exposure.png" target="_blank" class="fig-thumb"><img src="report/figures/fig14_building_exposure.png" alt="Buildings"><span>14. Building Exposure</span></a>
+            </div>
         </div>
 
         <div class="explorer">
