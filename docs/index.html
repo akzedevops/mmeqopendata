@@ -168,6 +168,12 @@
                 <a class="btn bg-report" href="https://raw.githubusercontent.com/akzedevops/mmeqopendata/master/quake_exports/json/combined/earthquakes_combined.json" download>All Years (JSON)</a>
             </div>
             <div class="info" id="year-info"></div>
+            <div style="margin-top:14px;padding:12px;background:#f0f7ff;border-radius:8px;font-size:0.85em;color:#444;">
+                <strong>&#127963; Village &amp; City Data</strong> — Every earthquake record includes the nearest village/town/city name from 74,028 OSM place nodes, plus state, district, and township from geoBoundaries. Download the CSV/JSON above — the columns <code>nearest_city</code>, <code>place_type</code>, <code>distance_km</code>, <code>state_region</code>, <code>district</code>, and <code>township</code> are included in every file.
+                <br><br>
+                The raw places database (74K villages/towns/cities) is also available:<br>
+                <a href="https://raw.githubusercontent.com/akzedevops/mmeqopendata/master/data/osm/myanmar_places.csv" class="btn bg-data" download style="margin-top:6px;">Myanmar Places CSV (4.5 MB)</a>
+            </div>
         </div>
 
         <div class="section-title">&#127912; Figures Gallery</div>
@@ -202,6 +208,7 @@
     </div>
 
     <div class="footer">
+        <p style="margin-bottom:8px;font-size:0.9em;color:#555;">Built by <a href="https://github.com/akzedevops">akzedevops</a> — a hobby seismology project from Myanmar. Not affiliated with any government or research institution. Just curiosity and open data.</p>
         <p>Data: <a href="https://mmeq.akze.net">Myanmar Earthquake API</a> · <a href="https://data.opendevelopmentmekong.net/en/dataset/myanmar-dams">Open Development Mekong</a> · <a href="https://www.openstreetmap.org/">OpenStreetMap</a> · <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us7000pn9s">USGS ShakeMap</a></p>
         <p><a href="https://github.com/akzedevops/mmeqopendata">GitHub</a> · MIT License</p>
     </div>
