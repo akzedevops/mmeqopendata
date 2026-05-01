@@ -154,6 +154,30 @@ def build_earthquake_map(
         HeatMap(heat_data, radius=10, blur=15, max_zoom=10).add_to(heatmap_layer)
         heatmap_layer.add_to(quake_map)
 
+    # OSM critical infrastructure overlay
+    try:
+        from mmeq.analysis.osm_exposure import load_osm_infrastructure
+        osm_df = load_osm_infrastructure()
+        osm_colors = {"school": "#1565c0", "hospital": "#d32f2f", "clinic": "#e91e63",
+                       "police": "#333", "fire_station": "#ff6f00", "university": "#6a1b9a",
+                       "place_of_worship": "#78909c"}
+        osm_layer = folium.FeatureGroup(name="OSM Buildings (34K)", show=False)
+        for _, row in osm_df.iterrows():
+            color = osm_colors.get(row["category"], "#888")
+            folium.CircleMarker(
+                location=[row["lat"], row["lon"]],
+                radius=2,
+                color=color,
+                fill=True,
+                fill_opacity=0.6,
+                weight=0,
+                popup=f"{row['category']}: {row['name']}" if row["name"] else row["category"],
+            ).add_to(osm_layer)
+        osm_layer.add_to(quake_map)
+        logger.info("Added %d OSM buildings to map", len(osm_df))
+    except Exception as e:
+        logger.warning("OSM overlay skipped: %s", e)
+
     folium.LayerControl().add_to(quake_map)
 
     legend_html = f"""
