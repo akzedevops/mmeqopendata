@@ -237,7 +237,7 @@
     fetch('report/dam_risk_scores.csv').then(r=>r.text()).then(text=>{
         const lines=text.trim().split('\n');
         const h=lines[0].split(',').map(s=>s.replace(/"/g,''));
-        const ni=0,pi=h.indexOf('pga_g'),fi=h.indexOf('fault_distance_km'),si=h.indexOf('composite_score'),gi=h.indexOf('risk_grade');
+        const ni=0,pi=h.indexOf('pga_g'),fi=h.indexOf('dist_to_fault_km'),si=h.indexOf('composite_risk'),gi=h.indexOf('risk_grade');
         const tbody=document.getElementById('risk-tbody');
         let c=0;
         for(let i=1;i<lines.length&&c<10;i++){
