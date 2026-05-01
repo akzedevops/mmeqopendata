@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-23.005,94.681,103.8,4.3,mb,65,64.4,,0.79,us,usp000jumm,2014-11-07T01:49:10.217Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-10-28 11:04:14,2012-10-28 17:34:14,Saigang,Kalay
-24.869,96.116,10.0,4.0,mb,14,122.3,,0.88,us,usp000juf4,2014-11-07T01:49:08.820Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-10-26 04:42:30,2012-10-26 11:12:30,Kachin,Bhamo
-24.548,94.017,35.0,4.0,mb,16,114.1,,0.99,us,usp000jtx5,2014-11-07T01:49:04.915Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-10-12 23:16:14,2012-10-13 05:46:14,,Kalay
-26.064,96.368,52.6,4.2,mb,28,114.3,,0.65,us,usp000jttc,2014-11-07T01:49:04.291Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-10-10 05:29:56,2012-10-10 11:59:56,Kachin,Myitkyina
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+23.005,94.681,103.8,4.3,mb,65,64.4,,0.79,us,usp000jumm,2014-11-07T01:49:10.217Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-10-28 11:04:14,2012-10-28 17:34:14,Saigang,Thay Ma Thauk,village
+24.869,96.116,10.0,4.0,mb,14,122.3,,0.88,us,usp000juf4,2014-11-07T01:49:08.820Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-10-26 04:42:30,2012-10-26 11:12:30,Kachin,Pint Thar,village
+24.548,94.017,35.0,4.0,mb,16,114.1,,0.99,us,usp000jtx5,2014-11-07T01:49:04.915Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2012-10-12 23:16:14,2012-10-13 05:46:14,,Koijam Maring,village
+26.064,96.368,52.6,4.2,mb,28,114.3,,0.65,us,usp000jttc,2014-11-07T01:49:04.291Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2012-10-10 05:29:56,2012-10-10 11:59:56,Kachin,Nam Hkam Par,village

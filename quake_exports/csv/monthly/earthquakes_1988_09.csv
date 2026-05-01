@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-21.924,94.355,89.0,4.6,mb,,,,1.4,us,usp0003m34,2014-11-07T00:42:49.805Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-09-19 03:04:09,1988-09-19 09:34:09,Magway,Hakha
-25.232,95.161,103.2,4.6,mb,,,,1.0,us,usp0003m1z,2014-11-07T00:42:49.689Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-09-17 16:45:05,1988-09-17 23:15:05,Saigang,Myitkyina
-20.829,94.057,30.4,4.6,mb,,,,1.1,us,usp0003kwz,2014-11-07T00:42:48.944Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-09-12 03:45:59,1988-09-12 10:15:59,Magway,Bagan
-19.094,95.82,33.0,4.2,mb,,,,0.5,us,usp0003kw7,2014-11-07T00:42:48.826Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-09-11 11:03:00,1988-09-11 17:33:00,Bago,Taungoo
-25.107,95.012,96.9,4.4,mb,,,,1.0,us,usp0003kp0,2014-11-07T00:42:46.727Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-09-04 10:21:11,1988-09-04 16:51:11,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+21.924,94.355,89.0,4.6,mb,,,,1.4,us,usp0003m34,2014-11-07T00:42:49.805Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-09-19 03:04:09,1988-09-19 09:34:09,Magway,Kyaw Ywar,village
+25.232,95.161,103.2,4.6,mb,,,,1.0,us,usp0003m1z,2014-11-07T00:42:49.689Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-09-17 16:45:05,1988-09-17 23:15:05,Saigang,Hmaing Wei,village
+20.829,94.057,30.4,4.6,mb,,,,1.1,us,usp0003kwz,2014-11-07T00:42:48.944Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-09-12 03:45:59,1988-09-12 10:15:59,Magway,Ah Paw,village
+19.094,95.82,33.0,4.2,mb,,,,0.5,us,usp0003kw7,2014-11-07T00:42:48.826Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-09-11 11:03:00,1988-09-11 17:33:00,Bago,Sin Gaung,village
+25.107,95.012,96.9,4.4,mb,,,,1.0,us,usp0003kp0,2014-11-07T00:42:46.727Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1988-09-04 10:21:11,1988-09-04 16:51:11,Saigang,Hein Sun,village

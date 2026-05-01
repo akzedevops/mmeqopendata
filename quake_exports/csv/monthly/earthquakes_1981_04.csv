@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-24.941,95.384,147.6,5.7,mb,,,,0.8,us,usp0001dbp,2015-02-12T23:21:54.870Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-04-25 11:32:23,1981-04-25 18:02:23,Saigang,Bhamo
-24.652,95.106,134.5,4.6,mb,,,,1.0,us,usp0001d34,2014-11-07T00:29:11.712Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-04-11 01:24:04,1981-04-11 07:54:04,Saigang,Kalay
-25.16,95.259,93.9,4.4,mb,,,,1.0,us,usp0001d0n,2014-11-07T00:29:10.051Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-04-04 21:58:16,1981-04-05 04:28:16,Saigang,Myitkyina
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+24.941,95.384,147.6,5.7,mb,,,,0.8,us,usp0001dbp,2015-02-12T23:21:54.870Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-04-25 11:32:23,1981-04-25 18:02:23,Saigang,Zay Di Seik,village
+24.652,95.106,134.5,4.6,mb,,,,1.0,us,usp0001d34,2014-11-07T00:29:11.712Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-04-11 01:24:04,1981-04-11 07:54:04,Saigang,Naung Hpar Mu,village
+25.16,95.259,93.9,4.4,mb,,,,1.0,us,usp0001d0n,2014-11-07T00:29:10.051Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-04-04 21:58:16,1981-04-05 04:28:16,Saigang,Ton Ma Lauk,village

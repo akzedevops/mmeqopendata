@@ -1,11 +1,13 @@
 """Offline reverse geocoder for Myanmar states/regions.
 
 Uses geoBoundaries ADM1 polygons to map lat/lon to state/region name.
-Also finds the nearest populated place name from a built-in list.
+Uses OSM place nodes (74K villages/towns/cities) for nearest place lookup.
 """
 
+import csv
 import json
 import logging
+import math
 import os
 
 from shapely.geometry import Point, shape
@@ -14,46 +16,11 @@ logger = logging.getLogger(__name__)
 
 _DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "..", "data")
 _ADMIN_PATH = os.path.join(_DATA_DIR, "admin", "mmr_admin1.geojson")
+_PLACES_PATH = os.path.join(_DATA_DIR, "osm", "myanmar_places.csv")
 
-# Major cities/towns with approximate coordinates for nearest-place lookup
-_PLACES = [
-    ("Mandalay", 21.97, 96.08, "Mandalay"),
-    ("Naypyidaw", 19.76, 96.07, "Naypyidaw"),
-    ("Yangon", 16.87, 96.20, "Yangon"),
-    ("Sagaing", 21.88, 95.98, "Saigang"),
-    ("Meiktila", 20.88, 95.86, "Mandalay"),
-    ("Bagan", 21.17, 94.87, "Mandalay"),
-    ("Monywa", 21.91, 95.13, "Saigang"),
-    ("Myitkyina", 25.38, 97.40, "Kachin"),
-    ("Taunggyi", 20.78, 97.04, "Shan"),
-    ("Lashio", 22.93, 97.75, "Shan"),
-    ("Mawlamyine", 16.49, 97.63, "Mon"),
-    ("Pathein", 16.78, 94.73, "Ayeyarwady"),
-    ("Sittwe", 20.15, 92.90, "Rakhine"),
-    ("Hakha", 21.97, 93.61, "Chin"),
-    ("Loikaw", 19.67, 97.21, "Kayah"),
-    ("Hpa-An", 16.89, 97.63, "Kayin"),
-    ("Dawei", 14.08, 98.20, "Tanitharyi"),
-    ("Bago", 17.34, 96.48, "Bago"),
-    ("Magway", 20.15, 94.93, "Magway"),
-    ("Pyay", 18.82, 95.22, "Bago"),
-    ("Pakokku", 21.33, 95.10, "Magway"),
-    ("Myingyan", 21.46, 95.39, "Mandalay"),
-    ("Mogok", 22.92, 96.51, "Mandalay"),
-    ("Kengtung", 21.29, 99.61, "Shan"),
-    ("Kalay", 23.19, 94.07, "Saigang"),
-    ("Shwebo", 22.57, 95.70, "Saigang"),
-    ("Pyin Oo Lwin", 22.03, 96.47, "Mandalay"),
-    ("Nay Pyi Taw", 19.76, 96.13, "Naypyidaw"),
-    ("Taungoo", 18.94, 96.43, "Bago"),
-    ("Bhamo", 24.25, 97.23, "Kachin"),
-    ("Putao", 27.33, 97.42, "Kachin"),
-    ("Hsipaw", 22.62, 97.30, "Shan"),
-    ("Inle Lake", 20.58, 96.91, "Shan"),
-]
-
-_regions = None
 _admin_shapes = None
+_place_tree = None
+_place_names = None
 
 
 def _load_admin():
@@ -73,6 +40,44 @@ def _load_admin():
     return _admin_shapes
 
 
+def _load_places():
+    """Load OSM places and build a KD-tree for fast nearest-neighbor lookup."""
+    global _place_tree, _place_names
+    if _place_tree is not None:
+        return
+
+    if not os.path.exists(_PLACES_PATH):
+        logger.warning("Places file not found: %s", _PLACES_PATH)
+        _place_tree = None
+        _place_names = []
+        return
+
+    import numpy as np
+    from scipy.spatial import cKDTree
+
+    coords = []
+    names = []
+    with open(_PLACES_PATH, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            lat = float(row["lat"])
+            lon = float(row["lon"])
+            name = row["name_en"] or row["name"]
+            place_type = row["place"]
+            coords.append((lat, lon))
+            names.append((name, place_type))
+
+    # Convert to 3D cartesian for accurate nearest-neighbor on a sphere
+    arr = []
+    for lat, lon in coords:
+        rlat, rlon = math.radians(lat), math.radians(lon)
+        arr.append((math.cos(rlat) * math.cos(rlon), math.cos(rlat) * math.sin(rlon), math.sin(rlat)))
+
+    _place_tree = cKDTree(arr)
+    _place_names = names
+    logger.info("Loaded %d OSM places for geocoding", len(names))
+
+
 def get_state(lat: float, lon: float) -> str:
     """Return Myanmar state/region name for a lat/lon point, or empty string."""
     admin = _load_admin()
@@ -83,32 +88,34 @@ def get_state(lat: float, lon: float) -> str:
     return ""
 
 
-def get_nearest_place(lat: float, lon: float) -> str:
-    """Return the name of the nearest major town/city."""
-    import math
-    best_dist = float("inf")
-    best_name = ""
-    cos_lat = math.cos(math.radians(lat))
-    for name, plat, plon, _ in _PLACES:
-        dx = (lon - plon) * cos_lat
-        dy = lat - plat
-        d = dx * dx + dy * dy
-        if d < best_dist:
-            best_dist = d
-            best_name = name
-    return best_name
+def get_nearest_place(lat: float, lon: float) -> tuple:
+    """Return (name, place_type) of the nearest OSM place node."""
+    _load_places()
+    if _place_tree is None:
+        return ("", "")
+    rlat = math.radians(lat)
+    rlon = math.radians(lon)
+    xyz = (math.cos(rlat) * math.cos(rlon), math.cos(rlat) * math.sin(rlon), math.sin(rlat))
+    _, idx = _place_tree.query(xyz)
+    return _place_names[idx]
 
 
 def enrich_dataframe(df):
-    """Add 'state_region' and 'nearest_city' columns to a quake DataFrame."""
-    import math
-    admin = _load_admin()
+    """Add 'state_region', 'nearest_city', and 'place_type' columns."""
+    _load_admin()
+    _load_places()
+
     states = []
     cities = []
+    place_types = []
     for _, row in df.iterrows():
         lat, lon = row["latitude"], row["longitude"]
         states.append(get_state(lat, lon))
-        cities.append(get_nearest_place(lat, lon))
+        name, ptype = get_nearest_place(lat, lon)
+        cities.append(name)
+        place_types.append(ptype)
+
     df["state_region"] = states
     df["nearest_city"] = cities
+    df["place_type"] = place_types
     return df

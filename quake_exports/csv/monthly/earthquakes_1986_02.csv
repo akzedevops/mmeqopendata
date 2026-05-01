@@ -1,3 +1,3 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-21.563,94.65,118.2,4.7,mb,,,,0.9,us,usp0002qyx,2014-11-07T00:37:54.993Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-02-13 13:09:42,1986-02-13 19:39:42,Magway,Bagan
-21.99,93.796,73.8,4.3,mb,,,,1.0,us,usp0002qum,2014-11-07T00:37:54.079Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-02-08 22:00:57,1986-02-09 04:30:57,Chin,Hakha
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+21.563,94.65,118.2,4.7,mb,,,,0.9,us,usp0002qyx,2014-11-07T00:37:54.993Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-02-13 13:09:42,1986-02-13 19:39:42,Magway,Ywar Thit Kone,village
+21.99,93.796,73.8,4.3,mb,,,,1.0,us,usp0002qum,2014-11-07T00:37:54.079Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1986-02-08 22:00:57,1986-02-09 04:30:57,Chin,Nabung,village

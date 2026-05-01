@@ -1,3 +1,3 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-23.167,93.811,46.1,4.5,mb,44,101.5,,0.97,us,usp000gxu8,2014-11-07T01:39:06.211Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-06-03 19:03:09,2009-06-04 01:33:09,Chin,Kalay
-23.356,93.21,45.3,4.3,mb,39,143.0,,1.28,us,usp000gxu6,2014-11-07T01:39:06.145Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-06-03 18:42:59,2009-06-04 01:12:59,,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+23.167,93.811,46.1,4.5,mb,44,101.5,,0.97,us,usp000gxu8,2014-11-07T01:39:06.211Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-06-03 19:03:09,2009-06-04 01:33:09,Chin,Suangpi,village
+23.356,93.21,45.3,4.3,mb,39,143.0,,1.28,us,usp000gxu6,2014-11-07T01:39:06.145Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-06-03 18:42:59,2009-06-04 01:12:59,,,village

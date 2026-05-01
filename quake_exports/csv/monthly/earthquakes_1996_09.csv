@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-23.049,93.992,33.0,4.0,mb,,,,0.5,us,usp0007qs3,2014-11-07T01:01:14.957Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-09-30 17:47:23,1996-10-01 00:17:23,Chin,Kalay
-23.217,94.048,33.0,4.2,mb,,,,1.19,us,usp0007qrz,2014-11-07T01:01:14.948Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-09-30 16:04:02,1996-09-30 22:34:02,Saigang,Kalay
-25.514,96.645,33.0,4.5,mb,,,,1.4,us,usp0007pxb,2014-11-07T01:01:10.301Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-09-14 02:24:49,1996-09-14 08:54:49,Kachin,Myitkyina
-24.831,96.389,33.0,4.6,mb,,,,0.98,us,usp0007ppk,2014-11-07T01:01:08.882Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-09-08 17:31:31,1996-09-09 00:01:31,Kachin,Bhamo
-23.716,94.227,33.0,4.0,mb,,,,1.2,us,usp0007pjw,2014-11-07T01:01:07.917Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-09-06 23:43:08,1996-09-07 06:13:08,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+23.049,93.992,33.0,4.0,mb,,,,0.5,us,usp0007qs3,2014-11-07T01:01:14.957Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-09-30 17:47:23,1996-10-01 00:17:23,Chin,Si Thar,village
+23.217,94.048,33.0,4.2,mb,,,,1.19,us,usp0007qrz,2014-11-07T01:01:14.948Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-09-30 16:04:02,1996-09-30 22:34:02,Saigang,Nat Gyi Kone (Chin),village
+25.514,96.645,33.0,4.5,mb,,,,1.4,us,usp0007pxb,2014-11-07T01:01:10.301Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-09-14 02:24:49,1996-09-14 08:54:49,Kachin,Loi Hseng,village
+24.831,96.389,33.0,4.6,mb,,,,0.98,us,usp0007ppk,2014-11-07T01:01:08.882Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-09-08 17:31:31,1996-09-09 00:01:31,Kachin,Nam Hlaing,village
+23.716,94.227,33.0,4.0,mb,,,,1.2,us,usp0007pjw,2014-11-07T01:01:07.917Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-09-06 23:43:08,1996-09-07 06:13:08,Saigang,Nan Ka Teik,village

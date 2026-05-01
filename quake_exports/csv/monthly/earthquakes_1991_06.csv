@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-20.822,96.61,33.0,4.2,mb,,,,1.4,us,usp0004tmf,2014-11-07T00:48:47.967Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-06-30 22:50:11,1991-07-01 05:20:11,Shan,Inle Lake
-21.531,94.02,55.0,5.0,mb,,,,1.0,us,usp0004tdg,2014-11-07T00:48:47.254Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-06-25 20:34:57,1991-06-26 03:04:57,Chin,Hakha
-23.263,94.478,104.1,4.0,mb,,,,0.4,us,usp0004tcr,2014-11-07T00:48:47.198Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-06-25 06:08:10,1991-06-25 12:38:10,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+20.822,96.61,33.0,4.2,mb,,,,1.4,us,usp0004tmf,2014-11-07T00:48:47.967Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-06-30 22:50:11,1991-07-01 05:20:11,Shan,Htaunt Kway,village
+21.531,94.02,55.0,5.0,mb,,,,1.0,us,usp0004tdg,2014-11-07T00:48:47.254Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-06-25 20:34:57,1991-06-26 03:04:57,Chin,Hli Yone,village
+23.263,94.478,104.1,4.0,mb,,,,0.4,us,usp0004tcr,2014-11-07T00:48:47.198Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1991-06-25 06:08:10,1991-06-25 12:38:10,Saigang,Khan Ni (Khan Ti),village

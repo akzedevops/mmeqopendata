@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-23.021,94.342,80.9,3.2,mb,10,,,0.54,us,usp000a8jh,2014-11-07T01:11:59.692Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-01-28 11:55:56,2001-01-28 18:25:56,Saigang,Kalay
-22.227,94.778,131.7,3.6,mb,8,,,0.75,us,usp000a7nf,2014-11-07T01:11:55.703Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-01-14 09:55:46,2001-01-14 16:25:46,Saigang,Monywa
-21.172,98.454,64.4,4.4,mb,11,,,0.59,us,usp000a74a,2014-11-07T01:11:51.537Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-01-04 04:03:04,2001-01-04 10:33:04,Shan,Kengtung
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+23.021,94.342,80.9,3.2,mb,10,,,0.54,us,usp000a8jh,2014-11-07T01:11:59.692Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-01-28 11:55:56,2001-01-28 18:25:56,Saigang,Sat Sar (Set Sar),village
+22.227,94.778,131.7,3.6,mb,8,,,0.75,us,usp000a7nf,2014-11-07T01:11:55.703Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-01-14 09:55:46,2001-01-14 16:25:46,Saigang,Chin Pone,village
+21.172,98.454,64.4,4.4,mb,11,,,0.59,us,usp000a74a,2014-11-07T01:11:51.537Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-01-04 04:03:04,2001-01-04 10:33:04,Shan,,village

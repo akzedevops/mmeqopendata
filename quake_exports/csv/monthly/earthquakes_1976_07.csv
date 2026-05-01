@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-24.893,98.676,33.0,5.0,mb,,,,,us,usp0000hfy,2014-11-06T23:21:36.321Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-07-23 01:43:58,1976-07-23 08:13:58,,Myitkyina
-24.782,98.698,9.0,6.3,ms,,,,,us,usp0000hf6,2015-02-12T22:54:25.670Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-07-21 15:10:45,1976-07-21 21:40:45,,Myitkyina
-24.553,98.899,33.0,4.5,mb,,,,,us,usp0000hax,2014-11-06T23:21:36.190Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-07-13 07:28:37,1976-07-13 13:58:37,,Bhamo
-24.191,98.676,33.0,5.4,ms,,,,,us,usp0000h63,2014-11-06T23:21:36.070Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-07-03 16:33:23,1976-07-03 23:03:23,,Bhamo
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+24.893,98.676,33.0,5.0,mb,,,,,us,usp0000hfy,2014-11-06T23:21:36.321Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-07-23 01:43:58,1976-07-23 08:13:58,,岩子头,village
+24.782,98.698,9.0,6.3,ms,,,,,us,usp0000hf6,2015-02-12T22:54:25.670Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-07-21 15:10:45,1976-07-21 21:40:45,,Longjiang,town
+24.553,98.899,33.0,4.5,mb,,,,,us,usp0000hax,2014-11-06T23:21:36.190Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-07-13 07:28:37,1976-07-13 13:58:37,,Longxin,town
+24.191,98.676,33.0,5.4,ms,,,,,us,usp0000h63,2014-11-06T23:21:36.070Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1976-07-03 16:33:23,1976-07-03 23:03:23,,青木水,village

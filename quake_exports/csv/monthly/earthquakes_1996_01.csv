@@ -1,8 +1,8 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-22.833,94.084,120.0,4.5,mb,,,,0.7,us,usp0007bwc,2014-11-07T00:59:44.342Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-28 13:49:28,1996-01-28 20:19:28,Saigang,Kalay
-23.891,94.601,33.0,4.0,mb,,,,1.1,us,usp0007b9e,2014-11-07T00:59:41.422Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-18 00:19:54,1996-01-18 06:49:54,Saigang,Kalay
-21.553,94.345,81.9,4.5,mb,,,,1.3,us,usp0007axe,2014-11-07T00:59:39.494Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-12 09:57:58,1996-01-12 16:27:58,Magway,Bagan
-22.463,94.249,33.0,4.2,mb,,,,0.9,us,usp0007atb,2014-11-07T00:59:38.857Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-10 12:19:04,1996-01-10 18:49:04,Magway,Kalay
-24.681,95.022,113.4,4.3,mb,,,,1.0,us,usp0007arh,2014-11-07T00:59:38.626Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-09 19:45:47,1996-01-10 02:15:47,Saigang,Kalay
-22.504,94.349,107.6,4.2,mb,,,,0.8,us,usp0007aqd,2014-11-07T00:59:38.232Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-09 08:43:05,1996-01-09 15:13:05,Saigang,Kalay
-22.404,94.114,100.0,4.0,mb,,,,1.1,us,usp0007aaj,2014-11-07T00:59:36.554Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-04 05:49:39,1996-01-04 12:19:39,Magway,Hakha
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+22.833,94.084,120.0,4.5,mb,,,,0.7,us,usp0007bwc,2014-11-07T00:59:44.342Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-28 13:49:28,1996-01-28 20:19:28,Saigang,Kyauk Hpu,village
+23.891,94.601,33.0,4.0,mb,,,,1.1,us,usp0007b9e,2014-11-07T00:59:41.422Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-18 00:19:54,1996-01-18 06:49:54,Saigang,Khar Tun,village
+21.553,94.345,81.9,4.5,mb,,,,1.3,us,usp0007axe,2014-11-07T00:59:39.494Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-12 09:57:58,1996-01-12 16:27:58,Magway,Yae Hpyu,village
+22.463,94.249,33.0,4.2,mb,,,,0.9,us,usp0007atb,2014-11-07T00:59:38.857Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-10 12:19:04,1996-01-10 18:49:04,Magway,Chaung Son,village
+24.681,95.022,113.4,4.3,mb,,,,1.0,us,usp0007arh,2014-11-07T00:59:38.626Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-09 19:45:47,1996-01-10 02:15:47,Saigang,Zee Taw,village
+22.504,94.349,107.6,4.2,mb,,,,0.8,us,usp0007aqd,2014-11-07T00:59:38.232Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-09 08:43:05,1996-01-09 15:13:05,Saigang,Thit Khauk,village
+22.404,94.114,100.0,4.0,mb,,,,1.1,us,usp0007aaj,2014-11-07T00:59:36.554Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-01-04 05:49:39,1996-01-04 12:19:39,Magway,Kan,village

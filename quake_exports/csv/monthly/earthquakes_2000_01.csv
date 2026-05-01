@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-22.243,93.674,92.7,4.3,mb,,,,1.18,us,usp0009mht,2014-11-07T01:09:21.463Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2000-01-23 00:33:31,2000-01-23 07:03:31,Chin,Hakha
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+22.243,93.674,92.7,4.3,mb,,,,1.18,us,usp0009mht,2014-11-07T01:09:21.463Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2000-01-23 00:33:31,2000-01-23 07:03:31,Chin,Surkhua,town

@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-25.28,95.101,82.2,5.3,mwc,194,22.5,,0.96,us,usp000h12d,2015-02-11T17:19:11.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-08-30 19:27:48,2009-08-31 01:57:48,Saigang,Myitkyina
-18.229,94.141,13.7,4.4,mb,29,100.5,,0.58,us,usp000h112,2014-11-07T01:39:35.101Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-08-30 02:41:04,2009-08-30 09:11:04,,Pyay
-24.323,94.793,99.0,5.5,mwb,177,29.6,,0.8,us,usp000h07g,2015-02-11T17:19:10.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-08-11 21:43:47,2009-08-12 04:13:47,Saigang,Kalay
-22.513,93.483,72.2,4.7,mb,83,71.1,,0.75,us,usp000gzzt,2014-11-07T01:39:27.811Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-08-05 02:58:45,2009-08-05 09:28:45,Chin,Hakha
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+25.28,95.101,82.2,5.3,mwc,194,22.5,,0.96,us,usp000h12d,2015-02-11T17:19:11.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-08-30 19:27:48,2009-08-31 01:57:48,Saigang,Man Hpar,village
+18.229,94.141,13.7,4.4,mb,29,100.5,,0.58,us,usp000h112,2014-11-07T01:39:35.101Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-08-30 02:41:04,2009-08-30 09:11:04,,Kyauk Ka Lat,village
+24.323,94.793,99.0,5.5,mwb,177,29.6,,0.8,us,usp000h07g,2015-02-11T17:19:10.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-08-11 21:43:47,2009-08-12 04:13:47,Saigang,Kaw Kan,village
+22.513,93.483,72.2,4.7,mb,83,71.1,,0.75,us,usp000gzzt,2014-11-07T01:39:27.811Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-08-05 02:58:45,2009-08-05 09:28:45,Chin,Phaikhua,village

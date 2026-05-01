@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-25.673,95.12,87.6,4.0,mb,23,143.6,,0.58,us,usp000hedf,2014-11-07T01:41:43.667Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2010-06-23 01:57:33,2010-06-23 08:27:33,Saigang,Myitkyina
-16.863,94.694,10.0,4.0,mb,14,101.1,,0.76,us,usp000he7t,2014-11-07T01:41:42.580Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2010-06-18 03:20:36,2010-06-18 09:50:36,Ayeyarwady,Pathein
-24.55,94.81,113.9,4.4,mb,48,114.2,,0.8,us,usp000hdwe,2014-11-07T01:41:40.480Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2010-06-12 20:22:00,2010-06-13 02:52:00,Saigang,Kalay
-25.048,96.501,29.9,4.6,mb,67,118.9,,1.23,us,usp000hdeq,2014-11-07T01:41:36.538Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2010-06-01 03:54:24,2010-06-01 10:24:24,Kachin,Myitkyina
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+25.673,95.12,87.6,4.0,mb,23,143.6,,0.58,us,usp000hedf,2014-11-07T01:41:43.667Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2010-06-23 01:57:33,2010-06-23 08:27:33,Saigang,Lanlaila,village
+16.863,94.694,10.0,4.0,mb,14,101.1,,0.76,us,usp000he7t,2014-11-07T01:41:42.580Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2010-06-18 03:20:36,2010-06-18 09:50:36,Ayeyarwady,Zee Kone,village
+24.55,94.81,113.9,4.4,mb,48,114.2,,0.8,us,usp000hdwe,2014-11-07T01:41:40.480Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2010-06-12 20:22:00,2010-06-13 02:52:00,Saigang,Nan Khan,village
+25.048,96.501,29.9,4.6,mb,67,118.9,,1.23,us,usp000hdeq,2014-11-07T01:41:36.538Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2010-06-01 03:54:24,2010-06-01 10:24:24,Kachin,Bone Gyi Sa Khan,village

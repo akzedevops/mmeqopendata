@@ -1,8 +1,8 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-24.643,94.723,93.7,4.5,mb,,,,1.4,us,usp00067qg,2014-11-07T00:54:51.487Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-01-29 18:28:34,1994-01-30 00:58:34,Saigang,Kalay
-25.138,97.261,33.0,3.9,mb,,,,1.6,us,usp00066bj,2014-11-07T00:54:46.428Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1994-01-12 00:27:16,1994-01-12 06:57:16,Kachin,Myitkyina
-25.223,97.128,31.5,4.6,mb,,,,1.4,us,usp00066ag,2014-11-07T00:54:46.250Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1994-01-11 02:18:05,1994-01-11 08:48:05,Kachin,Myitkyina
-25.231,97.203,9.9,6.1,mw,,,,1.1,us,usp00066ad,2015-02-12T23:29:08.633Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1994-01-11 00:51:56,1994-01-11 07:21:56,Kachin,Myitkyina
-25.269,97.093,33.0,3.8,mb,,,,1.5,us,usp00066ac,2014-11-07T00:54:46.197Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1994-01-11 00:34:55,1994-01-11 07:04:55,Kachin,Myitkyina
-27.012,96.584,33.0,4.1,mb,,,,0.7,us,usp000661t,2014-11-07T00:54:43.826Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-01-05 06:15:54,1994-01-05 12:45:54,Saigang,Putao
-26.37,95.939,88.1,4.5,mb,,,,1.4,us,usp000660n,2014-11-07T00:54:43.363Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-01-04 16:51:22,1994-01-04 23:21:22,Saigang,Putao
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+24.643,94.723,93.7,4.5,mb,,,,1.4,us,usp00067qg,2014-11-07T00:54:51.487Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-01-29 18:28:34,1994-01-30 00:58:34,Saigang,Oke Kan,village
+25.138,97.261,33.0,3.9,mb,,,,1.6,us,usp00066bj,2014-11-07T00:54:46.428Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1994-01-12 00:27:16,1994-01-12 06:57:16,Kachin,Yae Kyi,village
+25.223,97.128,31.5,4.6,mb,,,,1.4,us,usp00066ag,2014-11-07T00:54:46.250Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1994-01-11 02:18:05,1994-01-11 08:48:05,Kachin,Ma Li Sut Yang,village
+25.231,97.203,9.9,6.1,mw,,,,1.1,us,usp00066ad,2015-02-12T23:29:08.633Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1994-01-11 00:51:56,1994-01-11 07:21:56,Kachin,Ma Le,village
+25.269,97.093,33.0,3.8,mb,,,,1.5,us,usp00066ac,2014-11-07T00:54:46.197Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1994-01-11 00:34:55,1994-01-11 07:04:55,Kachin,Ma Ram,village
+27.012,96.584,33.0,4.1,mb,,,,0.7,us,usp000661t,2014-11-07T00:54:43.826Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-01-05 06:15:54,1994-01-05 12:45:54,Saigang,Taku,village
+26.37,95.939,88.1,4.5,mb,,,,1.4,us,usp000660n,2014-11-07T00:54:43.363Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-01-04 16:51:22,1994-01-04 23:21:22,Saigang,La Pet (Ke San),village

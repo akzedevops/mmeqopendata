@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-19.184,93.471,33.0,3.9,mb,,,,0.53,us,usp0008hqu,2014-11-07T01:04:47.604Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-03-20 03:02:46,1998-03-20 09:32:46,,Sittwe
-15.495,94.235,33.0,3.6,mb,,,,0.64,us,usp0008hf0,2014-11-07T01:04:45.858Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1998-03-13 23:28:36,1998-03-14 05:58:36,,Pathein
-25.21,95.1,97.6,4.5,mb,,,,0.83,us,usp0008hb5,2014-11-07T01:04:45.251Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-03-11 15:34:06,1998-03-11 22:04:06,Saigang,Myitkyina
-24.539,94.478,66.5,4.7,mb,,,,0.95,us,usp0008h1n,2014-11-07T01:04:42.259Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1998-03-06 12:50:11,1998-03-06 19:20:11,Saigang,Kalay
-23.592,94.521,100.0,4.3,mb,,,,0.79,us,usp0008gsb,2014-11-07T01:04:38.761Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-03-01 15:12:30,1998-03-01 21:42:30,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+19.184,93.471,33.0,3.9,mb,,,,0.53,us,usp0008hqu,2014-11-07T01:04:47.604Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-03-20 03:02:46,1998-03-20 09:32:46,,Kyauk Pyauk,village
+15.495,94.235,33.0,3.6,mb,,,,0.64,us,usp0008hf0,2014-11-07T01:04:45.858Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1998-03-13 23:28:36,1998-03-14 05:58:36,,Pyi Thar Yar,village
+25.21,95.1,97.6,4.5,mb,,,,0.83,us,usp0008hb5,2014-11-07T01:04:45.251Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-03-11 15:34:06,1998-03-11 22:04:06,Saigang,Hpaing Kun,village
+24.539,94.478,66.5,4.7,mb,,,,0.95,us,usp0008h1n,2014-11-07T01:04:42.259Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1998-03-06 12:50:11,1998-03-06 19:20:11,Saigang,Yan Nwan,village
+23.592,94.521,100.0,4.3,mb,,,,0.79,us,usp0008gsb,2014-11-07T01:04:38.761Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-03-01 15:12:30,1998-03-01 21:42:30,Saigang,Thar Nan Taw,village

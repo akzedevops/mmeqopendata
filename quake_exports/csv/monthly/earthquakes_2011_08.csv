@@ -1,9 +1,9 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-24.639,98.019,43.6,4.4,mb,27,113.6,,1.02,us,usp000j799,2014-11-07T01:45:44.900Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2011-08-30 16:23:56,2011-08-30 22:53:56,,Bhamo
-26.521,96.748,121.7,4.5,mb,54,74.1,,0.62,us,usp000j75n,2014-11-07T01:45:44.242Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-08-28 04:40:45,2011-08-28 11:10:45,Kachin,Putao
-15.036,94.314,35.0,4.2,mb,21,100.2,,0.83,us,usp000j6ty,2014-11-07T01:45:40.592Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2011-08-21 17:43:38,2011-08-22 00:13:38,,Pathein
-21.807,94.369,87.6,4.4,mb,27,145.4,,1.01,us,usp000j67v,2014-11-07T01:45:35.095Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-08-09 17:43:31,2011-08-10 00:13:31,Magway,Monywa
-24.932,98.73,40.1,5.1,mwc,101,41.3,,1.17,us,usp000j67a,2014-11-07T01:45:35.014Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2011-08-09 11:50:22,2011-08-09 18:20:22,,Myitkyina
-22.753,94.116,39.2,4.4,mb,18,107.8,,0.71,us,usp000j66f,2014-11-07T01:45:34.888Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-08-08 18:54:41,2011-08-09 01:24:41,Magway,Kalay
-22.36,93.704,43.1,4.3,mb,11,140.5,,0.85,us,usp000j63u,2014-11-07T01:45:34.491Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2011-08-07 00:02:50,2011-08-07 06:32:50,Chin,Hakha
-24.805,95.156,114.6,4.2,mb,14,152.0,,0.61,us,usp000j60v,2014-11-07T01:45:34.070Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-08-05 16:23:44,2011-08-05 22:53:44,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+24.639,98.019,43.6,4.4,mb,27,113.6,,1.02,us,usp000j799,2014-11-07T01:45:44.900Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2011-08-30 16:23:56,2011-08-30 22:53:56,,岗勐,village
+26.521,96.748,121.7,4.5,mb,54,74.1,,0.62,us,usp000j75n,2014-11-07T01:45:44.242Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-08-28 04:40:45,2011-08-28 11:10:45,Kachin,Pa Net,village
+15.036,94.314,35.0,4.2,mb,21,100.2,,0.83,us,usp000j6ty,2014-11-07T01:45:40.592Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2011-08-21 17:43:38,2011-08-22 00:13:38,,Pyi Thar Yar,village
+21.807,94.369,87.6,4.4,mb,27,145.4,,1.01,us,usp000j67v,2014-11-07T01:45:35.095Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-08-09 17:43:31,2011-08-10 00:13:31,Magway,Htan Taw,village
+24.932,98.73,40.1,5.1,mwc,101,41.3,,1.17,us,usp000j67a,2014-11-07T01:45:35.014Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2011-08-09 11:50:22,2011-08-09 18:20:22,,尖坡,village
+22.753,94.116,39.2,4.4,mb,18,107.8,,0.71,us,usp000j66f,2014-11-07T01:45:34.888Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-08-08 18:54:41,2011-08-09 01:24:41,Magway,Yae Shin,village
+22.36,93.704,43.1,4.3,mb,11,140.5,,0.85,us,usp000j63u,2014-11-07T01:45:34.491Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2011-08-07 00:02:50,2011-08-07 06:32:50,Chin,Sumsen,village
+24.805,95.156,114.6,4.2,mb,14,152.0,,0.61,us,usp000j60v,2014-11-07T01:45:34.070Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-08-05 16:23:44,2011-08-05 22:53:44,Saigang,Ton Khan,village

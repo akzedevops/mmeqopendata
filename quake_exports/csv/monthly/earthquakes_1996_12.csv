@@ -1,7 +1,7 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-22.57,93.957,33.0,3.8,mb,,,,0.88,us,usp0007umn,2014-11-07T01:01:48.027Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-12-18 05:03:37,1996-12-18 11:33:37,Chin,Kalay
-22.871,94.163,33.0,4.3,mb,,,,0.88,us,usp0007umf,2014-11-07T01:01:47.993Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-12-17 23:40:31,1996-12-18 06:10:31,Saigang,Kalay
-23.5,94.029,71.4,4.5,mb,,,,0.81,us,usp0007uh2,2014-11-07T01:01:47.588Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-12-15 20:58:09,1996-12-16 03:28:09,Chin,Kalay
-25.285,94.995,105.2,4.7,mb,,,,1.32,us,usp0007u7h,2014-11-07T01:01:46.164Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-12-10 12:08:34,1996-12-10 18:38:34,Saigang,Myitkyina
-25.15,96.202,149.7,3.6,mb,,,,1.36,us,usp0007tzc,2014-11-07T01:01:44.400Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-12-05 01:40:41,1996-12-05 08:10:41,Kachin,Myitkyina
-21.526,98.252,33.0,4.3,mb,,,,1.05,us,usp0007ttq,2014-11-07T01:01:42.176Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-12-01 04:05:42,1996-12-01 10:35:42,Shan,Kengtung
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+22.57,93.957,33.0,3.8,mb,,,,0.88,us,usp0007umn,2014-11-07T01:01:48.027Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-12-18 05:03:37,1996-12-18 11:33:37,Chin,Chaung Gwa,village
+22.871,94.163,33.0,4.3,mb,,,,0.88,us,usp0007umf,2014-11-07T01:01:47.993Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-12-17 23:40:31,1996-12-18 06:10:31,Saigang,Nwar Kyay (Nwar Ywar),village
+23.5,94.029,71.4,4.5,mb,,,,0.81,us,usp0007uh2,2014-11-07T01:01:47.588Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-12-15 20:58:09,1996-12-16 03:28:09,Chin,Dimzang,village
+25.285,94.995,105.2,4.7,mb,,,,1.32,us,usp0007u7h,2014-11-07T01:01:46.164Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1996-12-10 12:08:34,1996-12-10 18:38:34,Saigang,Phwelin,village
+25.15,96.202,149.7,3.6,mb,,,,1.36,us,usp0007tzc,2014-11-07T01:01:44.400Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-12-05 01:40:41,1996-12-05 08:10:41,Kachin,,village
+21.526,98.252,33.0,4.3,mb,,,,1.05,us,usp0007ttq,2014-11-07T01:01:42.176Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-12-01 04:05:42,1996-12-01 10:35:42,Shan,Long Lein,village

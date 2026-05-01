@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-20.928,93.215,32.0,4.9,mb,,,,,us,usp00003zy,2014-11-06T23:21:21.084Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1973-10-30 02:45:00,1973-10-30 09:15:00,Chin,Sittwe
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+20.928,93.215,32.0,4.9,mb,,,,,us,usp00003zy,2014-11-06T23:21:21.084Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1973-10-30 02:45:00,1973-10-30 09:15:00,Chin,Ah Lel Ywar,village

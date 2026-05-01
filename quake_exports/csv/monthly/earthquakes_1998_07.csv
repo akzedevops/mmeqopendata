@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-22.849,94.496,100.0,4.6,mb,,,,0.53,us,usp0008rrr,2014-11-07T01:05:36.699Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-07-17 21:13:59,1998-07-18 03:43:59,Saigang,Kalay
-21.534,98.264,33.0,4.3,mb,,,,0.77,us,usp0008res,2014-11-07T01:05:35.311Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-07-13 17:36:54,1998-07-14 00:06:54,Shan,Kengtung
-18.735,95.786,57.3,4.5,mb,,,,0.89,us,usp0008r7h,2014-11-07T01:05:34.181Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-07-09 09:20:47,1998-07-09 15:50:47,Bago,Pyay
-21.019,93.699,56.3,4.1,mb,,,,1.32,us,usp0008qtf,2014-11-07T01:05:30.769Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-07-02 00:05:58,1998-07-02 06:35:58,Chin,Hakha
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+22.849,94.496,100.0,4.6,mb,,,,0.53,us,usp0008rrr,2014-11-07T01:05:36.699Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-07-17 21:13:59,1998-07-18 03:43:59,Saigang,Myay See Taung,village
+21.534,98.264,33.0,4.3,mb,,,,0.77,us,usp0008res,2014-11-07T01:05:35.311Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-07-13 17:36:54,1998-07-14 00:06:54,Shan,Long Lein,village
+18.735,95.786,57.3,4.5,mb,,,,0.89,us,usp0008r7h,2014-11-07T01:05:34.181Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-07-09 09:20:47,1998-07-09 15:50:47,Bago,Le Pin,village
+21.019,93.699,56.3,4.1,mb,,,,1.32,us,usp0008qtf,2014-11-07T01:05:30.769Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-07-02 00:05:58,1998-07-02 06:35:58,Chin,Hmu Chein Dein,village

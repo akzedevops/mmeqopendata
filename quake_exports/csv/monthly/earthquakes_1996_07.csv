@@ -1,8 +1,8 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-25.938,95.465,90.9,4.5,mb,,,,0.8,us,usp0007ms2,2014-11-07T01:00:50.916Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-28 14:26:30,1996-07-28 20:56:30,Saigang,Myitkyina
-23.653,94.14,56.8,4.7,mb,,,,0.9,us,usp0007mre,2014-11-07T01:00:50.831Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-28 07:08:11,1996-07-28 13:38:11,Saigang,Kalay
-21.307,94.804,110.2,5.2,mwc,,,,0.8,us,usp0007mp3,2015-02-11T17:16:34.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-27 08:45:18,1996-07-27 15:15:18,Magway,Bagan
-25.169,96.253,33.0,5.4,mwc,,,,0.8,us,usp0007mmq,2015-02-11T17:16:34.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-26 13:09:05,1996-07-26 19:39:05,Kachin,Myitkyina
-21.893,99.222,33.0,4.3,mb,,,,0.2,us,usp0007m2c,2014-11-07T01:00:47.782Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-15 05:28:01,1996-07-15 11:58:01,Shan,Kengtung
-21.509,94.853,101.5,5.1,mb,,,,0.9,us,usp0007kuy,2014-11-07T01:00:46.989Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-08 11:40:38,1996-07-08 18:10:38,Magway,Pakokku
-21.817,92.485,33.0,4.1,mb,,,,0.7,us,usp0007krk,2014-11-07T01:00:46.292Z,,Myanmar-Bangladesh border region,MM,Asia,earthquake,0,0,1,,,1996-07-05 14:01:48,1996-07-05 20:31:48,,Hakha
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+25.938,95.465,90.9,4.5,mb,,,,0.8,us,usp0007ms2,2014-11-07T01:00:50.916Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-28 14:26:30,1996-07-28 20:56:30,Saigang,Sun So,village
+23.653,94.14,56.8,4.7,mb,,,,0.9,us,usp0007mre,2014-11-07T01:00:50.831Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-28 07:08:11,1996-07-28 13:38:11,Saigang,Hpet Yar Yae Shin,village
+21.307,94.804,110.2,5.2,mwc,,,,0.8,us,usp0007mp3,2015-02-11T17:16:34.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-27 08:45:18,1996-07-27 15:15:18,Magway,Kan Zauk,village
+25.169,96.253,33.0,5.4,mwc,,,,0.8,us,usp0007mmq,2015-02-11T17:16:34.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-26 13:09:05,1996-07-26 19:39:05,Kachin,Nam Pa Te,village
+21.893,99.222,33.0,4.3,mb,,,,0.2,us,usp0007m2c,2014-11-07T01:00:47.782Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-15 05:28:01,1996-07-15 11:58:01,Shan,Namphai,village
+21.509,94.853,101.5,5.1,mb,,,,0.9,us,usp0007kuy,2014-11-07T01:00:46.989Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1996-07-08 11:40:38,1996-07-08 18:10:38,Magway,Kan Yar Kaung,village
+21.817,92.485,33.0,4.1,mb,,,,0.7,us,usp0007krk,2014-11-07T01:00:46.292Z,,Myanmar-Bangladesh border region,MM,Asia,earthquake,0,0,1,,,1996-07-05 14:01:48,1996-07-05 20:31:48,,Robertpara,village

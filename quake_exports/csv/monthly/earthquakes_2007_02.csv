@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-17.395,95.918,10.0,4.6,mb,29,111.5,,1.0,us,usp000f5bn,2014-11-07T01:31:40.709Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-02-21 20:50:21,2007-02-22 03:20:21,Yangon,Bago
-24.415,94.811,110.0,4.4,mb,13,177.4,,0.78,us,usp000f528,2014-11-07T01:31:39.352Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-02-17 23:52:39,2007-02-18 06:22:39,Saigang,Kalay
-27.087,96.821,73.7,4.4,mb,7,120.8,,1.2,us,usp000f4nw,2014-11-07T01:31:36.546Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-02-11 09:53:55,2007-02-11 16:23:55,Saigang,Putao
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+17.395,95.918,10.0,4.6,mb,29,111.5,,1.0,us,usp000f5bn,2014-11-07T01:31:40.709Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2007-02-21 20:50:21,2007-02-22 03:20:21,Yangon,Chin Su,village
+24.415,94.811,110.0,4.4,mb,13,177.4,,0.78,us,usp000f528,2014-11-07T01:31:39.352Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-02-17 23:52:39,2007-02-18 06:22:39,Saigang,Laing Ma Khan,village
+27.087,96.821,73.7,4.4,mb,7,120.8,,1.2,us,usp000f4nw,2014-11-07T01:31:36.546Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2007-02-11 09:53:55,2007-02-11 16:23:55,Saigang,Khalot,village

@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-17.101,96.106,10.0,4.5,mb,,,,0.9,us,usp0008yzf,2014-11-07T01:06:31.579Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-30 12:00:48,1998-11-30 18:30:48,Yangon,Yangon
-24.686,96.373,100.0,4.3,mb,,,,1.04,us,usp0008ybh,2014-11-07T01:06:27.668Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-17 15:30:50,1998-11-17 22:00:50,Kachin,Bhamo
-22.943,94.801,33.0,4.0,mb,,,,1.14,us,usp0008y61,2014-11-07T01:06:26.964Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-14 06:14:34,1998-11-14 12:44:34,Saigang,Kalay
-21.168,94.032,77.5,4.6,mb,,,,0.57,us,usp0008xyw,2014-11-07T01:06:26.130Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-10 08:39:50,1998-11-10 15:09:50,Chin,Bagan
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+17.101,96.106,10.0,4.5,mb,,,,0.9,us,usp0008yzf,2014-11-07T01:06:31.579Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-30 12:00:48,1998-11-30 18:30:48,Yangon,San Chaung,village
+24.686,96.373,100.0,4.3,mb,,,,1.04,us,usp0008ybh,2014-11-07T01:06:27.668Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-17 15:30:50,1998-11-17 22:00:50,Kachin,Nyaung Kaing,village
+22.943,94.801,33.0,4.0,mb,,,,1.14,us,usp0008y61,2014-11-07T01:06:26.964Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-14 06:14:34,1998-11-14 12:44:34,Saigang,Hti Za Loke,village
+21.168,94.032,77.5,4.6,mb,,,,0.57,us,usp0008xyw,2014-11-07T01:06:26.130Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-11-10 08:39:50,1998-11-10 15:09:50,Chin,Ma Swi Twi,village

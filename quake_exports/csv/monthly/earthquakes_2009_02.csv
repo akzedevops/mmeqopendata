@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-25.836,94.67,33.0,4.8,mb,74,66.4,,1.01,us,usp000guc8,2014-11-07T01:38:26.791Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-02-24 17:46:16,2009-02-25 00:16:16,,Myitkyina
-15.604,96.171,34.3,4.3,mb,23,146.1,,0.45,us,usp000gtmd,2014-11-07T01:38:21.564Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2009-02-10 21:56:21,2009-02-11 04:26:21,,Yangon
-24.162,94.666,53.8,4.2,mb,34,91.6,,0.85,us,usp000gtgk,2014-11-07T01:38:20.649Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-02-06 07:32:37,2009-02-06 14:02:37,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+25.836,94.67,33.0,4.8,mb,74,66.4,,1.01,us,usp000guc8,2014-11-07T01:38:26.791Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-02-24 17:46:16,2009-02-25 00:16:16,,Sitimi,village
+15.604,96.171,34.3,4.3,mb,23,146.1,,0.45,us,usp000gtmd,2014-11-07T01:38:21.564Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2009-02-10 21:56:21,2009-02-11 04:26:21,,Ban Dar Pin,village
+24.162,94.666,53.8,4.2,mb,34,91.6,,0.85,us,usp000gtgk,2014-11-07T01:38:20.649Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-02-06 07:32:37,2009-02-06 14:02:37,Saigang,Ah Hlaw,village

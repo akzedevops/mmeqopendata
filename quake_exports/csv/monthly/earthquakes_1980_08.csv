@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-15.81,94.78,40.0,4.8,mb,,,,,us,usp00019jz,2014-11-06T23:24:25.716Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1980-08-28 07:55:24,1980-08-28 14:25:24,Ayeyarwady,Pathein
-21.902,94.931,120.0,4.6,mb,,,,,us,usp00019jy,2014-11-06T23:24:25.715Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-08-28 03:33:35,1980-08-28 10:03:35,Saigang,Monywa
-15.869,94.701,29.0,5.5,mb,,,,,us,usp00019jq,2015-02-11T17:14:50.000Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1980-08-27 04:30:16,1980-08-27 11:00:16,Ayeyarwady,Pathein
-24.784,94.587,50.0,5.1,mb,,,,,us,usp00019ca,2014-11-06T23:24:25.177Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1980-08-12 16:44:01,1980-08-12 23:14:01,,Kalay
-23.861,96.076,33.0,4.6,mb,,,,,us,usp000196t,2014-11-06T23:24:24.974Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-08-01 02:22:39,1980-08-01 08:52:39,Saigang,Mogok
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+15.81,94.78,40.0,4.8,mb,,,,,us,usp00019jz,2014-11-06T23:24:25.716Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1980-08-28 07:55:24,1980-08-28 14:25:24,Ayeyarwady,Na That,village
+21.902,94.931,120.0,4.6,mb,,,,,us,usp00019jy,2014-11-06T23:24:25.715Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-08-28 03:33:35,1980-08-28 10:03:35,Saigang,Aung Pan,village
+15.869,94.701,29.0,5.5,mb,,,,,us,usp00019jq,2015-02-11T17:14:50.000Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1980-08-27 04:30:16,1980-08-27 11:00:16,Ayeyarwady,Pyin Ka Nu Kone,village
+24.784,94.587,50.0,5.1,mb,,,,,us,usp00019ca,2014-11-06T23:24:25.177Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1980-08-12 16:44:01,1980-08-12 23:14:01,,,village
+23.861,96.076,33.0,4.6,mb,,,,,us,usp000196t,2014-11-06T23:24:24.974Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-08-01 02:22:39,1980-08-01 08:52:39,Saigang,Me Zar Lay,village

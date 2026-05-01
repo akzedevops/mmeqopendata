@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-24.978,95.539,182.9,5.0,mb,,,,0.9,us,usp0006b3e,2014-11-07T00:55:18.309Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-04-14 17:32:43,1994-04-15 00:02:43,Saigang,Bhamo
-24.639,94.788,90.3,5.1,mb,,,,0.9,us,usp0006avq,2014-11-07T00:55:17.216Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-04-09 11:19:30,1994-04-09 17:49:30,Saigang,Kalay
-26.232,96.749,33.0,4.7,mb,,,,1.0,us,usp0006aqf,2014-11-07T00:55:16.521Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-04-06 07:16:59,1994-04-06 13:46:59,Kachin,Myitkyina
-26.188,96.867,33.0,5.9,mw,,,,1.0,us,usp0006aqe,2015-02-12T20:16:32.507Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-04-06 07:03:27,1994-04-06 13:33:27,Kachin,Myitkyina
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+24.978,95.539,182.9,5.0,mb,,,,0.9,us,usp0006b3e,2014-11-07T00:55:18.309Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-04-14 17:32:43,1994-04-15 00:02:43,Saigang,Nant Thar,village
+24.639,94.788,90.3,5.1,mb,,,,0.9,us,usp0006avq,2014-11-07T00:55:17.216Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-04-09 11:19:30,1994-04-09 17:49:30,Saigang,Nan Khan,village
+26.232,96.749,33.0,4.7,mb,,,,1.0,us,usp0006aqf,2014-11-07T00:55:16.521Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-04-06 07:16:59,1994-04-06 13:46:59,Kachin,Nawng Long Kawng Ra,village
+26.188,96.867,33.0,5.9,mw,,,,1.0,us,usp0006aqe,2015-02-12T20:16:32.507Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1994-04-06 07:03:27,1994-04-06 13:33:27,Kachin,Nawng Long Kawng Ra,village

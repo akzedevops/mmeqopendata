@@ -1,15 +1,15 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-19.794,95.402,10.0,4.5,mb,19,171.3,,0.55,us,usp000cbqz,2014-11-07T01:20:18.036Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-31 11:06:22,2003-10-31 17:36:22,Magway,Magway
-19.832,95.793,10.0,0.0,,14,170.0,,0.88,us,usp000cbn3,2014-11-07T01:20:17.404Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-30 16:01:22,2003-10-30 22:31:22,Magway,Naypyidaw
-19.808,95.742,10.0,5.3,mwc,233,34.0,,0.97,us,usp000cbn1,2015-02-11T17:17:37.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-30 15:22:18,2003-10-30 21:52:18,Magway,Naypyidaw
-26.037,95.93,70.9,4.7,mb,20,114.0,,0.87,us,usp000cbhx,2014-11-07T01:20:17.084Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-10-29 10:02:51,2003-10-29 16:32:51,Saigang,Myitkyina
-21.755,94.694,116.4,0.0,,9,139.1,,0.72,us,usp000cb39,2014-11-07T01:20:14.847Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-23 15:49:03,2003-10-23 22:19:03,Magway,Monywa
-19.694,95.412,10.0,4.1,mb,14,178.7,,1.18,us,usp000caxj,2014-11-07T01:20:14.195Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-21 07:32:23,2003-10-21 14:02:23,Magway,Naypyidaw
-24.618,94.86,118.5,0.0,,9,179.4,,0.93,us,usp000caez,2014-11-07T01:20:12.129Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-10-15 18:20:57,2003-10-16 00:50:57,Saigang,Kalay
-25.091,94.861,110.3,4.0,mb,16,175.8,,0.91,us,usp000caec,2014-11-07T01:20:12.075Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-10-15 09:10:27,2003-10-15 15:40:27,Saigang,Kalay
-22.185,94.129,100.0,0.0,,10,197.0,,0.74,us,usp000ca8u,2014-11-07T01:20:11.475Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-12 22:22:40,2003-10-13 04:52:40,Magway,Hakha
-23.521,94.128,44.2,4.0,mb,19,115.8,,0.6,us,usp000ca8m,2014-11-07T01:20:11.457Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-12 21:33:52,2003-10-13 04:03:52,Saigang,Kalay
-20.061,96.002,10.0,4.7,mb,15,124.9,,1.38,us,usp000c9fg,2014-11-07T01:20:07.844Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-03 12:34:05,2003-10-03 19:04:05,Mandalay,Naypyidaw
-19.899,95.488,10.0,4.0,mb,14,105.7,,1.02,us,usp000c9ed,2014-11-07T01:20:07.673Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-03 04:24:30,2003-10-03 10:54:30,Magway,Naypyidaw
-19.511,95.375,10.0,4.2,mb,13,178.9,,1.0,us,usp000c9cr,2014-11-07T01:20:07.250Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-02 20:51:55,2003-10-03 03:21:55,Magway,Naypyidaw
-19.949,95.597,10.0,4.7,mb,57,89.2,,0.78,us,usp000c99m,2014-11-07T01:20:06.045Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-01 17:11:48,2003-10-01 23:41:48,Magway,Naypyidaw
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+19.794,95.402,10.0,4.5,mb,19,171.3,,0.55,us,usp000cbqz,2014-11-07T01:20:18.036Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-31 11:06:22,2003-10-31 17:36:22,Magway,Nyaung Pin Kwin,village
+19.832,95.793,10.0,0.0,,14,170.0,,0.88,us,usp000cbn3,2014-11-07T01:20:17.404Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-30 16:01:22,2003-10-30 22:31:22,Magway,Pyoe Khin Taik,village
+19.808,95.742,10.0,5.3,mwc,233,34.0,,0.97,us,usp000cbn1,2015-02-11T17:17:37.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-30 15:22:18,2003-10-30 21:52:18,Magway,Kwin Hmyaung,village
+26.037,95.93,70.9,4.7,mb,20,114.0,,0.87,us,usp000cbhx,2014-11-07T01:20:17.084Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-10-29 10:02:51,2003-10-29 16:32:51,Saigang,Pa Du Mone (Ywar Haung),village
+21.755,94.694,116.4,0.0,,9,139.1,,0.72,us,usp000cb39,2014-11-07T01:20:14.847Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-23 15:49:03,2003-10-23 22:19:03,Magway,Min Te Su,village
+19.694,95.412,10.0,4.1,mb,14,178.7,,1.18,us,usp000caxj,2014-11-07T01:20:14.195Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-21 07:32:23,2003-10-21 14:02:23,Magway,In Pin Hla,village
+24.618,94.86,118.5,0.0,,9,179.4,,0.93,us,usp000caez,2014-11-07T01:20:12.129Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-10-15 18:20:57,2003-10-16 00:50:57,Saigang,Bon Si,village
+25.091,94.861,110.3,4.0,mb,16,175.8,,0.91,us,usp000caec,2014-11-07T01:20:12.075Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-10-15 09:10:27,2003-10-15 15:40:27,Saigang,Mo Paing Lut,town
+22.185,94.129,100.0,0.0,,10,197.0,,0.74,us,usp000ca8u,2014-11-07T01:20:11.475Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-12 22:22:40,2003-10-13 04:52:40,Magway,Gangaw,town
+23.521,94.128,44.2,4.0,mb,19,115.8,,0.6,us,usp000ca8m,2014-11-07T01:20:11.457Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-12 21:33:52,2003-10-13 04:03:52,Saigang,55 Maing,village
+20.061,96.002,10.0,4.7,mb,15,124.9,,1.38,us,usp000c9fg,2014-11-07T01:20:07.844Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-03 12:34:05,2003-10-03 19:04:05,Mandalay,Lel Pyin Ma,village
+19.899,95.488,10.0,4.0,mb,14,105.7,,1.02,us,usp000c9ed,2014-11-07T01:20:07.673Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-03 04:24:30,2003-10-03 10:54:30,Magway,Pein Hne Kone,village
+19.511,95.375,10.0,4.2,mb,13,178.9,,1.0,us,usp000c9cr,2014-11-07T01:20:07.250Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-02 20:51:55,2003-10-03 03:21:55,Magway,Si Pin (Myauk Mee Kone),village
+19.949,95.597,10.0,4.7,mb,57,89.2,,0.78,us,usp000c99m,2014-11-07T01:20:06.045Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-10-01 17:11:48,2003-10-01 23:41:48,Magway,Ma Gyi Kone,village

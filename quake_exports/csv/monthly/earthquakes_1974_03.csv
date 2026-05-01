@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-17.412,94.0,33.0,4.9,mb,,,,,us,usp00005rm,2014-11-06T23:21:23.467Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1974-03-25 21:14:44,1974-03-26 03:44:44,,Pathein
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+17.412,94.0,33.0,4.9,mb,,,,,us,usp00005rm,2014-11-06T23:21:23.467Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1974-03-25 21:14:44,1974-03-26 03:44:44,,Nwei Nyo Chaung,village

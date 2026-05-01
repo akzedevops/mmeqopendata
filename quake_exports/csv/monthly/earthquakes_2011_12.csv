@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-23.355,94.255,73.8,4.7,mb,31,143.6,,0.57,us,usp000jcnm,2014-11-07T01:46:37.657Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-26 10:40:30,2011-12-26 17:10:30,Saigang,Kalay
-22.546,98.568,10.0,4.0,mb,20,137.6,,0.9,us,usp000jckc,2014-11-07T01:46:37.113Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-24 15:14:16,2011-12-24 21:44:16,Shan,Lashio
-24.886,95.26,122.4,4.6,mb,31,84.8,,0.92,us,usp000jc3n,2014-11-07T01:46:33.197Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-12 04:45:44,2011-12-12 11:15:44,Saigang,Bhamo
-15.946,95.18,10.0,4.1,mb,13,105.0,,0.77,us,usp000jc12,2014-11-07T01:46:32.695Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-10 11:44:18,2011-12-10 18:14:18,Ayeyarwady,Pathein
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+23.355,94.255,73.8,4.7,mb,31,143.6,,0.57,us,usp000jcnm,2014-11-07T01:46:37.657Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-26 10:40:30,2011-12-26 17:10:30,Saigang,Naung Put (Naung Mut),village
+22.546,98.568,10.0,4.0,mb,20,137.6,,0.9,us,usp000jckc,2014-11-07T01:46:37.113Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-24 15:14:16,2011-12-24 21:44:16,Shan,Man Yawng Long,village
+24.886,95.26,122.4,4.6,mb,31,84.8,,0.92,us,usp000jc3n,2014-11-07T01:46:33.197Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-12 04:45:44,2011-12-12 11:15:44,Saigang,Tin Kyit,village
+15.946,95.18,10.0,4.1,mb,13,105.0,,0.77,us,usp000jc12,2014-11-07T01:46:32.695Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2011-12-10 11:44:18,2011-12-10 18:14:18,Ayeyarwady,Tha Pyay (Ta Say),village

@@ -1,14 +1,14 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-27.151,96.433,74.7,0.0,,13,111.8,,1.38,us,usp000d300,2014-11-07T01:23:16.558Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-08-28 10:06:54,2004-08-28 16:36:54,Saigang,Putao
-23.383,94.235,79.9,4.6,mb,11,190.4,,1.04,us,usp000d2rn,2014-11-07T01:23:15.448Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-24 00:16:54,2004-08-24 06:46:54,Saigang,Kalay
-23.422,94.646,89.5,4.2,mb,19,112.4,,1.02,us,usp000d2qh,2014-11-07T01:23:15.341Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-23 13:07:51,2004-08-23 19:37:51,Saigang,Kalay
-21.169,93.353,50.0,0.0,,8,179.1,,0.71,us,usp000d2nz,2014-11-07T01:23:15.165Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-22 18:22:27,2004-08-23 00:52:27,Chin,Hakha
-23.619,95.624,27.6,4.2,mb,18,145.0,,0.9,us,usp000d22s,2014-11-07T01:23:12.337Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-13 15:17:25,2004-08-13 21:47:25,Saigang,Shwebo
-23.269,93.923,71.0,4.0,mb,8,196.2,,0.87,us,usp000d20y,2014-11-07T01:23:12.171Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-08-12 18:58:33,2004-08-13 01:28:33,Chin,Kalay
-23.925,94.455,97.5,4.0,mb,12,189.1,,1.14,us,usp000d1yv,2014-11-07T01:23:11.240Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-11 20:40:40,2004-08-12 03:10:40,Saigang,Kalay
-21.06,95.097,100.5,4.1,mb,8,178.0,,0.71,us,usp000d1x0,2014-11-07T01:23:10.936Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-10 21:10:10,2004-08-11 03:40:10,Mandalay,Bagan
-19.995,95.728,10.0,4.4,mb,12,177.2,,0.7,us,usp000d1rw,2014-11-07T01:23:10.279Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-08 13:22:17,2004-08-08 19:52:17,Magway,Naypyidaw
-19.952,95.697,37.7,4.8,mb,122,92.3,,0.78,us,usp000d1rs,2014-11-07T01:23:10.263Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-08 12:45:49,2004-08-08 19:15:49,Magway,Naypyidaw
-22.691,94.363,94.5,4.2,mb,21,174.6,,0.48,us,usp000d1pc,2014-11-07T01:23:09.883Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-07 10:27:00,2004-08-07 16:57:00,Saigang,Kalay
-27.413,96.423,37.0,0.0,,10,156.4,,0.8,us,usp000d1fs,2014-11-07T01:23:08.888Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-08-04 17:26:38,2004-08-04 23:56:38,,Putao
-19.962,95.517,100.7,4.2,mb,7,182.0,,1.23,us,usp000d1c9,2014-11-07T01:23:07.823Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-03 08:59:12,2004-08-03 15:29:12,Magway,Naypyidaw
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+27.151,96.433,74.7,0.0,,13,111.8,,1.38,us,usp000d300,2014-11-07T01:23:16.558Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-08-28 10:06:54,2004-08-28 16:36:54,Saigang,Nalong,village
+23.383,94.235,79.9,4.6,mb,11,190.4,,1.04,us,usp000d2rn,2014-11-07T01:23:15.448Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-24 00:16:54,2004-08-24 06:46:54,Saigang,Nan Maw Kei,village
+23.422,94.646,89.5,4.2,mb,19,112.4,,1.02,us,usp000d2qh,2014-11-07T01:23:15.341Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-23 13:07:51,2004-08-23 19:37:51,Saigang,Thitsar Pann,town
+21.169,93.353,50.0,0.0,,8,179.1,,0.71,us,usp000d2nz,2014-11-07T01:23:15.165Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-22 18:22:27,2004-08-23 00:52:27,Chin,Yan Chaung Wa,village
+23.619,95.624,27.6,4.2,mb,18,145.0,,0.9,us,usp000d22s,2014-11-07T01:23:12.337Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-13 15:17:25,2004-08-13 21:47:25,Saigang,Ah Lel Khon,village
+23.269,93.923,71.0,4.0,mb,8,196.2,,0.87,us,usp000d20y,2014-11-07T01:23:12.171Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-08-12 18:58:33,2004-08-13 01:28:33,Chin,Thangsan,village
+23.925,94.455,97.5,4.0,mb,12,189.1,,1.14,us,usp000d1yv,2014-11-07T01:23:11.240Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-11 20:40:40,2004-08-12 03:10:40,Saigang,Ma Gyi Tan,village
+21.06,95.097,100.5,4.1,mb,8,178.0,,0.71,us,usp000d1x0,2014-11-07T01:23:10.936Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-10 21:10:10,2004-08-11 03:40:10,Mandalay,Tei Pin Te,village
+19.995,95.728,10.0,4.4,mb,12,177.2,,0.7,us,usp000d1rw,2014-11-07T01:23:10.279Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-08 13:22:17,2004-08-08 19:52:17,Magway,Myay Lan Khwe,village
+19.952,95.697,37.7,4.8,mb,122,92.3,,0.78,us,usp000d1rs,2014-11-07T01:23:10.263Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-08 12:45:49,2004-08-08 19:15:49,Magway,Mya Sein Taung,village
+22.691,94.363,94.5,4.2,mb,21,174.6,,0.48,us,usp000d1pc,2014-11-07T01:23:09.883Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-07 10:27:00,2004-08-07 16:57:00,Saigang,Za Na Hpoke,village
+27.413,96.423,37.0,0.0,,10,156.4,,0.8,us,usp000d1fs,2014-11-07T01:23:08.888Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-08-04 17:26:38,2004-08-04 23:56:38,,New Kunyem,village
+19.962,95.517,100.7,4.2,mb,7,182.0,,1.23,us,usp000d1c9,2014-11-07T01:23:07.823Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-08-03 08:59:12,2004-08-03 15:29:12,Magway,Ywar Thit,village

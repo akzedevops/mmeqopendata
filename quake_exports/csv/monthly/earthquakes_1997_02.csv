@@ -1,7 +1,7 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-22.898,94.983,33.0,4.8,mb,,,,1.09,us,usp0007xfd,2014-11-07T01:02:09.903Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-02-19 01:35:53,1997-02-19 08:05:53,Saigang,Shwebo
-22.846,94.929,33.0,4.7,mb,,,,0.95,us,usp0007xf3,2014-11-07T01:02:09.845Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-02-18 21:13:47,1997-02-19 03:43:47,Saigang,Shwebo
-23.861,94.402,101.9,4.3,mb,,,,1.37,us,usp0007xaa,2014-11-07T01:02:09.251Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-02-15 14:21:09,1997-02-15 20:51:09,Saigang,Kalay
-21.305,95.265,119.4,4.0,mb,,,,1.14,us,usp0007x2e,2014-11-07T01:02:08.107Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-02-11 01:58:37,1997-02-11 08:28:37,Mandalay,Pakokku
-24.166,94.569,100.0,4.3,mb,,,,1.01,us,usp0007x0j,2014-11-07T01:02:07.877Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1997-02-09 23:41:23,1997-02-10 06:11:23,Saigang,Kalay
-25.312,96.522,62.6,3.8,mb,,,,0.75,us,usp0007wnz,2014-11-07T01:02:04.563Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-02-02 14:30:05,1997-02-02 21:00:05,Kachin,Myitkyina
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+22.898,94.983,33.0,4.8,mb,,,,1.09,us,usp0007xfd,2014-11-07T01:02:09.903Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-02-19 01:35:53,1997-02-19 08:05:53,Saigang,Inn Gyi (East),village
+22.846,94.929,33.0,4.7,mb,,,,0.95,us,usp0007xf3,2014-11-07T01:02:09.845Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-02-18 21:13:47,1997-02-19 03:43:47,Saigang,Aik,village
+23.861,94.402,101.9,4.3,mb,,,,1.37,us,usp0007xaa,2014-11-07T01:02:09.251Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-02-15 14:21:09,1997-02-15 20:51:09,Saigang,Moe Kaung,village
+21.305,95.265,119.4,4.0,mb,,,,1.14,us,usp0007x2e,2014-11-07T01:02:08.107Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-02-11 01:58:37,1997-02-11 08:28:37,Mandalay,Thee Kone,village
+24.166,94.569,100.0,4.3,mb,,,,1.01,us,usp0007x0j,2014-11-07T01:02:07.877Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1997-02-09 23:41:23,1997-02-10 06:11:23,Saigang,Sit Thaung,village
+25.312,96.522,62.6,3.8,mb,,,,0.75,us,usp0007wnz,2014-11-07T01:02:04.563Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1997-02-02 14:30:05,1997-02-02 21:00:05,Kachin,Aing Lay Tu,village

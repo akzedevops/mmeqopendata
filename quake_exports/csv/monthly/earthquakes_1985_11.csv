@@ -1,7 +1,7 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-26.294,97.068,10.0,4.9,mb,,,,1.0,us,usp0002nax,2014-11-07T00:37:31.280Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1985-11-28 13:42:52,1985-11-28 20:12:52,Kachin,Myitkyina
-25.2,94.508,33.0,4.3,mb,,,,0.3,us,usp0002n8d,2014-11-07T00:37:30.782Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1985-11-26 17:19:13,1985-11-26 23:49:13,,Kalay
-18.535,94.788,33.0,4.5,mb,,,,1.0,us,usp0002n6h,2014-11-07T00:37:30.528Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1985-11-25 00:18:14,1985-11-25 06:48:14,Bago,Pyay
-21.332,94.676,107.8,4.3,mb,,,,0.9,us,usp0002mkq,2014-11-07T00:37:27.476Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1985-11-09 15:55:55,1985-11-09 22:25:55,Magway,Bagan
-22.649,93.965,33.0,4.5,mb,,,,1.3,us,usp0002mhz,2014-11-07T00:37:27.031Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1985-11-08 01:00:35,1985-11-08 07:30:35,Chin,Kalay
-27.285,96.875,41.8,4.8,mb,,,,1.1,us,usp0002mbv,2014-11-07T00:37:23.763Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1985-11-01 02:34:37,1985-11-01 09:04:37,,Putao
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+26.294,97.068,10.0,4.9,mb,,,,1.0,us,usp0002nax,2014-11-07T00:37:31.280Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1985-11-28 13:42:52,1985-11-28 20:12:52,Kachin,,village
+25.2,94.508,33.0,4.3,mb,,,,0.3,us,usp0002n8d,2014-11-07T00:37:30.782Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1985-11-26 17:19:13,1985-11-26 23:49:13,,,town
+18.535,94.788,33.0,4.5,mb,,,,1.0,us,usp0002n6h,2014-11-07T00:37:30.528Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1985-11-25 00:18:14,1985-11-25 06:48:14,Bago,Ma Thon,village
+21.332,94.676,107.8,4.3,mb,,,,0.9,us,usp0002mkq,2014-11-07T00:37:27.476Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1985-11-09 15:55:55,1985-11-09 22:25:55,Magway,Pe Khin Kyei,village
+22.649,93.965,33.0,4.5,mb,,,,1.3,us,usp0002mhz,2014-11-07T00:37:27.031Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1985-11-08 01:00:35,1985-11-08 07:30:35,Chin,ရွေမြစ်သာ,village
+27.285,96.875,41.8,4.8,mb,,,,1.1,us,usp0002mbv,2014-11-07T00:37:23.763Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1985-11-01 02:34:37,1985-11-01 09:04:37,,Gandhigram,village

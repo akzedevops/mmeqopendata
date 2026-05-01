@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-25.911,95.064,84.0,4.9,mb,,,,,us,usp0000kxm,2014-11-06T23:21:38.983Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-12-25 01:07:10,1976-12-25 07:37:10,Saigang,Myitkyina
-23.126,94.606,97.0,5.0,mb,,,,,us,usp0000krz,2014-11-06T23:21:38.603Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-12-15 04:35:11,1976-12-15 11:05:11,Saigang,Kalay
-24.205,94.56,97.0,4.7,mb,,,,,us,usp0000kne,2014-11-06T23:21:38.500Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1976-12-06 16:13:12,1976-12-06 22:43:12,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+25.911,95.064,84.0,4.9,mb,,,,,us,usp0000kxm,2014-11-06T23:21:38.983Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-12-25 01:07:10,1976-12-25 07:37:10,Saigang,Mëtsongvong,village
+23.126,94.606,97.0,5.0,mb,,,,,us,usp0000krz,2014-11-06T23:21:38.603Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-12-15 04:35:11,1976-12-15 11:05:11,Saigang,Ka Toe,village
+24.205,94.56,97.0,4.7,mb,,,,,us,usp0000kne,2014-11-06T23:21:38.500Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1976-12-06 16:13:12,1976-12-06 22:43:12,Saigang,Thar Si,village

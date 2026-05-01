@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-27.138,96.832,33.0,4.6,mb,,,,1.2,us,usp000740b,2014-11-07T00:58:47.229Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1995-09-26 04:56:56,1995-09-26 11:26:56,Saigang,Putao
-28.967,97.595,33.0,4.6,mb,,,,1.3,us,usp00073xv,2014-11-07T00:58:46.802Z,,Xizang-India-Myanmar border region,MM,Asia,earthquake,0,0,1,,,1995-09-24 22:51:52,1995-09-25 05:21:52,,Putao
-25.396,96.625,17.6,4.8,mb,,,,1.0,us,usp00073nj,2014-11-07T00:58:45.555Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-09-20 17:26:33,1995-09-20 23:56:33,Kachin,Myitkyina
-21.504,93.543,48.3,4.2,mb,,,,1.0,us,usp000735c,2014-11-07T00:58:42.513Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-09-09 18:22:36,1995-09-10 00:52:36,Chin,Hakha
-27.094,96.68,33.0,4.3,mb,,,,1.4,us,usp00072yd,2014-11-07T00:58:41.342Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1995-09-05 16:19:17,1995-09-05 22:49:17,Saigang,Putao
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+27.138,96.832,33.0,4.6,mb,,,,1.2,us,usp000740b,2014-11-07T00:58:47.229Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1995-09-26 04:56:56,1995-09-26 11:26:56,Saigang,Khalot,village
+28.967,97.595,33.0,4.6,mb,,,,1.3,us,usp00073xv,2014-11-07T00:58:46.802Z,,Xizang-India-Myanmar border region,MM,Asia,earthquake,0,0,1,,,1995-09-24 22:51:52,1995-09-25 05:21:52,,Zêtar,village
+25.396,96.625,17.6,4.8,mb,,,,1.0,us,usp00073nj,2014-11-07T00:58:45.555Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-09-20 17:26:33,1995-09-20 23:56:33,Kachin,Ka Htan Yang,village
+21.504,93.543,48.3,4.2,mb,,,,1.0,us,usp000735c,2014-11-07T00:58:42.513Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-09-09 18:22:36,1995-09-10 00:52:36,Chin,Haltu (Upper),village
+27.094,96.68,33.0,4.3,mb,,,,1.4,us,usp00072yd,2014-11-07T00:58:41.342Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1995-09-05 16:19:17,1995-09-05 22:49:17,Saigang,Sati,village

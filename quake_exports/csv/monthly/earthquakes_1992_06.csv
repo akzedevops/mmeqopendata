@@ -1,9 +1,9 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-22.949,95.95,33.0,4.5,mb,,,,1.1,us,usp00059gt,2014-11-07T00:50:52.357Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-23 03:34:48,1992-06-23 10:04:48,Saigang,Shwebo
-22.996,94.869,71.1,4.2,mb,,,,0.6,us,usp000594r,2014-11-07T00:50:50.114Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-15 03:57:38,1992-06-15 10:27:38,Saigang,Kalay
-24.027,95.932,17.3,6.3,mw,,,,1.1,us,usp000594q,2015-02-12T23:21:18.670Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-15 02:48:56,1992-06-15 09:18:56,Saigang,Bhamo
-22.574,93.503,67.6,4.1,mb,,,,0.7,us,usp000593p,2014-11-07T00:50:49.973Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1992-06-14 14:19:04,1992-06-14 20:49:04,Chin,Hakha
-21.63,93.019,33.0,4.4,mb,,,,1.1,us,usp0005929,2014-11-07T00:50:49.751Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-13 22:44:04,1992-06-14 05:14:04,Chin,Hakha
-25.66,96.758,33.0,4.7,mb,,,,1.2,us,usp00058x5,2014-11-07T00:50:49.061Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-10 13:41:24,1992-06-10 20:11:24,Kachin,Myitkyina
-23.13,94.0,117.3,4.6,mb,,,,0.5,us,usp00058tm,2014-11-07T00:50:48.557Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1992-06-08 02:39:19,1992-06-08 09:09:19,Saigang,Kalay
-18.992,94.373,49.4,4.5,mb,,,,0.8,us,usp00058q7,2014-11-07T00:50:47.895Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-05 11:03:54,1992-06-05 17:33:54,Rakhine,Pyay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+22.949,95.95,33.0,4.5,mb,,,,1.1,us,usp00059gt,2014-11-07T00:50:52.357Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-23 03:34:48,1992-06-23 10:04:48,Saigang,Ywar Thar Yar,village
+22.996,94.869,71.1,4.2,mb,,,,0.6,us,usp000594r,2014-11-07T00:50:50.114Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-15 03:57:38,1992-06-15 10:27:38,Saigang,Gway Tauk Kaing,village
+24.027,95.932,17.3,6.3,mw,,,,1.1,us,usp000594q,2015-02-12T23:21:18.670Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-15 02:48:56,1992-06-15 09:18:56,Saigang,Htan Ta Pin,village
+22.574,93.503,67.6,4.1,mb,,,,0.7,us,usp000593p,2014-11-07T00:50:49.973Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1992-06-14 14:19:04,1992-06-14 20:49:04,Chin,Lichia,village
+21.63,93.019,33.0,4.4,mb,,,,1.1,us,usp0005929,2014-11-07T00:50:49.751Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-13 22:44:04,1992-06-14 05:14:04,Chin,Auk Sin Li,village
+25.66,96.758,33.0,4.7,mb,,,,1.2,us,usp00058x5,2014-11-07T00:50:49.061Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-10 13:41:24,1992-06-10 20:11:24,Kachin,Man Pang,village
+23.13,94.0,117.3,4.6,mb,,,,0.5,us,usp00058tm,2014-11-07T00:50:48.557Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1992-06-08 02:39:19,1992-06-08 09:09:19,Saigang,Yae Hpyar Chauk,village
+18.992,94.373,49.4,4.5,mb,,,,0.8,us,usp00058q7,2014-11-07T00:50:47.895Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1992-06-05 11:03:54,1992-06-05 17:33:54,Rakhine,Tat,village

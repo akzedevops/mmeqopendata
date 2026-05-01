@@ -1,11 +1,11 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-26.641,95.936,51.2,4.5,mb,33,,,1.01,us,usp000anbk,2014-11-07T01:13:39.517Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2001-08-31 06:30:15,2001-08-31 13:00:15,Saigang,Putao
-20.746,98.426,33.0,4.4,mb,19,,,0.98,us,usp000an0h,2014-11-07T01:13:36.566Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-25 06:36:21,2001-08-25 13:06:21,Shan,Kengtung
-20.757,98.301,33.0,4.7,mb,62,,,1.32,us,usp000an0f,2014-11-07T01:13:36.556Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-25 06:13:10,2001-08-25 12:43:10,Shan,Taunggyi
-21.639,95.235,33.0,4.0,mb,25,,,0.89,us,usp000amu3,2014-11-07T01:13:35.313Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-21 20:17:17,2001-08-22 02:47:17,Magway,Myingyan
-23.626,94.551,110.6,4.1,mb,37,,,0.94,us,usp000amtp,2014-11-07T01:13:35.277Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-21 16:41:41,2001-08-21 23:11:41,Saigang,Kalay
-21.289,98.537,33.0,4.3,mb,25,,,1.01,us,usp000amkq,2014-11-07T01:13:34.181Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-17 03:43:55,2001-08-17 10:13:55,Shan,Kengtung
-24.432,94.992,121.4,5.1,mwc,244,,,0.86,us,usp000am9h,2015-02-11T17:17:16.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2001-08-12 01:57:59,2001-08-12 08:27:59,Saigang,Kalay
-26.432,96.346,111.7,4.5,mb,19,,,0.9,us,usp000am07,2014-11-07T01:13:30.549Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-07 21:21:56,2001-08-08 03:51:56,Kachin,Putao
-21.361,95.116,150.8,4.4,mb,20,,,1.05,us,usp000aku8,2014-11-07T01:13:29.496Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-04 15:25:29,2001-08-04 21:55:29,Magway,Pakokku
-24.928,96.659,33.0,4.3,mb,17,,,1.04,us,usp000akn6,2014-11-07T01:13:26.284Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-01 03:03:22,2001-08-01 09:33:22,Kachin,Myitkyina
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+26.641,95.936,51.2,4.5,mb,33,,,1.01,us,usp000anbk,2014-11-07T01:13:39.517Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2001-08-31 06:30:15,2001-08-31 13:00:15,Saigang,,village
+20.746,98.426,33.0,4.4,mb,19,,,0.98,us,usp000an0h,2014-11-07T01:13:36.566Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-25 06:36:21,2001-08-25 13:06:21,Shan,,village
+20.757,98.301,33.0,4.7,mb,62,,,1.32,us,usp000an0f,2014-11-07T01:13:36.556Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-25 06:13:10,2001-08-25 12:43:10,Shan,,village
+21.639,95.235,33.0,4.0,mb,25,,,0.89,us,usp000amu3,2014-11-07T01:13:35.313Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-21 20:17:17,2001-08-22 02:47:17,Magway,Ku Toke,village
+23.626,94.551,110.6,4.1,mb,37,,,0.94,us,usp000amtp,2014-11-07T01:13:35.277Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-21 16:41:41,2001-08-21 23:11:41,Saigang,Kaung Kway,village
+21.289,98.537,33.0,4.3,mb,25,,,1.01,us,usp000amkq,2014-11-07T01:13:34.181Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-17 03:43:55,2001-08-17 10:13:55,Shan,Wan Mai long,village
+24.432,94.992,121.4,5.1,mwc,244,,,0.86,us,usp000am9h,2015-02-11T17:17:16.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2001-08-12 01:57:59,2001-08-12 08:27:59,Saigang,Sat Htaing,village
+26.432,96.346,111.7,4.5,mb,19,,,0.9,us,usp000am07,2014-11-07T01:13:30.549Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-07 21:21:56,2001-08-08 03:51:56,Kachin,,village
+21.361,95.116,150.8,4.4,mb,20,,,1.05,us,usp000aku8,2014-11-07T01:13:29.496Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-04 15:25:29,2001-08-04 21:55:29,Magway,So Twin,village
+24.928,96.659,33.0,4.3,mb,17,,,1.04,us,usp000akn6,2014-11-07T01:13:26.284Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2001-08-01 03:03:22,2001-08-01 09:33:22,Kachin,,village

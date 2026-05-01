@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-24.898,95.257,97.0,4.8,mb,,,,,us,usp00011us,2015-02-11T17:14:46.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-07-13 23:20:08,1979-07-14 05:50:08,Saigang,Bhamo
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+24.898,95.257,97.0,4.8,mb,,,,,us,usp00011us,2015-02-11T17:14:46.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1979-07-13 23:20:08,1979-07-14 05:50:08,Saigang,Tin Kyit,village

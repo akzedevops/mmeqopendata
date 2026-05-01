@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-20.266,96.094,33.0,4.3,mb,,,,,us,usp0000f3f,2014-11-06T23:21:34.106Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-02-17 07:50:54,1976-02-17 14:20:54,Mandalay,Naypyidaw
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+20.266,96.094,33.0,4.3,mb,,,,,us,usp0000f3f,2014-11-06T23:21:34.106Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1976-02-17 07:50:54,1976-02-17 14:20:54,Mandalay,Inn Khon,village

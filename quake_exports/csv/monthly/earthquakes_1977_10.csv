@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-25.885,98.847,33.0,4.7,mb,,,,,us,usp0000r2t,2014-11-06T23:21:44.679Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1977-10-17 03:46:49,1977-10-17 10:16:49,,Myitkyina
-23.484,93.353,61.0,5.2,mb,,,,,us,usp0000r15,2015-02-11T17:14:38.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1977-10-13 11:32:09,1977-10-13 18:02:09,,Kalay
-26.72,97.385,33.0,4.6,ms,,,,,us,usp0000qx4,2014-11-06T23:21:44.477Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1977-10-05 17:53:54,1977-10-06 00:23:54,Kachin,Putao
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+25.885,98.847,33.0,4.7,mb,,,,,us,usp0000r2t,2014-11-06T23:21:44.679Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1977-10-17 03:46:49,1977-10-17 10:16:49,,小沙坝,village
+23.484,93.353,61.0,5.2,mb,,,,,us,usp0000r15,2015-02-11T17:14:38.000Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1977-10-13 11:32:09,1977-10-13 18:02:09,,Tiangsam,village
+26.72,97.385,33.0,4.6,ms,,,,,us,usp0000qx4,2014-11-06T23:21:44.477Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1977-10-05 17:53:54,1977-10-06 00:23:54,Kachin,Hpon Kyan,village

@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-22.55,93.544,33.0,0.0,,10,178.0,,0.84,us,usp000c19m,2014-11-07T01:19:00.871Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-06-30 00:07:13,2003-06-30 06:37:13,Chin,Hakha
-21.855,94.212,92.4,0.0,,15,180.5,,0.78,us,usp000c12d,2014-11-07T01:19:00.256Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-06-27 07:04:15,2003-06-27 13:34:15,Magway,Hakha
-21.999,94.192,102.2,0.0,,12,165.8,,0.54,us,usp000c00p,2014-11-07T01:18:56.644Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-06-16 14:59:34,2003-06-16 21:29:34,Magway,Hakha
-24.154,94.395,154.9,0.0,,12,158.5,,0.47,us,usp000bzg1,2014-11-07T01:18:53.179Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-06-09 14:43:42,2003-06-09 21:13:42,Saigang,Kalay
-23.236,93.794,67.8,4.8,mb,18,158.1,,0.69,us,usp000bz20,2014-11-07T01:18:50.789Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-06-04 13:16:13,2003-06-04 19:46:13,Chin,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+22.55,93.544,33.0,0.0,,10,178.0,,0.84,us,usp000c19m,2014-11-07T01:19:00.871Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-06-30 00:07:13,2003-06-30 06:37:13,Chin,Lichia,village
+21.855,94.212,92.4,0.0,,15,180.5,,0.78,us,usp000c12d,2014-11-07T01:19:00.256Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-06-27 07:04:15,2003-06-27 13:34:15,Magway,Moe Kaung,village
+21.999,94.192,102.2,0.0,,12,165.8,,0.54,us,usp000c00p,2014-11-07T01:18:56.644Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-06-16 14:59:34,2003-06-16 21:29:34,Magway,Khaung Ton,village
+24.154,94.395,154.9,0.0,,12,158.5,,0.47,us,usp000bzg1,2014-11-07T01:18:53.179Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-06-09 14:43:42,2003-06-09 21:13:42,Saigang,,village
+23.236,93.794,67.8,4.8,mb,18,158.1,,0.69,us,usp000bz20,2014-11-07T01:18:50.789Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2003-06-04 13:16:13,2003-06-04 19:46:13,Chin,Taingen,village

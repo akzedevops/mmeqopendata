@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-22.943,99.482,33.0,4.8,mb,,,,1.4,us,usp0006t4n,2014-11-07T00:57:20.712Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1995-02-18 00:14:42,1995-02-18 06:44:42,Shan,Lashio
-26.103,96.193,93.4,4.0,mb,,,,1.2,us,usp0006spk,2014-11-07T00:57:18.612Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-02-10 05:43:45,1995-02-10 12:13:45,Kachin,Myitkyina
-25.065,95.109,69.6,4.4,mb,,,,0.9,us,usp0006sk5,2014-11-07T00:57:18.134Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-02-08 16:31:08,1995-02-08 23:01:08,Saigang,Bhamo
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+22.943,99.482,33.0,4.8,mb,,,,1.4,us,usp0006t4n,2014-11-07T00:57:20.712Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1995-02-18 00:14:42,1995-02-18 06:44:42,Shan,永广村,village
+26.103,96.193,93.4,4.0,mb,,,,1.2,us,usp0006spk,2014-11-07T00:57:18.612Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-02-10 05:43:45,1995-02-10 12:13:45,Kachin,Wan Ma Lar,village
+25.065,95.109,69.6,4.4,mb,,,,0.9,us,usp0006sk5,2014-11-07T00:57:18.134Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1995-02-08 16:31:08,1995-02-08 23:01:08,Saigang,Chaung Son,village

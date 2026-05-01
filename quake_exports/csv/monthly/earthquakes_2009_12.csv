@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-24.357,94.807,124.8,5.6,mwb,206,17.3,,0.77,us,usp000h5f4,2015-02-12T23:40:06.830Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-12-29 09:01:55,2009-12-29 15:31:55,Saigang,Kalay
-23.729,94.428,74.2,4.5,mb,46,95.3,,0.92,us,usp000h564,2014-11-07T01:40:17.449Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-12-19 06:18:14,2009-12-19 12:48:14,Saigang,Kalay
-21.096,92.529,34.5,4.1,mb,41,117.8,,0.68,us,usp000h4yt,2014-11-07T01:40:15.873Z,,Myanmar-Bangladesh border region,MM,Asia,earthquake,0,0,1,,,2009-12-11 16:22:17,2009-12-11 22:52:17,Rakhine,Sittwe
-23.481,94.538,35.0,4.5,mb,38,96.9,,0.75,us,usp000h4wx,2014-11-07T01:40:15.458Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-12-09 21:55:53,2009-12-10 04:25:53,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+24.357,94.807,124.8,5.6,mwb,206,17.3,,0.77,us,usp000h5f4,2015-02-12T23:40:06.830Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2009-12-29 09:01:55,2009-12-29 15:31:55,Saigang,Htaw Ma Seik,village
+23.729,94.428,74.2,4.5,mb,46,95.3,,0.92,us,usp000h564,2014-11-07T01:40:17.449Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-12-19 06:18:14,2009-12-19 12:48:14,Saigang,Kin Tat,village
+21.096,92.529,34.5,4.1,mb,41,117.8,,0.68,us,usp000h4yt,2014-11-07T01:40:15.873Z,,Myanmar-Bangladesh border region,MM,Asia,earthquake,0,0,1,,,2009-12-11 16:22:17,2009-12-11 22:52:17,Rakhine,Hmaing Sa Ri,village
+23.481,94.538,35.0,4.5,mb,38,96.9,,0.75,us,usp000h4wx,2014-11-07T01:40:15.458Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2009-12-09 21:55:53,2009-12-10 04:25:53,Saigang,Htaw Thar,village

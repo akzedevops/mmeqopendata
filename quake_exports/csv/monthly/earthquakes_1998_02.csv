@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-27.161,96.156,100.0,3.9,mb,,,,0.87,us,usp0008gcd,2014-11-07T01:04:34.641Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1998-02-21 09:48:54,1998-02-21 16:18:54,Saigang,Putao
-23.098,94.166,45.3,4.7,mb,,,,0.88,us,usp0008g62,2014-11-07T01:04:33.858Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-02-18 09:02:25,1998-02-18 15:32:25,Saigang,Kalay
-23.571,94.734,96.7,4.3,mb,,,,0.86,us,usp0008g23,2014-11-07T01:04:33.275Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-02-16 07:29:09,1998-02-16 13:59:09,Saigang,Kalay
-22.238,94.353,105.5,3.5,mb,,,,0.96,us,usp0008fju,2014-11-07T01:04:30.290Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-02-06 18:57:11,1998-02-07 01:27:11,Saigang,Hakha
-23.403,94.771,99.8,4.1,mb,,,,0.47,us,usp0008ffs,2014-11-07T01:04:29.663Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-02-05 06:36:41,1998-02-05 13:06:41,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+27.161,96.156,100.0,3.9,mb,,,,0.87,us,usp0008gcd,2014-11-07T01:04:34.641Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1998-02-21 09:48:54,1998-02-21 16:18:54,Saigang,Nongsaitakong,village
+23.098,94.166,45.3,4.7,mb,,,,0.88,us,usp0008g62,2014-11-07T01:04:33.858Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-02-18 09:02:25,1998-02-18 15:32:25,Saigang,Kin Pun Chon (Kin Mun Chon),village
+23.571,94.734,96.7,4.3,mb,,,,0.86,us,usp0008g23,2014-11-07T01:04:33.275Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-02-16 07:29:09,1998-02-16 13:59:09,Saigang,Taing Thar,village
+22.238,94.353,105.5,3.5,mb,,,,0.96,us,usp0008fju,2014-11-07T01:04:30.290Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-02-06 18:57:11,1998-02-07 01:27:11,Saigang,ကွမ်းဇဲ (ဝီကီ နေရာလွဲ),village
+23.403,94.771,99.8,4.1,mb,,,,0.47,us,usp0008ffs,2014-11-07T01:04:29.663Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1998-02-05 06:36:41,1998-02-05 13:06:41,Saigang,Wai Pon,village

@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-21.41,99.478,33.0,4.8,mb,,,,1.43,us,usp0009arb,2014-11-07T01:07:57.864Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-06-28 23:38:28,1999-06-29 06:08:28,Shan,Kengtung
-24.16,94.604,120.0,4.2,mb,,,,1.14,us,usp0009a5p,2014-11-07T01:07:55.051Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1999-06-19 12:21:23,1999-06-19 18:51:23,Saigang,Kalay
-25.147,95.123,121.8,4.2,mb,,,,0.77,us,usp00099k4,2014-11-07T01:07:52.814Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-06-09 15:21:53,1999-06-09 21:51:53,Saigang,Myitkyina
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+21.41,99.478,33.0,4.8,mb,,,,1.43,us,usp0009arb,2014-11-07T01:07:57.864Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-06-28 23:38:28,1999-06-29 06:08:28,Shan,Lawng Hkei,village
+24.16,94.604,120.0,4.2,mb,,,,1.14,us,usp0009a5p,2014-11-07T01:07:55.051Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1999-06-19 12:21:23,1999-06-19 18:51:23,Saigang,Me Tin,village
+25.147,95.123,121.8,4.2,mb,,,,0.77,us,usp00099k4,2014-11-07T01:07:52.814Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1999-06-09 15:21:53,1999-06-09 21:51:53,Saigang,Ton Ma Lauk,village

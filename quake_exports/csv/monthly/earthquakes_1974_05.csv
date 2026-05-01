@@ -1,2 +1,2 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-24.67,95.13,83.0,4.5,mb,,,,,us,usp00006g8,2014-11-06T23:21:24.364Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1974-05-25 16:07:22,1974-05-25 22:37:22,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+24.67,95.13,83.0,4.5,mb,,,,,us,usp00006g8,2014-11-06T23:21:24.364Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1974-05-25 16:07:22,1974-05-25 22:37:22,Saigang,Pin Khoke,village

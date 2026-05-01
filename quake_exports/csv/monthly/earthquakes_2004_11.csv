@@ -1,7 +1,7 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-16.9,96.46,85.0,4.3,mb,9,179.9,,1.42,us,usp000d9jv,2014-11-07T01:24:07.265Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2004-11-29 10:24:59,2004-11-29 16:54:59,Yangon,Yangon
-25.149,98.179,37.4,4.7,mb,80,70.0,,1.09,us,usp000d9cg,2014-11-07T01:24:06.163Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2004-11-27 05:25:51,2004-11-27 11:55:51,,Myitkyina
-20.878,92.254,10.0,4.3,mb,10,88.0,,0.97,us,usp000d94u,2014-11-07T01:24:04.867Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-11-25 01:11:13,2004-11-25 07:41:13,,Sittwe
-21.079,94.349,83.1,4.0,mb,9,207.4,,0.29,us,usp000d916,2014-11-07T01:24:04.475Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-11-23 11:16:00,2004-11-23 17:46:00,Magway,Bagan
-23.387,94.484,110.0,4.4,mb,8,189.9,,1.27,us,usp000d7p0,2014-11-07T01:23:55.856Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-11-04 10:02:12,2004-11-04 16:32:12,Saigang,Kalay
-23.509,93.148,51.5,4.2,mb,44,109.7,,0.67,us,usp000d7gb,2014-11-07T01:23:53.969Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-11-02 00:48:52,2004-11-02 07:18:52,,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+16.9,96.46,85.0,4.3,mb,9,179.9,,1.42,us,usp000d9jv,2014-11-07T01:24:07.265Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2004-11-29 10:24:59,2004-11-29 16:54:59,Yangon,Kyu Taw,village
+25.149,98.179,37.4,4.7,mb,80,70.0,,1.09,us,usp000d9cg,2014-11-07T01:24:06.163Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2004-11-27 05:25:51,2004-11-27 11:55:51,,勐乃,village
+20.878,92.254,10.0,4.3,mb,10,88.0,,0.97,us,usp000d94u,2014-11-07T01:24:04.867Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-11-25 01:11:13,2004-11-25 07:41:13,,Dorgar Chhora,village
+21.079,94.349,83.1,4.0,mb,9,207.4,,0.29,us,usp000d916,2014-11-07T01:24:04.475Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-11-23 11:16:00,2004-11-23 17:46:00,Magway,Aint Gyee,village
+23.387,94.484,110.0,4.4,mb,8,189.9,,1.27,us,usp000d7p0,2014-11-07T01:23:55.856Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2004-11-04 10:02:12,2004-11-04 16:32:12,Saigang,Hin Tin,village
+23.509,93.148,51.5,4.2,mb,44,109.7,,0.67,us,usp000d7gb,2014-11-07T01:23:53.969Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2004-11-02 00:48:52,2004-11-02 07:18:52,,,village

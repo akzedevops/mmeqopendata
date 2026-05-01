@@ -1,6 +1,6 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-20.067,94.053,42.4,0.0,,6,206.5,,0.56,us,usp000efuh,2014-11-07T01:28:56.481Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-04-30 13:47:27,2006-04-30 20:17:27,Rakhine,Magway
-24.918,94.978,86.6,4.1,mb,31,116.1,,0.77,us,usp000efg6,2014-11-07T01:28:54.987Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2006-04-25 13:18:14,2006-04-25 19:48:14,Saigang,Kalay
-19.222,94.936,76.9,4.6,mb,80,103.7,,0.52,us,usp000eehg,2014-11-07T01:28:50.395Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-04-14 18:49:29,2006-04-15 01:19:29,Magway,Pyay
-24.241,94.628,106.4,4.8,mb,36,80.3,,1.26,us,usp000eeh8,2014-11-07T01:28:50.308Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2006-04-14 16:24:56,2006-04-14 22:54:56,Saigang,Kalay
-26.209,96.668,29.5,4.4,mb,16,132.4,,1.07,us,usp000edug,2014-11-07T01:28:43.916Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-04-06 14:56:37,2006-04-06 21:26:37,Kachin,Myitkyina
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+20.067,94.053,42.4,0.0,,6,206.5,,0.56,us,usp000efuh,2014-11-07T01:28:56.481Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-04-30 13:47:27,2006-04-30 20:17:27,Rakhine,Zin Kyaw,village
+24.918,94.978,86.6,4.1,mb,31,116.1,,0.77,us,usp000efg6,2014-11-07T01:28:54.987Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2006-04-25 13:18:14,2006-04-25 19:48:14,Saigang,San Kat,village
+19.222,94.936,76.9,4.6,mb,80,103.7,,0.52,us,usp000eehg,2014-11-07T01:28:50.395Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-04-14 18:49:29,2006-04-15 01:19:29,Magway,Sin Kaw,village
+24.241,94.628,106.4,4.8,mb,36,80.3,,1.26,us,usp000eeh8,2014-11-07T01:28:50.308Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2006-04-14 16:24:56,2006-04-14 22:54:56,Saigang,Tha Yet Kone,village
+26.209,96.668,29.5,4.4,mb,16,132.4,,1.07,us,usp000edug,2014-11-07T01:28:43.916Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2006-04-06 14:56:37,2006-04-06 21:26:37,Kachin,Nawng Long Kawng Ra,village

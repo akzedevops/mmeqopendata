@@ -1,5 +1,5 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-21.981,94.241,64.5,3.9,mb,18,140.7,,0.96,us,usp000e4sw,2014-11-07T01:27:42.864Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-11-24 00:06:58,2005-11-24 06:36:58,Magway,Hakha
-25.43,94.289,10.0,4.5,ml,7,266.0,,0.72,us,usp000e4qf,2014-11-07T01:27:42.382Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-11-22 15:28:31,2005-11-22 21:58:31,,Kalay
-26.466,96.379,90.7,4.8,mb,141,34.6,,0.91,us,usp000e4f1,2014-11-07T01:27:40.601Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-11-18 18:56:55,2005-11-19 01:26:55,Kachin,Putao
-24.785,98.698,1.1,4.5,mb,36,110.3,,0.91,us,usp000e3x3,2014-11-07T01:27:37.880Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2005-11-10 22:09:34,2005-11-11 04:39:34,,Myitkyina
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+21.981,94.241,64.5,3.9,mb,18,140.7,,0.96,us,usp000e4sw,2014-11-07T01:27:42.864Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-11-24 00:06:58,2005-11-24 06:36:58,Magway,Ta Zan,village
+25.43,94.289,10.0,4.5,ml,7,266.0,,0.72,us,usp000e4qf,2014-11-07T01:27:42.382Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,2005-11-22 15:28:31,2005-11-22 21:58:31,,Lakhamai,village
+26.466,96.379,90.7,4.8,mb,141,34.6,,0.91,us,usp000e4f1,2014-11-07T01:27:40.601Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2005-11-18 18:56:55,2005-11-19 01:26:55,Kachin,Daik Hpar,village
+24.785,98.698,1.1,4.5,mb,36,110.3,,0.91,us,usp000e3x3,2014-11-07T01:27:37.880Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,2005-11-10 22:09:34,2005-11-11 04:39:34,,Longjiang,town

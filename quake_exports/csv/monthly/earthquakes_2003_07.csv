@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-26.814,97.287,33.0,0.0,,9,130.1,,1.29,us,usp000c3pn,2014-11-07T01:19:19.459Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-07-30 03:08:44,2003-07-30 09:38:44,Kachin,Putao
-26.213,96.004,63.5,4.7,mb,49,85.1,,0.91,us,usp000c3mr,2014-11-07T01:19:19.309Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-07-29 06:25:40,2003-07-29 12:55:40,Saigang,Myitkyina
-16.793,94.706,33.0,4.8,mb,26,164.0,,0.63,us,usp000c1mv,2014-11-07T01:19:08.181Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2003-07-04 11:35:38,2003-07-04 18:05:38,Ayeyarwady,Pathein
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+26.814,97.287,33.0,0.0,,9,130.1,,1.29,us,usp000c3pn,2014-11-07T01:19:19.459Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-07-30 03:08:44,2003-07-30 09:38:44,Kachin,land mark,village
+26.213,96.004,63.5,4.7,mb,49,85.1,,0.91,us,usp000c3mr,2014-11-07T01:19:19.309Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2003-07-29 06:25:40,2003-07-29 12:55:40,Saigang,Taik Tee,village
+16.793,94.706,33.0,4.8,mb,26,164.0,,0.63,us,usp000c1mv,2014-11-07T01:19:08.181Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,2003-07-04 11:35:38,2003-07-04 18:05:38,Ayeyarwady,Nat Ka Kone,village

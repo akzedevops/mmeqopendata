@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-23.154,99.369,44.3,4.2,mb,,,,0.7,us,usp0006mpu,2014-11-07T00:56:33.641Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1994-10-25 12:58:36,1994-10-25 19:28:36,,Lashio
-24.163,94.497,92.2,4.8,mb,,,,1.1,us,usp0006may,2014-11-07T00:56:31.973Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-10-18 20:45:02,1994-10-19 03:15:02,Saigang,Kalay
-24.21,94.639,86.9,4.5,mb,,,,0.8,us,usp0006mar,2014-11-07T00:56:31.905Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-10-18 17:00:03,1994-10-18 23:30:03,Saigang,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+23.154,99.369,44.3,4.2,mb,,,,0.7,us,usp0006mpu,2014-11-07T00:56:33.641Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1994-10-25 12:58:36,1994-10-25 19:28:36,,羊龙,village
+24.163,94.497,92.2,4.8,mb,,,,1.1,us,usp0006may,2014-11-07T00:56:31.973Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-10-18 20:45:02,1994-10-19 03:15:02,Saigang,Sit Thaung,village
+24.21,94.639,86.9,4.5,mb,,,,0.8,us,usp0006mar,2014-11-07T00:56:31.905Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1994-10-18 17:00:03,1994-10-18 23:30:03,Saigang,Tha Yet Kone,village

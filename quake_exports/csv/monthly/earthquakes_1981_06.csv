@@ -1,3 +1,3 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-22.489,95.125,21.6,5.0,mb,,,,0.8,us,usp0001ees,2015-02-11T17:14:55.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-06-30 21:55:47,1981-07-01 04:25:47,Saigang,Shwebo
-23.776,93.8,58.7,4.7,mb,,,,0.8,us,usp0001e74,2014-11-07T00:29:38.231Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1981-06-17 11:12:55,1981-06-17 17:42:55,Chin,Kalay
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+22.489,95.125,21.6,5.0,mb,,,,0.8,us,usp0001ees,2015-02-11T17:14:55.000Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1981-06-30 21:55:47,1981-07-01 04:25:47,Saigang,Kyaung,village
+23.776,93.8,58.7,4.7,mb,,,,0.8,us,usp0001e74,2014-11-07T00:29:38.231Z,,Myanmar-India border region,MM,Asia,earthquake,0,0,1,,,1981-06-17 11:12:55,1981-06-17 17:42:55,Chin,Anlun,village

@@ -1,4 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-23.173,96.196,33.0,4.4,mb,,,,,us,usp0000y18,2014-11-06T23:21:55.119Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1978-12-21 22:36:13,1978-12-22 05:06:13,Shan,Mogok
-22.302,94.33,93.0,4.4,mb,,,,,us,usp0000xtp,2014-11-06T23:21:54.539Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1978-12-08 03:42:24,1978-12-08 10:12:24,Saigang,Hakha
-16.566,95.95,17.0,5.0,ms,,,,,us,usp0000xtn,2014-11-06T23:21:54.538Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1978-12-08 00:22:06,1978-12-08 06:52:06,Yangon,Yangon
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+23.173,96.196,33.0,4.4,mb,,,,,us,usp0000y18,2014-11-06T23:21:55.119Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1978-12-21 22:36:13,1978-12-22 05:06:13,Shan,Wea Baung,village
+22.302,94.33,93.0,4.4,mb,,,,,us,usp0000xtp,2014-11-06T23:21:54.539Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1978-12-08 03:42:24,1978-12-08 10:12:24,Saigang,ကွမ်းဇဲ (ဝီကီ နေရာလွဲ),village
+16.566,95.95,17.0,5.0,ms,,,,,us,usp0000xtn,2014-11-06T23:21:54.538Z,,near the south coast of Myanmar,MM,Asia,earthquake,0,0,1,,,1978-12-08 00:22:06,1978-12-08 06:52:06,Yangon,Tha Pyu San,village

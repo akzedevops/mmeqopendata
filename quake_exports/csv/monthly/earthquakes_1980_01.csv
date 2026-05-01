@@ -1,3 +1,3 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city
-24.726,95.218,159.0,4.4,mb,,,,,us,usp0001574,2014-11-06T23:24:17.178Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-01-27 03:25:46,1980-01-27 09:55:46,Saigang,Kalay
-26.066,98.532,33.0,4.5,mb,,,,,us,usp00014w9,2014-11-06T23:24:15.263Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1980-01-06 09:11:46,1980-01-06 15:41:46,Kachin,Myitkyina
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,nearest_city,place_type
+24.726,95.218,159.0,4.4,mb,,,,,us,usp0001574,2014-11-06T23:24:17.178Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1980-01-27 03:25:46,1980-01-27 09:55:46,Saigang,Kan Kyaw Ya,village
+26.066,98.532,33.0,4.5,mb,,,,,us,usp00014w9,2014-11-06T23:24:15.263Z,,Myanmar-China border region,MM,Asia,earthquake,0,0,1,,,1980-01-06 09:11:46,1980-01-06 15:41:46,Kachin,Nu Kyont,village
