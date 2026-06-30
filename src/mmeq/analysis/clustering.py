@@ -141,17 +141,23 @@ def run_dbscan(
     lats = df["latitude"].values
     lons = df["longitude"].values
 
-    utm_zone = int((lons.mean() + 180) / 6) + 1
     eps_m = eps * 111.0 * 1000.0
 
     try:
         import pyproj
-        proj = pyproj.Proj(proj="utm", zone=utm_zone, ellps="WGS84")
+        # Myanmar uses UTM Zone 47N / EPSG:32647 (see CLAUDE.md); pin it so the
+        # projection is stable regardless of the catalog's mean longitude (a
+        # subset west of 96°E would otherwise resolve to zone 46).
+        proj = pyproj.Proj(proj="utm", zone=47, ellps="WGS84")
         x, y = proj(lons, lats)
         coords = np.column_stack([x, y])
         db = DBSCAN(eps=eps_m, min_samples=min_samples, metric="euclidean").fit(coords)
     except ImportError:
-        coords = df[["latitude", "longitude"]].values
+        # Fallback without pyproj: scale longitude by cos(lat) so eps (in degrees)
+        # is metric-consistent in both axes, matching the projected path. A raw
+        # (lat, lon) fit over-weights east-west separation by 1/cos(lat).
+        lat0 = np.radians(float(np.mean(lats)))
+        coords = np.column_stack([lons * np.cos(lat0), lats])
         db = DBSCAN(eps=eps, min_samples=min_samples).fit(coords)
 
     return pd.Series(db.labels_, index=df.index, name="cluster")

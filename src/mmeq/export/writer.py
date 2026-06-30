@@ -67,13 +67,25 @@ def validate_quake_data(
     return df
 
 
+def _dedup_frame(df: pd.DataFrame) -> pd.DataFrame:
+    """Drop duplicate events, keying on the stable event ``id`` when present.
+
+    Keying on ``id`` (and keeping the last occurrence) means a revised event —
+    same id but updated mag/depth/geocoding — collapses to one row instead of
+    accumulating a near-duplicate, which an all-column drop_duplicates misses.
+    """
+    if "id" in df.columns:
+        return df.drop_duplicates(subset=["id"], keep="last")
+    return df.drop_duplicates()
+
+
 def deduplicate_csv(path: str) -> None:
     if not os.path.exists(path):
         return
     try:
         df = pd.read_csv(path, on_bad_lines="skip")
         before = len(df)
-        df.drop_duplicates(inplace=True)
+        df = _dedup_frame(df)
         if len(df) < before:
             df.to_csv(path, index=False)
             logger.info(f"Deduplicated {path}: {before} -> {len(df)} rows")
@@ -85,17 +97,23 @@ def save_to_csv(
     df: pd.DataFrame,
     path: str,
     dedup: bool = False,
+    overwrite: bool = False,
 ) -> None:
+    """Write ``df`` to ``path``.
+
+    overwrite=True writes only ``df`` (used for monthly files, which are
+    re-fetched in full each run — appending would accumulate duplicates).
+    overwrite=False merges with any existing file (used for the accumulating
+    yearly/combined files), deduplicating on the event ``id`` when ``dedup``.
+    """
     if df.empty:
         return
-    if os.path.exists(path):
+    if not overwrite and os.path.exists(path):
         existing = pd.read_csv(path, on_bad_lines="skip")
         df = pd.concat([existing, df], ignore_index=True)
-        if dedup:
-            df.drop_duplicates(inplace=True)
-    df.to_csv(path, index=False)
     if dedup:
-        deduplicate_csv(path)
+        df = _dedup_frame(df)
+    df.to_csv(path, index=False)
 
 
 def save_to_json(df: pd.DataFrame, path: str) -> None:
@@ -127,11 +145,16 @@ def merge_combined_json(
     existing: List[dict],
     new_records: List[dict],
 ) -> List[dict]:
-    seen = set()
-    merged = []
+    # Key on the stable event id when present so a revised event replaces its
+    # prior version; later records (new_records) win. Fall back to a
+    # coordinate/time key for legacy records that predate the id column.
+    merged_by_key = {}
+    order = []
     for record in existing + new_records:
-        key = (record.get("time_utc"), record.get("latitude"), record.get("longitude"))
-        if key not in seen:
-            seen.add(key)
-            merged.append(record)
-    return merged
+        key = record.get("id") or (
+            record.get("time_utc"), record.get("latitude"), record.get("longitude")
+        )
+        if key not in merged_by_key:
+            order.append(key)
+        merged_by_key[key] = record
+    return [merged_by_key[k] for k in order]

@@ -155,8 +155,8 @@ def estimate_pga_ask08(
     a13 = -0.0600
     a14 = 1.0800
     a15 = -0.3500
-    a16 = 0.7000
-    a18 = -0.3900
+    a16 = 0.9000
+    a18 = -0.0067
 
     # ------------------------------------------------------------------
     # 1. Base term  (Eq. 2-4, p. 75)
@@ -178,26 +178,10 @@ def estimate_pga_ask08(
         f_style = a13
 
     # ------------------------------------------------------------------
-    # 3. Site response term  (Eq. 5-7, p. 77)
-    #    Requires PGA on reference rock (Vs30=1100) first.
-    # ------------------------------------------------------------------
-    # Compute PGA_1100 (rock reference) — same formula without site term
-    vs30_star_1100 = min(1100.0, 1500.0)  # v1=1500 for PGA
-    f_site_1100 = (a10 + b_site * n) * math.log(vs30_star_1100 / VLIN)
-    pga1100 = math.exp(f1 + f_style + f_site_1100)
-
-    # Now compute actual site term for the target Vs30
-    vs30_star = min(vs30, 1500.0)  # v1 = 1500 for PGA
-    if vs30 < VLIN:
-        f_site = (a10 * math.log(vs30_star / VLIN)
-                  - b_site * math.log(pga1100 + c)
-                  + b_site * math.log(pga1100 + c * (vs30_star / VLIN) ** n))
-    else:
-        f_site = (a10 + b_site * n) * math.log(vs30_star / VLIN)
-
-    # ------------------------------------------------------------------
-    # 4. Hanging-wall term  (Eq. 8-12, p. 77-78)
-    #    Only applies on the hanging-wall side (rx > 0, dip != 90)
+    # 3. Geometry terms (hanging-wall, ztor, large-distance).
+    #    These are site-independent, so they must be computed BEFORE the
+    #    rock-reference PGA1100 — ASK08 defines PGA1100 from the full median
+    #    model on Vs30=1100 rock, including these terms (Eq. 5, p. 77).
     # ------------------------------------------------------------------
     f_hw = 0.0
     if rx_km > 0 and dip < 90.0:
@@ -243,10 +227,31 @@ def estimate_pga_ask08(
             T6 = 0.5
         f_large = a18 * (rrup - 100.0) * T6
 
+    f_geom = f_hw + f_ztor + f_large
+
+    # ------------------------------------------------------------------
+    # 4. Site response term  (Eq. 5-7, p. 77)
+    #    Requires PGA on reference rock (Vs30=1100) first, computed from the
+    #    full median model (base + style + geometry) with the linear site term
+    #    for Vs30=1100 (> VLIN).
+    # ------------------------------------------------------------------
+    vs30_star_1100 = min(1100.0, 1500.0)  # v1=1500 for PGA
+    f_site_1100 = (a10 + b_site * n) * math.log(vs30_star_1100 / VLIN)
+    pga1100 = math.exp(f1 + f_style + f_geom + f_site_1100)
+
+    # Now compute actual site term for the target Vs30
+    vs30_star = min(vs30, 1500.0)  # v1 = 1500 for PGA
+    if vs30 < VLIN:
+        f_site = (a10 * math.log(vs30_star / VLIN)
+                  - b_site * math.log(pga1100 + c)
+                  + b_site * math.log(pga1100 + c * (vs30_star / VLIN) ** n))
+    else:
+        f_site = (a10 + b_site * n) * math.log(vs30_star / VLIN)
+
     # ------------------------------------------------------------------
     # Total
     # ------------------------------------------------------------------
-    ln_pga = f1 + f_style + f_site + f_hw + f_ztor + f_large
+    ln_pga = f1 + f_style + f_site + f_geom
     pga_g = math.exp(ln_pga)
     return max(pga_g, 0.0001)
 
@@ -328,8 +333,24 @@ def compute_hazard_curve(
     })
 
 
-def compute_return_period(mag_threshold: float, b_value: float, a_value: float, years: float = 50) -> float:
-    n_per_year = 10 ** (a_value - b_value * mag_threshold)
+def compute_return_period(
+    mag_threshold: float,
+    b_value: float,
+    a_value: float,
+    catalog_years: float,
+) -> float:
+    """Return period (years) for events >= mag_threshold.
+
+    a_value is the catalog-level Gutenberg-Richter intercept (cumulative count
+    over the whole catalog), so it must be converted to an annual rate by
+    subtracting log10(catalog_years) before inverting. Without this the result
+    is 1 / (cumulative catalog count), which is too short by a factor of
+    catalog_years.
+    """
+    if catalog_years <= 0:
+        return float("inf")
+    a_annual = a_value - math.log10(catalog_years)
+    n_per_year = 10 ** (a_annual - b_value * mag_threshold)
     if n_per_year <= 0:
         return float("inf")
     return 1.0 / n_per_year
@@ -434,6 +455,10 @@ def dam_risk_scores(
     major_lat = major_eq["latitude"]
     major_lon = major_eq["longitude"]
 
+    # Catalog time span (years) for annualizing the Gutenberg-Richter rate.
+    _t = pd.to_datetime(eq_df["time_utc"], errors="coerce").dropna()
+    catalog_years = max((_t.max() - _t.min()).days / 365.25, 1.0) if len(_t) > 1 else 1.0
+
     results = []
     for _, dam in dams_df.iterrows():
         dlat = dam["latitude"] - major_lat
@@ -475,7 +500,7 @@ def dam_risk_scores(
 
         composite = seismic_score * 0.35 + fault_score * 0.30 + prox_score * 0.20 + exposure_score * 0.15
 
-        return_50yr = compute_return_period(6.0, b_val, a_val, 50)
+        return_period_m6 = compute_return_period(6.0, b_val, a_val, catalog_years)
 
         results.append({
             "name": dam["name"],
@@ -503,7 +528,7 @@ def dam_risk_scores(
                 else "Moderate" if composite >= 3
                 else "Low"
             ),
-            "return_period_m6_yrs": round(return_50yr, 1),
+            "return_period_m6_yrs": round(return_period_m6, 1),
         })
 
     risk_df = pd.DataFrame(results).sort_values("composite_risk", ascending=False).reset_index(drop=True)
