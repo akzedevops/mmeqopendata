@@ -239,8 +239,14 @@ def cmd_report(args) -> None:
         df = df[df["mag"] >= args.min_mag]
         logging.info(f"Filtered to mag >= {args.min_mag}: {len(df)} records")
 
-    b, a, mc = b_value(df["mag"], min_mag=args.mc)
-    logging.info(f"b={b:.3f}, a={a:.3f}, Mc={mc:.1f}")
+    # Gutenberg-Richter parameters for Poissonian hazard (return periods, PSHA)
+    # are estimated on a DECLUSTERED catalog so a single aftershock sequence
+    # (e.g. the 2025 M7.7) doesn't bias the completeness magnitude and inflate the
+    # rate. The dam grade table uses the M7.7 scenario PGA and is unaffected.
+    from mmeq.analysis.seismology import decluster_catalog
+    df_dec = decluster_catalog(df)
+    b, a, mc = b_value(df_dec["mag"], min_mag=args.mc)
+    logging.info(f"Declustered G-R: b={b:.3f}, a={a:.3f}, Mc={mc:.1f} (N={len(df_dec)} of {len(df)})")
 
     risk_df = None
     if not args.no_dams:

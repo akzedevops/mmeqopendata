@@ -388,9 +388,13 @@ print("Figure 9: Vs30 map")
 
 # ========== Figure 10: Hazard curves for representative dams ==========
 from src.mmeq.analysis.dam_risk import compute_hazard_curve
-from src.mmeq.analysis.seismology import b_value as calc_bval
+from src.mmeq.analysis.seismology import b_value as calc_bval, decluster_catalog
 
-b_val_fig, a_val_fig, mc_fig = calc_bval(df["mag"], min_mag=4.0)
+# PSHA rates from the declustered catalog (Poisson assumption) so the 2025
+# aftershock sequence doesn't bias the b-value and inflate the hazard.
+df_dec = decluster_catalog(df)
+cat_years = max((df["time_utc"].max() - df["time_utc"].min()).days / 365.25, 1.0)
+b_val_fig, a_val_fig, mc_fig = calc_bval(df_dec["mag"])
 
 fig, ax = plt.subplots(figsize=(9, 7))
 
@@ -409,6 +413,7 @@ colors_hc = ["#d62728", "#ff7f0e", "#2ca02c", "#1f77b4", "#9467bd", "#8c564b"]
 for i, (name, rjb, vs30) in enumerate(representative_dams):
     hc = compute_hazard_curve(
         rjb_km=rjb, vs30=vs30, b_val=b_val_fig, a_val=a_val_fig, mc=mc_fig,
+        catalog_years=cat_years,
         pga_levels=np.logspace(-2.5, 0.3, 80),
     )
     valid = hc[hc["return_period_yr"] < 1e5]
