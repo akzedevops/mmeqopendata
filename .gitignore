@@ -55,3 +55,10 @@ data/gem_faults/gem_active_faults_full.geojson
 data/worldpop/*.tif
 data/shakemap/grid.xml
 dem_tiles/
+
+# LaTeX build intermediates
+paper/*.aux
+paper/*.out
+paper/*.log
+paper/*.fls
+paper/*.fdb_latexmk
