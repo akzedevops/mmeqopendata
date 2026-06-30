@@ -359,17 +359,23 @@ fig, ax = plt.subplots(figsize=(10, 12))
 
 _add_border(ax)
 vs30_data = pd.read_csv("report/dam_vs30.csv")
-vs30_colors_map = {290: "#d62728", 360: "#ff7f0e", 460: "#ffdd57", 600: "#98df8a",
-                   760: "#2ca02c", 900: "#1f77b4", 1100: "#08306b"}
-vs30_labels = {290: "NEHRP E (290)", 360: "NEHRP D (360)", 460: "NEHRP D (460)",
-               600: "NEHRP C (600)", 760: "NEHRP C (760)", 900: "NEHRP B (900)", 1100: "NEHRP B (1100)"}
 
-for vs30_val in sorted(vs30_data["vs30"].unique()):
-    sub = vs30_data[vs30_data["vs30"] == vs30_val]
-    color = vs30_colors_map.get(vs30_val, "#888")
-    label = vs30_labels.get(vs30_val, f"Vs30={vs30_val}")
+# Group dams into NEHRP site classes. (Vs30 from the ShakeMap grid is effectively
+# continuous, so colouring by raw value would create one legend entry per dam.)
+NEHRP_CLASSES = [
+    ("E", "< 180", 0, 180, "#d62728"),
+    ("D", "180-360", 180, 360, "#ff7f0e"),
+    ("C", "360-760", 360, 760, "#2ca02c"),
+    ("B", "760-1500", 760, 1500, "#1f77b4"),
+    ("A", "> 1500", 1500, 1e9, "#08306b"),
+]
+for cls, rng, lo, hi, color in NEHRP_CLASSES:
+    sub = vs30_data[(vs30_data["vs30"] >= lo) & (vs30_data["vs30"] < hi)]
+    if sub.empty:
+        continue
     ax.scatter(sub["lon"], sub["lat"], s=30, c=color, marker="^",
-               edgecolors="k", linewidths=0.3, zorder=3, label=f"{label} ({len(sub)})")
+               edgecolors="k", linewidths=0.3, zorder=3,
+               label=f"NEHRP {cls} ({rng} m/s, {len(sub)})")
 
 if faults_clipped is not None:
     faults_clipped.plot(ax=ax, color="purple", linewidth=1.5, alpha=0.5, zorder=2)
