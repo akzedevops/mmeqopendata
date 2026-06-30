@@ -8,13 +8,14 @@ import pandas as pd
 
 from mmeq import __version__
 from mmeq.config import EXPORT_DIR, EXPORT_SUBDIRS, OUTPUT_DIR, MAX_WORKERS
-from mmeq.export.fetcher import fetch_quake_data, generate_date_ranges
+from mmeq.export.fetcher import fetch_quake_data_complete, generate_date_ranges
 from mmeq.export.writer import (
     validate_quake_data,
     save_to_csv,
     save_to_json,
     load_combined_json,
     merge_combined_json,
+    rebuild_combined,
 )
 from mmeq.analysis.temporal import (
     monthly_frequency,
@@ -51,6 +52,12 @@ def cmd_export(args) -> None:
     for subdir in EXPORT_SUBDIRS:
         os.makedirs(os.path.join(EXPORT_DIR, subdir), exist_ok=True)
 
+    if getattr(args, "rebuild", False):
+        logging.info("Rebuilding combined catalog from monthly files...")
+        n = rebuild_combined()
+        print(f"Rebuilt combined catalog: {n} events (CSV + JSON reconciled, sorted by time)")
+        return
+
     date_ranges = generate_date_ranges()
     logging.info(f"Processing {len(date_ranges)} months of earthquake data...")
 
@@ -62,7 +69,7 @@ def cmd_export(args) -> None:
     yearly_frames = {}
 
     def process_month(year, month, from_date, to_date):
-        df_raw = fetch_quake_data(from_date, to_date)
+        df_raw = fetch_quake_data_complete(from_date, to_date)
         df_valid = validate_quake_data(df_raw)
         return year, month, df_valid
 
@@ -169,7 +176,7 @@ def cmd_analyze(args) -> None:
 
     if "seismology" in types:
         b, a, mc = b_value(df["mag"], min_mag=args.mc)
-        print(f"\nSeismological Summary:")
+        print("\nSeismological Summary:")
         print(f"  b-value: {b:.3f}")
         print(f"  a-value: {a:.3f}")
         print(f"  Mc (completeness): {mc:.1f}")
@@ -185,7 +192,7 @@ def cmd_analyze(args) -> None:
         if not risk_df.empty:
             risk_csv = os.path.join(args.output, "dam_seismic_risk.csv")
             risk_df.to_csv(risk_csv, index=False)
-            print(f"\nDam-Seismic Risk Analysis:")
+            print("\nDam-Seismic Risk Analysis:")
             print(f"  Dams in seismic zones: {len(risk_df)}")
             for _, row in risk_df.head(20).iterrows():
                 print(f"    {row['dam_name']}: in {row['cluster_name']} "
@@ -257,7 +264,7 @@ def cmd_report(args) -> None:
             risk_df.to_csv(risk_csv, index=False)
             logging.info(f"Dam risk scores saved -> {risk_csv}")
             grades = risk_df["risk_grade"].value_counts()
-            print(f"\nDam Risk Assessment:")
+            print("\nDam Risk Assessment:")
             for g in ["Critical", "High", "Moderate", "Low"]:
                 if g in grades.index:
                     print(f"  {g}: {grades[g]} dams")
@@ -308,18 +315,17 @@ def cmd_report(args) -> None:
         if not exposure_df.empty:
             exposure_csv = os.path.join(args.output, "population_exposure.csv")
             exposure_df.to_csv(exposure_csv, index=False)
-            print(f"\nPopulation Exposure (top 5):")
+            print("\nPopulation Exposure (top 5):")
             for _, row in exposure_df.head(5).iterrows():
                 print(f"  {row['name']}: {row['population_within_50km']:,} people within 50km")
 
     if not getattr(args, 'no_buildings', False):
         try:
-            from mmeq.analysis.osm_exposure import compute_building_exposure, exposure_summary
+            from mmeq.analysis.osm_exposure import compute_building_exposure
             logging.info("Computing OSM building exposure...")
             bldg_df = compute_building_exposure()
             bldg_csv = os.path.join(args.output, "building_exposure.csv")
             bldg_df.to_csv(bldg_csv, index=False)
-            summary = exposure_summary(bldg_df)
             print(f"\nBuilding Exposure ({len(bldg_df)} structures):")
             for mmi in ["Severe (VIII)", "Very Strong (VII)", "Strong (VI)"]:
                 if mmi in bldg_df["mmi_label"].values:
@@ -334,7 +340,7 @@ def cmd_report(args) -> None:
 
     if not args.no_pdf:
         logging.info("Generating interactive map for report...")
-        map_path = _build_interactive_map(df, args.output, args.min_mag)
+        _build_interactive_map(df, args.output, args.min_mag)
 
         logging.info("Generating PDF report...")
         generate_pdf_report(
@@ -361,7 +367,7 @@ def cmd_report(args) -> None:
                 _json.dump(coulomb_results, f, indent=2)
             n_trig = sum(1 for r in coulomb_results if r["stress_regime"] == "Triggered")
             n_shad = sum(1 for r in coulomb_results if r["stress_regime"] == "Shadow")
-            print(f"\nCoulomb Stress Transfer:")
+            print("\nCoulomb Stress Transfer:")
             print(f"  Triggered (ΔCFS>0): {n_trig} dams")
             print(f"  Stress shadow (ΔCFS<0): {n_shad} dams")
             print(f"  Results: {coulomb_path}")
@@ -379,19 +385,19 @@ def cmd_report(args) -> None:
             for r in frag_results:
                 ds = r["most_likely_damage"]
                 ds_counts[ds] = ds_counts.get(ds, 0) + 1
-            print(f"\nDam Fragility Analysis:")
+            print("\nDam Fragility Analysis:")
             for ds in ["None", "Slight", "Moderate", "Extensive", "Complete"]:
                 print(f"  {ds}: {ds_counts.get(ds, 0)} dams")
             print(f"  Results: {frag_path}")
 
     if not args.no_montecarlo:
         from mmeq.analysis.dam_risk import monte_carlo_pga
-        logging.info(f"Running Monte Carlo PGA (1000 iterations)...")
+        logging.info("Running Monte Carlo PGA (1000 iterations)...")
         mc_df = monte_carlo_pga(df, n_iterations=1000)
         if not mc_df.empty:
             mc_path = os.path.join(args.output, "monte_carlo_pga.csv")
             mc_df.to_csv(mc_path, index=False)
-            print(f"\nMonte Carlo PGA Uncertainty (1000 iterations):")
+            print("\nMonte Carlo PGA Uncertainty (1000 iterations):")
             print(f"  Median PGA range: {mc_df['pga_p50_g'].min():.4f}-{mc_df['pga_p50_g'].max():.4f}g")
             print(f"  Dams with P(PGA>0.2g)>50%: {(mc_df['prob_pga_gt_0.2g'] > 0.5).sum()}")
             print(f"  Results: {mc_path}")
@@ -411,6 +417,8 @@ def main() -> None:
     # --- export ---
     p_export = subparsers.add_parser("export", help="Fetch & export earthquake data")
     p_export.add_argument("--workers", type=int, default=MAX_WORKERS, help="Parallel workers (env: MMEQ_MAX_WORKERS)")
+    p_export.add_argument("--rebuild", action="store_true",
+                          help="Rebuild combined CSV+JSON from monthly files (reconcile + sort), then exit")
 
     # --- analyze ---
     p_analyze = subparsers.add_parser("analyze", help="Run analyses on earthquake data")

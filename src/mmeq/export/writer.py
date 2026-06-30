@@ -1,6 +1,8 @@
 import os
+import glob
 import json
 import logging
+import tempfile
 import pandas as pd
 import pytz
 from datetime import datetime, timedelta, timezone
@@ -67,6 +69,30 @@ def validate_quake_data(
     return df
 
 
+def _atomic_write(path: str, write_fn) -> None:
+    """Write via a temp file in the same directory, then os.replace into place.
+
+    Guarantees readers never see a partially-written file: a crash/OOM mid-write
+    leaves the previous file intact instead of corrupting the canonical store.
+    """
+    directory = os.path.dirname(os.path.abspath(path)) or "."
+    os.makedirs(directory, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(dir=directory, suffix=".tmp")
+    os.close(fd)
+    try:
+        write_fn(tmp)
+        os.replace(tmp, path)
+    except Exception:
+        if os.path.exists(tmp):
+            os.remove(tmp)
+        raise
+
+
+def _dump_json(payload: dict, path: str) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+
+
 def _dedup_frame(df: pd.DataFrame) -> pd.DataFrame:
     """Drop duplicate events, keying on the stable event ``id`` when present.
 
@@ -87,7 +113,7 @@ def deduplicate_csv(path: str) -> None:
         before = len(df)
         df = _dedup_frame(df)
         if len(df) < before:
-            df.to_csv(path, index=False)
+            _atomic_write(path, lambda p: df.to_csv(p, index=False))
             logger.info(f"Deduplicated {path}: {before} -> {len(df)} rows")
     except Exception as e:
         logger.warning(f"Failed to deduplicate {path}: {e}")
@@ -113,19 +139,14 @@ def save_to_csv(
         df = pd.concat([existing, df], ignore_index=True)
     if dedup:
         df = _dedup_frame(df)
-    df.to_csv(path, index=False)
+    _atomic_write(path, lambda p: df.to_csv(p, index=False))
 
 
 def save_to_json(df: pd.DataFrame, path: str) -> None:
     if df.empty:
         return
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(
-            {"earthquakes": df.to_dict(orient="records")},
-            f,
-            indent=2,
-            ensure_ascii=False,
-        )
+    payload = {"earthquakes": df.to_dict(orient="records")}
+    _atomic_write(path, lambda p: _dump_json(payload, p))
 
 
 def load_combined_json(path: Optional[str] = None) -> List[dict]:
@@ -158,3 +179,41 @@ def merge_combined_json(
             order.append(key)
         merged_by_key[key] = record
     return [merged_by_key[k] for k in order]
+
+
+def rebuild_combined(export_dir: Optional[str] = None) -> int:
+    """Rebuild the combined CSV + JSON from the union of all monthly CSVs and the
+    existing combined CSV, deduped by event id and sorted by time_utc.
+
+    Reconciles drift between the two combined stores (the JSON had silently fallen
+    far behind the CSV) and re-sorts the catalog chronologically (it was written in
+    thread-completion order). Both files are written atomically.
+    """
+    if export_dir is None:
+        export_dir = EXPORT_DIR
+    sources = sorted(glob.glob(os.path.join(export_dir, "csv", "monthly", "*.csv")))
+    combined_csv = os.path.join(export_dir, "csv", "combined", "earthquakes_combined.csv")
+    if os.path.exists(combined_csv):
+        sources.append(combined_csv)
+
+    frames = []
+    for src in sources:
+        try:
+            frames.append(pd.read_csv(src, on_bad_lines="skip"))
+        except Exception as e:
+            logger.warning(f"rebuild: skipping unreadable {src}: {e}")
+    if not frames:
+        logger.warning("rebuild: no source CSVs found under %s", export_dir)
+        return 0
+
+    combined = pd.concat(frames, ignore_index=True)
+    combined = _dedup_frame(combined)
+    if "time_utc" in combined.columns:
+        combined = combined.sort_values("time_utc", kind="stable").reset_index(drop=True)
+
+    combined_json = os.path.join(export_dir, "json", "combined", "earthquakes_combined.json")
+    _atomic_write(combined_csv, lambda p: combined.to_csv(p, index=False))
+    payload = {"earthquakes": combined.to_dict(orient="records")}
+    _atomic_write(combined_json, lambda p: _dump_json(payload, p))
+    logger.info("Rebuilt combined catalog: %d events (CSV + JSON reconciled)", len(combined))
+    return len(combined)

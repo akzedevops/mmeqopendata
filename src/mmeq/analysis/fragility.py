@@ -79,7 +79,6 @@ def classify_dam_type(dam_props: dict) -> str:
     Classify dam into fragility type category based on properties.
     """
     func = str(dam_props.get("function", "")).lower()
-    name = str(dam_props.get("name", "")).lower()
 
     if "concrete" in func or "gravity" in func or "buttress" in func or "arch" in func:
         return "concrete"

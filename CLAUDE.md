@@ -33,14 +33,16 @@ paper/                    # LaTeX write-up (main.tex) + figures/ (13 figs, PDF+P
 .github/workflows/        # daily_data_fetch.yml, report_and_pages.yml
 ```
 
-### Legacy root scripts — do not edit for new work
+### Live root scripts
 
-`dataexport.py`, `advanalysis.py`, `adv2analysis.py`, `visualizer.py` are the older
-monolithic versions, superseded by `src/mmeq/`. **Exceptions, still live:**
+The old monolithic analysis scripts (`advanalysis.py`, `adv2analysis.py`, `visualizer.py`)
+were removed — `src/mmeq/` supersedes them (see git history if needed). Two root scripts
+remain live:
 
 - `dataexport.py` — invoked by the **daily fetch CI** (`daily_data_fetch.yml`). If you
   change export logic in `src/mmeq/export/`, keep this in sync or migrate the workflow.
-- `generate_figures.py` — generates the 13 paper figures; it **imports `src.mmeq`** and
+  (Slated for retirement once CI runs `mmeq export` — see `specs/003`.)
+- `generate_figures.py` — generates the 14 paper figures; it **imports `src.mmeq`** and
   is the canonical figure generator (`python generate_figures.py`).
 
 When adding features, put them in `src/mmeq/` and wire them through `cli.py`.

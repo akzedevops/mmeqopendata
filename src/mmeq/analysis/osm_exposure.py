@@ -80,7 +80,6 @@ def _get_vs30(lat, lon, default=760.0):
     _load_vs30_grid()
     if _vs30_tree is None:
         return default
-    import math
     rlat, rlon = math.radians(lat), math.radians(lon)
     xyz = (math.cos(rlat) * math.cos(rlon), math.cos(rlat) * math.sin(rlon), math.sin(rlat))
     _, idx = _vs30_tree.query(xyz)

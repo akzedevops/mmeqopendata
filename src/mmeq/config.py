@@ -22,7 +22,12 @@ MAX_WORKERS = int(os.environ.get("MMEQ_MAX_WORKERS", "10"))
 REQUEST_TIMEOUT = (5, 30)
 RETRY_TOTAL = 3
 RETRY_BACKOFF = 0.5
-RETRY_STATUS_FORCELIST = [502, 503, 504]
+RETRY_STATUS_FORCELIST = [429, 502, 503, 504]
+
+# The API returns at most this many records per request (newest-first, no
+# pagination). A window whose response hits this count is treated as truncated and
+# is bisected by date until each sub-window is under the cap. See specs/001.
+API_PAGE_CAP = int(os.environ.get("MMEQ_API_PAGE_CAP", "500"))
 
 DBSCAN_EPS = 0.3
 DBSCAN_MIN_SAMPLES = 10
