@@ -5,6 +5,9 @@ on:
   push:
     branches: [master]
 
+permissions:
+  contents: read   # least privilege: this workflow only checks out + runs tests
+
 jobs:
   test:
     runs-on: ubuntu-latest
