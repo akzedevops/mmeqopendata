@@ -67,10 +67,11 @@ def get_last_updated_date() -> datetime.date:
     try:
         if not os.path.exists(path):
             raise FileNotFoundError()
-        # Read only the time column; use tail to avoid loading all rows into memory
-        row_count = sum(1 for _ in open(path)) - 1  # exclude header
-        skip = max(0, row_count - 500)
-        df = pd.read_csv(path, usecols=["time_utc"], skiprows=range(1, skip + 1) if skip else None)
+        # Read the full time column (cheap, single column) so the latest date is
+        # correct regardless of row order. The combined file is concatenated in
+        # completion order and never sorted, so a tail-only read could miss the
+        # newest event and re-fetch extra months on every run.
+        df = pd.read_csv(path, usecols=["time_utc"])
         df["time_utc"] = pd.to_datetime(df["time_utc"], errors="coerce", utc=True)
         last_date = df["time_utc"].max().date()
         logging.info(f"Last updated date: {last_date}")

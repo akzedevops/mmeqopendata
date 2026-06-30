@@ -50,13 +50,11 @@ def get_last_updated_date() -> datetime.date:
     try:
         if not os.path.exists(path):
             raise FileNotFoundError("Combined CSV not found")
-        row_count = sum(1 for _ in open(path)) - 1
-        skip = max(0, row_count - 500)
-        df = pd.read_csv(
-            path,
-            usecols=["time_utc"],
-            skiprows=range(1, skip + 1) if skip else None,
-        )
+        # Read the full time column (a single column is cheap even for the whole
+        # catalog) so the latest date is correct regardless of row order. The
+        # combined file is concatenated in completion order and never sorted, so
+        # a tail-only read could miss the newest event and re-fetch extra months.
+        df = pd.read_csv(path, usecols=["time_utc"])
         df["time_utc"] = pd.to_datetime(df["time_utc"], errors="coerce", utc=True)
         last_date = df["time_utc"].max().date()
         logger.info(f"Last updated date: {last_date}")

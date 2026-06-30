@@ -271,7 +271,8 @@ def estimate_pga(mag: float, depth_km: float, dist_km: float, vs30: float = 760.
 
 
 def _load_vs30() -> dict:
-    vs30_path = os.path.join(os.getcwd(), "report", "dam_vs30.csv")
+    report_dir = os.environ.get("MMEQ_REPORT_DIR", "report")
+    vs30_path = os.path.join(report_dir, "dam_vs30.csv")
     if not os.path.exists(vs30_path):
         return {}
     df = pd.read_csv(vs30_path)

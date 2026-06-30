@@ -8,6 +8,9 @@ on:
       - 'quake_exports/**'
       - 'src/mmeq/**'
       - 'data/**'
+      - 'generate_figures.py'
+      - 'tools/build_figure_data.py'
+      - 'paper/main.tex'
       - 'pyproject.toml'
 
 permissions:
@@ -18,6 +21,12 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: true
+
+# Fixed timestamp so matplotlib/LaTeX embed a stable creation date — rebuilt
+# figures and the paper PDF then only differ in git when their content actually
+# changes, instead of on every run.
+env:
+  SOURCE_DATE_EPOCH: "1735689600"  # 2025-01-01T00:00:00Z
 
 jobs:
   build:
@@ -47,6 +56,9 @@ jobs:
           pip install -e ".[dev]"
           pip install plotly fpdf2
 
+      - name: Build figure input data (report/ CSVs)
+        run: python tools/build_figure_data.py
+
       - name: Generate full report
         run: |
           mkdir -p docs/report
@@ -57,12 +69,25 @@ jobs:
           cp -f docs/report/enhanced_earthquake_map.html docs/report/ 2>/dev/null || true
           cp -f enhanced_earthquake_map.html docs/report/ 2>/dev/null || true
 
-      - name: Commit report artifacts
+      - name: Regenerate paper figures
+        run: |
+          python generate_figures.py
+          mkdir -p docs/report/figures
+          cp -f paper/figures/*.png docs/report/figures/
+
+      - name: Build paper PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: paper
+
+      - name: Commit report, figures & paper artifacts
+        if: github.ref == 'refs/heads/master'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/
-          git diff --cached --quiet || git commit -m "docs: update report & GitHub Pages [skip ci]"
+          git add docs/ paper/figures/ paper/main.pdf
+          git diff --cached --quiet || git commit -m "docs: update report, figures & paper [skip ci]"
           git push origin master
 
       - name: Setup Pages
