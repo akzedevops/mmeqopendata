@@ -4,31 +4,31 @@
     "latitude": 19.648,
     "longitude": 97.287,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000654,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.011735,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Baluchaung 2",
     "latitude": 19.557,
     "longitude": 97.358,
     "type": "Hydropower",
-    "dcfs_mpa": 0.000277,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.010121,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Baluchaung 3",
     "latitude": 19.546,
     "longitude": 97.397,
     "type": "Hydropower",
-    "dcfs_mpa": 0.000397,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.009428,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Baluchaung (upper)",
     "latitude": 20.484592,
     "longitude": 96.781918,
     "type": "Hydropower",
-    "dcfs_mpa": -0.006559,
+    "dcfs_mpa": -0.013116,
     "stress_regime": "Shadow"
   },
   {
@@ -36,71 +36,71 @@
     "latitude": 18.255561,
     "longitude": 96.848496,
     "type": "Hydropower",
-    "dcfs_mpa": 0.003737,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -2.4e-05,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Belin",
     "latitude": 17.519723,
     "longitude": 97.243546,
     "type": "Hydropower",
-    "dcfs_mpa": 0.001361,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.000105,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Buywa (upper)",
     "latitude": 20.76609,
     "longitude": 94.0818,
     "type": "Multi-purpose",
-    "dcfs_mpa": 0.000611,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.002227,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Buywa",
     "latitude": 20.658056,
     "longitude": 94.150833,
     "type": "Multi-purpose",
-    "dcfs_mpa": 0.00092,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.00244,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Chipwi",
     "latitude": 25.8905,
     "longitude": 98.12572,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001108,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.001408,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Chipwi Nge",
     "latitude": 25.806073,
     "longitude": 98.184039,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001149,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.001435,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Dapein 1",
     "latitude": 24.421451,
     "longitude": 97.525448,
     "type": "Hydropower",
-    "dcfs_mpa": -0.004455,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.004556,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Dapein 2",
     "latitude": 24.36827,
     "longitude": 97.4214,
     "type": "Hydropower",
-    "dcfs_mpa": -0.005129,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.005173,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Deedoke",
     "latitude": 21.68723,
     "longitude": 96.404455,
     "type": "Hydropower",
-    "dcfs_mpa": -0.021349,
+    "dcfs_mpa": -0.019278,
     "stress_regime": "Shadow"
   },
   {
@@ -108,15 +108,15 @@
     "latitude": 25.511556,
     "longitude": 97.907021,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001718,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.002109,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Gaw Lan",
     "latitude": 26.051936,
     "longitude": 98.580461,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000797,
+    "dcfs_mpa": 0.000988,
     "stress_regime": "Neutral"
   },
   {
@@ -124,15 +124,15 @@
     "latitude": 19.211667,
     "longitude": 97.399722,
     "type": "Hydropower",
-    "dcfs_mpa": 0.002272,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.007217,
+    "stress_regime": "Shadow"
   },
   {
     "name": "He Kou",
     "latitude": 21.341291,
     "longitude": 100.720928,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000135,
+    "dcfs_mpa": -0.0004,
     "stress_regime": "Neutral"
   },
   {
@@ -140,15 +140,15 @@
     "latitude": 26.023865,
     "longitude": 98.429523,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000869,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": 0.001091,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Pisa",
     "latitude": 26.598389,
     "longitude": 98.34309,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000578,
+    "dcfs_mpa": 0.000795,
     "stress_regime": "Neutral"
   },
   {
@@ -156,47 +156,47 @@
     "latitude": 25.322227,
     "longitude": 95.296955,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001754,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.005945,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Hutgyi",
     "latitude": 17.528,
     "longitude": 97.747,
     "type": "Hydropower",
-    "dcfs_mpa": 0.001085,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.000419,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Kabaung",
     "latitude": 18.896717,
     "longitude": 96.220825,
     "type": "Multi-purpose",
-    "dcfs_mpa": 0.023236,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.001592,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Keng Tawng",
     "latitude": 20.598345,
     "longitude": 98.29305,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000417,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.002667,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Keng Tawng (upper)",
     "latitude": 20.74558,
     "longitude": 98.184077,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000571,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.002739,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Keng Tong",
     "latitude": 21.617799,
     "longitude": 99.500985,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000331,
+    "dcfs_mpa": -0.000707,
     "stress_regime": "Neutral"
   },
   {
@@ -204,7 +204,7 @@
     "latitude": 21.3469,
     "longitude": 100.5619,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000147,
+    "dcfs_mpa": -0.000436,
     "stress_regime": "Neutral"
   },
   {
@@ -212,7 +212,7 @@
     "latitude": 26.849507,
     "longitude": 98.376808,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000471,
+    "dcfs_mpa": 0.000668,
     "stress_regime": "Neutral"
   },
   {
@@ -220,7 +220,7 @@
     "latitude": 21.160437,
     "longitude": 96.321037,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.026641,
+    "dcfs_mpa": -0.028341,
     "stress_regime": "Shadow"
   },
   {
@@ -228,103 +228,103 @@
     "latitude": 18.420367,
     "longitude": 96.363854,
     "type": "Multi-purpose",
-    "dcfs_mpa": 0.006142,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": 0.000703,
+    "stress_regime": "Neutral"
   },
   {
     "name": "KunLong",
     "latitude": 23.531667,
     "longitude": 98.611111,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001222,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.000507,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Kyee Ohn Kyee Wa",
     "latitude": 20.331,
     "longitude": 94.416,
     "type": "Multi-purpose",
-    "dcfs_mpa": 0.00237,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.003416,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Lawngdin",
     "latitude": 26.043012,
     "longitude": 98.277743,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000916,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": 0.001171,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Lemro 1",
     "latitude": 20.857443,
     "longitude": 93.350503,
     "type": "Hydropower",
-    "dcfs_mpa": 0.000276,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.001203,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Laza",
     "latitude": 26.491779,
     "longitude": 97.77695,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000701,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": 0.001018,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Lemro 2",
     "latitude": 20.740347,
     "longitude": 93.268689,
     "type": "Hydropower",
-    "dcfs_mpa": 0.000386,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.001169,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Nam Pawn (lower)",
     "latitude": 19.555,
     "longitude": 97.408611,
     "type": "Hydropower",
-    "dcfs_mpa": 0.00035,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.009276,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Mong Ton",
     "latitude": 20.456389,
     "longitude": 98.65,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000172,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.002084,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Manipur",
     "latitude": 22.804356,
     "longitude": 93.943248,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.002869,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": -0.000598,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Mantong",
     "latitude": 22.97469,
     "longitude": 98.55727,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001054,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": -9.1e-05,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Mone Chaung",
     "latitude": 20.479942,
     "longitude": 94.255325,
     "type": "Multi-purpose",
-    "dcfs_mpa": 0.001545,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.002812,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Mongwa",
     "latitude": 21.39699,
     "longitude": 100.325821,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000174,
+    "dcfs_mpa": -0.000487,
     "stress_regime": "Neutral"
   },
   {
@@ -332,15 +332,15 @@
     "latitude": 25.715,
     "longitude": 97.535,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001754,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.002293,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Myittha",
     "latitude": 21.992222,
     "longitude": 94.036944,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.001771,
+    "dcfs_mpa": -0.001358,
     "stress_regime": "Shadow"
   },
   {
@@ -348,7 +348,7 @@
     "latitude": 21.46349,
     "longitude": 96.39144,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.021143,
+    "dcfs_mpa": -0.020371,
     "stress_regime": "Shadow"
   },
   {
@@ -356,7 +356,7 @@
     "latitude": 21.733821,
     "longitude": 98.950044,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000508,
+    "dcfs_mpa": -0.000932,
     "stress_regime": "Neutral"
   },
   {
@@ -364,7 +364,7 @@
     "latitude": 22.560266,
     "longitude": 97.124079,
     "type": "Hydropower",
-    "dcfs_mpa": -0.003195,
+    "dcfs_mpa": -0.00331,
     "stress_regime": "Shadow"
   },
   {
@@ -372,7 +372,7 @@
     "latitude": 22.155565,
     "longitude": 97.248615,
     "type": "Hydropower",
-    "dcfs_mpa": -0.002697,
+    "dcfs_mpa": -0.003088,
     "stress_regime": "Shadow"
   },
   {
@@ -380,15 +380,15 @@
     "latitude": 25.369858,
     "longitude": 97.811427,
     "type": "Hydropower",
-    "dcfs_mpa": -0.00207,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.002512,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Nam Lin",
     "latitude": 20.742516,
     "longitude": 100.241026,
     "type": "Hydropower",
-    "dcfs_mpa": -7e-05,
+    "dcfs_mpa": -0.00065,
     "stress_regime": "Neutral"
   },
   {
@@ -396,15 +396,15 @@
     "latitude": 23.944341,
     "longitude": 97.911001,
     "type": "Hydropower",
-    "dcfs_mpa": -0.002411,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.001801,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Nam Pawn (upper)",
     "latitude": 20.062121,
     "longitude": 97.437368,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001797,
+    "dcfs_mpa": -0.008229,
     "stress_regime": "Shadow"
   },
   {
@@ -412,15 +412,15 @@
     "latitude": 25.090722,
     "longitude": 97.713906,
     "type": "Hydropower",
-    "dcfs_mpa": -0.002795,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.003282,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Nam Tu",
     "latitude": 22.720943,
     "longitude": 97.319365,
     "type": "Hydropower",
-    "dcfs_mpa": -0.002444,
+    "dcfs_mpa": -0.00213,
     "stress_regime": "Shadow"
   },
   {
@@ -428,7 +428,7 @@
     "latitude": 19.7412,
     "longitude": 96.450483,
     "type": "Hydropower",
-    "dcfs_mpa": -0.062365,
+    "dcfs_mpa": -0.099459,
     "stress_regime": "Shadow"
   },
   {
@@ -436,15 +436,15 @@
     "latitude": 22.987464,
     "longitude": 98.499151,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001096,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": -8.9e-05,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Paung Laung (lower)",
     "latitude": 19.785,
     "longitude": 96.335,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.096472,
+    "dcfs_mpa": -0.145789,
     "stress_regime": "Shadow"
   },
   {
@@ -452,7 +452,7 @@
     "latitude": 19.86,
     "longitude": 96.508,
     "type": "Hydropower",
-    "dcfs_mpa": -0.090315,
+    "dcfs_mpa": -0.061635,
     "stress_regime": "Shadow"
   },
   {
@@ -460,7 +460,7 @@
     "latitude": 19.756,
     "longitude": 96.598,
     "type": "Hydropower",
-    "dcfs_mpa": -0.034746,
+    "dcfs_mpa": -0.060067,
     "stress_regime": "Shadow"
   },
   {
@@ -468,7 +468,7 @@
     "latitude": 20.209251,
     "longitude": 97.456152,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001851,
+    "dcfs_mpa": -0.007386,
     "stress_regime": "Shadow"
   },
   {
@@ -476,7 +476,7 @@
     "latitude": 20.118443,
     "longitude": 97.43497,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001891,
+    "dcfs_mpa": -0.008008,
     "stress_regime": "Shadow"
   },
   {
@@ -484,15 +484,15 @@
     "latitude": 18.506214,
     "longitude": 96.351028,
     "type": "Multi-purpose",
-    "dcfs_mpa": 0.007412,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": 0.000809,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Renan",
     "latitude": 27.525941,
     "longitude": 98.090192,
     "type": "Hydropower",
-    "dcfs_mpa": -0.00027,
+    "dcfs_mpa": 0.00045,
     "stress_regime": "Neutral"
   },
   {
@@ -500,7 +500,7 @@
     "latitude": 22.348646,
     "longitude": 96.326937,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.028097,
+    "dcfs_mpa": -0.025306,
     "stress_regime": "Shadow"
   },
   {
@@ -508,7 +508,7 @@
     "latitude": 22.74764,
     "longitude": 96.20626,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.04768,
+    "dcfs_mpa": -0.048126,
     "stress_regime": "Shadow"
   },
   {
@@ -516,31 +516,31 @@
     "latitude": 17.970227,
     "longitude": 96.935001,
     "type": "Hydropower",
-    "dcfs_mpa": 0.002477,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": 4.5e-05,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Shweli 1",
     "latitude": 23.698,
     "longitude": 97.506,
     "type": "Hydropower",
-    "dcfs_mpa": -0.00286,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.001462,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Shweli 2",
     "latitude": 23.6531,
     "longitude": 97.31235,
     "type": "Hydropower",
-    "dcfs_mpa": -0.003064,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.001163,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Shweli 3",
     "latitude": 23.315,
     "longitude": 96.769,
     "type": "Hydropower",
-    "dcfs_mpa": -0.003471,
+    "dcfs_mpa": -0.005289,
     "stress_regime": "Shadow"
   },
   {
@@ -548,7 +548,7 @@
     "latitude": 21.359543,
     "longitude": 100.176054,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000182,
+    "dcfs_mpa": -0.000541,
     "stress_regime": "Neutral"
   },
   {
@@ -556,7 +556,7 @@
     "latitude": 12.777,
     "longitude": 98.94,
     "type": "Hydropower",
-    "dcfs_mpa": 8.4e-05,
+    "dcfs_mpa": -9e-06,
     "stress_regime": "Neutral"
   },
   {
@@ -564,15 +564,15 @@
     "latitude": 18.64,
     "longitude": 94.381,
     "type": "Hydropower",
-    "dcfs_mpa": 0.003145,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.002324,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Thapanzeik",
     "latitude": 23.305918,
     "longitude": 95.35833,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.025584,
+    "dcfs_mpa": -0.010649,
     "stress_regime": "Shadow"
   },
   {
@@ -580,23 +580,23 @@
     "latitude": 18.914102,
     "longitude": 96.619907,
     "type": "Hydropower",
-    "dcfs_mpa": 0.013868,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.002901,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Tongxinqiao",
     "latitude": 25.963646,
     "longitude": 98.360249,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000937,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": 0.001174,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Wutsok",
     "latitude": 26.403585,
     "longitude": 98.292511,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000685,
+    "dcfs_mpa": 0.00092,
     "stress_regime": "Neutral"
   },
   {
@@ -604,15 +604,15 @@
     "latitude": 18.085211,
     "longitude": 96.446152,
     "type": "Multi-purpose",
-    "dcfs_mpa": 0.003318,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": 0.000471,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Yeywa",
     "latitude": 21.675196,
     "longitude": 96.474077,
     "type": "Hydropower",
-    "dcfs_mpa": -0.016009,
+    "dcfs_mpa": -0.015039,
     "stress_regime": "Shadow"
   },
   {
@@ -620,7 +620,7 @@
     "latitude": 21.96024,
     "longitude": 96.87313,
     "type": "Hydropower",
-    "dcfs_mpa": -0.00506,
+    "dcfs_mpa": -0.005631,
     "stress_regime": "Shadow"
   },
   {
@@ -628,7 +628,7 @@
     "latitude": 22.254093,
     "longitude": 97.046741,
     "type": "Hydropower",
-    "dcfs_mpa": -0.003703,
+    "dcfs_mpa": -0.004052,
     "stress_regime": "Shadow"
   },
   {
@@ -636,23 +636,23 @@
     "latitude": 19.131059,
     "longitude": 97.521257,
     "type": "Hydropower",
-    "dcfs_mpa": 0.002093,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.005599,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Zaungtu",
     "latitude": 17.755818,
     "longitude": 96.19898,
     "type": "Hydropower",
-    "dcfs_mpa": 0.001882,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": 0.000117,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Zawgyi I",
     "latitude": 21.3833,
     "longitude": 96.90147,
     "type": "Hydropower",
-    "dcfs_mpa": -0.004698,
+    "dcfs_mpa": -0.006196,
     "stress_regime": "Shadow"
   },
   {
@@ -660,7 +660,7 @@
     "latitude": 21.5648,
     "longitude": 96.8726,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.004947,
+    "dcfs_mpa": -0.006127,
     "stress_regime": "Shadow"
   },
   {
@@ -668,39 +668,39 @@
     "latitude": 24.98458,
     "longitude": 97.6135,
     "type": "Hydropower",
-    "dcfs_mpa": -0.003342,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.003893,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Nam Tabak II",
     "latitude": 25.119755,
     "longitude": 97.650627,
     "type": "Hydropower",
-    "dcfs_mpa": -0.002915,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.003458,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Mong Hsat",
     "latitude": 20.662222,
     "longitude": 99.375,
     "type": "Hydropower",
-    "dcfs_mpa": -0.00011,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.001156,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Tawog Hka",
     "latitude": 26.309687,
     "longitude": 96.52987,
     "type": "",
-    "dcfs_mpa": -0.000405,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": 0.001021,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Ta Rung Hka",
     "latitude": 26.718029,
     "longitude": 96.46829,
     "type": "",
-    "dcfs_mpa": -0.000137,
+    "dcfs_mpa": 0.00067,
     "stress_regime": "Neutral"
   },
   {
@@ -708,31 +708,31 @@
     "latitude": 26.294175,
     "longitude": 96.95008,
     "type": "",
-    "dcfs_mpa": -0.000761,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": 0.001291,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Thauk Ye Khat 1",
     "latitude": 18.938587,
     "longitude": 96.719624,
     "type": "",
-    "dcfs_mpa": 0.011553,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.005539,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Yunzalin",
     "latitude": 18.29496,
     "longitude": 97.34081,
     "type": "",
-    "dcfs_mpa": 0.002534,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.001277,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Lam Pha",
     "latitude": 16.305021,
     "longitude": 98.348758,
     "type": "",
-    "dcfs_mpa": 0.000418,
+    "dcfs_mpa": -0.00014,
     "stress_regime": "Neutral"
   },
   {
@@ -740,7 +740,7 @@
     "latitude": 21.334187,
     "longitude": 93.073495,
     "type": "",
-    "dcfs_mpa": -0.000219,
+    "dcfs_mpa": -0.000838,
     "stress_regime": "Neutral"
   },
   {
@@ -748,15 +748,15 @@
     "latitude": 24.865948,
     "longitude": 95.294431,
     "type": "",
-    "dcfs_mpa": -0.010008,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.010715,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Thein Kun Chaung",
     "latitude": 11.769949,
     "longitude": 99.331205,
     "type": "",
-    "dcfs_mpa": 6e-05,
+    "dcfs_mpa": -7e-06,
     "stress_regime": "Neutral"
   },
   {
@@ -764,7 +764,7 @@
     "latitude": 12.132896,
     "longitude": 99.227161,
     "type": "",
-    "dcfs_mpa": 6.7e-05,
+    "dcfs_mpa": -9e-06,
     "stress_regime": "Neutral"
   },
   {
@@ -772,7 +772,7 @@
     "latitude": 10.775209,
     "longitude": 98.858324,
     "type": "",
-    "dcfs_mpa": 4.4e-05,
+    "dcfs_mpa": -0.0,
     "stress_regime": "Neutral"
   },
   {
@@ -780,7 +780,7 @@
     "latitude": 15.682011,
     "longitude": 97.915769,
     "type": "",
-    "dcfs_mpa": 0.000323,
+    "dcfs_mpa": -2.6e-05,
     "stress_regime": "Neutral"
   },
   {
@@ -788,39 +788,39 @@
     "latitude": 19.37089,
     "longitude": 94.712866,
     "type": "",
-    "dcfs_mpa": 0.007218,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.005101,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Than Dwe",
     "latitude": 18.386144,
     "longitude": 94.493902,
     "type": "",
-    "dcfs_mpa": 0.002718,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.002018,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Kyein Ta Li",
     "latitude": 17.950012,
     "longitude": 94.576508,
     "type": "",
-    "dcfs_mpa": 0.001778,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.001321,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Nam Hkok",
     "latitude": 20.196337,
     "longitude": 99.34667,
     "type": "",
-    "dcfs_mpa": 3e-05,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.001284,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Saing Din",
     "latitude": 20.893779,
     "longitude": 92.652188,
     "type": "",
-    "dcfs_mpa": 0.000127,
+    "dcfs_mpa": -0.000735,
     "stress_regime": "Neutral"
   },
   {
@@ -828,7 +828,7 @@
     "latitude": 12.829406,
     "longitude": 98.98167,
     "type": "",
-    "dcfs_mpa": 8.6e-05,
+    "dcfs_mpa": -1e-05,
     "stress_regime": "Neutral"
   },
   {
@@ -836,31 +836,31 @@
     "latitude": 18.362836,
     "longitude": 95.796146,
     "type": "Irrigation",
-    "dcfs_mpa": 0.003242,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.002199,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Bewt Gyi",
     "latitude": 19.313794,
     "longitude": 95.528459,
     "type": "Irrigation",
-    "dcfs_mpa": 0.041249,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.024033,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Gyobyu",
     "latitude": 17.376582,
     "longitude": 96.035673,
     "type": "Water Supply",
-    "dcfs_mpa": 0.001071,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": 1e-06,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Hlaing Chaung",
     "latitude": 21.999294,
     "longitude": 94.580082,
     "type": "Irrigation",
-    "dcfs_mpa": -0.003165,
+    "dcfs_mpa": -0.002604,
     "stress_regime": "Shadow"
   },
   {
@@ -868,7 +868,7 @@
     "latitude": 16.97279,
     "longitude": 96.11125,
     "type": "Water Supply",
-    "dcfs_mpa": 0.000739,
+    "dcfs_mpa": 6.4e-05,
     "stress_regime": "Neutral"
   },
   {
@@ -876,7 +876,7 @@
     "latitude": 22.159941,
     "longitude": 95.257973,
     "type": "Irrigation",
-    "dcfs_mpa": -0.010666,
+    "dcfs_mpa": -0.009836,
     "stress_regime": "Shadow"
   },
   {
@@ -884,7 +884,7 @@
     "latitude": 16.838848,
     "longitude": 96.135034,
     "type": "Water Supply",
-    "dcfs_mpa": 0.00066,
+    "dcfs_mpa": 7e-05,
     "stress_regime": "Neutral"
   },
   {
@@ -892,55 +892,55 @@
     "latitude": 19.043285,
     "longitude": 95.308665,
     "type": "Irrigation",
-    "dcfs_mpa": 0.014747,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.010295,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Kantin-BeeLin",
     "latitude": 17.9571,
     "longitude": 95.887794,
     "type": "Irrigation",
-    "dcfs_mpa": 0.00195,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.000556,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Kanyin",
     "latitude": 17.991848,
     "longitude": 95.072583,
     "type": "Irrigation",
-    "dcfs_mpa": 0.001968,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.001525,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Kaukkwe",
     "latitude": 22.933678,
     "longitude": 97.798928,
     "type": "Irrigation",
-    "dcfs_mpa": -0.001675,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": -0.00059,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Khawar",
     "latitude": 18.450999,
     "longitude": 95.011249,
     "type": "Irrigation",
-    "dcfs_mpa": 0.003936,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.003021,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Kinmundaung",
     "latitude": 19.908676,
     "longitude": 95.693168,
     "type": "Irrigation",
-    "dcfs_mpa": 0.073207,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.026179,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Kintat",
     "latitude": 22.666332,
     "longitude": 95.708602,
     "type": "Irrigation",
-    "dcfs_mpa": -0.077541,
+    "dcfs_mpa": -0.123414,
     "stress_regime": "Shadow"
   },
   {
@@ -948,7 +948,7 @@
     "latitude": 21.107401,
     "longitude": 95.458244,
     "type": "Irrigation",
-    "dcfs_mpa": -0.01328,
+    "dcfs_mpa": -0.019624,
     "stress_regime": "Shadow"
   },
   {
@@ -956,7 +956,7 @@
     "latitude": 21.076999,
     "longitude": 95.469553,
     "type": "Irrigation",
-    "dcfs_mpa": -0.012411,
+    "dcfs_mpa": -0.020397,
     "stress_regime": "Shadow"
   },
   {
@@ -964,7 +964,7 @@
     "latitude": 20.425297,
     "longitude": 96.169943,
     "type": "Irrigation",
-    "dcfs_mpa": -0.132642,
+    "dcfs_mpa": -0.029143,
     "stress_regime": "Shadow"
   },
   {
@@ -972,7 +972,7 @@
     "latitude": 23.08728,
     "longitude": 95.664076,
     "type": "Irrigation",
-    "dcfs_mpa": -0.086953,
+    "dcfs_mpa": -0.063537,
     "stress_regime": "Shadow"
   },
   {
@@ -980,15 +980,15 @@
     "latitude": 20.331771,
     "longitude": 94.417348,
     "type": "Hydropower",
-    "dcfs_mpa": 0.00237,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.00342,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Kyin-tha",
     "latitude": 21.054113,
     "longitude": 95.65751,
     "type": "Irrigation",
-    "dcfs_mpa": -0.044852,
+    "dcfs_mpa": -0.049901,
     "stress_regime": "Shadow"
   },
   {
@@ -996,15 +996,15 @@
     "latitude": 26.1973,
     "longitude": 97.746971,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000957,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": 0.001325,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Lakin",
     "latitude": 26.595833,
     "longitude": 98.406111,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000571,
+    "dcfs_mpa": 0.000779,
     "stress_regime": "Neutral"
   },
   {
@@ -1012,15 +1012,15 @@
     "latitude": 20.445332,
     "longitude": 95.15673,
     "type": "Irrigation",
-    "dcfs_mpa": 0.001743,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.009114,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Letpan",
     "latitude": 22.053801,
     "longitude": 95.400088,
     "type": "Irrigation",
-    "dcfs_mpa": -0.01646,
+    "dcfs_mpa": -0.01599,
     "stress_regime": "Shadow"
   },
   {
@@ -1028,7 +1028,7 @@
     "latitude": 23.14541,
     "longitude": 95.525593,
     "type": "Irrigation",
-    "dcfs_mpa": -0.040106,
+    "dcfs_mpa": -0.023785,
     "stress_regime": "Shadow"
   },
   {
@@ -1036,23 +1036,23 @@
     "latitude": 18.106536,
     "longitude": 95.081046,
     "type": "Irrigation",
-    "dcfs_mpa": 0.002332,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.001823,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Maday",
     "latitude": 19.033781,
     "longitude": 94.868121,
     "type": "Irrigation",
-    "dcfs_mpa": 0.00751,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.005262,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Male-Nattaung",
     "latitude": 22.593002,
     "longitude": 96.096806,
     "type": "Irrigation",
-    "dcfs_mpa": -0.027226,
+    "dcfs_mpa": -0.124688,
     "stress_regime": "Shadow"
   },
   {
@@ -1060,15 +1060,15 @@
     "latitude": 20.096772,
     "longitude": 94.423262,
     "type": "Irrigation",
-    "dcfs_mpa": 0.003358,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.003599,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Meikhtila",
     "latitude": 20.875818,
     "longitude": 95.865057,
     "type": "Irrigation",
-    "dcfs_mpa": 0.242131,
+    "dcfs_mpa": 0.680499,
     "stress_regime": "Triggered"
   },
   {
@@ -1076,15 +1076,15 @@
     "latitude": 24.835331,
     "longitude": 97.768566,
     "type": "Hydropower",
-    "dcfs_mpa": -0.003036,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.003392,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Middle Yeywa",
     "latitude": 21.938771,
     "longitude": 96.930558,
     "type": "Hydropower",
-    "dcfs_mpa": -0.004493,
+    "dcfs_mpa": -0.005134,
     "stress_regime": "Shadow"
   },
   {
@@ -1092,31 +1092,31 @@
     "latitude": 18.117447,
     "longitude": 95.909904,
     "type": "Irrigation",
-    "dcfs_mpa": 0.002541,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.000797,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Mone",
     "latitude": 20.478481,
     "longitude": 94.259852,
     "type": "Hydropower",
-    "dcfs_mpa": 0.001555,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.002825,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Mone Yin",
     "latitude": 23.145283,
     "longitude": 97.577462,
     "type": "Irrigation",
-    "dcfs_mpa": -0.002037,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": -0.000471,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Myaing Chaung",
     "latitude": 21.615887,
     "longitude": 94.816231,
     "type": "Irrigation",
-    "dcfs_mpa": -0.003394,
+    "dcfs_mpa": -0.004135,
     "stress_regime": "Shadow"
   },
   {
@@ -1124,7 +1124,7 @@
     "latitude": 21.672793,
     "longitude": 95.719008,
     "type": "Irrigation",
-    "dcfs_mpa": -0.018037,
+    "dcfs_mpa": -0.068713,
     "stress_regime": "Shadow"
   },
   {
@@ -1132,7 +1132,7 @@
     "latitude": 22.41452,
     "longitude": 95.214678,
     "type": "Irrigation",
-    "dcfs_mpa": -0.010327,
+    "dcfs_mpa": -0.008023,
     "stress_regime": "Shadow"
   },
   {
@@ -1140,15 +1140,15 @@
     "latitude": 20.395229,
     "longitude": 95.16702,
     "type": "Irrigation",
-    "dcfs_mpa": 0.002509,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.009384,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Namtu",
     "latitude": 22.857605,
     "longitude": 97.307334,
     "type": "Hydropower",
-    "dcfs_mpa": -0.002445,
+    "dcfs_mpa": -0.001928,
     "stress_regime": "Shadow"
   },
   {
@@ -1156,15 +1156,15 @@
     "latitude": 17.850106,
     "longitude": 95.036264,
     "type": "Irrigation",
-    "dcfs_mpa": 0.001623,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.001234,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Nat Thar Taw",
     "latitude": 21.800573,
     "longitude": 95.722506,
     "type": "Irrigation",
-    "dcfs_mpa": -0.143048,
+    "dcfs_mpa": -0.107575,
     "stress_regime": "Shadow"
   },
   {
@@ -1172,15 +1172,15 @@
     "latitude": 20.684856,
     "longitude": 95.884964,
     "type": "Irrigation",
-    "dcfs_mpa": -0.144542,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.016215,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Natmouk",
     "latitude": 20.409266,
     "longitude": 95.48095,
     "type": "Irrigation",
-    "dcfs_mpa": -0.007532,
+    "dcfs_mpa": -0.020981,
     "stress_regime": "Shadow"
   },
   {
@@ -1188,15 +1188,15 @@
     "latitude": 17.355585,
     "longitude": 96.160508,
     "type": "Water Supply",
-    "dcfs_mpa": 0.001124,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": 8.7e-05,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Ngathayauk",
     "latitude": 21.168644,
     "longitude": 95.107695,
     "type": "Irrigation",
-    "dcfs_mpa": -0.004106,
+    "dcfs_mpa": -0.007408,
     "stress_regime": "Shadow"
   },
   {
@@ -1204,7 +1204,7 @@
     "latitude": 21.902657,
     "longitude": 95.041531,
     "type": "Irrigation",
-    "dcfs_mpa": -0.006081,
+    "dcfs_mpa": -0.00597,
     "stress_regime": "Shadow"
   },
   {
@@ -1212,7 +1212,7 @@
     "latitude": 21.659382,
     "longitude": 95.5687,
     "type": "Irrigation",
-    "dcfs_mpa": -0.021253,
+    "dcfs_mpa": -0.033079,
     "stress_regime": "Shadow"
   },
   {
@@ -1220,7 +1220,7 @@
     "latitude": 22.053354,
     "longitude": 94.67744,
     "type": "Irrigation",
-    "dcfs_mpa": -0.003704,
+    "dcfs_mpa": -0.002951,
     "stress_regime": "Shadow"
   },
   {
@@ -1228,7 +1228,7 @@
     "latitude": 22.008236,
     "longitude": 95.303983,
     "type": "Irrigation",
-    "dcfs_mpa": -0.011907,
+    "dcfs_mpa": -0.011626,
     "stress_regime": "Shadow"
   },
   {
@@ -1236,15 +1236,15 @@
     "latitude": 18.797819,
     "longitude": 95.14163,
     "type": "Irrigation",
-    "dcfs_mpa": 0.007618,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.005658,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Nyaunggone",
     "latitude": 20.789507,
     "longitude": 95.819567,
     "type": "Irrigation",
-    "dcfs_mpa": -0.010104,
+    "dcfs_mpa": -0.257759,
     "stress_regime": "Shadow"
   },
   {
@@ -1252,15 +1252,15 @@
     "latitude": 19.212315,
     "longitude": 95.610306,
     "type": "Irrigation",
-    "dcfs_mpa": 0.04258,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.026372,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Palin",
     "latitude": 20.291535,
     "longitude": 95.525824,
     "type": "Irrigation",
-    "dcfs_mpa": -0.003187,
+    "dcfs_mpa": -0.024713,
     "stress_regime": "Shadow"
   },
   {
@@ -1268,7 +1268,7 @@
     "latitude": 26.476081,
     "longitude": 98.289919,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000647,
+    "dcfs_mpa": 0.000878,
     "stress_regime": "Neutral"
   },
   {
@@ -1276,7 +1276,7 @@
     "latitude": 21.81169,
     "longitude": 95.589723,
     "type": "Irrigation",
-    "dcfs_mpa": -0.036982,
+    "dcfs_mpa": -0.03805,
     "stress_regime": "Shadow"
   },
   {
@@ -1284,15 +1284,15 @@
     "latitude": 17.509063,
     "longitude": 96.095995,
     "type": "Irrigation",
-    "dcfs_mpa": 0.001295,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": 3.2e-05,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Pegyi",
     "latitude": 23.013559,
     "longitude": 95.637255,
     "type": "Irrigation",
-    "dcfs_mpa": -0.093196,
+    "dcfs_mpa": -0.034676,
     "stress_regime": "Shadow"
   },
   {
@@ -1300,7 +1300,7 @@
     "latitude": 22.021024,
     "longitude": 95.070568,
     "type": "Irrigation",
-    "dcfs_mpa": -0.006761,
+    "dcfs_mpa": -0.006223,
     "stress_regime": "Shadow"
   },
   {
@@ -1308,7 +1308,7 @@
     "latitude": 26.827594,
     "longitude": 98.385556,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000478,
+    "dcfs_mpa": 0.000676,
     "stress_regime": "Neutral"
   },
   {
@@ -1316,7 +1316,7 @@
     "latitude": 17.245914,
     "longitude": 96.042454,
     "type": "Water Supply",
-    "dcfs_mpa": 0.000934,
+    "dcfs_mpa": 2.1e-05,
     "stress_regime": "Neutral"
   },
   {
@@ -1324,7 +1324,7 @@
     "latitude": 20.712043,
     "longitude": 95.300929,
     "type": "Irrigation",
-    "dcfs_mpa": -0.001937,
+    "dcfs_mpa": -0.011793,
     "stress_regime": "Shadow"
   },
   {
@@ -1332,7 +1332,7 @@
     "latitude": 20.808545,
     "longitude": 95.247579,
     "type": "Irrigation",
-    "dcfs_mpa": -0.001843,
+    "dcfs_mpa": -0.010269,
     "stress_regime": "Shadow"
   },
   {
@@ -1340,7 +1340,7 @@
     "latitude": 20.938996,
     "longitude": 96.136176,
     "type": "Irrigation",
-    "dcfs_mpa": -0.18527,
+    "dcfs_mpa": -0.118752,
     "stress_regime": "Shadow"
   },
   {
@@ -1348,7 +1348,7 @@
     "latitude": 21.981113,
     "longitude": 95.066611,
     "type": "Irrigation",
-    "dcfs_mpa": -0.006607,
+    "dcfs_mpa": -0.006218,
     "stress_regime": "Shadow"
   },
   {
@@ -1356,7 +1356,7 @@
     "latitude": 22.348589,
     "longitude": 96.323053,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.028625,
+    "dcfs_mpa": -0.025732,
     "stress_regime": "Shadow"
   },
   {
@@ -1364,23 +1364,23 @@
     "latitude": 20.839191,
     "longitude": 95.597897,
     "type": "Irrigation",
-    "dcfs_mpa": 0.008485,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.030957,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Shwedaung",
     "latitude": 18.710748,
     "longitude": 95.252426,
     "type": "Irrigation",
-    "dcfs_mpa": 0.007037,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.005483,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Shwezaye",
     "latitude": 22.33525,
     "longitude": 94.9989,
     "type": "Hydropower",
-    "dcfs_mpa": -0.006765,
+    "dcfs_mpa": -0.004819,
     "stress_regime": "Shadow"
   },
   {
@@ -1388,7 +1388,7 @@
     "latitude": 21.496183,
     "longitude": 95.16705,
     "type": "Irrigation",
-    "dcfs_mpa": -0.006708,
+    "dcfs_mpa": -0.008201,
     "stress_regime": "Shadow"
   },
   {
@@ -1396,7 +1396,7 @@
     "latitude": 21.118182,
     "longitude": 95.305956,
     "type": "Irrigation",
-    "dcfs_mpa": -0.007112,
+    "dcfs_mpa": -0.011906,
     "stress_regime": "Shadow"
   },
   {
@@ -1404,7 +1404,7 @@
     "latitude": 22.074457,
     "longitude": 96.436115,
     "type": "Irrigation",
-    "dcfs_mpa": -0.016573,
+    "dcfs_mpa": -0.016065,
     "stress_regime": "Shadow"
   },
   {
@@ -1412,23 +1412,23 @@
     "latitude": 22.598882,
     "longitude": 94.028495,
     "type": "Irrigation",
-    "dcfs_mpa": -0.002753,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": -0.000864,
+    "stress_regime": "Neutral"
   },
   {
     "name": "South Nawin (2)",
     "latitude": 18.959728,
     "longitude": 95.492622,
     "type": "Irrigation",
-    "dcfs_mpa": 0.015502,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.011908,
+    "stress_regime": "Shadow"
   },
   {
     "name": "South Pinle",
     "latitude": 21.641813,
     "longitude": 95.549981,
     "type": "Irrigation",
-    "dcfs_mpa": -0.020212,
+    "dcfs_mpa": -0.029707,
     "stress_regime": "Shadow"
   },
   {
@@ -1436,7 +1436,7 @@
     "latitude": 21.821946,
     "longitude": 94.736177,
     "type": "Irrigation",
-    "dcfs_mpa": -0.003459,
+    "dcfs_mpa": -0.003477,
     "stress_regime": "Shadow"
   },
   {
@@ -1444,15 +1444,15 @@
     "latitude": 20.169512,
     "longitude": 95.584486,
     "type": "Irrigation",
-    "dcfs_mpa": 0.015384,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.02975,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Sunlun",
     "latitude": 21.417041,
     "longitude": 95.416244,
     "type": "Irrigation",
-    "dcfs_mpa": -0.014892,
+    "dcfs_mpa": -0.016638,
     "stress_regime": "Shadow"
   },
   {
@@ -1460,23 +1460,23 @@
     "latitude": 18.922544,
     "longitude": 95.578598,
     "type": "Irrigation",
-    "dcfs_mpa": 0.014669,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.012214,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Taungnyo",
     "latitude": 20.452426,
     "longitude": 95.969404,
     "type": "Irrigation",
-    "dcfs_mpa": -0.171623,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 1.66544,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Taungtha",
     "latitude": 21.268241,
     "longitude": 95.476952,
     "type": "Irrigation",
-    "dcfs_mpa": -0.019649,
+    "dcfs_mpa": -0.021173,
     "stress_regime": "Shadow"
   },
   {
@@ -1484,15 +1484,15 @@
     "latitude": 20.515519,
     "longitude": 95.864282,
     "type": "Irrigation",
-    "dcfs_mpa": 0.309538,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.879853,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Thapanzeik",
     "latitude": 23.306586,
     "longitude": 95.354794,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.025401,
+    "dcfs_mpa": -0.01049,
     "stress_regime": "Shadow"
   },
   {
@@ -1500,7 +1500,7 @@
     "latitude": 22.240321,
     "longitude": 95.262088,
     "type": "Irrigation",
-    "dcfs_mpa": -0.010871,
+    "dcfs_mpa": -0.00976,
     "stress_regime": "Shadow"
   },
   {
@@ -1508,15 +1508,15 @@
     "latitude": 17.816109,
     "longitude": 95.866928,
     "type": "Irrigation",
-    "dcfs_mpa": 0.001578,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.000418,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Thettaw",
     "latitude": 20.711113,
     "longitude": 96.210114,
     "type": "Irrigation",
-    "dcfs_mpa": -0.073511,
+    "dcfs_mpa": -0.064978,
     "stress_regime": "Shadow"
   },
   {
@@ -1524,15 +1524,15 @@
     "latitude": 20.971218,
     "longitude": 95.712494,
     "type": "Irrigation",
-    "dcfs_mpa": -0.000545,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.088773,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Thirinandar",
     "latitude": 21.51692,
     "longitude": 94.932945,
     "type": "Irrigation",
-    "dcfs_mpa": -0.003935,
+    "dcfs_mpa": -0.00511,
     "stress_regime": "Shadow"
   },
   {
@@ -1540,31 +1540,31 @@
     "latitude": 17.739216,
     "longitude": 95.951677,
     "type": "Irrigation",
-    "dcfs_mpa": 0.001549,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.000216,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Tum Baing",
     "latitude": 25.48725,
     "longitude": 97.963157,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001684,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.002051,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Upper Bu",
     "latitude": 20.803853,
     "longitude": 94.037043,
     "type": "Hydropower",
-    "dcfs_mpa": 0.000512,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.002118,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Upper Yeywa",
     "latitude": 22.240208,
     "longitude": 97.162877,
     "type": "Hydropower",
-    "dcfs_mpa": -0.00307,
+    "dcfs_mpa": -0.003398,
     "stress_regime": "Shadow"
   },
   {
@@ -1572,15 +1572,15 @@
     "latitude": 18.622783,
     "longitude": 95.609994,
     "type": "Irrigation",
-    "dcfs_mpa": 0.00562,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.005421,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Welaung",
     "latitude": 21.092847,
     "longitude": 95.396977,
     "type": "Irrigation",
-    "dcfs_mpa": -0.009458,
+    "dcfs_mpa": -0.015707,
     "stress_regime": "Shadow"
   },
   {
@@ -1588,23 +1588,23 @@
     "latitude": 19.790566,
     "longitude": 95.517982,
     "type": "Irrigation",
-    "dcfs_mpa": 0.032063,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.019851,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Yazagyo",
     "latitude": 23.53123,
     "longitude": 94.09707,
     "type": "Multi-purpose",
-    "dcfs_mpa": -0.00443,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.000131,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Yenam",
     "latitude": 27.727616,
     "longitude": 97.879027,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000216,
+    "dcfs_mpa": 0.000395,
     "stress_regime": "Neutral"
   },
   {
@@ -1612,15 +1612,15 @@
     "latitude": 19.962479,
     "longitude": 94.572117,
     "type": "Irrigation",
-    "dcfs_mpa": 0.004684,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.004333,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Zawgyi",
     "latitude": 21.565078,
     "longitude": 96.873564,
     "type": "Hydropower",
-    "dcfs_mpa": -0.004937,
+    "dcfs_mpa": -0.006117,
     "stress_regime": "Shadow"
   },
   {
@@ -1628,7 +1628,7 @@
     "latitude": 21.28973,
     "longitude": 95.782275,
     "type": "Irrigation",
-    "dcfs_mpa": -0.122774,
+    "dcfs_mpa": -0.103549,
     "stress_regime": "Shadow"
   },
   {
@@ -1636,15 +1636,15 @@
     "latitude": 20.811847,
     "longitude": 95.720291,
     "type": "Irrigation",
-    "dcfs_mpa": 0.030606,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.051999,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 21.37N 95.80E",
     "latitude": 21.37304,
     "longitude": 95.798634,
     "type": "Irrigation",
-    "dcfs_mpa": -0.119798,
+    "dcfs_mpa": -0.427906,
     "stress_regime": "Shadow"
   },
   {
@@ -1652,15 +1652,15 @@
     "latitude": 21.340483,
     "longitude": 95.810878,
     "type": "Irrigation",
-    "dcfs_mpa": 0.183489,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.665106,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 23.36N 95.66E",
     "latitude": 23.361809,
     "longitude": 95.660486,
     "type": "Irrigation",
-    "dcfs_mpa": -0.06318,
+    "dcfs_mpa": -0.048319,
     "stress_regime": "Shadow"
   },
   {
@@ -1668,7 +1668,7 @@
     "latitude": 23.132152,
     "longitude": 95.577322,
     "type": "Irrigation",
-    "dcfs_mpa": -0.049934,
+    "dcfs_mpa": -0.032203,
     "stress_regime": "Shadow"
   },
   {
@@ -1676,15 +1676,15 @@
     "latitude": 20.114814,
     "longitude": 95.601787,
     "type": "Irrigation",
-    "dcfs_mpa": 0.034071,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.030638,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 20.78N 95.34E",
     "latitude": 20.775632,
     "longitude": 95.342022,
     "type": "Irrigation",
-    "dcfs_mpa": -0.002172,
+    "dcfs_mpa": -0.012975,
     "stress_regime": "Shadow"
   },
   {
@@ -1692,15 +1692,15 @@
     "latitude": 19.06693,
     "longitude": 95.44187,
     "type": "Irrigation",
-    "dcfs_mpa": 0.019404,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.013599,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 20.70N 95.47E",
     "latitude": 20.704069,
     "longitude": 95.467041,
     "type": "Irrigation",
-    "dcfs_mpa": -0.004332,
+    "dcfs_mpa": -0.019039,
     "stress_regime": "Shadow"
   },
   {
@@ -1708,7 +1708,7 @@
     "latitude": 20.468555,
     "longitude": 96.075001,
     "type": "Irrigation",
-    "dcfs_mpa": 0.177927,
+    "dcfs_mpa": 0.25645,
     "stress_regime": "Triggered"
   },
   {
@@ -1716,63 +1716,63 @@
     "latitude": 18.533566,
     "longitude": 95.718861,
     "type": "Irrigation",
-    "dcfs_mpa": 0.004081,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.004013,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 20.60N 95.90E",
     "latitude": 20.597321,
     "longitude": 95.89696,
     "type": "Irrigation",
-    "dcfs_mpa": -1.365961,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.982617,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Dam near 20.73N 95.83E",
     "latitude": 20.726713,
     "longitude": 95.826486,
     "type": "Irrigation",
-    "dcfs_mpa": 0.011429,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.541949,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 20.72N 95.90E",
     "latitude": 20.721658,
     "longitude": 95.903834,
     "type": "Irrigation",
-    "dcfs_mpa": 0.590196,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -1.928599,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 20.85N 96.03E",
     "latitude": 20.854343,
     "longitude": 96.02702,
     "type": "Irrigation",
-    "dcfs_mpa": -2.542815,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 1.219847,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Dam near 21.04N 95.83E",
     "latitude": 21.038121,
     "longitude": 95.833504,
     "type": "Irrigation",
-    "dcfs_mpa": -1.553772,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.352551,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Dam near 21.05N 95.83E",
     "latitude": 21.050036,
     "longitude": 95.831831,
     "type": "Irrigation",
-    "dcfs_mpa": -1.270945,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.387117,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Dam near 21.01N 95.73E",
     "latitude": 21.013475,
     "longitude": 95.728497,
     "type": "Irrigation",
-    "dcfs_mpa": -0.09615,
+    "dcfs_mpa": -0.081147,
     "stress_regime": "Shadow"
   },
   {
@@ -1780,39 +1780,39 @@
     "latitude": 21.739152,
     "longitude": 95.846709,
     "type": "Irrigation",
-    "dcfs_mpa": 1.751376,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -2.292913,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 21.77N 95.89E",
     "latitude": 21.773814,
     "longitude": 95.892268,
     "type": "Irrigation",
-    "dcfs_mpa": 12.708211,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -21.767143,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 21.47N 95.87E",
     "latitude": 21.468135,
     "longitude": 95.8671,
     "type": "Irrigation",
-    "dcfs_mpa": -0.66874,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 1.086736,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Dam near 18.65N 95.25E",
     "latitude": 18.651777,
     "longitude": 95.252143,
     "type": "Irrigation",
-    "dcfs_mpa": 0.00624,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.004928,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 20.58N 96.17E",
     "latitude": 20.583214,
     "longitude": 96.169439,
     "type": "Irrigation",
-    "dcfs_mpa": -0.201523,
+    "dcfs_mpa": -0.130654,
     "stress_regime": "Shadow"
   },
   {
@@ -1820,15 +1820,15 @@
     "latitude": 22.09474,
     "longitude": 95.862392,
     "type": "Irrigation",
-    "dcfs_mpa": -1.27711,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 1.809374,
+    "stress_regime": "Triggered"
   },
   {
     "name": "Dam near 20.77N 95.35E",
     "latitude": 20.768534,
     "longitude": 95.35271,
     "type": "Irrigation",
-    "dcfs_mpa": -0.002228,
+    "dcfs_mpa": -0.013359,
     "stress_regime": "Shadow"
   },
   {
@@ -1836,7 +1836,7 @@
     "latitude": 20.762818,
     "longitude": 95.355246,
     "type": "Irrigation",
-    "dcfs_mpa": -0.002257,
+    "dcfs_mpa": -0.013459,
     "stress_regime": "Shadow"
   },
   {
@@ -1844,7 +1844,7 @@
     "latitude": 20.740185,
     "longitude": 95.383724,
     "type": "Irrigation",
-    "dcfs_mpa": -0.00257,
+    "dcfs_mpa": -0.014606,
     "stress_regime": "Shadow"
   },
   {
@@ -1852,7 +1852,7 @@
     "latitude": 20.758838,
     "longitude": 95.386066,
     "type": "Irrigation",
-    "dcfs_mpa": -0.002418,
+    "dcfs_mpa": -0.014671,
     "stress_regime": "Shadow"
   },
   {
@@ -1860,7 +1860,7 @@
     "latitude": 20.751761,
     "longitude": 95.400055,
     "type": "Irrigation",
-    "dcfs_mpa": -0.002549,
+    "dcfs_mpa": -0.015292,
     "stress_regime": "Shadow"
   },
   {
@@ -1868,7 +1868,7 @@
     "latitude": 20.720078,
     "longitude": 95.424149,
     "type": "Irrigation",
-    "dcfs_mpa": -0.003237,
+    "dcfs_mpa": -0.016518,
     "stress_regime": "Shadow"
   },
   {
@@ -1876,7 +1876,7 @@
     "latitude": 21.546729,
     "longitude": 95.540688,
     "type": "Irrigation",
-    "dcfs_mpa": -0.021866,
+    "dcfs_mpa": -0.027538,
     "stress_regime": "Shadow"
   },
   {
@@ -1884,7 +1884,7 @@
     "latitude": 21.505946,
     "longitude": 95.534877,
     "type": "Irrigation",
-    "dcfs_mpa": -0.022779,
+    "dcfs_mpa": -0.02665,
     "stress_regime": "Shadow"
   },
   {
@@ -1892,7 +1892,7 @@
     "latitude": 21.385758,
     "longitude": 95.518783,
     "type": "Irrigation",
-    "dcfs_mpa": -0.024006,
+    "dcfs_mpa": -0.024979,
     "stress_regime": "Shadow"
   },
   {
@@ -1900,47 +1900,47 @@
     "latitude": 20.869511,
     "longitude": 94.367835,
     "type": "Multi-purpose",
-    "dcfs_mpa": 0.000287,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.002842,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 18.28N 95.86E",
     "latitude": 18.281025,
     "longitude": 95.855019,
     "type": "Irrigation",
-    "dcfs_mpa": 0.003081,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.001524,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Dam near 17.62N 96.01E",
     "latitude": 17.623217,
     "longitude": 96.014876,
     "type": "Irrigation",
-    "dcfs_mpa": 0.001408,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -7.5e-05,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Dam near 17.55N 96.37E",
     "latitude": 17.548282,
     "longitude": 96.366141,
     "type": "Irrigation",
-    "dcfs_mpa": 0.001531,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": 0.000193,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Lower Nam Pawn",
     "latitude": 19.480045,
     "longitude": 97.417853,
     "type": "Hydropower",
-    "dcfs_mpa": 0.000821,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.008841,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Moby\u00e8",
     "latitude": 19.792636,
     "longitude": 97.097256,
     "type": "Irrigation",
-    "dcfs_mpa": -0.004067,
+    "dcfs_mpa": -0.016554,
     "stress_regime": "Shadow"
   },
   {
@@ -1948,7 +1948,7 @@
     "latitude": 22.056938,
     "longitude": 98.772066,
     "type": "Hydropower",
-    "dcfs_mpa": -0.000665,
+    "dcfs_mpa": -0.000811,
     "stress_regime": "Neutral"
   },
   {
@@ -1956,15 +1956,15 @@
     "latitude": 19.555742,
     "longitude": 97.163331,
     "type": "Irrigation",
-    "dcfs_mpa": -0.000105,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.014678,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Shwenattaung",
     "latitude": 16.411455,
     "longitude": 97.657402,
     "type": "Irrigation",
-    "dcfs_mpa": 0.00052,
+    "dcfs_mpa": -4e-05,
     "stress_regime": "Neutral"
   },
   {
@@ -1972,7 +1972,7 @@
     "latitude": 20.478991,
     "longitude": 96.689153,
     "type": "Hydropower",
-    "dcfs_mpa": -0.007359,
+    "dcfs_mpa": -0.015044,
     "stress_regime": "Shadow"
   },
   {
@@ -1980,15 +1980,15 @@
     "latitude": 19.177977,
     "longitude": 97.344749,
     "type": "Hydropower",
-    "dcfs_mpa": 0.002651,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.007468,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Upper Nam Pawn",
     "latitude": 19.995674,
     "longitude": 97.40098,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001882,
+    "dcfs_mpa": -0.008952,
     "stress_regime": "Shadow"
   },
   {
@@ -1996,15 +1996,15 @@
     "latitude": 23.423472,
     "longitude": 98.601643,
     "type": "Hydropower",
-    "dcfs_mpa": -0.001189,
-    "stress_regime": "Shadow"
+    "dcfs_mpa": 0.000393,
+    "stress_regime": "Neutral"
   },
   {
     "name": "Wanpon",
     "latitude": 20.938172,
     "longitude": 97.648021,
     "type": "Irrigation",
-    "dcfs_mpa": -0.001358,
+    "dcfs_mpa": -0.00381,
     "stress_regime": "Shadow"
   },
   {
@@ -2012,23 +2012,23 @@
     "latitude": 18.632617,
     "longitude": 97.359484,
     "type": "Hydropower",
-    "dcfs_mpa": 0.003054,
-    "stress_regime": "Triggered"
+    "dcfs_mpa": -0.002731,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Ywathit",
     "latitude": 19.777904,
     "longitude": 97.732943,
     "type": "Hydropower",
-    "dcfs_mpa": -0.00011,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.005918,
+    "stress_regime": "Shadow"
   },
   {
     "name": "Baluchaung Dam",
     "latitude": 19.572117,
     "longitude": 97.31465,
     "type": "Hydropower",
-    "dcfs_mpa": 8.7e-05,
-    "stress_regime": "Neutral"
+    "dcfs_mpa": -0.010988,
+    "stress_regime": "Shadow"
   }
 ]

@@ -1,255 +1,255 @@
 name,status,function,river,state,latitude,longitude,height_m,capacity_mw,storage_mcm,dist_to_major_km,dist_to_fault_km,vs30,pga_g,seismic_score,fault_score,proximity_score,exposure_score,composite_risk,risk_grade,return_period_m6_yrs
-Dam near 22.09N 95.86E,Complete,Irrigation,,,22.09474,95.862392,0.0,,0.0,391.3,5.7,760,0.3715,10.0,10.0,1.3,10.0,8.3,Critical,0.0
-Dam near 21.77N 95.89E,Complete,Irrigation,,,21.773814,95.892268,0.0,,0.0,396.9,2.7,760,0.468,10.0,10.0,1.3,10.0,8.3,Critical,0.0
-Natkar,Complete,Irrigation,,,20.684856,95.884964,0.0,,13.94,447.1,7.9,760,0.319,10.0,10.0,1.1,10.0,8.2,Critical,0.0
-Dam near 21.47N 95.87E,Complete,Irrigation,,,21.468135,95.8671,0.0,,0.0,410.2,6.0,760,0.365,10.0,10.0,1.2,10.0,8.2,Critical,0.0
-Ta Nai Hka,Identified Sites,,Ta Nai Hka,Kachin,26.294175,96.95008,0.0,,0.0,474.9,3.9,760,0.4288,10.0,10.0,1.1,10.0,8.2,Critical,0.0
-Dam near 20.72N 95.90E,Complete,Irrigation,,,20.721658,95.903834,0.0,,0.0,443.4,5.6,760,0.3756,10.0,10.0,1.1,10.0,8.2,Critical,0.0
-Dam near 21.74N 95.85E,Complete,Irrigation,,,21.739152,95.846709,0.0,,0.0,402.5,7.4,760,0.3298,10.0,10.0,1.2,10.0,8.2,Critical,0.0
-Taungnyo,Complete,Irrigation,Taungnyo,,20.452426,95.969404,0.0,,258.99,454.0,1.2,760,0.5083,10.0,10.0,1.1,10.0,8.2,Critical,0.0
-Dam near 20.60N 95.90E,Complete,Irrigation,,,20.597321,95.89696,0.0,,0.0,451.3,7.4,760,0.3293,10.0,10.0,1.1,10.0,8.2,Critical,0.0
-Dam near 20.47N 96.08E,Complete,Irrigation,,,20.468555,96.075001,0.0,,0.0,444.2,9.9,760,0.2806,10.0,10.0,1.1,10.0,8.2,Critical,0.0
-Dam near 20.85N 96.03E,Complete,Irrigation,,,20.854343,96.02702,0.0,,0.0,425.0,8.3,760,0.3097,10.0,10.0,1.2,10.0,8.2,Critical,0.0
-Meikhtila,Complete,Irrigation,,,20.875818,95.865057,0.0,,0.0,438.2,8.2,760,0.3113,10.0,10.0,1.1,10.0,8.2,Critical,0.0
-Dam near 17.55N 96.37E,Complete,Irrigation,,,17.548282,96.366141,0.0,,0.0,669.8,9.6,760,0.2866,10.0,10.0,0.7,10.0,8.1,Critical,0.0
-Dam near 21.05N 95.83E,Complete,Irrigation,,,21.050036,95.831831,0.0,,0.0,432.2,11.0,760,0.2639,10.0,9.1,1.2,10.0,8.0,Critical,0.0
-Dam near 21.04N 95.83E,Complete,Irrigation,,,21.038121,95.833504,0.0,,0.0,432.7,10.9,760,0.2658,10.0,9.2,1.2,10.0,8.0,Critical,0.0
-Thaphan Chaung,Complete,Irrigation,Thaphan Chaung,,20.515519,95.864282,0.0,,7.429,459.0,11.5,760,0.2566,10.0,8.7,1.1,10.0,7.8,Critical,0.0
-Dam near 21.34N 95.81E,Complete,Irrigation,,,21.340483,95.810878,0.0,,0.0,420.8,12.2,760,0.2476,10.0,8.2,1.2,10.0,7.7,Critical,0.0
-Kun Chaung,Complete,Multi-purpose,Kun Chaung,Bago,18.420367,96.363854,73.0,60.0,1468.0,587.8,0.9,760,0.5128,10.0,10.0,0.9,6.1,7.6,Critical,0.0
-Phyu Chaung,Complete,Multi-purpose,Pyu Chaung,Bago,18.506214,96.351028,75.0,40.0,780.0,580.8,1.3,760,0.5064,10.0,10.0,0.9,5.4,7.5,Critical,0.0
-Kabaung,Complete,Multi-purpose,Kabaung Chaung,Bago,18.896717,96.220825,61.0,30.0,1468.0,554.1,9.2,760,0.292,10.0,10.0,0.9,5.2,7.5,Critical,0.0
-Dam near 21.37N 95.80E,Complete,Irrigation,,,21.37304,95.798634,0.0,,0.0,420.6,13.4,760,0.234,10.0,7.5,1.2,10.0,7.5,Critical,0.0
-Yenwe,Complete,Multi-purpose,Ye Nwe Chaung,Bago,18.085211,96.446152,77.0,25.0,149.0,614.4,3.9,760,0.4291,10.0,10.0,0.8,4.9,7.4,Critical,0.0
-Nyaunggone,Complete,Irrigation,,,20.789507,95.819567,0.0,,4.035,447.0,13.7,760,0.2301,10.0,7.3,1.1,10.0,7.4,Critical,0.0
-Dam near 20.73N 95.83E,Complete,Irrigation,,,20.726713,95.826486,0.0,,0.0,449.9,13.6,760,0.2318,10.0,7.4,1.1,10.0,7.4,Critical,0.0
-Zeedaw,Complete,Irrigation,Nyaung Oat,,21.28973,95.782275,0.0,,35.55,425.7,15.3,760,0.2142,10.0,6.5,1.2,10.0,7.2,Critical,0.0
-Male-Nattaung,Complete,Irrigation,Male-Nattaung,,22.593002,96.096806,0.0,,70.69,360.3,18.6,760,0.1883,10.0,5.4,1.4,10.0,6.9,High,0.0
-Kyee Ni,Complete,Irrigation,,,20.425297,96.169943,0.0,,0.0,439.1,19.4,760,0.1835,10.0,5.2,1.1,10.0,6.8,High,0.0
-Kintat,Complete,Irrigation,Mu,,22.666332,95.708602,0.0,,47.237,399.6,21.0,760,0.1737,10.0,4.8,1.3,10.0,6.7,High,0.0
-Dam near 20.58N 96.17E,Complete,Irrigation,,,20.583214,96.169439,0.0,,0.0,428.9,20.7,760,0.1755,10.0,4.8,1.2,10.0,6.7,High,0.0
-Myotha,Complete,Irrigation,Ku Htaw,,21.672793,95.719008,0.0,,1128.0,417.1,20.6,760,0.1762,10.0,4.9,1.2,10.0,6.7,High,0.0
-Nat Thar Taw,Complete,Irrigation,Nat Thar Taw,,21.800573,95.722506,0.0,,6.15,412.8,20.2,760,0.1786,10.0,5.0,1.2,10.0,6.7,High,0.0
-Samon,Complete,Irrigation,Samon,,20.938996,96.136176,0.0,,9.733,410.6,20.2,760,0.1786,10.0,5.0,1.2,10.0,6.7,High,0.0
-Dam near 21.01N 95.73E,Complete,Irrigation,,,21.013475,95.728497,0.0,,0.0,443.5,21.8,760,0.1694,10.0,4.6,1.1,10.0,6.6,High,0.0
-Thinbon,Complete,Irrigation,Thinbon,,20.971218,95.712494,0.0,,25.83,447.1,23.6,760,0.1605,10.0,4.2,1.1,10.0,6.5,High,0.0
-Dam near 20.81N 95.72E,Complete,Irrigation,,,20.811847,95.720291,0.0,,0.0,454.6,23.8,760,0.1597,10.0,4.2,1.1,10.0,6.5,High,0.0
-Paung Laung (lower),Complete,Multi-purpose,Paung Laung Chaung,Naypyitaw,19.785,96.335,131.0,280.0,690.0,472.8,23.3,760,0.1618,10.0,4.3,1.1,9.7,6.4,High,0.0
-Kyeebin-et,Complete,Irrigation,Indaw Pauk,,23.08728,95.664076,0.0,,54.27,405.3,25.6,760,0.152,10.0,3.9,1.2,10.0,6.4,High,0.0
-Thettaw,Complete,Irrigation,Thettaw,,20.711113,96.210114,0.0,,18.696,417.5,26.0,760,0.1502,10.0,3.8,1.2,10.0,6.4,High,0.0
-Dam near 23.36N 95.66E,Complete,Irrigation,,,23.361809,95.660486,0.0,,0.0,409.2,28.1,760,0.1424,10.0,3.6,1.2,10.0,6.3,High,0.0
-Pegyi,Complete,Irrigation,Pegyi,,23.013559,95.637255,0.0,,9.7,407.4,27.8,760,0.1435,10.0,3.6,1.2,10.0,6.3,High,0.0
-Kyin-tha,Complete,Irrigation,,,21.054113,95.65751,0.0,,2.58,448.1,29.0,760,0.1393,10.0,3.4,1.1,10.0,6.3,High,0.0
-Paunggadaw,Complete,Irrigation,Paunggadaw,,21.81169,95.589723,0.0,,9.717,425.6,33.9,760,0.1252,10.0,3.0,1.2,10.0,6.1,High,0.0
-Tawog Hka,Identified Sites,,Nam Lanog Hka,Kachin,26.309687,96.52987,0.0,,0.0,502.1,35.1,760,0.1221,10.0,2.9,1.0,10.0,6.1,High,0.0
-Dam near 23.13N 95.58E,Complete,Irrigation,,,23.132152,95.577322,0.0,,23.247,414.5,34.8,760,0.1229,10.0,2.9,1.2,10.0,6.1,High,0.0
-North Pinle,Complete,Irrigation,Pinle,,21.659382,95.5687,0.0,,12.3,432.3,36.1,760,0.1196,10.0,2.8,1.2,10.0,6.1,High,0.0
-Nga Moe Yeik,Complete,Water Supply,,,17.355585,96.160508,0.0,,222.0,698.9,32.4,760,0.129,10.0,3.1,0.7,10.0,6.1,High,0.0
-Shanma-Nge,Complete,Irrigation,,,20.839191,95.597897,0.0,,26.61,464.2,36.2,760,0.1195,10.0,2.8,1.1,10.0,6.0,High,0.0
-Linban,Complete,Irrigation,,,23.14541,95.525593,0.0,,12.56,419.9,40.1,760,0.1112,10.0,2.5,1.2,10.0,6.0,High,0.0
-South Pinle,Complete,Irrigation,Pinle,,21.641813,95.549981,0.0,,10.46,434.7,38.1,760,0.1152,10.0,2.6,1.2,10.0,6.0,High,0.0
-Sedawgyi,Complete,Multi-purpose,Chaung Ma Gyi,,22.348589,96.323053,0.0,,446.49,340.0,41.6,760,0.1084,10.0,2.4,1.5,10.0,6.0,High,0.0
-Dam near 21.55N 95.54E,Complete,Irrigation,,,21.546729,95.540688,0.0,,0.0,438.8,39.4,760,0.1126,10.0,2.5,1.1,10.0,6.0,High,0.0
-Inya,Complete,Water Supply,,,16.838848,96.135034,0.0,,0.0,750.2,35.5,760,0.1212,10.0,2.8,0.7,10.0,6.0,High,0.0
-Kinmundaung,Complete,Irrigation,Kinmundaung,,19.908676,95.693168,0.0,,12.982,512.8,36.5,760,0.1188,10.0,2.7,1.0,10.0,6.0,High,0.0
-Dam near 21.51N 95.53E,Complete,Irrigation,,,21.505946,95.534877,0.0,,0.0,440.8,40.1,760,0.1111,10.0,2.5,1.1,10.0,6.0,High,0.0
-Thauk Ye Khat 1,Identified Sites,,Thauk Ye Khat,Kayin,18.938587,96.719624,0.0,,0.0,519.8,43.2,760,0.1055,10.0,2.3,1.0,10.0,5.9,High,0.0
-Yenam,Planned,Hydropower,May Hka,,27.727616,97.879027,0.0,,0.0,576.1,40.2,760,0.1111,10.0,2.5,0.9,10.0,5.9,High,0.0
-Paunglinn,Complete,Irrigation,Paunglinn,,17.509063,96.095995,0.0,,147.03,687.7,38.4,760,0.1146,10.0,2.6,0.7,10.0,5.9,High,0.0
-Taungtha,Complete,Irrigation,Taungtha,,21.268241,95.476952,0.0,,6.15,455.5,47.0,760,0.0995,10.0,2.1,1.1,10.0,5.9,High,0.0
-Sinlan,Complete,Irrigation,Sinlan,,22.074457,96.436115,0.0,,8.421,334.4,53.3,760,0.0911,10.0,1.9,1.5,10.0,5.9,High,0.0
-Sunchaung,Complete,Irrigation,Sun Creek,,20.169512,95.584486,0.0,,38.515,504.3,43.7,760,0.1048,10.0,2.3,1.0,10.0,5.9,High,0.0
-Dam near 21.39N 95.52E,Complete,Irrigation,,,21.385758,95.518783,0.0,,0.0,446.8,42.2,760,0.1072,10.0,2.4,1.1,10.0,5.9,High,0.0
-Hlaw Ga,Complete,Water Supply,,,16.97279,96.11125,0.0,,54.0,738.3,37.9,760,0.1157,10.0,2.6,0.7,10.0,5.9,High,0.0
-Dam near 20.11N 95.60E,Complete,Irrigation,,,20.114814,95.601787,0.0,,0.0,506.4,42.4,760,0.107,10.0,2.4,1.0,10.0,5.9,High,0.0
-Gyobyu,Complete,Water Supply,Gyobyu Chaung,,17.376582,96.035673,0.0,,75.0,703.4,45.6,760,0.1016,10.0,2.2,0.7,10.0,5.8,High,0.0
-Kyauktalone (1),Complete,Irrigation,Kyauktalone,,21.107401,95.458244,0.0,,6.46,464.2,49.5,760,0.0959,10.0,2.0,1.1,10.0,5.8,High,0.0
-Yeywa,Complete,Hydropower,Lower Myitnge,Mandalay,21.675196,96.474077,132.0,790.0,2630.0,344.0,57.3,760,0.0865,10.0,1.7,1.5,10.0,5.8,High,0.0
-Kyauktalone (2) - Modulating Dam,Complete,Irrigation,Kyauktalone,,21.076999,95.469553,0.0,,12.8,464.5,48.4,760,0.0974,10.0,2.1,1.1,10.0,5.8,High,0.0
-Natmouk,Complete,Irrigation,,,20.409266,95.48095,0.0,,124.582,498.4,52.2,760,0.0924,10.0,1.9,1.0,10.0,5.8,High,0.0
-Letpan,Complete,Irrigation,Htan Pin Su,,22.053801,95.400088,0.0,,5.959,438.6,53.3,760,0.091,10.0,1.9,1.1,10.0,5.8,High,0.0
-Palin,Complete,Irrigation,Palin,,20.291535,95.525824,0.0,,15.06,501.6,48.6,760,0.0971,10.0,2.1,1.0,10.0,5.8,High,0.0
-Phugyi,Complete,Water Supply,,,17.245914,96.042454,0.0,,222.0,715.5,45.0,760,0.1026,10.0,2.2,0.7,10.0,5.8,High,0.0
-Sunlun,Complete,Irrigation,Sunlun,,21.417041,95.416244,0.0,,5.66,455.5,52.7,760,0.0917,10.0,1.9,1.1,10.0,5.8,High,0.0
-Dam near 17.62N 96.01E,Complete,Irrigation,,,17.623217,96.014876,0.0,,0.0,681.3,45.9,760,0.1011,10.0,2.2,0.7,10.0,5.8,High,0.0
-Dam near 20.70N 95.47E,Complete,Irrigation,,,20.704069,95.467041,0.0,,0.0,483.1,51.0,760,0.094,10.0,2.0,1.0,10.0,5.8,High,0.0
-Yanpe,Complete,Irrigation,Yanpe,,19.790566,95.517982,0.0,,43.36,535.0,57.9,760,0.0859,10.0,1.7,0.9,10.0,5.7,High,0.0
-Dam near 20.78N 95.34E,Complete,Irrigation,,,20.775632,95.342022,0.0,,0.0,490.7,63.2,760,0.0807,10.0,1.6,1.0,10.0,5.7,High,0.0
-Thonze,Complete,Irrigation,Thonze,,17.739216,95.951677,0.0,,293.1,674.1,51.6,760,0.0932,10.0,1.9,0.7,10.0,5.7,High,0.0
-Sindewa,Complete,Irrigation,Sindewa,,21.118182,95.305956,0.0,,14.76,478.0,65.2,760,0.0789,10.0,1.5,1.0,10.0,5.7,High,0.0
-The-gaw,Complete,Irrigation,The-gaw,,17.816109,95.866928,0.0,,64.79,671.9,59.8,760,0.0839,10.0,1.7,0.7,10.0,5.7,High,0.0
-Thapanzeik,Complete,Multi-purpose,Mu,,23.306586,95.354794,0.0,,3552.48,439.3,58.8,760,0.085,10.0,1.7,1.1,10.0,5.7,High,0.0
-Min Hla,Complete,Irrigation,Min Hla,,18.117447,95.909904,0.0,,53.86,642.1,52.0,760,0.0926,10.0,1.9,0.8,10.0,5.7,High,0.0
-Nwegway,Complete,Irrigation,,,22.008236,95.303983,0.0,,3.701,449.2,63.2,760,0.0807,10.0,1.6,1.1,10.0,5.7,High,0.0
-Thazi,Complete,Irrigation,Thazi,,22.240321,95.262088,0.0,,8.141,449.2,67.4,760,0.0771,10.0,1.5,1.1,10.0,5.7,High,0.0
-Ta Rung Hka,Identified Sites,,Ta Rung Hka,Kachin,26.718029,96.46829,0.0,,0.0,541.9,57.4,760,0.0864,10.0,1.7,0.9,10.0,5.7,High,0.0
-Renan,Proposed,Hydropower,N'Mai  Hka,Kachin,27.525941,98.090192,159.0,1200.0,1183.0,548.3,63.8,760,0.0801,10.0,1.6,0.9,10.0,5.7,High,0.0
-Bawbin,Complete,Irrigation,Bawbin,,18.362836,95.796146,0.0,,120.56,627.5,61.1,760,0.0827,10.0,1.6,0.8,10.0,5.7,High,0.0
-Kantin-BeeLin,Complete,Irrigation,Kantin-BeeLin,,17.9571,95.887794,0.0,,165.36,657.9,56.2,760,0.0876,10.0,1.8,0.8,10.0,5.7,High,0.0
-Shweli 3,Under Construction,Hydropower,Shweli,Shan,23.315,96.769,122.0,1050.0,5464.0,296.6,85.0,760,0.0654,10.0,1.2,1.7,10.0,5.7,High,0.0
-Htanzaloke,Complete,Irrigation,Htanzaloke,,22.159941,95.257973,0.0,,3.454,450.9,67.9,760,0.0767,10.0,1.5,1.1,10.0,5.7,High,0.0
-Dam near 20.76N 95.39E,Complete,Irrigation,,,20.758838,95.386066,0.0,,0.0,487.6,58.8,760,0.0849,10.0,1.7,1.0,10.0,5.7,High,0.0
-Dam near 20.76N 95.36E,Complete,Irrigation,,,20.762818,95.355246,0.0,,0.0,490.2,62.0,760,0.0818,10.0,1.6,1.0,10.0,5.7,High,0.0
-Dam near 20.72N 95.42E,Complete,Irrigation,,,20.720078,95.424149,0.0,,0.0,486.1,55.3,760,0.0887,10.0,1.8,1.0,10.0,5.7,High,0.0
-Upper Baluchaung 1,Under Construction,Hydropower,Balchuang,,20.478991,96.689153,0.0,,0.0,393.9,73.7,760,0.0724,10.0,1.4,1.3,10.0,5.7,High,0.0
-Dam near 18.28N 95.86E,Complete,Irrigation,,,18.281025,95.855019,0.0,,0.0,631.0,55.9,760,0.0881,10.0,1.8,0.8,10.0,5.7,High,0.0
-Dam near 20.74N 95.38E,Complete,Irrigation,,,20.740185,95.383724,0.0,,0.0,488.7,59.2,760,0.0845,10.0,1.7,1.0,10.0,5.7,High,0.0
-Dam near 20.77N 95.35E,Complete,Irrigation,,,20.768534,95.35271,0.0,,0.0,490.1,62.2,760,0.0816,10.0,1.6,1.0,10.0,5.7,High,0.0
-Dam near 20.75N 95.40E,Complete,Irrigation,,,20.751761,95.400055,0.0,,0.0,486.7,57.5,760,0.0863,10.0,1.7,1.0,10.0,5.7,High,0.0
-Welaung,Complete,Irrigation,Welaung,,21.092847,95.396977,0.0,,24.81,470.5,55.9,760,0.088,10.0,1.8,1.1,10.0,5.7,High,0.0
-Dam near 18.53N 95.72E,Complete,Irrigation,,,18.533566,95.718861,0.0,,0.0,617.9,67.1,760,0.0773,10.0,1.5,0.8,10.0,5.6,High,0.0
-Phaunggada,Complete,Irrigation,,,22.021024,95.070568,0.0,,9.165,472.4,87.2,760,0.0642,10.0,1.1,1.1,10.0,5.6,High,0.0
-Zawgyi,Complete,Hydropower,Zawgyi,,21.565078,96.873564,0.0,,639.0,311.3,98.2,760,0.059,10.0,1.0,1.6,10.0,5.6,High,0.0
-Pinn Chaung,Complete,Irrigation,Pinn Chaung,,20.712043,95.300929,0.0,,23.25,497.7,68.1,760,0.0766,10.0,1.5,1.0,10.0,5.6,High,0.0
-Sedawgyi (upper),Proposed,Multi-purpose,Ma Gyi Chaung,Shan,22.74764,96.20626,73.0,64.0,593.0,348.5,30.0,760,0.136,10.0,3.3,1.4,5.2,5.6,High,0.0
-Thauk Ye Khat 2,Complete,Hydropower,Thauk Ye Khat,Kayin,18.914102,96.619907,94.0,120.0,444.0,527.9,32.5,760,0.1289,10.0,3.1,0.9,6.6,5.6,High,0.0
-Pade,Complete,Irrigation,Pade,,19.212315,95.610306,0.0,,40.6,570.3,67.1,760,0.0773,10.0,1.5,0.9,10.0,5.6,High,0.0
-Yeywa (middle),Proposed,Hydropower,Lower Myitnge,Shan,21.96024,96.87313,160.0,700.0,454.0,294.9,98.3,760,0.059,10.0,1.0,1.7,10.0,5.6,High,0.0
-Taungnawin,Complete,Irrigation,Taungnawin Creek,,18.922544,95.578598,0.0,,354.009,595.4,75.4,760,0.0712,10.0,1.3,0.8,10.0,5.6,High,0.0
-Ngathayauk,Complete,Irrigation,Chaung Ma Gyi,,21.168644,95.107695,0.0,,8.61,494.7,85.5,760,0.0651,10.0,1.2,1.0,10.0,5.6,High,0.0
-Sin Chaung,Complete,Irrigation,Sin Chaung,,21.496183,95.16705,0.0,,3.961,476.9,78.2,760,0.0694,10.0,1.3,1.0,10.0,5.6,High,0.0
-Sarlingyi,Complete,Irrigation,Sarlingyi,,21.981113,95.066611,0.0,,5.699,473.6,87.7,760,0.064,10.0,1.1,1.1,10.0,5.6,High,0.0
-Popa,Complete,Irrigation,,,20.808545,95.247579,0.0,,0.0,497.7,72.7,760,0.0731,10.0,1.4,1.0,10.0,5.6,High,0.0
-Myothit,Complete,Irrigation,Myothit,,22.41452,95.214678,0.0,,9.21,451.8,72.1,760,0.0735,10.0,1.4,1.1,10.0,5.6,High,0.0
-Laiza,Planned,Hydropower,Malikha,,26.1973,97.746971,0.0,,0.0,423.7,81.9,760,0.0671,10.0,1.2,1.2,10.0,5.6,High,0.0
-Laza,Proposed,Hydropower,Mali Hka,Kachin,26.491779,97.77695,196.0,1900.0,11780.0,451.8,73.0,760,0.0729,10.0,1.4,1.1,10.0,5.6,High,0.0
-Myitsone,Suspended,Hydropower,Ayeyarwady,Kachin,25.715,97.535,140.0,6000.0,13190.0,388.1,83.6,760,0.0662,10.0,1.2,1.3,10.0,5.6,High,0.0
-Bewt Gyi,Complete,Irrigation,,,19.313794,95.528459,0.0,,0.0,568.6,72.9,760,0.0729,10.0,1.4,0.9,10.0,5.6,High,0.0
-Paung Laung (middle),Proposed,Hydropower,Paung Laung Chaung,Mandalay,19.86,96.508,110.0,100.0,429.0,454.5,43.0,760,0.1058,10.0,2.3,1.1,7.4,5.5,High,0.0
-Belin,Proposed,Hydropower,Bilin River,Mon,17.519723,97.243546,131.0,280.0,9711.0,633.1,82.8,760,0.0666,10.0,1.2,0.8,10.0,5.5,High,0.0
-Ngwe Thar,Complete,Irrigation,,,21.902657,95.041531,0.0,,18.811,477.9,90.3,760,0.0627,10.0,1.1,1.0,10.0,5.5,High,0.0
-Nagar,Complete,Irrigation,Nagar,,20.395229,95.16702,0.0,,7.762,526.7,84.9,760,0.0655,10.0,1.2,0.9,10.0,5.5,High,0.0
-Shwezaye,Cancelled,Hydropower,Chindwin,,22.33525,94.9989,0.0,,0.0,474.7,94.4,760,0.0607,10.0,1.1,1.1,10.0,5.5,High,0.0
-South Nawin (2),Complete,Irrigation,South Nawin,,18.959728,95.492622,0.0,,25.91,598.6,83.7,760,0.0661,10.0,1.2,0.8,10.0,5.5,High,0.0
-Yunzalin,Identified Sites,,,Kayin,18.29496,97.34081,0.0,,0.0,550.3,100.1,760,0.0577,10.0,1.0,0.9,10.0,5.5,High,0.0
-U Yu Chaung,Identified Sites,,Uyu,Sagaing,24.865948,95.294431,0.0,,0.0,498.3,91.1,760,0.0622,10.0,1.1,1.0,10.0,5.5,High,0.0
-Paung Laung (upper),Complete,Hydropower,Paung Laung Chaung,Mandalay,19.756,96.598,98.0,140.0,1286.0,456.5,48.6,760,0.0972,10.0,2.1,1.1,7.7,5.5,High,0.0
-Dam near 19.07N 95.44E,Complete,Irrigation,,,19.06693,95.44187,0.0,,0.0,593.9,87.1,760,0.0643,10.0,1.1,0.8,10.0,5.5,High,0.0
-Wegyi,Complete,Irrigation,Wegyi,,18.622783,95.609994,0.0,,310.97,617.7,77.4,760,0.0699,10.0,1.3,0.8,10.0,5.5,High,0.0
-Ledaingzin,Complete,Irrigation,Paung Kwe,,20.445332,95.15673,0.0,,5.86,524.8,85.5,760,0.0651,10.0,1.2,1.0,10.0,5.5,High,0.0
-Ngwedaung,Complete,Irrigation,Ngwetaung,,19.555742,97.163331,0.0,,826.852,437.7,99.4,760,0.0585,10.0,1.0,1.1,10.0,5.5,High,0.0
-Mobyè,Complete,Irrigation,Balu Chaung,,19.792636,97.097256,0.0,,826.852,420.5,99.5,760,0.0585,10.0,1.0,1.2,10.0,5.5,High,0.0
-Kinda,Complete,Multi-purpose,Panlaung Chaung,Shan,21.160437,96.321037,72.0,56.0,1078.0,382.1,40.0,760,0.1114,10.0,2.5,1.3,5.6,5.4,High,0.0
-Zaungtu,Complete,Hydropower,Bago River,Bago,17.755818,96.19898,45.0,20.0,407.0,658.8,25.3,760,0.1529,10.0,3.9,0.8,3.2,5.3,High,0.0
-Nancho,Complete,Hydropower,Sin The Chaung,Naypyitaw,19.7412,96.450483,72.0,40.0,9.0,468.0,33.4,760,0.1264,10.0,3.0,1.1,4.5,5.3,High,0.0
-Bawgata,Proposed,Hydropower,Bawgata,Bago,18.255561,96.848496,80.0,160.0,835.0,577.2,48.0,760,0.098,10.0,2.1,0.9,6.3,5.2,High,0.0
-Myogyi,Complete,Multi-purpose,Zawgyi River,Shan,21.46349,96.39144,79.0,30.0,443.0,360.8,48.2,760,0.0978,10.0,2.1,1.4,5.3,5.2,High,0.0
-Kanggyigone,Complete,Irrigation,In Yone,,19.043285,95.308665,0.0,,7.53,605.6,101.3,760,0.0446,8.9,1.0,0.8,10.0,5.1,High,0.0
-Thapanzeik,Complete,Multi-purpose,Mu River,Sagaing,23.305918,95.35833,33.0,30.0,3552.0,439.0,58.4,760,0.0853,10.0,1.7,1.1,5.7,5.1,High,0.0
-Shwegyin,Complete,Hydropower,Shwegyin River,Bago,17.970227,96.935001,57.0,75.0,2080.0,600.9,54.0,760,0.0902,10.0,1.9,0.8,5.8,5.1,High,0.0
-Sedawgyi,Complete,Multi-purpose,Ma Gyi Chaung,Mandalay,22.348646,96.326937,41.0,25.0,448.0,339.6,42.0,760,0.1077,10.0,2.4,1.5,3.0,5.0,Moderate,0.0
-Deedoke,Proposed,Hydropower,Lower Myitnge,Mandalay,21.68723,96.404455,27.0,60.0,13.0,350.2,50.1,760,0.095,10.0,2.0,1.4,1.9,4.7,Moderate,0.0
-Zawgyi II,Complete,Multi-purpose,Zawgyi River,Shan,21.5648,96.8726,44.0,12.0,639.0,311.4,98.1,760,0.0591,10.0,1.0,1.6,3.3,4.6,Moderate,0.0
-Thirinandar,Complete,Irrigation,,,21.51692,94.932945,0.0,,2.11,499.1,102.2,760,0.0371,7.4,1.0,1.0,10.0,4.6,Moderate,0.0
-Baluchaung (upper),Under Construction,Hydropower,Baluchaung,Shan,20.484592,96.781918,35.0,30.0,0.0,386.3,83.3,760,0.0663,10.0,1.2,1.3,2.2,4.5,Moderate,0.0
-Zawgyi I,Complete,Hydropower,Zawgyi River,Shan,21.3833,96.90147,0.0,18.0,0.0,318.2,100.6,760,0.0515,10.0,1.0,1.6,0.1,4.1,Moderate,0.0
-Middle Yeywa,Planned,Hydropower,Myitnge,,21.938771,96.930558,0.0,,0.0,290.1,104.2,760,0.0248,5.0,1.0,1.7,10.0,3.9,Moderate,0.0
-Tamanthi,Proposed,Hydropower,Chindwin,Sagaing,25.322227,95.296955,74.0,1200.0,20922.0,523.4,103.6,760,0.0279,5.6,1.0,1.0,10.0,3.9,Moderate,0.0
-Weigyi,Planned,Hydropower,Salween,,18.632617,97.359484,0.0,,0.0,515.7,105.7,760,0.0185,3.7,0.9,1.0,10.0,3.3,Moderate,0.0
-Nam Hka,Proposed,Hydropower,Nam Hka,,22.056938,98.772066,0.0,,0.0,118.2,293.6,760,0.0001,0.0,0.3,4.2,10.0,2.5,Low,0.0
-Naopha,Proposed,Hydropower,Thanlwin Mainstem,Shan,22.987464,98.499151,90.0,1200.0,857.0,115.9,264.2,760,0.0001,0.0,0.4,4.3,10.0,2.5,Low,0.0
-Upper Salween,Planned,Hydropower,Salween,,23.423472,98.601643,0.0,,0.0,125.0,270.2,760,0.0001,0.0,0.4,4.0,10.0,2.4,Low,0.0
-Khaunglanphu,Proposed,Hydropower,N'Mai  Hka,Kachin,26.849507,98.376808,223.0,2700.0,3100.0,468.1,110.9,760,0.0065,1.3,0.9,1.1,10.0,2.4,Low,0.0
-KunLong,Proposed,Hydropower,Thanlwin Mainstem,Shan,23.531667,98.611111,103.0,1400.0,691.0,131.4,268.9,760,0.0001,0.0,0.4,3.8,10.0,2.4,Low,0.0
-Upper Haw Kham,Proposed,Hydropower,Nam Pawn,,19.177977,97.344749,0.0,,0.0,463.1,112.0,760,0.0052,1.0,0.9,1.1,10.0,2.3,Low,0.0
-Phizaw,Planned,Hydropower,May Hka,,26.827594,98.385556,0.0,,0.0,465.5,112.7,760,0.0045,0.9,0.9,1.1,10.0,2.3,Low,0.0
-Mantong,Proposed,Hydropower,Nam Ma,Shan,22.97469,98.55727,109.0,225.0,1215.0,109.8,270.2,760,0.0001,0.0,0.4,4.6,8.7,2.3,Low,0.0
-Dam near 18.65N 95.25E,Complete,Irrigation,,,18.651777,95.252143,0.0,,0.0,640.2,114.1,760,0.0034,0.7,0.9,0.8,10.0,2.2,Low,0.0
-Kaukkwe,Complete,Irrigation,Kaukkwe,,22.933678,97.798928,0.0,,6.212,186.1,193.0,760,0.0001,0.0,0.5,2.7,10.0,2.2,Low,0.0
-Myaing Chaung,Complete,Irrigation,Myaing Chaung,,21.615887,94.816231,0.0,,4.936,507.7,113.9,760,0.0035,0.7,0.9,1.0,10.0,2.2,Low,0.0
-Mone Yin,Complete,Irrigation,Nam Swam,,23.145283,97.577462,0.0,,31.961,211.8,168.7,760,0.0001,0.0,0.6,2.4,10.0,2.2,Low,0.0
-Baluchaung Dam,Complete,Hydropower,Baluchaung,,19.572117,97.31465,0.0,,0.0,427.5,115.3,760,0.0027,0.5,0.9,1.2,10.0,2.2,Low,0.0
-Shwedaung,Complete,Irrigation,Kalar Chaung,,18.710748,95.252426,0.0,,6.61,635.5,113.0,760,0.0042,0.8,0.9,0.8,10.0,2.2,Low,0.0
-Upper Yeywa,Under Construction,Hydropower,Myitnge,,22.240208,97.162877,0.0,,0.0,257.8,127.9,760,0.0002,0.0,0.8,1.9,10.0,2.1,Low,0.0
-Nam Hka,Proposed,Hydropower,Nam Hka,Shan,21.733821,98.950044,120.0,210.0,450.0,135.3,312.6,760,0.0001,0.0,0.3,3.7,8.5,2.1,Low,0.0
-Pisa,Proposed,Hydropower,N'Mai  Hka,Kachin,26.598389,98.34309,153.0,2000.0,535.0,442.3,119.7,760,0.0011,0.2,0.8,1.1,10.0,2.1,Low,0.0
-Namtu,Planned,Hydropower,,,22.857605,97.307334,0.0,,0.0,235.9,142.8,760,0.0001,0.0,0.7,2.1,10.0,2.1,Low,0.0
-Mēntóu xī,Complete,Hydropower,Měng nǎi hé,,24.835331,97.768566,0.0,,0.0,295.2,146.8,760,0.0001,0.0,0.7,1.7,10.0,2.1,Low,0.0
-Ywathit,Proposed,Hydropower,Thanlwin Mainstem,Kayah,19.131059,97.521257,167.0,4000.0,10757.0,458.9,129.5,760,0.0002,0.0,0.8,1.1,10.0,2.0,Low,0.0
-Mong Ton,Proposed,Hydropower,Thanlwin Mainstem,Shan,20.456389,98.65,241.0,7000.0,39800.0,277.0,275.3,760,0.0001,0.0,0.4,1.8,10.0,2.0,Low,0.0
-Chipwi,Proposed,Hydropower,N'Mai  Hka,Kachin,25.8905,98.12572,203.0,3400.0,1910.0,376.3,129.5,760,0.0002,0.0,0.8,1.3,10.0,2.0,Low,0.0
-Lakin,Planned,Hydropower,May Hka,,26.595833,98.406111,0.0,,0.0,440.2,125.5,760,0.0003,0.1,0.8,1.1,10.0,2.0,Low,0.0
-Pashe,Planned,Hydropower,N'Mai,,26.476081,98.289919,0.0,,0.0,431.0,120.6,760,0.0009,0.2,0.8,1.2,10.0,2.0,Low,0.0
-South Yamar,Complete,Irrigation,Yamar Taung,,21.821946,94.736177,0.0,,21.027,510.3,121.8,760,0.0007,0.1,0.8,1.0,10.0,2.0,Low,0.0
-Wanpon,Complete,Irrigation,Wanpon,,20.938172,97.648021,0.0,,4.23,287.3,176.6,760,0.0001,0.0,0.6,1.7,10.0,2.0,Low,0.0
-Tum Baing,Planned,Hydropower,Tum Baing Hka,,25.48725,97.963157,0.0,,0.0,343.7,133.3,760,0.0001,0.0,0.8,1.5,10.0,2.0,Low,0.0
-Ywathit,Planned,Hydropower,Salween,,19.777904,97.732943,0.0,,0.0,385.5,162.6,760,0.0001,0.0,0.6,1.3,10.0,2.0,Low,0.0
-Upper Nam Pawn,Planned,Hydropower,Nam Pawn,,19.995674,97.40098,0.0,,0.0,383.8,136.4,760,0.0001,0.0,0.7,1.3,10.0,2.0,Low,0.0
-Lower Nam Pawn,Planned,Hydropower,Nam Pawn,,19.480045,97.417853,0.0,,0.0,430.4,124.5,760,0.0004,0.1,0.8,1.2,10.0,2.0,Low,0.0
-Wutsok,Proposed,Hydropower,N'Mai  Hka,Kachin,26.403585,98.292511,165.0,1800.0,605.0,423.3,124.3,760,0.0004,0.1,0.8,1.2,10.0,2.0,Low,0.0
-Nyaung-gaing,Complete,Irrigation,Nyaung-gaing,,18.797819,95.14163,0.0,,21.6,636.8,123.0,760,0.0006,0.1,0.8,0.8,10.0,1.9,Low,0.0
-North Yamar (1),Complete,Irrigation,,,22.053354,94.67744,0.0,,17.339,511.4,127.6,760,0.0002,0.0,0.8,1.0,10.0,1.9,Low,0.0
-Maday,Complete,Irrigation,Maday,,19.033781,94.868121,0.0,,66.636,639.8,147.2,760,0.0001,0.0,0.7,0.8,10.0,1.9,Low,0.0
-Ma Mya,Complete,Irrigation,Ma Mya,,18.106536,95.081046,0.0,,86.38,696.5,139.1,760,0.0001,0.0,0.7,0.7,10.0,1.9,Low,0.0
-Hlaing Chaung,Complete,Irrigation,,,21.999294,94.580082,0.0,,6.624,522.2,137.7,760,0.0001,0.0,0.7,1.0,10.0,1.9,Low,0.0
-Nam Hkok,Identified Sites,,Nam Hkoke,Shan,20.196337,99.34667,0.0,,0.0,289.1,336.6,760,0.0001,0.0,0.3,1.7,10.0,1.9,Low,0.0
-Kanyin,Complete,Irrigation,Kanyin,,17.991848,95.072583,0.0,,183.619,706.6,141.4,760,0.0001,0.0,0.7,0.7,10.0,1.9,Low,0.0
-Hutgyi,Proposed,Hydropower,Thanlwin Mainstem,Kayin,17.528,97.747,118.0,1360.0,509.0,614.3,136.0,760,0.0001,0.0,0.7,0.8,10.0,1.9,Low,0.0
-Yeywa (upper),Under Construction,Hydropower,Lower Myitnge,Shan,22.254093,97.046741,97.0,280.0,341.0,269.0,115.9,760,0.0023,0.5,0.9,1.9,7.3,1.9,Low,0.0
-Khawar,Complete,Irrigation,Khawar,,18.450999,95.011249,0.0,,15.477,673.4,142.2,760,0.0001,0.0,0.7,0.7,10.0,1.9,Low,0.0
-Mindon,Identified Sites,,,Magway,19.37089,94.712866,0.0,,0.0,628.7,152.4,760,0.0001,0.0,0.7,0.8,10.0,1.9,Low,0.0
-Kyeeon Kyeewa,Complete,Hydropower,Mone,,20.331771,94.417348,0.0,,0.0,597.4,163.3,760,0.0001,0.0,0.6,0.8,10.0,1.9,Low,0.0
-Dam near 20.87N 94.37E,Complete,Multi-purpose,,,20.869511,94.367835,0.0,,0.0,577.3,163.4,760,0.0001,0.0,0.6,0.9,10.0,1.9,Low,0.0
-Shwenattaung,Complete,Irrigation,Shwenattaung,,16.411455,97.657402,0.0,,69.104,735.6,127.3,760,0.0002,0.0,0.8,0.7,10.0,1.9,Low,0.0
-Yinshe,Complete,Irrigation,,,19.962479,94.572117,0.0,,3.21,603.6,150.8,760,0.0001,0.0,0.7,0.8,10.0,1.9,Low,0.0
-Manchaung (Mann),Complete,Irrigation,Mann Creek,,20.096772,94.423262,0.0,,148.018,609.2,165.0,760,0.0001,0.0,0.6,0.8,10.0,1.9,Low,0.0
-Manipur,Under Construction,Multi-purpose,Manipur,Chin,22.804356,93.943248,168.0,380.0,1643.0,580.0,201.4,760,0.0001,0.0,0.5,0.9,10.0,1.8,Low,0.0
-Lemro 1,Proposed,Hydropower,Le Mro,Chin,20.857443,93.350503,0.0,600.0,9129.0,675.6,268.9,760,0.0001,0.0,0.4,0.7,10.0,1.8,Low,0.0
-Buywa (upper),Proposed,Multi-purpose,Mon Chaung,Magway,20.76609,94.0818,138.0,150.0,721.0,608.8,193.7,760,0.0001,0.0,0.5,0.8,9.6,1.8,Low,0.0
-Kyein Ta Li,Identified Sites,,Kyein Ta Li,Rakhine,17.950012,94.576508,0.0,,0.0,744.3,194.1,760,0.0001,0.0,0.5,0.7,10.0,1.8,Low,0.0
-Taninthayi,Proposed,Hydropower,Taninthayi,Tanintharyi,12.777,98.94,0.0,600.0,27086.0,1113.5,184.8,760,0.0001,0.0,0.5,0.4,10.0,1.8,Low,0.0
-Shweli 2,Proposed,Hydropower,Shweli,Shan,23.6531,97.31235,92.0,520.0,72.0,254.0,136.4,760,0.0001,0.0,0.7,2.0,7.7,1.8,Low,0.0
-Lam Pha,Identified Sites,,Lam Pha,Kayin,16.305021,98.348758,0.0,,0.0,731.2,201.3,760,0.0001,0.0,0.5,0.7,10.0,1.8,Low,0.0
-Mone,Complete,Hydropower,Mone,,20.478481,94.259852,0.0,,0.0,604.7,178.2,760,0.0001,0.0,0.6,0.8,10.0,1.8,Low,0.0
-Than Dwe,Identified Sites,,Than Dwe,Rakhine,18.386144,94.493902,0.0,,0.0,716.3,197.2,760,0.0001,0.0,0.5,0.7,10.0,1.8,Low,0.0
-Myet Taw Chaung,Identified Sites,,Myet Taw Chaung,Kayin,15.682011,97.915769,0.0,,0.0,807.7,139.2,760,0.0001,0.0,0.7,0.6,10.0,1.8,Low,0.0
-Sar Ra Wa Chaung,Identified Sites,,,Tanintharyi,12.829406,98.98167,0.0,,0.0,1107.4,179.1,760,0.0001,0.0,0.6,0.5,10.0,1.8,Low,0.0
-Mi Chaung,Identified Sites,,Mi Chaung,Chin,21.334187,93.073495,0.0,,0.0,688.2,295.1,760,0.0001,0.0,0.3,0.7,10.0,1.8,Low,0.0
-South Khayan,Complete,Irrigation,Khayan,,22.598882,94.028495,0.0,,14.69,571.7,193.3,760,0.0001,0.0,0.5,0.9,10.0,1.8,Low,0.0
-Nankathu,Complete,Irrigation,Nankathu,,17.850106,95.036264,0.0,,49.36,720.9,147.0,760,0.0001,0.0,0.7,0.7,10.0,1.8,Low,0.0
-Upper Bu,Planned,Hydropower,,,20.803853,94.037043,0.0,,0.0,611.5,198.0,760,0.0001,0.0,0.5,0.8,10.0,1.8,Low,0.0
-Yazagyo,Complete,Multi-purpose,Nay Yin Za Yar,,23.53123,94.09707,0.0,,0.0,570.3,188.1,760,0.0001,0.0,0.5,0.9,10.0,1.8,Low,0.0
-Glohong Kra,Identified Sites,,Glohong Kra,Tanintharyi,10.775209,98.858324,0.0,,0.0,1335.8,406.9,760,0.0001,0.0,0.2,0.4,10.0,1.7,Low,0.0
-Tha Gyet Chaung,Identified Sites,,Tha Gyet,Tanintharyi,12.132896,99.227161,0.0,,0.0,1183.5,256.7,760,0.0001,0.0,0.4,0.4,10.0,1.7,Low,0.0
-Thein Kun Chaung,Identified Sites,,Thein Kun,Tanintharyi,11.769949,99.331205,0.0,,0.0,1223.4,297.3,760,0.0001,0.0,0.3,0.4,10.0,1.7,Low,0.0
-Nam Tu,Proposed,Hydropower,Myitnge Upper,Shan,22.720943,97.319365,114.0,100.0,0.0,234.6,144.0,760,0.0001,0.0,0.7,2.1,7.2,1.7,Low,0.0
-Lawngdin,Proposed,Hydropower,Naw Chang  Hka,Kachin,26.043012,98.277743,79.0,600.0,67.0,386.1,137.6,760,0.0001,0.0,0.7,1.3,7.2,1.6,Low,0.0
-Dum Ban,Proposed,Hydropower,N'Mai  Hka Tributary,Kachin,25.511556,97.907021,81.0,130.0,34.0,348.9,127.0,760,0.0003,0.1,0.8,1.4,5.4,1.4,Low,0.0
-Shweli 1,Complete,Hydropower,Shweli,Shan,23.698,97.506,47.0,600.0,24.11,237.9,154.8,760,0.0001,0.0,0.6,2.1,5.2,1.4,Low,0.0
-Nam Pawn (lower),Proposed,Hydropower,Nam Pawn,Kayah,19.555,97.408611,88.0,105.0,526.0,423.9,124.7,760,0.0004,0.1,0.8,1.2,6.2,1.4,Low,0.0
-Hawkham (upper),Proposed,Hydropower,Nam Pawn,Kayah,19.211667,97.399722,72.0,180.0,333.0,457.0,118.2,760,0.0015,0.3,0.8,1.1,5.4,1.4,Low,0.0
-Mongwa,Complete,Hydropower,Nam Lwe,Shan,21.39699,100.325821,51.0,66.0,78.0,171.0,454.4,760,0.0001,0.0,0.2,2.9,3.4,1.2,Low,0.0
-Tongxinqiao,Proposed,Hydropower,Naw Chang  Hka,Kachin,25.963646,98.360249,63.0,340.0,5.0,374.9,148.5,760,0.0001,0.0,0.7,1.3,5.1,1.2,Low,0.0
-Dapein 2,Proposed,Hydropower,Dapein,Kachin,24.36827,97.4214,59.0,140.0,55.0,284.5,130.6,760,0.0001,0.0,0.8,1.8,4.2,1.2,Low,0.0
-Thahtay,Under Construction,Hydropower,Thahtay,Rakhine,18.64,94.381,91.0,111.0,0.0,706.1,204.8,760,0.0001,0.0,0.5,0.7,5.9,1.2,Low,0.0
-Keng Tawng (upper),Under Construction,Hydropower,Nam Teng,Shan,20.74558,98.184077,56.0,51.0,128.0,269.8,230.6,760,0.0001,0.0,0.4,1.9,3.7,1.1,Low,0.0
-Nam Tabak I,Proposed,Hydropower,Namtamhpak,Kachin,25.090722,97.713906,56.0,141.0,15.0,320.9,129.3,760,0.0002,0.0,0.8,1.6,3.9,1.1,Low,0.0
-Nam Li,Proposed,Hydropower,N'Mai  Hka Tributary,Kachin,25.369858,97.811427,44.0,165.0,2.0,340.6,125.0,760,0.0004,0.1,0.8,1.5,3.3,1.1,Low,0.0
-Mone Chaung,Complete,Multi-purpose,Mon Chaung,Magway,20.479942,94.255325,61.0,75.0,832.0,605.0,178.6,760,0.0001,0.0,0.6,0.8,4.8,1.1,Low,0.0
-Nam Paw,Proposed,Hydropower,Nam Paw Creek,Shan,23.944341,97.911001,54.0,20.0,52.0,216.1,189.8,760,0.0001,0.0,0.5,2.3,3.4,1.1,Low,0.0
-Dapein 1,Complete,Hydropower,Dapein,Kachin,24.421451,97.525448,46.0,240.0,22.0,280.0,139.1,760,0.0001,0.0,0.7,1.8,3.7,1.1,Low,0.0
-Chipwi Nge,Complete,Hydropower,Chipwi Hka,Kachin,25.806073,98.184039,48.0,99.0,1.0,365.3,138.5,760,0.0001,0.0,0.7,1.4,3.3,1.0,Low,0.0
-Myittha,Complete,Multi-purpose,Myittha,Magway,21.992222,94.036944,63.0,40.0,325.0,577.2,193.6,760,0.0001,0.0,0.5,0.9,4.3,1.0,Low,0.0
-Suo Lwe,Proposed,Hydropower,Nam Lwe,Shan,21.359543,100.176054,0.0,240.0,1338.0,168.9,438.9,760,0.0001,0.0,0.2,3.0,2.3,1.0,Low,0.0
-Keng Tong,Proposed,Hydropower,Nam Lwe,Shan,21.617799,99.500985,0.0,170.0,32.0,130.5,369.3,760,0.0001,0.0,0.3,3.8,0.7,1.0,Low,0.0
-Kyee Ohn Kyee Wa,Complete,Multi-purpose,Mon Chaung,Magway,20.331,94.416,50.0,74.0,571.0,597.6,163.4,760,0.0001,0.0,0.6,0.8,3.9,0.9,Low,0.0
-Baluchaung 1,Complete,Hydropower,Baluchaung,Kayah,19.648,97.287,11.0,28.0,2.0,422.0,114.0,760,0.0034,0.7,0.9,1.2,0.8,0.9,Low,0.0
-Hkankawn,Proposed,Hydropower,Naw Chang  Hka,Kachin,26.023865,98.429523,42.0,140.0,5.0,378.9,152.5,760,0.0001,0.0,0.7,1.3,3.1,0.9,Low,0.0
-Gaw Lan,Proposed,Hydropower,Naw Chang  Hka,Kachin,26.051936,98.580461,47.0,120.0,1.0,377.2,165.4,760,0.0001,0.0,0.6,1.3,3.3,0.9,Low,0.0
-Nam Tabak II,Proposed,Hydropower,Namtamhpak,Kachin,25.119755,97.650627,27.0,144.0,0.0,327.4,122.2,760,0.0007,0.1,0.8,1.5,2.2,0.9,Low,0.0
-Keng Tawng,Complete,Hydropower,Nam Teng,Shan,20.598345,98.29305,27.0,54.0,61.0,278.1,240.8,760,0.0001,0.0,0.4,1.8,1.9,0.8,Low,0.0
-Buywa,Under Construction,Multi-purpose,Mon Chaung,Magway,20.658056,94.150833,46.0,42.0,209.0,606.8,187.7,760,0.0001,0.0,0.5,0.8,3.1,0.8,Low,0.0
-Nam Lin,Proposed,Hydropower,Nam Lin,Shan,20.742516,100.241026,26.0,36.0,14.0,236.1,419.9,760,0.0001,0.0,0.2,2.1,1.7,0.8,Low,0.0
-Hpak Nam,Proposed,Hydropower,Nam Pawn,Shan,20.209251,97.456152,20.0,105.0,20.0,361.4,148.8,760,0.0001,0.0,0.7,1.4,1.6,0.7,Low,0.0
-Baluchaung 2,Complete,Hydropower,Baluchaung,Kayah,19.557,97.358,0.0,168.0,0.0,426.5,119.5,760,0.0011,0.2,0.8,1.2,0.7,0.7,Low,0.0
-Keng Yang,Proposed,Hydropower,Nam Lwe,Shan,21.3469,100.5619,0.0,70.0,41.0,187.3,463.7,760,0.0001,0.0,0.2,2.7,0.3,0.7,Low,0.0
-Nam Pawn (upper),Proposed,Hydropower,Nam Pawn,Shan,20.062121,97.437368,10.0,150.0,7.0,375.6,142.2,760,0.0001,0.0,0.7,1.3,1.2,0.7,Low,0.0
-He Kou,Proposed,Hydropower,Nam Lwe,Shan,21.341291,100.720928,0.0,138.0,68.0,196.8,455.9,760,0.0001,0.0,0.2,2.5,0.6,0.7,Low,0.0
-Nam Lang,Proposed,Hydropower,Myitnge Upper,Shan,22.155565,97.248615,0.0,210.0,0.0,251.8,136.8,760,0.0001,0.0,0.7,2.0,0.8,0.7,Low,0.0
-Nam Hsim,Proposed,Hydropower,Myitnge Upper,Shan,22.560266,97.124079,0.0,30.0,0.0,255.8,123.9,760,0.0005,0.1,0.8,2.0,0.1,0.7,Low,0.0
-Mali,Complete,Hydropower,Mali Creek,Kachin,24.98458,97.6135,0.0,11.0,0.0,318.1,125.4,760,0.0003,0.1,0.8,1.6,0.0,0.6,Low,0.0
-Hpi Hseng,Proposed,Hydropower,Nam Pawn,Shan,20.118443,97.43497,10.0,45.0,4.0,370.8,143.8,760,0.0001,0.0,0.7,1.3,0.8,0.6,Low,0.0
-Baluchaung 3,Complete,Hydropower,Baluchaung,Kayah,19.546,97.397,0.0,52.0,0.0,425.3,123.4,760,0.0005,0.1,0.8,1.2,0.2,0.5,Low,0.0
-Mong Hsat,Proposed,Hydropower,Nam Hkoke,Shan,20.662222,99.375,0.0,30.0,0.0,237.3,353.3,760,0.0001,0.0,0.3,2.1,0.1,0.5,Low,0.0
-Saing Din,Identified Sites,,,Rakhine,20.893779,92.652188,0.0,77.0,0.0,742.6,341.1,760,0.0001,0.0,0.3,0.7,0.3,0.3,Low,0.0
-Lemro 2,Proposed,Hydropower,Le Mro,Rakhine,20.740347,93.268689,0.0,90.0,0.0,687.7,278.1,760,0.0001,0.0,0.4,0.7,0.4,0.3,Low,0.0
+Dam near 22.09N 95.86E,Complete,Irrigation,,,22.09474,95.862392,0.0,,0.0,391.3,5.7,760,0.3715,10.0,10.0,1.3,10.0,8.3,Critical,2.0
+Dam near 21.77N 95.89E,Complete,Irrigation,,,21.773814,95.892268,0.0,,0.0,396.9,2.7,760,0.468,10.0,10.0,1.3,10.0,8.3,Critical,2.0
+Natkar,Complete,Irrigation,,,20.684856,95.884964,0.0,,13.94,447.1,7.9,760,0.319,10.0,10.0,1.1,10.0,8.2,Critical,2.0
+Dam near 21.47N 95.87E,Complete,Irrigation,,,21.468135,95.8671,0.0,,0.0,410.2,6.0,760,0.365,10.0,10.0,1.2,10.0,8.2,Critical,2.0
+Ta Nai Hka,Identified Sites,,Ta Nai Hka,Kachin,26.294175,96.95008,0.0,,0.0,474.9,3.9,760,0.4288,10.0,10.0,1.1,10.0,8.2,Critical,2.0
+Dam near 20.72N 95.90E,Complete,Irrigation,,,20.721658,95.903834,0.0,,0.0,443.4,5.6,760,0.3756,10.0,10.0,1.1,10.0,8.2,Critical,2.0
+Dam near 21.74N 95.85E,Complete,Irrigation,,,21.739152,95.846709,0.0,,0.0,402.5,7.4,760,0.3298,10.0,10.0,1.2,10.0,8.2,Critical,2.0
+Taungnyo,Complete,Irrigation,Taungnyo,,20.452426,95.969404,0.0,,258.99,454.0,1.2,760,0.5083,10.0,10.0,1.1,10.0,8.2,Critical,2.0
+Dam near 20.60N 95.90E,Complete,Irrigation,,,20.597321,95.89696,0.0,,0.0,451.3,7.4,760,0.3293,10.0,10.0,1.1,10.0,8.2,Critical,2.0
+Dam near 20.47N 96.08E,Complete,Irrigation,,,20.468555,96.075001,0.0,,0.0,444.2,9.9,760,0.2806,10.0,10.0,1.1,10.0,8.2,Critical,2.0
+Dam near 20.85N 96.03E,Complete,Irrigation,,,20.854343,96.02702,0.0,,0.0,425.0,8.3,760,0.3097,10.0,10.0,1.2,10.0,8.2,Critical,2.0
+Meikhtila,Complete,Irrigation,,,20.875818,95.865057,0.0,,0.0,438.2,8.2,760,0.3113,10.0,10.0,1.1,10.0,8.2,Critical,2.0
+Dam near 17.55N 96.37E,Complete,Irrigation,,,17.548282,96.366141,0.0,,0.0,669.8,9.6,760,0.2866,10.0,10.0,0.7,10.0,8.1,Critical,2.0
+Dam near 21.05N 95.83E,Complete,Irrigation,,,21.050036,95.831831,0.0,,0.0,432.2,11.0,760,0.2639,10.0,9.1,1.2,10.0,8.0,Critical,2.0
+Dam near 21.04N 95.83E,Complete,Irrigation,,,21.038121,95.833504,0.0,,0.0,432.7,10.9,760,0.2658,10.0,9.2,1.2,10.0,8.0,Critical,2.0
+Thaphan Chaung,Complete,Irrigation,Thaphan Chaung,,20.515519,95.864282,0.0,,7.429,459.0,11.5,760,0.2566,10.0,8.7,1.1,10.0,7.8,Critical,2.0
+Dam near 21.34N 95.81E,Complete,Irrigation,,,21.340483,95.810878,0.0,,0.0,420.8,12.2,760,0.2476,10.0,8.2,1.2,10.0,7.7,Critical,2.0
+Kun Chaung,Complete,Multi-purpose,Kun Chaung,Bago,18.420367,96.363854,73.0,60.0,1468.0,587.8,0.9,760,0.5128,10.0,10.0,0.9,6.1,7.6,Critical,2.0
+Phyu Chaung,Complete,Multi-purpose,Pyu Chaung,Bago,18.506214,96.351028,75.0,40.0,780.0,580.8,1.3,760,0.5064,10.0,10.0,0.9,5.4,7.5,Critical,2.0
+Kabaung,Complete,Multi-purpose,Kabaung Chaung,Bago,18.896717,96.220825,61.0,30.0,1468.0,554.1,9.2,760,0.292,10.0,10.0,0.9,5.2,7.5,Critical,2.0
+Dam near 21.37N 95.80E,Complete,Irrigation,,,21.37304,95.798634,0.0,,0.0,420.6,13.4,760,0.234,10.0,7.5,1.2,10.0,7.5,Critical,2.0
+Yenwe,Complete,Multi-purpose,Ye Nwe Chaung,Bago,18.085211,96.446152,77.0,25.0,149.0,614.4,3.9,760,0.4291,10.0,10.0,0.8,4.9,7.4,Critical,2.0
+Nyaunggone,Complete,Irrigation,,,20.789507,95.819567,0.0,,4.035,447.0,13.7,760,0.2301,10.0,7.3,1.1,10.0,7.4,Critical,2.0
+Dam near 20.73N 95.83E,Complete,Irrigation,,,20.726713,95.826486,0.0,,0.0,449.9,13.6,760,0.2318,10.0,7.4,1.1,10.0,7.4,Critical,2.0
+Zeedaw,Complete,Irrigation,Nyaung Oat,,21.28973,95.782275,0.0,,35.55,425.7,15.3,760,0.2142,10.0,6.5,1.2,10.0,7.2,Critical,2.0
+Male-Nattaung,Complete,Irrigation,Male-Nattaung,,22.593002,96.096806,0.0,,70.69,360.3,18.6,760,0.1883,10.0,5.4,1.4,10.0,6.9,High,2.0
+Kyee Ni,Complete,Irrigation,,,20.425297,96.169943,0.0,,0.0,439.1,19.4,760,0.1835,10.0,5.2,1.1,10.0,6.8,High,2.0
+Kintat,Complete,Irrigation,Mu,,22.666332,95.708602,0.0,,47.237,399.6,21.0,760,0.1737,10.0,4.8,1.3,10.0,6.7,High,2.0
+Dam near 20.58N 96.17E,Complete,Irrigation,,,20.583214,96.169439,0.0,,0.0,428.9,20.7,760,0.1755,10.0,4.8,1.2,10.0,6.7,High,2.0
+Myotha,Complete,Irrigation,Ku Htaw,,21.672793,95.719008,0.0,,1128.0,417.1,20.6,760,0.1762,10.0,4.9,1.2,10.0,6.7,High,2.0
+Nat Thar Taw,Complete,Irrigation,Nat Thar Taw,,21.800573,95.722506,0.0,,6.15,412.8,20.2,760,0.1786,10.0,5.0,1.2,10.0,6.7,High,2.0
+Samon,Complete,Irrigation,Samon,,20.938996,96.136176,0.0,,9.733,410.6,20.2,760,0.1786,10.0,5.0,1.2,10.0,6.7,High,2.0
+Dam near 21.01N 95.73E,Complete,Irrigation,,,21.013475,95.728497,0.0,,0.0,443.5,21.8,760,0.1694,10.0,4.6,1.1,10.0,6.6,High,2.0
+Thinbon,Complete,Irrigation,Thinbon,,20.971218,95.712494,0.0,,25.83,447.1,23.6,760,0.1605,10.0,4.2,1.1,10.0,6.5,High,2.0
+Dam near 20.81N 95.72E,Complete,Irrigation,,,20.811847,95.720291,0.0,,0.0,454.6,23.8,760,0.1597,10.0,4.2,1.1,10.0,6.5,High,2.0
+Paung Laung (lower),Complete,Multi-purpose,Paung Laung Chaung,Naypyitaw,19.785,96.335,131.0,280.0,690.0,472.8,23.3,760,0.1618,10.0,4.3,1.1,9.7,6.4,High,2.0
+Kyeebin-et,Complete,Irrigation,Indaw Pauk,,23.08728,95.664076,0.0,,54.27,405.3,25.6,760,0.152,10.0,3.9,1.2,10.0,6.4,High,2.0
+Thettaw,Complete,Irrigation,Thettaw,,20.711113,96.210114,0.0,,18.696,417.5,26.0,760,0.1502,10.0,3.8,1.2,10.0,6.4,High,2.0
+Dam near 23.36N 95.66E,Complete,Irrigation,,,23.361809,95.660486,0.0,,0.0,409.2,28.1,760,0.1424,10.0,3.6,1.2,10.0,6.3,High,2.0
+Pegyi,Complete,Irrigation,Pegyi,,23.013559,95.637255,0.0,,9.7,407.4,27.8,760,0.1435,10.0,3.6,1.2,10.0,6.3,High,2.0
+Kyin-tha,Complete,Irrigation,,,21.054113,95.65751,0.0,,2.58,448.1,29.0,760,0.1393,10.0,3.4,1.1,10.0,6.3,High,2.0
+Paunggadaw,Complete,Irrigation,Paunggadaw,,21.81169,95.589723,0.0,,9.717,425.6,33.9,760,0.1252,10.0,3.0,1.2,10.0,6.1,High,2.0
+Tawog Hka,Identified Sites,,Nam Lanog Hka,Kachin,26.309687,96.52987,0.0,,0.0,502.1,35.1,760,0.1221,10.0,2.9,1.0,10.0,6.1,High,2.0
+Dam near 23.13N 95.58E,Complete,Irrigation,,,23.132152,95.577322,0.0,,23.247,414.5,34.8,760,0.1229,10.0,2.9,1.2,10.0,6.1,High,2.0
+North Pinle,Complete,Irrigation,Pinle,,21.659382,95.5687,0.0,,12.3,432.3,36.1,760,0.1196,10.0,2.8,1.2,10.0,6.1,High,2.0
+Nga Moe Yeik,Complete,Water Supply,,,17.355585,96.160508,0.0,,222.0,698.9,32.4,760,0.129,10.0,3.1,0.7,10.0,6.1,High,2.0
+Shanma-Nge,Complete,Irrigation,,,20.839191,95.597897,0.0,,26.61,464.2,36.2,760,0.1195,10.0,2.8,1.1,10.0,6.0,High,2.0
+Linban,Complete,Irrigation,,,23.14541,95.525593,0.0,,12.56,419.9,40.1,760,0.1112,10.0,2.5,1.2,10.0,6.0,High,2.0
+South Pinle,Complete,Irrigation,Pinle,,21.641813,95.549981,0.0,,10.46,434.7,38.1,760,0.1152,10.0,2.6,1.2,10.0,6.0,High,2.0
+Sedawgyi,Complete,Multi-purpose,Chaung Ma Gyi,,22.348589,96.323053,0.0,,446.49,340.0,41.6,760,0.1084,10.0,2.4,1.5,10.0,6.0,High,2.0
+Dam near 21.55N 95.54E,Complete,Irrigation,,,21.546729,95.540688,0.0,,0.0,438.8,39.4,760,0.1126,10.0,2.5,1.1,10.0,6.0,High,2.0
+Inya,Complete,Water Supply,,,16.838848,96.135034,0.0,,0.0,750.2,35.5,760,0.1212,10.0,2.8,0.7,10.0,6.0,High,2.0
+Kinmundaung,Complete,Irrigation,Kinmundaung,,19.908676,95.693168,0.0,,12.982,512.8,36.5,760,0.1188,10.0,2.7,1.0,10.0,6.0,High,2.0
+Dam near 21.51N 95.53E,Complete,Irrigation,,,21.505946,95.534877,0.0,,0.0,440.8,40.1,760,0.1111,10.0,2.5,1.1,10.0,6.0,High,2.0
+Thauk Ye Khat 1,Identified Sites,,Thauk Ye Khat,Kayin,18.938587,96.719624,0.0,,0.0,519.8,43.2,760,0.1055,10.0,2.3,1.0,10.0,5.9,High,2.0
+Yenam,Planned,Hydropower,May Hka,,27.727616,97.879027,0.0,,0.0,576.1,40.2,760,0.1111,10.0,2.5,0.9,10.0,5.9,High,2.0
+Paunglinn,Complete,Irrigation,Paunglinn,,17.509063,96.095995,0.0,,147.03,687.7,38.4,760,0.1146,10.0,2.6,0.7,10.0,5.9,High,2.0
+Taungtha,Complete,Irrigation,Taungtha,,21.268241,95.476952,0.0,,6.15,455.5,47.0,760,0.0995,10.0,2.1,1.1,10.0,5.9,High,2.0
+Sinlan,Complete,Irrigation,Sinlan,,22.074457,96.436115,0.0,,8.421,334.4,53.3,760,0.0911,10.0,1.9,1.5,10.0,5.9,High,2.0
+Sunchaung,Complete,Irrigation,Sun Creek,,20.169512,95.584486,0.0,,38.515,504.3,43.7,760,0.1048,10.0,2.3,1.0,10.0,5.9,High,2.0
+Dam near 21.39N 95.52E,Complete,Irrigation,,,21.385758,95.518783,0.0,,0.0,446.8,42.2,760,0.1072,10.0,2.4,1.1,10.0,5.9,High,2.0
+Hlaw Ga,Complete,Water Supply,,,16.97279,96.11125,0.0,,54.0,738.3,37.9,760,0.1157,10.0,2.6,0.7,10.0,5.9,High,2.0
+Dam near 20.11N 95.60E,Complete,Irrigation,,,20.114814,95.601787,0.0,,0.0,506.4,42.4,760,0.107,10.0,2.4,1.0,10.0,5.9,High,2.0
+Gyobyu,Complete,Water Supply,Gyobyu Chaung,,17.376582,96.035673,0.0,,75.0,703.4,45.6,760,0.1016,10.0,2.2,0.7,10.0,5.8,High,2.0
+Kyauktalone (1),Complete,Irrigation,Kyauktalone,,21.107401,95.458244,0.0,,6.46,464.2,49.5,760,0.0959,10.0,2.0,1.1,10.0,5.8,High,2.0
+Yeywa,Complete,Hydropower,Lower Myitnge,Mandalay,21.675196,96.474077,132.0,790.0,2630.0,344.0,57.3,760,0.0865,10.0,1.7,1.5,10.0,5.8,High,2.0
+Kyauktalone (2) - Modulating Dam,Complete,Irrigation,Kyauktalone,,21.076999,95.469553,0.0,,12.8,464.5,48.4,760,0.0974,10.0,2.1,1.1,10.0,5.8,High,2.0
+Natmouk,Complete,Irrigation,,,20.409266,95.48095,0.0,,124.582,498.4,52.2,760,0.0924,10.0,1.9,1.0,10.0,5.8,High,2.0
+Letpan,Complete,Irrigation,Htan Pin Su,,22.053801,95.400088,0.0,,5.959,438.6,53.3,760,0.091,10.0,1.9,1.1,10.0,5.8,High,2.0
+Palin,Complete,Irrigation,Palin,,20.291535,95.525824,0.0,,15.06,501.6,48.6,760,0.0971,10.0,2.1,1.0,10.0,5.8,High,2.0
+Phugyi,Complete,Water Supply,,,17.245914,96.042454,0.0,,222.0,715.5,45.0,760,0.1026,10.0,2.2,0.7,10.0,5.8,High,2.0
+Sunlun,Complete,Irrigation,Sunlun,,21.417041,95.416244,0.0,,5.66,455.5,52.7,760,0.0917,10.0,1.9,1.1,10.0,5.8,High,2.0
+Dam near 17.62N 96.01E,Complete,Irrigation,,,17.623217,96.014876,0.0,,0.0,681.3,45.9,760,0.1011,10.0,2.2,0.7,10.0,5.8,High,2.0
+Dam near 20.70N 95.47E,Complete,Irrigation,,,20.704069,95.467041,0.0,,0.0,483.1,51.0,760,0.094,10.0,2.0,1.0,10.0,5.8,High,2.0
+Yanpe,Complete,Irrigation,Yanpe,,19.790566,95.517982,0.0,,43.36,535.0,57.9,760,0.0859,10.0,1.7,0.9,10.0,5.7,High,2.0
+Dam near 20.78N 95.34E,Complete,Irrigation,,,20.775632,95.342022,0.0,,0.0,490.7,63.2,760,0.0807,10.0,1.6,1.0,10.0,5.7,High,2.0
+Thonze,Complete,Irrigation,Thonze,,17.739216,95.951677,0.0,,293.1,674.1,51.6,760,0.0932,10.0,1.9,0.7,10.0,5.7,High,2.0
+Sindewa,Complete,Irrigation,Sindewa,,21.118182,95.305956,0.0,,14.76,478.0,65.2,760,0.0789,10.0,1.5,1.0,10.0,5.7,High,2.0
+The-gaw,Complete,Irrigation,The-gaw,,17.816109,95.866928,0.0,,64.79,671.9,59.8,760,0.0839,10.0,1.7,0.7,10.0,5.7,High,2.0
+Thapanzeik,Complete,Multi-purpose,Mu,,23.306586,95.354794,0.0,,3552.48,439.3,58.8,760,0.085,10.0,1.7,1.1,10.0,5.7,High,2.0
+Min Hla,Complete,Irrigation,Min Hla,,18.117447,95.909904,0.0,,53.86,642.1,52.0,760,0.0926,10.0,1.9,0.8,10.0,5.7,High,2.0
+Nwegway,Complete,Irrigation,,,22.008236,95.303983,0.0,,3.701,449.2,63.2,760,0.0807,10.0,1.6,1.1,10.0,5.7,High,2.0
+Thazi,Complete,Irrigation,Thazi,,22.240321,95.262088,0.0,,8.141,449.2,67.4,760,0.0771,10.0,1.5,1.1,10.0,5.7,High,2.0
+Ta Rung Hka,Identified Sites,,Ta Rung Hka,Kachin,26.718029,96.46829,0.0,,0.0,541.9,57.4,760,0.0864,10.0,1.7,0.9,10.0,5.7,High,2.0
+Renan,Proposed,Hydropower,N'Mai  Hka,Kachin,27.525941,98.090192,159.0,1200.0,1183.0,548.3,63.8,760,0.0801,10.0,1.6,0.9,10.0,5.7,High,2.0
+Bawbin,Complete,Irrigation,Bawbin,,18.362836,95.796146,0.0,,120.56,627.5,61.1,760,0.0827,10.0,1.6,0.8,10.0,5.7,High,2.0
+Kantin-BeeLin,Complete,Irrigation,Kantin-BeeLin,,17.9571,95.887794,0.0,,165.36,657.9,56.2,760,0.0876,10.0,1.8,0.8,10.0,5.7,High,2.0
+Shweli 3,Under Construction,Hydropower,Shweli,Shan,23.315,96.769,122.0,1050.0,5464.0,296.6,85.0,760,0.0654,10.0,1.2,1.7,10.0,5.7,High,2.0
+Htanzaloke,Complete,Irrigation,Htanzaloke,,22.159941,95.257973,0.0,,3.454,450.9,67.9,760,0.0767,10.0,1.5,1.1,10.0,5.7,High,2.0
+Dam near 20.76N 95.39E,Complete,Irrigation,,,20.758838,95.386066,0.0,,0.0,487.6,58.8,760,0.0849,10.0,1.7,1.0,10.0,5.7,High,2.0
+Dam near 20.76N 95.36E,Complete,Irrigation,,,20.762818,95.355246,0.0,,0.0,490.2,62.0,760,0.0818,10.0,1.6,1.0,10.0,5.7,High,2.0
+Dam near 20.72N 95.42E,Complete,Irrigation,,,20.720078,95.424149,0.0,,0.0,486.1,55.3,760,0.0887,10.0,1.8,1.0,10.0,5.7,High,2.0
+Upper Baluchaung 1,Under Construction,Hydropower,Balchuang,,20.478991,96.689153,0.0,,0.0,393.9,73.7,760,0.0724,10.0,1.4,1.3,10.0,5.7,High,2.0
+Dam near 18.28N 95.86E,Complete,Irrigation,,,18.281025,95.855019,0.0,,0.0,631.0,55.9,760,0.0881,10.0,1.8,0.8,10.0,5.7,High,2.0
+Dam near 20.74N 95.38E,Complete,Irrigation,,,20.740185,95.383724,0.0,,0.0,488.7,59.2,760,0.0845,10.0,1.7,1.0,10.0,5.7,High,2.0
+Dam near 20.77N 95.35E,Complete,Irrigation,,,20.768534,95.35271,0.0,,0.0,490.1,62.2,760,0.0816,10.0,1.6,1.0,10.0,5.7,High,2.0
+Dam near 20.75N 95.40E,Complete,Irrigation,,,20.751761,95.400055,0.0,,0.0,486.7,57.5,760,0.0863,10.0,1.7,1.0,10.0,5.7,High,2.0
+Welaung,Complete,Irrigation,Welaung,,21.092847,95.396977,0.0,,24.81,470.5,55.9,760,0.088,10.0,1.8,1.1,10.0,5.7,High,2.0
+Dam near 18.53N 95.72E,Complete,Irrigation,,,18.533566,95.718861,0.0,,0.0,617.9,67.1,760,0.0773,10.0,1.5,0.8,10.0,5.6,High,2.0
+Phaunggada,Complete,Irrigation,,,22.021024,95.070568,0.0,,9.165,472.4,87.2,760,0.0642,10.0,1.1,1.1,10.0,5.6,High,2.0
+Zawgyi,Complete,Hydropower,Zawgyi,,21.565078,96.873564,0.0,,639.0,311.3,98.2,760,0.059,10.0,1.0,1.6,10.0,5.6,High,2.0
+Pinn Chaung,Complete,Irrigation,Pinn Chaung,,20.712043,95.300929,0.0,,23.25,497.7,68.1,760,0.0766,10.0,1.5,1.0,10.0,5.6,High,2.0
+Sedawgyi (upper),Proposed,Multi-purpose,Ma Gyi Chaung,Shan,22.74764,96.20626,73.0,64.0,593.0,348.5,30.0,760,0.136,10.0,3.3,1.4,5.2,5.6,High,2.0
+Thauk Ye Khat 2,Complete,Hydropower,Thauk Ye Khat,Kayin,18.914102,96.619907,94.0,120.0,444.0,527.9,32.5,760,0.1289,10.0,3.1,0.9,6.6,5.6,High,2.0
+Myothit,Complete,Irrigation,Myothit,,22.41452,95.214678,0.0,,9.21,451.8,72.1,760,0.0735,10.0,1.4,1.1,10.0,5.6,High,2.0
+Ngathayauk,Complete,Irrigation,Chaung Ma Gyi,,21.168644,95.107695,0.0,,8.61,494.7,85.5,760,0.0651,10.0,1.2,1.0,10.0,5.6,High,2.0
+Taungnawin,Complete,Irrigation,Taungnawin Creek,,18.922544,95.578598,0.0,,354.009,595.4,75.4,760,0.0712,10.0,1.3,0.8,10.0,5.6,High,2.0
+Pade,Complete,Irrigation,Pade,,19.212315,95.610306,0.0,,40.6,570.3,67.1,760,0.0773,10.0,1.5,0.9,10.0,5.6,High,2.0
+Sin Chaung,Complete,Irrigation,Sin Chaung,,21.496183,95.16705,0.0,,3.961,476.9,78.2,760,0.0694,10.0,1.3,1.0,10.0,5.6,High,2.0
+Sarlingyi,Complete,Irrigation,Sarlingyi,,21.981113,95.066611,0.0,,5.699,473.6,87.7,760,0.064,10.0,1.1,1.1,10.0,5.6,High,2.0
+Popa,Complete,Irrigation,,,20.808545,95.247579,0.0,,0.0,497.7,72.7,760,0.0731,10.0,1.4,1.0,10.0,5.6,High,2.0
+Middle Yeywa,Planned,Hydropower,Myitnge,,21.938771,96.930558,0.0,,0.0,290.1,104.2,760,0.0558,10.0,1.0,1.7,10.0,5.6,High,2.0
+Laiza,Planned,Hydropower,Malikha,,26.1973,97.746971,0.0,,0.0,423.7,81.9,760,0.0671,10.0,1.2,1.2,10.0,5.6,High,2.0
+Yeywa (middle),Proposed,Hydropower,Lower Myitnge,Shan,21.96024,96.87313,160.0,700.0,454.0,294.9,98.3,760,0.059,10.0,1.0,1.7,10.0,5.6,High,2.0
+Myitsone,Suspended,Hydropower,Ayeyarwady,Kachin,25.715,97.535,140.0,6000.0,13190.0,388.1,83.6,760,0.0662,10.0,1.2,1.3,10.0,5.6,High,2.0
+Bewt Gyi,Complete,Irrigation,,,19.313794,95.528459,0.0,,0.0,568.6,72.9,760,0.0729,10.0,1.4,0.9,10.0,5.6,High,2.0
+Laza,Proposed,Hydropower,Mali Hka,Kachin,26.491779,97.77695,196.0,1900.0,11780.0,451.8,73.0,760,0.0729,10.0,1.4,1.1,10.0,5.6,High,2.0
+Paung Laung (middle),Proposed,Hydropower,Paung Laung Chaung,Mandalay,19.86,96.508,110.0,100.0,429.0,454.5,43.0,760,0.1058,10.0,2.3,1.1,7.4,5.5,High,2.0
+Belin,Proposed,Hydropower,Bilin River,Mon,17.519723,97.243546,131.0,280.0,9711.0,633.1,82.8,760,0.0666,10.0,1.2,0.8,10.0,5.5,High,2.0
+Khaunglanphu,Proposed,Hydropower,N'Mai  Hka,Kachin,26.849507,98.376808,223.0,2700.0,3100.0,468.1,110.9,760,0.0522,10.0,0.9,1.1,10.0,5.5,High,2.0
+South Nawin (2),Complete,Irrigation,South Nawin,,18.959728,95.492622,0.0,,25.91,598.6,83.7,760,0.0661,10.0,1.2,0.8,10.0,5.5,High,2.0
+Tamanthi,Proposed,Hydropower,Chindwin,Sagaing,25.322227,95.296955,74.0,1200.0,20922.0,523.4,103.6,760,0.0561,10.0,1.0,1.0,10.0,5.5,High,2.0
+U Yu Chaung,Identified Sites,,Uyu,Sagaing,24.865948,95.294431,0.0,,0.0,498.3,91.1,760,0.0622,10.0,1.1,1.0,10.0,5.5,High,2.0
+Yunzalin,Identified Sites,,,Kayin,18.29496,97.34081,0.0,,0.0,550.3,100.1,760,0.0582,10.0,1.0,0.9,10.0,5.5,High,2.0
+Kanggyigone,Complete,Irrigation,In Yone,,19.043285,95.308665,0.0,,7.53,605.6,101.3,760,0.0575,10.0,1.0,0.8,10.0,5.5,High,2.0
+Paung Laung (upper),Complete,Hydropower,Paung Laung Chaung,Mandalay,19.756,96.598,98.0,140.0,1286.0,456.5,48.6,760,0.0972,10.0,2.1,1.1,7.7,5.5,High,2.0
+Upper Haw Kham,Proposed,Hydropower,Nam Pawn,,19.177977,97.344749,0.0,,0.0,463.1,112.0,760,0.0516,10.0,0.9,1.1,10.0,5.5,High,2.0
+Mobyè,Complete,Irrigation,Balu Chaung,,19.792636,97.097256,0.0,,826.852,420.5,99.5,760,0.0585,10.0,1.0,1.2,10.0,5.5,High,2.0
+Wegyi,Complete,Irrigation,Wegyi,,18.622783,95.609994,0.0,,310.97,617.7,77.4,760,0.0699,10.0,1.3,0.8,10.0,5.5,High,2.0
+Thirinandar,Complete,Irrigation,,,21.51692,94.932945,0.0,,2.11,499.1,102.2,760,0.0569,10.0,1.0,1.0,10.0,5.5,High,2.0
+Ngwedaung,Complete,Irrigation,Ngwetaung,,19.555742,97.163331,0.0,,826.852,437.7,99.4,760,0.0585,10.0,1.0,1.1,10.0,5.5,High,2.0
+Dam near 19.07N 95.44E,Complete,Irrigation,,,19.06693,95.44187,0.0,,0.0,593.9,87.1,760,0.0643,10.0,1.1,0.8,10.0,5.5,High,2.0
+Nagar,Complete,Irrigation,Nagar,,20.395229,95.16702,0.0,,7.762,526.7,84.9,760,0.0655,10.0,1.2,0.9,10.0,5.5,High,2.0
+Ngwe Thar,Complete,Irrigation,,,21.902657,95.041531,0.0,,18.811,477.9,90.3,760,0.0627,10.0,1.1,1.0,10.0,5.5,High,2.0
+Ledaingzin,Complete,Irrigation,Paung Kwe,,20.445332,95.15673,0.0,,5.86,524.8,85.5,760,0.0651,10.0,1.2,1.0,10.0,5.5,High,2.0
+Myaing Chaung,Complete,Irrigation,Myaing Chaung,,21.615887,94.816231,0.0,,4.936,507.7,113.9,760,0.0507,10.0,0.9,1.0,10.0,5.5,High,2.0
+Weigyi,Planned,Hydropower,Salween,,18.632617,97.359484,0.0,,0.0,515.7,105.7,760,0.055,10.0,0.9,1.0,10.0,5.5,High,2.0
+Baluchaung Dam,Complete,Hydropower,Baluchaung,,19.572117,97.31465,0.0,,0.0,427.5,115.3,760,0.05,10.0,0.9,1.2,10.0,5.5,High,2.0
+Shwezaye,Cancelled,Hydropower,Chindwin,,22.33525,94.9989,0.0,,0.0,474.7,94.4,760,0.0607,10.0,1.1,1.1,10.0,5.5,High,2.0
+Phizaw,Planned,Hydropower,May Hka,,26.827594,98.385556,0.0,,0.0,465.5,112.7,760,0.0513,10.0,0.9,1.1,10.0,5.5,High,2.0
+Dam near 18.65N 95.25E,Complete,Irrigation,,,18.651777,95.252143,0.0,,0.0,640.2,114.1,760,0.0506,10.0,0.9,0.8,10.0,5.4,High,2.0
+Shwedaung,Complete,Irrigation,Kalar Chaung,,18.710748,95.252426,0.0,,6.61,635.5,113.0,760,0.0511,10.0,0.9,0.8,10.0,5.4,High,2.0
+Kinda,Complete,Multi-purpose,Panlaung Chaung,Shan,21.160437,96.321037,72.0,56.0,1078.0,382.1,40.0,760,0.1114,10.0,2.5,1.3,5.6,5.4,High,2.0
+Zaungtu,Complete,Hydropower,Bago River,Bago,17.755818,96.19898,45.0,20.0,407.0,658.8,25.3,760,0.1529,10.0,3.9,0.8,3.2,5.3,High,2.0
+Pisa,Proposed,Hydropower,N'Mai  Hka,Kachin,26.598389,98.34309,153.0,2000.0,535.0,442.3,119.7,760,0.048,9.6,0.8,1.1,10.0,5.3,High,2.0
+Nancho,Complete,Hydropower,Sin The Chaung,Naypyitaw,19.7412,96.450483,72.0,40.0,9.0,468.0,33.4,760,0.1264,10.0,3.0,1.1,4.5,5.3,High,2.0
+Pashe,Planned,Hydropower,N'Mai,,26.476081,98.289919,0.0,,0.0,431.0,120.6,760,0.0476,9.5,0.8,1.2,10.0,5.3,High,2.0
+Yeywa (upper),Under Construction,Hydropower,Lower Myitnge,Shan,22.254093,97.046741,97.0,280.0,341.0,269.0,115.9,760,0.0497,9.9,0.9,1.9,7.3,5.2,High,2.0
+Wutsok,Proposed,Hydropower,N'Mai  Hka,Kachin,26.403585,98.292511,165.0,1800.0,605.0,423.3,124.3,760,0.046,9.2,0.8,1.2,10.0,5.2,High,2.0
+Lower Nam Pawn,Planned,Hydropower,Nam Pawn,,19.480045,97.417853,0.0,,0.0,430.4,124.5,760,0.046,9.2,0.8,1.2,10.0,5.2,High,2.0
+Upper Yeywa,Under Construction,Hydropower,Myitnge,,22.240208,97.162877,0.0,,0.0,257.8,127.9,760,0.0446,8.9,0.8,1.9,10.0,5.2,High,2.0
+South Yamar,Complete,Irrigation,Yamar Taung,,21.821946,94.736177,0.0,,21.027,510.3,121.8,760,0.0471,9.4,0.8,1.0,10.0,5.2,High,2.0
+Nyaung-gaing,Complete,Irrigation,Nyaung-gaing,,18.797819,95.14163,0.0,,21.6,636.8,123.0,760,0.0466,9.3,0.8,0.8,10.0,5.2,High,2.0
+Lakin,Planned,Hydropower,May Hka,,26.595833,98.406111,0.0,,0.0,440.2,125.5,760,0.0455,9.1,0.8,1.1,10.0,5.2,High,2.0
+Bawgata,Proposed,Hydropower,Bawgata,Bago,18.255561,96.848496,80.0,160.0,835.0,577.2,48.0,760,0.098,10.0,2.1,0.9,6.3,5.2,High,2.0
+Myogyi,Complete,Multi-purpose,Zawgyi River,Shan,21.46349,96.39144,79.0,30.0,443.0,360.8,48.2,760,0.0978,10.0,2.1,1.4,5.3,5.2,High,2.0
+Chipwi,Proposed,Hydropower,N'Mai  Hka,Kachin,25.8905,98.12572,203.0,3400.0,1910.0,376.3,129.5,760,0.0439,8.8,0.8,1.3,10.0,5.1,High,2.0
+Thapanzeik,Complete,Multi-purpose,Mu River,Sagaing,23.305918,95.35833,33.0,30.0,3552.0,439.0,58.4,760,0.0853,10.0,1.7,1.1,5.7,5.1,High,2.0
+Shwegyin,Complete,Hydropower,Shwegyin River,Bago,17.970227,96.935001,57.0,75.0,2080.0,600.9,54.0,760,0.0902,10.0,1.9,0.8,5.8,5.1,High,2.0
+North Yamar (1),Complete,Irrigation,,,22.053354,94.67744,0.0,,17.339,511.4,127.6,760,0.0447,8.9,0.8,1.0,10.0,5.1,High,2.0
+Ywathit,Proposed,Hydropower,Thanlwin Mainstem,Kayah,19.131059,97.521257,167.0,4000.0,10757.0,458.9,129.5,760,0.0439,8.8,0.8,1.1,10.0,5.0,High,2.0
+Sedawgyi,Complete,Multi-purpose,Ma Gyi Chaung,Mandalay,22.348646,96.326937,41.0,25.0,448.0,339.6,42.0,760,0.1077,10.0,2.4,1.5,3.0,5.0,Moderate,2.0
+Tum Baing,Planned,Hydropower,Tum Baing Hka,,25.48725,97.963157,0.0,,0.0,343.7,133.3,760,0.0425,8.5,0.8,1.5,10.0,5.0,Moderate,2.0
+Shwenattaung,Complete,Irrigation,Shwenattaung,,16.411455,97.657402,0.0,,69.104,735.6,127.3,760,0.0448,9.0,0.8,0.7,10.0,5.0,High,2.0
+Namtu,Planned,Hydropower,,,22.857605,97.307334,0.0,,0.0,235.9,142.8,760,0.0392,7.8,0.7,2.1,10.0,4.9,Moderate,2.0
+Upper Nam Pawn,Planned,Hydropower,Nam Pawn,,19.995674,97.40098,0.0,,0.0,383.8,136.4,760,0.0414,8.3,0.7,1.3,10.0,4.9,Moderate,2.0
+Hlaing Chaung,Complete,Irrigation,,,21.999294,94.580082,0.0,,6.624,522.2,137.7,760,0.0409,8.2,0.7,1.0,10.0,4.8,Moderate,2.0
+Hutgyi,Proposed,Hydropower,Thanlwin Mainstem,Kayin,17.528,97.747,118.0,1360.0,509.0,614.3,136.0,760,0.0415,8.3,0.7,0.8,10.0,4.8,Moderate,2.0
+Mēntóu xī,Complete,Hydropower,Měng nǎi hé,,24.835331,97.768566,0.0,,0.0,295.2,146.8,760,0.0379,7.6,0.7,1.7,10.0,4.7,Moderate,2.0
+Ma Mya,Complete,Irrigation,Ma Mya,,18.106536,95.081046,0.0,,86.38,696.5,139.1,760,0.0404,8.1,0.7,0.7,10.0,4.7,Moderate,2.0
+Myet Taw Chaung,Identified Sites,,Myet Taw Chaung,Kayin,15.682011,97.915769,0.0,,0.0,807.7,139.2,760,0.0404,8.1,0.7,0.6,10.0,4.7,Moderate,2.0
+Shweli 2,Proposed,Hydropower,Shweli,Shan,23.6531,97.31235,92.0,520.0,72.0,254.0,136.4,760,0.0414,8.3,0.7,2.0,7.7,4.7,Moderate,2.0
+Hawkham (upper),Proposed,Hydropower,Nam Pawn,Kayah,19.211667,97.399722,72.0,180.0,333.0,457.0,118.2,760,0.0487,9.7,0.8,1.1,5.4,4.7,Moderate,2.0
+Deedoke,Proposed,Hydropower,Lower Myitnge,Mandalay,21.68723,96.404455,27.0,60.0,13.0,350.2,50.1,760,0.095,10.0,2.0,1.4,1.9,4.7,Moderate,2.0
+Nam Pawn (lower),Proposed,Hydropower,Nam Pawn,Kayah,19.555,97.408611,88.0,105.0,526.0,423.9,124.7,760,0.0458,9.2,0.8,1.2,6.2,4.6,Moderate,2.0
+Kanyin,Complete,Irrigation,Kanyin,,17.991848,95.072583,0.0,,183.619,706.6,141.4,760,0.0396,7.9,0.7,0.7,10.0,4.6,Moderate,2.0
+Zawgyi II,Complete,Multi-purpose,Zawgyi River,Shan,21.5648,96.8726,44.0,12.0,639.0,311.4,98.1,760,0.0591,10.0,1.0,1.6,3.3,4.6,Moderate,2.0
+Khawar,Complete,Irrigation,Khawar,,18.450999,95.011249,0.0,,15.477,673.4,142.2,760,0.0394,7.9,0.7,0.7,10.0,4.6,Moderate,2.0
+Baluchaung (upper),Under Construction,Hydropower,Baluchaung,Shan,20.484592,96.781918,35.0,30.0,0.0,386.3,83.3,760,0.0663,10.0,1.2,1.3,2.2,4.5,Moderate,2.0
+Dum Ban,Proposed,Hydropower,N'Mai  Hka Tributary,Kachin,25.511556,97.907021,81.0,130.0,34.0,348.9,127.0,760,0.0449,9.0,0.8,1.4,5.4,4.5,Moderate,2.0
+Nankathu,Complete,Irrigation,Nankathu,,17.850106,95.036264,0.0,,49.36,720.9,147.0,760,0.0379,7.6,0.7,0.7,10.0,4.5,Moderate,2.0
+Maday,Complete,Irrigation,Maday,,19.033781,94.868121,0.0,,66.636,639.8,147.2,760,0.0378,7.6,0.7,0.8,10.0,4.5,Moderate,2.0
+Yinshe,Complete,Irrigation,,,19.962479,94.572117,0.0,,3.21,603.6,150.8,760,0.0367,7.3,0.7,0.8,10.0,4.4,Moderate,2.0
+Mindon,Identified Sites,,,Magway,19.37089,94.712866,0.0,,0.0,628.7,152.4,760,0.0362,7.2,0.7,0.8,10.0,4.4,Moderate,2.0
+Nam Tu,Proposed,Hydropower,Myitnge Upper,Shan,22.720943,97.319365,114.0,100.0,0.0,234.6,144.0,760,0.0388,7.8,0.7,2.1,7.2,4.4,Moderate,2.0
+Lawngdin,Proposed,Hydropower,Naw Chang  Hka,Kachin,26.043012,98.277743,79.0,600.0,67.0,386.1,137.6,760,0.041,8.2,0.7,1.3,7.2,4.4,Moderate,2.0
+Mone Yin,Complete,Irrigation,Nam Swam,,23.145283,97.577462,0.0,,31.961,211.8,168.7,760,0.0319,6.4,0.6,2.4,10.0,4.4,Moderate,2.0
+Dapein 2,Proposed,Hydropower,Dapein,Kachin,24.36827,97.4214,59.0,140.0,55.0,284.5,130.6,760,0.0435,8.7,0.8,1.8,4.2,4.3,Moderate,2.0
+Ywathit,Planned,Hydropower,Salween,,19.777904,97.732943,0.0,,0.0,385.5,162.6,760,0.0334,6.7,0.6,1.3,10.0,4.3,Moderate,2.0
+Kyeeon Kyeewa,Complete,Hydropower,Mone,,20.331771,94.417348,0.0,,0.0,597.4,163.3,760,0.0333,6.7,0.6,0.8,10.0,4.2,Moderate,2.0
+Nam Tabak II,Proposed,Hydropower,Namtamhpak,Kachin,25.119755,97.650627,27.0,144.0,0.0,327.4,122.2,760,0.0469,9.4,0.8,1.5,2.2,4.2,Moderate,2.0
+Nam Li,Proposed,Hydropower,N'Mai  Hka Tributary,Kachin,25.369858,97.811427,44.0,165.0,2.0,340.6,125.0,760,0.0457,9.1,0.8,1.5,3.3,4.2,Moderate,2.0
+Nam Tabak I,Proposed,Hydropower,Namtamhpak,Kachin,25.090722,97.713906,56.0,141.0,15.0,320.9,129.3,760,0.044,8.8,0.8,1.6,3.9,4.2,Moderate,2.0
+Dam near 20.87N 94.37E,Complete,Multi-purpose,,,20.869511,94.367835,0.0,,0.0,577.3,163.4,760,0.0332,6.6,0.6,0.9,10.0,4.2,Moderate,2.0
+Manchaung (Mann),Complete,Irrigation,Mann Creek,,20.096772,94.423262,0.0,,148.018,609.2,165.0,760,0.0328,6.6,0.6,0.8,10.0,4.1,Moderate,2.0
+Kaukkwe,Complete,Irrigation,Kaukkwe,,22.933678,97.798928,0.0,,6.212,186.1,193.0,760,0.0267,5.3,0.5,2.7,10.0,4.1,Moderate,2.0
+Zawgyi I,Complete,Hydropower,Zawgyi River,Shan,21.3833,96.90147,0.0,18.0,0.0,318.2,100.6,760,0.0579,10.0,1.0,1.6,0.1,4.1,Moderate,2.0
+Baluchaung 1,Complete,Hydropower,Baluchaung,Kayah,19.648,97.287,11.0,28.0,2.0,422.0,114.0,760,0.0506,10.0,0.9,1.2,0.8,4.1,Moderate,2.0
+Wanpon,Complete,Irrigation,Wanpon,,20.938172,97.648021,0.0,,4.23,287.3,176.6,760,0.0301,6.0,0.6,1.7,10.0,4.1,Moderate,2.0
+Dapein 1,Complete,Hydropower,Dapein,Kachin,24.421451,97.525448,46.0,240.0,22.0,280.0,139.1,760,0.0404,8.1,0.7,1.8,3.7,4.0,Moderate,2.0
+Baluchaung 2,Complete,Hydropower,Baluchaung,Kayah,19.557,97.358,0.0,168.0,0.0,426.5,119.5,760,0.0481,9.6,0.8,1.2,0.7,4.0,Moderate,2.0
+Mone,Complete,Hydropower,Mone,,20.478481,94.259852,0.0,,0.0,604.7,178.2,760,0.0297,5.9,0.6,0.8,10.0,3.9,Moderate,2.0
+Shweli 1,Complete,Hydropower,Shweli,Shan,23.698,97.506,47.0,600.0,24.11,237.9,154.8,760,0.0356,7.1,0.6,2.1,5.2,3.9,Moderate,2.0
+Tongxinqiao,Proposed,Hydropower,Naw Chang  Hka,Kachin,25.963646,98.360249,63.0,340.0,5.0,374.9,148.5,760,0.0374,7.5,0.7,1.3,5.1,3.9,Moderate,2.0
+Nam Hsim,Proposed,Hydropower,Myitnge Upper,Shan,22.560266,97.124079,0.0,30.0,0.0,255.8,123.9,760,0.0462,9.2,0.8,2.0,0.1,3.9,Moderate,2.0
+Chipwi Nge,Complete,Hydropower,Chipwi Hka,Kachin,25.806073,98.184039,48.0,99.0,1.0,365.3,138.5,760,0.0406,8.1,0.7,1.4,3.3,3.8,Moderate,2.0
+Sar Ra Wa Chaung,Identified Sites,,,Tanintharyi,12.829406,98.98167,0.0,,0.0,1107.4,179.1,760,0.0295,5.9,0.6,0.5,10.0,3.8,Moderate,2.0
+Baluchaung 3,Complete,Hydropower,Baluchaung,Kayah,19.546,97.397,0.0,52.0,0.0,425.3,123.4,760,0.0464,9.3,0.8,1.2,0.2,3.8,Moderate,2.0
+Yazagyo,Complete,Multi-purpose,Nay Yin Za Yar,,23.53123,94.09707,0.0,,0.0,570.3,188.1,760,0.0277,5.5,0.5,0.9,10.0,3.8,Moderate,2.0
+Mali,Complete,Hydropower,Mali Creek,Kachin,24.98458,97.6135,0.0,11.0,0.0,318.1,125.4,760,0.0456,9.1,0.8,1.6,0.0,3.7,Moderate,2.0
+South Khayan,Complete,Irrigation,Khayan,,22.598882,94.028495,0.0,,14.69,571.7,193.3,760,0.0267,5.3,0.5,0.9,10.0,3.7,Moderate,2.0
+Naopha,Proposed,Hydropower,Thanlwin Mainstem,Shan,22.987464,98.499151,90.0,1200.0,857.0,115.9,264.2,760,0.0168,3.4,0.4,4.3,10.0,3.7,Moderate,2.0
+Taninthayi,Proposed,Hydropower,Taninthayi,Tanintharyi,12.777,98.94,0.0,600.0,27086.0,1113.5,184.8,760,0.0283,5.7,0.5,0.4,10.0,3.7,Moderate,2.0
+Manipur,Under Construction,Multi-purpose,Manipur,Chin,22.804356,93.943248,168.0,380.0,1643.0,580.0,201.4,760,0.0252,5.0,0.5,0.9,10.0,3.6,Moderate,2.0
+Buywa (upper),Proposed,Multi-purpose,Mon Chaung,Magway,20.76609,94.0818,138.0,150.0,721.0,608.8,193.7,760,0.0266,5.3,0.5,0.8,9.6,3.6,Moderate,2.0
+Kyein Ta Li,Identified Sites,,Kyein Ta Li,Rakhine,17.950012,94.576508,0.0,,0.0,744.3,194.1,760,0.0265,5.3,0.5,0.7,10.0,3.6,Moderate,2.0
+Than Dwe,Identified Sites,,Than Dwe,Rakhine,18.386144,94.493902,0.0,,0.0,716.3,197.2,760,0.026,5.2,0.5,0.7,10.0,3.6,Moderate,2.0
+Lam Pha,Identified Sites,,Lam Pha,Kayin,16.305021,98.348758,0.0,,0.0,731.2,201.3,760,0.0252,5.0,0.5,0.7,10.0,3.6,Moderate,2.0
+Nam Lang,Proposed,Hydropower,Myitnge Upper,Shan,22.155565,97.248615,0.0,210.0,0.0,251.8,136.8,760,0.0412,8.2,0.7,2.0,0.8,3.6,Moderate,2.0
+Upper Bu,Planned,Hydropower,,,20.803853,94.037043,0.0,,0.0,611.5,198.0,760,0.0258,5.2,0.5,0.8,10.0,3.6,Moderate,2.0
+Mantong,Proposed,Hydropower,Nam Ma,Shan,22.97469,98.55727,109.0,225.0,1215.0,109.8,270.2,760,0.0162,3.2,0.4,4.6,8.7,3.5,Moderate,2.0
+KunLong,Proposed,Hydropower,Thanlwin Mainstem,Shan,23.531667,98.611111,103.0,1400.0,691.0,131.4,268.9,760,0.0164,3.3,0.4,3.8,10.0,3.5,Moderate,2.0
+Upper Salween,Planned,Hydropower,Salween,,23.423472,98.601643,0.0,,0.0,125.0,270.2,760,0.0162,3.2,0.4,4.0,10.0,3.5,Moderate,2.0
+Hkankawn,Proposed,Hydropower,Naw Chang  Hka,Kachin,26.023865,98.429523,42.0,140.0,5.0,378.9,152.5,760,0.0362,7.2,0.7,1.3,3.1,3.5,Moderate,2.0
+Nam Pawn (upper),Proposed,Hydropower,Nam Pawn,Shan,20.062121,97.437368,10.0,150.0,7.0,375.6,142.2,760,0.0394,7.9,0.7,1.3,1.2,3.4,Moderate,2.0
+Nam Hka,Proposed,Hydropower,Nam Hka,,22.056938,98.772066,0.0,,0.0,118.2,293.6,760,0.0141,2.8,0.3,4.2,10.0,3.4,Moderate,2.0
+Kyee Ohn Kyee Wa,Complete,Multi-purpose,Mon Chaung,Magway,20.331,94.416,50.0,74.0,571.0,597.6,163.4,760,0.0332,6.6,0.6,0.8,3.9,3.3,Moderate,2.0
+Hpi Hseng,Proposed,Hydropower,Nam Pawn,Shan,20.118443,97.43497,10.0,45.0,4.0,370.8,143.8,760,0.0389,7.8,0.7,1.3,0.8,3.3,Moderate,2.0
+Hpak Nam,Proposed,Hydropower,Nam Pawn,Shan,20.209251,97.456152,20.0,105.0,20.0,361.4,148.8,760,0.0373,7.5,0.7,1.4,1.6,3.3,Moderate,2.0
+Gaw Lan,Proposed,Hydropower,Naw Chang  Hka,Kachin,26.051936,98.580461,47.0,120.0,1.0,377.2,165.4,760,0.0327,6.5,0.6,1.3,3.3,3.2,Moderate,2.0
+Mong Ton,Proposed,Hydropower,Thanlwin Mainstem,Shan,20.456389,98.65,241.0,7000.0,39800.0,277.0,275.3,760,0.0158,3.2,0.4,1.8,10.0,3.1,Moderate,2.0
+Mone Chaung,Complete,Multi-purpose,Mon Chaung,Magway,20.479942,94.255325,61.0,75.0,832.0,605.0,178.6,760,0.0296,5.9,0.6,0.8,4.8,3.1,Moderate,2.0
+Nam Paw,Proposed,Hydropower,Nam Paw Creek,Shan,23.944341,97.911001,54.0,20.0,52.0,216.1,189.8,760,0.0273,5.5,0.5,2.3,3.4,3.0,Moderate,2.0
+Nam Hka,Proposed,Hydropower,Nam Hka,Shan,21.733821,98.950044,120.0,210.0,450.0,135.3,312.6,760,0.0127,2.5,0.3,3.7,8.5,3.0,Low,2.0
+Thahtay,Under Construction,Hydropower,Thahtay,Rakhine,18.64,94.381,91.0,111.0,0.0,706.1,204.8,760,0.0246,4.9,0.5,0.7,5.9,2.9,Low,2.0
+Lemro 1,Proposed,Hydropower,Le Mro,Chin,20.857443,93.350503,0.0,600.0,9129.0,675.6,268.9,760,0.0164,3.3,0.4,0.7,10.0,2.9,Low,2.0
+Tha Gyet Chaung,Identified Sites,,Tha Gyet,Tanintharyi,12.132896,99.227161,0.0,,0.0,1183.5,256.7,760,0.0176,3.5,0.4,0.4,10.0,2.9,Low,2.0
+Myittha,Complete,Multi-purpose,Myittha,Magway,21.992222,94.036944,63.0,40.0,325.0,577.2,193.6,760,0.0266,5.3,0.5,0.9,4.3,2.8,Low,2.0
+Thein Kun Chaung,Identified Sites,,Thein Kun,Tanintharyi,11.769949,99.331205,0.0,,0.0,1223.4,297.3,760,0.0138,2.8,0.3,0.4,10.0,2.7,Low,2.0
+Mi Chaung,Identified Sites,,Mi Chaung,Chin,21.334187,93.073495,0.0,,0.0,688.2,295.1,760,0.014,2.8,0.3,0.7,10.0,2.7,Low,2.0
+Nam Hkok,Identified Sites,,Nam Hkoke,Shan,20.196337,99.34667,0.0,,0.0,289.1,336.6,760,0.0111,2.2,0.3,1.7,10.0,2.7,Low,2.0
+Buywa,Under Construction,Multi-purpose,Mon Chaung,Magway,20.658056,94.150833,46.0,42.0,209.0,606.8,187.7,760,0.0278,5.6,0.5,0.8,3.1,2.7,Low,2.0
+Keng Tawng (upper),Under Construction,Hydropower,Nam Teng,Shan,20.74558,98.184077,56.0,51.0,128.0,269.8,230.6,760,0.0208,4.2,0.4,1.9,3.7,2.5,Low,2.0
+Glohong Kra,Identified Sites,,Glohong Kra,Tanintharyi,10.775209,98.858324,0.0,,0.0,1335.8,406.9,760,0.0077,1.5,0.2,0.4,10.0,2.2,Low,2.0
+Keng Tawng,Complete,Hydropower,Nam Teng,Shan,20.598345,98.29305,27.0,54.0,61.0,278.1,240.8,760,0.0195,3.9,0.4,1.8,1.9,2.1,Low,2.0
+Keng Tong,Proposed,Hydropower,Nam Lwe,Shan,21.617799,99.500985,0.0,170.0,32.0,130.5,369.3,760,0.0093,1.9,0.3,3.8,0.7,1.6,Low,2.0
+Mongwa,Complete,Hydropower,Nam Lwe,Shan,21.39699,100.325821,51.0,66.0,78.0,171.0,454.4,760,0.006,1.2,0.2,2.9,3.4,1.6,Low,2.0
+Suo Lwe,Proposed,Hydropower,Nam Lwe,Shan,21.359543,100.176054,0.0,240.0,1338.0,168.9,438.9,760,0.0065,1.3,0.2,3.0,2.3,1.5,Low,2.0
+Lemro 2,Proposed,Hydropower,Le Mro,Rakhine,20.740347,93.268689,0.0,90.0,0.0,687.7,278.1,760,0.0155,3.1,0.4,0.7,0.4,1.4,Low,2.0
+Nam Lin,Proposed,Hydropower,Nam Lin,Shan,20.742516,100.241026,26.0,36.0,14.0,236.1,419.9,760,0.0072,1.4,0.2,2.1,1.7,1.3,Low,2.0
+Mong Hsat,Proposed,Hydropower,Nam Hkoke,Shan,20.662222,99.375,0.0,30.0,0.0,237.3,353.3,760,0.0102,2.0,0.3,2.1,0.1,1.2,Low,2.0
+Keng Yang,Proposed,Hydropower,Nam Lwe,Shan,21.3469,100.5619,0.0,70.0,41.0,187.3,463.7,760,0.0058,1.2,0.2,2.7,0.3,1.1,Low,2.0
+He Kou,Proposed,Hydropower,Nam Lwe,Shan,21.341291,100.720928,0.0,138.0,68.0,196.8,455.9,760,0.006,1.2,0.2,2.5,0.6,1.1,Low,2.0
+Saing Din,Identified Sites,,,Rakhine,20.893779,92.652188,0.0,77.0,0.0,742.6,341.1,760,0.0108,2.2,0.3,0.7,0.3,1.0,Low,2.0
