@@ -41,5 +41,7 @@ new spec from `TEMPLATE.md`, then drive steps 2–5 until every acceptance crite
 
 | Spec | Title | Status |
 |------|-------|--------|
-| _none yet_ | | |
+| [001](001-data-fetch-upgrade.md) | Upgrade the earthquake data-fetch/export system | Draft |
+| [002](002-go-export-rewrite.md) | Rewrite the fetch/export CLI in Go (separate branch) | Draft |
+| [003](003-project-improvements.md) | Project improvements — CI test gate, de-duplication, structure | Draft |
 </content>
