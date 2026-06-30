@@ -107,14 +107,15 @@ def fetch_quake_data(from_date: str, to_date: str) -> pd.DataFrame:
 def fetch_quake_data_complete(from_date: str, to_date: str, _depth: int = 0) -> pd.DataFrame:
     """Fetch all records in [from_date, to_date], defeating the API's record cap.
 
-    The API returns at most ``API_PAGE_CAP`` records, newest-first, with no pagination.
-    A response that hits the cap is therefore truncated (older events in the window are
-    silently dropped). When that happens we bisect the date window and recurse, so each
-    sub-window comes back under the cap; the pieces are unioned (later dedup handles any
-    overlap). Recursion bottoms out at single-day windows, which the API cannot subdivide.
+    The live API has no record cap (it serves the full catalog in one request), so by
+    default (``API_PAGE_CAP <= 0``) this is a thin pass-through to ``fetch_quake_data``.
+    It remains a defensive tripwire: if ``API_PAGE_CAP`` is set positive and a response
+    returns at least that many records, the window is treated as possibly truncated and
+    bisected by date, unioning the pieces (later dedup handles overlap). This guards
+    against the API ever introducing pagination/truncation.
     """
     df = fetch_quake_data(from_date, to_date)
-    if len(df) < API_PAGE_CAP:
+    if API_PAGE_CAP <= 0 or len(df) < API_PAGE_CAP:
         return df
 
     d0 = datetime.strptime(from_date, "%Y-%m-%d").date()

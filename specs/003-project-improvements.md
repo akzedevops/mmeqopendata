@@ -1,10 +1,15 @@
 ---
 spec: 003
 title: Project improvements — CI test gate, de-duplication, structure, readability
-status: Draft            # Draft | Approved | In progress | Done
+status: In progress      # Draft | Approved | In progress | Done
 author: Claude (research) + Aung Khant Zaw
 created: 2026-06-30
 ---
+
+> **Progress (2026-06-30, PR #8):** P1 (pytest+ruff CI gate; Pages `build` now
+> `needs: test`), P3 (CI runs `mmeq export`; `dataexport.py` → shim), P6 (dead
+> legacy scripts deleted), P7 (ruff adopted, redundant pip installs trimmed)
+> shipped. Still open: P2, P4, P5, P8, P9, P10 + the incidental cluster-image bug.
 
 ## Problem / motivation
 
@@ -97,16 +102,16 @@ cluster image is silently missing in CI. Generate it in `cmd_report` or drop the
 
 ## Acceptance criteria
 
-- [ ] CI `test` job runs `pytest` and `report_and_pages` deploy `needs: test` (P1).
+- [x] CI `test` job runs `pytest` + `ruff` and `report_and_pages` deploy `needs: test` (P1). *(PR #8)*
 - [ ] `dam_risk_scores` computed once per CI build (P2) — assert no duplicate compute in the
       workflow logs / refactor removes the second call.
-- [ ] `daily_data_fetch.yml` runs `mmeq export`; `dataexport.py` retired (P3).
+- [x] `daily_data_fetch.yml` runs `mmeq export`; `dataexport.py` reduced to a shim (P3). *(PR #8)*
 - [ ] New tests for `dam_risk_scores`, `compute_hazard_curve`, `fragility`, + report smoke
       test; coverage of analysis modules rises measurably (P4).
 - [ ] Risk weights/thresholds/`sigma_ln` sourced from `config.py`; both analyses use the
       shared helper (P5).
-- [ ] `ruff check` clean in CI; dead scripts gone (P6/P7).
-- [ ] No regression: full `pytest tests/ -v` green; figures + paper regenerate identically.
+- [x] `ruff check` clean in CI; dead scripts gone (P6/P7). *(PR #8)*
+- [x] No regression: full `pytest tests/ -v` green (56 tests). *(PR #8)*
 
 ## Risks / rollback
 
