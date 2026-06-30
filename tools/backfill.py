@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
-"""One-time bisecting backfill — spec 001 R11.
+"""Month-range backfill — spec 001 R11.
 
-Re-fetch a range of months with window bisection (`fetch_quake_data_complete`) and
-MERGE the result into the monthly files, deduped by event id. This recovers events the
-API silently truncated during past dense windows (the daily fetch had no bisection then).
+Re-fetch a range of months and MERGE the result into the monthly files, deduped by event
+id (keep-last). This recovers **late-arriving and revised events**: the API has no record
+cap (it serves the full catalog in one request — the earlier "500-cap" was a measurement
+artifact), so the real gap is events that arrived after their month was last fetched
+(month-boundary stragglers) or whose attributes the API later revised.
 
-Strictly additive: it merges fresh data into the existing monthly file and dedups by id
-(keep-last), so an event count can only stay the same or rise — it never drops events,
-even if a fresh fetch comes back smaller than what accreted on disk.
+Behavior:
+- Merges fresh data into the existing monthly file and dedups by id, so events are never
+  dropped — the count can only stay the same or rise.
+- Because dedup is keep-last, a re-fetch of already-known events with *revised* mag/depth/
+  geocoding updates the CSV content even when the event count is unchanged; the monthly
+  JSON is regenerated from the merged CSV on every fetch so the two never drift.
+- (`fetch_quake_data_complete` is a plain fetch unless MMEQ_API_PAGE_CAP is set positive.)
 
 After running over the needed ranges, run `mmeq export --rebuild` to reconcile the
 combined CSV+JSON from the updated monthly files.
@@ -35,10 +41,13 @@ log = logging.getLogger("backfill")
 
 
 def _row_count(path: str) -> int:
+    """Parsed row count (not physical lines, so embedded newlines don't skew it)."""
     if not os.path.exists(path):
         return 0
-    with open(path) as f:
-        return max(0, sum(1 for _ in f) - 1)
+    try:
+        return len(pd.read_csv(path, on_bad_lines="skip"))
+    except Exception:
+        return 0
 
 
 def _month_starts(from_ym: str, to_ym: str):
@@ -70,12 +79,20 @@ def main() -> int:
             log.warning("fetch failed for %s..%s: %s (leaving existing file untouched)", from_date, to_date, e)
             continue
 
+        if df.empty:
+            total_before += before
+            total_after += before
+            continue
+
         # Merge with existing (overwrite=False) + dedup by id → strictly additive.
         save_to_csv(df, monthly_csv, dedup=True, overwrite=False)
         after = _row_count(monthly_csv)
-        if after != before and os.path.exists(monthly_csv):
-            # keep the monthly JSON consistent with the merged CSV
+        # Always regenerate the monthly JSON from the merged CSV — content can change
+        # (revised mag/depth/geocoding via keep-last dedup) even when the count does not,
+        # so gating JSON on a count delta would let CSV and JSON drift.
+        if os.path.exists(monthly_csv):
             save_to_json(pd.read_csv(monthly_csv, on_bad_lines="skip"), monthly_json)
+        if after != before:
             changed.append((f"{first.year}-{first.month:02d}", before, after))
             log.info("%s: %d -> %d (+%d)", from_date[:7], before, after, after - before)
 
