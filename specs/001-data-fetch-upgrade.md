@@ -6,26 +6,29 @@ author: Claude (research) + Aung Khant Zaw
 created: 2026-06-30
 ---
 
-> **Progress (2026-06-30):** R1 (bisection), R2 (CI unified on `mmeq export`),
-> R3 (atomic writes + `mmeq export --rebuild`; live JSON reconciled 421→9,390),
-> and R5 (hardened retries) shipped in PR #8. **R11 (one-time backfill, below) is
-> the active task.** Still open: R4 (manifest), R6 (full contract gate), R7
-> (Parquet/DuckDB), R8 (CI rebase safety), R9 (freshness badge), R10 (weekly look-back).
+> **Progress (2026-06-30):** R2 (CI unified on `mmeq export`), R3 (atomic writes +
+> `mmeq export --rebuild`; live JSON reconciled 421→9,390), and R5 (hardened retries)
+> shipped in PR #8. **R1 (bisection) shipped but was based on a false 500-cap premise —
+> now disabled by default (it's a dormant tripwire); see the corrected Problem #1.**
+> R11 (targeted sync of ~12 late month-boundary events) is the active task. Still open:
+> R4 (manifest), R6 (contract gate), R7 (Parquet/DuckDB), R8 (CI rebase), R9 (freshness
+> badge), R10 (weekly look-back — the right fix for the late-arriving boundary events).
 
 ## Problem / motivation
 
-The fetch/export subsystem has correctness and completeness gaps that were uncovered
-by research (3-agent audit + live API probes). Two are **verified and serious**:
+The fetch/export subsystem has correctness and completeness gaps uncovered by research
+(3-agent audit + live API probes).
 
-1. **The API silently caps at 500 records per request, newest-first, with NO pagination.**
-   Probed live: `GET /api/myanmar-quakes?from=2025-03-01&to=2025-03-31` returns *exactly*
-   500 records, earliest `2025-03-29` — i.e. **the 2025-03-28 M7.7 mainshock and three
-   weeks of its aftershocks are unreachable in a single monthly window.** The response is a
-   bare `{"earthquakes": [...]}` — no `total`/`limit`/`offset`/cursor/`next`, no
-   ETag/If-Modified-Since. The current month-window strategy only produced a complete
-   catalog because it accreted over hundreds of daily runs while each day stayed < 500.
-   **A full rebuild from the API today would truncate every >500-event window** — the
-   project's headline event would be lost. Disaster recovery is effectively broken.
+1. **~~The API silently caps at 500 records per request~~ — CORRECTION: there is no cap.**
+   The original audit (and an early draft of this spec) claimed a 500-record cap based on
+   a `WebFetch` probe that showed exactly 500 records. **That was a measurement artifact of
+   the WebFetch tool's markdown conversion, not the API.** Verified with the real client
+   (`requests`, which the pipeline actually uses): `GET ?from=1970-01-01&to=2026-06-30`
+   returns the **full 9,402-record catalog in one response**; `?from=2025-01-01&to=2025-12-31`
+   returns 2,469; the 2025-03 month returns 338. The API is uncapped and unpaginated.
+   Consequence: the **R1 window-bisection is unnecessary** and is now **disabled by default**
+   (`MMEQ_API_PAGE_CAP=0`), kept only as a dormant tripwire. The real completeness gap is
+   small and is handled by R11 + R10 below.
 
 2. **The combined JSON is desynced from the CSV: 421 records vs 9,390** (verified on disk).
    `merge_combined_json` accumulates against the existing JSON using only *this run's*
@@ -87,15 +90,16 @@ Changes land in `src/mmeq/export/{fetcher,writer}.py`, `src/mmeq/config.py`,
 - **R10 — Weekly look-back.** Once a week, re-fetch the trailing ~90 days so revised
   magnitudes/locations land via the existing `id`-keyed `keep="last"` dedup.
 
-- **R11 — One-time bisecting backfill (active).** The fixes above only make *future*
-  fetches complete; events the API truncated during past dense windows (the daily fetch
-  had no bisection then) are still missing from the catalog. Re-fetch the dense historical
-  windows — the 2022-06..08 and 2025-03..05 sequences, plus recent months — with
-  `fetch_quake_data_complete`, overwrite their monthly CSVs, then `mmeq export --rebuild`.
-  If the event count rises, regenerate figures/README/paper (CI does this on push). Sparse
-  pre-2020 months (< ~300 events/month) never hit the cap, so the backfill targets the
-  instrumented-dense era. Run via a parallel agent fan-out over disjoint month ranges
-  (monthly files are per-month, so concurrent writes don't collide).
+- **R11 — Targeted sync of late/boundary events (active).** With the cap finding
+  corrected, the real gap is small: comparing the full API catalog (9,402) to ours (9,390)
+  shows **12 missing events**, all late-arriving end-of-month/recent events (e.g.
+  `2025-05-31T20:31`, `2025-08-31`, `2026-02-28`, `2026-06-29/30`) — events that arrived
+  after their month was last fetched and were never back-filled (the R10 problem), plus the
+  current unfetched days. Fix: `tools/backfill.py` re-fetches the affected months and
+  **merges (id-dedup, strictly additive)** into the monthly files, then `mmeq export
+  --rebuild`. A heavy parallel/bisecting backfill is *not* needed (no cap); a targeted
+  merge of the affected months suffices. The durable fix is **R10** (weekly trailing
+  re-fetch) so late events land automatically.
 
 Deferred / optional: **R7** (Parquet/DuckDB combined catalog as the analytical
 source-of-truth — a duckdb MCP already exists here) and **R9** (freshness badge + CI

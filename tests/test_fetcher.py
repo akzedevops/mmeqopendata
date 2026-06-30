@@ -57,3 +57,19 @@ def test_no_bisection_when_under_cap(monkeypatch):
     df = fetcher.fetch_quake_data_complete("2025-01-01", "2025-01-31")
     assert len(df) == 2
     assert calls == [("2025-01-01", "2025-01-31")], "must not bisect an under-cap window"
+
+
+def test_bisection_disabled_by_default(monkeypatch):
+    # The API has no cap; bisection is off by default (API_PAGE_CAP=0). A large response
+    # must NOT trigger bisection — a single fetch returns everything.
+    calls = []
+
+    def fake_fetch(from_date, to_date):
+        calls.append((from_date, to_date))
+        return pd.DataFrame({"id": list(range(2000)), "time": ["t"] * 2000})
+
+    monkeypatch.setattr(fetcher, "API_PAGE_CAP", 0)  # default
+    monkeypatch.setattr(fetcher, "fetch_quake_data", fake_fetch)
+    df = fetcher.fetch_quake_data_complete("2025-01-01", "2025-12-31")
+    assert len(df) == 2000
+    assert len(calls) == 1, "with the cap disabled, never bisect even a huge window"

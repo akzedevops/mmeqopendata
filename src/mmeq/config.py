@@ -24,10 +24,12 @@ RETRY_TOTAL = 3
 RETRY_BACKOFF = 0.5
 RETRY_STATUS_FORCELIST = [429, 502, 503, 504]
 
-# The API returns at most this many records per request (newest-first, no
-# pagination). A window whose response hits this count is treated as truncated and
-# is bisected by date until each sub-window is under the cap. See specs/001.
-API_PAGE_CAP = int(os.environ.get("MMEQ_API_PAGE_CAP", "500"))
+# Window-bisection tripwire. The API has NO record cap — it serves the full catalog
+# in a single request (verified) — so bisection is DISABLED by default (0). It remains
+# available as a defensive measure: set MMEQ_API_PAGE_CAP to a positive N and any window
+# whose response returns >= N records is bisected by date, in case the API ever adds
+# pagination/truncation. See specs/001.
+API_PAGE_CAP = int(os.environ.get("MMEQ_API_PAGE_CAP", "0"))
 
 DBSCAN_EPS = 0.3
 DBSCAN_MIN_SAMPLES = 10
