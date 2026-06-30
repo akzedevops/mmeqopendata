@@ -26,15 +26,21 @@ README numbers regenerated against the corrected code.
   intercept (p = 0.93). tz-aware mainshock times handled.
 - **Coulomb along-strike vector was mirrored** — corrected (triggered 34 / shadow
   163; was 69 / 127).
+- **PSHA now uses a declustered catalog** — hazard rates (return periods, 475-yr
+  PGA, hazard curves) were estimated on the raw catalog, where the 2025 aftershock
+  sequence drove the auto-Mc to ~2.4 and b to ~0.35, inflating the hazard.
+  `cmd_report` and the figures now decluster (Gardner-Knopoff) before fitting
+  Gutenberg-Richter (Mc ~4.7, b ~1.06), and `compute_hazard_curve` receives the
+  real catalog span. M6 return period ~2 yr; 475-yr PGA mean ~0.30g, 35 dams >0.5g.
 - Smaller fixes: report PDF GMPE citation, `forecast_params=None` crash,
   ShakeMap log/div guard, negative-magnitude marker NaN, `--mc 0` honored,
   `MMEQ_MAX_WORKERS` wired up, DBSCAN UTM pinned to 47N.
 
-### Known limitations
-- PSHA hazard (475-yr PGA) is computed from the raw, undeclustered catalog, which
-  is currently dominated by the 2025 aftershock sequence — this lowers the fitted
-  b-value and inflates return-period accelerations. Declustering before the PSHA
-  integration is recommended.
+### Paper / README
+- Regenerated all 14 figures against the corrected pipeline (fig5 was being drawn
+  by a second, pre-v2 broken GMPE) and updated paper/README/Pages numbers to
+  match. Dam Vs30 is now sampled from the USGS ShakeMap grid (~230–875 m/s); the
+  earlier "Copernicus DEM" generator was not in the repo.
 
 ## v2.0.0 — 2026-05-01
 
