@@ -16,7 +16,7 @@ A hobby project for collecting, analyzing, and visualizing earthquake data in My
 
 - Fetches earthquake data from the API, validates, deduplicates, exports as CSV + JSON
 - Scores 254 dams by seismic risk using PGA, fault proximity, and structural exposure
-- Computes site-specific Vs30 from Copernicus DEM (Wald & Allen 2007 slope proxy)
+- Computes site-specific Vs30 from the USGS ShakeMap grid (Wald & Allen 2007 slope proxy)
 - Builds probabilistic hazard curves (Cornell-McGuire PSHA) at each dam
 - Uses Abrahamson & Silva (2008) GMPE with rupture distance to fault trace
 - Runs b-value / completeness analysis, aftershock forecasting (Omori law)
@@ -126,7 +126,7 @@ Each dam gets a composite risk score from four components:
 
 The ground motion model uses rupture distance (not epicentral distance) — this matters a lot for the 2025 M7.7 event because the fault rupture extended ~475 km along the Sagaing Fault. A dam might be 300 km from the epicenter but only 5 km from the rupture trace.
 
-Vs30 (shear-wave velocity in the top 30 m) is estimated at each dam from the Copernicus DEM using the Wald & Allen (2007) slope proxy. Range: 600–1,100 m/s across the 254 sites.
+Vs30 (shear-wave velocity in the top 30 m) is sampled at each dam from the USGS ShakeMap Vs30 grid (a Wald & Allen 2007 topographic-slope proxy). Range: ~230–875 m/s across the 254 sites (mean ~450 m/s) — dams in the soft sediments of the central basin amplify shaking relative to those founded on rock.
 
 I validated the GMPE against the actual Naypyidaw ShakeMap recording — predicted 0.51g vs observed 0.57g (ratio 1.12), which is well within one standard deviation.
 
@@ -135,29 +135,29 @@ I validated the GMPE against the actual Naypyidaw ShakeMap recording — predict
 | Grade | Count |
 |---|---|
 | Critical | 25 |
-| High | 112 |
-| Moderate | 10 |
-| Low | 107 |
+| High | 148 |
+| Moderate | 67 |
+| Low | 14 |
 
-137 dams (54%) scored Critical or High.
+173 dams (68%) scored Critical or High. (Earlier versions under-counted these because a ground-motion bug floored the PGA of dams beyond ~100 km from the rupture, mis-grading them as Low — see CHANGELOG.)
 
 ## How the Seismology Works
 
-The catalog has 9,242 events. Most are small (mean M 3.2), but there are 6 events ≥ M7.0 and 358 ≥ M5.0.
+The catalog has 9,390 events. Most are small (mean M 3.2), but there are 6 events ≥ M7.0 and 358 ≥ M5.0.
 
-**b-value and completeness:** The Gutenberg-Richter b-value at Mc = 4.0 is 0.71. Below M4 the catalog is incomplete (the raw b-value of 0.33 was an artifact of missing small events). The b-value converges to ~1.0 at Mc ≥ 4.5, which is typical for tectonic regions.
+**b-value and completeness:** On the full catalog the Gutenberg-Richter b-value at Mc = 4.0 is 0.71, but the raw value (auto-Mc ≈ 2.4) drops to 0.35 — an artifact of the 2025 aftershock sequence flooding the small-magnitude bins. After declustering (Gardner-Knopoff window), the catalog yields Mc ≈ 4.7 and b ≈ 1.06, typical for a tectonic region. The probabilistic hazard below uses these declustered rates.
 
 **Clustering:** DBSCAN in UTM Zone 47N coordinates (so distances are in meters, not degrees) identifies 7 seismic zones. The central Myanmar cluster contains 95% of all events.
 
-**Aftershock forecasting:** Modified Omori law fitted to the M7.7 sequence gives p = 0.83 (slightly below the global average of ~1.0), forecasting expected M≥3 aftershocks at 7, 30, and 90 day windows.
+**Aftershock forecasting:** Modified Omori law fitted to the M7.7 sequence gives p = 0.93 (close to the global average of ~1.0), forecasting expected M≥3 aftershocks at 7, 30, and 90 day windows.
 
-**Coulomb stress transfer:** Using the USGS finite fault model (530 slip patches, 0–7 m variable slip), I computed which dams are in stress-triggered zones (69 dams, 27%) vs stress shadows (127 dams, 50%).
+**Coulomb stress transfer:** Using the USGS finite fault model (530 slip patches, 0–7 m variable slip), I computed which dams are in stress-triggered zones (34 dams, 13%) vs stress shadows (163 dams, 64%).
 
 ## Probabilistic Hazard
 
 Beyond single-event PGA, each dam gets a full hazard curve using the Cornell-McGuire PSHA approach — integrating the Gutenberg-Richter magnitude distribution with the GMPE over all possible magnitudes (M5–8).
 
-The 475-year PGA (10% chance of exceedance in 50 years) ranges from 0.09g to 1.31g across the dam portfolio, with a mean of 0.31g. 32 dams exceed 0.5g at this return period.
+The 475-year PGA (10% chance of exceedance in 50 years) ranges from ~0.01g to ~1.9g across the dam portfolio, with a mean of ~0.30g; 35 dams exceed 0.5g at this return period. The rates come from the declustered catalog (b ≈ 1.06) so the Poisson assumption holds and the 2025 aftershock sequence doesn't inflate the hazard — the implied return period for an M6 anywhere in the corridor is ~2 years.
 
 ## Building Exposure from OpenStreetMap
 

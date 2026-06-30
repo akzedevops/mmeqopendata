@@ -26,8 +26,17 @@ def omori_params(
 
     dt_hours = (aftershocks["time_utc"] - mainshock_time).dt.total_seconds() / 3600
     dt_hours = dt_hours.values
+    dt_hours = dt_hours[dt_hours > 0]
+    if len(dt_hours) < 5:
+        return 0.0, 1.0, 0.0
 
-    bins = np.logspace(np.log10(1), np.log10(max(dt_hours.max(), 2)), 20)
+    # Log-spaced bins spanning the full observed range. The first bin edge must
+    # start at the earliest aftershock (often minutes after the mainshock), not
+    # a hardcoded t=1 h — Omori decay peaks early, and np.histogram silently
+    # drops everything below the lowest edge.
+    t_min = max(dt_hours.min(), 0.01)
+    t_max = max(dt_hours.max(), t_min * 10)
+    bins = np.logspace(np.log10(t_min), np.log10(t_max), 20)
     counts, edges = np.histogram(dt_hours, bins=bins)
     centers = np.sqrt(edges[:-1] * edges[1:])
 
@@ -38,11 +47,13 @@ def omori_params(
     log_centers = np.log10(centers[mask])
     log_rates = np.log10(counts[mask] / np.diff(edges)[mask])
 
+    # rate(t) = K / (t + c)^p  ->  log10(rate) ≈ log10(K) - p*log10(t) for t >> c.
+    # Slope gives p; intercept gives K (events/hour at t=1 h), which uses the
+    # whole fit rather than a single bin's raw count.
     coeffs = np.polyfit(log_centers, log_rates, 1)
     p = max(0.5, min(2.0, -coeffs[0]))
-
-    K = counts[0] / (centers[0] ** (-p + 1) + 0.01)
-    c_param = centers[0] * 0.1
+    K = 10 ** coeffs[1]
+    c_param = 0.1  # hours; typical Omori offset, small vs the fit window
 
     total_aftershocks = len(aftershocks)
     logger.info(f"Omori params: K={K:.1f}, c={c_param:.2f}h, p={p:.2f}, N={total_aftershocks}")
@@ -80,11 +91,17 @@ def modified_omori_forecast(
     min_mag: float = 3.0,
 ) -> Tuple[pd.DataFrame, dict]:
     if mainshock_time is None:
-        mainshock_time = catalog.loc[catalog["mag"].idxmax(), "time_utc"]
+        mainshock = catalog.loc[catalog["mag"].idxmax()]
+        mainshock_time = mainshock["time_utc"]
         if isinstance(mainshock_time, str):
             mainshock_time = pd.Timestamp(mainshock_time)
-
-    mainshock = catalog.loc[catalog["mag"].idxmax()]
+    else:
+        # Caller supplied the mainshock time: describe the event nearest that
+        # time, not the global-max event, so the reported lat/lon/mag match the
+        # window the Omori fit is centred on.
+        mainshock_time = pd.Timestamp(mainshock_time)
+        idx = (pd.to_datetime(catalog["time_utc"]) - mainshock_time).abs().idxmin()
+        mainshock = catalog.loc[idx]
 
     K, c, p = omori_params(mainshock_time, catalog, window_days=30, min_mag=min_mag)
 
@@ -92,7 +109,10 @@ def modified_omori_forecast(
         logger.warning("Could not fit Omori parameters")
         return pd.DataFrame(), {}
 
-    elapsed_hours = (pd.Timestamp.now(tz="UTC") - mainshock_time.tz_localize("UTC")).total_seconds() / 3600
+    # mainshock_time may be tz-naive or tz-aware depending on how time_utc was
+    # loaded; normalize to UTC before differencing with an aware "now".
+    ms_utc = mainshock_time.tz_localize("UTC") if mainshock_time.tzinfo is None else mainshock_time.tz_convert("UTC")
+    elapsed_hours = (pd.Timestamp.now(tz="UTC") - ms_utc).total_seconds() / 3600
     forecast_hours = forecast_days * 24
     start_h = max(0, elapsed_hours)
 
@@ -138,7 +158,9 @@ def aftershock_probability_grid(
     Uses power-law spatial decay from the rupture zone (Wells & Coppersmith
     scaling for rupture length) combined with temporal Omori forecast.
 
-    Returns DataFrame with lat, lon, probability columns.
+    Returns DataFrame with lat, lon, expected_count columns. The per-cell values
+    are expected event counts (they sum to n_expected over the grid), not
+    probabilities, and may exceed 1.
     """
     # Temporal: expected number of M>=min_mag aftershocks in forecast window
     # Assume mainshock happened ~30 days ago for current forecast
@@ -171,11 +193,11 @@ def aftershock_probability_grid(
     kernel = (1 + (dist_from_rupture / d_param) ** 2) ** (-q)
     kernel /= kernel.sum()  # normalize
 
-    prob = n_expected * kernel
+    expected = n_expected * kernel
 
     rows = []
     for i in range(len(lats)):
         for j in range(len(lons)):
-            if prob[i, j] > 1e-6:
-                rows.append({"lat": lats[i], "lon": lons[j], "probability": prob[i, j]})
+            if expected[i, j] > 1e-6:
+                rows.append({"lat": lats[i], "lon": lons[j], "expected_count": expected[i, j]})
     return pd.DataFrame(rows)

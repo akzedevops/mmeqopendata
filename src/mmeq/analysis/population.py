@@ -23,7 +23,6 @@ def estimate_population_exposure(
         logger.info("No population data file found, using city-based estimates")
         pop_df = _build_city_population()
 
-    major = eq_df.nlargest(1, "mag").iloc[0]
     results = []
 
     if dams_df is not None and not dams_df.empty:

@@ -1,5 +1,47 @@
 # Changelog
 
+## v2.0.1 — 2026-06-30
+
+Correctness pass across the analysis pipeline and a data-export fix. Figures and
+README numbers regenerated against the corrected code.
+
+### Fixed
+- **ASK08 large-distance coefficient** — `a18` was `-0.39`, should be `-0.0067`
+  (and `a16` `0.70`→`0.90`). The wrong value collapsed PGA to the floor for any
+  dam beyond ~100 km of the rupture, mis-grading distant dams as "Low". Dam risk
+  grades changed accordingly (Critical 25 / High 148 / Moderate 67 / Low 14; was
+  25 / 112 / 10 / 107). The rock-reference `PGA1100` now also includes the
+  hanging-wall / ztor / large-distance geometry terms.
+- **`generate_figures.py` used a second, broken GMPE** — fig5 (attenuation) was
+  drawn with the pre-v2 model (`a1=-0.526`, no site/geometry terms); now uses the
+  canonical `estimate_pga_ask08`.
+- **Return period not annualized** — `compute_return_period` now divides the
+  catalog a-value by the catalog span.
+- **Monthly CSV duplicate accumulation** — monthly files are overwritten (full
+  re-fetch each run) instead of appended; dedup keys on the stable event `id`.
+  Cleaned 8,387 accumulated duplicate rows from existing exports.
+- **CI export swallowed fetch failures** — `dataexport.py` now re-raises so a
+  failed nightly fetch fails the job instead of committing missing data.
+- **Omori fit dropped the first hour** of aftershocks; `K` now from the full-fit
+  intercept (p = 0.93). tz-aware mainshock times handled.
+- **Coulomb along-strike vector was mirrored** — corrected (triggered 34 / shadow
+  163; was 69 / 127).
+- **PSHA now uses a declustered catalog** — hazard rates (return periods, 475-yr
+  PGA, hazard curves) were estimated on the raw catalog, where the 2025 aftershock
+  sequence drove the auto-Mc to ~2.4 and b to ~0.35, inflating the hazard.
+  `cmd_report` and the figures now decluster (Gardner-Knopoff) before fitting
+  Gutenberg-Richter (Mc ~4.7, b ~1.06), and `compute_hazard_curve` receives the
+  real catalog span. M6 return period ~2 yr; 475-yr PGA mean ~0.30g, 35 dams >0.5g.
+- Smaller fixes: report PDF GMPE citation, `forecast_params=None` crash,
+  ShakeMap log/div guard, negative-magnitude marker NaN, `--mc 0` honored,
+  `MMEQ_MAX_WORKERS` wired up, DBSCAN UTM pinned to 47N.
+
+### Paper / README
+- Regenerated all 14 figures against the corrected pipeline (fig5 was being drawn
+  by a second, pre-v2 broken GMPE) and updated paper/README/Pages numbers to
+  match. Dam Vs30 is now sampled from the USGS ShakeMap grid (~230–875 m/s); the
+  earlier "Copernicus DEM" generator was not in the repo.
+
 ## v2.0.0 — 2026-05-01
 
 Major overhaul of calculations, data sources, and GitHub Pages.

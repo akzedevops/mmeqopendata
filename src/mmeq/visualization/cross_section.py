@@ -58,7 +58,7 @@ def depth_cross_section(
             z=-group["depth"],
             mode="markers",
             marker=dict(
-                size=np.clip(group["mag"] ** 1.5 * 0.8, 2, 15),
+                size=np.clip(np.maximum(group["mag"].values, 0.0) ** 1.5 * 0.8, 2, 15),
                 color=color_map[cls],
                 opacity=0.6,
             ),

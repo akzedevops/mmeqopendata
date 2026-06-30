@@ -32,7 +32,7 @@
 \noindent
 After the devastating March 2025 earthquake in Myanmar, I wanted to understand how many of the country's 254 dams are actually at risk.
 This write-up documents a hobby project that pulls earthquake data from a public API, scores every dam for seismic risk, and runs probabilistic hazard analysis---all with open-source Python tools.
-The corrected Abrahamson \& Silva (2008) ground-motion model, validated against the actual Naypyidaw recording (predicted 0.51$g$ vs.\ observed 0.57$g$), shows that about half the dams sit in zones of significant seismic hazard.
+The corrected Abrahamson \& Silva (2008) ground-motion model, validated against the actual Naypyidaw recording (predicted 0.51$g$ vs.\ observed 0.57$g$), shows that more than two-thirds of the dams sit in zones of significant seismic hazard.
 An OpenStreetMap-based exposure analysis finds over 2,100 schools and 900 hospitals in areas that experienced strong-to-severe shaking.
 Everything---code, data, interactive maps---is on GitHub.
 \end{abstract}
@@ -56,7 +56,7 @@ I wanted to know: which dams are most at risk, and can we quantify it with open 
 \subsection{What This Project Does}
 
 \begin{itemize}
-    \item Pulls 9,242 earthquake records (1970--2026) from the \href{https://mmeq.akze.net}{Myanmar Earthquake API}
+    \item Pulls 9,390 earthquake records (1970--2026) from the \href{https://mmeq.akze.net}{Myanmar Earthquake API}
     \item Scores all 254 dams for seismic risk using a proper ground-motion model
     \item Runs probabilistic hazard curves, Coulomb stress transfer, fragility analysis
     \item Validates predictions against actual recorded ground motions
@@ -76,7 +76,7 @@ All data is free and open:
 Earthquakes & Myanmar Earthquake API (USGS/ISC) & Open \\
 Dams (254) & Open Development Mekong (IFC/WLE) & CC BY-SA 4.0 \\
 Fault traces (395) & GEM Global Active Faults Database & CC BY-SA 4.0 \\
-Elevation (Vs30) & Copernicus DEM 30\,m & Open \\
+Site $V_{S30}$ & USGS ShakeMap $V_{S30}$ grid (Wald \& Allen 2007) & Public domain \\
 Population grid & WorldPop 2020 (1\,km) & CC BY 4.0 \\
 ShakeMap stations & USGS ShakeMap (us7000pn9s) & Public domain \\
 Finite fault model & USGS (Goldberg et al.\ 2025) & Public domain \\
@@ -91,7 +91,7 @@ Buildings (34,224) & OpenStreetMap (Overpass API) & ODbL \\
 \section{The Earthquake Catalog}
 % ============================================================
 
-The catalog has 9,242 events.
+The catalog has 9,390 events.
 Most are small (mean M\,3.2), but there are 6 events $\geq$\,M7.0 and 358 $\geq$\,M5.0.
 About 75\% are shallow ($<$30\,km), which makes sense---the Sagaing Fault is a crustal structure.
 
@@ -106,7 +106,7 @@ About 75\% are shallow ($<$30\,km), which makes sense---the Sagaing Fault is a c
 
 The Gutenberg-Richter law says $\log_{10} N = a - bM$.
 The tricky part is that the catalog is incomplete at small magnitudes---the 1970s network couldn't detect M2 events, but the modern network can.
-If you naively fit all the data, you get $b = 0.33$, which is way too low (global average is $\sim$1.0).
+If you naively fit all the data, you get $b = 0.35$, which is way too low (global average is $\sim$1.0). After declustering the catalog (Gardner-Knopoff window) to remove the 2025 aftershock burst, $M_c \approx 4.7$ and $b \approx 1.06$ --- typical for a tectonic region, and the rates used for the probabilistic hazard below.
 
 A stability analysis (Figure~\ref{fig:fmd}b) shows the b-value only converges at $M_c \geq 4.0$.
 Using that cutoff: $b = 0.71 \pm 0.02$ with 2,473 events.
@@ -186,8 +186,8 @@ The model isn't designed for those paths.
 
 \subsection{Site-Specific Vs30}
 
-Instead of assuming all dams sit on rock ($V_{S30} = 760$\,m/s), I estimated $V_{S30}$ at each site from the Copernicus DEM using the Wald \& Allen (2007) slope proxy.
-Most dams are in mountainous terrain, so $V_{S30}$ is high (mean 968\,m/s).
+Instead of assuming all dams sit on rock ($V_{S30} = 760$\,m/s), I sampled $V_{S30}$ at each site from the USGS ShakeMap $V_{S30}$ grid (a Wald \& Allen 2007 topographic-slope proxy).
+Values range from $\sim$230 to 875\,m/s (mean $\sim$450\,m/s): dams in the soft sediments of the central basin amplify shaking relative to those founded on rock.
 
 \begin{figure}[htbp]
     \centering
@@ -221,9 +221,9 @@ With the corrected GMPE:
 \textbf{Grade} & \textbf{Count} & \textbf{\%} \\
 \midrule
 Critical ($\geq 7$) & 25 & 9.8\% \\
-High (5--7) & 112 & 44.1\% \\
-Moderate (3--5) & 10 & 3.9\% \\
-Low ($< 3$) & 107 & 42.1\% \\
+High (5--7) & 148 & 58.3\% \\
+Moderate (3--5) & 67 & 26.4\% \\
+Low ($< 3$) & 14 & 5.5\% \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -257,8 +257,8 @@ The Critical+High fraction stays above 30\% regardless of weights, so the overal
 
 Beyond the single-event PGA, I computed full hazard curves at each dam using the Cornell-McGuire PSHA approach: integrate the G-R magnitude distribution with the GMPE over all possible magnitudes (M5--8), including the ground-motion variability ($\sigma_{ln} = 0.65$).
 
-The 475-year PGA (10\% chance of exceedance in 50 years) ranges from 0.09$g$ to 1.31$g$ across the dam portfolio, with a mean of 0.31$g$.
-32 dams exceed 0.5$g$ at this return period.
+The 475-year PGA (10\% chance of exceedance in 50 years) ranges from $\sim$0.01$g$ to $\sim$1.9$g$ across the dam portfolio, with a mean of 0.30$g$ (declustered rates, $b \approx 1.06$).
+35 dams exceed 0.5$g$ at this return period.
 
 \begin{figure}[htbp]
     \centering
@@ -277,7 +277,7 @@ Some areas get loaded (more likely to have aftershocks), others get unloaded (``
 I modeled this using the point-source double-couple summation from Aki \& Richards (2002).
 
 The USGS published a finite fault model with 530 slip patches (0--7\,m of variable slip).
-Using that, 69 dams (27\%) are in stress-triggered zones and 127 (50\%) are in stress shadows.
+Using that, 34 dams (13\%) are in stress-triggered zones and 163 (64\%) are in stress shadows.
 
 \begin{figure}[htbp]
     \centering
@@ -307,7 +307,7 @@ Using HAZUS-style log-normal fragility functions for earthfill, concrete, and ro
 \subsection{Monte Carlo PGA Uncertainty}
 
 The GMPE has aleatory uncertainty ($\sigma_{ln} = 0.65$), meaning the actual PGA at any site could easily be 2$\times$ higher or lower than the median.
-1,000 Monte Carlo iterations show that 25 dams have $>$50\% probability of exceeding 0.2$g$.
+1,000 Monte Carlo iterations show that 34 dams have $>$50\% probability of exceeding 0.2$g$.
 
 \begin{figure}[htbp]
     \centering
@@ -375,11 +375,11 @@ Near-fault sites are systematically low because this was a supershear rupture, w
     After correcting against the OpenQuake reference, the NPW prediction went from wildly wrong to within 12\% of the observation.
 
     \item \textbf{Catalog completeness is sneaky.}
-    The raw b-value of 0.33 looked alarming but was just an artifact of mixing 1970s data (only M4.5+ detected) with 2020s data (M2+ detected).
+    The raw b-value of 0.35 looked alarming but was just an artifact of mixing 1970s data (only M4.5+ detected) with 2020s data (M2+ detected) and the 2025 aftershock burst.
     Always check stability before trusting a b-value.
 
     \item \textbf{Over half of Myanmar's dams are in high-hazard zones.}
-    25 Critical + 112 High = 137 dams (54\%) with significant seismic exposure.
+    25 Critical + 148 High = 173 dams (68\%) with significant seismic exposure.
     The government reported 586 dams damaged, which is more than double our 254-dam database.
 
     \item \textbf{Open data makes this possible.}

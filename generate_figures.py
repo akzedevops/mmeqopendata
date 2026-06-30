@@ -238,28 +238,15 @@ print("Figure 4: Dam risk map")
 # ========== Figure 5: PGA attenuation curves (ASK08) ==========
 fig, ax = plt.subplots(figsize=(8, 6))
 
-def pga_ask08(mag, rjb_km):
-    rjb = max(rjb_km, 0.0)
-    c1_val = 6.2
-    c4 = 5.6
-    a1 = -0.526
-    a2 = -1.60
-    a3 = 0.143
-    a4 = 0.0
-    a10 = -0.135
-    a13 = -0.015
-    h = c4
-    r = math.sqrt(rjb**2 + h**2)
-    if mag <= c1_val:
-        f_mag = a1 + a4 * (mag - c1_val) + a13 * (8.5 - mag)**2
-    else:
-        f_mag = a1 + a10 * (mag - c1_val) + a13 * (8.5 - mag)**2
-    f_dis = (a2 + a3 * mag) * math.log(r)
-    return max(math.exp(f_mag + f_dis), 0.0001)
+# Use the canonical, validated GMPE from the package rather than a local copy.
+# (The previous inline pga_ask08 was the pre-v2 broken model: a1=-0.526, missing
+# the site/geometry terms — it disagreed with the pipeline that produces the
+# dam PGA scatter on this same figure.)
+from src.mmeq.analysis.dam_risk import estimate_pga_ask08 as pga_ask08
 
 dists = np.logspace(0, 2.8, 200)
 for mag, ls in [(7.7, "-"), (7.0, "--"), (6.5, "-."), (6.0, ":")]:
-    pgas = [pga_ask08(mag, d) for d in dists]
+    pgas = [pga_ask08(mag, d, vs30=760) for d in dists]
     ax.loglog(dists, pgas, ls, linewidth=2, label=f"M{mag:.1f}")
 
 # Plot dam PGA vs distance to fault
@@ -331,7 +318,7 @@ for i, (g, v) in enumerate(zip(grade_counts.index, grade_counts.values)):
 # Sensitivity analysis boxplot
 sens = pd.read_csv("report/sensitivity_analysis.csv")
 grade_data = [sens["critical"], sens["high"], sens["moderate"], sens["low"]]
-bp = axes[2].boxplot(grade_data, labels=["Critical", "High", "Moderate", "Low"],
+bp = axes[2].boxplot(grade_data, tick_labels=["Critical", "High", "Moderate", "Low"],
                       patch_artist=True)
 for patch, color in zip(bp["boxes"], ["#d62728", "#ff7f0e", "#ffdd57", "#2ca02c"]):
     patch.set_facecolor(color)
@@ -401,9 +388,13 @@ print("Figure 9: Vs30 map")
 
 # ========== Figure 10: Hazard curves for representative dams ==========
 from src.mmeq.analysis.dam_risk import compute_hazard_curve
-from src.mmeq.analysis.seismology import b_value as calc_bval
+from src.mmeq.analysis.seismology import b_value as calc_bval, decluster_catalog
 
-b_val_fig, a_val_fig, mc_fig = calc_bval(df["mag"], min_mag=4.0)
+# PSHA rates from the declustered catalog (Poisson assumption) so the 2025
+# aftershock sequence doesn't bias the b-value and inflate the hazard.
+df_dec = decluster_catalog(df)
+cat_years = max((df["time_utc"].max() - df["time_utc"].min()).days / 365.25, 1.0)
+b_val_fig, a_val_fig, mc_fig = calc_bval(df_dec["mag"])
 
 fig, ax = plt.subplots(figsize=(9, 7))
 
@@ -422,6 +413,7 @@ colors_hc = ["#d62728", "#ff7f0e", "#2ca02c", "#1f77b4", "#9467bd", "#8c564b"]
 for i, (name, rjb, vs30) in enumerate(representative_dams):
     hc = compute_hazard_curve(
         rjb_km=rjb, vs30=vs30, b_val=b_val_fig, a_val=a_val_fig, mc=mc_fig,
+        catalog_years=cat_years,
         pga_levels=np.logspace(-2.5, 0.3, 80),
     )
     valid = hc[hc["return_period_yr"] < 1e5]

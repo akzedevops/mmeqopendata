@@ -108,8 +108,11 @@ def fetch_quake_data(from_date: str, to_date: str) -> pd.DataFrame:
         logging.info(f"✅ Data fetched for {from_date} → {to_date}")
         return pd.DataFrame(data.get("earthquakes", []))
     except Exception as e:
+        # Re-raise so process_month's future fails, main() sets has_error and
+        # exits non-zero. Returning an empty frame here would let a failed fetch
+        # masquerade as "no data", silently dropping a month and exiting 0.
         logging.error(f"❌ Error fetching data ({from_date} → {to_date}): {e}")
-        return pd.DataFrame()
+        raise
 
 
 def validate_quake_data(df: pd.DataFrame) -> pd.DataFrame:
@@ -146,21 +149,33 @@ def deduplicate_csv(path: str):
         return
     try:
         df = pd.read_csv(path)
-        df.drop_duplicates(inplace=True)
+        df = _dedup_frame(df)
         df.to_csv(path, index=False)
     except Exception as e:
         logging.warning(f"Failed to deduplicate {path}: {e}")
 
 
-def save_to_csv(df: pd.DataFrame, path: str, dedup: bool = False):
-    """Save DataFrame to CSV, merging with existing data if present."""
+def _dedup_frame(df: pd.DataFrame) -> pd.DataFrame:
+    """Drop duplicates, keying on the stable event ``id`` when present."""
+    if "id" in df.columns:
+        return df.drop_duplicates(subset=["id"], keep="last")
+    return df.drop_duplicates()
+
+
+def save_to_csv(df: pd.DataFrame, path: str, dedup: bool = False, overwrite: bool = False):
+    """Save DataFrame to CSV.
+
+    overwrite=True writes only ``df`` (monthly files are re-fetched in full each
+    run; appending would accumulate duplicates). Otherwise merge with the
+    existing file, deduplicating on event ``id`` when ``dedup``.
+    """
     if df.empty:
         return
-    if os.path.exists(path):
+    if not overwrite and os.path.exists(path):
         existing = pd.read_csv(path, on_bad_lines="skip")
         df = pd.concat([existing, df], ignore_index=True)
-        if dedup:
-            df.drop_duplicates(inplace=True)
+    if dedup:
+        df = _dedup_frame(df)
     df.to_csv(path, index=False)
 
 
@@ -214,7 +229,7 @@ def main():
                 continue
             monthly_csv = os.path.join(EXPORT_DIR, "csv/monthly", f"earthquakes_{year}_{month:02d}.csv")
             monthly_json = os.path.join(EXPORT_DIR, "json/monthly", f"earthquakes_{year}_{month:02d}.json")
-            save_to_csv(df_valid, monthly_csv)
+            save_to_csv(df_valid, monthly_csv, overwrite=True)
             save_to_json(df_valid, monthly_json)
             yearly_frames.setdefault(year, []).append(df_valid)
             all_frames.append(df_valid)
@@ -240,13 +255,16 @@ def main():
 
     existing_records = load_combined_json(combined_json)
     new_records = combined_df.to_dict(orient="records")
-    seen = set()
-    merged = []
+    merged_by_key = {}
+    order = []
     for record in existing_records + new_records:
-        key = (record.get("time_utc"), record.get("latitude"), record.get("longitude"))
-        if key not in seen:
-            seen.add(key)
-            merged.append(record)
+        key = record.get("id") or (
+            record.get("time_utc"), record.get("latitude"), record.get("longitude")
+        )
+        if key not in merged_by_key:
+            order.append(key)
+        merged_by_key[key] = record
+    merged = [merged_by_key[k] for k in order]
     with open(combined_json, "w", encoding="utf-8") as f:
         json.dump({"earthquakes": merged}, f, indent=2, ensure_ascii=False)
 

@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import pandas as pd
 
 from mmeq import __version__
-from mmeq.config import EXPORT_DIR, EXPORT_SUBDIRS, OUTPUT_DIR
+from mmeq.config import EXPORT_DIR, EXPORT_SUBDIRS, OUTPUT_DIR, MAX_WORKERS
 from mmeq.export.fetcher import fetch_quake_data, generate_date_ranges
 from mmeq.export.writer import (
     validate_quake_data,
@@ -90,7 +90,7 @@ def cmd_export(args) -> None:
             monthly_json = os.path.join(
                 EXPORT_DIR, "json/monthly", f"earthquakes_{year}_{month:02d}.json"
             )
-            save_to_csv(df_valid, monthly_csv)
+            save_to_csv(df_valid, monthly_csv, overwrite=True)
             save_to_json(df_valid, monthly_json)
             yearly_frames.setdefault(year, []).append(df_valid)
             all_frames.append(df_valid)
@@ -168,7 +168,7 @@ def cmd_analyze(args) -> None:
             logging.error("Install geopandas, contextily, scikit-learn for clustering")
 
     if "seismology" in types:
-        b, a, mc = b_value(df["mag"], min_mag=args.mc if args.mc else None)
+        b, a, mc = b_value(df["mag"], min_mag=args.mc)
         print(f"\nSeismological Summary:")
         print(f"  b-value: {b:.3f}")
         print(f"  a-value: {a:.3f}")
@@ -239,8 +239,14 @@ def cmd_report(args) -> None:
         df = df[df["mag"] >= args.min_mag]
         logging.info(f"Filtered to mag >= {args.min_mag}: {len(df)} records")
 
-    b, a, mc = b_value(df["mag"], min_mag=args.mc if args.mc else None)
-    logging.info(f"b={b:.3f}, a={a:.3f}, Mc={mc:.1f}")
+    # Gutenberg-Richter parameters for Poissonian hazard (return periods, PSHA)
+    # are estimated on a DECLUSTERED catalog so a single aftershock sequence
+    # (e.g. the 2025 M7.7) doesn't bias the completeness magnitude and inflate the
+    # rate. The dam grade table uses the M7.7 scenario PGA and is unaffected.
+    from mmeq.analysis.seismology import decluster_catalog
+    df_dec = decluster_catalog(df)
+    b, a, mc = b_value(df_dec["mag"], min_mag=args.mc)
+    logging.info(f"Declustered G-R: b={b:.3f}, a={a:.3f}, Mc={mc:.1f} (N={len(df_dec)} of {len(df)})")
 
     risk_df = None
     if not args.no_dams:
@@ -404,7 +410,7 @@ def main() -> None:
 
     # --- export ---
     p_export = subparsers.add_parser("export", help="Fetch & export earthquake data")
-    p_export.add_argument("--workers", type=int, default=10, help="Parallel workers")
+    p_export.add_argument("--workers", type=int, default=MAX_WORKERS, help="Parallel workers (env: MMEQ_MAX_WORKERS)")
 
     # --- analyze ---
     p_analyze = subparsers.add_parser("analyze", help="Run analyses on earthquake data")

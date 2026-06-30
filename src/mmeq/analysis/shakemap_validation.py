@@ -15,6 +15,18 @@ _SHAKEMAP_PATH = os.path.join("data", "shakemap", "stationlist.json")
 _DAM_RISK_PATH = os.path.join("report", "dam_risk_scores.csv")
 
 
+def _residual_and_ratio(pga_obs: float, pga_pred: float):
+    """Return (residual_ln, ratio), guarding against zero/negative PGA.
+
+    A station can report a 0 amplitude (it passes the ``value is not None``
+    filter) and ``estimate_pga_ask08`` is floored at a tiny value, so log/division
+    must be guarded or the whole validation crashes on a single bad row.
+    """
+    if pga_obs <= 0 or pga_pred <= 0:
+        return None, None
+    return round(math.log(pga_obs / pga_pred), 4), round(pga_obs / pga_pred, 4)
+
+
 def _load_all_fault_segments() -> list:
     """Load fault segments from rupture trace, GEM faults, and plate boundary faults."""
     segments = []
@@ -85,6 +97,7 @@ def validate_against_shakemap(mag: float = 7.7) -> pd.DataFrame:
         dist_km = distance_to_nearest_fault(st["lat"], st["lon"], segments)
         pga_pred = estimate_pga_ask08(mag=mag, rrup_km=dist_km, rjb_km=dist_km)
         pga_obs = st["pga_g"]
+        residual_ln, ratio = _residual_and_ratio(pga_obs, pga_pred)
         rows.append({
             "station_code": st["code"],
             "name": st["name"],
@@ -93,8 +106,8 @@ def validate_against_shakemap(mag: float = 7.7) -> pd.DataFrame:
             "dist_fault_km": round(dist_km, 2),
             "pga_observed_g": round(pga_obs, 5),
             "pga_predicted_g": round(pga_pred, 5),
-            "residual_ln": round(math.log(pga_obs / pga_pred), 4),
-            "ratio": round(pga_obs / pga_pred, 4),
+            "residual_ln": residual_ln,
+            "ratio": ratio,
         })
 
     # --- dam sites (ShakeMap-interpolated PGA from dam_risk_scores.csv) ---
@@ -107,6 +120,7 @@ def validate_against_shakemap(mag: float = 7.7) -> pd.DataFrame:
                 pga_obs = row["pga_g"]
                 dist_km = row["dist_fault_km"]
                 pga_pred = estimate_pga_ask08(mag=mag, rrup_km=dist_km, rjb_km=dist_km)
+                residual_ln, ratio = _residual_and_ratio(pga_obs, pga_pred)
                 rows.append({
                     "station_code": "DAM",
                     "name": row["name"],
@@ -115,8 +129,8 @@ def validate_against_shakemap(mag: float = 7.7) -> pd.DataFrame:
                     "dist_fault_km": round(dist_km, 2),
                     "pga_observed_g": round(pga_obs, 5),
                     "pga_predicted_g": round(pga_pred, 5),
-                    "residual_ln": round(math.log(pga_obs / pga_pred), 4),
-                    "ratio": round(pga_obs / pga_pred, 4),
+                    "residual_ln": residual_ln,
+                    "ratio": ratio,
                 })
             logger.info("Appended %d dam-site rows from %s", len(dams), _DAM_RISK_PATH)
         else:

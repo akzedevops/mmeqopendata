@@ -169,7 +169,7 @@ def _patch_coulomb_stress(
         r_sq = r * r
 
     cos_s = math.sin(patch_strike)
-    sin_s = -math.cos(patch_strike)
+    sin_s = math.cos(patch_strike)
 
     along = dx * cos_s + dy * sin_s
     perp = dx * sin_s - dy * cos_s
@@ -237,7 +237,7 @@ def compute_coulomb_at_points(
         patch_moment = MU_EL * slip * patch_area
 
         cos_s = math.sin(strike)
-        sin_s = -math.cos(strike)
+        sin_s = math.cos(strike)
 
         seg_ox, seg_oy = _ll_to_meters(
             seg["center_lat"], seg["center_lon"], origin_lat, origin_lon

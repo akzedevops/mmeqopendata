@@ -61,7 +61,7 @@ def build_dashboard(
         go.Scatter(
             x=df["time_utc"], y=df["mag"],
             mode="markers",
-            marker=dict(size=np.clip(df["mag"] ** 1.5 * 0.5, 3, 20), color=dc, opacity=0.6),
+            marker=dict(size=np.clip(np.maximum(df["mag"].values, 0.0) ** 1.5 * 0.5, 3, 20), color=dc, opacity=0.6),
             text=[f"M{m:.1f}, {d:.0f}km, {t}" for m, d, t in zip(df["mag"], df["depth"], df["time_utc"].dt.strftime("%Y-%m-%d"))],
             name="Earthquakes",
             hovertemplate="%{text}<extra></extra>",
@@ -82,7 +82,6 @@ def build_dashboard(
     mag_bins = np.arange(df["mag"].min(), df["mag"].max() + 0.1, 0.1)
     counts, edges = np.histogram(df["mag"], bins=mag_bins)
     centers = (edges[:-1] + edges[1:]) / 2
-    log_counts = np.log10(np.maximum(counts, 0.5))
 
     fig.add_trace(
         go.Bar(
