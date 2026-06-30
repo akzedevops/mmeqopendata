@@ -32,6 +32,7 @@ dependencies = [
 dev = [
     "pytest>=7.0",
     "pytest-cov>=4.0",
+    "ruff>=0.6",
 ]
 
 [project.scripts]
@@ -43,3 +44,24 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py39"
+extend-exclude = ["advanalysis.py", "adv2analysis.py", "visualizer.py"]
+
+[tool.ruff.lint]
+# Start conservative: pyflakes (F) + a subset of pycodestyle (E) errors. Avoid a
+# big bang of style churn on a scientific codebase; expand rules over time.
+# (Import sorting "I" is deferred — enabling it reorders imports repo-wide; do it
+# in a dedicated follow-up so it doesn't bury real findings in churn.)
+select = ["F", "E4", "E7", "E9"]
+ignore = [
+    "E741",  # ambiguous variable names (l, I) — common in math code
+    "F401",  # unused imports in __init__ re-exports / optional-dep guards
+]
+
+[tool.ruff.lint.per-file-ignores]
+# imports interleaved between figure blocks + compact `ax.set_x(...); ax.set_y(...)` (by design)
+"generate_figures.py" = ["E402", "E702"]
+"tests/*" = ["E402"]

@@ -140,7 +140,7 @@ def estimate_pga_ask08(
     a5 = -0.398
     n = 1.18
     c = 1.88
-    c2 = 50.0
+    c2 = 50.0  # noqa: F841 (ASK08 coefficient kept for reference; unused in this PGA impl)
 
     # ------------------------------------------------------------------
     # PGA coefficients  (Table 5a, p. 84)
@@ -154,7 +154,7 @@ def estimate_pga_ask08(
     a12 = 0.0
     a13 = -0.0600
     a14 = 1.0800
-    a15 = -0.3500
+    a15 = -0.3500  # noqa: F841 (HW coefficient; HW term simplified for vertical faults)
     a16 = 0.9000
     a18 = -0.0067
 

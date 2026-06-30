@@ -15,6 +15,7 @@ from mmeq.config import (
     RETRY_TOTAL,
     RETRY_BACKOFF,
     RETRY_STATUS_FORCELIST,
+    API_PAGE_CAP,
 )
 
 import requests
@@ -28,8 +29,12 @@ def _build_session() -> requests.Session:
     session = requests.Session()
     retries = Retry(
         total=RETRY_TOTAL,
+        connect=RETRY_TOTAL,
+        read=RETRY_TOTAL,
         backoff_factor=RETRY_BACKOFF,
         status_forcelist=RETRY_STATUS_FORCELIST,
+        respect_retry_after_header=True,  # honor 429 Retry-After
+        backoff_jitter=0.5,
     )
     session.mount("https://", HTTPAdapter(max_retries=retries))
     return session
@@ -97,3 +102,35 @@ def fetch_quake_data(from_date: str, to_date: str) -> pd.DataFrame:
     except Exception as e:
         logger.error(f"Error fetching data ({from_date} -> {to_date}): {e}")
         raise
+
+
+def fetch_quake_data_complete(from_date: str, to_date: str, _depth: int = 0) -> pd.DataFrame:
+    """Fetch all records in [from_date, to_date], defeating the API's record cap.
+
+    The API returns at most ``API_PAGE_CAP`` records, newest-first, with no pagination.
+    A response that hits the cap is therefore truncated (older events in the window are
+    silently dropped). When that happens we bisect the date window and recurse, so each
+    sub-window comes back under the cap; the pieces are unioned (later dedup handles any
+    overlap). Recursion bottoms out at single-day windows, which the API cannot subdivide.
+    """
+    df = fetch_quake_data(from_date, to_date)
+    if len(df) < API_PAGE_CAP:
+        return df
+
+    d0 = datetime.strptime(from_date, "%Y-%m-%d").date()
+    d1 = datetime.strptime(to_date, "%Y-%m-%d").date()
+    if d0 >= d1:
+        logger.warning(
+            "Window %s..%s hit the %d-record cap and cannot be subdivided below one day; "
+            "this day's data may be incomplete.", from_date, to_date, API_PAGE_CAP,
+        )
+        return df
+
+    mid = d0 + (d1 - d0) // 2
+    logger.info("Window %s..%s hit cap (%d records); bisecting at %s",
+                from_date, to_date, len(df), mid)
+    left = fetch_quake_data_complete(from_date, mid.strftime("%Y-%m-%d"), _depth + 1)
+    right = fetch_quake_data_complete(
+        (mid + timedelta(days=1)).strftime("%Y-%m-%d"), to_date, _depth + 1,
+    )
+    return pd.concat([left, right], ignore_index=True)

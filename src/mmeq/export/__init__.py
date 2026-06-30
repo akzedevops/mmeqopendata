@@ -5,6 +5,7 @@ from .writer import (
     load_combined_json,
     deduplicate_csv,
     validate_quake_data,
+    rebuild_combined,
 )
 
 __all__ = [
@@ -16,4 +17,5 @@ __all__ = [
     "load_combined_json",
     "deduplicate_csv",
     "validate_quake_data",
+    "rebuild_combined",
 ]
