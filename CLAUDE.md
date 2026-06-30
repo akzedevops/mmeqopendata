@@ -50,17 +50,25 @@ When adding features, put them in `src/mmeq/` and wire them through `cli.py`.
 ## Commands
 
 ```bash
-pip install -e ".[dev]"          # setup (Python 3.9+)
-pytest tests/ -v                 # run the 39 tests — do this before/after any change
-mmeq export                      # fetch & export earthquake data (network)
+pip install -e ".[dev]"          # setup (Python 3.9+); includes pytest + ruff
+ruff check .                     # lint — must be clean (enforced in CI)
+pytest tests/ -v                 # run the test suite — do this before/after any change
+mmeq export                      # fetch & export earthquake data (network); the CI cron runs this
+mmeq export --rebuild            # reconcile combined CSV+JSON from monthly files, sort by time
 mmeq analyze --type all          # analyses only
 mmeq visualize --min-mag 3.0     # interactive Folium map
 mmeq report --output ./report    # full pipeline: all analyses + all outputs
 python generate_figures.py       # regenerate paper figures
 ```
 
-`mmeq report` has `--no-*` flags for every stage (`--no-pdf`, `--no-dams`,
-`--no-coulomb`, `--no-montecarlo`, …) — use them to run a single stage fast while iterating.
+`mmeq export` fetches month-by-month and **bisects any window that hits the API's
+500-record cap** (the API is newest-first with no pagination) so data stays complete;
+writes are atomic. `mmeq report` has `--no-*` flags for every stage (`--no-pdf`,
+`--no-dams`, `--no-coulomb`, `--no-montecarlo`, …) — use them to run a single stage fast.
+
+**CI gates on tests:** `report_and_pages.yml`'s deploy `needs:` a `test` job (ruff +
+pytest), and `tests.yml` runs on every PR/push — keep both green or the dashboard won't
+deploy. See `specs/001` (data-fetch) and `specs/003` (improvements) for the active roadmap.
 
 ## Conventions
 
@@ -94,12 +102,15 @@ dashboard. Bugs here are silent and serious. v2.0.0 fixed a critically broken GM
 
 ## Verifying changes
 
-1. `pytest tests/ -v` must stay green; add tests for new analysis functions.
+1. `ruff check .` and `pytest tests/ -v` must stay green; add tests for new analysis
+   functions. CI now gates deploy on both, but run them locally first.
 2. Run the affected stage in isolation (e.g. `mmeq report --no-pdf --no-animated …`)
    and sanity-check the printed summary numbers against expected ranges.
-3. CI (`report_and_pages.yml`) regenerates and deploys on push to `master` touching
-   `quake_exports/**`, `src/mmeq/**`, `data/**`, or `pyproject.toml` — so a bad change to
-   analysis silently ships to the public dashboard. Be careful on `master`.
+3. CI (`report_and_pages.yml`) runs `test` → `build` (regenerates figures + paper) →
+   `deploy` on push to `master` touching `quake_exports/**`, `src/mmeq/**`, `data/**`,
+   `generate_figures.py`, `tools/**`, `paper/main.tex`, or `pyproject.toml`. The `test`
+   gate must pass before anything ships to the public dashboard — but a logically-wrong
+   analysis change that still passes tests will deploy, so be careful on `master`.
 
 ## Spec-driven workflow
 

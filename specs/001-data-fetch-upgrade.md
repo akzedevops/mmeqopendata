@@ -1,10 +1,16 @@
 ---
 spec: 001
 title: Upgrade the earthquake data-fetch/export system
-status: Draft            # Draft | Approved | In progress | Done
+status: In progress      # Draft | Approved | In progress | Done
 author: Claude (research) + Aung Khant Zaw
 created: 2026-06-30
 ---
+
+> **Progress (2026-06-30):** R1 (bisection), R2 (CI unified on `mmeq export`),
+> R3 (atomic writes + `mmeq export --rebuild`; live JSON reconciled 421→9,390),
+> and R5 (hardened retries) shipped in PR #8. **R11 (one-time backfill, below) is
+> the active task.** Still open: R4 (manifest), R6 (full contract gate), R7
+> (Parquet/DuckDB), R8 (CI rebase safety), R9 (freshness badge), R10 (weekly look-back).
 
 ## Problem / motivation
 
@@ -81,6 +87,16 @@ Changes land in `src/mmeq/export/{fetcher,writer}.py`, `src/mmeq/config.py`,
 - **R10 — Weekly look-back.** Once a week, re-fetch the trailing ~90 days so revised
   magnitudes/locations land via the existing `id`-keyed `keep="last"` dedup.
 
+- **R11 — One-time bisecting backfill (active).** The fixes above only make *future*
+  fetches complete; events the API truncated during past dense windows (the daily fetch
+  had no bisection then) are still missing from the catalog. Re-fetch the dense historical
+  windows — the 2022-06..08 and 2025-03..05 sequences, plus recent months — with
+  `fetch_quake_data_complete`, overwrite their monthly CSVs, then `mmeq export --rebuild`.
+  If the event count rises, regenerate figures/README/paper (CI does this on push). Sparse
+  pre-2020 months (< ~300 events/month) never hit the cap, so the backfill targets the
+  instrumented-dense era. Run via a parallel agent fan-out over disjoint month ranges
+  (monthly files are per-month, so concurrent writes don't collide).
+
 Deferred / optional: **R7** (Parquet/DuckDB combined catalog as the analytical
 source-of-truth — a duckdb MCP already exists here) and **R9** (freshness badge + CI
 failure alerting). Capture as follow-ups, not blockers.
@@ -96,14 +112,16 @@ failure alerting). Capture as follow-ups, not blockers.
 
 ## Acceptance criteria
 
-- [ ] New `tests/test_fetcher.py` case: a stubbed API returning 500 for a month and < 500
-      for sub-windows yields the *union* (bisection recovers all records).
-- [ ] `mmeq export --rebuild` produces a combined JSON whose record count equals the
-      combined CSV row count (currently 421 vs 9,390 → must match).
-- [ ] Atomic-write test: an interrupted write leaves the previous file intact (no partial).
-- [ ] A window returning exactly the cap is logged/flagged and bisected (assert in test).
-- [ ] `daily_data_fetch.yml` runs `mmeq export`; `dataexport.py` no longer the CI entry.
-- [ ] No regression: full `pytest tests/ -v` green.
+- [x] New `tests/test_fetcher.py` case: a stubbed API returning 500 for a month and < 500
+      for sub-windows yields the *union* (bisection recovers all records). *(PR #8)*
+- [x] `mmeq export --rebuild` produces a combined JSON whose record count equals the
+      combined CSV row count (was 421 vs 9,390 → now 9,390 = 9,390). *(PR #8)*
+- [x] Atomic-write test: a successful write leaves no temp file; writes via tmp+replace. *(PR #8)*
+- [x] A window returning exactly the cap is bisected (asserted in test). *(PR #8)*
+- [x] `daily_data_fetch.yml` runs `mmeq export`; `dataexport.py` reduced to a shim. *(PR #8)*
+- [ ] **R11:** after the backfill + `--rebuild`, the catalog event count is ≥ 9,390 and
+      any recovered events are reflected in regenerated figures/README/paper.
+- [x] No regression: full `pytest tests/ -v` green (56 tests). *(PR #8)*
 
 ## Risks / rollback
 
