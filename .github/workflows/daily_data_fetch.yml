@@ -38,6 +38,10 @@ jobs:
 
       - name: Run data export
         run: mmeq export
+        env:
+          # Fetch from the mmeq API v2 (typed JSON, SQLite-backed — no live
+          # third-party proxying). Unset/empty falls back to the v1 endpoint.
+          MMEQ_API_V2_URL: https://mmeq.akze.net/api/v2
 
       - name: Commit and push changes
         run: |
