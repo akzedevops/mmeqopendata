@@ -10,6 +10,12 @@ created: 2026-06-30
 > `needs: test`), P3 (CI runs `mmeq export`; `dataexport.py` → shim), P6 (dead
 > legacy scripts deleted), P7 (ruff adopted, redundant pip installs trimmed)
 > shipped. Still open: P2, P4, P5, P8, P9, P10 + the incidental cluster-image bug.
+>
+> **Progress (2026-07-02):** P2 (dam risk computed once per CI build via
+> `mmeq report --reuse-risk` / `MMEQ_REUSE_RISK`), P4 (hazard-curve, fragility,
+> grade-threshold + report smoke tests; suite 64 → 77), P5 (weights/thresholds/
+> `sigma_ln` in `config.py`; shared `_component_scores`/`_grade` helpers) shipped;
+> outputs verified byte-identical. Still open: P8, P9, P10 + the cluster-image bug.
 
 ## Problem / motivation
 
@@ -103,13 +109,22 @@ cluster image is silently missing in CI. Generate it in `cmd_report` or drop the
 ## Acceptance criteria
 
 - [x] CI `test` job runs `pytest` + `ruff` and `report_and_pages` deploy `needs: test` (P1). *(PR #8)*
-- [ ] `dam_risk_scores` computed once per CI build (P2) — assert no duplicate compute in the
-      workflow logs / refactor removes the second call.
+- [x] `dam_risk_scores` computed once per CI build (P2) — `mmeq report --reuse-risk`
+      (env: `MMEQ_REUSE_RISK`) consumes the fresh `report/dam_risk_scores.csv` that
+      `tools/build_figure_data.py` already produced; `report_and_pages.yml` passes the
+      flag. Stale/missing CSVs fall back to recomputing, so standalone behavior is
+      unchanged.
 - [x] `daily_data_fetch.yml` runs `mmeq export`; `dataexport.py` reduced to a shim (P3). *(PR #8)*
-- [ ] New tests for `dam_risk_scores`, `compute_hazard_curve`, `fragility`, + report smoke
-      test; coverage of analysis modules rises measurably (P4).
-- [ ] Risk weights/thresholds/`sigma_ln` sourced from `config.py`; both analyses use the
-      shared helper (P5).
+- [x] New tests for `dam_risk_scores`, `compute_hazard_curve`, `fragility`, + report smoke
+      test; coverage of analysis modules rises measurably (P4). *(tests/test_dam_risk.py:
+      hazard-curve monotonicity + catalog-years scaling, fragility lognormal
+      median/monotonicity, config-sourced grade boundaries, `cmd_report` smoke test on a
+      synthetic catalog, and reuse/staleness tests — 6 → 19 tests, suite 64 → 77.)*
+- [x] Risk weights/thresholds/`sigma_ln` sourced from `config.py`
+      (`RISK_WEIGHTS`/`RISK_GRADE_THRESHOLDS`/`GMPE_SIGMA_LN`, all `MMEQ_*`-overridable);
+      both analyses use the shared `_component_scores()`/`_grade()` helpers (P5).
+      Verified byte-identical `dam_risk_scores.csv`/`sensitivity_analysis.csv` and
+      unchanged grades (Critical 25 / High 148 / Moderate 67 / Low 14).
 - [x] `ruff check` clean in CI; dead scripts gone (P6/P7). *(PR #8)*
 - [x] No regression: full `pytest tests/ -v` green (56 tests). *(PR #8)*
 

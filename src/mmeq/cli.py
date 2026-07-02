@@ -230,6 +230,35 @@ def _build_interactive_map(df, output_dir, min_mag=0.0):
     return path
 
 
+def _load_precomputed_risk(catalog_path: str):
+    """Load a fresh, previously computed dam_risk_scores.csv, or return None.
+
+    Used by ``mmeq report --reuse-risk`` (env: MMEQ_REUSE_RISK) so CI does not
+    recompute risk scores that tools/build_figure_data.py already produced in
+    MMEQ_REPORT_DIR (default: report/) earlier in the same build (spec 003 P2).
+    The file is considered stale — and is recomputed — if it is older than the
+    catalog CSV it would be derived from.
+    """
+    report_dir = os.environ.get("MMEQ_REPORT_DIR", "report")
+    path = os.path.join(report_dir, "dam_risk_scores.csv")
+    if not os.path.exists(path):
+        logging.info(f"--reuse-risk: {path} not found; computing dam risk scores")
+        return None
+    if (
+        catalog_path
+        and os.path.exists(catalog_path)
+        and os.path.getmtime(path) < os.path.getmtime(catalog_path)
+    ):
+        logging.info(f"--reuse-risk: {path} is older than the catalog; recomputing")
+        return None
+    risk_df = pd.read_csv(path)
+    if risk_df.empty or "risk_grade" not in risk_df.columns:
+        logging.warning(f"--reuse-risk: {path} is empty/invalid; recomputing")
+        return None
+    logging.info(f"Reusing precomputed dam risk scores from {path} ({len(risk_df)} dams)")
+    return risk_df
+
+
 def cmd_report(args) -> None:
     from mmeq.analysis.dam_risk import dam_risk_scores
     from mmeq.analysis.aftershock import modified_omori_forecast
@@ -257,8 +286,14 @@ def cmd_report(args) -> None:
 
     risk_df = None
     if not args.no_dams:
-        logging.info("Computing dam risk scores...")
-        risk_df = dam_risk_scores(df, b, a, mc)
+        if getattr(args, "reuse_risk", False):
+            catalog_path = args.data or os.path.join(
+                EXPORT_DIR, "csv/combined/earthquakes_combined.csv"
+            )
+            risk_df = _load_precomputed_risk(catalog_path)
+        if risk_df is None:
+            logging.info("Computing dam risk scores...")
+            risk_df = dam_risk_scores(df, b, a, mc)
         if not risk_df.empty:
             risk_csv = os.path.join(args.output, "dam_risk_scores.csv")
             risk_df.to_csv(risk_csv, index=False)
@@ -454,6 +489,13 @@ def main() -> None:
     p_report.add_argument("--min-mag", type=float, default=0.0, help="Minimum magnitude filter")
     p_report.add_argument("--mc", type=float, default=None, help="Override magnitude of completeness")
     p_report.add_argument("--no-dams", action="store_true", help="Skip dam risk analysis")
+    p_report.add_argument(
+        "--reuse-risk",
+        action="store_true",
+        default=os.environ.get("MMEQ_REUSE_RISK", "").lower() in ("1", "true", "yes"),
+        help="Reuse a fresh dam_risk_scores.csv from MMEQ_REPORT_DIR (default: report/) "
+             "instead of recomputing it (env: MMEQ_REUSE_RISK=1)",
+    )
     p_report.add_argument("--no-forecast", action="store_true", help="Skip aftershock forecast")
     p_report.add_argument("--no-dashboard", action="store_true", help="Skip Plotly dashboard")
     p_report.add_argument("--no-3d", action="store_true", help="Skip 3D cross-section")
