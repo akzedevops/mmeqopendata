@@ -1,0 +1,442 @@
+[
+  {
+    "lat": 25.197,
+    "lon": 98.579,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "回街",
+    "place_type": "village",
+    "distance_km": 2.4
+  },
+  {
+    "lat": 17.412,
+    "lon": 94.0,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "Nwei Nyo Chaung",
+    "place_type": "village",
+    "distance_km": 53.8
+  },
+  {
+    "lat": 17.594,
+    "lon": 95.311,
+    "state": "Ayeyarwady",
+    "district": "Hinthada",
+    "township": "Hinthada",
+    "city": "Dar Ka (South)",
+    "place_type": "village",
+    "distance_km": 0.5
+  },
+  {
+    "lat": 17.043,
+    "lon": 94.843,
+    "state": "Ayeyarwady",
+    "district": "Pathein",
+    "township": "Thabaung",
+    "city": "Lin Tar Kya",
+    "place_type": "village",
+    "distance_km": 1.1
+  },
+  {
+    "lat": 18.297,
+    "lon": 96.367,
+    "state": "Bago",
+    "district": "Bago",
+    "township": "Kyauktaga",
+    "city": "Sar Byin Village",
+    "place_type": "village",
+    "distance_km": 6.6
+  },
+  {
+    "lat": 18.136,
+    "lon": 96.431,
+    "state": "Bago",
+    "district": "Bago",
+    "township": "Kyauktaga",
+    "city": "Yae Aye",
+    "place_type": "village",
+    "distance_km": 5.5
+  },
+  {
+    "lat": 20.928,
+    "lon": 93.215,
+    "state": "Chin",
+    "district": "Mindat",
+    "township": "Paletwa",
+    "city": "Ah Lel Ywar",
+    "place_type": "village",
+    "distance_km": 2.0
+  },
+  {
+    "lat": 22.484,
+    "lon": 93.363,
+    "state": "Chin",
+    "district": "Hakha",
+    "township": "Thantlang",
+    "city": "Zabung",
+    "place_type": "village",
+    "distance_km": 1.3
+  },
+  {
+    "lat": 25.266,
+    "lon": 96.505,
+    "state": "Kachin",
+    "district": "Mohnyin",
+    "township": "Mohnyin",
+    "city": "Chaung Wa",
+    "place_type": "village",
+    "distance_km": 4.8
+  },
+  {
+    "lat": 27.256,
+    "lon": 97.092,
+    "state": "Kachin",
+    "district": "Puta-O",
+    "township": "Puta-O",
+    "city": "Vijaynagar",
+    "place_type": "village",
+    "distance_km": 11.6
+  },
+  {
+    "lat": 19.182,
+    "lon": 97.436,
+    "state": "Kayah",
+    "district": "Bawlake",
+    "township": "Bawlake",
+    "city": "Nan Lin",
+    "place_type": "village",
+    "distance_km": 1.9
+  },
+  {
+    "lat": 19.238,
+    "lon": 97.308,
+    "state": "Kayah",
+    "district": "Bawlake",
+    "township": "Bawlake",
+    "city": "Bu Khu",
+    "place_type": "village",
+    "distance_km": 7.6
+  },
+  {
+    "lat": 17.616,
+    "lon": 97.571,
+    "state": "Kayin",
+    "district": "Hpapun",
+    "township": "Hpapun",
+    "city": "Shwe Hpa Lar Kya (Middle)",
+    "place_type": "village",
+    "distance_km": 1.8
+  },
+  {
+    "lat": 16.62,
+    "lon": 98.44,
+    "state": "Kayin",
+    "district": "Myawaddy",
+    "township": "Myawaddy",
+    "city": "Hpar Chaung (Ah Twin Me Ka Nei)",
+    "place_type": "village",
+    "distance_km": 4.6
+  },
+  {
+    "lat": 22.637,
+    "lon": 94.056,
+    "state": "Magway",
+    "district": "Gangaw",
+    "township": "Gangaw",
+    "city": "ရွေမြစ်သာ",
+    "place_type": "village",
+    "distance_km": 1.5
+  },
+  {
+    "lat": 20.071,
+    "lon": 95.181,
+    "state": "Magway",
+    "district": "Magway",
+    "township": "Magway",
+    "city": "Kyee Kone",
+    "place_type": "village",
+    "distance_km": 3.2
+  },
+  {
+    "lat": 20.266,
+    "lon": 96.094,
+    "state": "Mandalay",
+    "district": "Oke Ta Ra",
+    "township": "Tatkon",
+    "city": "Inn Khon",
+    "place_type": "village",
+    "distance_km": 1.2
+  },
+  {
+    "lat": 22.918,
+    "lon": 95.97,
+    "state": "Mandalay",
+    "district": "Pyinoolwin",
+    "township": "Thabeikkyin",
+    "city": "Ka Beit Gyi",
+    "place_type": "village",
+    "distance_km": 0.8
+  },
+  {
+    "lat": 16.2,
+    "lon": 97.53,
+    "state": "Mon",
+    "district": "Mawlamyine",
+    "township": "Chaungzon",
+    "city": "Taw Ka Pu",
+    "place_type": "village",
+    "distance_km": 4.0
+  },
+  {
+    "lat": 16.1,
+    "lon": 97.74,
+    "state": "Mon",
+    "district": "Mawlamyine",
+    "township": "Mudon",
+    "city": "Hpe Do",
+    "place_type": "village",
+    "distance_km": 1.8
+  },
+  {
+    "lat": 20.221,
+    "lon": 94.001,
+    "state": "Rakhine",
+    "district": "Kyaukpyu",
+    "township": "Ann",
+    "city": "Mee Chaung Chin (Kun Wa)",
+    "place_type": "village",
+    "distance_km": 14.2
+  },
+  {
+    "lat": 19.578,
+    "lon": 93.813,
+    "state": "Rakhine",
+    "district": "Kyaukpyu",
+    "township": "Ann",
+    "city": "Nyaung Chaung",
+    "place_type": "village",
+    "distance_km": 1.6
+  },
+  {
+    "lat": 25.977,
+    "lon": 95.34,
+    "state": "Saigang",
+    "district": "Hkamti",
+    "township": "Hkamti",
+    "city": "Patun",
+    "place_type": "village",
+    "distance_km": 2.4
+  },
+  {
+    "lat": 24.34,
+    "lon": 94.413,
+    "state": "Saigang",
+    "district": "Tamu",
+    "township": "Tamu",
+    "city": "Ton Ma Na",
+    "place_type": "village",
+    "distance_km": 3.4
+  },
+  {
+    "lat": 21.624,
+    "lon": 98.323,
+    "state": "Shan",
+    "district": "Loilen",
+    "township": "Monghsu",
+    "city": "Nar Nam Lat",
+    "place_type": "village",
+    "distance_km": 5.4
+  },
+  {
+    "lat": 20.761,
+    "lon": 99.139,
+    "state": "Shan",
+    "district": "Monghsat",
+    "township": "Monghsat",
+    "city": "Nar Hpar Ko",
+    "place_type": "village",
+    "distance_km": 2.1
+  },
+  {
+    "lat": 13.72,
+    "lon": 98.75,
+    "state": "Tanitharyi",
+    "district": "Dawei",
+    "township": "Dawei",
+    "city": "Kyauk Htone",
+    "place_type": "village",
+    "distance_km": 7.8
+  },
+  {
+    "lat": 13.258,
+    "lon": 98.808,
+    "state": "Tanitharyi",
+    "district": "Myeik",
+    "township": "Palaw",
+    "city": "Tha Pyu Pyin",
+    "place_type": "village",
+    "distance_km": 11.3
+  },
+  {
+    "lat": 16.603,
+    "lon": 95.857,
+    "state": "Yangon",
+    "district": "Yangon (South)",
+    "township": "Twantay",
+    "city": "Ah Lel Chaung",
+    "place_type": "village",
+    "distance_km": 1.9
+  },
+  {
+    "lat": 16.566,
+    "lon": 95.95,
+    "state": "Yangon",
+    "district": "Yangon (South)",
+    "township": "Kawhmu",
+    "city": "Tha Pyu San",
+    "place_type": "village",
+    "distance_km": 1.2
+  },
+  {
+    "lat": 17.638,
+    "lon": 97.902,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "Ban Tha Song Yang",
+    "place_type": "village",
+    "distance_km": 8.1
+  },
+  {
+    "lat": 23.872,
+    "lon": 94.108,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "Holkom Vangkho",
+    "place_type": "village",
+    "distance_km": 2.8
+  },
+  {
+    "lat": 27.848,
+    "lon": 96.418,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "Parasuram Kund",
+    "place_type": "village",
+    "distance_km": 6.8
+  },
+  {
+    "lat": 24.265,
+    "lon": 94.266,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "",
+    "place_type": "village",
+    "distance_km": 0.5
+  },
+  {
+    "lat": 24.47,
+    "lon": 98.894,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "茨菇塘",
+    "place_type": "village",
+    "distance_km": 6.1
+  },
+  {
+    "lat": 24.57,
+    "lon": 98.953,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "大火山",
+    "place_type": "village",
+    "distance_km": 7.7
+  },
+  {
+    "lat": 22.656,
+    "lon": 93.599,
+    "state": "Chin",
+    "district": "Hakha",
+    "township": "Hakha",
+    "city": "Hakha",
+    "place_type": "city",
+    "distance_km": 1.8
+  },
+  {
+    "lat": 27.811,
+    "lon": 96.758,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "Hawai",
+    "place_type": "city",
+    "distance_km": 9.8
+  },
+  {
+    "lat": 23.194,
+    "lon": 94.017,
+    "state": "Saigang",
+    "district": "Kale",
+    "township": "Kale",
+    "city": "Kalay",
+    "place_type": "city",
+    "distance_km": 0.3
+  },
+  {
+    "lat": 27.815,
+    "lon": 96.67,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "Hawai",
+    "place_type": "city",
+    "distance_km": 16.0
+  },
+  {
+    "lat": 27.66,
+    "lon": 96.796,
+    "state": "",
+    "district": "",
+    "township": "",
+    "city": "Hawai",
+    "place_type": "city",
+    "distance_km": 25.0
+  },
+  {
+    "lat": 22.564,
+    "lon": 95.695,
+    "state": "Saigang",
+    "district": "Shwebo",
+    "township": "Shwebo",
+    "city": "Shwebo",
+    "place_type": "city",
+    "distance_km": 0.6
+  },
+  {
+    "lat": 16.78,
+    "lon": 96.17,
+    "state": "Yangon",
+    "district": "Yangon (East)",
+    "township": "Pazundaung",
+    "city": "Yangon",
+    "place_type": "city",
+    "distance_km": 2.1
+  },
+  {
+    "lat": 20.449,
+    "lon": 99.879,
+    "state": "Shan",
+    "district": "Tachileik",
+    "township": "Tachileik",
+    "city": "Tachileik",
+    "place_type": "city",
+    "distance_km": 0.5
+  }
+]
