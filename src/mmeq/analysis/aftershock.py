@@ -175,7 +175,9 @@ def aftershock_probability_grid(
     n_expected *= 10 ** (-(min_mag - 3.0))
 
     # Spatial kernel: power-law decay from rupture zone
-    # Rupture length ~ 475 km for M7.7 (Wells & Coppersmith)
+    # Rupture length: the OBSERVED 2025 rupture was ~475 km (USGS finite fault /
+    # Science 2025) — roughly 3x the ~160 km that Wells & Coppersmith (1994)
+    # scaling predicts for an M7.7 strike-slip event; the observed length is used.
     rupture_half_len = 237.5 / 111.0  # degrees
     d_param = 0.05  # characteristic distance in degrees
     q = 1.5  # power-law exponent

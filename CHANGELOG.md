@@ -1,5 +1,32 @@
 # Changelog
 
+## v2.0.2 — 2026-07-02
+
+Scientific-audit follow-up (verified against Gardner & Knopoff 1974, OpenQuake,
+King/Stein/Lin 1994, USBR/Pells & Fell fragility literature, and USGS/GFZ/Science
+event data).
+
+### Fixed
+- **Declustering is now true Gardner-Knopoff (1974)** — `decluster_catalog`
+  previously used a fixed 30-day/50-km window while the README/paper described it
+  as "Gardner-Knopoff". It now applies the canonical magnitude-dependent windows
+  (M7.7 → ~86 km / ~967 days), processing events largest-first; pass
+  `window_days`+`distance_km` for the legacy fixed window. Declustered catalog:
+  4,541 of 9,403 events; b ≈ 1.05 (was 1.06), Mc 4.7, M6 return period ~2.1 yr,
+  475-yr PGA mean ~0.31g / 36 dams >0.5g — conclusions unchanged, method now
+  matches its label. Dam risk grades unaffected (scenario-PGA based).
+- **Wells & Coppersmith misattribution** — the ~475 km rupture length used in the
+  aftershock spatial kernel is the *observed* 2025 rupture (USGS finite fault);
+  W&C (1994) scaling predicts only ~160 km for M7.7 strike-slip. Comment corrected.
+
+### Audited (no change needed)
+- Data layer via SQL audit: 0 duplicate ids, monthly ↔ combined exactly in sync,
+  chronologically sorted, physically sane bounds.
+- ASK08 coefficients (OpenQuake), recorded PGAs (GFZ 1.07g / USGS 0.62g / 0.57g
+  horizontal), Coulomb friction μ′=0.4 (King, Stein & Lin 1994), Hanks-Kanamori
+  moment constant, Aki-Utsu b-value MLE, HAZUS-style lognormal dam fragility
+  medians (within USBR / Pells & Fell empirical ranges).
+
 ## v2.0.1 — 2026-06-30
 
 Correctness pass across the analysis pipeline and a data-export fix. Figures and

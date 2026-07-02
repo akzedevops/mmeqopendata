@@ -145,7 +145,7 @@ I validated the GMPE against the actual Naypyidaw ShakeMap recording — predict
 
 The catalog has 9,390 events. Most are small (mean M 3.2), but there are 6 events ≥ M7.0 and 358 ≥ M5.0.
 
-**b-value and completeness:** On the full catalog the Gutenberg-Richter b-value at Mc = 4.0 is 0.71, but the raw value (auto-Mc ≈ 2.4) drops to 0.35 — an artifact of the 2025 aftershock sequence flooding the small-magnitude bins. After declustering (Gardner-Knopoff window), the catalog yields Mc ≈ 4.7 and b ≈ 1.06, typical for a tectonic region. The probabilistic hazard below uses these declustered rates.
+**b-value and completeness:** On the full catalog the Gutenberg-Richter b-value at Mc = 4.0 is 0.71, but the raw value (auto-Mc ≈ 2.4) drops to 0.35 — an artifact of the 2025 aftershock sequence flooding the small-magnitude bins. After Gardner-Knopoff (1974) declustering — magnitude-dependent space-time windows, e.g. ~86 km / ~967 days for the M7.7 — the catalog yields Mc ≈ 4.7 and b ≈ 1.05, typical for a tectonic region. The probabilistic hazard below uses these declustered rates.
 
 **Clustering:** DBSCAN in UTM Zone 47N coordinates (so distances are in meters, not degrees) identifies 7 seismic zones. The central Myanmar cluster contains 95% of all events.
 
@@ -157,7 +157,7 @@ The catalog has 9,390 events. Most are small (mean M 3.2), but there are 6 event
 
 Beyond single-event PGA, each dam gets a full hazard curve using the Cornell-McGuire PSHA approach — integrating the Gutenberg-Richter magnitude distribution with the GMPE over all possible magnitudes (M5–8).
 
-The 475-year PGA (10% chance of exceedance in 50 years) ranges from ~0.01g to ~1.9g across the dam portfolio, with a mean of ~0.30g; 35 dams exceed 0.5g at this return period. The rates come from the declustered catalog (b ≈ 1.06) so the Poisson assumption holds and the 2025 aftershock sequence doesn't inflate the hazard — the implied return period for an M6 anywhere in the corridor is ~2 years.
+The 475-year PGA (10% chance of exceedance in 50 years) ranges from ~0.01g to ~1.9g across the dam portfolio, with a mean of ~0.31g; 36 dams exceed 0.5g at this return period. The rates come from the Gardner-Knopoff-declustered catalog (b ≈ 1.05) so the Poisson assumption holds and the 2025 aftershock sequence doesn't inflate the hazard — the implied return period for an M6 anywhere in the corridor is ~2 years.
 
 ## Building Exposure from OpenStreetMap
 

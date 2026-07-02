@@ -108,21 +108,47 @@ def multi_period_b_value(
     return results
 
 
+def gardner_knopoff_window(mag: float) -> Tuple[float, float]:
+    """Gardner & Knopoff (1974) magnitude-dependent space-time window.
+
+    Returns (distance_km, time_days):
+        distance = 10^(0.1238*M + 0.983) km
+        time     = 10^(0.032*M + 2.7389) days  for M >= 6.5
+                   10^(0.5409*M - 0.547) days  otherwise
+    e.g. M5.0 -> ~40 km / ~145 days; M7.7 -> ~86 km / ~967 days.
+    """
+    dist_km = 10 ** (0.1238 * mag + 0.983)
+    if mag >= 6.5:
+        time_days = 10 ** (0.032 * mag + 2.7389)
+    else:
+        time_days = 10 ** (0.5409 * mag - 0.547)
+    return dist_km, time_days
+
+
 def decluster_catalog(
     df: pd.DataFrame,
-    window_days: float = 30.0,
-    distance_km: float = 50.0,
+    window_days: Optional[float] = None,
+    distance_km: Optional[float] = None,
 ) -> pd.DataFrame:
     """
-    Simple declustering using window method (Gardner-Knopoff style).
-    For each main shock, remove smaller events within the time-distance window.
+    Gardner-Knopoff (1974) window declustering.
+
+    Events are processed in order of decreasing magnitude; each mainshock removes
+    all smaller-magnitude events that lie within its magnitude-dependent
+    space-time window (the time window extends forward from the mainshock, i.e.
+    aftershock removal). Pass BOTH window_days and distance_km to override with a
+    fixed window instead of the magnitude-dependent one.
     """
     if "time_utc" not in df.columns:
         raise ValueError("DataFrame must have 'time_utc' column")
 
+    fixed_window = window_days is not None and distance_km is not None
+
     df = df.copy()
     df["time_utc"] = pd.to_datetime(df["time_utc"])
-    df = df.sort_values("time_utc", ascending=False).reset_index(drop=True)
+    # Largest magnitude first so the biggest event of every cluster is the one
+    # that survives; ties broken by earlier origin time.
+    df = df.sort_values(["mag", "time_utc"], ascending=[False, True]).reset_index(drop=True)
 
     times = df["time_utc"].values
     lats = df["latitude"].values
@@ -131,15 +157,20 @@ def decluster_catalog(
     n = len(df)
 
     is_mainshock = np.ones(n, dtype=bool)
-
-    window_td = np.timedelta64(int(window_days * 86400 * 1e9), "ns")
+    day_ns = np.timedelta64(86_400_000_000_000, "ns")
 
     for i in range(n):
         if not is_mainshock[i]:
             continue
         mag_i = mags[i]
 
-        time_mask = np.abs(times - times[i]) <= window_td
+        if fixed_window:
+            win_km, win_days = distance_km, window_days
+        else:
+            win_km, win_days = gardner_knopoff_window(mag_i)
+
+        dt_days = (times - times[i]) / day_ns
+        time_mask = (dt_days > 0) & (dt_days <= win_days)
         mag_mask = mags < mag_i
         candidates = np.where(time_mask & mag_mask & is_mainshock)[0]
 
@@ -149,13 +180,15 @@ def decluster_catalog(
         dlat = lats[candidates] - lats[i]
         dlon = (lons[candidates] - lons[i]) * math.cos(math.radians(lats[i]))
         dists = np.sqrt(dlat**2 + dlon**2) * 111.0
-        close = candidates[dists <= distance_km]
+        close = candidates[dists <= win_km]
         is_mainshock[close] = False
 
     df["is_mainshock"] = is_mainshock
     mainshocks = df[df["is_mainshock"]].drop(columns=["is_mainshock"])
+    mainshocks = mainshocks.sort_values("time_utc").reset_index(drop=True)
     logger.info(
-        f"Declustered: {len(df)} total -> {len(mainshocks)} main shocks "
+        f"Declustered ({'fixed' if fixed_window else 'Gardner-Knopoff'} window): "
+        f"{len(df)} total -> {len(mainshocks)} main shocks "
         f"({len(df) - len(mainshocks)} removed)"
     )
     return mainshocks

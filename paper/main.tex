@@ -106,7 +106,7 @@ About 75\% are shallow ($<$30\,km), which makes sense---the Sagaing Fault is a c
 
 The Gutenberg-Richter law says $\log_{10} N = a - bM$.
 The tricky part is that the catalog is incomplete at small magnitudes---the 1970s network couldn't detect M2 events, but the modern network can.
-If you naively fit all the data, you get $b = 0.35$, which is way too low (global average is $\sim$1.0). After declustering the catalog (Gardner-Knopoff window) to remove the 2025 aftershock burst, $M_c \approx 4.7$ and $b \approx 1.06$ --- typical for a tectonic region, and the rates used for the probabilistic hazard below.
+If you naively fit all the data, you get $b = 0.35$, which is way too low (global average is $\sim$1.0). After Gardner-Knopoff (1974) declustering --- magnitude-dependent space-time windows, e.g.\ $\sim$86\,km and $\sim$967 days for the M7.7 mainshock --- $M_c \approx 4.7$ and $b \approx 1.05$, typical for a tectonic region; these are the rates used for the probabilistic hazard below.
 
 A stability analysis (Figure~\ref{fig:fmd}b) shows the b-value only converges at $M_c \geq 4.0$.
 Using that cutoff: $b = 0.71 \pm 0.02$ with 2,473 events.
@@ -257,8 +257,8 @@ The Critical+High fraction stays above 30\% regardless of weights, so the overal
 
 Beyond the single-event PGA, I computed full hazard curves at each dam using the Cornell-McGuire PSHA approach: integrate the G-R magnitude distribution with the GMPE over all possible magnitudes (M5--8), including the ground-motion variability ($\sigma_{ln} = 0.65$).
 
-The 475-year PGA (10\% chance of exceedance in 50 years) ranges from $\sim$0.01$g$ to $\sim$1.9$g$ across the dam portfolio, with a mean of 0.30$g$ (declustered rates, $b \approx 1.06$).
-35 dams exceed 0.5$g$ at this return period.
+The 475-year PGA (10\% chance of exceedance in 50 years) ranges from $\sim$0.01$g$ to $\sim$1.9$g$ across the dam portfolio, with a mean of 0.31$g$ (Gardner-Knopoff declustered rates, $b \approx 1.05$).
+36 dams exceed 0.5$g$ at this return period.
 
 \begin{figure}[htbp]
     \centering
