@@ -1,0 +1,7 @@
+latitude,longitude,depth,mag,magType,nst,id,location,timestamp,initialPosition,time_utc,time_mmt,nearest_city,distance_km,extra_field
+22.035,95.99,16.0,3.4,ml,3.0,mmeq_002,"Sagaing (revised), Myanmar (Burma)",1780288200000.0,"22.04,95.99",2026-06-01 04:30:00,2026-06-01 11:00:00,စစ်ကိုင်း,2.9,"aux, note"
+24.441,94.902,90.0,3.6,mb,,mmeq_005,"Homalin, Myanmar (Burma)",1780660800000.0,"24.44,94.9",2026-06-05 12:00:00,2026-06-05 18:30:00,ဟုမ္မလင်း,12.5,
+19.75,96.1,10.0,4.0,ml,,mmeq_006,"He said ""strong"" shake, Taungoo, Myanmar (Burma)",1781082930000.0,"19.75,96.1",2026-06-10 09:15:30,2026-06-10 15:45:30,Taungoo,7.0,plain
+23.1,96.5,20.0,4.0,mb,5.0,mmeq_007,"Mogok, Myanmar (Burma)",1781547645000.0,"23.1,96.5",2026-06-15 18:20:45,2026-06-16 00:50:45,Mogok,4.4,first version
+23.101,96.501,21.0,4.1,mb,6.0,mmeq_007,"Mogok (revised), Myanmar (Burma)",1781547645000.0,"23.1,96.5",2026-06-15 18:20:45,2026-06-16 00:50:45,Mogok,4.5,revised
+20.948,98.745,10.0,3.4,ml,7.0,mmeq_008,"Wan Ta-pu, Shan, Myanmar (Burma)",1782667456000.0,"20.95,98.75",2026-06-28 17:24:16,2026-06-28 23:54:16,Kone Kauk,,z

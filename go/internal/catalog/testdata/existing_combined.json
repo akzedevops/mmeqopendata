@@ -1,0 +1,64 @@
+{
+  "earthquakes": [
+    {
+      "latitude": 21.976,
+      "longitude": 96.083,
+      "depth": 10.0,
+      "mag": 4.5,
+      "magType": "mb",
+      "nst": NaN,
+      "id": "mmeq_001",
+      "location": "Mandalay, မန္တလေး, Myanmar (Burma)",
+      "initialPosition": "21.98,96.08",
+      "time_utc": "2026-05-02 03:15:40",
+      "time_mmt": "2026-05-02 09:45:40",
+      "nearest_city": "မန္တလေး",
+      "distance_km": 5.2
+    },
+    {
+      "latitude": 22.034,
+      "longitude": 95.987,
+      "depth": 15.5,
+      "mag": 3.0,
+      "magType": "ml",
+      "nst": 12.0,
+      "id": "mmeq_002",
+      "location": "Sagaing, Myanmar (Burma)",
+      "initialPosition": "22.03,95.99",
+      "time_utc": "2026-05-10 14:22:05",
+      "time_mmt": "2026-05-10 20:52:05",
+      "nearest_city": "Sagaing",
+      "distance_km": 3.1
+    },
+    {
+      "latitude": 21.172,
+      "longitude": 94.86,
+      "depth": 8.0,
+      "mag": 2.8,
+      "magType": "ml",
+      "nst": 4.0,
+      "id": "mmeq_003",
+      "location": "Near \"Old\" Bagan, Myanmar (Burma)",
+      "initialPosition": "21.17,94.86",
+      "time_utc": "2026-05-15 08:00:59",
+      "time_mmt": "2026-05-15 14:30:59",
+      "nearest_city": "Bagan",
+      "distance_km": 1.7
+    },
+    {
+      "latitude": 20.5,
+      "longitude": 96.45,
+      "depth": 12.0,
+      "mag": 3.9,
+      "magType": "mb",
+      "nst": 8.0,
+      "id": "mmeq_004",
+      "location": "Naypyidaw, Myanmar (Burma)",
+      "initialPosition": "20.5,96.45",
+      "time_utc": "2026-05-20 22:45:11",
+      "time_mmt": "2026-05-21 05:15:11",
+      "nearest_city": "နေပြည်တော်",
+      "distance_km": 10.0
+    }
+  ]
+}
