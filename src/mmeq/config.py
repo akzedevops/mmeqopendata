@@ -3,6 +3,10 @@ from datetime import datetime, timedelta, timezone
 from typing import List
 
 API_URL = os.environ.get("MMEQ_API_URL", "https://mmeq.akze.net/api/myanmar-quakes")
+# mmeq API v2 base URL (e.g. "https://mmeq.akze.net/api/v2"). Empty = disabled;
+# the fetcher then uses the v1 endpoint above. v2 serves typed JSON from its own
+# SQLite catalog (no live third-party proxying) with half-open [from, to) windows.
+API_V2_URL = os.environ.get("MMEQ_API_V2_URL", "").rstrip("/")
 START_YEAR = int(os.environ.get("MMEQ_START_YEAR", "1950"))
 END_DATE = datetime.now(timezone.utc) - timedelta(days=1)
 EXPORT_DIR = os.environ.get("MMEQ_EXPORT_DIR", "quake_exports")
