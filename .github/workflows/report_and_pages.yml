@@ -102,7 +102,13 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/ paper/figures/ paper/main.pdf
           git diff --cached --quiet || git commit -m "docs: update report, figures & paper [skip ci]"
-          git push origin master
+          # master may have moved during the ~8 min build (e.g. a PR merge or the
+          # daily data commit) — rebase the artifact commit onto the new tip and
+          # retry so a non-fast-forward doesn't fail the whole deploy.
+          for i in 1 2 3; do
+            git push origin master && break
+            git pull --rebase origin master || exit 1
+          done
 
       - name: Setup Pages
         if: github.ref == 'refs/heads/master'
