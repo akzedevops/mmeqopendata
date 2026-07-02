@@ -97,3 +97,51 @@ class TestDBSCAN:
         assert labels.name == "cluster"
         unique = labels.unique()
         assert -1 in unique or len(unique) > 0
+
+
+class TestGardnerKnopoffWindows:
+    def test_window_values_match_canonical_formulas(self):
+        from mmeq.analysis.seismology import gardner_knopoff_window
+        d77, t77 = gardner_knopoff_window(7.7)
+        assert 80 < d77 < 92, "M7.7 distance window ~86 km"
+        assert 900 < t77 < 1030, "M7.7 time window ~967 days"
+        d50, t50 = gardner_knopoff_window(5.0)
+        assert 35 < d50 < 45, "M5.0 distance window ~40 km"
+        assert 120 < t50 < 170, "M5.0 time window ~145 days"
+
+    def test_removes_late_aftershock_within_gk_window(self):
+        # Aftershock 400 days later and ~70 km away: inside the M7.7 G-K window
+        # (~967 d / ~86 km) but far outside the old fixed 30 d / 50 km window.
+        df = pd.DataFrame({
+            "time_utc": pd.to_datetime(["2025-03-28 06:20:00", "2026-05-02 00:00:00"]),
+            "latitude": [22.0, 22.6],
+            "longitude": [96.0, 96.0],
+            "depth": [10.0, 10.0],
+            "mag": [7.7, 4.5],
+        })
+        result = decluster_catalog(df)
+        assert len(result) == 1 and result["mag"].iloc[0] == 7.7
+
+    def test_keeps_event_outside_gk_window(self):
+        # Same magnitudes but 5 years apart: independent events, both kept.
+        df = pd.DataFrame({
+            "time_utc": pd.to_datetime(["2020-01-01 00:00:00", "2025-03-28 06:20:00"]),
+            "latitude": [22.0, 22.0],
+            "longitude": [96.0, 96.0],
+            "depth": [10.0, 10.0],
+            "mag": [4.5, 7.7],
+        })
+        result = decluster_catalog(df)
+        assert len(result) == 2
+
+    def test_fixed_window_override(self):
+        # With an explicit tiny fixed window the 400-day aftershock survives.
+        df = pd.DataFrame({
+            "time_utc": pd.to_datetime(["2025-03-28 06:20:00", "2026-05-02 00:00:00"]),
+            "latitude": [22.0, 22.6],
+            "longitude": [96.0, 96.0],
+            "depth": [10.0, 10.0],
+            "mag": [7.7, 4.5],
+        })
+        result = decluster_catalog(df, window_days=30.0, distance_km=50.0)
+        assert len(result) == 2
