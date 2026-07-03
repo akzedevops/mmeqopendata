@@ -16,13 +16,13 @@ References:
     J. Geophys. Res., 103(B10), 24543-24565.
 """
 
-import json
 import logging
 import math
-import os
 from typing import Dict, List, Optional, Tuple
 
 import numpy as np
+
+from mmeq.analysis.dam_risk import load_dams_df
 
 logger = logging.getLogger(__name__)
 
@@ -295,29 +295,20 @@ def compute_coulomb_at_dams(segments=None):
 
     Returns list of dicts with dam name, lat, lon, dcfs_mpa.
     """
-    dams_path = os.path.join(os.getcwd(), "myanmar_dams.geojson")
-    if not os.path.exists(dams_path):
-        dams_path = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)), "..", "..", "myanmar_dams.geojson"
-        )
-
-    if not os.path.exists(dams_path):
+    dams_df = load_dams_df()
+    if dams_df is None:
         logger.warning("Dam GeoJSON not found")
         return []
 
-    with open(dams_path, encoding="utf-8") as f:
-        data = json.load(f)
-
-    dams = []
-    for feat in data.get("features", []):
-        coords = feat["geometry"]["coordinates"]
-        props = feat.get("properties", {})
-        dams.append({
-            "name": props.get("name", "Unnamed"),
-            "lat": coords[1],
-            "lon": coords[0],
-            "type": props.get("function", "Unknown"),
-        })
+    dams = [
+        {
+            "name": row["name"],
+            "lat": row["latitude"],
+            "lon": row["longitude"],
+            "type": row["function"],
+        }
+        for _, row in dams_df.iterrows()
+    ]
 
     if not dams:
         return []

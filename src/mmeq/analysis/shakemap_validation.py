@@ -8,11 +8,13 @@ import numpy as np
 import pandas as pd
 
 from mmeq.analysis.dam_risk import _load_fault_segments, distance_to_nearest_fault, estimate_pga_ask08
+from mmeq.config import DATA_DIR
 
 logger = logging.getLogger(__name__)
 
-_SHAKEMAP_PATH = os.path.join("data", "shakemap", "stationlist.json")
-_DAM_RISK_PATH = os.path.join("report", "dam_risk_scores.csv")
+# Default ShakeMap station list, resolved against the repo data/ dir (config.DATA_DIR,
+# overridable via MMEQ_DATA_DIR) so it works regardless of the current directory.
+_SHAKEMAP_PATH = os.path.join(DATA_DIR, "shakemap", "stationlist.json")
 
 
 def _residual_and_ratio(pga_obs: float, pga_pred: float):
@@ -50,9 +52,10 @@ def _load_all_fault_segments() -> list:
     return segments
 
 
-def load_shakemap_stations() -> list[dict]:
+def load_shakemap_stations(shakemap_path: str = None) -> list[dict]:
     """Return stations with actual PGA recordings (pga_g in g)."""
-    with open(_SHAKEMAP_PATH, encoding="utf-8") as f:
+    path = shakemap_path or _SHAKEMAP_PATH
+    with open(path, encoding="utf-8") as f:
         data = json.load(f)
 
     stations = []
@@ -79,10 +82,16 @@ def load_shakemap_stations() -> list[dict]:
     return stations
 
 
-def validate_against_shakemap(mag: float = 7.7) -> pd.DataFrame:
+def validate_against_shakemap(
+    mag: float = 7.7,
+    shakemap_path: str = None,
+    dam_risk_path: str = None,
+) -> pd.DataFrame:
     """Compare ASK08 predicted PGA vs ShakeMap-observed PGA at seismic stations.
 
-    Also appends dam-site rows if report/dam_risk_scores.csv is available.
+    ``shakemap_path`` defaults to the repo station list (``config.DATA_DIR``).
+    If ``dam_risk_path`` is given and points to a readable ``dam_risk_scores.csv``
+    with the expected columns, dam-site rows are appended.
 
     Returns DataFrame with columns:
         station_code, name, lat, lon, dist_fault_km,
@@ -93,7 +102,7 @@ def validate_against_shakemap(mag: float = 7.7) -> pd.DataFrame:
     rows = []
 
     # --- seismic stations ---
-    for st in load_shakemap_stations():
+    for st in load_shakemap_stations(shakemap_path):
         dist_km = distance_to_nearest_fault(st["lat"], st["lon"], segments)
         pga_pred = estimate_pga_ask08(mag=mag, rrup_km=dist_km, rjb_km=dist_km)
         pga_obs = st["pga_g"]
@@ -111,14 +120,15 @@ def validate_against_shakemap(mag: float = 7.7) -> pd.DataFrame:
         })
 
     # --- dam sites (ShakeMap-interpolated PGA from dam_risk_scores.csv) ---
-    if os.path.exists(_DAM_RISK_PATH):
-        dams = pd.read_csv(_DAM_RISK_PATH)
-        # expected columns: name, latitude, longitude, pga_g (ShakeMap interpolated), dist_fault_km
-        needed = {"name", "latitude", "longitude", "pga_g", "dist_fault_km"}
+    if dam_risk_path and os.path.exists(dam_risk_path):
+        dams = pd.read_csv(dam_risk_path)
+        # expected columns: name, latitude, longitude, pga_g (ShakeMap interpolated),
+        # dist_to_fault_km (the rupture distance dam_risk.py writes)
+        needed = {"name", "latitude", "longitude", "pga_g", "dist_to_fault_km"}
         if needed.issubset(dams.columns):
             for _, row in dams.iterrows():
                 pga_obs = row["pga_g"]
-                dist_km = row["dist_fault_km"]
+                dist_km = row["dist_to_fault_km"]
                 pga_pred = estimate_pga_ask08(mag=mag, rrup_km=dist_km, rjb_km=dist_km)
                 residual_ln, ratio = _residual_and_ratio(pga_obs, pga_pred)
                 rows.append({
@@ -132,11 +142,11 @@ def validate_against_shakemap(mag: float = 7.7) -> pd.DataFrame:
                     "residual_ln": residual_ln,
                     "ratio": ratio,
                 })
-            logger.info("Appended %d dam-site rows from %s", len(dams), _DAM_RISK_PATH)
+            logger.info("Appended %d dam-site rows from %s", len(dams), dam_risk_path)
         else:
             logger.warning("dam_risk_scores.csv missing expected columns; skipping dam rows")
     else:
-        logger.debug("No dam risk scores found at %s", _DAM_RISK_PATH)
+        logger.debug("No dam risk scores found at %s", dam_risk_path)
 
     df = pd.DataFrame(rows)
     logger.info("Validation complete: %d rows", len(df))

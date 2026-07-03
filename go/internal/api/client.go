@@ -23,11 +23,12 @@ import (
 )
 
 const (
-	endpointPath      = "/api/v2/earthquakes"
-	v1EndpointPath    = "/api/myanmar-quakes"
-	dateLayout        = "2006-01-02"
-	defaultPageLimit  = 10000 // the API's documented max limit
-	defaultMaxRetries = 3
+	endpointPath       = "/api/v2/earthquakes"
+	exportEndpointPath = "/api/v2/export"
+	v1EndpointPath     = "/api/myanmar-quakes"
+	dateLayout         = "2006-01-02"
+	defaultPageLimit   = 10000 // the API's documented max limit
+	defaultMaxRetries  = 3
 )
 
 // backoffBase is the first retry delay; attempt n waits backoffBase*2^n. A package
@@ -129,6 +130,16 @@ func mapRecord(rec map[string]any) map[string]any {
 	return out
 }
 
+// mapRecords applies mapRecord to a whole page slice (the typed v2 routes remap;
+// the export/v1 routes return raw records verbatim and do not call this).
+func mapRecords(raw []map[string]any) []map[string]any {
+	out := make([]map[string]any, len(raw))
+	for i, rec := range raw {
+		out[i] = mapRecord(rec)
+	}
+	return out
+}
+
 // FetchWindow fetches every event in the v1-INCLUSIVE date window [fromDate, toDate]
 // (both "YYYY-MM-DD"). The v2 API uses half-open [from, to) windows, so toDate is
 // converted by adding one day. Pages of PageLimit records are fetched until
@@ -143,16 +154,41 @@ func (c *Client) FetchWindow(ctx context.Context, fromDate, toDate string) ([]ma
 		"from": {fromDate},
 		"to":   {to.AddDate(0, 0, 1).Format(dateLayout)}, // inclusive -> half-open
 	}
-	return c.fetchAll(ctx, params)
+	raw, err := c.fetchAll(ctx, endpointPath, params)
+	if err != nil {
+		return nil, err
+	}
+	return mapRecords(raw), nil
+}
+
+// FetchWindowExport fetches the same v1-INCLUSIVE window [fromDate, toDate] via the
+// full-fidelity export route (GET {base}/api/v2/export), converting toDate to the
+// half-open bound (+1 day) exactly like FetchWindow and paginating with the same
+// v2 limit/offset machinery. Unlike FetchWindow it returns each record VERBATIM: the
+// export route serves the raw v1-shaped object (string values, canonical key order,
+// "time" always present) — byte-identical to /api/myanmar-quakes records — which is
+// exactly what catalog.Validate and the writer consume, so NO key remapping is
+// applied. This is the route that reproduces the published 32-column artifact.
+func (c *Client) FetchWindowExport(ctx context.Context, fromDate, toDate string) ([]map[string]any, error) {
+	to, err := time.Parse(dateLayout, toDate)
+	if err != nil {
+		return nil, fmt.Errorf("api: invalid to date %q: %w", toDate, err)
+	}
+	params := url.Values{
+		"from": {fromDate},
+		"to":   {to.AddDate(0, 0, 1).Format(dateLayout)}, // inclusive -> half-open
+	}
+	return c.fetchAll(ctx, exportEndpointPath, params)
 }
 
 // FetchWindowV1 fetches the same inclusive window via the legacy-compat route
 // (GET {base}/api/myanmar-quakes?from&to — one request, no pagination). Records
 // come back VERBATIM: this route serves the raw upstream shape (string values,
 // all upstream columns, canonical key order), which is what the Python pipeline
-// consumes and what the published 33-column artifact requires — the typed v2
+// consumes and what the published 32-column artifact requires — the typed v2
 // route drops the raw upstream columns (dmin, gap, nst, rms, shakemap*, …), so
-// only this route can reproduce the artifact byte-for-byte. Same retry policy.
+// only this route (and the v2 export route) can reproduce the artifact
+// byte-for-byte. Same retry policy.
 func (c *Client) FetchWindowV1(ctx context.Context, fromDate, toDate string) ([]map[string]any, error) {
 	params := url.Values{"from": {fromDate}, "to": {toDate}}
 	u := strings.TrimRight(c.BaseURL, "/") + v1EndpointPath + "?" + params.Encode()
@@ -168,16 +204,21 @@ func (c *Client) FetchWindowV1(ctx context.Context, fromDate, toDate string) ([]
 // FetchWindow. This backs the incremental daily sync.
 func (c *Client) FetchUpdatedAfter(ctx context.Context, since string) ([]map[string]any, error) {
 	params := url.Values{"updated_after": {since}}
-	return c.fetchAll(ctx, params)
+	raw, err := c.fetchAll(ctx, endpointPath, params)
+	if err != nil {
+		return nil, err
+	}
+	return mapRecords(raw), nil
 }
 
-// fetchAll paginates limit/offset over the given filter params until meta.total is
-// exhausted, remapping each record. An empty page also terminates, as a guard
-// against a server that under-reports pages relative to total. A hard page cap —
-// (meta.total/limit)+2 pages, recomputed from the latest page's total, bounded by
-// an absolute ceiling of maxPagesCeiling — guards against a pathological server
-// that keeps returning non-empty pages with total > offset forever.
-func (c *Client) fetchAll(ctx context.Context, params url.Values) ([]map[string]any, error) {
+// fetchAll paginates limit/offset over path with the given filter params until
+// meta.total is exhausted, returning records VERBATIM (callers that need the v1-ish
+// key remapping apply mapRecords themselves). An empty page also terminates, as a
+// guard against a server that under-reports pages relative to total. A hard page cap
+// — (meta.total/limit)+2 pages, recomputed from the latest page's total, bounded by
+// an absolute ceiling of maxPagesCeiling — guards against a pathological server that
+// keeps returning non-empty pages with total > offset forever.
+func (c *Client) fetchAll(ctx context.Context, path string, params url.Values) ([]map[string]any, error) {
 	limit := c.pageLimit()
 	var out []map[string]any
 	for offset, pages := 0, 0; ; {
@@ -188,13 +229,11 @@ func (c *Client) fetchAll(ctx context.Context, params url.Values) ([]map[string]
 		p.Set("limit", strconv.Itoa(limit))
 		p.Set("offset", strconv.Itoa(offset))
 
-		page, err := c.getPage(ctx, p)
+		page, err := c.getPage(ctx, path, p)
 		if err != nil {
 			return nil, err
 		}
-		for _, rec := range page.Earthquakes {
-			out = append(out, mapRecord(rec))
-		}
+		out = append(out, page.Earthquakes...)
 		offset += len(page.Earthquakes)
 		if len(page.Earthquakes) == 0 || offset >= page.Meta.Total {
 			return out, nil
@@ -211,11 +250,11 @@ func (c *Client) fetchAll(ctx context.Context, params url.Values) ([]map[string]
 	}
 }
 
-// getPage GETs one page, retrying 429/5xx and transport errors with exponential
-// backoff (backoffBase*2^n) up to MaxRetries retries. Context cancellation aborts
-// immediately, including mid-backoff.
-func (c *Client) getPage(ctx context.Context, params url.Values) (*apiPage, error) {
-	return c.getURL(ctx, strings.TrimRight(c.BaseURL, "/")+endpointPath+"?"+params.Encode())
+// getPage GETs one page from path, retrying 429/5xx and transport errors with
+// exponential backoff (backoffBase*2^n) up to MaxRetries retries. Context
+// cancellation aborts immediately, including mid-backoff.
+func (c *Client) getPage(ctx context.Context, path string, params url.Values) (*apiPage, error) {
+	return c.getURL(ctx, strings.TrimRight(c.BaseURL, "/")+path+"?"+params.Encode())
 }
 
 // getURL runs the retry loop for one absolute URL (shared by the v2 pager and

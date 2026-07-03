@@ -13,12 +13,12 @@ import os
 import numpy as np
 import pandas as pd
 
+from mmeq.config import DATA_DIR as _DATA_DIR
+
 from .dam_risk import distance_to_nearest_fault, estimate_pga_ask08, _load_fault_segments
 from .finite_fault import load_rupture_trace
 
 logger = logging.getLogger(__name__)
-
-_DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "..", "data")
 _OSM_PATH = os.path.join(_DATA_DIR, "osm", "critical_infrastructure.json")
 _VS30_GRID_PATH = os.path.join(_DATA_DIR, "shakemap", "vs30_grid.csv")
 

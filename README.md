@@ -221,8 +221,7 @@ src/mmeq/
 │   ├── fragility.py                # Dam fragility curves
 │   ├── gem_faults.py               # GEM Global Active Faults loader
 │   ├── osm_exposure.py             # OSM building exposure analysis
-│   ├── population.py               # Population exposure
-│   ├── population_raster.py        # WorldPop raster-based exposure
+│   ├── population.py               # Population exposure (city-based)
 │   ├── seismology.py               # b-value, Mc, declustering
 │   ├── shakemap_validation.py      # GMPE validation against ShakeMap stations
 │   └── temporal.py                 # Temporal analysis charts
@@ -270,7 +269,7 @@ Override defaults with environment variables:
 | ShakeMap / Finite Fault | [USGS event us7000pn9s](https://earthquake.usgs.gov/earthquakes/eventpage/us7000pn9s) | Public domain |
 | Active faults | [GEM Global Active Faults](https://github.com/GEMScienceTools/gem-global-active-faults) | CC BY-SA 4.0 |
 | Buildings | [OpenStreetMap](https://www.openstreetmap.org/) via Overpass API | ODbL |
-| Population | [WorldPop](https://www.worldpop.org/) Myanmar 1km grid | CC BY 4.0 |
+| Population | City-based estimates (in-repo); [WorldPop](https://www.worldpop.org/) Myanmar 1km grid used for a one-off offline exposure figure (raster not tracked) | CC BY 4.0 |
 | Elevation | [Copernicus DEM 30m](https://copernicus-dem-30m.s3.eu-central-1.amazonaws.com/) | Open |
 | PGA model | Abrahamson & Silva (2008) NGA-West1 | Academic |
 | Vs30 proxy | Wald & Allen (2007) slope-based | Academic |

@@ -38,11 +38,13 @@ var (
 	APIV2BaseURL = V2Base(env("MMEQ_API_V2_URL", "https://mmeq.akze.net"))
 
 	// FetchRoute picks which contract the exporter fetches from the same host:
-	// "v1" — the legacy-compat route, serving the full raw upstream columns the
-	// published 33-column artifact requires (parity default); or "v2" — typed
-	// JSON, which drops the raw upstream columns (dmin, gap, nst, rms,
-	// shakemap*, …) and so cannot reproduce the artifact byte-for-byte.
-	FetchRoute = env("MMEQ_FETCH_ROUTE", "v1")
+	// "export" — the full-fidelity artifact route (default), serving the raw
+	// v1-shaped records (all upstream columns) the published 32-column artifact
+	// requires; "v1" — the legacy-compat fallback, the same raw shape via the
+	// older /api/myanmar-quakes route; or "v2" — the typed JSON route, which drops
+	// the raw upstream columns (dmin, gap, nst, rms, shakemap*, …) and so CANNOT
+	// reproduce the artifact byte-for-byte.
+	FetchRoute = env("MMEQ_FETCH_ROUTE", "export")
 
 	MinLat, MaxLat     = -90.0, 90.0
 	MinLon, MaxLon     = -180.0, 180.0

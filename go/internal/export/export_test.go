@@ -301,8 +301,9 @@ func TestRunMonthFailureContinues(t *testing.T) {
 	}
 }
 
-// TestRunV1Route exercises the default v1-compat route: raw records (string
+// TestRunV1Route exercises the explicit v1-compat route: raw records (string
 // values, upstream key set, "time" field) flow verbatim into Validate/writer.
+// (The config default is now "export"; v1 is a fallback selected here explicitly.)
 func TestRunV1Route(t *testing.T) {
 	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		if r.URL.Path != "/api/myanmar-quakes" {
@@ -338,8 +339,8 @@ func TestRunV1Route(t *testing.T) {
 		ExportDir: dir,
 		DataDir:   filepath.Join(dir, "no-such-data"),
 		Workers:   2,
-		// Route omitted: config default is v1
-		Now: func() time.Time { return time.Date(2026, time.July, 2, 12, 0, 0, 0, time.UTC) },
+		Route:     "v1", // explicit: the config default is now "export"
+		Now:       func() time.Time { return time.Date(2026, time.July, 2, 12, 0, 0, 0, time.UTC) },
 	})
 	if err != nil {
 		t.Fatalf("Run: %v", err)
@@ -355,6 +356,93 @@ func TestRunV1Route(t *testing.T) {
 	// mag came in as the string "5.10" — Python's to_numeric turns it into 5.1.
 	if !strings.Contains(got, "5.1") {
 		t.Errorf("expected numeric mag 5.1 in CSV:\n%s", got)
+	}
+}
+
+// TestRunExportRouteDefault exercises the config default route ("export"): raw
+// v1-shaped records served through the v2 export envelope (meta.total + earthquakes[])
+// flow VERBATIM into Validate/writer, just like the v1 route but paginated.
+func TestRunExportRouteDefault(t *testing.T) {
+	rawRecords := []map[string]any{{
+		"id": "ex1", "time": "2026-06-10T03:00:00.000Z",
+		"latitude": "19.9000000", "longitude": "96.5000000",
+		"depth": "20.00", "mag": "5.10", "magType": "mb",
+		"continent": "Asia", "location": "June One, Myanmar",
+	}}
+	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if r.URL.Path != "/api/v2/export" {
+			t.Errorf("unexpected path %s", r.URL.Path)
+			http.NotFound(w, r)
+			return
+		}
+		var events []map[string]any
+		if r.URL.Query().Get("from") == "2026-06-01" {
+			events = rawRecords
+		}
+		offset, _ := strconv.Atoi(r.URL.Query().Get("offset"))
+		var page []map[string]any
+		if offset < len(events) {
+			page = events[offset:]
+		}
+		_ = json.NewEncoder(w).Encode(map[string]any{
+			"meta": map[string]any{
+				"count": len(page), "total": len(events), "limit": 10000, "offset": offset,
+			},
+			"earthquakes": page,
+		})
+	}))
+	defer srv.Close()
+
+	dir := t.TempDir()
+	combinedCSV := filepath.Join(dir, "csv", "combined", "earthquakes_combined.csv")
+	if err := os.MkdirAll(filepath.Dir(combinedCSV), 0o755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(combinedCSV, []byte("id,time_utc\nseed1,2026-05-31 00:00:00\n"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+
+	err := Run(Options{
+		BaseURL:   srv.URL,
+		ExportDir: dir,
+		DataDir:   filepath.Join(dir, "no-such-data"),
+		Workers:   2,
+		// Route omitted: config default is now "export"
+		Now: func() time.Time { return time.Date(2026, time.July, 2, 12, 0, 0, 0, time.UTC) },
+	})
+	if err != nil {
+		t.Fatalf("Run: %v", err)
+	}
+	b, err := os.ReadFile(filepath.Join(dir, "csv/monthly/earthquakes_2026_06.csv"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	got := string(b)
+	if !strings.Contains(got, "ex1") || !strings.Contains(got, "2026-06-10 03:00:00") {
+		t.Errorf("June monthly CSV missing export record or formatted time:\n%s", got)
+	}
+	if !strings.Contains(got, "5.1") { // string "5.10" -> numeric 5.1, like v1
+		t.Errorf("expected numeric mag 5.1 in CSV:\n%s", got)
+	}
+}
+
+// TestRunInvalidRoute asserts the dispatch fails loud on an unknown route rather
+// than silently falling back to a route (which would ship a wrong-fidelity artifact).
+func TestRunInvalidRoute(t *testing.T) {
+	dir := t.TempDir()
+	err := Run(Options{
+		BaseURL:   "http://unused.invalid",
+		ExportDir: dir,
+		DataDir:   filepath.Join(dir, "no-such-data"),
+		Workers:   1,
+		Route:     "bogus",
+		Now:       func() time.Time { return time.Date(2026, time.July, 2, 12, 0, 0, 0, time.UTC) },
+	})
+	if err == nil {
+		t.Fatal("Run with an unknown route should return a descriptive error, not fetch")
+	}
+	if !strings.Contains(err.Error(), "bogus") || !strings.Contains(err.Error(), "route") {
+		t.Errorf("err = %v, want a descriptive unknown-route error naming the bad value", err)
 	}
 }
 

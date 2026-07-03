@@ -88,11 +88,24 @@ def _load_fault_segments() -> list:
     return segments
 
 
-def _load_dams_df() -> Optional[pd.DataFrame]:
-    candidates = [
-        os.path.join(os.getcwd(), "myanmar_dams.geojson"),
-        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "myanmar_dams.geojson"),
-    ]
+def load_dams_df(path: Optional[str] = None) -> Optional[pd.DataFrame]:
+    """Load the Myanmar dams GeoJSON into a DataFrame, or None if not found.
+
+    This is the single dam-loader for the whole package: analysis (clustering,
+    coulomb) and visualization (map) all import it so the resolution logic and
+    column schema live in exactly one place. When ``path`` is given it is the
+    sole candidate; otherwise the file is resolved via config.DAMS_PATH (explicit
+    MMEQ_DAMS_PATH override) then the ordered config.DAMS_PATH_CANDIDATES (cwd
+    first — the historical lookup — then the repo root). Returns None on a
+    missing file so callers can degrade gracefully.
+    """
+    from mmeq import config
+
+    if path:
+        candidates = [path]
+    else:
+        candidates = [config.DAMS_PATH] if config.DAMS_PATH else []
+        candidates += config.DAMS_PATH_CANDIDATES
     for p in candidates:
         p = os.path.normpath(p)
         if os.path.exists(p):
@@ -117,6 +130,10 @@ def _load_dams_df() -> Optional[pd.DataFrame]:
                 })
             return pd.DataFrame(rows)
     return None
+
+
+# Backwards-compatible private alias (this module's internal call sites).
+_load_dams_df = load_dams_df
 
 
 def _point_to_segment_distance(px, py, ax, ay, bx, by):

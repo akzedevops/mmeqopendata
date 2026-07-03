@@ -2,22 +2,13 @@ import argparse
 import logging
 import os
 import sys
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
 
 from mmeq import __version__
 from mmeq.config import EXPORT_DIR, EXPORT_SUBDIRS, OUTPUT_DIR, MAX_WORKERS
-from mmeq.export.fetcher import fetch_quake_data_complete, generate_date_ranges
-from mmeq.export.writer import (
-    validate_quake_data,
-    save_to_csv,
-    save_to_json,
-    load_combined_json,
-    merge_combined_json,
-    save_combined_json,
-    rebuild_combined,
-)
+from mmeq.export.pipeline import run_export
+from mmeq.export.writer import rebuild_combined
 from mmeq.analysis.temporal import (
     monthly_frequency,
     magnitude_distribution,
@@ -59,84 +50,7 @@ def cmd_export(args) -> None:
         print(f"Rebuilt combined catalog: {n} events (CSV + JSON reconciled, sorted by time)")
         return
 
-    date_ranges = generate_date_ranges()
-    logging.info(f"Processing {len(date_ranges)} months of earthquake data...")
-
-    if not date_ranges:
-        logging.info("No new data to process.")
-        return
-
-    all_frames = []
-    yearly_frames = {}
-
-    def process_month(year, month, from_date, to_date):
-        df_raw = fetch_quake_data_complete(from_date, to_date)
-        df_valid = validate_quake_data(df_raw)
-        return year, month, df_valid
-
-    has_error = False
-    with ThreadPoolExecutor(max_workers=args.workers) as executor:
-        futures = {
-            executor.submit(process_month, y, m, fd, td): (y, m)
-            for y, m, fd, td in date_ranges
-        }
-        for future in as_completed(futures):
-            try:
-                year, month, df_valid = future.result()
-            except Exception:
-                has_error = True
-                y, m = futures[future]
-                logging.error(f"Failed to process {y}-{m:02d}")
-                continue
-
-            if df_valid.empty:
-                continue
-
-            monthly_csv = os.path.join(
-                EXPORT_DIR, "csv/monthly", f"earthquakes_{year}_{month:02d}.csv"
-            )
-            monthly_json = os.path.join(
-                EXPORT_DIR, "json/monthly", f"earthquakes_{year}_{month:02d}.json"
-            )
-            save_to_csv(df_valid, monthly_csv, overwrite=True)
-            save_to_json(df_valid, monthly_json)
-            yearly_frames.setdefault(year, []).append(df_valid)
-            all_frames.append(df_valid)
-            logging.info(f"Updated {year}-{month:02d}: {len(df_valid)} records")
-
-    if not all_frames:
-        logging.info("No new data to process.")
-        if has_error:
-            sys.exit(1)
-        return
-
-    logging.info("Saving yearly and combined files...")
-    for year, frames in yearly_frames.items():
-        ydf = pd.concat(frames, ignore_index=True)
-        save_to_csv(
-            ydf,
-            os.path.join(EXPORT_DIR, "csv/yearly", f"earthquakes_{year}.csv"),
-            dedup=True,
-        )
-        save_to_json(
-            ydf,
-            os.path.join(EXPORT_DIR, "json/yearly", f"earthquakes_{year}.json"),
-        )
-
-    combined_df = pd.concat(all_frames, ignore_index=True)
-    combined_csv = os.path.join(EXPORT_DIR, "csv/combined/earthquakes_combined.csv")
-    combined_json = os.path.join(EXPORT_DIR, "json/combined/earthquakes_combined.json")
-
-    save_to_csv(combined_df, combined_csv, dedup=True)
-
-    existing_records = load_combined_json(combined_json)
-    new_records = combined_df.to_dict(orient="records")
-    merged = merge_combined_json(existing_records, new_records)
-    save_combined_json(merged, combined_json)
-
-    logging.info("All done! Earthquake data is up to date!")
-    if has_error:
-        sys.exit(1)
+    run_export(args.workers)
 
 
 def cmd_analyze(args) -> None:
@@ -309,6 +223,26 @@ def cmd_report(args) -> None:
                 if g in grades.index:
                     print(f"  {g}: {grades[g]} dams")
             print(f"  Top risk: {risk_df.iloc[0]['name']} ({risk_df.iloc[0]['composite_risk']:.1f})")
+
+    if not args.no_validation:
+        try:
+            from mmeq.analysis.shakemap_validation import validate_against_shakemap
+            logging.info("Validating ASK08 GMPE against ShakeMap stations...")
+            dam_risk_csv = os.path.join(args.output, "dam_risk_scores.csv")
+            val_df = validate_against_shakemap(
+                dam_risk_path=dam_risk_csv if os.path.exists(dam_risk_csv) else None,
+            )
+            if not val_df.empty:
+                val_csv = os.path.join(args.output, "shakemap_validation.csv")
+                val_df.to_csv(val_csv, index=False)
+                stations = val_df[val_df["station_code"] != "DAM"]
+                mean_ratio = stations["ratio"].dropna().mean()
+                print("\nShakeMap Validation:")
+                print(f"  Stations: {len(stations)}")
+                print(f"  Mean observed/predicted PGA ratio: {mean_ratio:.2f}")
+                print(f"  Results: {val_csv}")
+        except Exception as e:
+            logging.warning("ShakeMap validation failed: %s", e)
 
     forecast_df = None
     forecast_params = None
@@ -501,6 +435,7 @@ def main() -> None:
         help="Reuse a fresh dam_risk_scores.csv from MMEQ_REPORT_DIR (default: report/) "
              "instead of recomputing it (env: MMEQ_REUSE_RISK=1)",
     )
+    p_report.add_argument("--no-validation", action="store_true", help="Skip ShakeMap GMPE validation")
     p_report.add_argument("--no-forecast", action="store_true", help="Skip aftershock forecast")
     p_report.add_argument("--no-dashboard", action="store_true", help="Skip Plotly dashboard")
     p_report.add_argument("--no-3d", action="store_true", help="Skip 3D cross-section")
