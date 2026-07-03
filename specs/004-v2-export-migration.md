@@ -147,7 +147,7 @@ resets every golden baseline. Do not bundle it with the transport migration.
       `initialPosition`, `.000Z` updated) and July monthly header ==
       `DefaultColumns`. If the deadline is missed: one-shot backfill via a
       temporary `--from` override or seed-style surgery (document which).
-- [ ] **I4 (Go)** — `FetchWindowExport` (v2 pager + verbatim records);
+- [x] **I4 (Go)** — DONE 2026-07-03. `FetchWindowExport` (v2 pager + verbatim records);
       `MMEQ_FETCH_ROUTE=export` default. Known breakage to fix in the same
       increment: `TestRunV1Route` exercises the old default (fake server only
       serves the v1 path); `cmd/mmeq-export/main.go` hard-rejects routes other

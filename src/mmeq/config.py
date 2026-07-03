@@ -73,6 +73,28 @@ RISK_GRADE_THRESHOLDS = {
 GMPE_SIGMA_LN = float(os.environ.get("MMEQ_GMPE_SIGMA_LN", "0.65"))
 
 FAULT_LINES_PATH = os.environ.get("MMEQ_FAULT_LINES", "fault_lines.json")
+
+# --- Data files (config consolidation, audit M4/M5) -------------------------
+# Repo paths are resolved relative to the installed package so lookups work
+# regardless of the current working directory. config.py lives at src/mmeq/, so
+# two parents up is the repo root and its data/ directory.
+_PACKAGE_DIR = os.path.dirname(os.path.abspath(__file__))
+_REPO_ROOT = os.path.normpath(os.path.join(_PACKAGE_DIR, os.pardir, os.pardir))
+
+# Repo data/ directory (admin boundaries, shakemap, osm, faults, finite_fault).
+# Override the whole directory with MMEQ_DATA_DIR.
+DATA_DIR = os.environ.get("MMEQ_DATA_DIR", os.path.join(_REPO_ROOT, "data"))
+
+# myanmar_dams.geojson lives at the repo root. Set MMEQ_DAMS_PATH to pin an
+# explicit file; otherwise analysis.dam_risk.load_dams_df resolves it against
+# these candidates in order (cwd first — the historical lookup — then the repo
+# root resolved from the package). load_dams_df is the single resolver.
+DAMS_PATH = os.environ.get("MMEQ_DAMS_PATH", "")
+DAMS_PATH_CANDIDATES: List[str] = [
+    os.path.join(os.getcwd(), "myanmar_dams.geojson"),
+    os.path.join(_REPO_ROOT, "myanmar_dams.geojson"),
+]
+
 COMBINED_CSV = os.path.join(EXPORT_DIR, "csv/combined/earthquakes_combined.csv")
 COMBINED_JSON = os.path.join(EXPORT_DIR, "json/combined/earthquakes_combined.json")
 

@@ -6,6 +6,8 @@ import pandas as pd
 import folium
 from folium.plugins import HeatMap, MarkerCluster
 
+from mmeq.analysis.dam_risk import load_dams_df
+from mmeq.visualization._folium_pins import pin_heatmap, pin_map
 from mmeq.config import (
     MAP_CENTER,
     MAP_ZOOM,
@@ -14,8 +16,6 @@ from mmeq.config import (
     FAULT_LINES_PATH,
     OUTPUT_DIR,
 )
-
-DAMS_PATH = os.path.join(os.getcwd(), "myanmar_dams.geojson")
 
 logger = logging.getLogger(__name__)
 
@@ -50,8 +50,6 @@ def build_earthquake_map(
         output_path = os.path.join(OUTPUT_DIR, "enhanced_earthquake_map.html")
     if fault_lines_path is None:
         fault_lines_path = FAULT_LINES_PATH
-    if dams_path is None:
-        dams_path = DAMS_PATH
 
     df = df[df["mag"] >= min_mag].copy()
     df["time_utc"] = pd.to_datetime(df["time_utc"])
@@ -64,6 +62,7 @@ def build_earthquake_map(
         zoom_start=MAP_ZOOM,
         tiles="CartoDB positron",
     )
+    pin_map(quake_map)
 
     if show_markers:
         marker_layer = folium.FeatureGroup(name="Earthquake Markers")
@@ -104,20 +103,16 @@ def build_earthquake_map(
     else:
         logger.warning(f"Fault lines file not found: {fault_lines_path}")
 
-    if show_dams and dams_path and os.path.exists(dams_path):
-        import json as _json
+    dams_df = load_dams_df(dams_path) if show_dams else None
+    if show_dams and dams_df is not None and not dams_df.empty:
         dams_layer = folium.FeatureGroup(name="Dams")
-        with open(dams_path, encoding="utf-8") as f:
-            dams_data = _json.load(f)
-        for feat in dams_data.get("features", []):
-            props = feat.get("properties", {})
-            coords = feat["geometry"]["coordinates"]
-            name = props.get("name", "Unnamed Dam")
-            status = props.get("status", "")
-            func = props.get("function", "")
-            capacity = props.get("capacity_mw", "")
-            height = props.get("height_m", "")
-            river = props.get("river", "")
+        for _, row in dams_df.iterrows():
+            name = row["name"]
+            status = row["status"]
+            func = row["function"]
+            capacity = row["capacity_mw"]
+            height = row["height_m"]
+            river = row["river"]
             popup_html = f"<b>Dam:</b> {name}"
             if status:
                 popup_html += f"<br><b>Status:</b> {status}"
@@ -139,19 +134,21 @@ def build_earthquake_map(
             elif status == "Suspended":
                 icon_color = "red"
             folium.Marker(
-                location=[coords[1], coords[0]],
+                location=[row["latitude"], row["longitude"]],
                 icon=folium.Icon(icon="tint", color=icon_color, prefix="fa"),
                 popup=folium.Popup(popup_html, max_width=300),
             ).add_to(dams_layer)
         dams_layer.add_to(quake_map)
-        logger.info(f"Added {len(dams_data.get('features', []))} dams to map")
+        logger.info(f"Added {len(dams_df)} dams to map")
     elif show_dams:
-        logger.warning(f"Dams file not found: {dams_path}")
+        logger.warning("Dams file not found (see config.DAMS_PATH_CANDIDATES)")
 
     if show_heatmap:
         heatmap_layer = folium.FeatureGroup(name="Earthquake Heatmap")
         heat_data = df[["latitude", "longitude"]].values.tolist()
-        HeatMap(heat_data, radius=10, blur=15, max_zoom=10).add_to(heatmap_layer)
+        hm = HeatMap(heat_data, radius=10, blur=15, max_zoom=10)
+        pin_heatmap(hm)
+        hm.add_to(heatmap_layer)
         heatmap_layer.add_to(quake_map)
 
     # OSM critical infrastructure overlay

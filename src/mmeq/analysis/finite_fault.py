@@ -1,7 +1,7 @@
 import json
 import os
 
-_DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "..", "data")
+from mmeq.config import DATA_DIR as _DATA_DIR
 
 
 def load_finite_fault_patches() -> list[dict]:

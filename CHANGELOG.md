@@ -2,6 +2,26 @@
 
 ## Unreleased
 
+### Roadmap cleanup (2026-07-03)
+
+- **ShakeMap validation wired into `mmeq report`** — the ASK08-vs-station GMPE
+  validation (paper Table `tab:validation`) now runs as a report stage after dam
+  risk, gated by `--no-validation`, writing `shakemap_validation.csv` with a
+  one-line station-count / mean observed-vs-predicted ratio summary. Its input
+  paths are no longer cwd-relative hardcodes (station list from `config.DATA_DIR`,
+  dam CSV from the report dir).
+- **`population_raster.py` removed** — born orphaned; its WorldPop `.tif` is
+  gitignored and absent, so it only ever returned `0.0`. The WorldPop figure is
+  documented as a one-off offline analysis (CHANGELOG/README/paper reconciled).
+- **Folium moving-CDN refs pinned** — `HeatMap`'s `@main` `leaflet_heat.min.js`
+  and every Map's ref-less `leaflet.awesome.rotate.min.css` are now pinned to the
+  installed folium version via `add_js_link`/`add_css_link` (one shared helper,
+  `visualization/_folium_pins.py`).
+- **Export pipeline extracted** — `cmd_export`'s fetch/aggregate/write body moved
+  verbatim into `export/pipeline.py:run_export(workers)`; `cmd_export` is now a
+  thin wrapper (mkdirs + `--rebuild` + `run_export`). Pure move, semantics
+  preserved.
+
 ### v2 export migration (spec 004, 2026-07-03)
 
 The daily export now fetches the API's new full-fidelity `/api/v2/export` route
@@ -152,7 +172,7 @@ Major overhaul of calculations, data sources, and GitHub Pages.
 - **Monte Carlo PGA uncertainty** — 1000-iteration epistemic uncertainty
 - **USGS ShakeMap validation** — NPW station predicted 0.51g vs observed 0.57g
 - **GEM Global Active Faults** — 395 Myanmar faults, 9,675 segments
-- **WorldPop population raster** — 2.89M within 50km of epicenter
+- **WorldPop population exposure** — one-off offline analysis (2.89M within 50km of epicenter); the 1 km raster is not tracked in-repo, so this figure is not reproduced by the pipeline
 - **USGS finite fault model** — 530 slip patches, 0–7m variable slip
 - **USGS rupture trace** — 475km surface rupture geometry
 - New columns in earthquake exports: `state_region`, `district`, `township`, `nearest_city`, `place_type`, `distance_km`

@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 from typing import Optional, Dict, List
 
+from mmeq.analysis.dam_risk import load_dams_df
 from mmeq.config import DBSCAN_EPS, DBSCAN_MIN_SAMPLES
 
 logger = logging.getLogger(__name__)
@@ -195,37 +196,8 @@ def _cluster_stats(df: pd.DataFrame) -> Dict[int, dict]:
     return stats
 
 
-def _load_dams() -> Optional[pd.DataFrame]:
-    candidates = [
-        os.path.join(os.getcwd(), "myanmar_dams.geojson"),
-        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "myanmar_dams.geojson"),
-    ]
-    dams_path = None
-    for p in candidates:
-        p = os.path.normpath(p)
-        if os.path.exists(p):
-            dams_path = p
-            break
-    if dams_path is None:
-        return None
-    import json
-    with open(dams_path, encoding="utf-8") as f:
-        data = json.load(f)
-    rows = []
-    for feat in data.get("features", []):
-        coords = feat["geometry"]["coordinates"]
-        props = feat.get("properties", {})
-        rows.append({
-            "longitude": coords[0],
-            "latitude": coords[1],
-            "name": props.get("name", "Unnamed Dam"),
-            "status": props.get("status", ""),
-            "function": props.get("function", ""),
-            "capacity_mw": props.get("capacity_mw", ""),
-            "height_m": props.get("height_m", ""),
-            "river": props.get("river", ""),
-        })
-    return pd.DataFrame(rows)
+# Single shared dam loader (see analysis.dam_risk.load_dams_df).
+_load_dams = load_dams_df
 
 
 def plot_clusters_on_map(

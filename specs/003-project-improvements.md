@@ -60,7 +60,7 @@ everywhere and have `mmeq report` consume the already-built CSVs instead of reco
 (Shared with [[001-data-fetch-upgrade]] R2 and a prerequisite for [[002-go-export-rewrite]].)
 
 **P4 — Test the published-number functions (M, High).** Zero tests for `coulomb`,
-`fragility`, `osm_exposure`, `population*`, `shakemap_validation`, `temporal`, `geocoder`,
+`fragility`, `osm_exposure`, `population`, `shakemap_validation`, `temporal`, `geocoder`,
 `finite_fault`, `gem_faults`, and within `dam_risk` the consequential
 `dam_risk_scores`/`monte_carlo_pga`/`sensitivity_analysis`/`compute_hazard_curve`. Add unit
 tests for grade thresholds, hazard return-period inversion, fragility lognormal CDF, plus an

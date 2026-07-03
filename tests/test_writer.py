@@ -87,6 +87,36 @@ def test_rebuild_reconciles_json_to_csv_and_sorts(tmp_path):
     assert list(csv_df["time_utc"]) == sorted(csv_df["time_utc"]), "sorted chronologically"
 
 
+def test_rebuild_fresh_monthly_beats_stale_combined(tmp_path):
+    # Monthly files are the source of truth: a re-fetched monthly row must win over
+    # a stale copy of the same event in the derived combined store. An event that
+    # lives only in the combined store (no monthly source) must still survive.
+    monthly = tmp_path / "csv" / "monthly"
+    monthly.mkdir(parents=True)
+    (tmp_path / "json" / "combined").mkdir(parents=True)
+    combined_dir = tmp_path / "csv" / "combined"
+    combined_dir.mkdir(parents=True)
+
+    # Stale combined: ev1 mag=4.0, plus ev_only that exists nowhere else.
+    pd.DataFrame(
+        {"id": ["ev1", "ev_only"],
+         "time_utc": ["2025-03-01 00:00:00", "2025-03-05 00:00:00"],
+         "mag": [4.0, 2.5]}
+    ).to_csv(combined_dir / "earthquakes_combined.csv", index=False)
+    # Fresh monthly: ev1 re-fetched with mag=5.0.
+    pd.DataFrame(
+        {"id": ["ev1"], "time_utc": ["2025-03-01 00:00:00"], "mag": [5.0]}
+    ).to_csv(monthly / "earthquakes_2025_03.csv", index=False)
+
+    n = rebuild_combined(export_dir=str(tmp_path))
+    assert n == 2
+
+    csv_df = pd.read_csv(combined_dir / "earthquakes_combined.csv").set_index("id")
+    assert csv_df.loc["ev1", "mag"] == 5.0, "fresh monthly row wins over stale combined"
+    assert "ev_only" in csv_df.index, "combined-only event survives the rebuild"
+    assert csv_df.loc["ev_only", "mag"] == 2.5
+
+
 def test_atomic_write_leaves_no_tmp(tmp_path):
     # A successful write leaves the file and no leftover *.tmp.
     path = str(tmp_path / "out.csv")

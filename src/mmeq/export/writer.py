@@ -199,16 +199,24 @@ def rebuild_combined(export_dir: Optional[str] = None) -> int:
     """Rebuild the combined CSV + JSON from the union of all monthly CSVs and the
     existing combined CSV, deduped by event id and sorted by time_utc.
 
+    Precedence: the monthly files are the source of truth. They are re-fetched
+    fresh each run and the combined store is merely derived from them, so a
+    re-fetched monthly row must win over any stale copy in the existing combined
+    store. ``_dedup_frame`` keeps the LAST row per id, so the (possibly stale)
+    combined store is concatenated FIRST and the monthly files after it — the
+    fresher monthly row then overrides its stale combined copy, while an event
+    that exists only in the combined store (no monthly source) still survives.
+
     Reconciles drift between the two combined stores (the JSON had silently fallen
     far behind the CSV) and re-sorts the catalog chronologically (it was written in
     thread-completion order). Both files are written atomically.
     """
     if export_dir is None:
         export_dir = EXPORT_DIR
-    sources = sorted(glob.glob(os.path.join(export_dir, "csv", "monthly", "*.csv")))
+    monthly_sources = sorted(glob.glob(os.path.join(export_dir, "csv", "monthly", "*.csv")))
     combined_csv = os.path.join(export_dir, "csv", "combined", "earthquakes_combined.csv")
-    if os.path.exists(combined_csv):
-        sources.append(combined_csv)
+    # Combined store first so monthly rows win under _dedup_frame's keep-last.
+    sources = ([combined_csv] if os.path.exists(combined_csv) else []) + monthly_sources
 
     frames = []
     for src in sources:

@@ -7,6 +7,7 @@ import folium
 from folium.plugins import TimestampedGeoJson
 
 from mmeq.config import MAP_CENTER, MAP_ZOOM, FAULT_LINES_PATH
+from mmeq.visualization._folium_pins import pin_map
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +29,7 @@ def build_animated_map(
         zoom_start=MAP_ZOOM,
         tiles="CartoDB positron",
     )
+    pin_map(quake_map)
 
     features = []
     for _, row in df.iterrows():

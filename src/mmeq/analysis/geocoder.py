@@ -14,9 +14,9 @@ import threading
 from shapely.geometry import Point, shape
 from shapely.strtree import STRtree
 
-logger = logging.getLogger(__name__)
+from mmeq.config import DATA_DIR as _DATA_DIR
 
-_DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "..", "data")
+logger = logging.getLogger(__name__)
 _ADMIN1_PATH = os.path.join(_DATA_DIR, "admin", "mmr_admin1.geojson")
 _ADMIN2_PATH = os.path.join(_DATA_DIR, "admin", "mmr_admin2.geojson")
 _ADMIN3_PATH = os.path.join(_DATA_DIR, "admin", "mmr_admin3.geojson")

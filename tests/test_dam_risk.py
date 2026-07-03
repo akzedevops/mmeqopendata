@@ -221,6 +221,7 @@ def _report_args(catalog: Path, output: Path, **overrides) -> argparse.Namespace
         mc=None,
         reuse_risk=False,
         no_dams=False,
+        no_validation=True,
         no_forecast=True,
         no_dashboard=True,
         no_3d=True,
