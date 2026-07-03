@@ -24,6 +24,7 @@ import (
 
 const (
 	endpointPath      = "/api/v2/earthquakes"
+	v1EndpointPath    = "/api/myanmar-quakes"
 	dateLayout        = "2006-01-02"
 	defaultPageLimit  = 10000 // the API's documented max limit
 	defaultMaxRetries = 3
@@ -133,6 +134,23 @@ func (c *Client) FetchWindow(ctx context.Context, fromDate, toDate string) ([]ma
 	return c.fetchAll(ctx, params)
 }
 
+// FetchWindowV1 fetches the same inclusive window via the legacy-compat route
+// (GET {base}/api/myanmar-quakes?from&to — one request, no pagination). Records
+// come back VERBATIM: this route serves the raw upstream shape (string values,
+// all upstream columns, canonical key order), which is what the Python pipeline
+// consumes and what the published 33-column artifact requires — the typed v2
+// route drops the raw upstream columns (dmin, gap, nst, rms, shakemap*, …), so
+// only this route can reproduce the artifact byte-for-byte. Same retry policy.
+func (c *Client) FetchWindowV1(ctx context.Context, fromDate, toDate string) ([]map[string]any, error) {
+	params := url.Values{"from": {fromDate}, "to": {toDate}}
+	u := strings.TrimRight(c.BaseURL, "/") + v1EndpointPath + "?" + params.Encode()
+	page, err := c.getURL(ctx, u)
+	if err != nil {
+		return nil, err
+	}
+	return page.Earthquakes, nil
+}
+
 // FetchUpdatedAfter fetches every event created or revised after the RFC3339
 // instant since (the v2 updated_after filter), paginated and remapped exactly like
 // FetchWindow. This backs the incremental daily sync.
@@ -173,7 +191,13 @@ func (c *Client) fetchAll(ctx context.Context, params url.Values) ([]map[string]
 // backoff (backoffBase*2^n) up to MaxRetries retries. Context cancellation aborts
 // immediately, including mid-backoff.
 func (c *Client) getPage(ctx context.Context, params url.Values) (*apiPage, error) {
-	u := strings.TrimRight(c.BaseURL, "/") + endpointPath + "?" + params.Encode()
+	return c.getURL(ctx, strings.TrimRight(c.BaseURL, "/")+endpointPath+"?"+params.Encode())
+}
+
+// getURL runs the retry loop for one absolute URL (shared by the v2 pager and
+// the single-shot v1-compat fetch; a v1 body decodes into apiPage with a zero
+// meta, which neither caller reads).
+func (c *Client) getURL(ctx context.Context, u string) (*apiPage, error) {
 	var lastErr error
 	for attempt := 0; ; attempt++ {
 		if attempt > 0 {

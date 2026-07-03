@@ -1,0 +1,89 @@
+# Shadow parity run for the Go export rewrite (specs/002, increment I5).
+#
+# Both exporters rebuild the 2026 catalog from scratch (MMEQ_START_YEAR=2026,
+# empty export dirs) against the live API — Python via the v1-compat route,
+# Go via /api/v2 — and the trees are diffed with a small float tolerance.
+# A full-year rebuild is used instead of the daily incremental because the
+# daily fetch has usually already committed today's data, which would make an
+# incremental shadow a trivial no-op.
+#
+# Nothing is committed; a red run means the exporters diverged and the Go
+# cutover must wait. Spec acceptance: >=3 consecutive clean daily cycles.
+#
+# Known benign race: the two runs are minutes apart, and each validates with a
+# "now - 24h" cutoff — an event whose time_utc falls inside that tiny sliver
+# can appear in one tree only. Re-run the job to confirm before treating a
+# failure as real divergence (upstream ingest is 23:30 UTC, so 02:30 is quiet).
+
+name: Shadow Go Export Parity
+
+on:
+  schedule:
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('pyproject.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install Python package
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go/go.mod
+          # stdlib-only module: no go.sum, so key the cache on go.mod
+          cache-dependency-path: go/go.mod
+
+      - name: Build Go exporter
+        run: |
+          cd go
+          go test ./...
+          go build -o /tmp/mmeq-export ./cmd/mmeq-export
+
+      - name: Run Python export (v1-compat route)
+        env:
+          MMEQ_START_YEAR: '2026'
+          MMEQ_EXPORT_DIR: /tmp/py_run
+        run: mmeq export
+
+      - name: Run Go export (v2 route)
+        env:
+          MMEQ_START_YEAR: '2026'
+          MMEQ_EXPORT_DIR: /tmp/go_run
+        run: /tmp/mmeq-export export --data-dir data
+
+      - name: Diff export trees
+        run: python tools/diff_exports.py /tmp/py_run /tmp/go_run --tolerance 1e-9
+
+      - name: Upload trees on divergence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shadow-diverged-exports
+          path: |
+            /tmp/py_run
+            /tmp/go_run
+          retention-days: 7
