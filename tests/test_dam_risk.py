@@ -274,3 +274,27 @@ class TestReportSmoke:
         # And a fresh one is returned.
         os.utime(risk_path, None)
         assert _load_precomputed_risk(str(catalog)) is not None
+
+    def test_malformed_precomputed_risk_falls_back(self, tmp_path, monkeypatch):
+        """An unparseable CSV (e.g. truncated by an interrupted build) -> None."""
+        from mmeq.cli import _load_precomputed_risk
+
+        report_dir = tmp_path / "prebuilt"
+        report_dir.mkdir()
+        monkeypatch.setenv("MMEQ_REPORT_DIR", str(report_dir))
+        risk_path = report_dir / "dam_risk_scores.csv"
+        # Ragged rows: pandas' C parser raises ParserError on the extra fields.
+        risk_path.write_text('name,risk_grade\n"Dam A,Low\nDam B,High,0.5,extra,x\n')
+
+        assert _load_precomputed_risk(None) is None
+
+    def test_zero_byte_precomputed_risk_falls_back(self, tmp_path, monkeypatch):
+        """A zero-byte CSV (pandas EmptyDataError) -> None."""
+        from mmeq.cli import _load_precomputed_risk
+
+        report_dir = tmp_path / "prebuilt"
+        report_dir.mkdir()
+        monkeypatch.setenv("MMEQ_REPORT_DIR", str(report_dir))
+        (report_dir / "dam_risk_scores.csv").touch()
+
+        assert _load_precomputed_risk(None) is None

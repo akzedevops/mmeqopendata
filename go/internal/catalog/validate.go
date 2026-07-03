@@ -2,7 +2,9 @@ package catalog
 
 import (
 	"fmt"
+	"sort"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/akzedevops/mmeqopendata/go/internal/config"
@@ -104,8 +106,17 @@ func Validate(raw []map[string]any, endDate time.Time) []Quake {
 			extra[k] = v
 		}
 
+		// ID is set only for a present, non-null id (pandas leaves the id cell
+		// NaN/None otherwise — it never renders a "<nil>" string). Extra["id"]
+		// keeps the raw value, so the writer and Dedup can still distinguish a
+		// missing key (NaN) from an explicit null (None).
+		id := ""
+		if v, ok := rec["id"]; ok && v != nil {
+			id = fmt.Sprint(v)
+		}
+
 		out = append(out, Quake{
-			ID:        fmt.Sprint(rec["id"]),
+			ID:        id,
 			Time:      t,
 			Latitude:  lat,
 			Longitude: lon,
@@ -119,19 +130,103 @@ func Validate(raw []map[string]any, endDate time.Time) []Quake {
 	return out
 }
 
-// Dedup removes duplicate events keyed on the stable event id, keeping the LAST
-// occurrence — matching writer._dedup_frame(subset=["id"], keep="last"), so a revised
-// event replaces its earlier version. Input order is otherwise preserved.
-func Dedup(quakes []Quake) []Quake {
-	lastIdx := make(map[string]int, len(quakes))
-	for i, q := range quakes {
-		lastIdx[q.ID] = i
+// idKey classifies a quake's id cell the way pandas classifies it in a frame
+// built from the raw API records: a present, non-null id is a value key; a
+// missing "id" key is NaN (pandas' drop_duplicates treats every NaN as the
+// same key, so all id-less rows form ONE group); an explicit null is None,
+// which pandas keeps as a group of its own, distinct from NaN.
+type idKey struct {
+	kind byte // 'v' value, 'm' missing (NaN), 'n' null (None)
+	id   string
+}
+
+// quakeIDKey computes the dedup key for one quake. Quakes built by Validate
+// carry the raw id in Extra["id"], which distinguishes missing from null; for
+// hand-built quakes a non-empty ID field alone counts as a value key.
+func quakeIDKey(q Quake) idKey {
+	if q.ID != "" {
+		return idKey{'v', q.ID}
 	}
-	out := make([]Quake, 0, len(lastIdx))
-	for i, q := range quakes {
-		if lastIdx[q.ID] == i {
-			out = append(out, q)
+	if v, ok := q.Extra["id"]; ok {
+		if v == nil {
+			return idKey{'n', ""}
 		}
+		return idKey{'v', fmt.Sprint(v)} // e.g. an explicit empty-string id
+	}
+	return idKey{'m', ""}
+}
+
+// hasIDColumn reports whether a frame built from these quakes would have an
+// "id" column at all: pandas materializes it only when at least one record
+// carries the key (even with a null value).
+func hasIDColumn(quakes []Quake) bool {
+	for _, q := range quakes {
+		if q.ID != "" {
+			return true
+		}
+		if _, ok := q.Extra["id"]; ok {
+			return true
+		}
+	}
+	return false
+}
+
+// recordFingerprint canonically renders every field of a quake — the typed
+// fields plus Extra with keys sorted and values tagged by their Go type, so
+// the string "3.6" and the number 3.6 stay distinct exactly like pandas
+// object cells. Two quakes are full-row duplicates iff fingerprints match.
+func recordFingerprint(q Quake) string {
+	keys := make([]string, 0, len(q.Extra))
+	for k := range q.Extra {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	var b strings.Builder
+	fmt.Fprintf(&b, "%s\x1f%s\x1f%v\x1f%v\x1f%v\x1f%v",
+		q.TimeUTC, q.TimeMMT, q.Latitude, q.Longitude, q.Depth, q.Mag)
+	for _, k := range keys {
+		v := q.Extra[k]
+		fmt.Fprintf(&b, "\x1f%s\x1e%T\x1e%v", k, v, v)
+	}
+	return b.String()
+}
+
+// Dedup removes duplicate events, mirroring writer._dedup_frame exactly.
+//
+// When at least one record carries an "id" key the frame has an id column, so
+// this is drop_duplicates(subset=["id"], keep="last"): rows collapse per id
+// keeping the LAST occurrence (a revised event replaces its earlier version);
+// all rows whose id key is missing collapse together into one NaN group (also
+// keep-last), and rows with an explicit null id form their own None group —
+// both verified against pandas 2.3.3. Survivors keep the position of their
+// last occurrence.
+//
+// When NO record has an id key (no id column) it falls back to full-row
+// drop_duplicates(): rows whose every field matches collapse, keeping the
+// FIRST occurrence.
+func Dedup(quakes []Quake) []Quake {
+	if hasIDColumn(quakes) {
+		lastIdx := make(map[idKey]int, len(quakes))
+		for i, q := range quakes {
+			lastIdx[quakeIDKey(q)] = i
+		}
+		out := make([]Quake, 0, len(lastIdx))
+		for i, q := range quakes {
+			if lastIdx[quakeIDKey(q)] == i {
+				out = append(out, q)
+			}
+		}
+		return out
+	}
+	seen := make(map[string]bool, len(quakes))
+	out := make([]Quake, 0, len(quakes))
+	for _, q := range quakes {
+		fp := recordFingerprint(q)
+		if seen[fp] {
+			continue
+		}
+		seen[fp] = true
+		out = append(out, q)
 	}
 	return out
 }

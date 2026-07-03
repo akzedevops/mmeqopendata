@@ -21,7 +21,9 @@ package catalog
 //
 // Semantics: monthly files are overwritten with just the new frame; yearly and
 // combined CSVs merge with the existing file and dedup keyed on "id" keeping the
-// last occurrence; the combined JSON merges keyed on id (falling back to
+// last occurrence (rows without an id all share pandas' NaN key; when no row has
+// an id there is no id column and dedup falls back to full-row keep-first, like
+// _dedup_frame); the combined JSON merges keyed on id (falling back to
 // (time_utc, latitude, longitude)) preserving first-seen order with later
 // records winning. Writes are atomic (temp file + rename), like _atomic_write.
 //
@@ -53,21 +55,33 @@ var DefaultColumns = []string{
 	"place_type", "distance_km",
 }
 
-// typedColumns are the Quake fields promoted out of Extra; a cell for one of
-// these always comes from the typed field (mirroring validate_quake_data, which
-// guarantees these columns exist on every row).
+// typedColumns are the Quake fields promoted out of Extra that exist on every
+// row; a cell for one of these always comes from the typed field (mirroring
+// validate_quake_data, which guarantees these columns on every row). "id" is
+// NOT here: pandas materializes an id column only when some record carries
+// the key, and a record without it gets a NaN cell.
 var typedColumns = map[string]bool{
-	"id": true, "time_utc": true, "time_mmt": true,
+	"time_utc": true, "time_mmt": true,
 	"latitude": true, "longitude": true, "depth": true, "mag": true,
 }
 
 // cellValue returns the value for one column of one quake: the typed field for
-// the seven promoted columns, otherwise Extra[col]. present=false means the key
-// is absent entirely (pandas: NaN-filled cell for a record missing the key).
+// the promoted columns, otherwise Extra[col]. present=false means the key is
+// absent entirely (pandas: NaN-filled cell for a record missing the key). The
+// id cell prefers the raw Extra["id"] value (which distinguishes an explicit
+// null from a missing key) and falls back to the typed ID for hand-built
+// quakes; a record with no id at all reports present=false so the CSV cell
+// renders "" and the JSON cell NaN, exactly like pandas.
 func cellValue(q Quake, col string) (v any, present bool) {
 	switch col {
 	case "id":
-		return q.ID, true
+		if v, ok := q.Extra["id"]; ok {
+			return v, true
+		}
+		if q.ID != "" {
+			return q.ID, true
+		}
+		return nil, false
 	case "time_utc":
 		return q.TimeUTC, true
 	case "time_mmt":
@@ -86,14 +100,18 @@ func cellValue(q Quake, col string) (v any, present bool) {
 }
 
 // presentColumns is the set of columns the quakes actually carry: the typed
-// seven plus every Extra key (pandas only materializes columns present in the
-// records).
+// six plus every Extra key (pandas only materializes columns present in the
+// records). "id" is included only when some record carries one — a frame in
+// which no record has an id has no id column at all.
 func presentColumns(quakes []Quake) map[string]bool {
 	p := make(map[string]bool, len(typedColumns))
 	for c := range typedColumns {
 		p[c] = true
 	}
 	for _, q := range quakes {
+		if q.ID != "" {
+			p["id"] = true
+		}
 		for k := range q.Extra {
 			p[k] = true
 		}
@@ -368,13 +386,19 @@ func parseCSV(data []byte) ([][]string, error) {
 	return records, nil
 }
 
-// WriteMergedCSV merges quakes with any existing CSV at path and dedups keyed
-// on "id" keeping the last occurrence — save_to_csv(..., dedup=True) for the
-// accumulating yearly/combined files. Existing rows pass through as strings
-// (pandas re-parses and re-serializes them, which is an identity round trip for
-// files this pipeline wrote). Column order is the existing header followed by
-// any new columns not yet present, matching pd.concat's union. Empty input is
-// a no-op (the existing file is left untouched).
+// WriteMergedCSV merges quakes with any existing CSV at path and dedups like
+// writer._dedup_frame — save_to_csv(..., dedup=True) for the accumulating
+// yearly/combined files. When the merged frame has an id column, rows dedup
+// keyed on "id" keeping the LAST occurrence; rows without an id (empty cell in
+// the existing file — read_csv parses that as NaN — or a quake missing the
+// key) all collapse into one NaN group, matching pandas. When neither the
+// existing file nor the quakes carry an id column, it falls back to full-row
+// dedup keeping the FIRST occurrence, like drop_duplicates(). Existing rows
+// pass through as strings (pandas re-parses and re-serializes them, which is
+// an identity round trip for files this pipeline wrote). Column order is the
+// existing header followed by any new columns not yet present, matching
+// pd.concat's union. Empty input is a no-op (the existing file is left
+// untouched).
 func WriteMergedCSV(quakes []Quake, path string, columns []string) error {
 	if len(quakes) == 0 {
 		return nil
@@ -404,30 +428,22 @@ func WriteMergedCSV(quakes []Quake, path string, columns []string) error {
 		quake    Quake
 	}
 	all := make([]mergedRow, 0, len(existingRows)+len(quakes))
-	ids := make([]string, 0, cap(all))
 	for _, r := range existingRows {
 		all = append(all, mergedRow{existing: r})
-		ids = append(ids, r["id"])
 	}
 	for _, q := range quakes {
 		all = append(all, mergedRow{quake: q})
-		ids = append(ids, q.ID)
 	}
 
-	// drop_duplicates(subset=["id"], keep="last"): survivors stay at the
-	// position of their last occurrence.
-	lastIdx := make(map[string]int, len(ids))
-	for i, id := range ids {
-		lastIdx[id] = i
-	}
-
-	var buf bytes.Buffer
-	writeCSVRow(&buf, outCols)
-	cells := make([]string, len(outCols))
-	for i, r := range all {
-		if lastIdx[ids[i]] != i {
-			continue
+	hasID := false
+	for _, c := range outCols {
+		if c == "id" {
+			hasID = true
+			break
 		}
+	}
+
+	rowCells := func(r mergedRow, cells []string) {
 		for j, c := range outCols {
 			if r.existing != nil {
 				cells[j] = r.existing[c]
@@ -436,6 +452,47 @@ func WriteMergedCSV(quakes []Quake, path string, columns []string) error {
 				cells[j] = renderCSVCell(v, present)
 			}
 		}
+	}
+
+	// _dedup_frame on the concatenated frame: with an id column, key on the id
+	// cell (empty existing cells are NaN after read_csv, so they share the NaN
+	// group with quakes missing the key); without one, key on the full row.
+	keys := make([]any, len(all))
+	fullRow := make([]string, len(outCols))
+	for i, r := range all {
+		if hasID {
+			if r.existing != nil {
+				if id := r.existing["id"]; id != "" {
+					keys[i] = idKey{'v', id}
+				} else {
+					keys[i] = idKey{'m', ""} // read_csv parses "" as NaN
+				}
+			} else {
+				keys[i] = quakeIDKey(r.quake)
+			}
+			continue
+		}
+		rowCells(r, fullRow)
+		keys[i] = strings.Join(fullRow, "\x00")
+	}
+
+	// drop_duplicates: subset=["id"] keeps the LAST occurrence, full-row keeps
+	// the FIRST; survivors stay at the position of the kept occurrence.
+	survivor := make(map[any]int, len(keys))
+	for i, k := range keys {
+		if _, seen := survivor[k]; hasID || !seen {
+			survivor[k] = i
+		}
+	}
+
+	var buf bytes.Buffer
+	writeCSVRow(&buf, outCols)
+	cells := make([]string, len(outCols))
+	for i, r := range all {
+		if survivor[keys[i]] != i {
+			continue
+		}
+		rowCells(r, cells)
 		writeCSVRow(&buf, cells)
 	}
 	return atomicWrite(path, buf.Bytes())
