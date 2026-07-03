@@ -9,6 +9,10 @@ import "time"
 // preserves every other field from the API response so a future writer can reproduce the
 // full CSV/JSON column set without losing data (mirrors pandas absorbing all API keys).
 type Quake struct {
+	// ID is the stable event id, or "" when the API record had no usable id
+	// (key missing or null — pandas would hold NaN/None there, never the
+	// string "<nil>"). Extra["id"] preserves the raw value, letting the writer
+	// and Dedup distinguish a missing key from an explicit null.
 	ID        string
 	Time      time.Time // parsed from the API "time" field, in UTC
 	Latitude  float64

@@ -251,7 +251,13 @@ def _load_precomputed_risk(catalog_path: str):
     ):
         logging.info(f"--reuse-risk: {path} is older than the catalog; recomputing")
         return None
-    risk_df = pd.read_csv(path)
+    try:
+        risk_df = pd.read_csv(path)
+    except (pd.errors.ParserError, pd.errors.EmptyDataError, OSError, UnicodeDecodeError) as e:
+        # e.g. a truncated/corrupt file left behind by an interrupted
+        # tools/build_figure_data.py run — fall back to recomputing.
+        logging.warning(f"--reuse-risk: could not read {path} ({e}); recomputing")
+        return None
     if risk_df.empty or "risk_grade" not in risk_df.columns:
         logging.warning(f"--reuse-risk: {path} is empty/invalid; recomputing")
         return None
