@@ -1,7 +1,7 @@
 ---
 spec: 001
 title: Upgrade the earthquake data-fetch/export system
-status: In progress      # Draft | Approved | In progress | Done
+status: Done
 author: Claude (research) + Aung Khant Zaw
 created: 2026-06-30
 ---
@@ -123,7 +123,7 @@ failure alerting). Capture as follow-ups, not blockers.
 - [x] Atomic-write test: a successful write leaves no temp file; writes via tmp+replace. *(PR #8)*
 - [x] A window returning exactly the cap is bisected (asserted in test). *(PR #8)*
 - [x] `daily_data_fetch.yml` runs `mmeq export`; `dataexport.py` reduced to a shim. *(PR #8)*
-- [ ] **R11:** after the backfill + `--rebuild`, the catalog event count is ≥ 9,390 and
+- [x] **R11:** DONE (catalog 9,405 events ≥ 9,390 as of 2026-07-03; count re-verified at the spec-002 cutover) — original text: after the backfill + `--rebuild`, the catalog event count is ≥ 9,390 and
       any recovered events are reflected in regenerated figures/README/paper.
 - [x] No regression: full `pytest tests/ -v` green (56 tests). *(PR #8)*
 

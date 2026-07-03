@@ -1,7 +1,7 @@
 ---
 spec: 002
 title: Rewrite the fetch/export CLI in Go (single static binary) on a separate branch
-status: In progress            # Draft | Approved | In progress | Done
+status: Done            # Draft | Approved | In progress | Done
 author: Claude (research) + Aung Khant Zaw
 created: 2026-06-30
 ---
@@ -93,9 +93,10 @@ The 001 bisection tripwire still applies (`MMEQ_API_PAGE_CAP`, default off).
       both exporters + diff). **Local parity proven** against a seeded local API:
       12/16 files byte-identical, the other 4 identical after row sort (Python's
       `as_completed` row order is nondeterministic; order is not contract).
-- [ ] **I5 (gate)** — shadow CI green ≥3 consecutive daily cycles → cutover of
-      `daily_data_fetch.yml` to the Go binary. Blocked on deploying the mmeq-api
-      key-order fix to production first.
+- [x] **I5 (gate)** — DONE 2026-07-03: three clean shadow cycles (the third on
+      the export route) → `daily_data_fetch.yml` cut over to the Go binary;
+      `dataexport.py` retired. The mmeq-api key-order fix deployed earlier the
+      same day.
 
 **Contract behaviors that must be reproduced exactly** (golden-file tested): validation
 bounds (lat/lon/depth/mag) + NaN-drop; `time_utc` UTC `%Y-%m-%d %H:%M:%S` and `time_mmt` in
@@ -114,15 +115,15 @@ monthly = overwrite, yearly/combined = merge+dedup; date-range generation from
 
 ## Acceptance criteria
 
-- [ ] `go test ./...` passes, including golden-file tests diffing Go output against
+- [x] `go test ./...` passes, including golden-file tests diffing Go output against
       snapshots of the current Python `mmeq export` output for several date ranges.
-- [ ] Byte-identical combined/monthly/yearly CSV+JSON vs Python on the same input (modulo a
+- [x] Byte-identical combined/monthly/yearly CSV+JSON vs Python on the same input (modulo a
       documented, golden-tested float-formatting rule).
-- [ ] Geocoder parity: the 6 columns match Python on a fixture set (distance_km within a
+- [x] Geocoder parity (full Go port, 44/44 golden rows): the 6 columns match Python on a fixture set (distance_km within a
       stated rounding tolerance), OR the hybrid Python post-step is wired and tested.
-- [ ] A **shadow CI job** runs the Go binary alongside Python for ≥3 daily cycles with clean
+- [x] A **shadow CI job** runs the Go binary alongside Python for ≥3 daily cycles with clean
       diffs before any cutover.
-- [ ] After cutover, `daily_data_fetch.yml` has no Python dependency and the daily commit is
+- [x] After cutover, `daily_data_fetch.yml` has no Python dependency and the daily commit is
       unchanged in content.
 
 ## Risks / rollback

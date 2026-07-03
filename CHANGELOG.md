@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+### Go export cutover (specs 001/002/004 complete)
+
+The daily data-fetch CI now runs the Go `mmeq-export` binary (build ~seconds,
+no Python stack) after three clean shadow-parity cycles, the third on the
+`/api/v2/export` route. `dataexport.py` retired; the Python `mmeq export`
+stays for local use and remains parity-pinned by the nightly shadow diff.
+
 ### Roadmap cleanup (2026-07-03)
 
 - **ShakeMap validation wired into `mmeq report`** — the ASK08-vs-station GMPE

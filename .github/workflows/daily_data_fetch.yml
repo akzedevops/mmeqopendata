@@ -25,30 +25,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      # spec 002/004 cutover: the export is a single static Go binary — no
+      # Python stack in the daily cron. Behavior parity with the Python
+      # exporter is pinned by golden tests and the nightly shadow_go_export
+      # diff (3 clean cycles before this cutover). Rollback: restore the
+      # setup-python + pip install + `mmeq export` steps from git history.
+      - name: Set up Go
+        uses: actions/setup-go@v6
         with:
-          python-version: '3.12'
+          go-version-file: go/go.mod
+          cache-dependency-path: go/go.mod
 
-      - name: Cache pip packages
-        uses: actions/cache@v6
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('pyproject.toml') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -e ".[dev]"
+      - name: Build exporter
+        run: cd go && go build -o /tmp/mmeq-export ./cmd/mmeq-export
 
       - name: Run data export
-        run: mmeq export
-        env:
-          # Fetch from the mmeq API v2 (typed JSON, SQLite-backed — no live
-          # third-party proxying). Unset/empty falls back to the v1 endpoint.
-          MMEQ_API_V2_URL: https://mmeq.akze.net/api/v2
+        # Fetches the full-fidelity /api/v2/export route (MMEQ_FETCH_ROUTE
+        # defaults to "export"; "v1" remains as a fallback override).
+        run: /tmp/mmeq-export export --data-dir data
 
       - name: Commit and push changes
         run: |

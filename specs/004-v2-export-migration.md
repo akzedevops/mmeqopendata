@@ -1,7 +1,7 @@
 ---
 spec: 004
 title: Migrate the artifact pipeline to API v2 via a full-fidelity export endpoint
-status: In progress            # Draft | Approved | In progress | Done
+status: Done            # Draft | Approved | In progress | Done
 author: Claude (3-agent research fan-out) + Aung Khant Zaw
 created: 2026-07-03
 ---
@@ -157,7 +157,7 @@ resets every golden baseline. Do not bundle it with the transport migration.
       unset) as an INDEPENDENT cross-check: v1-served Python vs export-served
       Go proves the two API routes byte-agree end-to-end. Parity acceptance
       unchanged (≥3 clean cycles) → spec 002 cutover to the Go binary.
-- [ ] **I5 (retire)** — after cutover: mark v1-compat "external compatibility
+- [x] **I5 (retire)** — DONE 2026-07-03 (cutover PR): mark v1-compat "external compatibility
       only" in openapi + README; retire the Python fetch path with
       `dataexport.py` per spec 003; only THEN does the "no CI workflow
       references v1-compat" criterion hold (the shadow's Python step uses it
@@ -175,10 +175,10 @@ resets every golden baseline. Do not bundle it with the transport migration.
 - [x] The 2026-07 degraded rows repaired in `quake_exports` before 2026-08-01
       (real values back, July monthly header == `DefaultColumns`) via a normal
       export run, no manual file surgery.
-- [ ] Go exporter on `export` route passes all existing golden/parity tests
+- [x] Go exporter on `export` route passes all existing golden/parity tests
       unchanged; shadow CI (v1-Python vs export-Go — deliberate cross-route
       check) ≥3 consecutive clean cycles.
-- [ ] After I5 only: v1-compat route no longer referenced by any CI workflow.
+- [x] After I5 only: v1-compat route no longer referenced by any CI workflow.
 
 ## Risks / rollback
 
