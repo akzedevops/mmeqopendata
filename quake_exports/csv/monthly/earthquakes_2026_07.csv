@@ -1,0 +1,3 @@
+latitude,longitude,depth,mag,magType,net,id,updated,location,place,country,type,nst,gap,dmin,rms,continent,timeAdded,timestamp,locationInferred,state,initialPosition,shakemapURL,shakemapLastUpdated,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+20.574,98.414,10,2.4,ml,,th_16798_202607010905,2026-07-01T09:05:43Z,"Wan Namma, Shan, Myanmar (Burma)",Myanmar,MM,earthquake,,,,,,,,,,,,,2026-07-01 09:05:43,2026-07-01 15:35:43,Shan,Langkho,Mongnai,Nawng Tawng,village,16.4
+19.966,97.806,3,2.0,ml,,th_16799_202607011648,2026-07-01T16:48:20Z,"Ta Öngmu, Shan, Myanmar (Burma)",Myanmar,MM,earthquake,,,,,,,,,,,,,2026-07-01 16:48:20,2026-07-01 23:18:20,Shan,Langkho,Langkho,Wan Sa Lawng,village,8.8
