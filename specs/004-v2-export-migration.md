@@ -124,7 +124,7 @@ resets every golden baseline. Do not bundle it with the transport migration.
 
 ## Increments
 
-- [ ] **I1 (mmeq-api)** — `/api/v2/export` endpoint: `store.ExportEvents`
+- [x] **I1 (mmeq-api)** — `/api/v2/export` endpoint: `store.ExportEvents`
       (Query machinery + `raw` column, emptiness filter in BOTH count and page
       WHERE), handler reusing the v1compat serializer and the shared
       `writeJSON` path; contract tests: record-byte equality vs the v1-compat
@@ -132,6 +132,8 @@ resets every golden baseline. Do not bundle it with the transport migration.
       openapi.yaml; deploy to d2 (approval-gated) and verify in prod.
       Decide Cache-Control (recommend keeping the shared 300s — exporters
       don't send If-None-Match, and nginx adds no CDN layer).
+      **Done 2026-07-03** — deployed to prod (mmeq-api commit 971221a);
+      prod byte-equality verified 101/101 June-2026 records vs v1-compat.
 - [ ] **I2 (Python)** — HARD PRECONDITION: I1 verified in prod first (master's
       v2 branch raises on error with NO v1 fallback and 404 is non-retried —
       merging I2 early kills the daily CI until someone manually unsets
@@ -163,7 +165,7 @@ resets every golden baseline. Do not bundle it with the transport migration.
 
 ## Acceptance criteria
 
-- [ ] `/api/v2/export` record bytes == v1-compat record bytes for the same events
+- [x] `/api/v2/export` record bytes == v1-compat record bytes for the same events
       (contract-tested), plus meta envelope, ETag/304, pagination correct with
       empty-raw rows present.
 - [ ] Python export via `/api/v2/export` produces artifacts byte-identical to a

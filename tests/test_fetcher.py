@@ -86,25 +86,26 @@ class _FakeResp:
         return self._payload
 
 
+def _raw_v1_record(rid: str) -> dict:
+    """A raw v1-shaped record as /api/v2/export serves it: string-typed values,
+    canonical key order, "time" always present."""
+    return {
+        "time": "2026-06-01T02:21:31.000Z", "latitude": "24.441", "longitude": "94.449",
+        "depth": "90", "mag": "3.6", "magType": "ml", "nst": "", "gap": "", "dmin": "",
+        "rms": "", "net": "", "id": rid, "updated": "2026-06-01T08:07:42.000Z",
+        "location": "Min Thar", "place": "Myanmar", "country": "MM",
+        "continent": "Asia", "type": "earthquake", "timeAdded": "", "timestamp": "",
+        "locationInferred": "false", "state": "Sagaing", "initialPosition": "",
+        "shakemapURL": "", "shakemapLastUpdated": "",
+    }
+
+
 class _FakeV2Session:
-    """Serves a 3-event catalog in pages of 2, recording requested params."""
+    """Serves a raw-v1-record catalog page by page, recording requested params."""
 
     def __init__(self):
         self.calls = []
-        self.events = [
-            {"id": "a1", "time_utc": "2026-06-01T02:21:31Z", "latitude": 24.441,
-             "longitude": 94.449, "depth_km": 90.0, "mag": 3.6, "mag_type": "ml",
-             "location": "Min Thar", "place": "Myanmar", "country": "MM",
-             "type": "earthquake", "net": None, "updated_at": "2026-06-01T08:07:42Z"},
-            {"id": "a2", "time_utc": "2026-06-01T09:28:38Z", "latitude": 22.269,
-             "longitude": 93.815, "depth_km": None, "mag": 3.0, "mag_type": None,
-             "location": None, "place": None, "country": "MM", "type": "earthquake",
-             "net": None, "updated_at": None},
-            {"id": "a3", "time_utc": "2026-06-02T14:52:19.000Z", "latitude": 19.27,
-             "longitude": 96.0, "depth_km": 10.0, "mag": 4.1, "mag_type": "mb",
-             "location": "X", "place": "Myanmar", "country": "MM",
-             "type": "earthquake", "net": "us", "updated_at": None},
-        ]
+        self.events = [_raw_v1_record(f"a{i}") for i in range(1, 4)]
 
     def get(self, url, params=None, timeout=None):
         self.calls.append((url, dict(params or {})))
@@ -117,23 +118,35 @@ class _FakeV2Session:
         })
 
 
-def test_v2_fetch_maps_paginates_and_converts_window(monkeypatch):
+def test_v2_fetch_hits_export_route_and_converts_window(monkeypatch):
     fake = _FakeV2Session()
     monkeypatch.setattr(fetcher, "API_V2_URL", "https://mmeq.example/api/v2")
     monkeypatch.setattr(fetcher, "get_session", lambda: fake)
-    # Force pagination: page size 2 over 3 events.
-    monkeypatch.setattr(fetcher, "_fetch_v2", fetcher._fetch_v2)
 
     df = fetcher.fetch_quake_data("2026-06-01", "2026-06-02")
 
-    # inclusive v1 window converts to half-open: to = 2026-06-03
-    assert all(c[1]["to"] == "2026-06-03" and c[1]["from"] == "2026-06-01" for c in fake.calls)
+    # /export route with from + half-open to (inclusive v1 to converts to +1 day)
+    assert all(url == "https://mmeq.example/api/v2/export" for url, _ in fake.calls)
+    assert all(p["to"] == "2026-06-03" and p["from"] == "2026-06-01" for _, p in fake.calls)
+    assert {"limit", "offset"} <= set(fake.calls[0][1])
     assert sorted(df["id"]) == ["a1", "a2", "a3"]
-    # v1 shape: 'time'/'depth'/'magType' columns exist; schema fillers present
-    assert {"time", "depth", "magType", "nst", "shakemapURL"} <= set(df.columns)
-    assert df.loc[df["id"] == "a1", "depth"].iloc[0] == 90.0
-    # nulls become "" for string fields, never None-strings
-    assert df.loc[df["id"] == "a2", "magType"].iloc[0] == ""
+
+
+def test_v2_records_pass_through_verbatim(monkeypatch):
+    fake = _FakeV2Session()
+    monkeypatch.setattr(fetcher, "API_V2_URL", "https://mmeq.example/api/v2")
+    monkeypatch.setattr(fetcher, "get_session", lambda: fake)
+
+    df = fetcher.fetch_quake_data("2026-06-01", "2026-06-02")
+
+    # Column order == the record's canonical key order (pandas derives CSV order from it)
+    assert list(df.columns) == list(_raw_v1_record("x").keys())
+    # String-typed values and legacy fields survive untouched — no mapping, no blanking
+    row = df.loc[df["id"] == "a1"].iloc[0]
+    assert row["depth"] == "90" and row["mag"] == "3.6"
+    assert row["continent"] == "Asia" and row["state"] == "Sagaing"
+    assert row["locationInferred"] == "false"
+    assert row["time"] == "2026-06-01T02:21:31.000Z"
 
 
 def test_v2_pagination_uses_multiple_calls(monkeypatch):
@@ -142,11 +155,11 @@ def test_v2_pagination_uses_multiple_calls(monkeypatch):
     monkeypatch.setattr(fetcher, "get_session", lambda: fake)
 
     # 12,000 distinct events: exceeds the 10k page size, forcing a second page.
-    fake.events = [dict(fake.events[i % 3], id=f"id{i}") for i in range(12000)]
+    fake.events = [_raw_v1_record(f"id{i}") for i in range(12000)]
     df = fetcher.fetch_quake_data("2026-06-01", "2026-06-02")
     assert len(df) == 12000
     assert df["id"].nunique() == 12000, "pages must union without duplication"
-    assert len(fake.calls) >= 2, "must paginate past the 10k page size"
+    assert len(fake.calls) == 2, "meta.total must drive exactly two 10k pages"
 
 
 def test_v1_path_when_v2_disabled(monkeypatch):

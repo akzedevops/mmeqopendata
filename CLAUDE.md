@@ -61,8 +61,9 @@ mmeq report --output ./report    # full pipeline: all analyses + all outputs
 python generate_figures.py       # regenerate paper figures
 ```
 
-`mmeq export` fetches month-by-month and **bisects any window that hits the API's
-500-record cap** (the API is newest-first with no pagination) so data stays complete;
+`mmeq export` fetches month-by-month via the paginated `/api/v2/export` route when
+`MMEQ_API_V2_URL` is set; on the legacy v1 route it **bisects any window that hits
+the 500-record cap** (v1 is newest-first with no pagination) so data stays complete;
 writes are atomic. `mmeq report` has `--no-*` flags for every stage (`--no-pdf`,
 `--no-dams`, `--no-coulomb`, `--no-montecarlo`, …) — use them to run a single stage fast.
 
