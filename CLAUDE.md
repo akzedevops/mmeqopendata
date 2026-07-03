@@ -25,13 +25,27 @@ src/mmeq/                 # ← canonical v2 package (edit code here)
 └── visualization/        # map (Folium), dashboard (Plotly), cross_section (3D),
                           #   animated_map, report (PDF)
 
-tests/                    # pytest: test_validate, test_dateranges, test_seismology (39 tests)
+go/                       # Go rewrite of the export pipeline ONLY (specs/002+004):
+                          #   cmd/mmeq-export + internal/{api,catalog,config,export,geocoder};
+                          #   golden-file tested for byte-parity with the Python writer —
+                          #   run `cd go && go test ./...` when touching it
+tests/                    # pytest suite (80 tests): validation, dateranges, seismology,
+                          #   writer/fetcher, dam-risk scoring
+tools/                    # diff_exports.py (Python-vs-Go tree diff), backfill.py,
+                          #   build_figure_data.py
 data/                     # input datasets: admin boundaries, shakemap, osm, faults, finite_fault
 quake_exports/            # generated earthquake CSV/JSON (csv|json × monthly|yearly|combined)
 docs/                     # GitHub Pages site + generated report/ artifacts
 paper/                    # LaTeX write-up (main.tex) + figures/ (13 figs, PDF+PNG)
-.github/workflows/        # daily_data_fetch.yml, report_and_pages.yml
+.github/workflows/        # daily_data_fetch.yml, report_and_pages.yml, tests.yml,
+                          #   shadow_go_export.yml (nightly Python-vs-Go parity diff)
 ```
+
+The upstream API service lives in a separate PRIVATE repo (`akzedevops/mmeq-api`,
+checked out at `~/mmeq-api`); its interactive docs are at https://mmeq.akze.net/docs.
+The export pipeline fetches `/api/v2/export` (full-fidelity raw records — see
+`specs/004`); the typed `/api/v2/earthquakes` route deliberately drops legacy columns
+and CANNOT reproduce the published 33-column artifact.
 
 ### Live root scripts
 
@@ -53,6 +67,7 @@ When adding features, put them in `src/mmeq/` and wire them through `cli.py`.
 pip install -e ".[dev]"          # setup (Python 3.9+); includes pytest + ruff
 ruff check .                     # lint — must be clean (enforced in CI)
 pytest tests/ -v                 # run the test suite — do this before/after any change
+(cd go && go test ./...)         # Go exporter suite — mandatory when touching go/
 mmeq export                      # fetch & export earthquake data (network); the CI cron runs this
 mmeq export --rebuild            # reconcile combined CSV+JSON from monthly files, sort by time
 mmeq analyze --type all          # analyses only

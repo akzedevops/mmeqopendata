@@ -1,7 +1,7 @@
 ---
 spec: 003
 title: Project improvements — CI test gate, de-duplication, structure, readability
-status: In progress      # Draft | Approved | In progress | Done
+status: Done      # Draft | Approved | In progress | Done
 author: Claude (research) + Aung Khant Zaw
 created: 2026-06-30
 ---

@@ -1,7 +1,7 @@
 ---
 spec: 004
 title: Migrate the artifact pipeline to API v2 via a full-fidelity export endpoint
-status: Draft            # Draft | Approved | In progress | Done
+status: In progress            # Draft | Approved | In progress | Done
 author: Claude (3-agent research fan-out) + Aung Khant Zaw
 created: 2026-07-03
 ---
@@ -134,13 +134,15 @@ resets every golden baseline. Do not bundle it with the transport migration.
       don't send If-None-Match, and nginx adds no CDN layer).
       **Done 2026-07-03** — deployed to prod (mmeq-api commit 971221a);
       prod byte-equality verified 101/101 June-2026 records vs v1-compat.
-- [ ] **I2 (Python)** — HARD PRECONDITION: I1 verified in prod first (master's
+- [x] **I2 (Python)** — DONE 2026-07-03, PR #20 (precondition honored; live-verified
+      byte-identical to a v1-route run). HARD PRECONDITION: I1 verified in prod first (master's
       v2 branch raises on error with NO v1 fallback and 404 is non-retried —
       merging I2 early kills the daily CI until someone manually unsets
       `MMEQ_API_V2_URL`). `_fetch_v2` → `/api/v2/export`, verbatim records;
       delete `_v2_record_to_v1` + `_V1_ONLY_FIELDS`; tests: fetched frame ==
       v1-route frame on fixtures; `daily_data_fetch.yml` env unchanged.
-- [ ] **I3 (repair + verify)** — dispatch the daily fetch BEFORE 2026-08-01;
+- [x] **I3 (repair + verify)** — DONE 2026-07-03, commit `a71da231` (real values +
+      canonical July header restored). Plan was: dispatch the daily fetch BEFORE 2026-08-01;
       assert July rows regain real values (`continent`, `timeAdded`,
       `initialPosition`, `.000Z` updated) and July monthly header ==
       `DefaultColumns`. If the deadline is missed: one-shot backfill via a
@@ -168,9 +170,9 @@ resets every golden baseline. Do not bundle it with the transport migration.
 - [x] `/api/v2/export` record bytes == v1-compat record bytes for the same events
       (contract-tested), plus meta envelope, ETag/304, pagination correct with
       empty-raw rows present.
-- [ ] Python export via `/api/v2/export` produces artifacts byte-identical to a
+- [x] Python export via `/api/v2/export` produces artifacts byte-identical to a
       v1-route run on the same data (tree-diffed with `tools/diff_exports.py`).
-- [ ] The 2026-07 degraded rows repaired in `quake_exports` before 2026-08-01
+- [x] The 2026-07 degraded rows repaired in `quake_exports` before 2026-08-01
       (real values back, July monthly header == `DefaultColumns`) via a normal
       export run, no manual file surgery.
 - [ ] Go exporter on `export` route passes all existing golden/parity tests
