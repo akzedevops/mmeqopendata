@@ -62,7 +62,7 @@ type Options struct {
 	DataDir    string           // geocoder data dir; default "data"
 	Workers    int              // concurrent month fetches; default config.MaxWorkers
 	MaxRetries int              // api.Client retries; 0 = client default
-	Route      string           // "v1" (compat route, full raw columns — parity default) or "v2"; default config.FetchRoute
+	Route      string           // fetch route: "export" (full-fidelity artifact route, default), "v1" (legacy compat, same raw shape), or "v2" (typed JSON, cannot reproduce the artifact); default config.FetchRoute. Any other value fails the run.
 	HTTPClient *http.Client     // override for tests
 	Now        func() time.Time // override for tests; default time.Now
 }
@@ -213,6 +213,26 @@ type monthResult struct {
 // non-zero, matching the Python sys.exit(1) semantics.
 func Run(opts Options) error {
 	opts.fill()
+
+	client := &api.Client{
+		BaseURL:    opts.BaseURL,
+		HTTPClient: opts.HTTPClient,
+		MaxRetries: opts.MaxRetries,
+	}
+	// Explicit three-way route dispatch — fail loud on anything unknown rather than
+	// silently defaulting to a route (which would ship the wrong-fidelity artifact).
+	var fetch func(context.Context, string, string) ([]map[string]any, error)
+	switch opts.Route {
+	case "export":
+		fetch = client.FetchWindowExport // full-fidelity artifact route (default)
+	case "v1":
+		fetch = client.FetchWindowV1 // legacy-compat route
+	case "v2":
+		fetch = client.FetchWindow // typed route; cannot reproduce the artifact
+	default:
+		return fmt.Errorf("export: unknown fetch route %q (want \"export\", \"v1\", or \"v2\")", opts.Route)
+	}
+
 	now := opts.Now().UTC()
 
 	for _, sub := range exportSubdirs {
@@ -241,11 +261,6 @@ func Run(opts Options) error {
 		geo = nil
 	}
 
-	client := &api.Client{
-		BaseURL:    opts.BaseURL,
-		HTTPClient: opts.HTTPClient,
-		MaxRetries: opts.MaxRetries,
-	}
 	validateEnd := now.Add(-24 * time.Hour) // datetime.now(utc) - timedelta(days=1)
 
 	// Fetch + validate months concurrently, bounded by Workers (mirrors
@@ -263,10 +278,6 @@ func Run(opts Options) error {
 			defer func() { <-sem }()
 
 			r := ranges[i]
-			fetch := client.FetchWindowV1
-			if opts.Route == "v2" {
-				fetch = client.FetchWindow
-			}
 			raw, err := fetch(context.Background(), r.From, r.To)
 			if err != nil {
 				results[i].err = err

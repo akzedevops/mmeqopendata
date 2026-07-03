@@ -206,6 +206,79 @@ func TestFetchUpdatedAfter(t *testing.T) {
 	}
 }
 
+// FetchWindowExport hits /api/v2/export, paginates via meta.total, converts the
+// inclusive window to half-open (to = toDate + 1 day), and returns records VERBATIM:
+// no v1Key remapping, so a legacy key ("continent") and a string-typed "mag" survive
+// untouched and the "time" field is left as-is (not renamed).
+func TestFetchWindowExport(t *testing.T) {
+	rawRecords := []map[string]any{
+		{"id": "e0", "time": "2026-06-01T02:21:31.000Z", "mag": "3.60", "continent": "Asia", "location": "loc0"},
+		{"id": "e1", "time": "2026-06-02T02:21:31.000Z", "mag": "4.10", "continent": "Asia", "location": "loc1"},
+	}
+	var gotPath string
+	var gotQuery url.Values
+	var requests int
+	_, c := serve(t, func(w http.ResponseWriter, r *http.Request) {
+		requests++
+		gotPath = r.URL.Path
+		gotQuery = r.URL.Query()
+		offset, _ := strconv.Atoi(r.URL.Query().Get("offset"))
+		limit, _ := strconv.Atoi(r.URL.Query().Get("limit"))
+		end := offset + limit
+		if end > len(rawRecords) {
+			end = len(rawRecords)
+		}
+		var page []map[string]any
+		if offset < len(rawRecords) {
+			page = rawRecords[offset:end]
+		}
+		writePage(w, page, len(rawRecords), limit, offset)
+	})
+	c.PageLimit = 1 // force pagination across 2 pages
+
+	got, err := c.FetchWindowExport(context.Background(), "2026-06-01", "2026-06-30")
+	if err != nil {
+		t.Fatalf("FetchWindowExport: %v", err)
+	}
+	if gotPath != "/api/v2/export" {
+		t.Errorf("path = %q, want /api/v2/export", gotPath)
+	}
+	if got := gotQuery.Get("from"); got != "2026-06-01" {
+		t.Errorf("from = %q, want 2026-06-01", got)
+	}
+	if got := gotQuery.Get("to"); got != "2026-07-01" { // inclusive 06-30 -> half-open 07-01
+		t.Errorf("to = %q, want 2026-07-01 (toDate + 1 day)", got)
+	}
+	if requests != 2 {
+		t.Errorf("requests = %d, want 2 (2 records / limit 1)", requests)
+	}
+	if len(got) != 2 {
+		t.Fatalf("len(records) = %d, want 2 (paginated across 2 pages)", len(got))
+	}
+	for i, rec := range got {
+		if want := fmt.Sprintf("e%d", i); rec["id"] != want {
+			t.Errorf("record %d id = %v, want %s", i, rec["id"], want)
+		}
+		if rec["continent"] != "Asia" {
+			t.Errorf("record %d dropped the legacy key: %v", i, rec)
+		}
+		if _, ok := rec["mag"].(string); !ok {
+			t.Errorf("record %d mag = %#v, want the string value untouched (no remap)", i, rec["mag"])
+		}
+		if _, renamed := rec["time_utc"]; renamed {
+			t.Errorf("record %d has time_utc; export records must keep the raw \"time\" key", i)
+		}
+	}
+}
+
+// FetchWindowExport rejects a malformed toDate just like FetchWindow.
+func TestFetchWindowExportRejectsBadToDate(t *testing.T) {
+	c := &Client{BaseURL: "http://unused.invalid"}
+	if _, err := c.FetchWindowExport(context.Background(), "2026-06-01", "not-a-date"); err == nil {
+		t.Fatal("FetchWindowExport with invalid toDate: want error, got nil")
+	}
+}
+
 // (d) Retry: two 500s then a 200 must succeed after exactly 3 attempts.
 func TestRetryOn5xxThenSuccess(t *testing.T) {
 	shrinkBackoff(t)

@@ -27,9 +27,11 @@ Export flags:
   --export-dir DIR   Output tree (env: MMEQ_EXPORT_DIR; default "quake_exports")
   --data-dir DIR     Geocoder data dir with admin/ + osm/ (env: MMEQ_DATA_DIR; default "data")
   --workers N        Concurrent month fetches (env: MMEQ_MAX_WORKERS; default 10)
-  --route v1|v2      API contract to fetch (env: MMEQ_FETCH_ROUTE; default "v1" —
-                     the compat route serves the full raw columns the published
-                     artifact needs; "v2" is typed JSON without them)
+  --route export|v1|v2
+                     API contract to fetch (env: MMEQ_FETCH_ROUTE; default "export"
+                     — the full-fidelity artifact route serving the raw columns the
+                     published artifact needs; "v1" is the legacy compat route with
+                     the same raw shape; "v2" is typed JSON without those columns)
 
 The API host comes from MMEQ_API_V2_URL (host base or ".../api/v2" form; default
 "https://mmeq.akze.net"). Exits 0 on success (including no new data), 1 on failure.
@@ -58,11 +60,11 @@ func main() {
 		exportDir := fs.String("export-dir", config.ExportDir, "output tree (env: MMEQ_EXPORT_DIR)")
 		dataDir := fs.String("data-dir", envOr("MMEQ_DATA_DIR", "data"), "geocoder data dir (env: MMEQ_DATA_DIR)")
 		workers := fs.Int("workers", config.MaxWorkers, "concurrent month fetches (env: MMEQ_MAX_WORKERS)")
-		route := fs.String("route", config.FetchRoute, "API contract: v1 or v2 (env: MMEQ_FETCH_ROUTE)")
+		route := fs.String("route", config.FetchRoute, "API contract: export, v1, or v2 (env: MMEQ_FETCH_ROUTE)")
 		_ = fs.Parse(flag.Args()[1:]) // ExitOnError: Parse exits on bad flags
 
-		if *route != "v1" && *route != "v2" {
-			fmt.Fprintf(os.Stderr, "mmeq-export: --route must be v1 or v2, got %q\n", *route)
+		if *route != "export" && *route != "v1" && *route != "v2" {
+			fmt.Fprintf(os.Stderr, "mmeq-export: --route must be export, v1, or v2, got %q\n", *route)
 			os.Exit(2)
 		}
 		err := export.Run(export.Options{
