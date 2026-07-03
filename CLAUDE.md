@@ -50,12 +50,10 @@ and CANNOT reproduce the published 33-column artifact.
 ### Live root scripts
 
 The old monolithic analysis scripts (`advanalysis.py`, `adv2analysis.py`, `visualizer.py`)
-were removed — `src/mmeq/` supersedes them (see git history if needed). Two root scripts
-remain live:
+were removed — `src/mmeq/` supersedes them (see git history if needed). One root script
+remains live (`dataexport.py` was retired at the spec-002 cutover — the daily CI
+now runs the Go `mmeq-export` binary; `mmeq export` remains for local use):
 
-- `dataexport.py` — invoked by the **daily fetch CI** (`daily_data_fetch.yml`). If you
-  change export logic in `src/mmeq/export/`, keep this in sync or migrate the workflow.
-  (Slated for retirement once CI runs `mmeq export` — see `specs/003`.)
 - `generate_figures.py` — generates the 14 paper figures; it **imports `src.mmeq`** and
   is the canonical figure generator (`python generate_figures.py`).
 
@@ -76,10 +74,10 @@ mmeq report --output ./report    # full pipeline: all analyses + all outputs
 python generate_figures.py       # regenerate paper figures
 ```
 
-`mmeq export` fetches month-by-month via the paginated `/api/v2/export` route when
-`MMEQ_API_V2_URL` is set; on the legacy v1 route it **bisects any window that hits
-the 500-record cap** (v1 is newest-first with no pagination) so data stays complete;
-writes are atomic. `mmeq report` has `--no-*` flags for every stage (`--no-pdf`,
+The **daily CI runs the Go exporter** (`go/cmd/mmeq-export`, `/api/v2/export` route);
+the Python `mmeq export` remains for local use and fetches the same paginated
+`/api/v2/export` route when `MMEQ_API_V2_URL` is set (legacy v1 fallback keeps the
+500-record-cap bisection). Writes are atomic in both implementations. `mmeq report` has `--no-*` flags for every stage (`--no-pdf`,
 `--no-dams`, `--no-coulomb`, `--no-montecarlo`, …) — use them to run a single stage fast.
 
 **CI gates on tests:** `report_and_pages.yml`'s deploy `needs:` a `test` job (ruff +

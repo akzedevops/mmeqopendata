@@ -41,7 +41,7 @@ new spec from `TEMPLATE.md`, then drive steps 2–5 until every acceptance crite
 
 | Spec | Title | Status |
 |------|-------|--------|
-| [001](001-data-fetch-upgrade.md) | Upgrade the earthquake data-fetch/export system | In progress |
-| [002](002-go-export-rewrite.md) | Rewrite the fetch/export CLI in Go (separate branch) | In progress — code done, shadow-CI gate pending |
+| [001](001-data-fetch-upgrade.md) | Upgrade the earthquake data-fetch/export system | Done |
+| [002](002-go-export-rewrite.md) | Rewrite the fetch/export CLI in Go (separate branch) | Done |
 | [003](003-project-improvements.md) | Project improvements — CI test gate, de-duplication, structure | Done |
-| [004](004-v2-export-migration.md) | Migrate the artifact pipeline to API v2 (`/api/v2/export`) | In progress — I1–I3 done, I4/I5 pending |
+| [004](004-v2-export-migration.md) | Migrate the artifact pipeline to API v2 (`/api/v2/export`) | Done |
