@@ -58,11 +58,16 @@ jobs:
           git diff --cached --quiet || git commit -m "feat: Update earthquake data"
           # master may have moved while the export ran (e.g. a PR merge or the
           # report workflow's artifact commit) — rebase onto the new tip and
-          # retry so a non-fast-forward doesn't fail the whole run.
+          # retry so a non-fast-forward doesn't fail the whole run. The push
+          # result is tracked explicitly: with `push && break` alone, exhausting
+          # the retries would exit with the last REBASE's status (0), silently
+          # dropping the day's commit and never firing the failure notifier.
+          pushed=0
           for i in 1 2 3; do
-            git push origin master && break
+            if git push origin master; then pushed=1; break; fi
             git pull --rebase origin master || exit 1
           done
+          [ "$pushed" = 1 ] || { echo "push failed after 3 attempts"; exit 1; }
 
       - name: Notify on failure
         if: failure()
