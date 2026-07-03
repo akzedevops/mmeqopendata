@@ -25,6 +25,11 @@ from requests.adapters import HTTPAdapter
 
 logger = logging.getLogger(__name__)
 
+# Hard cap on v2 pagination requests per window (10M records at the 10k page
+# size). A pathological server that keeps advertising more data than it serves
+# must raise instead of looping forever.
+MAX_V2_PAGES = 1000
+
 
 def _build_session() -> requests.Session:
     session = requests.Session()
@@ -104,7 +109,15 @@ def _fetch_v2(from_date: str, to_date: str) -> pd.DataFrame:
     ).strftime("%Y-%m-%d")
 
     records, offset, limit = [], 0, 10000
+    pages = 0
     while True:
+        if pages >= MAX_V2_PAGES:
+            raise ValueError(
+                f"v2 pagination exceeded {MAX_V2_PAGES} pages for "
+                f"{from_date} -> {to_date}; server keeps advertising more data "
+                "than it serves (runaway meta.total?)"
+            )
+        pages += 1
         response = get_session().get(
             f"{API_V2_URL}/export",
             params={"from": from_date, "to": to_exclusive, "limit": limit, "offset": offset},
@@ -116,7 +129,8 @@ def _fetch_v2(from_date: str, to_date: str) -> pd.DataFrame:
         if not isinstance(batch, list):
             raise ValueError("v2 response 'earthquakes' is not a list")
         records.extend(batch)
-        total = payload.get("meta", {}).get("total", len(records))
+        # "meta": null must not crash the fetch — fall back to len(records).
+        total = (payload.get("meta") or {}).get("total", len(records))
         offset += len(batch)
         if offset >= total or not batch:
             break

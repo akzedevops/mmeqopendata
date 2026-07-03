@@ -23,12 +23,12 @@ import sys
 
 import pandas as pd
 
-# Allow running from the repo root without installing the package.
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+# Allow running without installing the package (mmeq lives under src/).
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from src.mmeq.analysis.dam_risk import _load_dams_df, dam_risk_scores, sensitivity_analysis
-from src.mmeq.analysis.osm_exposure import _get_vs30
-from src.mmeq.analysis.seismology import b_value, decluster_catalog
+from mmeq.analysis.dam_risk import _load_dams_df, dam_risk_scores, sensitivity_analysis
+from mmeq.analysis.osm_exposure import _get_vs30
+from mmeq.analysis.seismology import b_value, decluster_catalog
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 log = logging.getLogger("build_figure_data")

@@ -369,6 +369,10 @@ func haversineKm(lat1, lon1, lat2, lon2 float64) float64 {
 	return earthRadiusKm * 2 * math.Asin(math.Min(1, math.Sqrt(a)))
 }
 
-// round1 reproduces Python's round(d, 1): round half to even (banker's
-// rounding), NOT math.Round's half-away-from-zero.
+// round1 approximates Python's round(d, 1) via round-half-to-even on d*10 (NOT
+// math.Round's half-away-from-zero). It is not exact decimal rounding: the d*10
+// float multiplication can create exact .5 ties that Python's decimal-aware
+// rounding does not see (e.g. inputs like 0.15 or 2.85 differ). It does match
+// Python on the golden set and on real haversine outputs, which is what the
+// parity tests pin down.
 func round1(d float64) float64 { return math.RoundToEven(d*10) / 10 }

@@ -12,15 +12,16 @@ on:
       - 'tools/build_figure_data.py'
       - 'paper/main.tex'
       - 'pyproject.toml'
+      - 'docs/index.html'
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+# Least privilege: permissions are granted per job below (test: read;
+# build: contents write; deploy: pages + id-token write).
 
+# Queue Pages runs, never cancel a live deploy mid-flight (GitHub's Pages
+# template semantics).
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 # Fixed timestamp so matplotlib/LaTeX embed a stable creation date — rebuilt
 # figures and the paper PDF then only differ in git when their content actually
@@ -31,6 +32,8 @@ env:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -46,6 +49,8 @@ jobs:
   build:
     needs: test          # do not regenerate/deploy unless tests pass
     runs-on: ubuntu-latest
+    permissions:
+      contents: write    # commits regenerated report/figures/paper back to master
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -93,7 +98,7 @@ jobs:
           cp -f paper/figures/*.png docs/report/figures/
 
       - name: Build paper PDF
-        uses: xu-cheng/latex-action@v3
+        uses: xu-cheng/latex-action@e2f99d4b3685b0da93f97e1b86ad8fab81105098 # v3
         with:
           root_file: main.tex
           working_directory: paper
@@ -127,6 +132,10 @@ jobs:
     if: github.ref == 'refs/heads/master'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write       # deploy the Pages artifact
+      id-token: write    # OIDC token for actions/deploy-pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

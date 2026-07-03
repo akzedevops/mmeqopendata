@@ -1,0 +1,8 @@
+# Review ownership (takes effect once branch protection requires code-owner
+# review). Later matches take precedence; the explicit entries below document
+# ownership of the published artifacts and CI config.
+* @akzedevops
+
+/quake_exports/ @akzedevops
+/docs/ @akzedevops
+/.github/ @akzedevops

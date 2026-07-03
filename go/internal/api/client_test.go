@@ -9,6 +9,8 @@ import (
 	"net/http/httptest"
 	"net/url"
 	"strconv"
+	"strings"
+	"sync/atomic"
 	"testing"
 	"time"
 )
@@ -266,9 +268,9 @@ func TestNoRetryOn4xx(t *testing.T) {
 // (e) Context cancellation aborts an in-flight request without further retries.
 func TestContextCancellationAborts(t *testing.T) {
 	release := make(chan struct{})
-	var attempts int
+	var attempts atomic.Int32 // handler goroutine is still running when we read it
 	_, c := serve(t, func(w http.ResponseWriter, r *http.Request) {
-		attempts++
+		attempts.Add(1)
 		<-release // block until the test finishes; the client must not wait for us
 	})
 	t.Cleanup(func() { close(release) })
@@ -291,7 +293,91 @@ func TestContextCancellationAborts(t *testing.T) {
 	case <-time.After(2 * time.Second):
 		t.Fatal("FetchWindow did not return after context cancellation")
 	}
-	if attempts != 1 {
-		t.Errorf("attempts = %d, want 1 (no retry after cancellation)", attempts)
+	if got := attempts.Load(); got != 1 {
+		t.Errorf("attempts = %d, want 1 (no retry after cancellation)", got)
+	}
+}
+
+// (f) A Client with no explicit HTTPClient must get a finite, non-zero timeout —
+// http.DefaultClient (Timeout 0) would hang forever on a server that accepts a
+// connection and never responds.
+func TestDefaultHTTPClientHasTimeout(t *testing.T) {
+	c := &Client{BaseURL: "http://unused.invalid"}
+	if got := c.httpClient().Timeout; got <= 0 {
+		t.Errorf("default httpClient().Timeout = %v, want > 0 (must not be http.DefaultClient)", got)
+	}
+}
+
+// A server that accepts and never responds must fail the fetch once the client
+// timeout elapses, rather than hanging the caller forever.
+func TestFetchWindowTimesOutOnSilentServer(t *testing.T) {
+	shrinkBackoff(t)
+	release := make(chan struct{})
+	_, c := serve(t, func(w http.ResponseWriter, r *http.Request) {
+		<-release // never respond; the client's Timeout must fire first
+	})
+	t.Cleanup(func() { close(release) })
+	c.HTTPClient = &http.Client{Timeout: 50 * time.Millisecond}
+	c.MaxRetries = 1
+
+	errc := make(chan error, 1)
+	go func() {
+		_, err := c.FetchWindow(context.Background(), "2026-06-01", "2026-06-30")
+		errc <- err
+	}()
+
+	select {
+	case err := <-errc:
+		if err == nil {
+			t.Fatal("want timeout error from silent server, got nil")
+		}
+	case <-time.After(2 * time.Second):
+		t.Fatal("FetchWindow hung on a silent server; client timeout did not fire")
+	}
+}
+
+// (g) Pagination must terminate against a lying server that keeps returning
+// non-empty pages with meta.total > offset forever. With the default limit the
+// per-page cap is total/limit+2 = 2 pages here.
+func TestFetchAllCapsPagesAgainstLyingServer(t *testing.T) {
+	var requests atomic.Int32
+	_, c := serve(t, func(w http.ResponseWriter, r *http.Request) {
+		requests.Add(1)
+		offset, _ := strconv.Atoi(r.URL.Query().Get("offset"))
+		// Always one more record, with total forever ahead of offset.
+		writePage(w, []map[string]any{event(fmt.Sprintf("q%d", offset), "2026-06-01T02:21:31Z")},
+			offset+2, 10000, offset)
+	})
+
+	_, err := c.FetchWindow(context.Background(), "2026-06-01", "2026-06-30")
+	if err == nil {
+		t.Fatal("want pagination-cap error against lying server, got nil")
+	}
+	if !strings.Contains(err.Error(), "pagination did not terminate") {
+		t.Errorf("err = %v, want a descriptive pagination-cap error", err)
+	}
+	if got := requests.Load(); got != 2 {
+		t.Errorf("requests = %d, want 2 (total/limit+2 pages with total barely ahead)", got)
+	}
+}
+
+// The absolute page ceiling bounds even a server whose meta.total is astronomically
+// large (so total/limit+2 would allow near-unbounded pages).
+func TestFetchAllAbsolutePageCeiling(t *testing.T) {
+	var requests atomic.Int32
+	_, c := serve(t, func(w http.ResponseWriter, r *http.Request) {
+		requests.Add(1)
+		offset, _ := strconv.Atoi(r.URL.Query().Get("offset"))
+		writePage(w, []map[string]any{event(fmt.Sprintf("q%d", offset), "2026-06-01T02:21:31Z")},
+			1<<40, 1, offset) // total so large the formula exceeds the ceiling
+	})
+	c.PageLimit = 1
+
+	_, err := c.FetchWindow(context.Background(), "2026-06-01", "2026-06-30")
+	if err == nil {
+		t.Fatal("want pagination-cap error, got nil")
+	}
+	if got := requests.Load(); got != maxPagesCeiling {
+		t.Errorf("requests = %d, want %d (absolute page ceiling)", got, maxPagesCeiling)
 	}
 }

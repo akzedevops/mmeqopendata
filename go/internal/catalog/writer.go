@@ -266,6 +266,12 @@ func atomicWrite(path string, data []byte) error {
 		os.Remove(tmpName)
 		return err
 	}
+	// os.CreateTemp creates the file 0600, and that mode survives the rename —
+	// open the artifact up to the usual 0644 so other users/processes can read it.
+	if err := os.Chmod(tmpName, 0o644); err != nil {
+		os.Remove(tmpName)
+		return err
+	}
 	if err := os.Rename(tmpName, path); err != nil {
 		os.Remove(tmpName)
 		return err

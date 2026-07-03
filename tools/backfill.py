@@ -30,11 +30,12 @@ from datetime import date, timedelta
 import pandas as pd
 from dateutil.relativedelta import relativedelta
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+# Allow running without installing the package (mmeq lives under src/).
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from src.mmeq.config import EXPORT_DIR
-from src.mmeq.export.fetcher import fetch_quake_data_complete
-from src.mmeq.export.writer import save_to_csv, save_to_json, validate_quake_data
+from mmeq.config import EXPORT_DIR
+from mmeq.export.fetcher import fetch_quake_data_complete
+from mmeq.export.writer import save_to_csv, save_to_json, validate_quake_data
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 log = logging.getLogger("backfill")

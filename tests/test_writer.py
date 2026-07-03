@@ -5,10 +5,19 @@ in full each run and must be overwritten, not appended.
 """
 import json
 import os
+import stat
 
 import pandas as pd
+import pytest
 
-from mmeq.export.writer import save_to_csv, merge_combined_json, rebuild_combined
+import mmeq.export.writer as writer
+from mmeq.export.writer import (
+    load_combined_json,
+    merge_combined_json,
+    rebuild_combined,
+    save_combined_json,
+    save_to_csv,
+)
 
 
 def _frame(ids):
@@ -84,3 +93,50 @@ def test_atomic_write_leaves_no_tmp(tmp_path):
     save_to_csv(_frame(["a", "b"]), path, overwrite=True)
     assert os.path.exists(path)
     assert not any(f.endswith(".tmp") for f in os.listdir(tmp_path)), "no temp file left behind"
+
+
+def test_atomic_write_produces_world_readable_file(tmp_path):
+    # mkstemp creates 0600 temps and os.replace preserves the mode; the final
+    # file must be 0644 like the repo's committed data files.
+    path = str(tmp_path / "out.csv")
+    save_to_csv(_frame(["a"]), path, overwrite=True)
+    assert stat.S_IMODE(os.stat(path).st_mode) == 0o644
+
+
+def test_save_combined_json_round_trips(tmp_path):
+    # The combined JSON must round-trip through the reader and use the exact
+    # _dump_json envelope/formatting shared by every other JSON writer.
+    path = str(tmp_path / "earthquakes_combined.json")
+    records = [
+        {"id": "a", "time_utc": "2025-05-01 00:00:00", "mag": 5.0, "location": "မန္တလေး"},
+        {"id": "b", "time_utc": "2025-05-02 00:00:00", "mag": 4.2, "location": "Sagaing"},
+    ]
+    save_combined_json(records, path)
+
+    assert load_combined_json(path) == records
+    with open(path, encoding="utf-8") as f:
+        content = f.read()
+    expected = json.dumps({"earthquakes": records}, indent=2, ensure_ascii=False)
+    assert content == expected, "must match the _dump_json formatting used elsewhere"
+    assert "မန္တလေး" in content, "ensure_ascii=False must be preserved"
+    assert not any(f.endswith(".tmp") for f in os.listdir(tmp_path))
+
+
+def test_save_combined_json_is_atomic(tmp_path, monkeypatch):
+    # A crash mid-write must leave the previous combined JSON intact: a
+    # truncated file parses as [] in load_combined_json and would silently
+    # erase the accumulated history on the next merge.
+    path = str(tmp_path / "earthquakes_combined.json")
+    save_combined_json([{"id": "a", "mag": 5.0}], path)
+
+    def exploding_dump(payload, p):
+        with open(p, "w", encoding="utf-8") as f:
+            f.write('{"earthquakes": [{"id":')  # truncated garbage
+        raise OSError("disk full")
+
+    monkeypatch.setattr(writer, "_dump_json", exploding_dump)
+    with pytest.raises(OSError):
+        save_combined_json([{"id": "b", "mag": 6.0}], path)
+
+    assert load_combined_json(path) == [{"id": "a", "mag": 5.0}], "history preserved"
+    assert not any(f.endswith(".tmp") for f in os.listdir(tmp_path)), "temp cleaned up"

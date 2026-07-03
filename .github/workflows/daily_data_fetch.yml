@@ -7,6 +7,13 @@ on:
 
 permissions:
   contents: write
+  issues: write   # failure-notification step files/updates an issue
+
+# Never run two fetches at once (overlapping pushes would race); queue instead
+# of cancelling so a manual dispatch doesn't kill the scheduled run mid-push.
+concurrency:
+  group: daily-fetch
+  cancel-in-progress: false
 
 jobs:
   fetch_and_update:
@@ -49,4 +56,25 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add quake_exports/
           git diff --cached --quiet || git commit -m "feat: Update earthquake data"
-          git push origin master
+          # master may have moved while the export ran (e.g. a PR merge or the
+          # report workflow's artifact commit) — rebase onto the new tip and
+          # retry so a non-fast-forward doesn't fail the whole run.
+          for i in 1 2 3; do
+            git push origin master && break
+            git pull --rebase origin master || exit 1
+          done
+
+      - name: Notify on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="Daily data fetch failed"
+          body="The scheduled earthquake data fetch failed. See the run log: $RUN_URL"
+          existing=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number' --repo "$GITHUB_REPOSITORY")
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body" --repo "$GITHUB_REPOSITORY"
+          else
+            gh issue create --title "$title" --body "$body" --repo "$GITHUB_REPOSITORY"
+          fi

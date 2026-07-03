@@ -81,6 +81,9 @@ def _atomic_write(path: str, write_fn) -> None:
     os.close(fd)
     try:
         write_fn(tmp)
+        # mkstemp creates 0600 temp files and os.replace preserves the mode;
+        # match the 0644 the repo's committed data files use.
+        os.chmod(tmp, 0o644)
         os.replace(tmp, path)
     except Exception:
         if os.path.exists(tmp):
@@ -146,6 +149,17 @@ def save_to_json(df: pd.DataFrame, path: str) -> None:
     if df.empty:
         return
     payload = {"earthquakes": df.to_dict(orient="records")}
+    _atomic_write(path, lambda p: _dump_json(payload, p))
+
+
+def save_combined_json(records: List[dict], path: str) -> None:
+    """Atomically write the combined-JSON store ({"earthquakes": records}).
+
+    Must go through _atomic_write: a truncated combined JSON is silently treated
+    as empty by load_combined_json, which would erase the accumulated history on
+    the next merge.
+    """
+    payload = {"earthquakes": records}
     _atomic_write(path, lambda p: _dump_json(payload, p))
 
 
