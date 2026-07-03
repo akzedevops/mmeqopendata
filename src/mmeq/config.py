@@ -51,6 +51,27 @@ MAG_COLORS = {
     "high": "red",
 }
 
+# --- Dam-risk scoring (spec 003 / P5) ---------------------------------------
+# Composite risk weights: seismic (scenario PGA), fault (distance to nearest
+# fault), proximity (distance to the major event), exposure (dam size). They
+# should sum to 1.0; used by analysis.dam_risk.dam_risk_scores.
+RISK_WEIGHTS = {
+    "seismic": float(os.environ.get("MMEQ_RISK_W_SEISMIC", "0.35")),
+    "fault": float(os.environ.get("MMEQ_RISK_W_FAULT", "0.30")),
+    "proximity": float(os.environ.get("MMEQ_RISK_W_PROXIMITY", "0.20")),
+    "exposure": float(os.environ.get("MMEQ_RISK_W_EXPOSURE", "0.15")),
+}
+# Composite-score cutoffs for the published risk grades:
+# >= critical -> Critical, >= high -> High, >= moderate -> Moderate, else Low.
+RISK_GRADE_THRESHOLDS = {
+    "critical": float(os.environ.get("MMEQ_RISK_GRADE_CRITICAL", "7")),
+    "high": float(os.environ.get("MMEQ_RISK_GRADE_HIGH", "5")),
+    "moderate": float(os.environ.get("MMEQ_RISK_GRADE_MODERATE", "3")),
+}
+# Total aleatory standard deviation of ln(PGA) for the ASK08 GMPE, used by both
+# the Cornell-McGuire PSHA integration and the Monte Carlo PGA simulation.
+GMPE_SIGMA_LN = float(os.environ.get("MMEQ_GMPE_SIGMA_LN", "0.65"))
+
 FAULT_LINES_PATH = os.environ.get("MMEQ_FAULT_LINES", "fault_lines.json")
 COMBINED_CSV = os.path.join(EXPORT_DIR, "csv/combined/earthquakes_combined.csv")
 COMBINED_JSON = os.path.join(EXPORT_DIR, "json/combined/earthquakes_combined.json")

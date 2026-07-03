@@ -7,7 +7,45 @@ import numpy as np
 import pandas as pd
 import json
 
+from mmeq.config import GMPE_SIGMA_LN, RISK_GRADE_THRESHOLDS, RISK_WEIGHTS
+
 logger = logging.getLogger(__name__)
+
+
+def _grade(composite: float) -> str:
+    """Map a composite risk score to its published grade (thresholds in config)."""
+    if composite >= RISK_GRADE_THRESHOLDS["critical"]:
+        return "Critical"
+    if composite >= RISK_GRADE_THRESHOLDS["high"]:
+        return "High"
+    if composite >= RISK_GRADE_THRESHOLDS["moderate"]:
+        return "Moderate"
+    return "Low"
+
+
+def _dam_size(dam) -> tuple:
+    """Parse (height_m, capacity_mw, total_storage_mcm) from a dam row, 0 if missing."""
+    vals = []
+    for key in ("height_m", "capacity_mw", "total_storage_mcm"):
+        try:
+            vals.append(float(dam.get(key) or 0))
+        except (ValueError, TypeError):
+            vals.append(0)
+    return tuple(vals)
+
+
+def _component_scores(pga: float, dist_fault: float, dist_to_major: float, dam) -> tuple:
+    """Shared 0-10 component scores used by dam_risk_scores AND sensitivity_analysis.
+
+    Returns (seismic, fault, proximity, exposure) scores. Keeping this in one
+    place guarantees the two analyses cannot silently diverge (spec 003 P5).
+    """
+    seismic_score = min(10, pga / 0.05 * 10)
+    fault_score = min(10, 10 / max(1, dist_fault / 10)) if not math.isnan(dist_fault) else 5
+    prox_score = min(10, 10 / max(1, dist_to_major / 50))
+    h, c, s = _dam_size(dam)
+    exposure_score = min(10, (h * 0.3 + c * 0.02 + s * 0.005) / 5)
+    return seismic_score, fault_score, prox_score, exposure_score
 
 
 def _load_fault_segments() -> list:
@@ -294,13 +332,17 @@ def compute_hazard_curve(
     min_mag: float = 5.0,
     max_mag: float = 8.0,
     delta_m: float = 0.1,
+    sigma_ln: float = GMPE_SIGMA_LN,
 ) -> pd.DataFrame:
     """
     Compute a seismic hazard curve (PGA vs annual exceedance probability)
     at a given site using the Cornell-McGuire PSHA approach.
 
     a_val is the catalog-level a-value; it is converted to annual rate internally.
+    sigma_ln defaults to the ASK08 aleatory std-dev from config (GMPE_SIGMA_LN).
     """
+    from scipy.stats import norm
+
     if pga_levels is None:
         pga_levels = np.logspace(-3, 0, 50)
 
@@ -315,11 +357,9 @@ def compute_hazard_curve(
 
         pga_median = estimate_pga_ask08(mag=m, rrup_km=rjb_km, vs30=vs30)
 
-        sigma_ln = 0.65
         for i, pga_target in enumerate(pga_levels):
             if pga_median > 0:
                 epsilon = (math.log(pga_target) - math.log(pga_median)) / sigma_ln
-                from scipy.stats import norm
                 p_exceed = 1.0 - norm.cdf(epsilon)
                 rates[i] += n_per_year * p_exceed
 
@@ -385,7 +425,7 @@ def sensitivity_analysis(
         w = rng.dirichlet([1, 1, 1, 1])
         w_seismic, w_fault, w_prox, w_exp = w
 
-        critical = high = moderate = low = 0
+        counts = {"Critical": 0, "High": 0, "Moderate": 0, "Low": 0}
         for __, dam in dams_df.iterrows():
             dlat = dam["latitude"] - major_lat
             dlon = (dam["longitude"] - major_lon) * math.cos(math.radians(major_lat))
@@ -394,44 +434,22 @@ def sensitivity_analysis(
             rjb_km = dist_fault if (not math.isnan(dist_fault) and dist_fault > 0) else dist_to_major
             pga = estimate_pga(major_mag, major_depth, rjb_km)
 
-            seismic_score = min(10, pga / 0.05 * 10)
-            fault_score = min(10, 10 / max(1, dist_fault / 10)) if not math.isnan(dist_fault) else 5
-            prox_score = min(10, 10 / max(1, dist_to_major / 50))
-
-            try:
-                h = float(dam.get("height_m") or 0)
-            except (ValueError, TypeError):
-                h = 0
-            try:
-                c = float(dam.get("capacity_mw") or 0)
-            except (ValueError, TypeError):
-                c = 0
-            try:
-                s = float(dam.get("total_storage_mcm") or 0)
-            except (ValueError, TypeError):
-                s = 0
-            exposure_score = min(10, (h * 0.3 + c * 0.02 + s * 0.005) / 5)
+            seismic_score, fault_score, prox_score, exposure_score = _component_scores(
+                pga, dist_fault, dist_to_major, dam
+            )
 
             composite = seismic_score * w_seismic + fault_score * w_fault + prox_score * w_prox + exposure_score * w_exp
-
-            if composite >= 7:
-                critical += 1
-            elif composite >= 5:
-                high += 1
-            elif composite >= 3:
-                moderate += 1
-            else:
-                low += 1
+            counts[_grade(composite)] += 1
 
         results.append({
             "w_seismic": round(w_seismic, 3),
             "w_fault": round(w_fault, 3),
             "w_proximity": round(w_prox, 3),
             "w_exposure": round(w_exp, 3),
-            "critical": critical,
-            "high": high,
-            "moderate": moderate,
-            "low": low,
+            "critical": counts["Critical"],
+            "high": counts["High"],
+            "moderate": counts["Moderate"],
+            "low": counts["Low"],
         })
 
     return pd.DataFrame(results)
@@ -480,26 +498,17 @@ def dam_risk_scores(
         if len(nearby) == 0:
             nearby = eq_df
 
-        seismic_score = min(10, pga / 0.05 * 10)
-        fault_score = min(10, 10 / max(1, dist_fault / 10)) if not math.isnan(dist_fault) else 5
-        prox_score = min(10, 10 / max(1, dist_to_major / 50))
+        seismic_score, fault_score, prox_score, exposure_score = _component_scores(
+            pga, dist_fault, dist_to_major, dam
+        )
+        h, c, s = _dam_size(dam)
 
-        try:
-            h = float(dam.get("height_m") or 0)
-        except (ValueError, TypeError):
-            h = 0
-        try:
-            c = float(dam.get("capacity_mw") or 0)
-        except (ValueError, TypeError):
-            c = 0
-        try:
-            s = float(dam.get("total_storage_mcm") or 0)
-        except (ValueError, TypeError):
-            s = 0
-
-        exposure_score = min(10, (h * 0.3 + c * 0.02 + s * 0.005) / 5)
-
-        composite = seismic_score * 0.35 + fault_score * 0.30 + prox_score * 0.20 + exposure_score * 0.15
+        composite = (
+            seismic_score * RISK_WEIGHTS["seismic"]
+            + fault_score * RISK_WEIGHTS["fault"]
+            + prox_score * RISK_WEIGHTS["proximity"]
+            + exposure_score * RISK_WEIGHTS["exposure"]
+        )
 
         return_period_m6 = compute_return_period(6.0, b_val, a_val, catalog_years)
 
@@ -523,12 +532,7 @@ def dam_risk_scores(
             "proximity_score": round(prox_score, 1),
             "exposure_score": round(exposure_score, 1),
             "composite_risk": round(composite, 1),
-            "risk_grade": (
-                "Critical" if composite >= 7
-                else "High" if composite >= 5
-                else "Moderate" if composite >= 3
-                else "Low"
-            ),
+            "risk_grade": _grade(composite),
             "return_period_m6_yrs": round(return_period_m6, 1),
         })
 
@@ -540,7 +544,7 @@ def dam_risk_scores(
 def monte_carlo_pga(
     eq_df: pd.DataFrame,
     n_iterations: int = 1000,
-    sigma_ln: float = 0.65,
+    sigma_ln: float = GMPE_SIGMA_LN,
 ) -> pd.DataFrame:
     """
     Monte Carlo simulation of PGA uncertainty at all dam locations.

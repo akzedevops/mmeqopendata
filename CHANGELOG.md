@@ -1,5 +1,36 @@
 # Changelog
 
+## Unreleased
+
+Spec 003 follow-up (P2/P4/P5). Pure refactor + tests + CI plumbing — all
+scientific outputs verified byte-identical (`dam_risk_scores.csv`,
+`sensitivity_analysis.csv`; grades still Critical 25 / High 148 / Moderate 67 /
+Low 14).
+
+### Added
+- `mmeq report --reuse-risk` (env: `MMEQ_REUSE_RISK=1`) — reuse a fresh
+  `dam_risk_scores.csv` from `MMEQ_REPORT_DIR` (default `report/`) instead of
+  recomputing it. `report_and_pages.yml` now passes the flag so dam risk is
+  computed once per CI build (`tools/build_figure_data.py` remains the single
+  producer). A CSV older than the catalog, missing, or invalid falls back to
+  recomputing, so standalone `mmeq report` behavior is unchanged.
+- Config tunables `RISK_WEIGHTS`, `RISK_GRADE_THRESHOLDS`, `GMPE_SIGMA_LN`
+  (overridable via `MMEQ_RISK_W_*`, `MMEQ_RISK_GRADE_*`, `MMEQ_GMPE_SIGMA_LN`).
+- Tests (64 → 77): hazard-curve monotonicity vs PGA level + exact
+  `catalog_years` rate scaling; fragility lognormal median crossing = 0.5,
+  monotonic damage-state exceedance, discrete-state normalization; grade
+  threshold boundaries from config; a `cmd_report` dam-risk smoke test on a
+  synthetic catalog (skips if `myanmar_dams.geojson` is absent); reuse +
+  staleness tests for `--reuse-risk`.
+
+### Changed
+- `dam_risk.py`: composite weights (0.35/0.30/0.20/0.15), grade thresholds
+  (7/5/3) and GMPE `sigma_ln` (0.65) are no longer inlined in
+  `dam_risk_scores`, `sensitivity_analysis`, `compute_hazard_curve` and
+  `monte_carlo_pga`; they come from `config.py`, and both scoring analyses now
+  share `_component_scores()`/`_grade()` helpers so they cannot silently
+  diverge (spec 003 P5).
+
 ## v2.0.2 — 2026-07-02
 
 Scientific-audit follow-up (verified against Gardner & Knopoff 1974, OpenQuake,

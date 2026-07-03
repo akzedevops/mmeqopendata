@@ -74,9 +74,12 @@ jobs:
         run: python tools/build_figure_data.py
 
       - name: Generate full report
+        # --reuse-risk: build_figure_data.py already computed report/dam_risk_scores.csv
+        # in the previous step, so the report consumes it instead of recomputing
+        # (spec 003 P2 — dam risk is computed once per CI build).
         run: |
           mkdir -p docs/report
-          mmeq report --output docs/report
+          mmeq report --output docs/report --reuse-risk
 
       - name: Copy static map
         run: |
