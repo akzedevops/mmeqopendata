@@ -12,6 +12,27 @@ from mmeq.config import GMPE_SIGMA_LN, RISK_GRADE_THRESHOLDS, RISK_WEIGHTS
 logger = logging.getLogger(__name__)
 
 
+def _log_effective_risk_config() -> None:
+    """Report the effective risk configuration at compute time.
+
+    RISK_WEIGHTS / RISK_GRADE_THRESHOLDS / GMPE_SIGMA_LN are overridable via
+    MMEQ_* env vars, which silently changes published science — make the values
+    actually used loud in the logs, and warn (do not raise; the pipeline must
+    degrade gracefully) if the weights no longer sum to 1.
+    """
+    logger.info(
+        "Effective dam-risk config: weights=%s grade_thresholds=%s gmpe_sigma_ln=%s",
+        RISK_WEIGHTS, RISK_GRADE_THRESHOLDS, GMPE_SIGMA_LN,
+    )
+    weight_sum = sum(RISK_WEIGHTS.values())
+    if abs(weight_sum - 1.0) > 1e-6:
+        logger.warning(
+            "RISK_WEIGHTS sum to %.6f, not 1.0 — composite risk scores and "
+            "published grades will be skewed. Check MMEQ_RISK_W_* overrides.",
+            weight_sum,
+        )
+
+
 def _grade(composite: float) -> str:
     """Map a composite risk score to its published grade (thresholds in config)."""
     if composite >= RISK_GRADE_THRESHOLDS["critical"]:
@@ -461,6 +482,7 @@ def dam_risk_scores(
     a_val: float,
     mc: float,
 ) -> pd.DataFrame:
+    _log_effective_risk_config()
     dams_df = _load_dams_df()
     if dams_df is None or dams_df.empty:
         logger.warning("No dam data available")

@@ -24,6 +24,7 @@ on:
 
 permissions:
   contents: read
+  issues: write   # failure-notification step files/updates an issue
 
 jobs:
   shadow:
@@ -87,3 +88,18 @@ jobs:
             /tmp/py_run
             /tmp/go_run
           retention-days: 7
+
+      - name: Notify on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="Shadow Go export parity diverged"
+          body="The Python/Go shadow export parity check failed. See the run log: $RUN_URL (re-run first — a benign validation-cutoff race can cause one-off failures; see the workflow header comment)."
+          existing=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number' --repo "$GITHUB_REPOSITORY")
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body" --repo "$GITHUB_REPOSITORY"
+          else
+            gh issue create --title "$title" --body "$body" --repo "$GITHUB_REPOSITORY"
+          fi

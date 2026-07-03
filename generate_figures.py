@@ -242,7 +242,7 @@ fig, ax = plt.subplots(figsize=(8, 6))
 # (The previous inline pga_ask08 was the pre-v2 broken model: a1=-0.526, missing
 # the site/geometry terms — it disagreed with the pipeline that produces the
 # dam PGA scatter on this same figure.)
-from src.mmeq.analysis.dam_risk import estimate_pga_ask08 as pga_ask08
+from mmeq.analysis.dam_risk import estimate_pga_ask08 as pga_ask08
 
 dists = np.logspace(0, 2.8, 200)
 for mag, ls in [(7.7, "-"), (7.0, "--"), (6.5, "-."), (6.0, ":")]:
@@ -393,8 +393,8 @@ plt.close()
 print("Figure 9: Vs30 map")
 
 # ========== Figure 10: Hazard curves for representative dams ==========
-from src.mmeq.analysis.dam_risk import compute_hazard_curve
-from src.mmeq.analysis.seismology import b_value as calc_bval, decluster_catalog
+from mmeq.analysis.dam_risk import compute_hazard_curve
+from mmeq.analysis.seismology import b_value as calc_bval, decluster_catalog
 
 # PSHA rates from the declustered catalog (Poisson assumption) so the 2025
 # aftershock sequence doesn't bias the b-value and inflate the hazard.
@@ -444,7 +444,7 @@ plt.close()
 print("Figure 10: Hazard curves")
 
 # ========== Figure 11: Coulomb stress transfer map ==========
-from src.mmeq.analysis.coulomb import compute_coulomb_grid, compute_coulomb_at_dams, build_rupture_segments
+from mmeq.analysis.coulomb import compute_coulomb_grid, compute_coulomb_at_dams, build_rupture_segments
 
 logging.basicConfig(level=logging.INFO)
 
@@ -517,7 +517,7 @@ plt.close()
 print("Figure 11: Coulomb stress transfer")
 
 # ========== Figure 12: Dam fragility curves ==========
-from src.mmeq.analysis.fragility import (
+from mmeq.analysis.fragility import (
     generate_fragility_curves, damage_state_probabilities, DAMAGE_STATE_LABELS
 )
 
@@ -547,8 +547,8 @@ plt.close()
 print("Figure 12: Fragility curves")
 
 # ========== Figure 13: Monte Carlo PGA uncertainty ==========
-from src.mmeq.analysis.dam_risk import monte_carlo_pga
-from src.mmeq.analysis.seismology import b_value as calc_b2
+from mmeq.analysis.dam_risk import monte_carlo_pga
+from mmeq.analysis.seismology import b_value as calc_b2
 
 b_mc, a_mc, mc_mc = calc_b2(df["mag"], min_mag=4.0)
 

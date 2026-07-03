@@ -34,11 +34,23 @@ const (
 // variable (not a const) so tests can shrink it.
 var backoffBase = 500 * time.Millisecond
 
+// defaultHTTPClient is the fallback when Client.HTTPClient is nil. Unlike
+// http.DefaultClient it has a finite Timeout, so a server that accepts a
+// connection and never responds cannot hang a fetch (and its worker goroutine)
+// forever. 60s is a whole-request bound chosen to cover the Python side's
+// REQUEST_TIMEOUT=(5,30) connect/read pair with slack for large 10000-record
+// pages, whose bodies can take a while to stream.
+var defaultHTTPClient = &http.Client{Timeout: 60 * time.Second}
+
+// maxPagesCeiling is an absolute upper bound on pages per fetchAll call, as a
+// last-resort guard against a pathological server; see fetchAll.
+const maxPagesCeiling = 1000
+
 // Client is a Myanmar Earthquake API v2 client. The zero value is not usable —
 // BaseURL is required; the other fields fall back to sane defaults when unset.
 type Client struct {
 	BaseURL    string       // e.g. "https://mmeq.akze.net" (no trailing path)
-	HTTPClient *http.Client // defaults to http.DefaultClient
+	HTTPClient *http.Client // defaults to a client with a 60s whole-request Timeout
 	PageLimit  int          // records per page; defaults to 10000 (the API max)
 	MaxRetries int          // retries after the first attempt; defaults to 3
 }
@@ -47,7 +59,7 @@ func (c *Client) httpClient() *http.Client {
 	if c.HTTPClient != nil {
 		return c.HTTPClient
 	}
-	return http.DefaultClient
+	return defaultHTTPClient
 }
 
 func (c *Client) pageLimit() int {
@@ -161,11 +173,14 @@ func (c *Client) FetchUpdatedAfter(ctx context.Context, since string) ([]map[str
 
 // fetchAll paginates limit/offset over the given filter params until meta.total is
 // exhausted, remapping each record. An empty page also terminates, as a guard
-// against a server that under-reports pages relative to total.
+// against a server that under-reports pages relative to total. A hard page cap —
+// (meta.total/limit)+2 pages, recomputed from the latest page's total, bounded by
+// an absolute ceiling of maxPagesCeiling — guards against a pathological server
+// that keeps returning non-empty pages with total > offset forever.
 func (c *Client) fetchAll(ctx context.Context, params url.Values) ([]map[string]any, error) {
 	limit := c.pageLimit()
 	var out []map[string]any
-	for offset := 0; ; {
+	for offset, pages := 0, 0; ; {
 		p := url.Values{}
 		for k, vs := range params {
 			p[k] = vs
@@ -183,6 +198,15 @@ func (c *Client) fetchAll(ctx context.Context, params url.Values) ([]map[string]
 		offset += len(page.Earthquakes)
 		if len(page.Earthquakes) == 0 || offset >= page.Meta.Total {
 			return out, nil
+		}
+		pages++
+		maxPages := page.Meta.Total/limit + 2
+		if maxPages > maxPagesCeiling {
+			maxPages = maxPagesCeiling
+		}
+		if pages >= maxPages {
+			return nil, fmt.Errorf("api: pagination did not terminate after %d pages (limit=%d, last meta.total=%d, offset=%d); server appears to be returning inconsistent pages",
+				pages, limit, page.Meta.Total, offset)
 		}
 	}
 }
@@ -240,7 +264,9 @@ func (c *Client) doRequest(ctx context.Context, u string) (page *apiPage, retrya
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		// Drain a snippet for the error, then discard so the connection is reusable.
+		// Read up to 512 bytes of the body as an error snippet. Any remainder is
+		// NOT drained — the deferred Close discards it, which may cost connection
+		// reuse for oversized error bodies (acceptable: errors are the rare path).
 		snippet, _ := io.ReadAll(io.LimitReader(resp.Body, 512))
 		retryable := resp.StatusCode == http.StatusTooManyRequests || resp.StatusCode >= 500
 		return nil, retryable, fmt.Errorf("api: HTTP %d from %s: %s", resp.StatusCode, u, strings.TrimSpace(string(snippet)))

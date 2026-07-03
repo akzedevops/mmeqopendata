@@ -152,6 +152,50 @@ class TestConfigSourcedScoring:
         assert _grade(RISK_GRADE_THRESHOLDS["moderate"] - 0.01) == "Low"
 
 
+class TestEffectiveConfigLogging:
+    """Env overrides silently change published science — the compute entry point
+    (dam_risk_scores) logs the effective config and warns on bad weights."""
+
+    def test_warns_when_weights_do_not_sum_to_one(self, monkeypatch, caplog):
+        import logging
+
+        import mmeq.analysis.dam_risk as dam_risk
+
+        monkeypatch.setattr(dam_risk, "RISK_WEIGHTS", {
+            "seismic": 0.35, "fault": 0.30, "proximity": 0.20, "exposure": 0.30
+        })
+        with caplog.at_level(logging.INFO, logger="mmeq.analysis.dam_risk"):
+            dam_risk._log_effective_risk_config()
+        warnings = [r for r in caplog.records if r.levelno == logging.WARNING]
+        assert len(warnings) == 1, "bad weights must produce exactly one WARNING"
+        assert "1.15" in warnings[0].getMessage()
+        assert "MMEQ_RISK_W_" in warnings[0].getMessage()
+
+    def test_no_warning_for_default_weights(self, caplog):
+        import logging
+
+        import mmeq.analysis.dam_risk as dam_risk
+
+        with caplog.at_level(logging.INFO, logger="mmeq.analysis.dam_risk"):
+            dam_risk._log_effective_risk_config()
+        assert not [r for r in caplog.records if r.levelno >= logging.WARNING]
+        # And the effective config is reported at INFO for observability.
+        infos = [r.getMessage() for r in caplog.records if r.levelno == logging.INFO]
+        assert any("Effective dam-risk config" in m for m in infos)
+
+    def test_entry_point_calls_config_logging(self, monkeypatch, caplog):
+        import logging
+
+        import mmeq.analysis.dam_risk as dam_risk
+
+        # No dam data -> early return, but the config line must already be out.
+        monkeypatch.setattr(dam_risk, "_load_dams_df", lambda: None)
+        with caplog.at_level(logging.INFO, logger="mmeq.analysis.dam_risk"):
+            out = dam_risk.dam_risk_scores(_synthetic_catalog(), 1.0, 5.0, 4.0)
+        assert out.empty
+        assert any("Effective dam-risk config" in r.getMessage() for r in caplog.records)
+
+
 def _synthetic_catalog(n: int = 60) -> pd.DataFrame:
     """Tiny plausible Myanmar catalog with one dominant M7.7 event."""
     rng = np.random.RandomState(0)

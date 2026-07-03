@@ -2,6 +2,7 @@
 from datetime import date, timedelta
 
 import pandas as pd
+import pytest
 
 import mmeq.export.fetcher as fetcher
 
@@ -160,6 +161,48 @@ def test_v2_pagination_uses_multiple_calls(monkeypatch):
     assert len(df) == 12000
     assert df["id"].nunique() == 12000, "pages must union without duplication"
     assert len(fake.calls) == 2, "meta.total must drive exactly two 10k pages"
+
+
+def test_v2_meta_null_does_not_crash(monkeypatch):
+    # The API may serve "meta": null; the fetch must fall back to the batch
+    # length instead of raising AttributeError on None.get(...).
+    class _MetaNullSession:
+        def get(self, url, params=None, timeout=None):
+            return _FakeResp({
+                "meta": None,
+                "earthquakes": [_raw_v1_record("a1"), _raw_v1_record("a2")],
+            })
+
+    monkeypatch.setattr(fetcher, "API_V2_URL", "https://mmeq.example/api/v2")
+    monkeypatch.setattr(fetcher, "get_session", lambda: _MetaNullSession())
+
+    df = fetcher.fetch_quake_data("2026-06-01", "2026-06-02")
+    assert sorted(df["id"]) == ["a1", "a2"]
+
+
+def test_v2_runaway_server_raises_instead_of_looping(monkeypatch):
+    # A pathological server that keeps returning non-empty pages with
+    # total > offset must trip the page cap, not loop forever.
+    class _RunawaySession:
+        def __init__(self):
+            self.calls = 0
+
+        def get(self, url, params=None, timeout=None):
+            self.calls += 1
+            offset = int(params["offset"])
+            return _FakeResp({
+                "meta": {"total": offset + 10},  # always advertises more
+                "earthquakes": [_raw_v1_record(f"r{offset}")],
+            })
+
+    fake = _RunawaySession()
+    monkeypatch.setattr(fetcher, "API_V2_URL", "https://mmeq.example/api/v2")
+    monkeypatch.setattr(fetcher, "get_session", lambda: fake)
+    monkeypatch.setattr(fetcher, "MAX_V2_PAGES", 7)
+
+    with pytest.raises(ValueError, match="exceeded 7 pages"):
+        fetcher.fetch_quake_data("2026-06-01", "2026-06-02")
+    assert fake.calls == 7, "must stop exactly at the page cap"
 
 
 def test_v1_path_when_v2_disabled(monkeypatch):

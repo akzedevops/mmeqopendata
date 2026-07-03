@@ -1,0 +1,20 @@
+# Weekly dependency update PRs for all three ecosystems in this repo.
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: gomod
+    directory: "/go"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5

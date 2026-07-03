@@ -9,6 +9,7 @@ import json
 import logging
 import math
 import os
+import threading
 
 from shapely.geometry import Point, shape
 from shapely.strtree import STRtree
@@ -26,26 +27,35 @@ _place_tree = None
 _place_names = None
 _place_coords = None
 
+# cmd_export enriches from a thread pool; lazy init must be locked so a thread
+# can never observe a partially-initialized loader (e.g. _place_tree set while
+# _place_names is still None).
+_admin_lock = threading.Lock()
+_places_lock = threading.Lock()
+
 EARTH_R = 6371.0  # km
 
 
 def _load_admin(level, path):
     if level in _admin_cache:
         return _admin_cache[level]
-    if not os.path.exists(path):
-        logger.warning("Admin boundaries not found: %s", path)
-        _admin_cache[level] = ([], None, [])
+    with _admin_lock:
+        if level in _admin_cache:  # another thread loaded it while we waited
+            return _admin_cache[level]
+        if not os.path.exists(path):
+            logger.warning("Admin boundaries not found: %s", path)
+            _admin_cache[level] = ([], None, [])
+            return _admin_cache[level]
+        with open(path) as f:
+            data = json.load(f)
+        names = []
+        geoms = []
+        for feat in data["features"]:
+            names.append(feat["properties"]["shapeName"])
+            geoms.append(shape(feat["geometry"]))
+        tree = STRtree(geoms)
+        _admin_cache[level] = (names, tree, geoms)
         return _admin_cache[level]
-    with open(path) as f:
-        data = json.load(f)
-    names = []
-    geoms = []
-    for feat in data["features"]:
-        names.append(feat["properties"]["shapeName"])
-        geoms.append(shape(feat["geometry"]))
-    tree = STRtree(geoms)
-    _admin_cache[level] = (names, tree, geoms)
-    return _admin_cache[level]
 
 
 def _query_admin(lat, lon, level, path):
@@ -64,32 +74,38 @@ def _load_places():
     global _place_tree, _place_names, _place_coords
     if _place_tree is not None:
         return
-    if not os.path.exists(_PLACES_PATH):
-        logger.warning("Places file not found: %s", _PLACES_PATH)
-        _place_tree = _place_names = _place_coords = None
-        return
+    with _places_lock:
+        if _place_tree is not None:  # another thread loaded it while we waited
+            return
+        if not os.path.exists(_PLACES_PATH):
+            logger.warning("Places file not found: %s", _PLACES_PATH)
+            _place_names = _place_coords = None
+            _place_tree = None
+            return
 
-    import numpy as np
-    from scipy.spatial import cKDTree
+        from scipy.spatial import cKDTree
 
-    coords = []
-    names = []
-    latlons = []
-    with open(_PLACES_PATH, newline="", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            lat, lon = float(row["lat"]), float(row["lon"])
-            name = row["name_en"] or row["name"]
-            rlat, rlon = math.radians(lat), math.radians(lon)
-            coords.append((math.cos(rlat) * math.cos(rlon),
-                           math.cos(rlat) * math.sin(rlon),
-                           math.sin(rlat)))
-            names.append((name, row["place"]))
-            latlons.append((lat, lon))
+        coords = []
+        names = []
+        latlons = []
+        with open(_PLACES_PATH, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                lat, lon = float(row["lat"]), float(row["lon"])
+                name = row["name_en"] or row["name"]
+                rlat, rlon = math.radians(lat), math.radians(lon)
+                coords.append((math.cos(rlat) * math.cos(rlon),
+                               math.cos(rlat) * math.sin(rlon),
+                               math.sin(rlat)))
+                names.append((name, row["place"]))
+                latlons.append((lat, lon))
 
-    _place_tree = cKDTree(coords)
-    _place_names = names
-    _place_coords = latlons
-    logger.info("Loaded %d OSM places for geocoding", len(names))
+        tree = cKDTree(coords)
+        # Assign the guard variable (_place_tree) LAST: unlocked fast-path
+        # readers that pass the guard must see fully-populated companions.
+        _place_names = names
+        _place_coords = latlons
+        _place_tree = tree
+        logger.info("Loaded %d OSM places for geocoding", len(names))
 
 
 def _haversine_km(lat1, lon1, lat2, lon2):

@@ -15,6 +15,7 @@ from mmeq.export.writer import (
     save_to_json,
     load_combined_json,
     merge_combined_json,
+    save_combined_json,
     rebuild_combined,
 )
 from mmeq.analysis.temporal import (
@@ -131,9 +132,7 @@ def cmd_export(args) -> None:
     existing_records = load_combined_json(combined_json)
     new_records = combined_df.to_dict(orient="records")
     merged = merge_combined_json(existing_records, new_records)
-    with open(combined_json, "w", encoding="utf-8") as f:
-        import json
-        json.dump({"earthquakes": merged}, f, indent=2, ensure_ascii=False)
+    save_combined_json(merged, combined_json)
 
     logging.info("All done! Earthquake data is up to date!")
     if has_error:
