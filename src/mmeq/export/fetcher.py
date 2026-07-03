@@ -88,42 +88,16 @@ def generate_date_ranges(
     return date_ranges
 
 
-# v1 upstream columns with no v2 list-endpoint equivalent; filled with "" so the
-# monthly/combined CSV schema is identical regardless of which API served the data.
-_V1_ONLY_FIELDS = [
-    "nst", "gap", "dmin", "rms", "continent", "timeAdded", "timestamp",
-    "locationInferred", "state", "initialPosition", "shakemapURL",
-    "shakemapLastUpdated",
-]
-
-
-def _v2_record_to_v1(rec: dict) -> dict:
-    """Map a typed v2 event to the v1 record shape the pipeline expects."""
-    out = {
-        "time": rec.get("time_utc"),
-        "latitude": rec.get("latitude"),
-        "longitude": rec.get("longitude"),
-        "depth": rec.get("depth_km"),
-        "mag": rec.get("mag"),
-        "magType": rec.get("mag_type") or "",
-        "net": rec.get("net") or "",
-        "id": rec.get("id"),
-        "updated": rec.get("updated_at") or "",
-        "location": rec.get("location") or "",
-        "place": rec.get("place") or "",
-        "country": rec.get("country") or "",
-        "type": rec.get("type") or "",
-    }
-    for f in _V1_ONLY_FIELDS:
-        out[f] = ""
-    return out
-
-
 def _fetch_v2(from_date: str, to_date: str) -> pd.DataFrame:
-    """Fetch [from_date, to_date] (inclusive, v1 semantics) from the v2 API.
+    """Fetch [from_date, to_date] (inclusive, v1 semantics) from the v2 export API.
 
     v2 windows are half-open [from, to), so the inclusive v1 window converts to
     to_date + 1 day. Paginates via limit/offset until meta.total is exhausted.
+
+    ``/export`` serves each record in the raw v1 shape (string-typed values,
+    canonical key order — pandas derives the CSV column order from it, "time"
+    always present), byte-identical to /api/myanmar-quakes. Records are passed
+    through verbatim: no per-record mapping is needed or allowed.
     """
     to_exclusive = (
         datetime.strptime(to_date, "%Y-%m-%d") + timedelta(days=1)
@@ -132,7 +106,7 @@ def _fetch_v2(from_date: str, to_date: str) -> pd.DataFrame:
     records, offset, limit = [], 0, 10000
     while True:
         response = get_session().get(
-            f"{API_V2_URL}/earthquakes",
+            f"{API_V2_URL}/export",
             params={"from": from_date, "to": to_exclusive, "limit": limit, "offset": offset},
             timeout=REQUEST_TIMEOUT,
         )
@@ -141,7 +115,7 @@ def _fetch_v2(from_date: str, to_date: str) -> pd.DataFrame:
         batch = payload.get("earthquakes", [])
         if not isinstance(batch, list):
             raise ValueError("v2 response 'earthquakes' is not a list")
-        records.extend(_v2_record_to_v1(r) for r in batch)
+        records.extend(batch)
         total = payload.get("meta", {}).get("total", len(records))
         offset += len(batch)
         if offset >= total or not batch:

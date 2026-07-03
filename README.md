@@ -271,6 +271,10 @@ pytest tests/ -v
 
 ## API
 
+Three routes: `/api/v2/earthquakes` (typed JSON — use this for programmatic access),
+`/api/v2/export` (full-fidelity raw records — what this repo's export pipeline uses),
+and the legacy `/api/myanmar-quakes` (kept for compatibility, shown below).
+
 ```
 GET https://mmeq.akze.net/api/myanmar-quakes?from=YYYY-MM-DD&to=YYYY-MM-DD
 ```
