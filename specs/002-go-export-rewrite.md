@@ -1,7 +1,7 @@
 ---
 spec: 002
 title: Rewrite the fetch/export CLI in Go (single static binary) on a separate branch
-status: Draft            # Draft | Approved | In progress | Done
+status: In progress            # Draft | Approved | In progress | Done
 author: Claude (research) + Aung Khant Zaw
 created: 2026-06-30
 ---

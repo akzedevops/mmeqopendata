@@ -2,7 +2,34 @@
 
 ## Unreleased
 
-Spec 003 follow-up (P2/P4/P5). Pure refactor + tests + CI plumbing — all
+### v2 export migration (spec 004, 2026-07-03)
+
+The daily export now fetches the API's new full-fidelity `/api/v2/export` route
+(v2 envelope + pagination; records byte-identical to the legacy contract). The
+previous typed-v2 fetch path silently blanked 12 legacy fields and drifted number
+formats — the two affected July 2026 events were re-fetched and repaired in place
+(commit `a71da231`). The upstream API is now self-documenting: Swagger UI at
+[mmeq.akze.net/docs](https://mmeq.akze.net/docs).
+
+### Go export rewrite lands in-tree (spec 002)
+
+- `go/` module: `mmeq-export` binary reproducing the Python export pipeline
+  (fetch → validate → geocode → dedup → write) with golden-file byte-parity,
+  down to CPython float repr, the 32-column contract, and geocoder ties.
+  Not yet wired into CI.
+- `tools/diff_exports.py` — id-keyed, float-tolerant export-tree diff.
+- `.github/workflows/shadow_go_export.yml` — nightly Python-vs-Go parity run;
+  the Go binary takes over `daily_data_fetch.yml` after ≥3 clean cycles.
+
+### Fixed
+- Id-less events no longer collapse in the Go catalog dedup (mirrors pandas'
+  measured `drop_duplicates` semantics exactly), and `--reuse-risk` now falls
+  back to recomputing on a malformed/truncated `dam_risk_scores.csv` instead of
+  aborting (Kilo review findings, PR #21).
+
+### Spec 003 follow-up (P2/P4/P5)
+
+Pure refactor + tests + CI plumbing — all
 scientific outputs verified byte-identical (`dam_risk_scores.csv`,
 `sensitivity_analysis.csv`; grades still Critical 25 / High 148 / Moderate 67 /
 Low 14).
