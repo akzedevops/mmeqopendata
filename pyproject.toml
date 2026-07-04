@@ -41,6 +41,11 @@ mmeq = "mmeq.cli:main"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+# Self-hosted JS/CSS/font/image assets for folium map output (see
+# src/mmeq/visualization/assets.py; populated by tools/fetch_vendor.py).
+"mmeq.visualization" = ["vendor/**/*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]

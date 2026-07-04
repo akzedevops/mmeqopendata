@@ -7,7 +7,7 @@ import folium
 from folium.plugins import HeatMap, MarkerCluster
 
 from mmeq.analysis.dam_risk import load_dams_df
-from mmeq.visualization._folium_pins import pin_heatmap, pin_map
+from mmeq.visualization.assets import copy_vendor, use_local_assets
 from mmeq.config import (
     MAP_CENTER,
     MAP_ZOOM,
@@ -62,12 +62,16 @@ def build_earthquake_map(
         zoom_start=MAP_ZOOM,
         tiles="CartoDB positron",
     )
-    pin_map(quake_map)
+
+    # folium JSCSSMixin instances whose default CDN links we rewrite to local
+    # vendored assets at save time (see use_local_assets).
+    asset_objects = [quake_map]
 
     if show_markers:
         marker_layer = folium.FeatureGroup(name="Earthquake Markers")
         if cluster_markers:
             cluster = MarkerCluster(name="Earthquake Clusters").add_to(marker_layer)
+            asset_objects.append(cluster)
             target = cluster
         else:
             target = marker_layer
@@ -147,7 +151,7 @@ def build_earthquake_map(
         heatmap_layer = folium.FeatureGroup(name="Earthquake Heatmap")
         heat_data = df[["latitude", "longitude"]].values.tolist()
         hm = HeatMap(heat_data, radius=10, blur=15, max_zoom=10)
-        pin_heatmap(hm)
+        asset_objects.append(hm)
         hm.add_to(heatmap_layer)
         heatmap_layer.add_to(quake_map)
 
@@ -197,6 +201,8 @@ def build_earthquake_map(
     """
     quake_map.get_root().html.add_child(folium.Element(title_html))
 
+    use_local_assets(*asset_objects)
+    copy_vendor(os.path.dirname(os.path.abspath(output_path)))
     quake_map.save(output_path)
     logger.info(f"Saved earthquake map -> {output_path}")
     return output_path
