@@ -98,7 +98,12 @@ DOWNLOAD_FROM_TAG = {
 # fonts are never rendered (we use the 'fa' prefix), so its @font-face refs stay
 # lazily-unfetched and need not be vendored.
 CSS_FOLLOW_FILTER = {
-    "fontawesome/css/all.min.css": lambda ref: "fa-solid-900" in ref,
+    # Vendor every fontawesome face the stylesheet declares (woff2 + ttf).
+    # Markers only *render* solid-900, but the CSS references all faces with
+    # page-relative urls — vendoring them all keeps the public site free of
+    # 404 console noise and keeps this tool reproducible against the
+    # committed tree (a narrower filter here once caused lock drift).
+    "fontawesome/css/all.min.css": lambda ref: ref.endswith((".woff2", ".ttf")),
     "bootstrap-glyphicons/bootstrap-glyphicons.css": lambda ref: False,
 }
 
