@@ -7,7 +7,7 @@ import folium
 from folium.plugins import TimestampedGeoJson
 
 from mmeq.config import MAP_CENTER, MAP_ZOOM, FAULT_LINES_PATH
-from mmeq.visualization._folium_pins import pin_map
+from mmeq.visualization.assets import copy_vendor, use_local_assets
 
 logger = logging.getLogger(__name__)
 
@@ -29,7 +29,6 @@ def build_animated_map(
         zoom_start=MAP_ZOOM,
         tiles="CartoDB positron",
     )
-    pin_map(quake_map)
 
     features = []
     for _, row in df.iterrows():
@@ -70,7 +69,7 @@ def build_animated_map(
         "features": features,
     }
 
-    TimestampedGeoJson(
+    tgj = TimestampedGeoJson(
         timestamps_json,
         period="P1M",
         add_last_point=True,
@@ -80,7 +79,8 @@ def build_animated_map(
         loop_button=True,
         date_options="YYYY-MM",
         time_slider_drag_update=True,
-    ).add_to(quake_map)
+    )
+    tgj.add_to(quake_map)
 
     if os.path.exists(fault_lines_path):
         folium.GeoJson(
@@ -94,6 +94,8 @@ def build_animated_map(
     title_html = '<h3 align="center" style="font-size:18px"><b>Myanmar Earthquake Timeline</b></h3>'
     quake_map.get_root().html.add_child(folium.Element(title_html))
 
+    use_local_assets(quake_map, tgj)
+    copy_vendor(os.path.dirname(os.path.abspath(output_path)))
     quake_map.save(output_path)
     logger.info(f"Animated map saved -> {output_path} ({len(features)} events)")
     return output_path

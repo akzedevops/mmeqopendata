@@ -256,15 +256,26 @@ mask_valid = ~np.isnan(dist_dams)
 ax.scatter(dist_dams[mask_valid], pga_dams[mask_valid], s=15, c="gray", alpha=0.5,
            edgecolors="none", label=f"Dams (N={mask_valid.sum()})")
 
-# Add recorded values from 2025 event
+# Add recorded values from 2025 event (near-fault instrumental peaks)
 ax.scatter([5], [1.07], s=80, c="red", marker="D", edgecolors="k", zorder=5, label="Recorded 1.07g (GFZ)")
 ax.scatter([5], [0.62], s=80, c="orange", marker="D", edgecolors="k", zorder=5, label="Recorded 0.62g (USGS)")
+
+# Observed PGA at the six USGS ShakeMap stations (same module that produces
+# Table tab:validation in the paper) — keeps the figure honest and reproducible.
+from mmeq.analysis.shakemap_validation import validate_against_shakemap
+_val = validate_against_shakemap(mag=7.7)
+_stations = _val[_val["station_code"] != "DAM"]
+ax.scatter(_stations["dist_fault_km"], _stations["pga_observed_g"], s=55, c="blue",
+           marker="o", edgecolors="k", zorder=6,
+           label=f"ShakeMap stations (N={len(_stations)})")
 
 ax.set_xlabel("Joyner-Boore Distance, $R_{jb}$ (km)")
 ax.set_ylabel("Peak Ground Acceleration (g)")
 ax.set_title("Ground Motion Attenuation (Abrahamson & Silva, 2008)")
 ax.legend(loc="upper right", fontsize=8)
-ax.set_xlim(1, 600)
+# lower bound must sit below NPW's Rrup = 0.85 km — at xlim(1, ...) the
+# near-fault anchor station is silently clipped off the canvas
+ax.set_xlim(0.5, 600)
 ax.set_ylim(1e-4, 2)
 ax.grid(True, which="both", alpha=0.3)
 fig.savefig(f"{OUT}/fig5_pga_attenuation.pdf")

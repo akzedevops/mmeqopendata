@@ -82,6 +82,6 @@ def depth_cross_section(
         template="plotly_white",
     )
 
-    fig.write_html(output_path, include_plotlyjs="cdn")
+    fig.write_html(output_path, include_plotlyjs="directory")
     logger.info(f"3D cross-section saved -> {output_path}")
     return output_path

@@ -1,0 +1,185 @@
+{
+  "files": {
+    "awesome-markers/images/markers-shadow.png": {
+      "bytes": 403,
+      "sha256": "1159e47a3dcfe16dc6c421cc9d46db607364f4b51855d50cb46fd23f084e7baa",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/images/markers-shadow.png"
+    },
+    "awesome-markers/images/markers-shadow@2x.png": {
+      "bytes": 947,
+      "sha256": "78a93823e3f74accd4eb58c4b74de577c3918bedb73148eedca085faab9703ab",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/images/markers-shadow@2x.png"
+    },
+    "awesome-markers/images/markers-soft.png": {
+      "bytes": 23217,
+      "sha256": "5599e53a50fef90f4afc5104dc085ac50ae3bb7ed5472d6598d2103780e6a237",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/images/markers-soft.png"
+    },
+    "awesome-markers/images/markers-soft@2x.png": {
+      "bytes": 45386,
+      "sha256": "add594ef1def7cb88797526b7a41b3a2ce60284cd1235e811305b36779f21e5c",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/images/markers-soft@2x.png"
+    },
+    "awesome-markers/leaflet.awesome-markers.css": {
+      "bytes": 2225,
+      "sha256": "105a45c816eeb6d509b68a1c633b019c444f59e7b6258cf8727e679140635b40",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"
+    },
+    "awesome-markers/leaflet.awesome-markers.js": {
+      "bytes": 3789,
+      "sha256": "8b0382d98ee76b3706729ebfb2c088b99be258aa30f6054de67b527602348d07",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"
+    },
+    "bootstrap-glyphicons/bootstrap-glyphicons.css": {
+      "bytes": 13018,
+      "sha256": "ca64645c22680035acdd8149902fda928c381cafbeab0b628b5542a7323ee0e4",
+      "source": "https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"
+    },
+    "bootstrap/bootstrap.bundle.min.js": {
+      "bytes": 80496,
+      "sha256": "c4b2394a30fa0e4a23c6b308541353e20872a6fd765ed8fb70e6b402029deb00",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    },
+    "bootstrap/bootstrap.min.css": {
+      "bytes": 194901,
+      "sha256": "2143941c03dacda8b4f1016ced6e0c6f34e5c04585a3bcffe33c3c626c448a4a",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    },
+    "folium/leaflet.awesome.rotate.min.css": {
+      "bytes": 36669,
+      "sha256": "82e3e005f8befbe54638c81c106e1eaa7fae2bd12284b39c5ad7dad51eaa45f8",
+      "source": "https://cdn.jsdelivr.net/gh/python-visualization/folium@v0.20.0/folium/templates/leaflet.awesome.rotate.min.css"
+    },
+    "folium/leaflet_heat.min.js": {
+      "bytes": 5315,
+      "sha256": "7378c428ff2318ec48e7e73c0d46061f938aa75551c519c74cd790b044dfa0fa",
+      "source": "folium-package:templates/leaflet_heat.min.js"
+    },
+    "fontawesome/css/all.min.css": {
+      "bytes": 101784,
+      "sha256": "01b035efb5dfa529c512f82962ed633328222da6f33c224244806d4798c67349",
+      "source": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"
+    },
+    "fontawesome/webfonts/fa-brands-400.ttf": {
+      "bytes": 186112,
+      "sha256": "c7ae37d35b8edd322f5c85b8f54f8cb76f5e8446581ae20da5e7e3a9bdee900b",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-brands-400.ttf"
+    },
+    "fontawesome/webfonts/fa-brands-400.woff2": {
+      "bytes": 107460,
+      "sha256": "3fe890d088ecf0cc9bc1b9069201e52972dbad6237865524090e15982d0de718",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-brands-400.woff2"
+    },
+    "fontawesome/webfonts/fa-regular-400.ttf": {
+      "bytes": 62048,
+      "sha256": "fdc1f7533021117d87697715eac26ba3d4eef9225c7eedbbfb1b0d0cfff0ab8c",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-regular-400.ttf"
+    },
+    "fontawesome/webfonts/fa-regular-400.woff2": {
+      "bytes": 25096,
+      "sha256": "fe69d94841462d397faeff253ee09a6dc7941be931f942a55e6b9def8f3b048d",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-regular-400.woff2"
+    },
+    "fontawesome/webfonts/fa-solid-900.ttf": {
+      "bytes": 397728,
+      "sha256": "6d53c706f3b7178ccfc82c94d3fc7968828dacd351717f27c757a65cfd853147",
+      "source": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/webfonts/fa-solid-900.ttf"
+    },
+    "fontawesome/webfonts/fa-solid-900.woff2": {
+      "bytes": 150472,
+      "sha256": "d27bc752105c079f8a516e9142406a9fc12cbb409f9bf8681f2ddfe0360b52a6",
+      "source": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/webfonts/fa-solid-900.woff2"
+    },
+    "fontawesome/webfonts/fa-v4compatibility.ttf": {
+      "bytes": 10136,
+      "sha256": "4d73f280597014ae892270cee177513ad329955de91ad9d2a45a1f5760a32ffa",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-v4compatibility.ttf"
+    },
+    "fontawesome/webfonts/fa-v4compatibility.woff2": {
+      "bytes": 4584,
+      "sha256": "7d1c2ce5f34e1b3567536e8d3039c6c34f8257742982c5ff5a5b47a82e5a67d7",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-v4compatibility.woff2"
+    },
+    "jquery/jquery.min.js": {
+      "bytes": 87533,
+      "sha256": "fc9a93dd241f6b045cbff0481cf4e1901becd0e12fb45166a8f17f95823f0b1a",
+      "source": "https://code.jquery.com/jquery-3.7.1.min.js"
+    },
+    "leaflet/images/layers-2x.png": {
+      "bytes": 1259,
+      "sha256": "066daca850d8ffbef007af00b06eac0015728dee279c51f3cb6c716df7c42edf",
+      "source": "https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/images/layers-2x.png"
+    },
+    "leaflet/images/layers.png": {
+      "bytes": 696,
+      "sha256": "1dbbe9d028e292f36fcba8f8b3a28d5e8932754fc2215b9ac69e4cdecf5107c6",
+      "source": "https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/images/layers.png"
+    },
+    "leaflet/images/marker-icon.png": {
+      "bytes": 1466,
+      "sha256": "574c3a5cca85f4114085b6841596d62f00d7c892c7b03f28cbfa301deb1dc437",
+      "source": "https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/images/marker-icon.png"
+    },
+    "leaflet/leaflet.css": {
+      "bytes": 14657,
+      "sha256": "90b693d86392a4779c861b28cf307e7e59c3fb35328c4d8b95f58f814d38c722",
+      "source": "https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"
+    },
+    "leaflet/leaflet.js": {
+      "bytes": 146715,
+      "sha256": "5819285cec137b229c94e1ee5ad73e8b6b84345a4367d60f75fe477fe0fb7b03",
+      "source": "https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"
+    },
+    "markercluster/MarkerCluster.Default.css": {
+      "bytes": 1346,
+      "sha256": "2d687359a406651b1616bac9c60fba667f134fce24d3fb6bb621c173aa9c1a96",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"
+    },
+    "markercluster/MarkerCluster.css": {
+      "bytes": 886,
+      "sha256": "f9b756b96397305917d2ff42bebdce58294f89879f0d0cfd18664fffbc59c5d7",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"
+    },
+    "markercluster/leaflet.markercluster.js": {
+      "bytes": 33555,
+      "sha256": "7e1a592d5bf4b1698700edecc0ac091166d41d3c31373611627b4e7b9faef067",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"
+    },
+    "timedimension/highlight-default.min.css": {
+      "bytes": 2287,
+      "sha256": "516e8adac8637c7cf247e388760962e072e60d02a43935b5d77d1be33a55a8ca",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"
+    },
+    "timedimension/iso8601.min.js": {
+      "bytes": 1718,
+      "sha256": "6ac0b5bcdf52166b3c4b625370f343b6237a4c22e9c53a465bf7e943149422a5",
+      "source": "https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"
+    },
+    "timedimension/jquery-ui.min.js": {
+      "bytes": 228062,
+      "sha256": "97d16aa22a918c810fd08b07394a11a085f1a4b7b3d70bb20d73fb4cf3f49803",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"
+    },
+    "timedimension/jquery.min.js": {
+      "bytes": 87533,
+      "sha256": "fc9a93dd241f6b045cbff0481cf4e1901becd0e12fb45166a8f17f95823f0b1a",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    },
+    "timedimension/leaflet.timedimension.control.css": {
+      "bytes": 7464,
+      "sha256": "1c1e86e6db1f06680b676d9387188c2c83086b27f7f5abf15f02d38af21f33dd",
+      "source": "https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.css"
+    },
+    "timedimension/leaflet.timedimension.min.js": {
+      "bytes": 40385,
+      "sha256": "54e4ce1be18d35adcb3afefd25c02ad89cf1746d6c7b3a675f61d3357f23ed60",
+      "source": "https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"
+    },
+    "timedimension/moment.min.js": {
+      "bytes": 51465,
+      "sha256": "d618d4869738e0dc22360f0ec0cbb6433257843f24723fac240dda0906685238",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"
+    }
+  },
+  "folium_version": "0.20.0"
+}
