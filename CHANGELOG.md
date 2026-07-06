@@ -49,7 +49,6 @@
   silently blocked committing new site artifacts like `vendor/` and
   `plotly.min.js`) anchored to `/report/`; dead "Copy static map" no-op step
   removed; Pages triggers widened to `tools/**` (matches CLAUDE.md).
-||||||| parent of 791fc030 (fix(science): rupture-distance scenario, smoothed-seismicity PSHA, Coulomb parity (spec 006))
 
 ### Data-artifact repairs (2026-07-06 integrity audit, phase 2)
 

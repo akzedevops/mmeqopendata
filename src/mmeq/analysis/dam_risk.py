@@ -407,6 +407,67 @@ def _load_vs30() -> dict:
     return vs30_map
 
 
+_SMOOTHED_CACHE = {}
+
+
+def _smoothed_seismicity(
+    declustered_df: pd.DataFrame,
+    mc: float,
+    catalog_years: float,
+    cell_deg: float,
+    smooth_sigma_km: float,
+):
+    """Grid-bin + Gaussian-smooth the declustered catalog into per-cell annual
+    rates (events >= Mc/yr). Site-independent, so it is computed once and cached
+    on the catalog identity + grid params — cmd_report calls compute_hazard_curve
+    once per dam (254x) and this O(cells^2) smoothing must not repeat (Kilo
+    review of PR #38). Returns (cell_lat, cell_lon, annual_rate_cell), or None
+    when the (filtered) catalog is empty. Keyed on the ORIGINAL catalog object
+    so the per-dam calls (which pass the same df_dec) share one computation.
+    """
+    key = (id(declustered_df), len(declustered_df), float(mc), float(catalog_years),
+           cell_deg, smooth_sigma_km)
+    cached = _SMOOTHED_CACHE.get(key)
+    if cached is not None:
+        return cached
+
+    ev = declustered_df.dropna(subset=["latitude", "longitude", "mag"])
+    ev = ev[ev["mag"] >= mc]
+    if ev.empty or catalog_years <= 0:
+        _SMOOTHED_CACHE[key] = None
+        return None
+
+    lat0, lat1 = ev["latitude"].min(), ev["latitude"].max()
+    lon0, lon1 = ev["longitude"].min(), ev["longitude"].max()
+    lat_edges = np.arange(lat0 - cell_deg, lat1 + 2 * cell_deg, cell_deg)
+    lon_edges = np.arange(lon0 - cell_deg, lon1 + 2 * cell_deg, cell_deg)
+    counts, _, _ = np.histogram2d(
+        ev["latitude"], ev["longitude"], bins=[lat_edges, lon_edges]
+    )
+    clat = (lat_edges[:-1] + lat_edges[1:]) / 2
+    clon = (lon_edges[:-1] + lon_edges[1:]) / 2
+    grid_lat, grid_lon = np.meshgrid(clat, clon, indexing="ij")
+    cell_lat = grid_lat.ravel()
+    cell_lon = grid_lon.ravel()
+    cell_n = counts.ravel()
+
+    occupied = cell_n > 0
+    src_lat, src_lon, src_n = cell_lat[occupied], cell_lon[occupied], cell_n[occupied]
+    mean_coslat = math.cos(math.radians(float(np.mean(cell_lat))))
+    dlat = (cell_lat[None, :] - src_lat[:, None]) * 111.0
+    dlon = (cell_lon[None, :] - src_lon[:, None]) * 111.0 * mean_coslat
+    kern = np.exp(-(dlat ** 2 + dlon ** 2) / (2.0 * smooth_sigma_km ** 2))
+    kern /= kern.sum(axis=1, keepdims=True)
+    smoothed = (src_n[:, None] * kern).sum(axis=0)
+    annual_rate_cell = smoothed / catalog_years
+
+    result = (cell_lat, cell_lon, annual_rate_cell)
+    if len(_SMOOTHED_CACHE) > 8:
+        _SMOOTHED_CACHE.clear()
+    _SMOOTHED_CACHE[key] = result
+    return result
+
+
 def compute_hazard_curve(
     site_lat: float,
     site_lon: float,
@@ -447,41 +508,18 @@ def compute_hazard_curve(
     if pga_levels is None:
         pga_levels = np.logspace(-3, 0, 50)
 
-    ev = declustered_df.dropna(subset=["latitude", "longitude", "mag"])
-    ev = ev[ev["mag"] >= mc]
-    if ev.empty or catalog_years <= 0:
+    # Site-independent gridded, kernel-smoothed annual rates (computed once and
+    # cached across the per-dam calls; see _smoothed_seismicity).
+    smoothed = _smoothed_seismicity(
+        declustered_df, mc, catalog_years, cell_deg, smooth_sigma_km
+    )
+    if smoothed is None:
         z = np.zeros(len(pga_levels))
         return pd.DataFrame({
             "pga_g": pga_levels, "annual_rate": z, "annual_prob": z,
             "prob_50yr": z, "return_period_yr": np.full(len(pga_levels), np.inf),
         })
-
-    # --- gridded, kernel-smoothed annual rates (total conserved) ---
-    lat0, lat1 = ev["latitude"].min(), ev["latitude"].max()
-    lon0, lon1 = ev["longitude"].min(), ev["longitude"].max()
-    lat_edges = np.arange(lat0 - cell_deg, lat1 + 2 * cell_deg, cell_deg)
-    lon_edges = np.arange(lon0 - cell_deg, lon1 + 2 * cell_deg, cell_deg)
-    counts, _, _ = np.histogram2d(
-        ev["latitude"], ev["longitude"], bins=[lat_edges, lon_edges]
-    )
-    clat = (lat_edges[:-1] + lat_edges[1:]) / 2
-    clon = (lon_edges[:-1] + lon_edges[1:]) / 2
-    grid_lat, grid_lon = np.meshgrid(clat, clon, indexing="ij")
-    cell_lat = grid_lat.ravel()
-    cell_lon = grid_lon.ravel()
-    cell_n = counts.ravel()
-
-    occupied = cell_n > 0
-    src_lat, src_lon, src_n = cell_lat[occupied], cell_lon[occupied], cell_n[occupied]
-    # pairwise source-cell -> all-cell distances (km), cos-lat corrected
-    mean_coslat = math.cos(math.radians(float(np.mean(cell_lat))))
-    dlat = (cell_lat[None, :] - src_lat[:, None]) * 111.0
-    dlon = (cell_lon[None, :] - src_lon[:, None]) * 111.0 * mean_coslat
-    kern = np.exp(-(dlat ** 2 + dlon ** 2) / (2.0 * smooth_sigma_km ** 2))
-    kern /= kern.sum(axis=1, keepdims=True)  # each source count redistributes to 1
-    smoothed = (src_n[:, None] * kern).sum(axis=0)
-    # conservation: smoothed.sum() == src_n.sum() by construction
-    annual_rate_cell = smoothed / catalog_years  # events >= mc per year per cell
+    cell_lat, cell_lon, annual_rate_cell = smoothed
 
     # --- site distances, aggregated into log-spaced distance bins ---
     site_coslat = math.cos(math.radians(site_lat))
