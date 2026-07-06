@@ -28,6 +28,10 @@ logger = logging.getLogger(__name__)
 
 MU_EL = 30e9
 FRICTION_COEFF = 0.4
+# Triggered/shadow classification threshold: |dCFS| >= 0.01 MPa (0.1 bar), the
+# standard static-triggering threshold (King et al. 1994; Stein 1999). The
+# previous +/-0.001 MPa sat inside tidal-stress noise (spec 006).
+COULOMB_TRIGGER_MPA = 0.01
 
 SAGAING_FAULT_TRACE = [
     (96.4803, 14.4000), (96.4537, 14.9093), (96.4061, 15.1355),
@@ -174,13 +178,17 @@ def _patch_coulomb_stress(
     along = dx * cos_s + dy * sin_s
     perp = dx * sin_s - dy * cos_s
 
-    r_perp_sq = perp * perp + patch_depth * patch_depth
-    if r_perp_sq < 1.0:
-        r_perp_sq = 1.0
+    # Signed angular factors. The previous form used an UNSIGNED
+    # sqrt(perp^2 + depth^2), which made the shear term odd in the
+    # along-strike coordinate — but static stress from a point moment source
+    # must satisfy sigma(-r) = sigma(+r) (Aki & Richards 2002). The unsigned
+    # kernel summed to a banded, one-sided field (25-70x N/S asymmetry)
+    # instead of the four-lobed King-Stein-Lin pattern (2026-07-06 audit,
+    # finding C4 / spec 006). The depth^2 inside r^2 stays as near-field
+    # damping.
+    sin2alpha = 2.0 * along * perp / r_sq
 
-    sin2alpha = 2.0 * along * math.sqrt(r_perp_sq) / r_sq
-
-    cos2alpha = (along * along - r_perp_sq) / r_sq
+    cos2alpha = (along * along - perp * perp) / r_sq
 
     tau = patch_moment / (4.0 * math.pi * r_sq * r) * 3.0 * sin2alpha
 
@@ -321,9 +329,9 @@ def compute_coulomb_at_dams(segments=None):
     results = []
     for i, dam in enumerate(dams):
         dcfs_val = float(dcfs[i])
-        if dcfs_val > 0.001:
+        if dcfs_val > COULOMB_TRIGGER_MPA:
             regime = "Triggered"
-        elif dcfs_val < -0.001:
+        elif dcfs_val < -COULOMB_TRIGGER_MPA:
             regime = "Shadow"
         else:
             regime = "Neutral"

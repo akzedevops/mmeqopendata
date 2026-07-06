@@ -364,6 +364,67 @@ def cmd_report(args) -> None:
                 print(f"  {ds}: {ds_counts.get(ds, 0)} dams")
             print(f"  Results: {frag_path}")
 
+    if not args.no_hazard:
+        # spec 006 / audit M7: the per-dam hazard-curve CSVs on the dashboard
+        # were frozen pre-declustering artifacts no pipeline stage refreshed.
+        from mmeq.analysis.dam_risk import compute_hazard_curve, load_dams_df
+        from mmeq.analysis.seismology import b_value as _bval, decluster_catalog
+
+        dams_df = load_dams_df()
+        if dams_df is not None and not dams_df.empty:
+            logging.info("Computing per-dam hazard curves (smoothed seismicity)...")
+            df_dec = decluster_catalog(df)
+            _t = pd.to_datetime(df["time_utc"], errors="coerce").dropna()
+            cat_years = max((_t.max() - _t.min()).days / 365.25, 1.0)
+            b_dec, _a_dec, mc_dec = _bval(df_dec["mag"])
+            vs30_map = {}
+            _vs30_csv = os.path.join(os.environ.get("MMEQ_REPORT_DIR", "report"), "dam_vs30.csv")
+            if os.path.exists(_vs30_csv):
+                _v = pd.read_csv(_vs30_csv)
+                vs30_map = {f"{r['lat']:.4f},{r['lon']:.4f}": float(r["vs30"]) for _, r in _v.iterrows()}
+
+            hz_dir = os.path.join(args.output, "hazard_curves")
+            os.makedirs(hz_dir, exist_ok=True)
+            import numpy as _np
+            import re as _re
+            seen_names = {}
+            pga475 = []
+            manifest = []
+            for _, dam in dams_df.iterrows():
+                vs30 = vs30_map.get(f"{dam['latitude']:.4f},{dam['longitude']:.4f}", 760.0)
+                hc = compute_hazard_curve(
+                    site_lat=float(dam["latitude"]), site_lon=float(dam["longitude"]),
+                    vs30=vs30, declustered_df=df_dec, b_val=b_dec, mc=mc_dec,
+                    catalog_years=cat_years,
+                )
+                slug = _re.sub(r"[^A-Za-z0-9_-]+", "_", str(dam["name"])).strip("_") or "dam"
+                # deduplicate filenames (several dams share a name)
+                seen_names[slug] = seen_names.get(slug, 0) + 1
+                if seen_names[slug] > 1:
+                    slug = f"{slug}_{seen_names[slug]}"
+                fname = f"{slug}.csv"
+                hc.to_csv(os.path.join(hz_dir, fname), index=False)
+                rates = hc["annual_rate"].values
+                p475 = float(_np.interp(1.0 / 475.0, rates[::-1], hc["pga_g"].values[::-1])) if rates.max() > 1.0 / 475.0 else 0.0
+                pga475.append(p475)
+                manifest.append((fname, str(dam["name"]), p475))
+
+            with open(os.path.join(hz_dir, "index.html"), "w", encoding="utf-8") as f:
+                import html as _html
+                f.write("<!DOCTYPE html><html><head><meta charset='utf-8'>"
+                        "<title>Per-dam hazard curves</title></head><body>"
+                        "<h1>Per-dam hazard curves (smoothed-seismicity PSHA)</h1><ul>")
+                for fname, name, p475 in manifest:
+                    f.write(f"<li><a href='{fname}'>{_html.escape(name)}</a>"
+                            f" — 475-yr PGA {p475:.3f} g</li>")
+                f.write("</ul></body></html>")
+
+            pga475_arr = _np.array(pga475)
+            print("\nHazard Curves (smoothed-seismicity PSHA):")
+            print(f"  475-yr PGA: {pga475_arr.min():.3f}-{pga475_arr.max():.3f}g, mean {pga475_arr.mean():.3f}g")
+            print(f"  Dams with 475-yr PGA > 0.1g: {(pga475_arr > 0.1).sum()}")
+            print(f"  Results: {hz_dir}/")
+
     if not args.no_montecarlo:
         from mmeq.analysis.dam_risk import monte_carlo_pga
         logging.info("Running Monte Carlo PGA (1000 iterations)...")
@@ -447,6 +508,7 @@ def main() -> None:
     p_report.add_argument("--no-coulomb", action="store_true", help="Skip Coulomb stress analysis")
     p_report.add_argument("--no-fragility", action="store_true", help="Skip dam fragility analysis")
     p_report.add_argument("--no-montecarlo", action="store_true", help="Skip Monte Carlo PGA")
+    p_report.add_argument("--no-hazard", action="store_true", help="Skip per-dam hazard curves")
 
     args = parser.parse_args()
     setup_logging(args.verbose)

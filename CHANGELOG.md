@@ -2,6 +2,36 @@
 
 ## Unreleased
 
+### Hazard-model corrections (2026-07-06 integrity audit, phase 4 — spec 006)
+
+- **Scenario "rupture distance" now uses the actual 2025 rupture geometry**
+  (`data/shakemap/rupture.json`) instead of a global plate-boundary trace
+  file. Dams near non-ruptured fault sections (Kachin, Tanintharyi) had M7.7
+  near-fault PGA: Ta Nai Hka, ~435 km from the rupture, was published at
+  0.44 g / Critical — now 0.010 g / High. `dam_risk_scores.csv` gains a
+  `dist_to_rupture_km` column. Dam grades: 45/134/61/14 → **44/116/45/49**
+  (Critical+High 160, 63%).
+- **PSHA rebuilt with a Frankel (1995) smoothed-seismicity source model.**
+  The old Cornell-McGuire code integrated over magnitude only, collapsing the
+  entire ~2,000-km regional rate onto each dam's single nearest-fault
+  distance (near-fault 475-yr PGA ~2.1–2.5 g). The new model bins the
+  declustered catalog on a 0.5° grid, Gaussian-smooths per-cell rates (σ =
+  50 km, total rate conserved) and integrates hazard over the source-to-site
+  distance distribution. Portfolio 475-yr PGA now 0.002–0.55 g (mean 0.14).
+  **Documented as a catalog-only lower bound** — the committed fault file has
+  no slip rates, so there is no fault-source term. A report stage
+  (`--no-hazard`) regenerates per-dam `hazard_curves/*.csv` + an index
+  manifest, replacing the frozen pre-declustering artifacts (finding M7) and
+  the dead directory link.
+- **Coulomb kernel parity fixed.** `_patch_coulomb_stress` used an unsigned
+  `sin2α` that made the shear term odd in the along-strike coordinate; static
+  stress from a point moment source must satisfy σ(−r)=σ(+r) (Aki & Richards
+  2002). Signed `perp` restores the four-lobed King-Stein-Lin pattern
+  (verified: ΔCFS(−r)=ΔCFS(+r) to machine precision, four alternating lobes).
+  Classification threshold raised to the standard ±0.01 MPa (0.1 bar); the old
+  ±0.001 MPa sat in tidal-stress noise. Triggered/shadow: 34/163 → **16/72**.
+- References added: Frankel 1995, Gardner & Knopoff 1974, Okada 1992,
+  Thant et al. 2023, Wald et al. 1999 (some were cited but missing).
 ### Publishing-seam fixes (2026-07-06 integrity audit, phase 3)
 
 - **Daily data pushes now trigger the site rebuild.** GITHUB_TOKEN pushes

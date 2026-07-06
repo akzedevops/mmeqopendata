@@ -415,28 +415,31 @@ b_val_fig, a_val_fig, mc_fig = calc_bval(df_dec["mag"])
 
 fig, ax = plt.subplots(figsize=(9, 7))
 
+# (site_lat, site_lon, vs30) — spec 006: hazard is now computed at the dam
+# coordinates with the smoothed-seismicity source model, not at a single
+# collapsed nearest-fault distance.
 representative_dams = [
-    ("Kun Chaung", 1.0, 1100),
-    ("Taungnyo", 1.3, 900),
-    ("Dam near 21.77N 95.89E", 2.9, 760),
-    ("Ta Nai Hka", 4.3, 760),
-    ("Meikhtila", 8.8, 760),
-    ("Dam near 20.85N 96.03E", 8.9, 900),
+    ("Kun Chaung", 18.420, 96.364, 538),
+    ("Taungnyo", 20.452, 95.969, 293),
+    ("Dam near 21.77N 95.89E", 21.774, 95.892, 252),
+    ("Ta Nai Hka", 26.294, 96.950, 279),
+    ("Meikhtila", 20.876, 95.865, 290),
+    ("Dam near 20.85N 96.03E", 20.854, 96.027, 244),
 ]
 
 line_styles = ["-", "--", "-.", ":", "-", "--"]
 colors_hc = ["#d62728", "#ff7f0e", "#2ca02c", "#1f77b4", "#9467bd", "#8c564b"]
 
-for i, (name, rjb, vs30) in enumerate(representative_dams):
+for i, (name, dlat, dlon, vs30) in enumerate(representative_dams):
     hc = compute_hazard_curve(
-        rjb_km=rjb, vs30=vs30, b_val=b_val_fig, a_val=a_val_fig, mc=mc_fig,
-        catalog_years=cat_years,
+        site_lat=dlat, site_lon=dlon, vs30=vs30, declustered_df=df_dec,
+        b_val=b_val_fig, mc=mc_fig, catalog_years=cat_years,
         pga_levels=np.logspace(-2.5, 0.3, 80),
     )
     valid = hc[hc["return_period_yr"] < 1e5]
     if len(valid) > 2:
         ax.plot(valid["pga_g"], valid["return_period_yr"], line_styles[i % len(line_styles)],
-                linewidth=2, color=colors_hc[i], label=f"{name} (Rjb={rjb:.0f}km, Vs30={vs30})")
+                linewidth=2, color=colors_hc[i], label=f"{name} ({dlat:.1f}N, Vs30={vs30})")
 
 ax.axhline(475, color="gray", linestyle="--", alpha=0.5, label="475 yr (10% in 50 yr)")
 ax.axhline(2475, color="gray", linestyle=":", alpha=0.5, label="2475 yr (2% in 50 yr)")

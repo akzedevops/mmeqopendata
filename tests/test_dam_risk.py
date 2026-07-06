@@ -70,26 +70,38 @@ class TestReturnPeriod:
 
 
 class TestHazardCurve:
-    def test_exceedance_rate_monotonic_decreasing_in_pga(self):
-        hc = compute_hazard_curve(rjb_km=20.0, vs30=760.0, b_val=1.0, a_val=6.0, mc=4.0)
+    """The magnitude-only Cornell-McGuire signature was replaced by a
+    site-based smoothed-seismicity model (spec 006). Behavioural tests for the
+    new signature (rate conservation, distance decay) live in
+    test_hazard_model.py; here we only pin the DataFrame contract."""
+
+    @pytest.fixture
+    def _cat(self):
+        rng = np.random.default_rng(1)
+        n = 300
+        return pd.DataFrame({
+            "time_utc": pd.to_datetime("2000-01-01") + pd.to_timedelta(
+                rng.uniform(0, 20 * 365, n), unit="D"),
+            "latitude": 22.0 + rng.normal(0, 0.3, n),
+            "longitude": 96.0 + rng.normal(0, 0.3, n),
+            "mag": 4.7 + rng.exponential(0.5, n),
+        })
+
+    def test_exceedance_rate_monotonic_decreasing_in_pga(self, _cat):
+        hc = compute_hazard_curve(
+            site_lat=22.0, site_lon=96.0, vs30=760.0, declustered_df=_cat,
+            b_val=1.0, mc=4.7, catalog_years=20.0,
+        )
         rates = hc["annual_rate"].to_numpy()
         assert rates[0] > 0
-        # Exceedance rate must never increase with the PGA level.
         assert (np.diff(rates) <= 1e-15).all()
-        # And it must actually decay over the full range.
         assert rates[-1] < rates[0]
 
-    def test_catalog_years_scaling(self):
-        # a_val is a catalog-level intercept; annualizing divides by catalog
-        # years, so doubling the catalog length must halve every rate exactly.
-        hc1 = compute_hazard_curve(20.0, 760.0, 1.0, 6.0, 4.0, catalog_years=28.0)
-        hc2 = compute_hazard_curve(20.0, 760.0, 1.0, 6.0, 4.0, catalog_years=56.0)
-        np.testing.assert_allclose(
-            hc2["annual_rate"], hc1["annual_rate"] / 2.0, rtol=1e-9
+    def test_return_period_is_inverse_of_rate(self, _cat):
+        hc = compute_hazard_curve(
+            site_lat=22.0, site_lon=96.0, vs30=760.0, declustered_df=_cat,
+            b_val=1.0, mc=4.7, catalog_years=20.0,
         )
-
-    def test_return_period_is_inverse_of_rate(self):
-        hc = compute_hazard_curve(20.0, 760.0, 1.0, 6.0, 4.0)
         pos = hc[hc["annual_rate"] > 0]
         np.testing.assert_allclose(
             pos["return_period_yr"], 1.0 / pos["annual_rate"], rtol=1e-12
@@ -233,6 +245,7 @@ def _report_args(catalog: Path, output: Path, **overrides) -> argparse.Namespace
         no_coulomb=True,
         no_fragility=True,
         no_montecarlo=True,
+        no_hazard=True,
     )
     for k, v in overrides.items():
         setattr(ns, k, v)
