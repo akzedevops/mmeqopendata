@@ -36,6 +36,19 @@ _places_lock = threading.Lock()
 EARTH_R = 6371.0  # km
 
 
+# geoBoundaries ships two misspelled ADM1 shapeNames; the geocoder copies them
+# verbatim into the published state_region column (2026-07-06 audit). Normalize
+# them to the correct spellings the paper/README already use.
+_ADMIN_NAME_FIXES = {
+    "Saigang": "Sagaing",
+    "Tanitharyi": "Tanintharyi",
+}
+
+
+def _normalize_admin_name(name: str) -> str:
+    return _ADMIN_NAME_FIXES.get(name, name)
+
+
 def _load_admin(level, path):
     if level in _admin_cache:
         return _admin_cache[level]
@@ -51,7 +64,7 @@ def _load_admin(level, path):
         names = []
         geoms = []
         for feat in data["features"]:
-            names.append(feat["properties"]["shapeName"])
+            names.append(_normalize_admin_name(feat["properties"]["shapeName"]))
             geoms.append(shape(feat["geometry"]))
         tree = STRtree(geoms)
         _admin_cache[level] = (names, tree, geoms)

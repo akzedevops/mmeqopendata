@@ -26,7 +26,7 @@ MAX_WORKERS = int(os.environ.get("MMEQ_MAX_WORKERS", "10"))
 REQUEST_TIMEOUT = (5, 30)
 RETRY_TOTAL = 3
 RETRY_BACKOFF = 0.5
-RETRY_STATUS_FORCELIST = [429, 502, 503, 504]
+RETRY_STATUS_FORCELIST = [429, 500, 502, 503, 504]  # include 500 to match the Go client
 
 # Window-bisection tripwire. The API has NO record cap — it serves the full catalog
 # in a single request (verified) — so bisection is DISABLED by default (0). It remains

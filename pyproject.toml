@@ -12,7 +12,7 @@ license = {text = "MIT"}
 authors = [{name = "Aung Khant Zaw", email = "aungkhantzawd@gmail.com"}]
 
 dependencies = [
-    "pandas>=2.0,<3",
+    "pandas>=2.2,<3",  # resample("ME"/"YE") aliases require pandas>=2.2 (GH#52064)
     "matplotlib>=3.7,<4",
     "numpy>=1.24,<3",
     "seaborn>=0.12,<1",

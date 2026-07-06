@@ -103,7 +103,7 @@ The 001 bisection tripwire still applies (`MMEQ_API_PAGE_CAP`, default off).
 bounds (lat/lon/depth/mag) + NaN-drop; `time_utc` UTC `%Y-%m-%d %H:%M:%S` and `time_mmt` in
 Asia/Yangon (UTC+06:30, via tzdb not a hardcoded offset); `id`-keyed dedup `keep="last"`;
 combined-JSON merge keyed on id else `(time_utc,lat,lon)` preserving first-seen order;
-monthly = overwrite, yearly/combined = merge+dedup; date-range generation from
+monthly = overwrite (with per-window id dedup — added to BOTH implementations 2026-07-06 so the Python `validate_quake_data` matches Go's `Dedup(Validate(...))`), yearly/combined = merge+dedup; date-range generation from
 `last_event + 1 day`; the 32-column CSV header/order (spec text originally said 33) ending in the 6 geocoder columns +
 `shakemapURL/shakemapLastUpdated`; JSON `{"earthquakes":[...]}` indent=2, UTF-8 literal
 (non-ASCII Myanmar names). **The Go port must also implement [[001-data-fetch-upgrade]]'s
