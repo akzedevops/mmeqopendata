@@ -1,3 +1,4 @@
+import html
 import logging
 import os
 from typing import Optional
@@ -18,6 +19,18 @@ from mmeq.config import (
 )
 
 logger = logging.getLogger(__name__)
+
+
+def _esc(value) -> str:
+    """HTML-escape a data-derived string before popup interpolation.
+
+    folium renders string popups verbatim inside a jQuery template literal in
+    the published page, so unescaped OSM names / dam CSV fields / API strings
+    are a stored-XSS vector on the public map (2026-07-06 audit, finding C7).
+    Backticks are escaped too — a literal one would terminate the template
+    literal and blank the map.
+    """
+    return html.escape(str(value)).replace("`", "&#96;")
 
 
 def _mag_color(mag: float) -> str:
@@ -88,7 +101,7 @@ def build_earthquake_map(
                 popup=(
                     f"<b>Magnitude:</b> {row['mag']}<br>"
                     f"<b>Depth:</b> {row['depth']} km<br>"
-                    f"<b>Time (MMT):</b> {row.get('time_mmt', 'N/A')}"
+                    f"<b>Time (MMT):</b> {_esc(row.get('time_mmt', 'N/A'))}"
                 ),
             ).add_to(target)
         marker_layer.add_to(quake_map)
@@ -117,17 +130,17 @@ def build_earthquake_map(
             capacity = row["capacity_mw"]
             height = row["height_m"]
             river = row["river"]
-            popup_html = f"<b>Dam:</b> {name}"
+            popup_html = f"<b>Dam:</b> {_esc(name)}"
             if status:
-                popup_html += f"<br><b>Status:</b> {status}"
+                popup_html += f"<br><b>Status:</b> {_esc(status)}"
             if func:
-                popup_html += f"<br><b>Function:</b> {func}"
+                popup_html += f"<br><b>Function:</b> {_esc(func)}"
             if capacity:
-                popup_html += f"<br><b>Capacity:</b> {capacity} MW"
+                popup_html += f"<br><b>Capacity:</b> {_esc(capacity)} MW"
             if height:
-                popup_html += f"<br><b>Height:</b> {height} m"
+                popup_html += f"<br><b>Height:</b> {_esc(height)} m"
             if river:
-                popup_html += f"<br><b>River:</b> {river}"
+                popup_html += f"<br><b>River:</b> {_esc(river)}"
             icon_color = "blue"
             if status == "Complete":
                 icon_color = "blue"
@@ -172,7 +185,7 @@ def build_earthquake_map(
                 fill=True,
                 fill_opacity=0.6,
                 weight=0,
-                popup=f"{row['category']}: {row['name']}" if row["name"] else row["category"],
+                popup=f"{_esc(row['category'])}: {_esc(row['name'])}" if row["name"] else _esc(row["category"]),
             ).add_to(osm_layer)
         osm_layer.add_to(quake_map)
         logger.info("Added %d OSM buildings to map", len(osm_df))

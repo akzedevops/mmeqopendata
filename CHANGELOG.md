@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+### Publishing-seam fixes (2026-07-06 integrity audit, phase 3)
+
+- **Daily data pushes now trigger the site rebuild.** GITHUB_TOKEN pushes
+  deliberately create no workflow runs, so the dashboard silently served
+  stale data (all of June it showed May 31). The daily job now dispatches
+  `report_and_pages.yml` explicitly after a push that committed new data.
+- **The live paper PDF is now the built one**: CI copies `paper/main.pdf` to
+  `docs/report/paper.pdf`; the site had been serving a hand-committed copy
+  frozen on 2026-05-01, missing every subsequent correction.
+- **Stored-XSS closed on the public map**: dam CSV fields, OSM names and API
+  strings are HTML-escaped (incl. backticks — folium interpolates popups into
+  a jQuery template literal) before popup construction; regression test
+  asserts no raw payload reaches the saved HTML.
+- `.gitignore`'s unanchored `report/` (which also matched `docs/report/` and
+  silently blocked committing new site artifacts like `vendor/` and
+  `plotly.min.js`) anchored to `/report/`; dead "Copy static map" no-op step
+  removed; Pages triggers widened to `tools/**` (matches CLAUDE.md).
+
 ### Data-artifact repairs (2026-07-06 integrity audit, phase 2)
 
 - **Yearly JSON now merges instead of overwriting** (Python `save_merged_json`
