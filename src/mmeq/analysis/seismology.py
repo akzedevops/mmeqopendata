@@ -14,6 +14,12 @@ def b_value(
     """
     Calculate b-value using the maximum likelihood method (Aki, 1965).
     Returns (b_value, a_value, min_mag_used).
+
+    Caveat: the input magnitudes are taken as-is. The catalog pools magnitude
+    types (~74% ml, ~22% mb, ~2% Mw) without converting to a common Mw scale,
+    so the FMD slope carries some inter-scale bias (mb saturates near 6;
+    ml-Mw offsets of 0.2-0.5 are typical). Documented, not corrected — the
+    paper states this alongside the completeness caveat (2026-07-06 audit).
     """
     magnitudes = magnitudes.dropna()
     if min_mag is None:

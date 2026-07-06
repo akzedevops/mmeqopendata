@@ -4,7 +4,7 @@
 [![Daily Fetch](https://github.com/akzedevops/mmeqopendata/actions/workflows/daily_data_fetch.yml/badge.svg)](https://github.com/akzedevops/mmeqopendata/actions/workflows/daily_data_fetch.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-green.svg)](https://python.org)
-[![Events](https://img.shields.io/badge/Earthquakes-9%2C242-orange.svg)](https://akzedevops.github.io/mmeqopendata/)
+[![Events](https://img.shields.io/badge/Earthquakes-9%2C420-orange.svg)](https://akzedevops.github.io/mmeqopendata/)
 
 A hobby project for collecting, analyzing, and visualizing earthquake data in Myanmar. Built on the [Myanmar Earthquake API](https://mmeq.akze.net), covering records from 1950 to present.
 
