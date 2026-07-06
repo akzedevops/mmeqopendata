@@ -28,9 +28,13 @@ def _esc(value) -> str:
     the published page, so unescaped OSM names / dam CSV fields / API strings
     are a stored-XSS vector on the public map (2026-07-06 audit, finding C7).
     Backticks are escaped too — a literal one would terminate the template
-    literal and blank the map.
+    literal and blank the map — and so is "$": inside a template literal
+    ${expr} is EVALUATED as JavaScript, so an unescaped dollar sign is its own
+    execution vector (Kilo review of PR #36). HTML entities are not decoded by
+    the JS parser, so "&#36;" can never form "${" in the literal, while jQuery
+    renders it back as a visible "$".
     """
-    return html.escape(str(value)).replace("`", "&#96;")
+    return html.escape(str(value)).replace("`", "&#96;").replace("$", "&#36;")
 
 
 def _mag_color(mag: float) -> str:
