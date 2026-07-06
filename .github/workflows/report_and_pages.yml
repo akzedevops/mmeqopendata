@@ -9,7 +9,7 @@ on:
       - 'src/mmeq/**'
       - 'data/**'
       - 'generate_figures.py'
-      - 'tools/build_figure_data.py'
+      - 'tools/**'
       - 'paper/main.tex'
       - 'pyproject.toml'
       - 'docs/index.html'
@@ -86,11 +86,6 @@ jobs:
           mkdir -p docs/report
           mmeq report --output docs/report --reuse-risk
 
-      - name: Copy static map
-        run: |
-          cp -f docs/report/enhanced_earthquake_map.html docs/report/ 2>/dev/null || true
-          cp -f enhanced_earthquake_map.html docs/report/ 2>/dev/null || true
-
       - name: Regenerate paper figures
         run: |
           python generate_figures.py
@@ -102,6 +97,12 @@ jobs:
         with:
           root_file: main.tex
           working_directory: paper
+
+      - name: Publish paper PDF to the site
+        # docs/index.html links report/paper.pdf; without this copy the live
+        # site serves whatever stale PDF was last committed by hand (it served
+        # a 2-month-old paper — 2026-07-06 audit, finding C6).
+        run: cp -f paper/main.pdf docs/report/paper.pdf
 
       - name: Commit report, figures & paper artifacts
         if: github.ref == 'refs/heads/master'

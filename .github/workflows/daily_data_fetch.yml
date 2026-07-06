@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   issues: write   # failure-notification step files/updates an issue
+  actions: write  # post-push dispatch of the Pages build (see below)
 
 # Never run two fetches at once (overlapping pushes would race); queue instead
 # of cancelling so a manual dispatch doesn't kill the scheduled run mid-push.
@@ -49,7 +50,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add quake_exports/
-          git diff --cached --quiet || git commit -m "feat: Update earthquake data"
+          git diff --cached --quiet || { git commit -m "feat: Update earthquake data"; echo "data_changed=1" >> "$GITHUB_ENV"; }
           # master may have moved while the export ran (e.g. a PR merge or the
           # report workflow's artifact commit) — rebase onto the new tip and
           # retry so a non-fast-forward doesn't fail the whole run. The push
@@ -62,6 +63,17 @@ jobs:
             git pull --rebase origin master || exit 1
           done
           [ "$pushed" = 1 ] || { echo "push failed after 3 attempts"; exit 1; }
+
+      - name: Trigger site rebuild
+        # Pushes made with GITHUB_TOKEN deliberately do not create workflow
+        # runs, so report_and_pages.yml's push trigger never fires for the
+        # daily bot commit — the dashboard silently served stale data for a
+        # month (2026-07-06 audit, finding M9). API-initiated dispatches DO
+        # create runs, so kick the build explicitly when data changed.
+        if: env.data_changed == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run report_and_pages.yml --ref master --repo "$GITHUB_REPOSITORY"
 
       - name: Notify on failure
         if: failure()

@@ -27,7 +27,10 @@ cluster_maps/
 dem_tiles/
 
 # Generated reports and data exports
-report/
+# Anchored: an unanchored 'report/' also matched docs/report/, silently
+# preventing NEW site artifacts (vendor/, plotly.min.js, paper.pdf) from ever
+# being committed (2026-07-06 audit).
+/report/
 dam_seismic_risk.csv
 
 # IDE
