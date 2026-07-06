@@ -134,12 +134,12 @@ I validated the GMPE against the actual Naypyidaw ShakeMap recording — predict
 
 | Grade | Count |
 |---|---|
-| Critical | 25 |
-| High | 148 |
-| Moderate | 67 |
+| Critical | 45 |
+| High | 134 |
+| Moderate | 61 |
 | Low | 14 |
 
-173 dams (68%) scored Critical or High. (Earlier versions under-counted these because a ground-motion bug floored the PGA of dams beyond ~100 km from the rupture, mis-grading them as Low — see CHANGELOG.)
+179 dams (70%) scored Critical or High. (Earlier versions under-counted these because a ground-motion bug floored the PGA of dams beyond ~100 km from the rupture, and until recently the scenario picked the wrong M7.7 — the catalog holds two, and the 1988 Lancang event tie-broke ahead of the 2025 Sagaing mainshock — see CHANGELOG.)
 
 ## How the Seismology Works
 
@@ -149,7 +149,7 @@ The catalog has 9,390 events. Most are small (mean M 3.2), but there are 6 event
 
 **Clustering:** DBSCAN in UTM Zone 47N coordinates (so distances are in meters, not degrees) identifies 7 seismic zones. The central Myanmar cluster contains 95% of all events.
 
-**Aftershock forecasting:** Modified Omori law fitted to the M7.7 sequence gives p = 0.93 (close to the global average of ~1.0), forecasting expected M≥3 aftershocks at 7, 30, and 90 day windows.
+**Aftershock forecasting:** Modified Omori law fitted by maximum likelihood (Ogata 1983) to the 2025 M7.7 Sagaing sequence gives p ≈ 0.77 with c ≈ 16 h — a slow decay, partly reflecting early-sequence catalog incompleteness after the mainshock — forecasting expected M≥3 aftershocks at 7, 30, and 90 day windows. (Earlier releases quoted p = 0.93 from a biased least-squares fit that had also selected the 1988 Lancang M7.7 as the mainshock.)
 
 **Coulomb stress transfer:** Using the USGS finite fault model (530 slip patches, 0–7 m variable slip), I computed which dams are in stress-triggered zones (34 dams, 13%) vs stress shadows (163 dams, 64%).
 

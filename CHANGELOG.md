@@ -2,6 +2,31 @@
 
 ## Unreleased
 
+### Scientific corrections (2026-07-06 integrity audit, phase 1)
+
+- **Scenario event fixed: 2025 Sagaing, not 1988 Lancang.** The catalog holds
+  two M7.7 events and every scenario consumer (`dam_risk_scores`,
+  `monte_carlo_pga`, `sensitivity_analysis`, the Omori aftershock forecast)
+  selected the maximum-magnitude event with a bare `nlargest`/`idxmax`, which
+  tie-breaks to the *first* row — the 1988-11-06 Lancang-Gengma earthquake on
+  the China border, ~400 km from the epicenter the README/paper describe. A
+  shared `seismology.select_scenario_event` now breaks magnitude ties by
+  recency (override: `MMEQ_SCENARIO_EVENT_ID`). Published dam grades change
+  from 25/148/67/14 (Critical/High/Moderate/Low) to **45/134/61/14** —
+  179 dams (70%) Critical or High.
+- **Omori fit rewritten as Ogata (1983) maximum likelihood** on exact event
+  times. The previous least-squares fit on log-binned counts underestimated
+  p by 0.2–0.4 on synthetic catalogs (and pinned at its silent p=0.5 clip on
+  the real 2025 sequence) while hardcoding c=0.1 h. The 2025 M7.7 sequence now
+  fits K≈35, c≈16.4 h, p≈0.77; a synthetic-recovery regression test asserts
+  |p_fit − p_true| < 0.1. Previously published p=0.93 was the 1988 event's
+  biased fit.
+- **Paper sensitivity claim corrected**: "Critical+High stays above 30%
+  regardless of weights" was contradicted by the shipped artifact; the paper
+  now reports the actual distribution (median ~73%, 22/100 draws below 30%).
+- Stale "54% Critical or High" in the paper (a pre-GMPE-fix leftover) fixed
+  to 70% alongside the regenerated grade table.
+
 ### Go export cutover (specs 001/002/004 complete)
 
 The daily data-fetch CI now runs the Go `mmeq-export` binary (build ~seconds,

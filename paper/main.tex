@@ -219,7 +219,7 @@ Each dam gets a composite score (0--10) from four components:
     R = 0.35 \times S_{seismic} + 0.30 \times S_{fault} + 0.20 \times S_{proximity} + 0.15 \times S_{exposure}
 \end{equation}
 
-where $S_{seismic}$ is PGA-based, $S_{fault}$ is distance to nearest fault, $S_{proximity}$ is distance to the M7.7 epicenter, and $S_{exposure}$ accounts for dam height/capacity/storage.
+where $S_{seismic}$ is PGA-based, $S_{fault}$ is distance to nearest fault, $S_{proximity}$ is distance to the 2025 M7.7 epicenter, and $S_{exposure}$ accounts for dam height/capacity/storage.
 
 \subsection{Results}
 
@@ -232,15 +232,15 @@ With the corrected GMPE:
 \toprule
 \textbf{Grade} & \textbf{Count} & \textbf{\%} \\
 \midrule
-Critical ($\geq 7$) & 25 & 9.8\% \\
-High (5--7) & 148 & 58.3\% \\
-Moderate (3--5) & 67 & 26.4\% \\
+Critical ($\geq 7$) & 45 & 17.7\% \\
+High (5--7) & 134 & 52.8\% \\
+Moderate (3--5) & 61 & 24.0\% \\
 Low ($< 3$) & 14 & 5.5\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-So about 54\% of dams are Critical or High risk.
+So about 70\% of dams are Critical or High risk.
 The spatial pattern (Figure~\ref{fig:risk_map}) is clear: the highest-risk dams line up along the Sagaing Fault.
 
 \begin{figure}[htbp]
@@ -253,7 +253,7 @@ The spatial pattern (Figure~\ref{fig:risk_map}) is clear: the highest-risk dams 
 \subsection{Sensitivity to Weights}
 
 The weights (0.35/0.30/0.20/0.15) are somewhat arbitrary, so I ran 100 Monte Carlo iterations with random Dirichlet-sampled weights.
-The Critical+High fraction stays above 30\% regardless of weights, so the overall conclusion is robust.
+The median Critical+High fraction across draws is $\sim$73\%, but the grading is genuinely weight-sensitive: 22 of the 100 draws fall below a 30\% Critical+High fraction (minimum $\sim$12\%, 5th percentile $\sim$17\%), typically when the proximity weight dominates. The headline conclusion---that a substantial fraction of the portfolio carries elevated risk---holds for the large majority of weightings, but the exact grade counts should be read as conditional on the chosen weights.
 
 \begin{figure}[htbp]
     \centering
@@ -391,7 +391,7 @@ Near-fault sites are systematically low because this was a supershear rupture, w
     Always check stability before trusting a b-value.
 
     \item \textbf{Over half of Myanmar's dams are in high-hazard zones.}
-    25 Critical + 148 High = 173 dams (68\%) with significant seismic exposure.
+    45 Critical + 134 High = 179 dams (70\%) with significant seismic exposure.
     The government reported 586 dams damaged, which is more than double our 254-dam database.
 
     \item \textbf{Open data makes this possible.}

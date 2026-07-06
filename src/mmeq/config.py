@@ -72,6 +72,13 @@ RISK_GRADE_THRESHOLDS = {
 # the Cornell-McGuire PSHA integration and the Monte Carlo PGA simulation.
 GMPE_SIGMA_LN = float(os.environ.get("MMEQ_GMPE_SIGMA_LN", "0.65"))
 
+# Pin the scenario ("major") event used by dam-risk scoring and the aftershock
+# forecast to an explicit catalog id. When unset, the maximum-magnitude event
+# is used with ties broken by recency — the catalog contains two M7.7 events
+# (1988-11-06 Lancang and 2025-03-28 Sagaing) and a bare max() picks the
+# earlier, wrong one.
+SCENARIO_EVENT_ID = os.environ.get("MMEQ_SCENARIO_EVENT_ID", "")
+
 FAULT_LINES_PATH = os.environ.get("MMEQ_FAULT_LINES", "fault_lines.json")
 
 # --- Data files (config consolidation, audit M4/M5) -------------------------

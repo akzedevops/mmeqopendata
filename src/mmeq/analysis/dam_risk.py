@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 import json
 
+from mmeq.analysis.seismology import select_scenario_event
 from mmeq.config import GMPE_SIGMA_LN, RISK_GRADE_THRESHOLDS, RISK_WEIGHTS
 
 logger = logging.getLogger(__name__)
@@ -451,7 +452,7 @@ def sensitivity_analysis(
         return pd.DataFrame()
 
     fault_segments = _load_fault_segments()
-    major_eq = eq_df.nlargest(1, "mag").iloc[0]
+    major_eq = select_scenario_event(eq_df)
     major_mag = major_eq["mag"]
     major_depth = major_eq["depth"]
     major_lat = major_eq["latitude"]
@@ -507,7 +508,7 @@ def dam_risk_scores(
 
     fault_segments = _load_fault_segments()
     vs30_map = _load_vs30()
-    major_eq = eq_df.nlargest(1, "mag").iloc[0]
+    major_eq = select_scenario_event(eq_df)
     major_mag = major_eq["mag"]
     major_depth = major_eq["depth"]
     major_lat = major_eq["latitude"]
@@ -599,7 +600,7 @@ def monte_carlo_pga(
 
     fault_segments = _load_fault_segments()
     vs30_map = _load_vs30()
-    major_eq = eq_df.nlargest(1, "mag").iloc[0]
+    major_eq = select_scenario_event(eq_df)
     major_mag = major_eq["mag"]
     major_depth = major_eq["depth"]
     major_lat = major_eq["latitude"]

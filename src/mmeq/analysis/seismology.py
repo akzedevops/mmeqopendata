@@ -54,6 +54,35 @@ def magnitude_of_completeness(
     return round(mc, 1)
 
 
+def select_scenario_event(df: pd.DataFrame) -> pd.Series:
+    """
+    Select the scenario ("major") event for hazard analyses: the
+    maximum-magnitude event, breaking magnitude ties by recency.
+
+    The catalog contains two M7.7 events (1988-11-06 Lancang-Gengma on the
+    China border and the 2025-03-28 Sagaing mainshock); a bare
+    ``nlargest``/``idxmax`` tie-breaks to the earlier row and silently
+    selects the wrong earthquake. Set MMEQ_SCENARIO_EVENT_ID to pin an
+    explicit catalog id instead.
+    """
+    from mmeq import config
+
+    if config.SCENARIO_EVENT_ID and "id" in df.columns:
+        pinned = df[df["id"].astype(str) == config.SCENARIO_EVENT_ID]
+        if not pinned.empty:
+            return pinned.iloc[0]
+        logger.warning(
+            "MMEQ_SCENARIO_EVENT_ID=%s not found in catalog; "
+            "falling back to max-magnitude selection",
+            config.SCENARIO_EVENT_ID,
+        )
+    top = df[df["mag"] == df["mag"].max()]
+    times = pd.to_datetime(top["time_utc"], errors="coerce")
+    if times.notna().any():
+        return top.loc[times.idxmax()]
+    return top.iloc[-1]
+
+
 def b_value_stability(
     magnitudes: pd.Series,
     mc_range: np.ndarray = None,
