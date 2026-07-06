@@ -69,7 +69,8 @@ The mmeq API v2 (Go/SQLite, `github.com/akzedevops/mmeq-api`, private) is in pro
 The exporter has BOTH clients, but **defaults to the v1-compat route**
 (`MMEQ_FETCH_ROUTE=v1`): the typed `/api/v2/earthquakes` schema deliberately drops the
 raw upstream columns (`dmin`, `gap`, `nst`, `rms`, `shakemapURL`, `continent`, …) that
-make up the published 33-column artifact, and adds `ingested_at` — so a v2-fed export
+make up the published 33-column artifact (later corrected: the shipped header is
+**32** columns — `time` is dropped; see specs 004/005), and adds `ingested_at` — so a v2-fed export
 can never be byte-compatible. Discovered 2026-07-03 by the first full-tree diff; the
 same diff also caught a production bug where the v1-compat route alphabetized record
 keys (Go map marshal), which would have silently flipped pandas' CSV column order —
@@ -103,7 +104,7 @@ bounds (lat/lon/depth/mag) + NaN-drop; `time_utc` UTC `%Y-%m-%d %H:%M:%S` and `t
 Asia/Yangon (UTC+06:30, via tzdb not a hardcoded offset); `id`-keyed dedup `keep="last"`;
 combined-JSON merge keyed on id else `(time_utc,lat,lon)` preserving first-seen order;
 monthly = overwrite, yearly/combined = merge+dedup; date-range generation from
-`last_event + 1 day`; the 33-column CSV header/order ending in the 6 geocoder columns +
+`last_event + 1 day`; the 32-column CSV header/order (spec text originally said 33) ending in the 6 geocoder columns +
 `shakemapURL/shakemapLastUpdated`; JSON `{"earthquakes":[...]}` indent=2, UTF-8 literal
 (non-ASCII Myanmar names). **The Go port must also implement [[001-data-fetch-upgrade]]'s
 500-cap bisection and contract gate** — so 001 should land first as the reference.

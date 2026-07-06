@@ -18,25 +18,27 @@ ground-motion math matters more than anything else — see "Domain correctness" 
 src/mmeq/                 # ← canonical v2 package (edit code here)
 ├── cli.py                # argparse entry point: export | analyze | visualize | report
 ├── config.py             # all constants + env-var overrides (MMEQ_*)
-├── export/               # fetcher.py (API + date ranges), writer.py (CSV/JSON, validate, dedup)
+├── export/               # fetcher.py (API + date ranges), writer.py (CSV/JSON, validate,
+│                         #   dedup), pipeline.py (run_export orchestration)
 ├── analysis/             # seismology, dam_risk (GMPE/Vs30/PSHA), clustering, aftershock,
 │                         #   coulomb, fragility, finite_fault, gem_faults, osm_exposure,
-│                         #   population[_raster], shakemap_validation, temporal, geocoder
+│                         #   population, shakemap_validation, temporal, geocoder
 └── visualization/        # map (Folium), dashboard (Plotly), cross_section (3D),
-                          #   animated_map, report (PDF)
+                          #   animated_map, report (PDF), assets.py + vendor/ (self-hosted
+                          #   JS/CSS — see tools/fetch_vendor.py + vendor_lock.json)
 
 go/                       # Go rewrite of the export pipeline ONLY (specs/002+004):
                           #   cmd/mmeq-export + internal/{api,catalog,config,export,geocoder};
                           #   golden-file tested for byte-parity with the Python writer —
                           #   run `cd go && go test ./...` when touching it
-tests/                    # pytest suite (80 tests): validation, dateranges, seismology,
-                          #   writer/fetcher, dam-risk scoring
+tests/                    # pytest suite (94 tests): validation, dateranges, seismology,
+                          #   writer/fetcher, dam-risk scoring, vendored assets
 tools/                    # diff_exports.py (Python-vs-Go tree diff), backfill.py,
-                          #   build_figure_data.py
+                          #   build_figure_data.py, fetch_vendor.py (+ vendor_lock.json)
 data/                     # input datasets: admin boundaries, shakemap, osm, faults, finite_fault
 quake_exports/            # generated earthquake CSV/JSON (csv|json × monthly|yearly|combined)
 docs/                     # GitHub Pages site + generated report/ artifacts
-paper/                    # LaTeX write-up (main.tex) + figures/ (13 figs, PDF+PNG)
+paper/                    # LaTeX write-up (main.tex) + figures/ (14 figs, PDF+PNG)
 .github/workflows/        # daily_data_fetch.yml, report_and_pages.yml, tests.yml,
                           #   shadow_go_export.yml (nightly Python-vs-Go parity diff)
 ```
@@ -45,7 +47,7 @@ The upstream API service lives in a separate PRIVATE repo (`akzedevops/mmeq-api`
 checked out at `~/mmeq-api`); its interactive docs are at https://mmeq.akze.net/docs.
 The export pipeline fetches `/api/v2/export` (full-fidelity raw records — see
 `specs/004`); the typed `/api/v2/earthquakes` route deliberately drops legacy columns
-and CANNOT reproduce the published 33-column artifact.
+and CANNOT reproduce the published 32-column artifact.
 
 ### Live root scripts
 
@@ -82,7 +84,7 @@ the Python `mmeq export` remains for local use and fetches the same paginated
 
 **CI gates on tests:** `report_and_pages.yml`'s deploy `needs:` a `test` job (ruff +
 pytest), and `tests.yml` runs on every PR/push — keep both green or the dashboard won't
-deploy. See `specs/001` (data-fetch) and `specs/003` (improvements) for the active roadmap.
+deploy. Specs 001–004 are Done; the active roadmap is `specs/005` (artifact schema v2, Draft).
 
 ## Conventions
 
