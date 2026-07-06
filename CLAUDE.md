@@ -124,7 +124,7 @@ dashboard. Bugs here are silent and serious. v2.0.0 fixed a critically broken GM
    and sanity-check the printed summary numbers against expected ranges.
 3. CI (`report_and_pages.yml`) runs `test` → `build` (regenerates figures + paper) →
    `deploy` on push to `master` touching `quake_exports/**`, `src/mmeq/**`, `data/**`,
-   `generate_figures.py`, `tools/**`, `paper/main.tex`, or `pyproject.toml`. The `test`
+   `generate_figures.py`, `tools/build_figure_data.py`, `paper/main.tex`, or `pyproject.toml`. The `test`
    gate must pass before anything ships to the public dashboard — but a logically-wrong
    analysis change that still passes tests will deploy, so be careful on `master`.
 
