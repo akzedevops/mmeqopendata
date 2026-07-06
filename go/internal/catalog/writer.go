@@ -912,9 +912,19 @@ func recordKey(rec *omap, unique int) any {
 	if v, ok := rec.vals["id"]; ok && pyTruthy(v) {
 		switch x := v.(type) {
 		case string:
+			// A NaN id decoded from an existing file arrives as the NaN
+			// sentinel string. Python json.load yields a distinct float nan
+			// object per record (dict keys compare by identity for NaN), so
+			// such records NEVER merge — give each a unique key.
+			if x == pyNaNSentinel {
+				return struct{ i int }{unique}
+			}
 			return x
 		case json.Number:
 			if f, err := x.Float64(); err == nil {
+				if math.IsNaN(f) {
+					return struct{ i int }{unique}
+				}
 				return f // Python int/float dict keys compare numerically
 			}
 			return x.String()
@@ -926,6 +936,13 @@ func recordKey(rec *omap, unique int) any {
 				} else {
 					f = 0
 				}
+			}
+			// A NaN map key can be inserted but never looked up in Go, which
+			// turned the final key->record resolution into a nil (a literal
+			// null in the artifact, silently dropping the event). Python
+			// never merges NaN ids; match that with a unique key.
+			if math.IsNaN(f) {
+				return struct{ i int }{unique}
 			}
 			return f
 		}

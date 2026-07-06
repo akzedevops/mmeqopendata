@@ -1,1 +1,36 @@
-{"earthquakes": [{"latitude": "25.9770000", "longitude": "95.3400000", "depth": "76.1000", "mag": "7.00", "magType": "mw", "nst": "", "gap": "", "dmin": "", "rms": "", "net": "is", "id": "iscgem7941", "updated": "2015-02-12T20:52:50.592Z", "location": "", "place": "Myanmar", "country": "MM", "continent": "Asia", "type": "earthquake", "timeAdded": "0", "timestamp": "0", "locationInferred": "1", "state": "", "initialPosition": "", "time_utc": "1970-07-29 10:16:22", "time_mmt": "1970-07-29 16:46:22", "state_region": "Saigang", "nearest_city": "Patun", "place_type": "village", "district": "Hkamti", "township": "Hkamti", "distance_km": 2.4}]}
+{
+  "earthquakes": [
+    {
+      "latitude": 25.977,
+      "longitude": 95.34,
+      "depth": 76.1,
+      "mag": 7.0,
+      "magType": "mw",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": NaN,
+      "net": "is",
+      "id": "iscgem7941",
+      "updated": "2015-02-12T20:52:50.592Z",
+      "location": NaN,
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "1970-07-29 10:16:22",
+      "time_mmt": "1970-07-29 16:46:22",
+      "state_region": "Saigang",
+      "district": "Hkamti",
+      "township": "Hkamti",
+      "nearest_city": "Patun",
+      "place_type": "village",
+      "distance_km": 2.4
+    }
+  ]
+}

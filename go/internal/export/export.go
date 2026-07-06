@@ -341,10 +341,13 @@ func Run(opts Options) error {
 		if err := catalog.WriteMergedCSV(q, yearlyCSV, catalog.DefaultColumns); err != nil {
 			return fmt.Errorf("export: write %s: %w", yearlyCSV, err)
 		}
-		// Python quirk, replicated on purpose: save_to_json(ydf) OVERWRITES the
-		// yearly JSON with only this run's fetched frames for the year (it is not
-		// merged with the file's previous contents).
-		if err := catalog.WriteJSON(q, yearlyJSON); err != nil {
+		// Merge with the file's previous contents (id-keyed, later wins),
+		// exactly like the combined JSON. The old behavior — replicating
+		// Python's save_to_json overwrite — left an active year's JSON
+		// holding only the latest fetch window (earthquakes_2025.json
+		// shipped 98 of 2,469 events; 2026-07-06 audit, finding C5). The
+		// Python pipeline changed to merge in the same commit.
+		if err := catalog.MergeCombinedJSON(yearlyJSON, q, yearlyJSON); err != nil {
 			return fmt.Errorf("export: write %s: %w", yearlyJSON, err)
 		}
 	}
