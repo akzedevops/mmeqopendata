@@ -1,1 +1,36 @@
-{"earthquakes": [{"latitude": "25.2660000", "longitude": "96.5050000", "depth": "20.0000", "mag": "6.10", "magType": "mw", "nst": "", "gap": "", "dmin": "", "rms": "", "net": "is", "id": "iscgem7851", "updated": "2015-02-12T21:02:43.163Z", "location": "", "place": "Myanmar", "country": "MM", "continent": "Asia", "type": "earthquake", "timeAdded": "0", "timestamp": "0", "locationInferred": "1", "state": "", "initialPosition": "", "time_utc": "1971-05-31 05:14:00", "time_mmt": "1971-05-31 11:44:00", "state_region": "Kachin", "nearest_city": "Chaung Wa", "place_type": "village", "district": "Mohnyin", "township": "Mohnyin", "distance_km": 4.8}]}
+{
+  "earthquakes": [
+    {
+      "latitude": 25.266,
+      "longitude": 96.505,
+      "depth": 20.0,
+      "mag": 6.1,
+      "magType": "mw",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": NaN,
+      "net": "is",
+      "id": "iscgem7851",
+      "updated": "2015-02-12T21:02:43.163Z",
+      "location": NaN,
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "1971-05-31 05:14:00",
+      "time_mmt": "1971-05-31 11:44:00",
+      "state_region": "Kachin",
+      "district": "Mohnyin",
+      "township": "Mohnyin",
+      "nearest_city": "Chaung Wa",
+      "place_type": "village",
+      "distance_km": 4.8
+    }
+  ]
+}

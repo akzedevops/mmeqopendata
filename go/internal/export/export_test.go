@@ -201,6 +201,21 @@ func TestRunEndToEnd(t *testing.T) {
 	if err := catalog.WriteMonthlyCSV(seed, combinedCSV, catalog.ColumnsFor(seed)); err != nil {
 		t.Fatal(err)
 	}
+	// Pre-seed the yearly JSON with an event from an earlier fetch window: the
+	// yearly JSON must MERGE (audit C5 — the old overwrite left an active
+	// year's JSON holding only the latest run's frames).
+	yearlyJSON := filepath.Join(dir, "json", "yearly", "earthquakes_2026.json")
+	if err := os.MkdirAll(filepath.Dir(yearlyJSON), 0o755); err != nil {
+		t.Fatal(err)
+	}
+	prior := []catalog.Quake{{
+		ID: "old2026", Time: date(2026, time.January, 10),
+		Latitude: 20.2, Longitude: 95.2, Depth: 15, Mag: 4.2,
+		TimeUTC: "2026-01-10 04:00:00", TimeMMT: "2026-01-10 10:30:00",
+	}}
+	if err := catalog.WriteJSON(prior, yearlyJSON); err != nil {
+		t.Fatal(err)
+	}
 
 	err := Run(Options{
 		BaseURL:   srv.URL,
@@ -238,12 +253,26 @@ func TestRunEndToEnd(t *testing.T) {
 		t.Errorf("July monthly CSV should not exist (validated empty)")
 	}
 
-	// Yearly: merged CSV + overwritten JSON, both with the 3 new events.
+	// Yearly: merged CSV + merged JSON, both with the 3 new events; the JSON
+	// additionally retains the pre-seeded January event.
 	yearly := read("csv/yearly/earthquakes_2026.csv")
 	for _, id := range []string{"m1", "m2", "j1"} {
 		if !strings.Contains(yearly, id) {
 			t.Errorf("yearly CSV missing %s", id)
 		}
+	}
+	var ypayload struct {
+		Earthquakes []map[string]any `json:"earthquakes"`
+	}
+	if err := json.Unmarshal([]byte(read("json/yearly/earthquakes_2026.json")), &ypayload); err != nil {
+		t.Fatalf("yearly JSON: %v", err)
+	}
+	if len(ypayload.Earthquakes) != 4 {
+		t.Errorf("yearly JSON has %d events, want 4 (old2026 preserved + m1,m2,j1)", len(ypayload.Earthquakes))
+	}
+	yjson := read("json/yearly/earthquakes_2026.json")
+	if !strings.Contains(yjson, "old2026") {
+		t.Errorf("yearly JSON lost the pre-existing old2026 event (overwrite instead of merge)")
 	}
 
 	// Combined CSV merges seed + new; combined JSON merges into the (absent) JSON.

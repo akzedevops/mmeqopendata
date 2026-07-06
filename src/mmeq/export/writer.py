@@ -1,5 +1,6 @@
 import os
 import glob
+import re
 import json
 import logging
 import tempfile
@@ -152,6 +153,23 @@ def save_to_json(df: pd.DataFrame, path: str) -> None:
     _atomic_write(path, lambda p: _dump_json(payload, p))
 
 
+def save_merged_json(df: pd.DataFrame, path: str) -> None:
+    """Merge ``df`` into the JSON store at ``path`` ({"earthquakes": [...]})
+    with the combined store's id-keyed, later-wins semantics.
+
+    Used for the yearly JSON. Its previous writer (plain ``save_to_json``)
+    OVERWROTE the file with only the current run's fetch window, so an active
+    year's JSON held roughly one month of data and froze that way at year
+    rollover (earthquakes_2025.json shipped 98 of 2,469 events, with the
+    entire M7.7 sequence absent — 2026-07-06 audit, finding C5).
+    """
+    if df.empty:
+        return
+    existing = load_combined_json(path)
+    merged = merge_combined_json(existing, df.to_dict(orient="records"))
+    save_combined_json(merged, path)
+
+
 def save_combined_json(records: List[dict], path: str) -> None:
     """Atomically write the combined-JSON store ({"earthquakes": records}).
 
@@ -238,4 +256,46 @@ def rebuild_combined(export_dir: Optional[str] = None) -> int:
     payload = {"earthquakes": combined.to_dict(orient="records")}
     _atomic_write(combined_json, lambda p: _dump_json(payload, p))
     logger.info("Rebuilt combined catalog: %d events (CSV + JSON reconciled)", len(combined))
+
+    _rebuild_yearly(export_dir, monthly_sources)
     return len(combined)
+
+
+def _rebuild_yearly(export_dir: str, monthly_sources: List[str]) -> None:
+    """Regenerate every yearly CSV + JSON from the monthly files.
+
+    The yearly artifacts previously sat outside every reconciliation path
+    (rebuild_combined touched only the combined store; tools/backfill.py only
+    the monthlies), so late month-boundary events recovered by a backfill
+    never reached the published yearly files (2026-07-06 audit, finding M1).
+    Same precedence as the combined rebuild: the existing yearly file is
+    concatenated FIRST so a fresher monthly row wins under keep-last dedup
+    while a yearly-only row still survives.
+    """
+    monthly_by_year = {}
+    for src in monthly_sources:
+        m = re.search(r"earthquakes_(\d{4})_\d{2}\.csv$", os.path.basename(src))
+        if m:
+            monthly_by_year.setdefault(int(m.group(1)), []).append(src)
+
+    for year in sorted(monthly_by_year):
+        yearly_csv = os.path.join(export_dir, "csv", "yearly", f"earthquakes_{year}.csv")
+        yearly_json = os.path.join(export_dir, "json", "yearly", f"earthquakes_{year}.json")
+        sources = ([yearly_csv] if os.path.exists(yearly_csv) else []) + monthly_by_year[year]
+        frames = []
+        for src in sources:
+            try:
+                frames.append(pd.read_csv(src, on_bad_lines="skip"))
+            except Exception as e:
+                logger.warning(f"rebuild: skipping unreadable {src}: {e}")
+        if not frames:
+            continue
+        ydf = _dedup_frame(pd.concat(frames, ignore_index=True))
+        if "time_utc" in ydf.columns:
+            ydf = ydf.sort_values("time_utc", kind="stable").reset_index(drop=True)
+        os.makedirs(os.path.dirname(yearly_csv), exist_ok=True)
+        os.makedirs(os.path.dirname(yearly_json), exist_ok=True)
+        _atomic_write(yearly_csv, lambda p, d=ydf: d.to_csv(p, index=False))
+        ypayload = {"earthquakes": ydf.to_dict(orient="records")}
+        _atomic_write(yearly_json, lambda p, d=ypayload: _dump_json(d, p))
+        logger.info("Rebuilt yearly %d: %d events", year, len(ydf))

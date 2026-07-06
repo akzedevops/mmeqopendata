@@ -88,7 +88,7 @@ The 001 bisection tripwire still applies (`MMEQ_API_PAGE_CAP`, default off).
       on the same synthetic input via the repo venv.
 - [x] **I4** — full Go geocoder port (no hybrid needed): 44/44 golden-row parity.
 - [x] **I5 (code)** — `internal/export.Run` (mirrors `cli.py:cmd_export` incl. the
-      yearly-JSON overwrite quirk and relativedelta month stepping), `cmd/mmeq-export`
+      yearly-JSON overwrite quirk and relativedelta month stepping; the overwrite quirk was later FIXED on both sides — 2026-07-06 audit C5, yearly JSON now merges like the yearly CSV), `cmd/mmeq-export`
       CLI, `tools/diff_exports.py` (id-keyed, float-tolerant tree diff),
       `.github/workflows/shadow_go_export.yml` (daily 02:30 UTC full-2026 rebuild via
       both exporters + diff). **Local parity proven** against a seeded local API:

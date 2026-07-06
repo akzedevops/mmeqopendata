@@ -170,3 +170,45 @@ def test_save_combined_json_is_atomic(tmp_path, monkeypatch):
 
     assert load_combined_json(path) == [{"id": "a", "mag": 5.0}], "history preserved"
     assert not any(f.endswith(".tmp") for f in os.listdir(tmp_path)), "temp cleaned up"
+
+
+def test_save_merged_json_accumulates_across_runs(tmp_path):
+    # Audit C5: the yearly JSON was overwritten with only the latest fetch
+    # window (earthquakes_2025.json shipped 98 of 2,469 events). It must merge.
+    from mmeq.export.writer import save_merged_json
+
+    path = str(tmp_path / "earthquakes_2025.json")
+    save_merged_json(_frame(["a", "b"]), path)
+    later = _frame(["b", "c"])
+    later.loc[later["id"] == "b", "mag"] = 5.9
+    save_merged_json(later, path)
+
+    records = load_combined_json(path)
+    ids = [r["id"] for r in records]
+    assert ids == ["a", "b", "c"], "earlier-window events must survive later runs"
+    assert next(r for r in records if r["id"] == "b")["mag"] == 5.9, "revision wins"
+
+
+def test_rebuild_regenerates_yearly_from_monthlies(tmp_path):
+    # Audit M1: yearly artifacts sat outside every reconciliation path, so a
+    # backfilled month-end event never reached the published yearly files.
+    for sub in ("csv/monthly", "csv/yearly", "csv/combined", "json/yearly", "json/combined"):
+        (tmp_path / sub).mkdir(parents=True)
+
+    m1 = _frame(["a", "b"])
+    m2 = _frame(["late"])  # the backfilled straggler month
+    m2["time_utc"] = "2025-08-31 23:59:00"
+    m1.to_csv(tmp_path / "csv/monthly/earthquakes_2025_05.csv", index=False)
+    m2.to_csv(tmp_path / "csv/monthly/earthquakes_2025_08.csv", index=False)
+
+    # Stale shipped yearly: missing "late", holding a yearly-only event.
+    stale = _frame(["a", "b", "yearly_only"])
+    stale.to_csv(tmp_path / "csv/yearly/earthquakes_2025.csv", index=False)
+
+    rebuild_combined(export_dir=str(tmp_path))
+
+    ycsv = pd.read_csv(tmp_path / "csv/yearly/earthquakes_2025.csv")
+    assert sorted(ycsv["id"]) == ["a", "b", "late", "yearly_only"]
+    yjson = load_combined_json(str(tmp_path / "json/yearly/earthquakes_2025.json"))
+    assert sorted(r["id"] for r in yjson) == ["a", "b", "late", "yearly_only"]
+    assert ycsv["time_utc"].is_monotonic_increasing

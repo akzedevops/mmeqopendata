@@ -452,3 +452,57 @@ func TestSanitizePyLiterals(t *testing.T) {
 		t.Errorf("key order lost: %q", got)
 	}
 }
+
+// TestMergeCombinedJSONMixedIDs: a batch where one quake lacks an id must not
+// produce a literal null record — a Go NaN map key can be inserted but never
+// looked up, which resolved the record slot to nil and silently dropped the
+// event (2026-07-06 audit, finding M2a). Python's NaN dict keys compare by
+// identity, so id-less records never merge.
+func TestMergeCombinedJSONMixedIDs(t *testing.T) {
+	quakes := mixedIDQuakes()
+	dir := t.TempDir()
+	out := filepath.Join(dir, "combined.json")
+	if err := MergeCombinedJSON(filepath.Join(dir, "absent.json"), quakes, out); err != nil {
+		t.Fatalf("MergeCombinedJSON: %v", err)
+	}
+	got, err := os.ReadFile(out)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if strings.Contains(string(got), "null") {
+		t.Errorf("merged JSON contains a literal null record:\n%s", got)
+	}
+	for _, tok := range []string{"ev1", "2026-06-02 00:00:00"} {
+		if !strings.Contains(string(got), tok) {
+			t.Errorf("merged JSON missing %s:\n%s", tok, got)
+		}
+	}
+}
+
+// TestMergeCombinedJSONNaNIDsNeverCollapse: existing records with "id": NaN
+// literals decode to a shared sentinel string; they must each survive a merge
+// pass instead of collapsing to one record (audit finding M2b). Python json.load
+// yields a distinct float nan object per record, so they never merge.
+func TestMergeCombinedJSONNaNIDsNeverCollapse(t *testing.T) {
+	dir := t.TempDir()
+	existing := filepath.Join(dir, "existing.json")
+	payload := "{\n  \"earthquakes\": [\n" +
+		"    {\"id\": NaN, \"time_utc\": \"2026-01-01 00:00:00\", \"latitude\": 20.0, \"longitude\": 95.0},\n" +
+		"    {\"id\": NaN, \"time_utc\": \"2026-01-02 00:00:00\", \"latitude\": 21.0, \"longitude\": 96.0}\n" +
+		"  ]\n}"
+	if err := os.WriteFile(existing, []byte(payload), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	out := filepath.Join(dir, "out.json")
+	if err := MergeCombinedJSON(existing, nil, out); err != nil {
+		t.Fatalf("MergeCombinedJSON: %v", err)
+	}
+	got, err := os.ReadFile(out)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if c := strings.Count(string(got), "time_utc"); c != 2 {
+		t.Errorf("expected 2 surviving NaN-id records, got %d:\n%s", c, got)
+	}
+}
+

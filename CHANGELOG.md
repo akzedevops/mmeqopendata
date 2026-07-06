@@ -2,6 +2,25 @@
 
 ## Unreleased
 
+### Data-artifact repairs (2026-07-06 integrity audit, phase 2)
+
+- **Yearly JSON now merges instead of overwriting** (Python `save_merged_json`
+  + Go `MergeCombinedJSON` on the yearly path). Previously each run replaced
+  the yearly JSON with only its own fetch window: the published
+  `earthquakes_2025.json` held 98 of 2,469 events — the entire M7.7 sequence
+  absent — and froze that way at year rollover.
+- **Yearly artifacts joined the rebuild path**: `mmeq export --rebuild` now
+  regenerates every yearly CSV+JSON from the monthly files (same
+  monthly-wins precedence as the combined store), so backfilled events reach
+  the yearly files. One-time repair committed: 2025 JSON 98 → 2,469 records,
+  2026 reconciled, the 10 late month-end events (incl. an M4.4) restored to
+  the yearly CSVs, and all yearly files are now chronologically sorted.
+- **Go `MergeCombinedJSON` NaN-id corruption fixed**: an id-less quake in a
+  mixed batch produced a literal `null` record (Go NaN map keys are
+  insert-only), silently dropping the event, and NaN-id records loaded from an
+  existing file collapsed to one survivor. Both now get unique keys, matching
+  Python's never-merge NaN semantics; regression-tested on both sides.
+
 ### Scientific corrections (2026-07-06 integrity audit, phase 1)
 
 - **Scenario event fixed: 2025 Sagaing, not 1988 Lancang.** The catalog holds

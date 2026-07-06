@@ -19,6 +19,7 @@ from mmeq.export.writer import (
     validate_quake_data,
     save_to_csv,
     save_to_json,
+    save_merged_json,
     load_combined_json,
     merge_combined_json,
     save_combined_json,
@@ -85,7 +86,9 @@ def run_export(workers: int) -> None:
             os.path.join(EXPORT_DIR, "csv/yearly", f"earthquakes_{year}.csv"),
             dedup=True,
         )
-        save_to_json(
+        # Merge (not overwrite): a run only fetches recent windows, and the
+        # yearly JSON must accumulate the whole year like the yearly CSV does.
+        save_merged_json(
             ydf,
             os.path.join(EXPORT_DIR, "json/yearly", f"earthquakes_{year}.json"),
         )
