@@ -134,12 +134,12 @@ I validated the GMPE against the actual Naypyidaw ShakeMap recording — predict
 
 | Grade | Count |
 |---|---|
-| Critical | 45 |
-| High | 134 |
-| Moderate | 61 |
-| Low | 14 |
+| Critical | 44 |
+| High | 116 |
+| Moderate | 45 |
+| Low | 49 |
 
-179 dams (70%) scored Critical or High. (Earlier versions under-counted these because a ground-motion bug floored the PGA of dams beyond ~100 km from the rupture, and until recently the scenario picked the wrong M7.7 — the catalog holds two, and the 1988 Lancang event tie-broke ahead of the 2025 Sagaing mainshock — see CHANGELOG.)
+160 dams (63%) scored Critical or High. (This number has moved as two ground-motion bugs were fixed: an earlier GMPE bug floored the PGA of distant dams and *under*-counted risk, while the scenario "rupture distance" was mistakenly measured to a global plate-boundary file — correcting it to the actual 2025 rupture geometry lowered the scenario PGA of dams near non-ruptured fault sections. The scenario event also silently used the 1988 Lancang M7.7 until the max-magnitude tie was broken by recency. See CHANGELOG.)
 
 ## How the Seismology Works
 
@@ -151,13 +151,13 @@ The catalog has 9,390 events. Most are small (mean M 3.2), but there are 6 event
 
 **Aftershock forecasting:** Modified Omori law fitted by maximum likelihood (Ogata 1983) to the 2025 M7.7 Sagaing sequence gives p ≈ 0.77 with c ≈ 16 h — a slow decay, partly reflecting early-sequence catalog incompleteness after the mainshock — forecasting expected M≥3 aftershocks at 7, 30, and 90 day windows. (Earlier releases quoted p = 0.93 from a biased least-squares fit that had also selected the 1988 Lancang M7.7 as the mainshock.)
 
-**Coulomb stress transfer:** Using the USGS finite fault model (530 slip patches, 0–7 m variable slip), I computed which dams are in stress-triggered zones (34 dams, 13%) vs stress shadows (163 dams, 64%).
+**Coulomb stress transfer:** Using the USGS finite fault model (530 slip patches, 0–7 m variable slip), I computed which dams are in stress-triggered zones (16 dams, 6%) vs stress shadows (72 dams, 28%), at the standard ±0.01 MPa (0.1 bar) threshold. (An earlier version used a stress kernel that violated point-source symmetry and a ±0.001 MPa threshold inside tidal-stress noise, reporting 34/163 — see CHANGELOG.)
 
 ## Probabilistic Hazard
 
 Beyond single-event PGA, each dam gets a full hazard curve using the Cornell-McGuire PSHA approach — integrating the Gutenberg-Richter magnitude distribution with the GMPE over all possible magnitudes (M5–8).
 
-The 475-year PGA (10% chance of exceedance in 50 years) ranges from ~0.01g to ~1.9g across the dam portfolio, with a mean of ~0.31g; 36 dams exceed 0.5g at this return period. The rates come from the Gardner-Knopoff-declustered catalog (b ≈ 1.05) so the Poisson assumption holds and the 2025 aftershock sequence doesn't inflate the hazard — the implied return period for an M6 anywhere in the corridor is ~2 years.
+The 475-year PGA (10% chance of exceedance in 50 years) ranges from ~0.002g to ~0.55g across the dam portfolio, with a mean of ~0.14g; 170 dams exceed 0.1g and 42 exceed 0.2g at this return period. The rates come from a Frankel (1995)-style smoothed-seismicity source model built from the Gardner-Knopoff-declustered catalog (b ≈ 1.05), with hazard integrated over the source-to-site distance distribution. **These are a catalog-only lower bound**: with no slip-rate data in the committed fault file, the model has no dedicated fault-source term, so it reports lower on-fault PGA than fault-source studies such as Thant et al. (2023). (An earlier version collapsed the whole regional rate onto each dam's single nearest-fault distance, inflating near-fault 475-yr PGA to ~1.9g — see CHANGELOG.)
 
 ## Building Exposure from OpenStreetMap
 

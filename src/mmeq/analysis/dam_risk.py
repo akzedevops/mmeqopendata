@@ -89,6 +89,53 @@ def _load_fault_segments() -> list:
     return segments
 
 
+def _load_rupture_trace() -> list:
+    """Segments of the 2025 M7.7 rupture outline (USGS ShakeMap rupture.json).
+
+    Returns [((lon1, lat1), (lon2, lat2)), ...] in the same format as
+    _load_fault_segments, or [] when the file is missing. Ring coordinates may
+    carry a depth third element, which is dropped — the surface projection is
+    an adequate Rrup for a near-vertical strike-slip rupture. This is the
+    distance basis for the deterministic 2025 scenario; the nearest-mapped-
+    fault distance previously used came from a GLOBAL plate-boundary file and
+    assigned near-fault M7.7 PGA to dams ~435 km from the actual rupture
+    (2026-07-06 audit, finding C2 / spec 006).
+    """
+    from mmeq import config
+
+    path = os.path.join(config.DATA_DIR, "shakemap", "rupture.json")
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as e:
+        logger.warning("Could not load rupture geometry %s: %s", path, e)
+        return []
+
+    segments = []
+
+    def add_line(coords):
+        pts = [(c[0], c[1]) for c in coords]
+        for i in range(len(pts) - 1):
+            segments.append((pts[i], pts[i + 1]))
+
+    for feat in data.get("features", []):
+        geom = feat.get("geometry", {})
+        gtype = geom.get("type")
+        coords = geom.get("coordinates", [])
+        if gtype == "LineString":
+            add_line(coords)
+        elif gtype in ("MultiLineString", "Polygon"):
+            for line in coords:
+                add_line(line)
+        elif gtype == "MultiPolygon":
+            for poly in coords:
+                for ring in poly:
+                    add_line(ring)
+    return segments
+
+
 def load_dams_df(path: Optional[str] = None) -> Optional[pd.DataFrame]:
     """Load the Myanmar dams GeoJSON into a DataFrame, or None if not found.
 
@@ -361,49 +408,113 @@ def _load_vs30() -> dict:
 
 
 def compute_hazard_curve(
-    rjb_km: float,
+    site_lat: float,
+    site_lon: float,
     vs30: float,
+    declustered_df: pd.DataFrame,
     b_val: float,
-    a_val: float,
     mc: float,
-    catalog_years: float = 56.0,
+    catalog_years: float,
     pga_levels: np.ndarray = None,
     min_mag: float = 5.0,
     max_mag: float = 8.0,
     delta_m: float = 0.1,
     sigma_ln: float = GMPE_SIGMA_LN,
+    cell_deg: float = 0.5,
+    smooth_sigma_km: float = 50.0,
 ) -> pd.DataFrame:
     """
-    Compute a seismic hazard curve (PGA vs annual exceedance probability)
-    at a given site using the Cornell-McGuire PSHA approach.
+    Cornell-McGuire hazard curve (PGA vs annual exceedance rate) at a site,
+    with a Frankel (1995)-style smoothed-seismicity source model.
 
-    a_val is the catalog-level a-value; it is converted to annual rate internally.
-    sigma_ln defaults to the ASK08 aleatory std-dev from config (GMPE_SIGMA_LN).
+    The previous implementation integrated over magnitude only, applying the
+    ENTIRE regional catalog rate at the site's single nearest-fault distance —
+    a dam 1 km from any fault trace was assigned the recurrence of every M5-8
+    event in the ~2,000x950 km catalog box at 1 km, inflating near-fault
+    475-yr PGA to ~2.1-2.5 g vs ~1.0 g on-fault in the dedicated Myanmar PSHA
+    literature (Thant et al. 2023, Geoscience Letters). (2026-07-06 audit,
+    finding C3 / spec 006.)
+
+    Source model: declustered events >= mc are binned on a cell_deg grid;
+    per-cell counts are Gaussian-kernel smoothed (sigma = smooth_sigma_km)
+    with the TOTAL rate conserved; each cell's annual rate is extrapolated
+    over magnitude with a Gutenberg-Richter slope b anchored at mc, and the
+    hazard integral sums rate(cell, m-bin) * P(PGA > x | m, r_cell->site)
+    over cells and magnitude bins. Cell-to-site distances are floored at 5 km.
     """
     from scipy.stats import norm
 
     if pga_levels is None:
         pga_levels = np.logspace(-3, 0, 50)
 
-    a_annual = a_val - math.log10(catalog_years)
+    ev = declustered_df.dropna(subset=["latitude", "longitude", "mag"])
+    ev = ev[ev["mag"] >= mc]
+    if ev.empty or catalog_years <= 0:
+        z = np.zeros(len(pga_levels))
+        return pd.DataFrame({
+            "pga_g": pga_levels, "annual_rate": z, "annual_prob": z,
+            "prob_50yr": z, "return_period_yr": np.full(len(pga_levels), np.inf),
+        })
 
-    mags = np.arange(min_mag, max_mag + delta_m, delta_m)
+    # --- gridded, kernel-smoothed annual rates (total conserved) ---
+    lat0, lat1 = ev["latitude"].min(), ev["latitude"].max()
+    lon0, lon1 = ev["longitude"].min(), ev["longitude"].max()
+    lat_edges = np.arange(lat0 - cell_deg, lat1 + 2 * cell_deg, cell_deg)
+    lon_edges = np.arange(lon0 - cell_deg, lon1 + 2 * cell_deg, cell_deg)
+    counts, _, _ = np.histogram2d(
+        ev["latitude"], ev["longitude"], bins=[lat_edges, lon_edges]
+    )
+    clat = (lat_edges[:-1] + lat_edges[1:]) / 2
+    clon = (lon_edges[:-1] + lon_edges[1:]) / 2
+    grid_lat, grid_lon = np.meshgrid(clat, clon, indexing="ij")
+    cell_lat = grid_lat.ravel()
+    cell_lon = grid_lon.ravel()
+    cell_n = counts.ravel()
+
+    occupied = cell_n > 0
+    src_lat, src_lon, src_n = cell_lat[occupied], cell_lon[occupied], cell_n[occupied]
+    # pairwise source-cell -> all-cell distances (km), cos-lat corrected
+    mean_coslat = math.cos(math.radians(float(np.mean(cell_lat))))
+    dlat = (cell_lat[None, :] - src_lat[:, None]) * 111.0
+    dlon = (cell_lon[None, :] - src_lon[:, None]) * 111.0 * mean_coslat
+    kern = np.exp(-(dlat ** 2 + dlon ** 2) / (2.0 * smooth_sigma_km ** 2))
+    kern /= kern.sum(axis=1, keepdims=True)  # each source count redistributes to 1
+    smoothed = (src_n[:, None] * kern).sum(axis=0)
+    # conservation: smoothed.sum() == src_n.sum() by construction
+    annual_rate_cell = smoothed / catalog_years  # events >= mc per year per cell
+
+    # --- site distances, aggregated into log-spaced distance bins ---
+    site_coslat = math.cos(math.radians(site_lat))
+    d_km = np.sqrt(
+        ((cell_lat - site_lat) * 111.0) ** 2
+        + ((cell_lon - site_lon) * 111.0 * site_coslat) ** 2
+    )
+    d_km = np.maximum(d_km, 5.0)
+    r_edges = np.logspace(np.log10(5.0), np.log10(max(d_km.max() * 1.01, 10.0)), 41)
+    r_idx = np.clip(np.digitize(d_km, r_edges) - 1, 0, len(r_edges) - 2)
+    r_centers = np.sqrt(r_edges[:-1] * r_edges[1:])
+    rate_by_r = np.zeros(len(r_centers))
+    np.add.at(rate_by_r, r_idx, annual_rate_cell)
+
+    # --- Gutenberg-Richter magnitude bins anchored at mc ---
+    mags = np.arange(max(min_mag, mc), max_mag + delta_m, delta_m)
+    frac_bin = 10.0 ** (-b_val * (mags - mc)) - 10.0 ** (-b_val * (mags + delta_m - mc))
+    frac_bin = np.maximum(frac_bin, 0.0)
+
+    log_pga_targets = np.log(pga_levels)
     rates = np.zeros(len(pga_levels))
-
-    for m in mags:
-        n_per_year = 10 ** (a_annual - b_val * m) - 10 ** (a_annual - b_val * (m + delta_m))
-        n_per_year = max(n_per_year, 0)
-
-        pga_median = estimate_pga_ask08(mag=m, rrup_km=rjb_km, vs30=vs30)
-
-        for i, pga_target in enumerate(pga_levels):
-            if pga_median > 0:
-                epsilon = (math.log(pga_target) - math.log(pga_median)) / sigma_ln
-                p_exceed = 1.0 - norm.cdf(epsilon)
-                rates[i] += n_per_year * p_exceed
+    for ri, r in enumerate(r_centers):
+        lam_r = rate_by_r[ri]
+        if lam_r <= 0:
+            continue
+        for m, frac in zip(mags, frac_bin):
+            pga_median = estimate_pga_ask08(mag=float(m), rrup_km=float(r), vs30=vs30)
+            if pga_median <= 0:
+                continue
+            eps = (log_pga_targets - math.log(pga_median)) / sigma_ln
+            rates += lam_r * frac * norm.sf(eps)
 
     prob_50yr = 1.0 - np.exp(-rates * 50)
-
     return pd.DataFrame({
         "pga_g": pga_levels,
         "annual_rate": rates,
@@ -452,6 +563,12 @@ def sensitivity_analysis(
         return pd.DataFrame()
 
     fault_segments = _load_fault_segments()
+    rupture_segments = _load_rupture_trace()
+    if not rupture_segments:
+        logger.warning(
+            "2025 rupture geometry unavailable — scenario PGA falls back to "
+            "nearest-fault/epicentral distance (see spec 006)"
+        )
     major_eq = select_scenario_event(eq_df)
     major_mag = major_eq["mag"]
     major_depth = major_eq["depth"]
@@ -470,7 +587,10 @@ def sensitivity_analysis(
             dlon = (dam["longitude"] - major_lon) * math.cos(math.radians(major_lat))
             dist_to_major = math.sqrt(dlat ** 2 + dlon ** 2) * 111.0
             dist_fault = distance_to_nearest_fault(dam["latitude"], dam["longitude"], fault_segments) if fault_segments else 50.0
-            rjb_km = dist_fault if (not math.isnan(dist_fault) and dist_fault > 0) else dist_to_major
+            if rupture_segments:
+                rjb_km = distance_to_nearest_fault(dam["latitude"], dam["longitude"], rupture_segments)
+            else:
+                rjb_km = dist_fault if (not math.isnan(dist_fault) and dist_fault > 0) else dist_to_major
             pga = estimate_pga(major_mag, major_depth, rjb_km)
 
             seismic_score, fault_score, prox_score, exposure_score = _component_scores(
@@ -507,6 +627,12 @@ def dam_risk_scores(
         return pd.DataFrame()
 
     fault_segments = _load_fault_segments()
+    rupture_segments = _load_rupture_trace()
+    if not rupture_segments:
+        logger.warning(
+            "2025 rupture geometry unavailable — scenario PGA falls back to "
+            "nearest-fault/epicentral distance (see spec 006)"
+        )
     vs30_map = _load_vs30()
     major_eq = select_scenario_event(eq_df)
     major_mag = major_eq["mag"]
@@ -526,7 +652,10 @@ def dam_risk_scores(
 
         dist_fault = distance_to_nearest_fault(dam["latitude"], dam["longitude"], fault_segments) if fault_segments else float("nan")
 
-        rjb_km = dist_fault if (not math.isnan(dist_fault) and dist_fault > 0) else dist_to_major
+        if rupture_segments:
+            rjb_km = distance_to_nearest_fault(dam["latitude"], dam["longitude"], rupture_segments)
+        else:
+            rjb_km = dist_fault if (not math.isnan(dist_fault) and dist_fault > 0) else dist_to_major
 
         vs30 = vs30_map.get(f"{dam['latitude']:.4f},{dam['longitude']:.4f}", 760.0)
         pga = estimate_pga(major_mag, major_depth, rjb_km, vs30=vs30)
@@ -564,6 +693,7 @@ def dam_risk_scores(
             "capacity_mw": c,
             "storage_mcm": s,
             "dist_to_major_km": round(dist_to_major, 1),
+            "dist_to_rupture_km": round(rjb_km, 1),
             "dist_to_fault_km": round(dist_fault, 1) if not math.isnan(dist_fault) else None,
             "vs30": round(vs30),
             "pga_g": round(pga, 4),
@@ -599,6 +729,12 @@ def monte_carlo_pga(
         return pd.DataFrame()
 
     fault_segments = _load_fault_segments()
+    rupture_segments = _load_rupture_trace()
+    if not rupture_segments:
+        logger.warning(
+            "2025 rupture geometry unavailable — scenario PGA falls back to "
+            "nearest-fault/epicentral distance (see spec 006)"
+        )
     vs30_map = _load_vs30()
     major_eq = select_scenario_event(eq_df)
     major_mag = major_eq["mag"]
@@ -616,7 +752,10 @@ def monte_carlo_pga(
         dist_fault = distance_to_nearest_fault(
             dam["latitude"], dam["longitude"], fault_segments
         ) if fault_segments else float("nan")
-        rjb_km = dist_fault if (not math.isnan(dist_fault) and dist_fault > 0) else dist_to_major
+        if rupture_segments:
+            rjb_km = distance_to_nearest_fault(dam["latitude"], dam["longitude"], rupture_segments)
+        else:
+            rjb_km = dist_fault if (not math.isnan(dist_fault) and dist_fault > 0) else dist_to_major
         vs30 = vs30_map.get(f"{dam['latitude']:.4f},{dam['longitude']:.4f}", 760.0)
 
         ln_pga_median = math.log(estimate_pga(major_mag, major_depth, rjb_km, vs30=vs30))
