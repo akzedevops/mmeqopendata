@@ -33,3 +33,28 @@ def test_first_hour_aftershocks_are_used():
 def test_too_few_events_returns_sentinel():
     catalog, t0 = _sequence([2.0, 5.0])  # only 2 aftershocks
     assert omori_params(t0, catalog, min_mag=3.0) == (0.0, 1.0, 0.0)
+
+
+def test_mle_recovers_synthetic_omori_parameters():
+    # Simulate an inhomogeneous Poisson process with known (K, c, p) by
+    # inverting the cumulative intensity, then require the MLE to recover p
+    # within 0.1 — the binned least-squares fit this replaced was off by
+    # 0.2-0.4 (audit finding, Ogata 1983).
+    K_true, c_true, p_true = 100.0, 2.0, 1.1
+    T = 30 * 24.0
+    rng = np.random.default_rng(42)
+
+    def cum(t):
+        return K_true * ((t + c_true) ** (1 - p_true) - c_true ** (1 - p_true)) / (1 - p_true)
+
+    def inv(y):
+        return (y * (1 - p_true) / K_true + c_true ** (1 - p_true)) ** (1 / (1 - p_true)) - c_true
+
+    n = rng.poisson(cum(T))
+    times_h = np.sort(inv(rng.uniform(0, cum(T), n)))
+    catalog, t0 = _sequence(times_h[times_h > 0])
+
+    K, c, p = omori_params(t0, catalog, window_days=30, min_mag=3.0)
+    assert abs(p - p_true) < 0.1
+    assert abs(c - c_true) < 1.5
+    assert 0.5 * K_true < K < 2.0 * K_true

@@ -145,3 +145,66 @@ class TestGardnerKnopoffWindows:
         })
         result = decluster_catalog(df, window_days=30.0, distance_km=50.0)
         assert len(result) == 2
+
+
+class TestSelectScenarioEvent:
+    """Regression: the catalog holds two M7.7s (1988 Lancang, 2025 Sagaing);
+    tie-break must pick the most recent, not the first row."""
+
+    @pytest.fixture
+    def two_m77_catalog(self):
+        return pd.DataFrame({
+            "id": ["us1988lancang", "mid1", "us2025sagaing"],
+            "time_utc": ["1988-11-06 13:03:19", "2000-01-01 00:00:00", "2025-03-28 06:20:52"],
+            "latitude": [22.789, 20.0, 21.996],
+            "longitude": [99.611, 96.0, 95.926],
+            "depth": [17.6, 10.0, 10.0],
+            "mag": [7.7, 5.0, 7.7],
+        })
+
+    def test_tie_breaks_by_recency(self, two_m77_catalog):
+        from mmeq.analysis.seismology import select_scenario_event
+        ev = select_scenario_event(two_m77_catalog)
+        assert ev["id"] == "us2025sagaing"
+        assert ev["latitude"] == pytest.approx(21.996)
+
+    def test_tie_break_independent_of_row_order(self, two_m77_catalog):
+        from mmeq.analysis.seismology import select_scenario_event
+        shuffled = two_m77_catalog.iloc[[2, 0, 1]].reset_index(drop=True)
+        assert select_scenario_event(shuffled)["id"] == "us2025sagaing"
+
+    def test_single_max_unaffected(self, two_m77_catalog):
+        from mmeq.analysis.seismology import select_scenario_event
+        df = two_m77_catalog.copy()
+        df.loc[df["id"] == "us2025sagaing", "mag"] = 7.6
+        assert select_scenario_event(df)["id"] == "us1988lancang"
+
+    def test_env_pin_overrides(self, two_m77_catalog, monkeypatch):
+        from mmeq import config
+        from mmeq.analysis.seismology import select_scenario_event
+        monkeypatch.setattr(config, "SCENARIO_EVENT_ID", "mid1")
+        assert select_scenario_event(two_m77_catalog)["id"] == "mid1"
+
+    def test_env_pin_missing_falls_back(self, two_m77_catalog, monkeypatch):
+        from mmeq import config
+        from mmeq.analysis.seismology import select_scenario_event
+        monkeypatch.setattr(config, "SCENARIO_EVENT_ID", "nonexistent")
+        assert select_scenario_event(two_m77_catalog)["id"] == "us2025sagaing"
+
+    def test_omori_default_mainshock_uses_recent_tie(self, two_m77_catalog):
+        # cli.cmd_report hands the forecast a parsed-datetime catalog
+        from mmeq.analysis.aftershock import modified_omori_forecast
+        rng = np.random.default_rng(7)
+        ms = pd.Timestamp("2025-03-28 06:20:52")
+        hours = np.sort(rng.uniform(0.2, 30 * 24, 60))
+        after = pd.DataFrame({
+            "id": [f"as{i}" for i in range(60)],
+            "time_utc": [ms + pd.Timedelta(hours=h) for h in hours],
+            "latitude": 21.9, "longitude": 95.9, "depth": 10.0,
+            "mag": rng.uniform(3.0, 5.0, 60),
+        })
+        df = pd.concat([two_m77_catalog, after], ignore_index=True)
+        df["time_utc"] = pd.to_datetime(df["time_utc"])
+        _, params = modified_omori_forecast(df, min_mag=3.0)
+        assert params["mainshock_time"].startswith("2025-03-28")
+        assert params["mainshock_lat"] == pytest.approx(21.996)

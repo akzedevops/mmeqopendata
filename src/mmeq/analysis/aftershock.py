@@ -5,6 +5,8 @@ from typing import Tuple
 import numpy as np
 import pandas as pd
 
+from mmeq.analysis.seismology import select_scenario_event
+
 logger = logging.getLogger(__name__)
 
 
@@ -30,33 +32,53 @@ def omori_params(
     if len(dt_hours) < 5:
         return 0.0, 1.0, 0.0
 
-    # Log-spaced bins spanning the full observed range. The first bin edge must
-    # start at the earliest aftershock (often minutes after the mainshock), not
-    # a hardcoded t=1 h — Omori decay peaks early, and np.histogram silently
-    # drops everything below the lowest edge.
-    t_min = max(dt_hours.min(), 0.01)
-    t_max = max(dt_hours.max(), t_min * 10)
-    bins = np.logspace(np.log10(t_min), np.log10(t_max), 20)
-    counts, edges = np.histogram(dt_hours, bins=bins)
-    centers = np.sqrt(edges[:-1] * edges[1:])
+    # Maximum-likelihood fit of the modified Omori law rate(t) = K/(t+c)^p on
+    # the exact event times (Ogata 1983). The previous least-squares fit on
+    # log-binned counts is provably biased (underestimates p by 0.2-0.4 and K
+    # severalfold on synthetic catalogs) and hardcoded c.
+    #
+    # For fixed (c, p) the K that maximizes the likelihood over (0, T] is
+    # K_hat = N / A(c, p) with A = ((T+c)^(1-p) - c^(1-p)) / (1-p)
+    # (A = ln((T+c)/c) at p=1), giving the profile negative log-likelihood
+    # -(N ln(N/A) - p * sum(ln(t_i + c)) - N).
+    from scipy.optimize import minimize
 
-    mask = counts > 0
-    if mask.sum() < 3:
+    t_obs = np.sort(dt_hours)
+    T = window_days * 24.0
+    n = len(t_obs)
+
+    def _integral(c: float, p: float) -> float:
+        if abs(p - 1.0) < 1e-9:
+            return math.log((T + c) / c)
+        return ((T + c) ** (1.0 - p) - c ** (1.0 - p)) / (1.0 - p)
+
+    def _neg_loglik(x) -> float:
+        log_c, p = x
+        c = math.exp(log_c)
+        a = _integral(c, p)
+        if not np.isfinite(a) or a <= 0:
+            return 1e12
+        return -(n * math.log(n / a) - p * np.log(t_obs + c).sum() - n)
+
+    bounds = [(math.log(1e-3), math.log(1e3)), (0.2, 3.0)]
+    best = None
+    for c0 in (0.1, 1.0, 10.0):
+        for p0 in (0.8, 1.1, 1.5):
+            res = minimize(_neg_loglik, x0=[math.log(c0), p0],
+                           method="L-BFGS-B", bounds=bounds)
+            if res.success and (best is None or res.fun < best.fun):
+                best = res
+    if best is None:
+        logger.warning("Omori MLE did not converge")
         return 0.0, 1.0, 0.0
 
-    log_centers = np.log10(centers[mask])
-    log_rates = np.log10(counts[mask] / np.diff(edges)[mask])
+    c_param = math.exp(best.x[0])
+    p = float(best.x[1])
+    K = n / _integral(c_param, p)
+    if p <= bounds[1][0] + 1e-6 or p >= bounds[1][1] - 1e-6:
+        logger.warning("Omori p=%.2f sits at an optimizer bound — fit is suspect", p)
 
-    # rate(t) = K / (t + c)^p  ->  log10(rate) ≈ log10(K) - p*log10(t) for t >> c.
-    # Slope gives p; intercept gives K (events/hour at t=1 h), which uses the
-    # whole fit rather than a single bin's raw count.
-    coeffs = np.polyfit(log_centers, log_rates, 1)
-    p = max(0.5, min(2.0, -coeffs[0]))
-    K = 10 ** coeffs[1]
-    c_param = 0.1  # hours; typical Omori offset, small vs the fit window
-
-    total_aftershocks = len(aftershocks)
-    logger.info(f"Omori params: K={K:.1f}, c={c_param:.2f}h, p={p:.2f}, N={total_aftershocks}")
+    logger.info(f"Omori MLE params: K={K:.1f}, c={c_param:.2f}h, p={p:.2f}, N={n}")
     return K, c_param, p
 
 
@@ -91,7 +113,10 @@ def modified_omori_forecast(
     min_mag: float = 3.0,
 ) -> Tuple[pd.DataFrame, dict]:
     if mainshock_time is None:
-        mainshock = catalog.loc[catalog["mag"].idxmax()]
+        # Max-magnitude event with ties broken by recency (the catalog holds
+        # two M7.7s; a bare idxmax silently fits the 1988 Lancang event
+        # instead of the 2025 Sagaing mainshock).
+        mainshock = select_scenario_event(catalog)
         mainshock_time = mainshock["time_utc"]
         if isinstance(mainshock_time, str):
             mainshock_time = pd.Timestamp(mainshock_time)
