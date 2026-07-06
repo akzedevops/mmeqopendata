@@ -71,10 +71,25 @@ def _component_scores(pga: float, dist_fault: float, dist_to_major: float, dam) 
 
 
 def _load_fault_segments() -> list:
-    faults_path = os.path.join(os.getcwd(), "fault_lines.json")
-    if not os.path.exists(faults_path):
+    from mmeq import config
+
+    # Resolve fault_lines.json via config (env override) then repo-root
+    # candidates, not a bare cwd path. Running `mmeq report` from any other
+    # directory previously found nothing and silently dropped fault distances,
+    # degrading rjb to epicentral distance with no log line (2026-07-06 audit).
+    candidates = [config.FAULT_LINES_PATH] if config.FAULT_LINES_PATH else []
+    candidates += [
+        os.path.join(os.getcwd(), "fault_lines.json"),
+        os.path.join(config._REPO_ROOT, "fault_lines.json"),
+    ]
+    faults_path = next((p for p in candidates if os.path.exists(os.path.normpath(p))), None)
+    if faults_path is None:
+        logger.warning(
+            "fault_lines.json not found (looked in %s); fault-distance screening "
+            "component will be unavailable", candidates,
+        )
         return []
-    with open(faults_path, encoding="utf-8") as f:
+    with open(os.path.normpath(faults_path), encoding="utf-8") as f:
         data = json.load(f)
     segments = []
     for feat in data.get("features", []):
@@ -309,6 +324,18 @@ def estimate_pga_ask08(
     # ------------------------------------------------------------------
     f_hw = 0.0
     if rx_km > 0 and dip < 90.0:
+        # The hanging-wall block below is a SIMPLIFIED approximation and does
+        # NOT reproduce AS08's f4 tapers (verified wrong by up to ~2.9x vs the
+        # OpenQuake reference for dipping ruptures). It is dormant in this
+        # project — every production call uses dip=90/rx=-1, so f_hw stays 0 —
+        # but warn loudly if it is ever exercised so a future reverse/thrust
+        # scenario cannot silently trust it (2026-07-06 audit).
+        logger.warning(
+            "ASK08 hanging-wall term invoked (dip=%.1f, rx=%.1f km) but the f4 "
+            "taper here is a simplified approximation, not the AS08 form — do "
+            "not trust dipping-fault PGA without implementing Eq. 8-12.",
+            dip, rx_km,
+        )
         Fhw = 1.0
         # T1: distance taper
         if rjb < 30.0:
@@ -607,11 +634,30 @@ def sensitivity_analysis(
             "2025 rupture geometry unavailable — scenario PGA falls back to "
             "nearest-fault/epicentral distance (see spec 006)"
         )
+    vs30_map = _load_vs30()
     major_eq = select_scenario_event(eq_df)
     major_mag = major_eq["mag"]
     major_depth = major_eq["depth"]
     major_lat = major_eq["latitude"]
     major_lon = major_eq["longitude"]
+
+    # The four component scores do not depend on the sampled weights, so compute
+    # them ONCE per dam (weights only recombine them below). This also fixes the
+    # Vs30 basis: the scores must use the same site-specific Vs30 as
+    # dam_risk_scores, not the reference-rock 760 default (2026-07-06 audit).
+    per_dam_scores = []
+    for __, dam in dams_df.iterrows():
+        dlat = dam["latitude"] - major_lat
+        dlon = (dam["longitude"] - major_lon) * math.cos(math.radians(major_lat))
+        dist_to_major = math.sqrt(dlat ** 2 + dlon ** 2) * 111.0
+        dist_fault = distance_to_nearest_fault(dam["latitude"], dam["longitude"], fault_segments) if fault_segments else float("nan")
+        if rupture_segments:
+            rjb_km = distance_to_nearest_fault(dam["latitude"], dam["longitude"], rupture_segments)
+        else:
+            rjb_km = dist_fault if (not math.isnan(dist_fault) and dist_fault > 0) else dist_to_major
+        vs30 = vs30_map.get(f"{dam['latitude']:.4f},{dam['longitude']:.4f}", 760.0)
+        pga = estimate_pga(major_mag, major_depth, rjb_km, vs30=vs30)
+        per_dam_scores.append(_component_scores(pga, dist_fault, dist_to_major, dam))
 
     rng = np.random.RandomState(42)
     results = []
@@ -620,21 +666,7 @@ def sensitivity_analysis(
         w_seismic, w_fault, w_prox, w_exp = w
 
         counts = {"Critical": 0, "High": 0, "Moderate": 0, "Low": 0}
-        for __, dam in dams_df.iterrows():
-            dlat = dam["latitude"] - major_lat
-            dlon = (dam["longitude"] - major_lon) * math.cos(math.radians(major_lat))
-            dist_to_major = math.sqrt(dlat ** 2 + dlon ** 2) * 111.0
-            dist_fault = distance_to_nearest_fault(dam["latitude"], dam["longitude"], fault_segments) if fault_segments else 50.0
-            if rupture_segments:
-                rjb_km = distance_to_nearest_fault(dam["latitude"], dam["longitude"], rupture_segments)
-            else:
-                rjb_km = dist_fault if (not math.isnan(dist_fault) and dist_fault > 0) else dist_to_major
-            pga = estimate_pga(major_mag, major_depth, rjb_km)
-
-            seismic_score, fault_score, prox_score, exposure_score = _component_scores(
-                pga, dist_fault, dist_to_major, dam
-            )
-
+        for seismic_score, fault_score, prox_score, exposure_score in per_dam_scores:
             composite = seismic_score * w_seismic + fault_score * w_fault + prox_score * w_prox + exposure_score * w_exp
             counts[_grade(composite)] += 1
 
