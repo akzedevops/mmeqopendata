@@ -1,0 +1,38 @@
+{
+  "earthquakes": [
+    {
+      "latitude": 21.839,
+      "longitude": 94.145,
+      "depth": 69.7,
+      "mag": 5.21,
+      "magType": "mw",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": NaN,
+      "net": "iscgem",
+      "id": "iscgem791105",
+      "updated": "2022-04-26T21:30:30.675Z",
+      "location": null,
+      "place": "104 km SSE of Hakha, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": null,
+      "initialPosition": null,
+      "time_utc": "1970-10-14 16:51:39",
+      "time_mmt": "1970-10-14 23:21:39",
+      "state_region": "Magway",
+      "district": "Gangaw",
+      "township": "Tilin",
+      "nearest_city": "Kyar U Yin",
+      "place_type": "village",
+      "distance_km": 1.4,
+      "shakemapURL": null,
+      "shakemapLastUpdated": null
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 [![Daily Fetch](https://github.com/akzedevops/mmeqopendata/actions/workflows/daily_data_fetch.yml/badge.svg)](https://github.com/akzedevops/mmeqopendata/actions/workflows/daily_data_fetch.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-green.svg)](https://python.org)
-[![Events](https://img.shields.io/badge/Earthquakes-9%2C518-orange.svg)](https://akzedevops.github.io/mmeqopendata/)
+[![Events](https://img.shields.io/badge/Earthquakes-9%2C679-orange.svg)](https://akzedevops.github.io/mmeqopendata/)
 
 A hobby project for collecting, analyzing, and visualizing earthquake data in Myanmar. Built on the [Myanmar Earthquake API](https://mmeq.akze.net), covering records from 1950 to present.
 
@@ -143,13 +143,13 @@ I validated the GMPE against the actual Naypyidaw ShakeMap recording — predict
 
 ## How the Seismology Works
 
-The catalog has 9,518 events. Most are small (mean M 3.2), but there are 6 events ≥ M7.0 and 367 ≥ M5.0.
+The catalog has 9,679 events. Most are small (mean M 3.2), but there are 6 events ≥ M7.0 and 393 ≥ M5.0.
 
-**2013–2015 backfill:** the upstream source had an ~18-month ingestion hole (2013-09 through 2015-02; all of 2014 was empty) that dropped ~150 real M≥4 events USGS had recorded. This window was backfilled from USGS FDSN — M≥4.0, epicenter inside a Myanmar ADM1 polygon, 98 events, pulled 2026-07-07 — reproducible via `tools/backfill_usgs.py` (see spec 007 / CHANGELOG for the exact query). The catalog is otherwise a multi-network union deduplicated by event id only, so a few cross-network near-duplicates (~3 of 9,518) persist.
+**USGS completeness backfill:** the upstream API is a multi-network union (62% Thai-network ids, 22% USGS, …) with gaps — most notably an ~18-month hole (2013-09…2015-02, all of 2014 empty). Missing events were backfilled from USGS FDSN (M≥4.0, epicenter inside a Myanmar ADM1 polygon), **spatio-temporally deduplicated** against the existing catalog so no cross-network duplicate is re-injected: 98 events for the 2014 window (spec 007) + 160 more across 1970–2019 (spec 008), pulled 2026-07-07, reproducible via `tools/backfill_usgs.py`. ~10 pre-existing cross-network near-duplicate pairs remain in the union. **Completeness caveat:** because the backfill stops at 2019, the catalog is more uniformly complete at M≥4 for 1970–2019 than for 2020–2025 (still the raw API), so time-resolved rate / temporal-b analysis should treat the 2019/2020 boundary as a coverage change, not a seismicity change. The exact backfilled event ids are frozen in `specs/008-backfill-manifest.csv` (ComCat is mutable).
 
-**b-value and completeness:** On the full catalog the Gutenberg-Richter b-value at Mc = 4.0 is 0.72, but the raw value (auto-Mc ≈ 2.4) drops to 0.35 — an artifact of the 2025 aftershock sequence flooding the small-magnitude bins. After Gardner-Knopoff (1974) declustering — magnitude-dependent space-time windows, e.g. ~86 km / ~967 days for the M7.7 — the catalog yields Mc ≈ 4.7 and b ≈ 1.06, typical for a tectonic region. The probabilistic hazard below uses these declustered rates.
+**b-value and completeness:** On the full catalog the Gutenberg-Richter b-value at Mc = 4.0 is 0.72 (N≈2,757), but the raw value (auto-Mc ≈ 2.4) drops to 0.34 — an artifact of the 2025 aftershock sequence flooding the small-magnitude bins. After Gardner-Knopoff (1974) declustering — magnitude-dependent space-time windows, e.g. ~86 km / ~967 days for the M7.7 — the catalog yields Mc ≈ 4.7 and b ≈ 1.04, typical for a tectonic region. The probabilistic hazard below uses these declustered rates.
 
-**Clustering:** DBSCAN in UTM Zone 47N coordinates (so distances are in meters, not degrees) identifies 7 seismic zones. The central Myanmar cluster contains 95% of all events.
+**Clustering:** DBSCAN in UTM Zone 47N coordinates (so distances are in meters, not degrees) identifies ~6 seismic zones (the exact count is sensitive to the DBSCAN radius; the dominant central cluster is the robust feature). The central Myanmar cluster contains ~96% of all events.
 
 **Aftershock forecasting:** Modified Omori law fitted by maximum likelihood (Ogata 1983) to the 2025 M7.7 Sagaing sequence gives p ≈ 0.77 with c ≈ 16 h — a slow decay, partly reflecting early-sequence catalog incompleteness after the mainshock — forecasting expected M≥3 aftershocks at 7, 30, and 90 day windows. (Earlier releases quoted p = 0.93 from a biased least-squares fit that had also selected the 1988 Lancang M7.7 as the mainshock.)
 
@@ -159,7 +159,7 @@ The catalog has 9,518 events. Most are small (mean M 3.2), but there are 6 event
 
 Beyond single-event PGA, each dam gets a full hazard curve using the Cornell-McGuire PSHA approach — integrating the Gutenberg-Richter magnitude distribution with the GMPE over all possible magnitudes (M5–8).
 
-The 475-year PGA (10% chance of exceedance in 50 years) ranges from ~0.002g to ~0.55g across the dam portfolio, with a mean of ~0.14g; 170 dams exceed 0.1g and 42 exceed 0.2g at this return period. The rates come from a Frankel (1995)-style smoothed-seismicity source model built from the Gardner-Knopoff-declustered catalog (b ≈ 1.06), with hazard integrated over the source-to-site distance distribution. **These are a catalog-only lower bound**: with no slip-rate data in the committed fault file, the model has no dedicated fault-source term, so it reports lower on-fault PGA than fault-source studies such as Thant et al. (2023). (An earlier version collapsed the whole regional rate onto each dam's single nearest-fault distance, inflating near-fault 475-yr PGA to ~1.9g — see CHANGELOG.)
+The 475-year PGA (10% chance of exceedance in 50 years) ranges from ~0.002g to ~0.56g across the dam portfolio, with a mean of ~0.14g; 172 dams exceed 0.1g and 46 exceed 0.2g at this return period. The rates come from a Frankel (1995)-style smoothed-seismicity source model built from the Gardner-Knopoff-declustered catalog (b ≈ 1.04), with hazard integrated over the source-to-site distance distribution. **These are a catalog-only lower bound**: with no slip-rate data in the committed fault file, the model has no dedicated fault-source term, so it reports lower on-fault PGA than fault-source studies such as Thant et al. (2023). (An earlier version collapsed the whole regional rate onto each dam's single nearest-fault distance, inflating near-fault 475-yr PGA to ~1.9g — see CHANGELOG.)
 
 ## Building Exposure from OpenStreetMap
 

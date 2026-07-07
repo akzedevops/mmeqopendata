@@ -56,7 +56,7 @@
 
     <div class="container">
         <div class="stats">
-            <div class="stat-card"><div class="number">9,518</div><div class="label">Earthquake Events</div></div>
+            <div class="stat-card"><div class="number">9,679</div><div class="label">Earthquake Events</div></div>
             <div class="stat-card"><div class="number">M7.7</div><div class="label">2025 Mandalay Earthquake</div></div>
             <div class="stat-card"><div class="number">173</div><div class="label">Dams Critical/High Risk</div></div>
             <div class="stat-card"><div class="number">34,224</div><div class="label">Buildings Assessed</div></div>
@@ -68,7 +68,7 @@
             <div class="card">
                 <div class="card-header bg-map">Earthquake Map</div>
                 <div class="card-body">
-                    <p>9,518 earthquakes with heatmap, fault lines, and 254 dams including the 2025 M7.7 rupture trace.</p>
+                    <p>9,679 earthquakes with heatmap, fault lines, and 254 dams including the 2025 M7.7 rupture trace.</p>
                     <a href="report/enhanced_earthquake_map.html" class="btn bg-map" target="_blank">Open Map</a>
                 </div>
             </div>
@@ -215,15 +215,7 @@
 
     <script>
     const REPO = 'https://raw.githubusercontent.com/akzedevops/mmeqopendata/master/quake_exports';
-    const YEARS = {
-        2026:613,2025:2469,2024:621,2023:722,2022:1897,2021:467,2020:388,
-        2019:89,2018:91,2017:87,2016:36,2015:26,2014:71,2013:29,2012:71,2011:71,
-        2010:28,2009:37,2008:122,2007:83,2006:61,2005:75,2004:108,2003:104,
-        2002:36,2001:44,2000:40,1999:32,1998:41,1997:45,1996:70,1995:72,
-        1994:35,1993:41,1992:63,1991:50,1990:43,1989:59,1988:87,1987:33,
-        1986:30,1985:24,1984:30,1983:32,1982:21,1981:33,1980:22,1979:27,
-        1978:28,1977:16,1976:46,1975:24,1974:14,1973:12,1971:1,1970:1
-    };
+    const YEARS = {2026:614,2025:2469,2024:621,2023:722,2022:1897,2021:467,2020:388,2019:107,2018:114,2017:112,2016:61,2015:51,2014:71,2013:49,2012:71,2011:74,2010:28,2009:37,2008:122,2007:83,2006:61,2005:75,2004:108,2003:104,2002:36,2001:44,2000:40,1999:33,1998:41,1997:45,1996:70,1995:72,1994:35,1993:41,1992:63,1991:50,1990:43,1989:59,1988:87,1987:33,1986:30,1985:25,1984:30,1983:32,1982:21,1981:33,1980:22,1979:27,1978:28,1977:17,1976:46,1975:24,1974:15,1973:12,1972:5,1971:11,1970:3};
 
     const sel = document.getElementById('year-select');
     const fmt = document.getElementById('format-select');

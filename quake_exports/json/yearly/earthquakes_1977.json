@@ -30,7 +30,9 @@
       "township": "Lay Shi",
       "nearest_city": "Thingphayang",
       "place_type": "village",
-      "distance_km": 2.0
+      "distance_km": 2.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.161,
@@ -62,7 +64,9 @@
       "township": NaN,
       "nearest_city": "绿阴堂",
       "place_type": "village",
-      "distance_km": 4.4
+      "distance_km": 4.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 17.327,
@@ -94,7 +98,9 @@
       "township": NaN,
       "nearest_city": "Nwei Nyo Chaung",
       "place_type": "village",
-      "distance_km": 33.7
+      "distance_km": 33.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.239,
@@ -126,7 +132,9 @@
       "township": NaN,
       "nearest_city": "Ban Dar Pin",
       "place_type": "village",
-      "distance_km": 121.4
+      "distance_km": 121.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.637,
@@ -158,7 +166,9 @@
       "township": "Hpakant",
       "nearest_city": "Pyar Ohn",
       "place_type": "village",
-      "distance_km": 0.7
+      "distance_km": 0.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.48,
@@ -190,7 +200,9 @@
       "township": "Hpakant",
       "nearest_city": "Loi Hseng",
       "place_type": "village",
-      "distance_km": 8.3
+      "distance_km": 8.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 21.747,
@@ -222,7 +234,9 @@
       "township": "Paletwa",
       "nearest_city": "Ma Au",
       "place_type": "village",
-      "distance_km": 3.0
+      "distance_km": 3.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.889,
@@ -254,7 +268,9 @@
       "township": "Tanai",
       "nearest_city": "Khashi",
       "place_type": "village",
-      "distance_km": 32.8
+      "distance_km": 32.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 27.174,
@@ -286,7 +302,9 @@
       "township": "Puta-O",
       "nearest_city": "Long Gar Yang",
       "place_type": "village",
-      "distance_km": 6.9
+      "distance_km": 6.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 20.221,
@@ -318,7 +336,9 @@
       "township": "Ann",
       "nearest_city": "Mee Chaung Chin (Kun Wa)",
       "place_type": "village",
-      "distance_km": 14.2
+      "distance_km": 14.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.72,
@@ -350,7 +370,9 @@
       "township": "Sumprabum",
       "nearest_city": "Hpon Kyan",
       "place_type": "village",
-      "distance_km": 21.1
+      "distance_km": 21.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.484,
@@ -382,7 +404,9 @@
       "township": NaN,
       "nearest_city": "Tiangsam",
       "place_type": "village",
-      "distance_km": 2.6
+      "distance_km": 2.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.885,
@@ -414,7 +438,9 @@
       "township": NaN,
       "nearest_city": "小沙坝",
       "place_type": "village",
-      "distance_km": 0.8
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.05,
@@ -446,7 +472,9 @@
       "township": "Mohnyin",
       "nearest_city": "Inn Thar",
       "place_type": "village",
-      "distance_km": 3.0
+      "distance_km": 3.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.158,
@@ -478,7 +506,9 @@
       "township": "Yinmarbin",
       "nearest_city": "Pan Ma Htone",
       "place_type": "village",
-      "distance_km": 0.8
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.85,
@@ -510,7 +540,43 @@
       "township": "Kawlin",
       "nearest_city": "Taung Inn Lay",
       "place_type": "village",
-      "distance_km": 2.0
+      "distance_km": 2.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 26.376,
+      "longitude": 96.983,
+      "depth": 10.0,
+      "mag": 5.16,
+      "magType": "mw",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": NaN,
+      "net": "iscgem",
+      "id": "iscgem689377",
+      "updated": "2022-04-27T16:02:40.664Z",
+      "location": NaN,
+      "place": "25 km NE of Sarupathar, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "1977-12-22 04:41:59",
+      "time_mmt": "1977-12-22 11:11:59",
+      "state_region": "Kachin",
+      "district": "Myitkyina",
+      "township": "Tanai",
+      "nearest_city": NaN,
+      "place_type": "village",
+      "distance_km": 1.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     }
   ]
 }

@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+26.378,96.244,103.3,5.37,mw,,,,,iscgem,iscgem766905,2025-12-19T19:42:48.954Z,,"59 km WNW of Sarupathar, India",MM,Asia,earthquake,0,0,1,,,1972-11-01 21:53:47,1972-11-02 04:23:47,Kachin,Myitkyina,Tanai,,village,3.9,,

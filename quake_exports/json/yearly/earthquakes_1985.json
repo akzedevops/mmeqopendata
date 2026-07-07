@@ -30,7 +30,9 @@
       "township": NaN,
       "nearest_city": "Grihang",
       "place_type": "village",
-      "distance_km": 3.2
+      "distance_km": 3.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.337,
@@ -62,7 +64,9 @@
       "township": "Kalewa",
       "nearest_city": "Khan Ni (Khan Ti)",
       "place_type": "village",
-      "distance_km": 4.6
+      "distance_km": 4.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.452,
@@ -94,7 +98,9 @@
       "township": NaN,
       "nearest_city": "New Tusom",
       "place_type": "village",
-      "distance_km": 3.7
+      "distance_km": 3.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 18.48,
@@ -126,7 +132,9 @@
       "township": "Phyu",
       "nearest_city": "Kywe Ma Ku",
       "place_type": "village",
-      "distance_km": 14.8
+      "distance_km": 14.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.458,
@@ -158,7 +166,9 @@
       "township": "Kungyangon",
       "nearest_city": "Taik Gyi",
       "place_type": "village",
-      "distance_km": 1.0
+      "distance_km": 1.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.544,
@@ -190,7 +200,9 @@
       "township": "Hkamti",
       "nearest_city": NaN,
       "place_type": "village",
-      "distance_km": 4.5
+      "distance_km": 4.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.44,
@@ -222,7 +234,9 @@
       "township": "Homalin",
       "nearest_city": "Inn Gyin Maw",
       "place_type": "village",
-      "distance_km": 2.6
+      "distance_km": 2.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 19.298,
@@ -254,7 +268,9 @@
       "township": "Yedashe",
       "nearest_city": "San Taw Poet (Myanmar)",
       "place_type": "village",
-      "distance_km": 0.8
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.997,
@@ -286,7 +302,9 @@
       "township": "Indaw",
       "nearest_city": "Kyauk Sin",
       "place_type": "village",
-      "distance_km": 1.4
+      "distance_km": 1.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.218,
@@ -318,7 +336,9 @@
       "township": "Hkamti",
       "nearest_city": "Taik Tee",
       "place_type": "village",
-      "distance_km": 8.3
+      "distance_km": 8.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.931,
@@ -350,7 +370,9 @@
       "township": "Nanyun",
       "nearest_city": "Nanyun",
       "place_type": "town",
-      "distance_km": 6.1
+      "distance_km": 6.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 19.238,
@@ -382,7 +404,9 @@
       "township": "Bawlake",
       "nearest_city": "Bu Khu",
       "place_type": "village",
-      "distance_km": 7.6
+      "distance_km": 7.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.365,
@@ -414,7 +438,9 @@
       "township": "Hkamti",
       "nearest_city": "Thaung U",
       "place_type": "village",
-      "distance_km": 10.4
+      "distance_km": 10.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.336,
@@ -446,7 +472,9 @@
       "township": "Waingmaw",
       "nearest_city": "Nam War",
       "place_type": "village",
-      "distance_km": 4.7
+      "distance_km": 4.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.448,
@@ -478,7 +506,9 @@
       "township": "Waingmaw",
       "nearest_city": "Nam Maw Ran",
       "place_type": "village",
-      "distance_km": 3.8
+      "distance_km": 3.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.405,
@@ -510,7 +540,9 @@
       "township": "Waingmaw",
       "nearest_city": "Nam Maw Ran",
       "place_type": "village",
-      "distance_km": 2.0
+      "distance_km": 2.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.419,
@@ -542,7 +574,9 @@
       "township": "Waingmaw",
       "nearest_city": "Nam Maw Ran",
       "place_type": "village",
-      "distance_km": 0.8
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.817,
@@ -574,7 +608,9 @@
       "township": "Homalin",
       "nearest_city": "Naung Taw",
       "place_type": "village",
-      "distance_km": 2.3
+      "distance_km": 2.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 27.285,
@@ -606,7 +642,9 @@
       "township": NaN,
       "nearest_city": "Gandhigram",
       "place_type": "village",
-      "distance_km": 4.1
+      "distance_km": 4.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.649,
@@ -638,7 +676,9 @@
       "township": "Hakha",
       "nearest_city": "ရွေမြစ်သာ",
       "place_type": "village",
-      "distance_km": 9.1
+      "distance_km": 9.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 21.332,
@@ -670,7 +710,9 @@
       "township": "Pauk",
       "nearest_city": "Pe Khin Kyei",
       "place_type": "village",
-      "distance_km": 1.0
+      "distance_km": 1.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 18.535,
@@ -702,7 +744,9 @@
       "township": "Padaung",
       "nearest_city": "Ma Thon",
       "place_type": "village",
-      "distance_km": 12.8
+      "distance_km": 12.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.2,
@@ -734,7 +778,9 @@
       "township": NaN,
       "nearest_city": NaN,
       "place_type": "town",
-      "distance_km": 5.9
+      "distance_km": 5.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.294,
@@ -766,7 +812,43 @@
       "township": "Tanai",
       "nearest_city": NaN,
       "place_type": "village",
-      "distance_km": 7.2
+      "distance_km": 7.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 18.413,
+      "longitude": 97.296,
+      "depth": 10.0,
+      "mag": 4.2,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": 1.5,
+      "net": "us",
+      "id": "usp0002pcj",
+      "updated": "2014-11-07T00:37:40.002Z",
+      "location": NaN,
+      "place": "79 km NE of Nyaunglebin, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "1985-12-24 23:04:08",
+      "time_mmt": "1985-12-25 05:34:08",
+      "state_region": "Kayin",
+      "district": "Hpapun",
+      "township": "Hpapun",
+      "nearest_city": "Hpaw Mu Khar Doe",
+      "place_type": "village",
+      "distance_km": 1.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     }
   ]
 }

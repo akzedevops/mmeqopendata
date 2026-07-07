@@ -1,0 +1,38 @@
+{
+  "earthquakes": [
+    {
+      "latitude": 22.609,
+      "longitude": 94.557,
+      "depth": 104.1,
+      "mag": 4.6,
+      "magType": "mb",
+      "nst": 20.0,
+      "gap": 145.2,
+      "dmin": NaN,
+      "rms": 0.84,
+      "net": "us",
+      "id": "usb000fmnf",
+      "updated": "2014-11-07T01:50:12.709Z",
+      "location": null,
+      "place": "81 km NW of Monywa, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": null,
+      "initialPosition": null,
+      "time_utc": "2013-02-28 18:32:26",
+      "time_mmt": "2013-03-01 01:02:26",
+      "state_region": "Sagaing",
+      "district": "Yinmarbin",
+      "township": "Kani",
+      "nearest_city": "Yin Thwin",
+      "place_type": "village",
+      "distance_km": 4.6,
+      "shakemapURL": null,
+      "shakemapLastUpdated": null
+    }
+  ]
+}

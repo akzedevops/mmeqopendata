@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+18.413,97.296,10.0,4.2,mb,,,,1.5,us,usp0002pcj,2014-11-07T00:37:40.002Z,,"79 km NE of Nyaunglebin, Myanmar",MM,Asia,earthquake,0,0,1,,,1985-12-24 23:04:08,1985-12-25 05:34:08,Kayin,Hpapun,Hpapun,Hpaw Mu Khar Doe,village,1.0,,

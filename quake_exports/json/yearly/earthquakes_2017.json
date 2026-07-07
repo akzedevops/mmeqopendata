@@ -30,7 +30,9 @@
       "township": "Kunhing",
       "nearest_city": NaN,
       "place_type": "village",
-      "distance_km": 8.6
+      "distance_km": 8.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.3202,
@@ -62,7 +64,43 @@
       "township": "Kalewa",
       "nearest_city": "Khan Ni (Khan Ti)",
       "place_type": "village",
-      "distance_km": 4.9
+      "distance_km": 4.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 22.8948,
+      "longitude": 96.0688,
+      "depth": 13.0,
+      "mag": 4.2,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 87.0,
+      "dmin": 0.875,
+      "rms": 0.56,
+      "net": "us",
+      "id": "us10007ugg",
+      "updated": "2017-03-27T23:53:22.040Z",
+      "location": NaN,
+      "place": "45 km W of Mogok, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-01-04 12:41:18",
+      "time_mmt": "2017-01-04 19:11:18",
+      "state_region": "Mandalay",
+      "district": "Pyinoolwin",
+      "township": "Thabeikkyin",
+      "nearest_city": "7 Maing Chan Thar",
+      "place_type": "village",
+      "distance_km": 1.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.9502,
@@ -94,7 +132,9 @@
       "township": "Mingin",
       "nearest_city": "Taung Hpyu",
       "place_type": "village",
-      "distance_km": 1.5
+      "distance_km": 1.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.38,
@@ -126,7 +166,43 @@
       "township": "Lahe",
       "nearest_city": "Longjangnokkon",
       "place_type": "village",
-      "distance_km": 2.7
+      "distance_km": 2.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 24.559,
+      "longitude": 94.5655,
+      "depth": 63.0,
+      "mag": 4.5,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 58.0,
+      "dmin": 0.407,
+      "rms": 0.92,
+      "net": "us",
+      "id": "us10007tuu",
+      "updated": "2017-04-12T02:29:00.040Z",
+      "location": NaN,
+      "place": "50 km E of W?ngjing, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-01-18 03:03:21",
+      "time_mmt": "2017-01-18 09:33:21",
+      "state_region": "Sagaing",
+      "district": "Tamu",
+      "township": "Tamu",
+      "nearest_city": "Tha Nan (San Pya)",
+      "place_type": "village",
+      "distance_km": 3.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 19.8203,
@@ -158,7 +234,9 @@
       "township": "Minhla",
       "nearest_city": "Sin Ma Kya",
       "place_type": "village",
-      "distance_km": 1.9
+      "distance_km": 1.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.95,
@@ -190,7 +268,9 @@
       "township": "Puta-O",
       "nearest_city": "War Dat",
       "place_type": "village",
-      "distance_km": 1.3
+      "distance_km": 1.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.55,
@@ -222,7 +302,9 @@
       "township": "Kani",
       "nearest_city": "Sa Hpo Gyi",
       "place_type": "village",
-      "distance_km": 1.3
+      "distance_km": 1.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 19.34,
@@ -254,7 +336,43 @@
       "township": "Yedashe",
       "nearest_city": "Thar Si",
       "place_type": "village",
-      "distance_km": 2.1
+      "distance_km": 2.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 25.1865,
+      "longitude": 94.6658,
+      "depth": 74.07,
+      "mag": 5.1,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 27.0,
+      "dmin": 1.009,
+      "rms": 0.95,
+      "net": "us",
+      "id": "us100086x4",
+      "updated": "2025-12-22T17:32:58.366Z",
+      "location": NaN,
+      "place": "55 km SSE of Phek, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-03-04 02:11:53",
+      "time_mmt": "2017-03-04 08:41:53",
+      "state_region": "Sagaing",
+      "district": "Hkamti",
+      "township": "Lay Shi",
+      "nearest_city": "Heinkut",
+      "place_type": "village",
+      "distance_km": 10.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.07,
@@ -286,7 +404,43 @@
       "township": "Homalin",
       "nearest_city": "Chaung Son",
       "place_type": "village",
-      "distance_km": 1.0
+      "distance_km": 1.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 24.7062,
+      "longitude": 94.5703,
+      "depth": 69.71,
+      "mag": 4.7,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 101.0,
+      "dmin": 0.534,
+      "rms": 0.72,
+      "net": "us",
+      "id": "us100087vi",
+      "updated": "2017-05-31T01:58:59.040Z",
+      "location": NaN,
+      "place": "52 km ENE of W?ngjing, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-03-09 02:55:11",
+      "time_mmt": "2017-03-09 09:25:11",
+      "state_region": "Sagaing",
+      "district": "Tamu",
+      "township": "Tamu",
+      "nearest_city": "Mongjang Khanglai",
+      "place_type": "village",
+      "distance_km": 1.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 17.415,
@@ -318,7 +472,9 @@
       "township": "Taikkyi",
       "nearest_city": "Kyar Chaung",
       "place_type": "village",
-      "distance_km": 2.0
+      "distance_km": 2.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.66,
@@ -350,7 +506,9 @@
       "township": "Sumprabum",
       "nearest_city": "In Gaw Ma",
       "place_type": "village",
-      "distance_km": 9.0
+      "distance_km": 9.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.07,
@@ -382,7 +540,9 @@
       "township": "Homalin",
       "nearest_city": "Chaung Son",
       "place_type": "village",
-      "distance_km": 1.0
+      "distance_km": 1.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 17.1534,
@@ -414,7 +574,9 @@
       "township": "Htantabin",
       "nearest_city": "Ku Lar Pone",
       "place_type": "village",
-      "distance_km": 0.7
+      "distance_km": 0.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.9,
@@ -446,7 +608,9 @@
       "township": "Tonzang",
       "nearest_city": "Sihpek",
       "place_type": "village",
-      "distance_km": 1.5
+      "distance_km": 1.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.21,
@@ -478,7 +642,9 @@
       "township": NaN,
       "nearest_city": "Zee Kone",
       "place_type": "village",
-      "distance_km": 26.9
+      "distance_km": 26.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.62,
@@ -510,7 +676,9 @@
       "township": "Myawaddy",
       "nearest_city": "Hpar Chaung (Ah Twin Me Ka Nei)",
       "place_type": "village",
-      "distance_km": 4.6
+      "distance_km": 4.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.2,
@@ -542,7 +710,9 @@
       "township": "Chaungzon",
       "nearest_city": "Taw Ka Pu",
       "place_type": "village",
-      "distance_km": 4.0
+      "distance_km": 4.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.74,
@@ -574,7 +744,9 @@
       "township": NaN,
       "nearest_city": "Sin Ma",
       "place_type": "village",
-      "distance_km": 0.8
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.15,
@@ -606,7 +778,9 @@
       "township": "Kyainseikgyi",
       "nearest_city": "Kyeik Chaung Hpyar",
       "place_type": "village",
-      "distance_km": 1.0
+      "distance_km": 1.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.1,
@@ -638,7 +812,9 @@
       "township": "Mudon",
       "nearest_city": "Hpe Do",
       "place_type": "village",
-      "distance_km": 1.8
+      "distance_km": 1.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.74,
@@ -670,7 +846,9 @@
       "township": NaN,
       "nearest_city": "Ngwe Thaung Yan",
       "place_type": "village",
-      "distance_km": 80.7
+      "distance_km": 80.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.3,
@@ -702,7 +880,9 @@
       "township": "Kyainseikgyi",
       "nearest_city": "Ku Lar Chaw",
       "place_type": "village",
-      "distance_km": 2.7
+      "distance_km": 2.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.3,
@@ -734,7 +914,9 @@
       "township": "Kyainseikgyi",
       "nearest_city": "Ku Lar Chaw",
       "place_type": "village",
-      "distance_km": 1.1
+      "distance_km": 1.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.74,
@@ -766,7 +948,9 @@
       "township": NaN,
       "nearest_city": "Oke Aw Lan",
       "place_type": "village",
-      "distance_km": 67.5
+      "distance_km": 67.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.21,
@@ -798,7 +982,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Mee Thway Kone",
       "place_type": "village",
-      "distance_km": 1.0
+      "distance_km": 1.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 17.74,
@@ -830,7 +1016,9 @@
       "township": "Lemyethna",
       "nearest_city": "Kyee Pin",
       "place_type": "village",
-      "distance_km": 12.6
+      "distance_km": 12.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.73,
@@ -862,7 +1050,9 @@
       "township": "Kangyidaunt",
       "nearest_city": "Kan Hla",
       "place_type": "village",
-      "distance_km": 0.3
+      "distance_km": 0.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 17.43,
@@ -894,7 +1084,9 @@
       "township": "Thabaung",
       "nearest_city": "Da Ni",
       "place_type": "village",
-      "distance_km": 3.6
+      "distance_km": 3.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.17,
@@ -926,7 +1118,9 @@
       "township": NaN,
       "nearest_city": "Taw Ka Pu",
       "place_type": "village",
-      "distance_km": 7.5
+      "distance_km": 7.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.19,
@@ -958,7 +1152,9 @@
       "township": NaN,
       "nearest_city": "Taw Ka Pu",
       "place_type": "village",
-      "distance_km": 5.1
+      "distance_km": 5.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.27,
@@ -990,7 +1186,9 @@
       "township": "Mudon",
       "nearest_city": "Kin Chaung",
       "place_type": "village",
-      "distance_km": 1.4
+      "distance_km": 1.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.44,
@@ -1022,7 +1220,9 @@
       "township": "Kawkareik",
       "nearest_city": "Mi Pa Laing Chaung Hpyar",
       "place_type": "village",
-      "distance_km": 13.7
+      "distance_km": 13.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.91,
@@ -1054,7 +1254,9 @@
       "township": "Labutta",
       "nearest_city": "Pein Hne Kone",
       "place_type": "village",
-      "distance_km": 1.1
+      "distance_km": 1.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.26,
@@ -1086,7 +1288,9 @@
       "township": "Mawlamyinegyun",
       "nearest_city": "Pan Hpu",
       "place_type": "village",
-      "distance_km": 1.0
+      "distance_km": 1.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.98,
@@ -1118,7 +1322,9 @@
       "township": NaN,
       "nearest_city": "Ngwe Thaung Yan",
       "place_type": "village",
-      "distance_km": 56.0
+      "distance_km": 56.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.19,
@@ -1150,7 +1356,9 @@
       "township": "Mawlamyinegyun",
       "nearest_city": "Gaw Tu",
       "place_type": "village",
-      "distance_km": 0.5
+      "distance_km": 0.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.11,
@@ -1182,7 +1390,9 @@
       "township": NaN,
       "nearest_city": "Taw Pa Kauk",
       "place_type": "village",
-      "distance_km": 23.0
+      "distance_km": 23.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.17,
@@ -1214,7 +1424,9 @@
       "township": NaN,
       "nearest_city": "Wea Ka Li",
       "place_type": "village",
-      "distance_km": 7.2
+      "distance_km": 7.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.24,
@@ -1246,7 +1458,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Tha Yet Kone",
       "place_type": "village",
-      "distance_km": 0.8
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 20.9,
@@ -1278,7 +1492,9 @@
       "township": "Tachileik",
       "nearest_city": "Wan Mee Mai",
       "place_type": "village",
-      "distance_km": 9.2
+      "distance_km": 9.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.4,
@@ -1310,7 +1526,9 @@
       "township": "Kale",
       "nearest_city": "Son Thar Myaing",
       "place_type": "village",
-      "distance_km": 0.5
+      "distance_km": 0.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.8,
@@ -1342,7 +1560,9 @@
       "township": "Tonzang",
       "nearest_city": "Khuangkhan",
       "place_type": "village",
-      "distance_km": 4.4
+      "distance_km": 4.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.9,
@@ -1374,7 +1594,9 @@
       "township": "Tamu",
       "nearest_city": "Min Tha Mee",
       "place_type": "village",
-      "distance_km": 3.8
+      "distance_km": 3.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 17.04,
@@ -1406,7 +1628,9 @@
       "township": NaN,
       "nearest_city": "Tha Zin",
       "place_type": "village",
-      "distance_km": 24.9
+      "distance_km": 24.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.93,
@@ -1438,7 +1662,9 @@
       "township": NaN,
       "nearest_city": "Setse",
       "place_type": "village",
-      "distance_km": 3.0
+      "distance_km": 3.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.19,
@@ -1470,7 +1696,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Naunghte",
       "place_type": "village",
-      "distance_km": 1.6
+      "distance_km": 1.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.9,
@@ -1502,7 +1730,43 @@
       "township": NaN,
       "nearest_city": "Ka Dat Htauk",
       "place_type": "village",
-      "distance_km": 29.6
+      "distance_km": 29.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 23.2203,
+      "longitude": 94.9352,
+      "depth": 107.23,
+      "mag": 4.1,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 102.0,
+      "dmin": 1.161,
+      "rms": 0.53,
+      "net": "us",
+      "id": "us20009j94",
+      "updated": "2017-08-15T02:26:46.040Z",
+      "location": NaN,
+      "place": "71 km SE of Mawlaik, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-05-29 15:36:53",
+      "time_mmt": "2017-05-29 22:06:53",
+      "state_region": "Sagaing",
+      "district": "Shwebo",
+      "township": "Taze",
+      "nearest_city": "Khaung Tone",
+      "place_type": "village",
+      "distance_km": 5.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.79,
@@ -1534,7 +1798,43 @@
       "township": "Homalin",
       "nearest_city": "Khauk Ngoe",
       "place_type": "village",
-      "distance_km": 1.5
+      "distance_km": 1.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 25.2784,
+      "longitude": 95.1091,
+      "depth": 92.06,
+      "mag": 4.6,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 68.0,
+      "dmin": 1.277,
+      "rms": 0.99,
+      "net": "us",
+      "id": "us20009mr4",
+      "updated": "2017-08-16T02:42:21.040Z",
+      "location": NaN,
+      "place": "74 km SE of Phek, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-06-09 11:48:06",
+      "time_mmt": "2017-06-09 18:18:06",
+      "state_region": "Sagaing",
+      "district": "Hkamti",
+      "township": "Homalin",
+      "nearest_city": "Man Hpar",
+      "place_type": "village",
+      "distance_km": 1.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.23,
@@ -1566,7 +1866,77 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Kawt Sat",
       "place_type": "village",
-      "distance_km": 2.4
+      "distance_km": 2.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 23.0408,
+      "longitude": 94.4765,
+      "depth": 94.73,
+      "mag": 4.6,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 147.0,
+      "dmin": 1.194,
+      "rms": 0.57,
+      "net": "us",
+      "id": "us20009pbi",
+      "updated": "2017-08-23T16:35:49.040Z",
+      "location": NaN,
+      "place": "67 km S of Mawlaik, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-06-20 08:50:40",
+      "time_mmt": "2017-06-20 15:20:40",
+      "state_region": "Sagaing",
+      "district": "Kale",
+      "township": "Mingin",
+      "nearest_city": "Kha Yu Inn",
+      "place_type": "village",
+      "distance_km": 3.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 23.974,
+      "longitude": 94.7144,
+      "depth": 93.17,
+      "mag": 4.4,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 144.0,
+      "dmin": 0.456,
+      "rms": 0.73,
+      "net": "us",
+      "id": "us100096qp",
+      "updated": "2017-09-27T02:03:15.040Z",
+      "location": NaN,
+      "place": "48 km NE of Mawlaik, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-06-27 09:37:36",
+      "time_mmt": "2017-06-27 16:07:36",
+      "state_region": "Sagaing",
+      "district": "Mawlaik",
+      "township": "Paungbyin",
+      "nearest_city": "Maing Chaung",
+      "place_type": "village",
+      "distance_km": 6.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.79,
@@ -1598,7 +1968,9 @@
       "township": "Mawlaik",
       "nearest_city": "Law Thar",
       "place_type": "village",
-      "distance_km": 9.4
+      "distance_km": 9.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.32,
@@ -1630,7 +2002,9 @@
       "township": "Homalin",
       "nearest_city": "Htein Ku",
       "place_type": "village",
-      "distance_km": 7.4
+      "distance_km": 7.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.49,
@@ -1662,7 +2036,77 @@
       "township": "Kalewa",
       "nearest_city": "Oke Hpo",
       "place_type": "village",
-      "distance_km": 5.8
+      "distance_km": 5.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 22.832,
+      "longitude": 95.9721,
+      "depth": 9.04,
+      "mag": 4.2,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 135.0,
+      "dmin": 0.822,
+      "rms": 0.59,
+      "net": "us",
+      "id": "us20009yf2",
+      "updated": "2017-10-06T23:56:20.040Z",
+      "location": NaN,
+      "place": "40 km NE of Shwebo, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-07-15 21:13:58",
+      "time_mmt": "2017-07-16 03:43:58",
+      "state_region": "Mandalay",
+      "district": "Pyinoolwin",
+      "township": "Thabeikkyin",
+      "nearest_city": "Thi Ha Taw",
+      "place_type": "village",
+      "distance_km": 1.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 20.9992,
+      "longitude": 93.5667,
+      "depth": 46.16,
+      "mag": 4.6,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 91.0,
+      "dmin": 1.635,
+      "rms": 0.66,
+      "net": "us",
+      "id": "us20009z0x",
+      "updated": "2017-10-11T01:03:51.040Z",
+      "location": NaN,
+      "place": "117 km NE of Sittwe, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-07-17 13:23:00",
+      "time_mmt": "2017-07-17 19:53:00",
+      "state_region": "Chin",
+      "district": "Mindat",
+      "township": "Paletwa",
+      "nearest_city": "Hmon Ta Nu",
+      "place_type": "village",
+      "distance_km": 1.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.9,
@@ -1694,7 +2138,43 @@
       "township": "Homalin",
       "nearest_city": "Naung Lun",
       "place_type": "village",
-      "distance_km": 4.2
+      "distance_km": 4.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 25.1098,
+      "longitude": 94.8989,
+      "depth": 68.66,
+      "mag": 4.0,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 157.0,
+      "dmin": 1.031,
+      "rms": 0.97,
+      "net": "us",
+      "id": "us2000a1ps",
+      "updated": "2017-10-11T01:04:03.040Z",
+      "location": NaN,
+      "place": "73 km SSE of Phek, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-07-22 20:06:47",
+      "time_mmt": "2017-07-23 02:36:47",
+      "state_region": "Sagaing",
+      "district": "Hkamti",
+      "township": "Lay Shi",
+      "nearest_city": "Gwayt Gyi",
+      "place_type": "village",
+      "distance_km": 9.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.55,
@@ -1726,7 +2206,9 @@
       "township": NaN,
       "nearest_city": "Mar Lar Chaung",
       "place_type": "village",
-      "distance_km": 0.2
+      "distance_km": 0.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.24,
@@ -1758,7 +2240,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Kan Nar Su",
       "place_type": "village",
-      "distance_km": 2.3
+      "distance_km": 2.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.04,
@@ -1790,7 +2274,9 @@
       "township": "Kyainseikgyi",
       "nearest_city": "Wet Don",
       "place_type": "village",
-      "distance_km": 0.9
+      "distance_km": 0.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.89,
@@ -1822,7 +2308,9 @@
       "township": "Pantanaw",
       "nearest_city": "Kyon Pa Taw",
       "place_type": "village",
-      "distance_km": 1.8
+      "distance_km": 1.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.5,
@@ -1854,7 +2342,9 @@
       "township": "Kawkareik",
       "nearest_city": "Ah Htet Kwin Ka Lay",
       "place_type": "village",
-      "distance_km": 11.8
+      "distance_km": 11.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.26,
@@ -1886,7 +2376,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Hpar Thein",
       "place_type": "village",
-      "distance_km": 0.9
+      "distance_km": 0.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.22,
@@ -1918,7 +2410,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Kawt Sat",
       "place_type": "village",
-      "distance_km": 1.9
+      "distance_km": 1.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.23,
@@ -1950,7 +2444,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Taung Ka lay",
       "place_type": "village",
-      "distance_km": 1.8
+      "distance_km": 1.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.22,
@@ -1982,7 +2478,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Kawt Sat",
       "place_type": "village",
-      "distance_km": 1.2
+      "distance_km": 1.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.22,
@@ -2014,7 +2512,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Kawt Sat",
       "place_type": "village",
-      "distance_km": 1.9
+      "distance_km": 1.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.21,
@@ -2046,7 +2546,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Kawt Sat",
       "place_type": "village",
-      "distance_km": 0.4
+      "distance_km": 0.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 27.3,
@@ -2078,7 +2580,43 @@
       "township": "Nanyun",
       "nearest_city": "Sati",
       "place_type": "village",
-      "distance_km": 17.6
+      "distance_km": 17.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 23.4984,
+      "longitude": 94.4598,
+      "depth": 89.38,
+      "mag": 4.0,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 145.0,
+      "dmin": 0.742,
+      "rms": 1.17,
+      "net": "us",
+      "id": "us2000abnb",
+      "updated": "2017-11-22T03:43:26.040Z",
+      "location": NaN,
+      "place": "16 km SSE of Mawlaik, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-08-21 00:45:19",
+      "time_mmt": "2017-08-21 07:15:19",
+      "state_region": "Sagaing",
+      "district": "Mawlaik",
+      "township": "Mawlaik",
+      "nearest_city": "Oke Hpo",
+      "place_type": "village",
+      "distance_km": 0.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.4013,
@@ -2110,7 +2648,9 @@
       "township": "Kani",
       "nearest_city": "Yae Yin",
       "place_type": "village",
-      "distance_km": 7.3
+      "distance_km": 7.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.92,
@@ -2142,7 +2682,9 @@
       "township": "Kyainseikgyi",
       "nearest_city": "Kyon Kha Wun",
       "place_type": "village",
-      "distance_km": 2.5
+      "distance_km": 2.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.3,
@@ -2174,7 +2716,9 @@
       "township": NaN,
       "nearest_city": "Tha Yet Pin Seik",
       "place_type": "village",
-      "distance_km": 93.7
+      "distance_km": 93.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.21,
@@ -2206,7 +2750,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Mee Thway Kone",
       "place_type": "village",
-      "distance_km": 1.1
+      "distance_km": 1.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.32,
@@ -2238,7 +2784,9 @@
       "township": "Kawkareik",
       "nearest_city": "Ku Lar Chaw",
       "place_type": "village",
-      "distance_km": 2.0
+      "distance_km": 2.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.82,
@@ -2270,7 +2818,111 @@
       "township": "Thaton",
       "nearest_city": "Htone Bo Kwayt",
       "place_type": "village",
-      "distance_km": 5.1
+      "distance_km": 5.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 17.3198,
+      "longitude": 95.953,
+      "depth": 10.0,
+      "mag": 4.2,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 149.0,
+      "dmin": 0.491,
+      "rms": 0.54,
+      "net": "us",
+      "id": "us2000ar0b",
+      "updated": "2017-12-13T02:29:36.040Z",
+      "location": NaN,
+      "place": "40 km SSE of Tharyarwady, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-09-11 01:19:43",
+      "time_mmt": "2017-09-11 07:49:43",
+      "state_region": "Yangon",
+      "district": "Yangon (North)",
+      "township": "Taikkyi",
+      "nearest_city": "Taik Kyi",
+      "place_type": "town",
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 22.421,
+      "longitude": 94.7,
+      "depth": 111.08,
+      "mag": 4.2,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 147.0,
+      "dmin": 1.041,
+      "rms": 0.94,
+      "net": "us",
+      "id": "us2000ar0x",
+      "updated": "2017-12-13T02:29:38.040Z",
+      "location": NaN,
+      "place": "56 km NW of Monywa, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-09-11 13:34:39",
+      "time_mmt": "2017-09-11 20:04:39",
+      "state_region": "Sagaing",
+      "district": "Yinmarbin",
+      "township": "Kani",
+      "nearest_city": "Tha Lin",
+      "place_type": "village",
+      "distance_km": 0.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 17.4028,
+      "longitude": 95.9326,
+      "depth": 10.0,
+      "mag": 4.6,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 126.0,
+      "dmin": 0.575,
+      "rms": 0.45,
+      "net": "us",
+      "id": "us2000ar0y",
+      "updated": "2017-12-13T02:29:38.040Z",
+      "location": NaN,
+      "place": "31 km SSE of Tharyarwady, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-09-11 13:56:11",
+      "time_mmt": "2017-09-11 20:26:11",
+      "state_region": "Yangon",
+      "district": "Yangon (North)",
+      "township": "Taikkyi",
+      "nearest_city": "Chin Su",
+      "place_type": "village",
+      "distance_km": 2.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 18.88,
@@ -2302,7 +2954,77 @@
       "township": "Padaung",
       "nearest_city": "Yaung Gyi",
       "place_type": "village",
-      "distance_km": 6.9
+      "distance_km": 6.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 21.6629,
+      "longitude": 94.5729,
+      "depth": 97.03,
+      "mag": 4.5,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 56.0,
+      "dmin": 1.328,
+      "rms": 0.77,
+      "net": "us",
+      "id": "us2000aplr",
+      "updated": "2017-12-19T01:54:02.040Z",
+      "location": NaN,
+      "place": "64 km NW of Pakokku, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-09-17 21:49:08",
+      "time_mmt": "2017-09-18 04:19:08",
+      "state_region": "Magway",
+      "district": "Pakokku",
+      "township": "Pauk",
+      "nearest_city": "Yae Khar",
+      "place_type": "village",
+      "distance_km": 0.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 24.9962,
+      "longitude": 94.8861,
+      "depth": 84.2,
+      "mag": 4.4,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 48.0,
+      "dmin": 0.931,
+      "rms": 0.57,
+      "net": "us",
+      "id": "us2000asj3",
+      "updated": "2017-12-19T01:54:10.040Z",
+      "location": NaN,
+      "place": "83 km SSE of Phek, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-09-21 16:34:33",
+      "time_mmt": "2017-09-21 23:04:33",
+      "state_region": "Sagaing",
+      "district": "Hkamti",
+      "township": "Homalin",
+      "nearest_city": "Maw Khon",
+      "place_type": "village",
+      "distance_km": 0.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 21.4218,
@@ -2334,7 +3056,77 @@
       "township": "Pauk",
       "nearest_city": "Yae Yin (Mauk Su)",
       "place_type": "village",
-      "distance_km": 1.1
+      "distance_km": 1.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 19.0907,
+      "longitude": 95.0896,
+      "depth": 43.05,
+      "mag": 4.6,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 185.0,
+      "dmin": 2.724,
+      "rms": 0.78,
+      "net": "us",
+      "id": "us1000apnq",
+      "updated": "2018-01-03T01:54:44.040Z",
+      "location": NaN,
+      "place": "27 km SSW of Thayetmyo, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-10-03 15:20:11",
+      "time_mmt": "2017-10-03 21:50:11",
+      "state_region": "Magway",
+      "district": "Thayet",
+      "township": "Kamma",
+      "nearest_city": "Kyat Pyin Kone",
+      "place_type": "village",
+      "distance_km": 0.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 22.6636,
+      "longitude": 94.6071,
+      "depth": 117.22,
+      "mag": 4.1,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 111.0,
+      "dmin": 0.931,
+      "rms": 0.91,
+      "net": "us",
+      "id": "us1000aul4",
+      "updated": "2018-01-09T02:14:57.040Z",
+      "location": NaN,
+      "place": "82 km NW of Monywa, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-10-13 01:32:43",
+      "time_mmt": "2017-10-13 08:02:43",
+      "state_region": "Sagaing",
+      "district": "Yinmarbin",
+      "township": "Kani",
+      "nearest_city": "Nat Bu Sut",
+      "place_type": "village",
+      "distance_km": 6.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.4,
@@ -2366,7 +3158,9 @@
       "township": "Myaungmya",
       "nearest_city": "Htone Bo Mi Chaung Aing",
       "place_type": "village",
-      "distance_km": 0.9
+      "distance_km": 0.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.14,
@@ -2398,7 +3192,9 @@
       "township": "Mawlamyinegyun",
       "nearest_city": "Pan Hpu Pale Tan",
       "place_type": "village",
-      "distance_km": 1.3
+      "distance_km": 1.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.27,
@@ -2430,7 +3226,9 @@
       "township": "Kyaikmaraw",
       "nearest_city": "Na Yat Taung",
       "place_type": "village",
-      "distance_km": 1.9
+      "distance_km": 1.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.79,
@@ -2462,7 +3260,111 @@
       "township": "Twantay",
       "nearest_city": "Gyaung Waing Gyi",
       "place_type": "village",
-      "distance_km": 0.8
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 21.8416,
+      "longitude": 95.5762,
+      "depth": 34.87,
+      "mag": 4.3,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 135.0,
+      "dmin": 0.527,
+      "rms": 1.18,
+      "net": "us",
+      "id": "us2000bikw",
+      "updated": "2018-01-24T01:25:09.040Z",
+      "location": NaN,
+      "place": "41 km W of Sagaing, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-11-04 20:29:36",
+      "time_mmt": "2017-11-05 02:59:36",
+      "state_region": "Mandalay",
+      "district": "Myingyan",
+      "township": "Ngazun",
+      "nearest_city": "Hpaung Ka Taw",
+      "place_type": "village",
+      "distance_km": 1.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 16.4041,
+      "longitude": 94.9167,
+      "depth": 15.52,
+      "mag": 4.2,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 111.0,
+      "dmin": 1.271,
+      "rms": 0.88,
+      "net": "us",
+      "id": "us2000bscd",
+      "updated": "2018-02-06T02:45:29.040Z",
+      "location": NaN,
+      "place": "35 km SW of Wakema, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-11-12 01:16:52",
+      "time_mmt": "2017-11-12 07:46:52",
+      "state_region": "Ayeyarwady",
+      "district": "Myaungmya",
+      "township": "Myaungmya",
+      "nearest_city": "Sin Kwin Ywar Thit",
+      "place_type": "village",
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 18.3914,
+      "longitude": 95.1392,
+      "depth": 10.0,
+      "mag": 4.0,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 161.0,
+      "dmin": 1.8,
+      "rms": 0.79,
+      "net": "us",
+      "id": "us2000btym",
+      "updated": "2018-02-06T02:45:34.040Z",
+      "location": NaN,
+      "place": "22 km WNW of Myanaung, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-11-15 01:39:21",
+      "time_mmt": "2017-11-15 08:09:21",
+      "state_region": "Ayeyarwady",
+      "district": "Hinthada",
+      "township": "Kyangin",
+      "nearest_city": "Chaung Hpyar",
+      "place_type": "village",
+      "distance_km": 1.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.73,
@@ -2494,7 +3396,9 @@
       "township": "Mawlaik",
       "nearest_city": "Law Thar",
       "place_type": "village",
-      "distance_km": 5.3
+      "distance_km": 5.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 19.4897,
@@ -2526,7 +3430,9 @@
       "township": "Ann",
       "nearest_city": "Myin Kwayt",
       "place_type": "village",
-      "distance_km": 19.2
+      "distance_km": 19.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.3675,
@@ -2558,7 +3464,77 @@
       "township": "Kani",
       "nearest_city": "Nyaung Pin Lel",
       "place_type": "village",
-      "distance_km": 15.2
+      "distance_km": 15.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 26.609,
+      "longitude": 96.3627,
+      "depth": 89.32,
+      "mag": 4.2,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 75.0,
+      "dmin": 3.015,
+      "rms": 0.77,
+      "net": "us",
+      "id": "us2000c3gs",
+      "updated": "2018-02-28T02:32:26.040Z",
+      "location": NaN,
+      "place": "63 km NW of Sarupathar, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-12-05 02:24:15",
+      "time_mmt": "2017-12-05 08:54:15",
+      "state_region": "Kachin",
+      "district": "Myitkyina",
+      "township": "Tanai",
+      "nearest_city": "Ta Hket",
+      "place_type": "village",
+      "distance_km": 4.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 24.5413,
+      "longitude": 94.6672,
+      "depth": 80.12,
+      "mag": 4.3,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 90.0,
+      "dmin": 0.456,
+      "rms": 0.53,
+      "net": "us",
+      "id": "us2000c3h8",
+      "updated": "2018-02-28T02:32:27.040Z",
+      "location": NaN,
+      "place": "61 km E of W?ngjing, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-12-05 15:50:58",
+      "time_mmt": "2017-12-05 22:20:58",
+      "state_region": "Sagaing",
+      "district": "Hkamti",
+      "township": "Homalin",
+      "nearest_city": "Ton He",
+      "place_type": "village",
+      "distance_km": 2.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 16.53,
@@ -2590,7 +3566,43 @@
       "township": "Myaungmya",
       "nearest_city": "Thone Gwa Kun Chan",
       "place_type": "village",
-      "distance_km": 0.4
+      "distance_km": 0.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 25.6097,
+      "longitude": 96.3486,
+      "depth": 10.0,
+      "mag": 4.4,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": 97.0,
+      "dmin": 2.312,
+      "rms": 0.89,
+      "net": "us",
+      "id": "us2000c2cj",
+      "updated": "2018-02-28T02:32:34.040Z",
+      "location": NaN,
+      "place": "80 km SW of Sarupathar, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2017-12-09 11:02:34",
+      "time_mmt": "2017-12-09 17:32:34",
+      "state_region": "Kachin",
+      "district": "Mohnyin",
+      "township": "Hpakant",
+      "nearest_city": "Hseng Jar",
+      "place_type": "village",
+      "distance_km": 0.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.4444,
@@ -2622,7 +3634,9 @@
       "township": "Kalewa",
       "nearest_city": "Kyaung Gyi",
       "place_type": "village",
-      "distance_km": 12.3
+      "distance_km": 12.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.35,
@@ -2654,7 +3668,9 @@
       "township": "Mawlaik",
       "nearest_city": "Thitsar Pann",
       "place_type": "town",
-      "distance_km": 9.6
+      "distance_km": 9.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.03,
@@ -2686,7 +3702,9 @@
       "township": "Mogaung",
       "nearest_city": "Ban Mauk Kone",
       "place_type": "village",
-      "distance_km": 10.3
+      "distance_km": 10.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.916,
@@ -2718,7 +3736,9 @@
       "township": "Mohnyin",
       "nearest_city": "Nang Mar Gyi",
       "place_type": "village",
-      "distance_km": 1.1
+      "distance_km": 1.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.0579,
@@ -2750,7 +3770,9 @@
       "township": "Gangaw",
       "nearest_city": "None Gyi",
       "place_type": "village",
-      "distance_km": 4.9
+      "distance_km": 4.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.72,
@@ -2782,7 +3804,9 @@
       "township": "Tanai",
       "nearest_city": "Shingbwiyang",
       "place_type": "town",
-      "distance_km": 7.4
+      "distance_km": 7.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     }
   ]
 }

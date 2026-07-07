@@ -1,0 +1,38 @@
+{
+  "earthquakes": [
+    {
+      "latitude": 21.313,
+      "longitude": 100.786,
+      "depth": 35.0,
+      "mag": 5.34,
+      "magType": "mw",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": NaN,
+      "net": "iscgemsup",
+      "id": "iscgemsup642044517",
+      "updated": "2026-01-07T18:54:41.049Z",
+      "location": null,
+      "place": "75 km S of Jinghong, China",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": null,
+      "initialPosition": null,
+      "time_utc": "1972-08-27 14:42:35",
+      "time_mmt": "1972-08-27 21:12:35",
+      "state_region": "Shan",
+      "district": "Tachileik",
+      "township": "Mongyawng",
+      "nearest_city": "",
+      "place_type": "village",
+      "distance_km": 2.1,
+      "shakemapURL": null,
+      "shakemapLastUpdated": null
+    }
+  ]
+}

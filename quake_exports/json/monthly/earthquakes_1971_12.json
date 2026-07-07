@@ -1,0 +1,38 @@
+{
+  "earthquakes": [
+    {
+      "latitude": 25.214,
+      "longitude": 94.684,
+      "depth": 65.3,
+      "mag": 5.63,
+      "magType": "mw",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": NaN,
+      "net": "iscgem",
+      "id": "iscgem778161",
+      "updated": "2025-12-19T19:50:52.999Z",
+      "location": null,
+      "place": "53 km SSE of Phek, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": null,
+      "initialPosition": null,
+      "time_utc": "1971-12-29 22:27:07",
+      "time_mmt": "1971-12-30 04:57:07",
+      "state_region": "Sagaing",
+      "district": "Hkamti",
+      "township": "Lay Shi",
+      "nearest_city": "Heinkut",
+      "place_type": "village",
+      "distance_km": 7.8,
+      "shakemapURL": null,
+      "shakemapLastUpdated": null
+    }
+  ]
+}

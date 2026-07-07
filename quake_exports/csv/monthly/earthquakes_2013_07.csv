@@ -1,3 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
-19.455,94.735,35.4,4.6,mb,33,155.0,,0.46,us,usp000k252,2014-11-07T01:51:18.075Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-07-19 01:53:52,2013-07-19 08:23:52,Magway,Thayet,Mindon,Pan Pin Kone,village,0.8
-24.138,95.795,58.4,4.3,mb,14,158.3,,0.52,us,usp000k1u0,2014-11-07T01:51:14.368Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-07-08 13:27:46,2013-07-08 19:57:46,Saigang,Katha,Wuntho,Taw Shaw,village,6.5
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+19.455,94.735,35.4,4.6,mb,33.0,155.0,,0.46,us,usp000k252,2014-11-07T01:51:18.075Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-07-19 01:53:52,2013-07-19 08:23:52,Magway,Thayet,Mindon,Pan Pin Kone,village,0.8,,
+24.138,95.795,58.4,4.3,mb,14.0,158.3,,0.52,us,usp000k1u0,2014-11-07T01:51:14.368Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2013-07-08 13:27:46,2013-07-08 19:57:46,Saigang,Katha,Wuntho,Taw Shaw,village,6.5,,
+22.044,94.427,99.5,4.4,mb,60.0,58.0,,0.85,us,usb000iifh,2014-11-07T01:51:18.594Z,,"73 km W of Monywa, Myanmar",MM,Asia,earthquake,0,0,1,,,2013-07-20 09:14:15,2013-07-20 15:44:15,Magway,Gangaw,Gangaw,None Gyi,village,6.2,,

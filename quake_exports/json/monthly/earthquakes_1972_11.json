@@ -1,0 +1,38 @@
+{
+  "earthquakes": [
+    {
+      "latitude": 26.378,
+      "longitude": 96.244,
+      "depth": 103.3,
+      "mag": 5.37,
+      "magType": "mw",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": NaN,
+      "net": "iscgem",
+      "id": "iscgem766905",
+      "updated": "2025-12-19T19:42:48.954Z",
+      "location": null,
+      "place": "59 km WNW of Sarupathar, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": null,
+      "initialPosition": null,
+      "time_utc": "1972-11-01 21:53:47",
+      "time_mmt": "1972-11-02 04:23:47",
+      "state_region": "Kachin",
+      "district": "Myitkyina",
+      "township": "Tanai",
+      "nearest_city": "",
+      "place_type": "village",
+      "distance_km": 3.9,
+      "shakemapURL": null,
+      "shakemapLastUpdated": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "earthquakes": [
+    {
+      "latitude": 24.645,
+      "longitude": 94.629,
+      "depth": 75.0,
+      "mag": 5.31,
+      "magType": "mw",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": NaN,
+      "net": "iscgem",
+      "id": "iscgem783810",
+      "updated": "2025-12-19T19:55:27.413Z",
+      "location": null,
+      "place": "57 km E of Wāngjing, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": null,
+      "initialPosition": null,
+      "time_utc": "1971-06-26 02:16:38",
+      "time_mmt": "1971-06-26 08:46:38",
+      "state_region": "Sagaing",
+      "district": "Hkamti",
+      "township": "Homalin",
+      "nearest_city": "Zay Di",
+      "place_type": "village",
+      "distance_km": 6.7,
+      "shakemapURL": null,
+      "shakemapLastUpdated": null
+    }
+  ]
+}

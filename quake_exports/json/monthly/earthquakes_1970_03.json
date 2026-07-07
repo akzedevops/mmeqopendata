@@ -1,0 +1,38 @@
+{
+  "earthquakes": [
+    {
+      "latitude": 26.832,
+      "longitude": 96.958,
+      "depth": 15.0,
+      "mag": 5.44,
+      "magType": "mw",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": NaN,
+      "net": "iscgem",
+      "id": "iscgem797747",
+      "updated": "2022-04-26T21:45:17.624Z",
+      "location": null,
+      "place": "70 km NNE of Sarupathar, India",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": null,
+      "initialPosition": null,
+      "time_utc": "1970-03-10 05:20:09",
+      "time_mmt": "1970-03-10 11:50:09",
+      "state_region": "Kachin",
+      "district": "Myitkyina",
+      "township": "Tanai",
+      "nearest_city": "Khashi",
+      "place_type": "village",
+      "distance_km": 33.8,
+      "shakemapURL": null,
+      "shakemapLastUpdated": null
+    }
+  ]
+}

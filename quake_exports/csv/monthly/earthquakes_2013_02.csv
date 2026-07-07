@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+22.609,94.557,104.1,4.6,mb,20.0,145.2,,0.84,us,usb000fmnf,2014-11-07T01:50:12.709Z,,"81 km NW of Monywa, Myanmar",MM,Asia,earthquake,0,0,1,,,2013-02-28 18:32:26,2013-03-01 01:02:26,Sagaing,Yinmarbin,Kani,Yin Thwin,village,4.6,,
