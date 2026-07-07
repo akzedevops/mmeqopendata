@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+### PSHA literature validation + citation fix (spec 009)
+
+Validated the hazard output against published Myanmar PSHA (6-agent research +
+adversarial workflow). GMPE (ASK08) confirmed sound (reproduces the NPW
+recording, matches OpenQuake). PSHA: our **rock** 475-yr peak (~0.44 g, at the
+central-Myanmar seismicity concentration near ~94.8°E, not the fault trace) is
+**comparable to GEM v2018.1 reference-rock** (~0.2–0.55 g) for the Sagaing
+corridor, and ~2× below **Yang et al. (2023)**'s site-amplified >1 g soil values.
+The workflow's adversarial reviewer caught the synthesizer building a false
+"2–4× below GEM" verdict on a wrong on-fault number (fault trace vs density
+peak); recomputation confirmed the refutation, so no false figure entered the
+paper. Fixes: corrected the citation (was "Thant et al. 2023, GL 10:56" — really
+**Yang, H.-B. et al. 2023, Geoscience Letters 10:48**, verified via CrossRef;
+Thant is 6th author); rewrote the PSHA-vs-literature sentence to the verified
+benchmark; cleared 57 stale orphan hazard-curve CSVs (311→254) and made the
+`mmeq report` hazard stage clear the directory before regenerating.
+
+
 ### USGS completeness backfill, 1970–2019 (spec 008)
 
 A full audit of the catalog against USGS ComCat (all in-Myanmar M≥4.0) found

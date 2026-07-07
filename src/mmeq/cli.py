@@ -384,6 +384,14 @@ def cmd_report(args) -> None:
                 vs30_map = {f"{r['lat']:.4f},{r['lon']:.4f}": float(r["vs30"]) for _, r in _v.iterrows()}
 
             hz_dir = os.path.join(args.output, "hazard_curves")
+            # Clear stale per-dam curves from prior runs: dam name slugs can
+            # change between runs, leaving orphan CSVs that misstate any
+            # directory-level aggregate (a reviewer summing the raw folder gets
+            # the wrong portfolio stats). Regenerate the directory from scratch.
+            if os.path.isdir(hz_dir):
+                for _f in os.listdir(hz_dir):
+                    if _f.endswith(".csv") or _f == "index.html":
+                        os.remove(os.path.join(hz_dir, _f))
             os.makedirs(hz_dir, exist_ok=True)
             import numpy as _np
             import re as _re
