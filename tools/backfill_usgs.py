@@ -136,6 +136,17 @@ def backfill(start, end, minmag, box, dry_run=False):
 
     # Spatial refinement: keep only epicenters inside a Myanmar ADM1 polygon
     # (non-empty state_region), the same rule every catalog row already meets.
+    # validate_quake_data geocodes inside a try/except and silently skips it if
+    # shapely/scipy are missing or the admin GeoJSON is unreadable — in which
+    # case there is no state_region column and the polygon filter is impossible.
+    # The whole backfill depends on it, so fail loudly rather than raise a
+    # cryptic KeyError or (worse) write an unfiltered box.
+    if "state_region" not in validated.columns:
+        raise RuntimeError(
+            "geocoding was skipped (no state_region column) — the Myanmar-polygon "
+            "filter cannot run. Install the geocoder deps (shapely, scipy) and "
+            "check data/admin/mmr_admin1.geojson before backfilling."
+        )
     in_mm = validated["state_region"].astype(str).str.strip().replace("nan", "").ne("")
     kept = validated[in_mm].copy()
     logger.info("Kept %d of %d after Myanmar-polygon filter", len(kept), len(validated))
