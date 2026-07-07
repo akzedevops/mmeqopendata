@@ -67,6 +67,7 @@
   ±0.001 MPa sat in tidal-stress noise. Triggered/shadow: 34/163 → **16/72**.
 - References added: Frankel 1995, Gardner & Knopoff 1974, Okada 1992,
   Thant et al. 2023, Wald et al. 1999 (some were cited but missing).
+
 ### Dam-risk hygiene (2026-07-06 integrity audit, phase 6b)
 
 - **`sensitivity_analysis` now uses site-specific Vs30** (the same map as
