@@ -1,3 +1,4 @@
-latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
-20.071,95.181,33.0,5.1,mb,,,,,us,usp00008ve,2014-11-06T23:21:27.505Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1974-11-21 19:45:05,1974-11-22 02:15:05,Magway,Magway,Magway,Kyee Kone,village,3.2
-24.876,95.421,159.0,4.7,mb,,,,,us,usp00008tp,2014-11-06T23:21:27.443Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1974-11-16 22:07:25,1974-11-17 04:37:25,Saigang,Hkamti,Homalin,Kwayt Pay,village,3.9
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+20.071,95.181,33.0,5.1,mb,,,,,us,usp00008ve,2014-11-06T23:21:27.505Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1974-11-21 19:45:05,1974-11-22 02:15:05,Magway,Magway,Magway,Kyee Kone,village,3.2,,
+24.876,95.421,159.0,4.7,mb,,,,,us,usp00008tp,2014-11-06T23:21:27.443Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,1974-11-16 22:07:25,1974-11-17 04:37:25,Saigang,Hkamti,Homalin,Kwayt Pay,village,3.9,,
+20.198,97.986,15.0,5.12,mw,,,,,iscgem,iscgem735476,2025-12-19T19:25:40.995Z,,"99 km N of Mae Hong Son, Thailand",MM,Asia,earthquake,0,0,1,,,1974-11-16 04:53:11,1974-11-16 11:23:11,Shan,Langkho,Langkho,Pang Ta Wi,village,3.9,,

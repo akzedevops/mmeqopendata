@@ -1,0 +1,38 @@
+{
+  "earthquakes": [
+    {
+      "latitude": 18.413,
+      "longitude": 97.296,
+      "depth": 10.0,
+      "mag": 4.2,
+      "magType": "mb",
+      "nst": NaN,
+      "gap": NaN,
+      "dmin": NaN,
+      "rms": 1.5,
+      "net": "us",
+      "id": "usp0002pcj",
+      "updated": "2014-11-07T00:37:40.002Z",
+      "location": null,
+      "place": "79 km NE of Nyaunglebin, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": null,
+      "initialPosition": null,
+      "time_utc": "1985-12-24 23:04:08",
+      "time_mmt": "1985-12-25 05:34:08",
+      "state_region": "Kayin",
+      "district": "Hpapun",
+      "township": "Hpapun",
+      "nearest_city": "Hpaw Mu Khar Doe",
+      "place_type": "village",
+      "distance_km": 1.0,
+      "shakemapURL": null,
+      "shakemapLastUpdated": null
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+21.839,94.145,69.7,5.21,mw,,,,,iscgem,iscgem791105,2022-04-26T21:30:30.675Z,,"104 km SSE of Hakha, Myanmar",MM,Asia,earthquake,0,0,1,,,1970-10-14 16:51:39,1970-10-14 23:21:39,Magway,Gangaw,Tilin,Kyar U Yin,village,1.4,,

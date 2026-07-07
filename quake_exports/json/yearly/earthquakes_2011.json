@@ -6,7 +6,7 @@
       "depth": 35.7,
       "mag": 4.5,
       "magType": "mb",
-      "nst": 44,
+      "nst": 44.0,
       "gap": 91.9,
       "dmin": NaN,
       "rms": 0.98,
@@ -30,7 +30,9 @@
       "township": NaN,
       "nearest_city": "Huguo",
       "place_type": "town",
-      "distance_km": 4.6
+      "distance_km": 4.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.653,
@@ -38,7 +40,7 @@
       "depth": 21.4,
       "mag": 5.0,
       "magType": "mb",
-      "nst": 68,
+      "nst": 68.0,
       "gap": 59.8,
       "dmin": NaN,
       "rms": 0.88,
@@ -62,7 +64,9 @@
       "township": NaN,
       "nearest_city": "闷璋",
       "place_type": "village",
-      "distance_km": 0.4
+      "distance_km": 0.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.538,
@@ -70,7 +74,7 @@
       "depth": 35.0,
       "mag": 4.1,
       "magType": "mb",
-      "nst": 17,
+      "nst": 17.0,
       "gap": 140.5,
       "dmin": NaN,
       "rms": 1.13,
@@ -94,7 +98,9 @@
       "township": NaN,
       "nearest_city": NaN,
       "place_type": "village",
-      "distance_km": 5.0
+      "distance_km": 5.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.401,
@@ -102,7 +108,7 @@
       "depth": 95.9,
       "mag": 4.8,
       "magType": "mb",
-      "nst": 72,
+      "nst": 72.0,
       "gap": 56.3,
       "dmin": NaN,
       "rms": 0.69,
@@ -126,7 +132,9 @@
       "township": "Homalin",
       "nearest_city": "Kyun Kone",
       "place_type": "village",
-      "distance_km": 0.8
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.267,
@@ -134,7 +142,7 @@
       "depth": 86.3,
       "mag": 4.7,
       "magType": "mb",
-      "nst": 101,
+      "nst": 101.0,
       "gap": 52.2,
       "dmin": NaN,
       "rms": 0.79,
@@ -158,7 +166,9 @@
       "township": "Paungbyin",
       "nearest_city": "Tha Yet Kone",
       "place_type": "village",
-      "distance_km": 6.9
+      "distance_km": 6.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.693,
@@ -166,7 +176,7 @@
       "depth": 31.1,
       "mag": 4.8,
       "magType": "mb",
-      "nst": 75,
+      "nst": 75.0,
       "gap": 59.8,
       "dmin": NaN,
       "rms": 1.03,
@@ -190,7 +200,9 @@
       "township": NaN,
       "nearest_city": "Pingyuan",
       "place_type": "town",
-      "distance_km": 1.9
+      "distance_km": 1.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.618,
@@ -198,7 +210,7 @@
       "depth": 85.0,
       "mag": 6.2,
       "magType": "mww",
-      "nst": 555,
+      "nst": 555.0,
       "gap": 11.8,
       "dmin": NaN,
       "rms": 1.04,
@@ -222,7 +234,9 @@
       "township": "Homalin",
       "nearest_city": "Oke Kan",
       "place_type": "village",
-      "distance_km": 1.6
+      "distance_km": 1.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.531,
@@ -230,7 +244,7 @@
       "depth": 78.4,
       "mag": 4.1,
       "magType": "mb",
-      "nst": 11,
+      "nst": 11.0,
       "gap": 112.8,
       "dmin": NaN,
       "rms": 0.97,
@@ -254,7 +268,9 @@
       "township": "Paungbyin",
       "nearest_city": "Lin Mu",
       "place_type": "village",
-      "distance_km": 7.1
+      "distance_km": 7.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.752,
@@ -262,7 +278,7 @@
       "depth": 100.5,
       "mag": 4.4,
       "magType": "mb",
-      "nst": 46,
+      "nst": 46.0,
       "gap": 57.3,
       "dmin": NaN,
       "rms": 0.95,
@@ -286,7 +302,9 @@
       "township": "Mingin",
       "nearest_city": "Hpet Htoke",
       "place_type": "village",
-      "distance_km": 2.8
+      "distance_km": 2.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.114,
@@ -294,7 +312,7 @@
       "depth": 59.1,
       "mag": 4.8,
       "magType": "mb",
-      "nst": 99,
+      "nst": 99.0,
       "gap": 59.3,
       "dmin": NaN,
       "rms": 0.88,
@@ -318,7 +336,9 @@
       "township": "Tanai",
       "nearest_city": NaN,
       "place_type": "village",
-      "distance_km": 20.3
+      "distance_km": 20.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.485,
@@ -326,7 +346,7 @@
       "depth": 87.3,
       "mag": 4.0,
       "magType": "mb",
-      "nst": 30,
+      "nst": 30.0,
       "gap": 112.8,
       "dmin": NaN,
       "rms": 0.54,
@@ -350,7 +370,9 @@
       "township": "Paungbyin",
       "nearest_city": "Ka Yut Tar",
       "place_type": "village",
-      "distance_km": 0.9
+      "distance_km": 0.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 19.55,
@@ -358,7 +380,7 @@
       "depth": 83.6,
       "mag": 4.7,
       "magType": "mb",
-      "nst": 44,
+      "nst": 44.0,
       "gap": 58.7,
       "dmin": NaN,
       "rms": 0.75,
@@ -382,7 +404,9 @@
       "township": "Thayet",
       "nearest_city": "Hpaung Ka Aing",
       "place_type": "village",
-      "distance_km": 4.2
+      "distance_km": 4.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 19.98,
@@ -390,7 +414,7 @@
       "depth": 117.4,
       "mag": 4.6,
       "magType": "mb",
-      "nst": 45,
+      "nst": 45.0,
       "gap": 82.9,
       "dmin": NaN,
       "rms": 0.75,
@@ -414,7 +438,9 @@
       "township": "Magway",
       "nearest_city": "Hpoe Pauk Kan",
       "place_type": "village",
-      "distance_km": 2.0
+      "distance_km": 2.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.946,
@@ -422,7 +448,7 @@
       "depth": 63.3,
       "mag": 4.4,
       "magType": "mb",
-      "nst": 51,
+      "nst": 51.0,
       "gap": 96.5,
       "dmin": NaN,
       "rms": 0.72,
@@ -446,7 +472,9 @@
       "township": NaN,
       "nearest_city": "Thansial",
       "place_type": "village",
-      "distance_km": 4.5
+      "distance_km": 4.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.948,
@@ -454,7 +482,7 @@
       "depth": 88.8,
       "mag": 4.3,
       "magType": "mb",
-      "nst": 50,
+      "nst": 50.0,
       "gap": 132.0,
       "dmin": NaN,
       "rms": 0.78,
@@ -478,7 +506,9 @@
       "township": "Mingin",
       "nearest_city": "Thein Kone",
       "place_type": "village",
-      "distance_km": 2.0
+      "distance_km": 2.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.727,
@@ -486,7 +516,7 @@
       "depth": 10.0,
       "mag": 5.5,
       "magType": "mwc",
-      "nst": 185,
+      "nst": 185.0,
       "gap": 41.9,
       "dmin": NaN,
       "rms": 0.88,
@@ -510,7 +540,9 @@
       "township": NaN,
       "nearest_city": "Pingyuan",
       "place_type": "town",
-      "distance_km": 2.9
+      "distance_km": 2.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.732,
@@ -518,7 +550,7 @@
       "depth": 10.0,
       "mag": 4.3,
       "magType": "mb",
-      "nst": 17,
+      "nst": 17.0,
       "gap": 128.5,
       "dmin": NaN,
       "rms": 0.74,
@@ -542,7 +574,9 @@
       "township": NaN,
       "nearest_city": "Yousongling",
       "place_type": "town",
-      "distance_km": 6.1
+      "distance_km": 6.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.616,
@@ -550,7 +584,7 @@
       "depth": 10.0,
       "mag": 4.3,
       "magType": "mb",
-      "nst": 13,
+      "nst": 13.0,
       "gap": 142.3,
       "dmin": NaN,
       "rms": 1.35,
@@ -574,7 +608,9 @@
       "township": NaN,
       "nearest_city": "Mangdong",
       "place_type": "town",
-      "distance_km": 5.7
+      "distance_km": 5.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.59,
@@ -582,7 +618,7 @@
       "depth": 87.7,
       "mag": 4.4,
       "magType": "mb",
-      "nst": 12,
+      "nst": 12.0,
       "gap": 169.3,
       "dmin": NaN,
       "rms": 0.42,
@@ -606,7 +642,9 @@
       "township": "Homalin",
       "nearest_city": "Mei Nei",
       "place_type": "village",
-      "distance_km": 2.3
+      "distance_km": 2.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.803,
@@ -614,7 +652,7 @@
       "depth": 73.8,
       "mag": 4.7,
       "magType": "mb",
-      "nst": 37,
+      "nst": 37.0,
       "gap": 55.5,
       "dmin": NaN,
       "rms": 1.03,
@@ -638,7 +676,9 @@
       "township": "Mingin",
       "nearest_city": "Laung Kyin",
       "place_type": "village",
-      "distance_km": 3.5
+      "distance_km": 3.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 20.687,
@@ -646,7 +686,7 @@
       "depth": 8.0,
       "mag": 6.9,
       "magType": "mww",
-      "nst": 335,
+      "nst": 335.0,
       "gap": 18.2,
       "dmin": NaN,
       "rms": 1.1,
@@ -670,7 +710,9 @@
       "township": "Tachileik",
       "nearest_city": "Mae Hoke",
       "place_type": "village",
-      "distance_km": 8.1
+      "distance_km": 8.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 20.655,
@@ -678,7 +720,7 @@
       "depth": 11.1,
       "mag": 4.8,
       "magType": "mb",
-      "nst": 63,
+      "nst": 63.0,
       "gap": 94.8,
       "dmin": NaN,
       "rms": 1.0,
@@ -702,7 +744,9 @@
       "township": "Tachileik",
       "nearest_city": "Nam Tun",
       "place_type": "village",
-      "distance_km": 2.9
+      "distance_km": 2.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 20.65,
@@ -710,7 +754,7 @@
       "depth": 10.0,
       "mag": 5.7,
       "magType": "mwc",
-      "nst": 210,
+      "nst": 210.0,
       "gap": 23.5,
       "dmin": NaN,
       "rms": 1.1,
@@ -734,7 +778,43 @@
       "township": "Tachileik",
       "nearest_city": "Mae Hoke",
       "place_type": "village",
-      "distance_km": 5.6
+      "distance_km": 5.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 20.751,
+      "longitude": 100.161,
+      "depth": 10.0,
+      "mag": 4.4,
+      "magType": "mb",
+      "nst": 33.0,
+      "gap": 93.1,
+      "dmin": NaN,
+      "rms": 1.07,
+      "net": "us",
+      "id": "usp000hygb",
+      "updated": "2014-11-07T01:44:19.260Z",
+      "location": NaN,
+      "place": "44 km NE of Tachilek, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2011-03-24 17:20:10",
+      "time_mmt": "2011-03-24 23:50:10",
+      "state_region": "Shan",
+      "district": "Tachileik",
+      "township": "Tachileik",
+      "nearest_city": "Wein Lan",
+      "place_type": "village",
+      "distance_km": 0.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 20.712,
@@ -742,7 +822,7 @@
       "depth": 10.0,
       "mag": 5.0,
       "magType": "mwc",
-      "nst": 125,
+      "nst": 125.0,
       "gap": 35.1,
       "dmin": NaN,
       "rms": 1.01,
@@ -766,7 +846,9 @@
       "township": "Tachileik",
       "nearest_city": "Loi Si Mein",
       "place_type": "village",
-      "distance_km": 4.9
+      "distance_km": 4.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 20.583,
@@ -774,7 +856,7 @@
       "depth": 10.0,
       "mag": 4.1,
       "magType": "mb",
-      "nst": 23,
+      "nst": 23.0,
       "gap": 120.2,
       "dmin": NaN,
       "rms": 0.99,
@@ -798,7 +880,77 @@
       "township": "Monghsat",
       "nearest_city": "Pa Lawng Pu Tun",
       "place_type": "village",
-      "distance_km": 1.1
+      "distance_km": 1.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 20.702,
+      "longitude": 100.114,
+      "depth": 8.1,
+      "mag": 4.6,
+      "magType": "mb",
+      "nst": 22.0,
+      "gap": 106.6,
+      "dmin": NaN,
+      "rms": 0.6,
+      "net": "us",
+      "id": "usp000hyj0",
+      "updated": "2014-11-07T01:44:19.512Z",
+      "location": NaN,
+      "place": "37 km NE of Tachilek, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2011-03-25 06:30:39",
+      "time_mmt": "2011-03-25 13:00:39",
+      "state_region": "Shan",
+      "district": "Tachileik",
+      "township": "Tachileik",
+      "nearest_city": "Wan Hsar",
+      "place_type": "village",
+      "distance_km": 0.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
+    },
+    {
+      "latitude": 20.737,
+      "longitude": 100.114,
+      "depth": 27.7,
+      "mag": 5.0,
+      "magType": "mwc",
+      "nst": 108.0,
+      "gap": 73.0,
+      "dmin": NaN,
+      "rms": 0.83,
+      "net": "us",
+      "id": "usp000hymj",
+      "updated": "2022-04-08T21:43:50.687Z",
+      "location": NaN,
+      "place": "40 km NE of Tachilek, Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": 0,
+      "timestamp": 0,
+      "locationInferred": 1,
+      "state": NaN,
+      "initialPosition": NaN,
+      "time_utc": "2011-03-26 05:57:33",
+      "time_mmt": "2011-03-26 12:27:33",
+      "state_region": "Shan",
+      "district": "Tachileik",
+      "township": "Tachileik",
+      "nearest_city": "Kyaw Aung",
+      "place_type": "village",
+      "distance_km": 1.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 20.572,
@@ -806,7 +958,7 @@
       "depth": 10.0,
       "mag": 4.3,
       "magType": "mb",
-      "nst": 17,
+      "nst": 17.0,
       "gap": 115.6,
       "dmin": NaN,
       "rms": 1.33,
@@ -830,7 +982,9 @@
       "township": "Tachileik",
       "nearest_city": "Hway Ae",
       "place_type": "village",
-      "distance_km": 3.5
+      "distance_km": 3.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 20.535,
@@ -838,7 +992,7 @@
       "depth": 10.0,
       "mag": 4.1,
       "magType": "mb",
-      "nst": 26,
+      "nst": 26.0,
       "gap": 90.0,
       "dmin": NaN,
       "rms": 0.68,
@@ -862,7 +1016,9 @@
       "township": "Tachileik",
       "nearest_city": "Ping Hu",
       "place_type": "village",
-      "distance_km": 2.3
+      "distance_km": 2.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.686,
@@ -870,7 +1026,7 @@
       "depth": 10.0,
       "mag": 4.0,
       "magType": "mb",
-      "nst": 12,
+      "nst": 12.0,
       "gap": 137.0,
       "dmin": NaN,
       "rms": 0.98,
@@ -894,7 +1050,9 @@
       "township": NaN,
       "nearest_city": "Guojiazhai",
       "place_type": "village",
-      "distance_km": 2.2
+      "distance_km": 2.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.09,
@@ -902,7 +1060,7 @@
       "depth": 118.6,
       "mag": 4.2,
       "magType": "mb",
-      "nst": 31,
+      "nst": 31.0,
       "gap": 68.2,
       "dmin": NaN,
       "rms": 0.78,
@@ -926,7 +1084,9 @@
       "township": "Yinmarbin",
       "nearest_city": "Lar Boet",
       "place_type": "village",
-      "distance_km": 0.6
+      "distance_km": 0.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 21.654,
@@ -934,7 +1094,7 @@
       "depth": 103.9,
       "mag": 4.5,
       "magType": "mb",
-      "nst": 43,
+      "nst": 43.0,
       "gap": 68.9,
       "dmin": NaN,
       "rms": 0.79,
@@ -958,7 +1118,9 @@
       "township": "Myaing",
       "nearest_city": "Kyauk Khwet",
       "place_type": "village",
-      "distance_km": 1.5
+      "distance_km": 1.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.923,
@@ -966,7 +1128,7 @@
       "depth": 29.2,
       "mag": 4.4,
       "magType": "mb",
-      "nst": 37,
+      "nst": 37.0,
       "gap": 115.0,
       "dmin": NaN,
       "rms": 0.62,
@@ -990,7 +1152,9 @@
       "township": "Tanai",
       "nearest_city": "land mark",
       "place_type": "village",
-      "distance_km": 29.7
+      "distance_km": 29.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.119,
@@ -998,7 +1162,7 @@
       "depth": 85.1,
       "mag": 4.1,
       "magType": "mb",
-      "nst": 27,
+      "nst": 27.0,
       "gap": 146.0,
       "dmin": NaN,
       "rms": 0.55,
@@ -1022,7 +1186,9 @@
       "township": "Lahe",
       "nearest_city": "Tsupao",
       "place_type": "village",
-      "distance_km": 2.4
+      "distance_km": 2.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.487,
@@ -1030,7 +1196,7 @@
       "depth": 84.9,
       "mag": 4.5,
       "magType": "mb",
-      "nst": 69,
+      "nst": 69.0,
       "gap": 58.1,
       "dmin": NaN,
       "rms": 0.69,
@@ -1054,7 +1220,9 @@
       "township": "Tamu",
       "nearest_city": "Ywar Thar",
       "place_type": "village",
-      "distance_km": 5.4
+      "distance_km": 5.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.857,
@@ -1062,7 +1230,7 @@
       "depth": 47.3,
       "mag": 4.3,
       "magType": "mb",
-      "nst": 25,
+      "nst": 25.0,
       "gap": 142.8,
       "dmin": NaN,
       "rms": 0.95,
@@ -1086,7 +1254,9 @@
       "township": "Tigyaing",
       "nearest_city": "Me Zar Lay",
       "place_type": "village",
-      "distance_km": 0.9
+      "distance_km": 0.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.361,
@@ -1094,7 +1264,7 @@
       "depth": 105.0,
       "mag": 4.3,
       "magType": "mb",
-      "nst": 50,
+      "nst": 50.0,
       "gap": 110.9,
       "dmin": NaN,
       "rms": 0.6,
@@ -1118,7 +1288,9 @@
       "township": "Homalin",
       "nearest_city": NaN,
       "place_type": "village",
-      "distance_km": 4.3
+      "distance_km": 4.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.027,
@@ -1126,7 +1298,7 @@
       "depth": 35.0,
       "mag": 4.0,
       "magType": "mb",
-      "nst": 21,
+      "nst": 21.0,
       "gap": 139.9,
       "dmin": NaN,
       "rms": 1.18,
@@ -1150,7 +1322,9 @@
       "township": "Tanai",
       "nearest_city": NaN,
       "place_type": "village",
-      "distance_km": 14.3
+      "distance_km": 14.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 20.431,
@@ -1158,7 +1332,7 @@
       "depth": 62.3,
       "mag": 4.2,
       "magType": "mb",
-      "nst": 19,
+      "nst": 19.0,
       "gap": 185.8,
       "dmin": NaN,
       "rms": 0.6,
@@ -1182,7 +1356,9 @@
       "township": "Sidoktaya",
       "nearest_city": "Ma Htein (West)",
       "place_type": "village",
-      "distance_km": 14.5
+      "distance_km": 14.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.077,
@@ -1190,7 +1366,7 @@
       "depth": 164.6,
       "mag": 4.7,
       "magType": "mb",
-      "nst": 120,
+      "nst": 120.0,
       "gap": 49.8,
       "dmin": NaN,
       "rms": 0.85,
@@ -1214,7 +1390,9 @@
       "township": "Taze",
       "nearest_city": "Waing Kyo",
       "place_type": "village",
-      "distance_km": 0.4
+      "distance_km": 0.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.073,
@@ -1222,7 +1400,7 @@
       "depth": 25.7,
       "mag": 4.2,
       "magType": "mb",
-      "nst": 27,
+      "nst": 27.0,
       "gap": 120.2,
       "dmin": NaN,
       "rms": 1.07,
@@ -1246,7 +1424,9 @@
       "township": "Tanai",
       "nearest_city": "Ting Kauk",
       "place_type": "village",
-      "distance_km": 10.5
+      "distance_km": 10.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.221,
@@ -1254,7 +1434,7 @@
       "depth": 81.5,
       "mag": 4.0,
       "magType": "mb",
-      "nst": 13,
+      "nst": 13.0,
       "gap": 159.0,
       "dmin": NaN,
       "rms": 0.61,
@@ -1278,7 +1458,9 @@
       "township": "Tamu",
       "nearest_city": "Thar Si",
       "place_type": "village",
-      "distance_km": 10.5
+      "distance_km": 10.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.062,
@@ -1286,7 +1468,7 @@
       "depth": 34.5,
       "mag": 4.7,
       "magType": "mb",
-      "nst": 47,
+      "nst": 47.0,
       "gap": 122.6,
       "dmin": NaN,
       "rms": 0.94,
@@ -1310,7 +1492,9 @@
       "township": NaN,
       "nearest_city": "山脚",
       "place_type": "village",
-      "distance_km": 3.9
+      "distance_km": 3.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.542,
@@ -1318,7 +1502,7 @@
       "depth": 54.2,
       "mag": 4.3,
       "magType": "mb",
-      "nst": 56,
+      "nst": 56.0,
       "gap": 115.3,
       "dmin": NaN,
       "rms": 0.77,
@@ -1342,7 +1526,9 @@
       "township": "Tamu",
       "nearest_city": "Ban Du La",
       "place_type": "village",
-      "distance_km": 3.8
+      "distance_km": 3.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.429,
@@ -1350,7 +1536,7 @@
       "depth": 41.5,
       "mag": 4.2,
       "magType": "mb",
-      "nst": 22,
+      "nst": 22.0,
       "gap": 120.8,
       "dmin": NaN,
       "rms": 0.91,
@@ -1374,7 +1560,9 @@
       "township": "Mogaung",
       "nearest_city": "Say Ton",
       "place_type": "village",
-      "distance_km": 2.1
+      "distance_km": 2.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.075,
@@ -1382,7 +1570,7 @@
       "depth": 39.0,
       "mag": 5.0,
       "magType": "mwc",
-      "nst": 203,
+      "nst": 203.0,
       "gap": 34.2,
       "dmin": NaN,
       "rms": 0.85,
@@ -1406,7 +1594,9 @@
       "township": NaN,
       "nearest_city": "蒲箐",
       "place_type": "village",
-      "distance_km": 7.9
+      "distance_km": 7.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.734,
@@ -1414,7 +1604,7 @@
       "depth": 81.4,
       "mag": 4.7,
       "magType": "mb",
-      "nst": 54,
+      "nst": 54.0,
       "gap": 73.6,
       "dmin": NaN,
       "rms": 0.76,
@@ -1438,7 +1628,9 @@
       "township": "Mawlaik",
       "nearest_city": "Nan Ka Teik",
       "place_type": "village",
-      "distance_km": 10.2
+      "distance_km": 10.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.809,
@@ -1446,7 +1638,7 @@
       "depth": 66.3,
       "mag": 4.3,
       "magType": "mb",
-      "nst": 11,
+      "nst": 11.0,
       "gap": 167.1,
       "dmin": NaN,
       "rms": 1.16,
@@ -1470,7 +1662,9 @@
       "township": "Tigyaing",
       "nearest_city": "Nan Paung",
       "place_type": "village",
-      "distance_km": 10.5
+      "distance_km": 10.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 21.088,
@@ -1478,7 +1672,7 @@
       "depth": 70.9,
       "mag": 4.9,
       "magType": "mb",
-      "nst": 109,
+      "nst": 109.0,
       "gap": 60.4,
       "dmin": NaN,
       "rms": 0.6,
@@ -1502,7 +1696,9 @@
       "township": "Kanpetlet",
       "nearest_city": "Khan Nan",
       "place_type": "village",
-      "distance_km": 5.2
+      "distance_km": 5.2,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 21.048,
@@ -1510,7 +1706,7 @@
       "depth": 76.0,
       "mag": 4.4,
       "magType": "mb",
-      "nst": 35,
+      "nst": 35.0,
       "gap": 99.0,
       "dmin": NaN,
       "rms": 0.77,
@@ -1534,7 +1730,9 @@
       "township": "Kanpetlet",
       "nearest_city": "Khoke",
       "place_type": "village",
-      "distance_km": 2.0
+      "distance_km": 2.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 27.123,
@@ -1542,7 +1740,7 @@
       "depth": 35.0,
       "mag": 4.4,
       "magType": "mb",
-      "nst": 16,
+      "nst": 16.0,
       "gap": 85.9,
       "dmin": NaN,
       "rms": 0.79,
@@ -1566,7 +1764,9 @@
       "township": NaN,
       "nearest_city": "Vijaynagar",
       "place_type": "village",
-      "distance_km": 9.7
+      "distance_km": 9.7,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.805,
@@ -1574,7 +1774,7 @@
       "depth": 114.6,
       "mag": 4.2,
       "magType": "mb",
-      "nst": 14,
+      "nst": 14.0,
       "gap": 152.0,
       "dmin": NaN,
       "rms": 0.61,
@@ -1598,7 +1798,9 @@
       "township": "Homalin",
       "nearest_city": "Ton Khan",
       "place_type": "village",
-      "distance_km": 4.4
+      "distance_km": 4.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.36,
@@ -1606,7 +1808,7 @@
       "depth": 43.1,
       "mag": 4.3,
       "magType": "mb",
-      "nst": 11,
+      "nst": 11.0,
       "gap": 140.5,
       "dmin": NaN,
       "rms": 0.85,
@@ -1630,7 +1832,9 @@
       "township": "Hakha",
       "nearest_city": "Sumsen",
       "place_type": "village",
-      "distance_km": 3.3
+      "distance_km": 3.3,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.753,
@@ -1638,7 +1842,7 @@
       "depth": 39.2,
       "mag": 4.4,
       "magType": "mb",
-      "nst": 18,
+      "nst": 18.0,
       "gap": 107.8,
       "dmin": NaN,
       "rms": 0.71,
@@ -1662,7 +1866,9 @@
       "township": "Gangaw",
       "nearest_city": "Yae Shin",
       "place_type": "village",
-      "distance_km": 1.5
+      "distance_km": 1.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.932,
@@ -1670,7 +1876,7 @@
       "depth": 40.1,
       "mag": 5.1,
       "magType": "mwc",
-      "nst": 101,
+      "nst": 101.0,
       "gap": 41.3,
       "dmin": NaN,
       "rms": 1.17,
@@ -1694,7 +1900,9 @@
       "township": NaN,
       "nearest_city": "尖坡",
       "place_type": "village",
-      "distance_km": 4.0
+      "distance_km": 4.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 21.807,
@@ -1702,7 +1910,7 @@
       "depth": 87.6,
       "mag": 4.4,
       "magType": "mb",
-      "nst": 27,
+      "nst": 27.0,
       "gap": 145.4,
       "dmin": NaN,
       "rms": 1.01,
@@ -1726,7 +1934,9 @@
       "township": "Pauk",
       "nearest_city": "Htan Taw",
       "place_type": "village",
-      "distance_km": 4.8
+      "distance_km": 4.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.036,
@@ -1734,7 +1944,7 @@
       "depth": 35.0,
       "mag": 4.2,
       "magType": "mb",
-      "nst": 21,
+      "nst": 21.0,
       "gap": 100.2,
       "dmin": NaN,
       "rms": 0.83,
@@ -1758,7 +1968,9 @@
       "township": NaN,
       "nearest_city": "Pyi Thar Yar",
       "place_type": "village",
-      "distance_km": 91.0
+      "distance_km": 91.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 26.521,
@@ -1766,7 +1978,7 @@
       "depth": 121.7,
       "mag": 4.5,
       "magType": "mb",
-      "nst": 54,
+      "nst": 54.0,
       "gap": 74.1,
       "dmin": NaN,
       "rms": 0.62,
@@ -1790,7 +2002,9 @@
       "township": "Tanai",
       "nearest_city": "Pa Net",
       "place_type": "village",
-      "distance_km": 9.9
+      "distance_km": 9.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.639,
@@ -1798,7 +2012,7 @@
       "depth": 43.6,
       "mag": 4.4,
       "magType": "mb",
-      "nst": 27,
+      "nst": 27.0,
       "gap": 113.6,
       "dmin": NaN,
       "rms": 1.02,
@@ -1822,7 +2036,9 @@
       "township": NaN,
       "nearest_city": "岗勐",
       "place_type": "village",
-      "distance_km": 6.9
+      "distance_km": 6.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.002,
@@ -1830,7 +2046,7 @@
       "depth": 116.8,
       "mag": 4.5,
       "magType": "mb",
-      "nst": 24,
+      "nst": 24.0,
       "gap": 71.6,
       "dmin": NaN,
       "rms": 0.75,
@@ -1854,7 +2070,9 @@
       "township": "Homalin",
       "nearest_city": "Chaung Son",
       "place_type": "village",
-      "distance_km": 12.0
+      "distance_km": 12.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.647,
@@ -1862,7 +2080,7 @@
       "depth": 139.3,
       "mag": 4.7,
       "magType": "mb",
-      "nst": 39,
+      "nst": 39.0,
       "gap": 53.3,
       "dmin": NaN,
       "rms": 0.9,
@@ -1886,7 +2104,9 @@
       "township": "Kyunhla",
       "nearest_city": "Nan That",
       "place_type": "village",
-      "distance_km": 4.1
+      "distance_km": 4.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.258,
@@ -1894,7 +2114,7 @@
       "depth": 40.6,
       "mag": 4.2,
       "magType": "mb",
-      "nst": 13,
+      "nst": 13.0,
       "gap": 138.7,
       "dmin": NaN,
       "rms": 0.68,
@@ -1918,7 +2138,9 @@
       "township": NaN,
       "nearest_city": "户弄",
       "place_type": "village",
-      "distance_km": 0.8
+      "distance_km": 0.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.173,
@@ -1926,7 +2148,7 @@
       "depth": 66.6,
       "mag": 4.2,
       "magType": "mb",
-      "nst": 27,
+      "nst": 27.0,
       "gap": 65.8,
       "dmin": NaN,
       "rms": 0.54,
@@ -1950,7 +2172,9 @@
       "township": "Tedim",
       "nearest_city": "Duhmang",
       "place_type": "village",
-      "distance_km": 0.9
+      "distance_km": 0.9,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.884,
@@ -1958,7 +2182,7 @@
       "depth": 65.9,
       "mag": 4.5,
       "magType": "mb",
-      "nst": 47,
+      "nst": 47.0,
       "gap": 70.1,
       "dmin": NaN,
       "rms": 0.94,
@@ -1982,7 +2206,9 @@
       "township": NaN,
       "nearest_city": NaN,
       "place_type": "village",
-      "distance_km": 4.5
+      "distance_km": 4.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.923,
@@ -1990,7 +2216,7 @@
       "depth": 160.3,
       "mag": 4.7,
       "magType": "mb",
-      "nst": 32,
+      "nst": 32.0,
       "gap": 41.6,
       "dmin": NaN,
       "rms": 0.8,
@@ -2014,7 +2240,9 @@
       "township": "Homalin",
       "nearest_city": "Ton Sa Kar",
       "place_type": "village",
-      "distance_km": 5.0
+      "distance_km": 5.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.96,
@@ -2022,7 +2250,7 @@
       "depth": 107.0,
       "mag": 5.7,
       "magType": "mww",
-      "nst": 370,
+      "nst": 370.0,
       "gap": 14.5,
       "dmin": NaN,
       "rms": 0.99,
@@ -2046,7 +2274,9 @@
       "township": "Homalin",
       "nearest_city": "Nan Khan Si",
       "place_type": "village",
-      "distance_km": 9.6
+      "distance_km": 9.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.2,
@@ -2054,7 +2284,7 @@
       "depth": 35.3,
       "mag": 5.2,
       "magType": "mwc",
-      "nst": 112,
+      "nst": 112.0,
       "gap": 43.4,
       "dmin": NaN,
       "rms": 0.9,
@@ -2078,7 +2308,9 @@
       "township": "Waingmaw",
       "nearest_city": "San Pai",
       "place_type": "village",
-      "distance_km": 1.8
+      "distance_km": 1.8,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 21.388,
@@ -2086,7 +2318,7 @@
       "depth": 81.6,
       "mag": 4.8,
       "magType": "mb",
-      "nst": 60,
+      "nst": 60.0,
       "gap": 61.3,
       "dmin": NaN,
       "rms": 0.66,
@@ -2110,7 +2342,9 @@
       "township": "Pauk",
       "nearest_city": "Myay Ni (Myauk Su)",
       "place_type": "village",
-      "distance_km": 1.6
+      "distance_km": 1.6,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 25.182,
@@ -2118,7 +2352,7 @@
       "depth": 10.0,
       "mag": 4.3,
       "magType": "mb",
-      "nst": 22,
+      "nst": 22.0,
       "gap": 132.1,
       "dmin": NaN,
       "rms": 0.97,
@@ -2142,7 +2376,9 @@
       "township": "Waingmaw",
       "nearest_city": "Ding Kar",
       "place_type": "village",
-      "distance_km": 3.5
+      "distance_km": 3.5,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 15.946,
@@ -2150,7 +2386,7 @@
       "depth": 10.0,
       "mag": 4.1,
       "magType": "mb",
-      "nst": 13,
+      "nst": 13.0,
       "gap": 105.0,
       "dmin": NaN,
       "rms": 0.77,
@@ -2174,7 +2410,9 @@
       "township": "Bogale",
       "nearest_city": "Tha Pyay (Ta Say)",
       "place_type": "village",
-      "distance_km": 3.4
+      "distance_km": 3.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 24.886,
@@ -2182,7 +2420,7 @@
       "depth": 122.4,
       "mag": 4.6,
       "magType": "mb",
-      "nst": 31,
+      "nst": 31.0,
       "gap": 84.8,
       "dmin": NaN,
       "rms": 0.92,
@@ -2206,7 +2444,9 @@
       "township": "Homalin",
       "nearest_city": "Tin Kyit",
       "place_type": "village",
-      "distance_km": 4.4
+      "distance_km": 4.4,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 22.546,
@@ -2214,7 +2454,7 @@
       "depth": 10.0,
       "mag": 4.0,
       "magType": "mb",
-      "nst": 20,
+      "nst": 20.0,
       "gap": 137.6,
       "dmin": NaN,
       "rms": 0.9,
@@ -2238,7 +2478,9 @@
       "township": "Tangyan",
       "nearest_city": "Man Yawng Long",
       "place_type": "village",
-      "distance_km": 2.0
+      "distance_km": 2.0,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     },
     {
       "latitude": 23.355,
@@ -2246,7 +2488,7 @@
       "depth": 73.8,
       "mag": 4.7,
       "magType": "mb",
-      "nst": 31,
+      "nst": 31.0,
       "gap": 143.6,
       "dmin": NaN,
       "rms": 0.57,
@@ -2270,7 +2512,9 @@
       "township": "Kalewa",
       "nearest_city": "Naung Put (Naung Mut)",
       "place_type": "village",
-      "distance_km": 7.1
+      "distance_km": 7.1,
+      "shakemapURL": NaN,
+      "shakemapLastUpdated": NaN
     }
   ]
 }

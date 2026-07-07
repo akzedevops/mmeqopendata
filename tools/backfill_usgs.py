@@ -22,18 +22,20 @@ Usage:
 import argparse
 import json
 import logging
+import math
 import os
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
+import numpy as np
 import pandas as pd
 
-from mmeq.config import EXPORT_DIR
+from mmeq.config import COMBINED_CSV, EXPORT_DIR
 from mmeq.export.writer import (
     validate_quake_data,
     save_to_csv,
-    save_to_json,
+    save_merged_json,
     rebuild_combined,
 )
 
@@ -124,7 +126,60 @@ def _reorder(df):
     return df[cols + extra]
 
 
-def backfill(start, end, minmag, box, dry_run=False):
+def _drop_crossnetwork_dups(kept, window_s, dup_km):
+    """Remove fetched USGS events that already exist in the combined catalog —
+    by exact id OR by spatio-temporal proximity to any catalog event.
+
+    The catalog is a multi-network union (62% Thai-network ids, 22% USGS, …);
+    the same physical earthquake is often stored under a regional network's id
+    with a location that disagrees with USGS by tens of km. Id-only dedup would
+    therefore re-inject hundreds of duplicates. Origin *time* agrees tightly
+    across networks while *location* scatters, so the match is time-primary:
+    an event is a duplicate if any catalog event is within ``window_s`` seconds
+    AND ``dup_km`` km (a generous location bound that absorbs inter-network
+    disagreement). See spec 008.
+    """
+    if kept.empty:
+        return kept
+    if not os.path.exists(COMBINED_CSV):
+        logger.warning("no combined catalog at %s — skipping dedup", COMBINED_CSV)
+        return kept
+    cat = pd.read_csv(COMBINED_CSV)
+    cat_ids = set(cat["id"].astype(str))
+    ct = pd.to_datetime(cat["time_utc"], utc=True).values.astype("datetime64[s]").astype(np.int64)
+    clat = cat["latitude"].to_numpy()
+    clon = cat["longitude"].to_numpy()
+
+    kt = pd.to_datetime(kept["time_utc"], utc=True).values.astype("datetime64[s]").astype(np.int64)
+    klat = kept["latitude"].to_numpy()
+    klon = kept["longitude"].to_numpy()
+    kid = kept["id"].astype(str).to_numpy()
+
+    keep_mask = np.ones(len(kept), dtype=bool)
+    n_id = n_st = 0
+    for i in range(len(kept)):
+        if kid[i] in cat_ids:
+            keep_mask[i] = False
+            n_id += 1
+            continue
+        near = np.abs(ct - kt[i]) <= window_s
+        if near.any():
+            dlat = clat[near] - klat[i]
+            dlon = (clon[near] - klon[i]) * math.cos(math.radians(klat[i]))
+            dkm = np.sqrt(dlat ** 2 + dlon ** 2) * 111.0
+            if (dkm <= dup_km).any():
+                keep_mask[i] = False
+                n_st += 1
+    logger.info(
+        "Dedup vs catalog: dropped %d id-dups + %d spatio-temporal cross-network "
+        "dups; %d genuinely-missing events remain",
+        n_id, n_st, int(keep_mask.sum()),
+    )
+    return kept[keep_mask].copy()
+
+
+def backfill(start, end, minmag, box, dedup=True, window_s=35, dup_km=250,
+             dry_run=False):
     features = fetch_usgs(start, end, minmag, box)
     logger.info("USGS returned %d events in the box", len(features))
     raw = features_to_raw(features)
@@ -132,7 +187,7 @@ def backfill(start, end, minmag, box, dry_run=False):
     # validate_quake_data does the time formatting, geocoding (adds the 6
     # geocoder columns + state_region), and per-window dedup — identical to the
     # normal export path. end_date well past the window so nothing is clipped.
-    validated = validate_quake_data(raw, end_date=datetime(2016, 1, 1, tzinfo=timezone.utc))
+    validated = validate_quake_data(raw, end_date=datetime.now(timezone.utc))
 
     # Spatial refinement: keep only epicenters inside a Myanmar ADM1 polygon
     # (non-empty state_region), the same rule every catalog row already meets.
@@ -150,6 +205,11 @@ def backfill(start, end, minmag, box, dry_run=False):
     in_mm = validated["state_region"].astype(str).str.strip().replace("nan", "").ne("")
     kept = validated[in_mm].copy()
     logger.info("Kept %d of %d after Myanmar-polygon filter", len(kept), len(validated))
+
+    # Remove events already in the catalog (by id or cross-network proximity),
+    # so the backfill only ADDS genuinely-missing events and never duplicates.
+    if dedup:
+        kept = _drop_crossnetwork_dups(kept, window_s, dup_km)
 
     if kept.empty:
         logger.warning("Nothing to backfill")
@@ -170,10 +230,13 @@ def backfill(start, end, minmag, box, dry_run=False):
         base = f"earthquakes_{y}_{m:02d}"
         csv_path = os.path.join(EXPORT_DIR, "csv/monthly", base + ".csv")
         json_path = os.path.join(EXPORT_DIR, "json/monthly", base + ".json")
-        # overwrite=False so a re-run merges (dedup by id) rather than clobbers.
+        # Both writers MERGE into any existing monthly file (id-dedup): most
+        # months in 1970-2019 already hold events, so a plain overwrite would
+        # destroy them. save_to_csv(dedup=True) merges the CSV; save_merged_json
+        # merges the JSON (a bare save_to_json would overwrite).
         save_to_csv(g, csv_path, dedup=True)
-        save_to_json(g, json_path)
-        logger.info("Wrote %s (%d events)", base, len(g))
+        save_merged_json(g, json_path)
+        logger.info("Merged %d events into %s", len(g), base)
 
     n = rebuild_combined()
     logger.info("Rebuilt combined + yearly catalog: %d events", n)
@@ -188,10 +251,19 @@ def main():
     ap.add_argument("--minmag", type=float, default=4.0)
     ap.add_argument("--box", default="9,29,92,102",
                     help="minlat,maxlat,minlon,maxlon")
+    ap.add_argument("--no-dedup", action="store_true",
+                    help="disable spatio-temporal dedup vs the existing catalog")
+    ap.add_argument("--window-s", type=float, default=35,
+                    help="dedup time window (s); a catalog event within this "
+                         "AND --dup-km is treated as the same physical event")
+    ap.add_argument("--dup-km", type=float, default=250,
+                    help="dedup location bound (km); generous to absorb "
+                         "inter-network epicenter disagreement")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     box = tuple(float(x) for x in args.box.split(","))
-    backfill(args.start, args.end, args.minmag, box, dry_run=args.dry_run)
+    backfill(args.start, args.end, args.minmag, box, dedup=not args.no_dedup,
+             window_s=args.window_s, dup_km=args.dup_km, dry_run=args.dry_run)
 
 
 if __name__ == "__main__":

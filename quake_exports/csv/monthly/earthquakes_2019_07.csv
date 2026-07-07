@@ -1,0 +1,4 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+24.9278,94.9219,112.02,4.5,mb,,157.0,0.896,1.26,us,us7000493b,2019-09-26T14:30:04.040Z,,"92 km SSE of Phek, India",MM,Asia,earthquake,0,0,1,,,2019-07-03 05:57:40,2019-07-03 12:27:40,Sagaing,Hkamti,Homalin,Khaung Khan Kyun,village,2.1,,
+24.9048,94.6999,71.28,4.3,mb,,115.0,0.764,0.91,us,us70004jl6,2019-09-28T20:01:19.040Z,,"70 km ENE of Yairipok, India",MM,Asia,earthquake,0,0,1,,,2019-07-13 15:08:59,2019-07-13 21:38:59,Sagaing,Hkamti,Lay Shi,Mwehpe,village,5.3,,
+24.8601,95.1097,120.67,4.0,mb,,71.0,2.605,0.99,us,us60004ykk,2019-10-11T20:12:25.040Z,,"108 km SE of Phek, India",MM,Asia,earthquake,0,0,1,,,2019-07-24 10:31:13,2019-07-24 17:01:13,Sagaing,Hkamti,Homalin,Moe Lin,village,0.4,,

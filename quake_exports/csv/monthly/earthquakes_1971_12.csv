@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+25.214,94.684,65.3,5.63,mw,,,,,iscgem,iscgem778161,2025-12-19T19:50:52.999Z,,"53 km SSE of Phek, India",MM,Asia,earthquake,0,0,1,,,1971-12-29 22:27:07,1971-12-30 04:57:07,Sagaing,Hkamti,Lay Shi,Heinkut,village,7.8,,

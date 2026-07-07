@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+21.313,100.786,35.0,5.34,mw,,,,,iscgemsup,iscgemsup642044517,2026-01-07T18:54:41.049Z,,"75 km S of Jinghong, China",MM,Asia,earthquake,0,0,1,,,1972-08-27 14:42:35,1972-08-27 21:12:35,Shan,Tachileik,Mongyawng,,village,2.1,,

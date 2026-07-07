@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+17.062,94.786,23.6,5.5,mw,,,,,iscgem,iscgem774874,2025-12-19T19:48:42.431Z,,"31 km N of Pathein, Burma (Myanmar)",MM,Asia,earthquake,0,0,1,,,1972-04-28 11:30:18,1972-04-28 18:00:18,Ayeyarwady,Pathein,Thabaung,Seik Hpu Kone,village,0.5,,

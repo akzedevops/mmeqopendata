@@ -1,0 +1,3 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+16.5725,96.4762,50.56,4.4,mb,,166.0,3.009,0.72,us,us10004dsd,2022-08-07T09:19:33.700Z,,"21 km SSW of Thongwa, Myanmar",MM,Asia,earthquake,0,0,1,,,2016-01-12 14:59:35,2016-01-12 21:29:35,Yangon,Yangon (South),Kyauktan,Min Ga Lun,village,1.7,,
+24.1868,94.9004,84.65,4.3,mb,,89.0,3.087,0.59,us,us10004gcx,2016-04-06T17:30:25.040Z,,"78 km NE of Mawlaik, Myanmar",MM,Asia,earthquake,0,0,1,,,2016-01-18 06:04:53,2016-01-18 12:34:53,Sagaing,Mawlaik,Paungbyin,Pin Pyin,village,0.6,,

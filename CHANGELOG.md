@@ -2,6 +2,29 @@
 
 ## Unreleased
 
+### USGS completeness backfill, 1970–2019 (spec 008)
+
+A full audit of the catalog against USGS ComCat (all in-Myanmar M≥4.0) found
+the catalog is a multi-network union (62% Thai-network ids) where the same
+earthquake is often stored under a regional network's id — so 476 of 761
+id-unmatched USGS events were actually **cross-network duplicates**, not gaps.
+`tools/backfill_usgs.py` gained a **spatio-temporal dedup** (drop any fetched
+event within 35 s AND 250 km of a catalog event — time-primary, since origin
+time agrees across networks while location scatters), so it can never inject a
+duplicate. Running it over 1970–2019 added **160 genuinely-missing events**
+(141 `us` + 19 ISC-GEM reviewed-historical), excluding 1,473 id-dups + 134
+cross-network dups. Combined 9,519 → **9,679**, **0 duplicates introduced**
+(10 pre-existing cross-network near-dup pairs unchanged), schema intact.
+
+The 2020–2025 residue (~60 events) was deliberately excluded — dense recent
+catalogs make cross-network dedup riskiest there and the mmeq API is current.
+
+Derived numbers updated: M≥5 367→393, b@Mc4.0 N 2,597→2,757 (b 0.72), declustered
+b 1.06→1.04, DBSCAN central cluster 9,045→9,277 (95→96%) and count 7→6 (now
+flagged as ε-sensitive), hazard 172 dams >0.1g / 46 >0.2g. Dam grades unchanged
+(44/116/45/49 — the scenario is the 2025 event).
+
+
 ### USGS backfill of the 2013–2015 catalog gap (spec 007)
 
 The upstream API had an ~18-month ingestion hole (2013-09 … 2015-02, all of

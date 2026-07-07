@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+24.645,94.629,75.0,5.31,mw,,,,,iscgem,iscgem783810,2025-12-19T19:55:27.413Z,,"57 km E of Wāngjing, India",MM,Asia,earthquake,0,0,1,,,1971-06-26 02:16:38,1971-06-26 08:46:38,Sagaing,Hkamti,Homalin,Zay Di,village,6.7,,

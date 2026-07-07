@@ -48,3 +48,4 @@ new spec from `TEMPLATE.md`, then drive steps 2–5 until every acceptance crite
 | [005](005-artifact-schema-v2.md) | Artifact schema v2 — drop zero-information columns | Rejected (columns needed for research) |
 | [006](006-hazard-model-corrections.md) | Hazard-model corrections (rupture distance, PSHA source model, Coulomb kernel) | Done |
 | [007](007-usgs-2014-backfill.md) | Backfill the 2013-09 … 2015-02 catalog gap from USGS FDSN | Done |
+| [008](008-usgs-completeness-backfill.md) | Complete the historical catalog (1970–2019) from USGS with spatio-temporal dedup | Done |
