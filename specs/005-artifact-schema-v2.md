@@ -1,10 +1,33 @@
 ---
 spec: 005
 title: A leaner published artifact schema ("artifact v2") for quake_exports CSV/JSON
-status: Draft            # Draft | Approved | In progress | Done
+status: Rejected        # Draft | Approved | In progress | Done | Rejected
 author: Claude (3-agent audit fan-out) + Aung Khant Zaw
 created: 2026-07-03
+resolved: 2026-07-07
 ---
+
+## Resolution (2026-07-07) — REJECTED, do not implement
+
+The owner decided the published `quake_exports` artifact is a **research
+dataset**, so its columns must be preserved: *"those data are needed for
+research purposes."* The audit's "unread by `src/mmeq`" read-set does not
+imply an external researcher can't use a column (e.g. the `timestamp` epoch,
+`shakemapURL`, or the sparse historical `nst`/`gap`/`dmin`/`rms` metrics). The
+premise of this spec — trimming the 32-column artifact — therefore does not
+hold, so D1 (column set) and D2 (breaking-change compatibility) are moot.
+
+The one loss-less idea (canonicalizing the per-file column order to fix the
+audit's "5 different header orders" minor, keeping all 32 columns) was also
+declined: consumers already parse by column name, so the header inconsistency
+is a cosmetic nuisance, and rewriting ~1,278 files to fix it carries more
+downside (one giant diff; a bytes-changed event for any positional consumer of
+a live research dataset) than the tidiness is worth. The "5 header orders"
+quirk stays a **documented known-quirk** — parse `quake_exports` CSVs by
+column name, never by position.
+
+The full design below is retained as a record of the analysis (and of why the
+paper is independent of the artifact schema — verified), not as work to do.
 
 ## Decision required (owner sign-off before any implementation)
 

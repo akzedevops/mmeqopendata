@@ -97,6 +97,10 @@ deploy. Specs 001–004 are Done; the active roadmap is `specs/005` (artifact sc
 - Data flows as pandas DataFrames with stable column names: `time_utc`, `mag`, `depth`,
   `lat`/`latitude`, `lon`/`longitude`, `location`. Validation/dedup happens in
   `export/writer.py`.
+- The published `quake_exports` artifact is a **research dataset** — keep all 32
+  columns; do NOT trim it (spec 005 was rejected for this reason). Its CSV headers
+  are per-file and not all in the same order (a known quirk): **parse by column name,
+  never by position.**
 
 ## Domain correctness (read before touching analysis/)
 
