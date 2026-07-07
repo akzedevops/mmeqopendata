@@ -46,3 +46,4 @@ new spec from `TEMPLATE.md`, then drive steps 2–5 until every acceptance crite
 | [003](003-project-improvements.md) | Project improvements — CI test gate, de-duplication, structure | Done |
 | [004](004-v2-export-migration.md) | Migrate the artifact pipeline to API v2 (`/api/v2/export`) | Done |
 | [005](005-artifact-schema-v2.md) | Artifact schema v2 — drop zero-information columns | Draft |
+| [006](006-hazard-model-corrections.md) | Hazard-model corrections (rupture distance, PSHA source model, Coulomb kernel) | Done |

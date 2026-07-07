@@ -1,7 +1,7 @@
 ---
 spec: 006
 title: Hazard-model corrections — scenario rupture distance, PSHA source model, Coulomb kernel
-status: In progress    # Draft | Approved | In progress | Done
+status: Done           # Draft | Approved | In progress | Done
 author: Claude (2026-07-06 integrity audit) + Aung Khant Zaw
 created: 2026-07-06
 ---
@@ -90,16 +90,16 @@ numbers, paper sections 'Results', 'Probabilistic Hazard', 'Coulomb'.
 
 ## Acceptance criteria
 
-- [ ] Parity unit test: for a single patch, ΔCFS(−r) == ΔCFS(+r) to machine
+- [x] Parity unit test: for a single patch, ΔCFS(−r) == ΔCFS(+r) to machine
       precision; a strike-parallel receiver field shows 4 alternating-sign
       lobes around one patch.
-- [ ] Regenerated Coulomb dam counts published with the ±0.01 MPa threshold;
+- [x] Regenerated Coulomb dam counts published with the ±0.01 MPa threshold;
       README/paper/fig11 updated together.
-- [ ] `dam_risk_scores.csv` carries `dist_to_rupture_km`; Ta Nai Hka's
+- [x] `dam_risk_scores.csv` carries `dist_to_rupture_km`; Ta Nai Hka's
       scenario PGA drops below 0.05 g and its published grade is recomputed
       accordingly; no dam >300 km from the rupture keeps a near-fault
       scenario PGA.
-- [ ] Smoothed-seismicity PSHA conserves the total regional rate to <1%,
+- [x] Smoothed-seismicity PSHA conserves the total regional rate to <1%,
       near-fault sites exceed remote sites by >10×, and the collapsed-distance
       inflation (~2.1–2.5 g on-fault) is gone. NOTE (decision recorded during
       implementation): the committed GEM faults file carries no slip rates, so
@@ -109,9 +109,9 @@ numbers, paper sections 'Results', 'Probabilistic Hazard', 'Coulomb'.
       2023, ~1 g on-fault). The paper/README must state this as a known lower
       bound rather than quoting the old inflated range; README/paper PSHA
       numbers and fig10 regenerated from the new model.
-- [ ] A report stage regenerates `hazard_curves/*.csv` + manifest; the
+- [x] A report stage regenerates `hazard_curves/*.csv` + manifest; the
       dashboard's Browse link resolves.
-- [ ] `ruff check .` clean; full pytest suite green with new regression tests
+- [x] `ruff check .` clean; full pytest suite green with new regression tests
       for the kernel parity, rupture-distance selection, and rate
       conservation.
 
