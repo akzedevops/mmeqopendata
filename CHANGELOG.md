@@ -2,6 +2,30 @@
 
 ## Unreleased
 
+### USGS backfill of the 2013–2015 catalog gap (spec 007)
+
+The upstream API had an ~18-month ingestion hole (2013-09 … 2015-02, all of
+2014 empty) where it dropped real earthquakes — USGS ComCat recorded ~150 M≥4
+events in the Myanmar region over that span. Backfilled from USGS FDSN with a
+reproducible rule (`tools/backfill_usgs.py`):
+
+    service    earthquake.usgs.gov/fdsnws/event/1/query (GeoJSON)
+    window     [2013-09-01, 2015-03-01)  UTC, half-open
+    box        lat 9–29, lon 92–102
+    magnitude  M ≥ 4.0
+    spatial    epicenter inside a Myanmar ADM1 polygon (pipeline geocoder)
+    pulled     2026-07-07  → 98 events
+
+Rows are mapped onto the exact 32-column schema via the normal
+validate/geocode path (`net='us'`, identical shape to existing USGS rows); the
+combined catalog grows 9,420 → 9,518 and the yearly artifacts regenerate.
+Provenance is documented rather than flagged (the whole window was empty, so
+every event in it is a backfill). Derived numbers updated in lockstep: M≥5
+357→367, b@Mc4.0 0.71→0.72 (N 2,473→2,597), declustered b 1.05→1.06, central
+DBSCAN cluster 8,775→9,045. Dam grades unchanged (44/116/45/49 — the scenario
+is the 2025 event). No schema change (columns preserved for research use).
+
+
 ### Hygiene batch (2026-07-06 integrity audit, phase 6)
 
 - **Per-window dedup parity**: `validate_quake_data` now dedups each fetch
