@@ -56,7 +56,7 @@ I wanted to know: which dams are most at risk, and can we quantify it with open 
 \subsection{What This Project Does}
 
 \begin{itemize}
-    \item Pulls 9,390 earthquake records (1970--2026) from the \href{https://mmeq.akze.net}{Myanmar Earthquake API}
+    \item Pulls 9,420 earthquake records (1970--2026) from the \href{https://mmeq.akze.net}{Myanmar Earthquake API}
     \item Scores all 254 dams for seismic risk using a proper ground-motion model
     \item Runs probabilistic hazard curves, Coulomb stress transfer, fragility analysis
     \item Validates predictions against actual recorded ground motions
@@ -91,8 +91,8 @@ Buildings (34,224) & OpenStreetMap (Overpass API) & ODbL \\
 \section{The Earthquake Catalog}
 % ============================================================
 
-The catalog has 9,390 events.
-Most are small (mean M\,3.2), but there are 6 events $\geq$\,M7.0 and 358 $\geq$\,M5.0.
+The catalog has 9,420 events.
+Most are small (mean M\,3.2), but there are 6 events $\geq$\,M7.0 and 357 $\geq$\,M5.0.
 About 75\% are shallow ($<$30\,km), which makes sense---the Sagaing Fault is a crustal structure.
 
 \begin{figure}[htbp]
@@ -108,14 +108,14 @@ The Gutenberg-Richter law says $\log_{10} N = a - bM$.
 The tricky part is that the catalog is incomplete at small magnitudes---the 1970s network couldn't detect M2 events, but the modern network can.
 If you naively fit all the data, you get $b = 0.35$, which is way too low (global average is $\sim$1.0). After Gardner-Knopoff (1974) declustering --- magnitude-dependent space-time windows, e.g.\ $\sim$86\,km and $\sim$967 days for the M7.7 mainshock --- $M_c \approx 4.7$ and $b \approx 1.05$, typical for a tectonic region; these are the rates used for the probabilistic hazard below.
 
-A stability analysis (Figure~\ref{fig:fmd}b) shows the b-value only converges at $M_c \geq 4.0$.
+A stability analysis (Figure~\ref{fig:fmd}b) shows the b-value stabilizes around $M_c \approx 4.0$--$4.5$; the headline fit uses $M_c = 4.0$.
 Using that cutoff: $b = 0.71 \pm 0.02$ with 2,473 events.
 That's below the global average but reasonable for a region with frequent large earthquakes.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{figures/fig2_fmd.png}
-    \caption{(a) Frequency-magnitude distribution with G-R fit above $M_c = 4.0$. (b) b-value stability---it only converges around $M_c = 4.5$, confirming the catalog is incomplete below M4.}
+    \caption{(a) Frequency-magnitude distribution with G-R fit above $M_c = 4.0$. (b) b-value stability---it stabilizes around $M_c \approx 4.0$--$4.5$, confirming the catalog is incomplete below M4. The G-R line in (a) uses the Aki (1965) MLE b-value at $M_c = 4.0$, the same estimate quoted in the text.}
     \label{fig:fmd}
 \end{figure}
 
@@ -306,8 +306,7 @@ Using that, at the standard $\pm$0.01\,MPa (0.1\,bar) threshold, 16 dams (6\%) a
 
 \subsection{Dam Fragility Curves}
 
-Using HAZUS-style log-normal fragility functions for earthfill, concrete, and rockfill dams, most dams fall in the ``None'' or ``Slight'' damage state for the deterministic M7.7 scenario.
-5 dams reach ``Moderate'' damage probability.
+Using HAZUS-informed log-normal fragility functions, most dams fall in the ``None'' or ``Slight'' damage state for the deterministic M7.7 scenario; only a handful reach ``Moderate'' damage probability (the exact count tracks the current catalog snapshot and is written to \texttt{report/dam\_fragility.json}). The dam database carries no construction-type field, so every dam is treated as earthfill/embankment; the concrete and rockfill parameter sets exist in the code but are not exercised, and the log-normal medians are assumed values informed by---not taken verbatim from---the cited studies.
 
 \begin{figure}[htbp]
     \centering
@@ -364,8 +363,7 @@ Among these: 2,166 schools and 901 hospitals had PGA above 0.1$g$.
 
 Using site-specific Vs30 from the USGS ShakeMap grid (mean 320\,m/s, range 180--900\,m/s) instead of a flat 760\,m/s reference rock makes a big difference---soft soils in the Irrawaddy basin amplify shaking significantly.
 
-I validated against the USGS ShakeMap grid.
-At Naypyidaw, our prediction is 0.43$g$ vs USGS 0.55$g$ (ratio 0.79)---reasonable for a pure GMPE without the 1,244 DYFI felt reports that USGS incorporates.
+As a one-off offline check against the USGS ShakeMap \emph{grid} (not tracked in this repo, unlike the station comparison in Table~\ref{tab:validation}, which regenerates from \texttt{data/shakemap/stationlist.json}), the Naypyidaw prediction was $\approx$0.43$g$ vs USGS $\approx$0.55$g$ (ratio $\approx$0.78)---reasonable for a pure GMPE without the 1,244 DYFI felt reports that USGS incorporates.
 
 Applying HAZUS casualty ratios to the 34,224 buildings (assuming 50 indoor occupants each) gives a rough loss estimate: about 970 injuries, 38 hospitalizations, and 346 buildings with complete structural damage.
 Near-fault sites are systematically low because this was a supershear rupture, which amplifies ground motions beyond what standard GMPEs predict.
@@ -388,6 +386,7 @@ Near-fault sites are systematically low because this was a supershear rupture, w
 
     \item \textbf{Catalog completeness is sneaky.}
     The raw b-value of 0.35 looked alarming but was just an artifact of mixing 1970s data (only M4.5+ detected) with 2020s data (M2+ detected) and the 2025 aftershock burst.
+    A second caveat: the catalog pools magnitude types (\raise.17ex\hbox{$\scriptstyle\sim$}74\% $m_l$, \raise.17ex\hbox{$\scriptstyle\sim$}22\% $m_b$, \raise.17ex\hbox{$\scriptstyle\sim$}2\% $M_w$) without converting to a common moment-magnitude scale, so the FMD slope carries some inter-scale bias on top of the completeness effect.
     Always check stability before trusting a b-value.
 
     \item \textbf{Over half of Myanmar's dams are in high-hazard zones.}

@@ -4,13 +4,13 @@
 [![Daily Fetch](https://github.com/akzedevops/mmeqopendata/actions/workflows/daily_data_fetch.yml/badge.svg)](https://github.com/akzedevops/mmeqopendata/actions/workflows/daily_data_fetch.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-green.svg)](https://python.org)
-[![Events](https://img.shields.io/badge/Earthquakes-9%2C242-orange.svg)](https://akzedevops.github.io/mmeqopendata/)
+[![Events](https://img.shields.io/badge/Earthquakes-9%2C420-orange.svg)](https://akzedevops.github.io/mmeqopendata/)
 
 A hobby project for collecting, analyzing, and visualizing earthquake data in Myanmar. Built on the [Myanmar Earthquake API](https://mmeq.akze.net), covering records from 1950 to present.
 
 **Live dashboard:** [https://akzedevops.github.io/mmeqopendata/](https://akzedevops.github.io/mmeqopendata/)
 
-**Write-up:** [`paper/main.pdf`](paper/main.pdf) — a casual hobby write-up on Myanmar dam seismic risk with 13 figures and open data.
+**Write-up:** [`paper/main.pdf`](paper/main.pdf) — a casual hobby write-up on Myanmar dam seismic risk with 14 figures and open data.
 
 ## What It Does
 
@@ -143,7 +143,9 @@ I validated the GMPE against the actual Naypyidaw ShakeMap recording — predict
 
 ## How the Seismology Works
 
-The catalog has 9,390 events. Most are small (mean M 3.2), but there are 6 events ≥ M7.0 and 358 ≥ M5.0.
+The catalog has 9,420 events. Most are small (mean M 3.2), but there are 6 events ≥ M7.0 and 357 ≥ M5.0.
+
+**Known catalog gaps:** the upstream source has no events for the ~18 months from 2013-09 through 2015-02 (all of 2014 is empty), so any rate/temporal analysis over that window is biased low. The catalog is a multi-network union deduplicated by event id only, so a handful of events reported by two networks under different id schemes survive as near-duplicates; the effect on aggregate statistics is negligible (~3 of 9,420) but present.
 
 **b-value and completeness:** On the full catalog the Gutenberg-Richter b-value at Mc = 4.0 is 0.71, but the raw value (auto-Mc ≈ 2.4) drops to 0.35 — an artifact of the 2025 aftershock sequence flooding the small-magnitude bins. After Gardner-Knopoff (1974) declustering — magnitude-dependent space-time windows, e.g. ~86 km / ~967 days for the M7.7 — the catalog yields Mc ≈ 4.7 and b ≈ 1.05, typical for a tectonic region. The probabilistic hazard below uses these declustered rates.
 
@@ -175,11 +177,11 @@ For each building, PGA is estimated using the same ASK08 GMPE with rupture dista
 
 Uses site-specific Vs30 from the USGS ShakeMap grid (mean 320 m/s) — soft soils in the Irrawaddy basin amplify shaking significantly compared to reference rock.
 
-Validated against the USGS ShakeMap grid — Naypyidaw prediction is 0.43g vs USGS 0.55g (ratio 0.79). Near-fault underprediction is expected because this was a supershear rupture.
+As a one-off offline check against the USGS ShakeMap grid (not tracked in this repo, unlike the station-list comparison, which regenerates in CI), the Naypyidaw prediction was ~0.43g vs USGS ~0.55g (ratio ~0.78). Near-fault underprediction is expected because this was a supershear rupture.
 
 ## Figures
 
-13 figures in [`paper/figures/`](paper/figures/) (300 DPI, PDF + PNG):
+14 figures in [`paper/figures/`](paper/figures/) (300 DPI, PDF + PNG):
 
 | Figure | Description |
 |---|---|
@@ -188,7 +190,7 @@ Validated against the USGS ShakeMap grid — Naypyidaw prediction is 0.43g vs US
 | fig3 | Depth histogram + magnitude vs depth |
 | fig4 | Dam risk map (color-coded by grade) |
 | fig5 | ASK08 PGA attenuation curves with recorded data |
-| fig6 | Dam risk map with all 254 dams |
+| fig6 | Annual earthquake counts (temporal evolution) |
 | fig7 | Risk score distribution + grade counts + Monte Carlo sensitivity |
 | fig8 | Dam status and function breakdowns |
 | fig9 | Vs30 site classification map |

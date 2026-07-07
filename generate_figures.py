@@ -128,16 +128,21 @@ mask_cum = cumulative_counts > 0
 ax1_2.plot(centers[mask_cum], cumulative_counts[mask_cum], "k.", markersize=2, alpha=0.5)
 
 mc_corrected = 4.0
+# Draw the G-R line from the SAME Aki (1965) MLE b-value the paper text quotes.
+# The previous least-squares fit on cumulative counts gave b=0.90, contradicting
+# the text's b=0.71 at the identical cutoff (2026-07-06 audit, finding M4);
+# cumulative counts are strongly correlated, so LS on them is not the estimator.
+from mmeq.analysis.seismology import b_value as _aki_b
+b_val, _a_cat, _mc = _aki_b(pd.Series(mags), min_mag=mc_corrected)
 mask = (centers >= mc_corrected) & (counts > 0)
 if mask.sum() > 2:
-    log_N_cum = np.log10(np.maximum(cumulative_counts[mask], 1))
-    coeffs = np.polyfit(centers[mask], log_N_cum, 1)
-    b_val = -coeffs[0]
-    a_val = coeffs[1]
+    # anchor the line to the observed cumulative count at Mc
+    n_at_mc = float(cumulative_counts[np.argmax(centers >= mc_corrected)])
+    a_val = np.log10(max(n_at_mc, 1)) + b_val * mc_corrected
     x_fit = np.linspace(mc_corrected, mags.max(), 100)
     y_fit = 10 ** (a_val - b_val * x_fit)
     ax1_2.plot(x_fit, y_fit, "r-", linewidth=2,
-               label=f"GR fit (b={b_val:.2f})")
+               label=f"GR fit (Aki MLE, b={b_val:.2f})")
     ax1_2.set_yscale("log")
     ax1_2.set_ylabel("Cumulative frequency (N)", color="red")
 

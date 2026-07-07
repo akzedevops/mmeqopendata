@@ -20,6 +20,23 @@
   it); dead `aftershock_probability_grid` (hardcoded "30 days ago", uncalled)
   removed.
 
+### Paper & docs consistency sweep (2026-07-06 integrity audit, phase 5)
+
+- **Figure 2 G-R line now uses the Aki (1965) MLE b-value** the text quotes
+  (b≈0.71), not a least-squares fit on correlated cumulative counts that
+  read b=0.90 and contradicted the prose at the same cutoff (finding M4).
+- **Fragility claim made honest**: "5 dams reach Moderate" (which matched no
+  shipped artifact) replaced with snapshot-aware wording pointing at
+  `report/dam_fragility.json`, plus an explicit statement that the dam
+  database has no construction-type field so all dams are treated as earthfill
+  and the log-normal medians are assumed (findings M8 + dam-type minor).
+- **Mc convergence** prose and figure caption reconciled (they said 4.0 vs
+  4.5); event counts corrected to 9,420 across paper/README/docs; README
+  figure count 13→14 and the fig6 row fixed (temporal evolution, not a dam
+  map); the untraceable ShakeMap-grid check relabeled as an offline one-off
+  with the ratio arithmetic fixed (0.78, not 0.79); dashboard per-year and
+  total counts refreshed.
+
 ### Hazard-model corrections (2026-07-06 integrity audit, phase 4 — spec 006)
 
 - **Scenario "rupture distance" now uses the actual 2025 rupture geometry**
