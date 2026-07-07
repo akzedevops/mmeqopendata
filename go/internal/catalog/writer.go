@@ -262,6 +262,14 @@ func atomicWrite(path string, data []byte) error {
 		os.Remove(tmpName)
 		return err
 	}
+	// fsync before rename: a rename can persist while the data does not after a
+	// crash, leaving a truncated/empty artifact that loadCombinedRecords treats
+	// as empty and then overwrites the accumulated store (2026-07-06 audit).
+	if err := tmp.Sync(); err != nil {
+		tmp.Close()
+		os.Remove(tmpName)
+		return err
+	}
 	if err := tmp.Close(); err != nil {
 		os.Remove(tmpName)
 		return err

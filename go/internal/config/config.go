@@ -3,6 +3,7 @@
 package config
 
 import (
+	"log"
 	"os"
 	"strconv"
 	"strings"
@@ -17,9 +18,15 @@ func env(key, def string) string {
 
 func envInt(key string, def int) int {
 	if v := os.Getenv(key); v != "" {
-		if n, err := strconv.Atoi(v); err == nil {
-			return n
+		n, err := strconv.Atoi(v)
+		if err != nil {
+			// Fail loud instead of silently using the default: Python's
+			// int(os.environ[...]) raises, and a malformed MMEQ_API_PAGE_CAP
+			// silently disabling the truncation tripwire is a data-integrity
+			// risk (2026-07-06 audit).
+			log.Fatalf("config: %s=%q is not an integer: %v", key, v, err)
 		}
+		return n
 	}
 	return def
 }

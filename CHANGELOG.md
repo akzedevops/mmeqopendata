@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+### Hygiene batch (2026-07-06 integrity audit, phase 6)
+
+- **Per-window dedup parity**: `validate_quake_data` now dedups each fetch
+  window (mirroring the Go exporter's `Dedup(Validate(...))`), so a live
+  paginated fetch that returns a row twice can't publish a duplicate monthly
+  row on one side only.
+- **Crash-durable writes**: both atomic writers `fsync` the temp file before
+  the rename, so a power loss can't leave a renamed-but-empty artifact that the
+  loaders silently treat as an empty store and overwrite.
+- **Go fails loud on a malformed `MMEQ_*` integer** (was silently using the
+  default, e.g. disabling the `MMEQ_API_PAGE_CAP` tripwire), matching Python.
+- **Published `state_region` spellings normalized**: geoBoundaries' "Saigang"
+  → "Sagaing" and "Tanitharyi" → "Tanintharyi" in the geocoder.
+- Python retry forcelist adds 500 (matches the Go client); `pandas` floor
+  raised to `>=2.2` (the `resample("ME"/"YE")` aliases the code uses require
+  it); dead `aftershock_probability_grid` (hardcoded "30 days ago", uncalled)
+  removed.
+
 ### Hazard-model corrections (2026-07-06 integrity audit, phase 4 — spec 006)
 
 - **Scenario "rupture distance" now uses the actual 2025 rupture geometry**

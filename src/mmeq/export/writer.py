@@ -67,6 +67,11 @@ def validate_quake_data(
     except Exception as e:
         logger.warning("Geocoding enrichment skipped: %s", e)
 
+    # Per-window dedup, mirroring the Go exporter's Dedup(Validate(...)) order.
+    # A live paginated fetch can return the same id twice if a row shifts pages
+    # mid-scan; the Go path already dedups each window, so dedup here too to
+    # keep the two implementations byte-parallel (2026-07-06 audit).
+    df = _dedup_frame(df)
     return df
 
 
@@ -82,6 +87,12 @@ def _atomic_write(path: str, write_fn) -> None:
     os.close(fd)
     try:
         write_fn(tmp)
+        # fsync the data to disk before the rename so a power loss/kernel crash
+        # cannot leave the rename persisted but the contents empty/truncated —
+        # which load_combined_json would then silently treat as an empty store
+        # and overwrite the accumulated catalog on the next merge (audit).
+        with open(tmp, "rb") as _f:
+            os.fsync(_f.fileno())
         # mkstemp creates 0600 temp files and os.replace preserves the mode;
         # match the 0644 the repo's committed data files use.
         os.chmod(tmp, 0o644)
