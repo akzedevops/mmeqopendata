@@ -50,6 +50,23 @@
   ±0.001 MPa sat in tidal-stress noise. Triggered/shadow: 34/163 → **16/72**.
 - References added: Frankel 1995, Gardner & Knopoff 1974, Okada 1992,
   Thant et al. 2023, Wald et al. 1999 (some were cited but missing).
+### Dam-risk hygiene (2026-07-06 integrity audit, phase 6b)
+
+- **`sensitivity_analysis` now uses site-specific Vs30** (the same map as
+  `dam_risk_scores`) instead of the reference-rock 760 default, so the
+  weight-sensitivity envelope is computed around the published baseline. The
+  four component scores, which don't depend on the sampled weights, are now
+  computed once per dam instead of 100× (also much faster). Median
+  Critical+High across draws moves from ~73% to ~67%; paper updated.
+- **`_load_fault_segments` resolves `fault_lines.json` via config + repo-root
+  candidates**, not a bare cwd path, and logs a WARNING on fallback — running
+  `mmeq report` off-root previously dropped fault distances silently and
+  degraded rjb to epicentral distance.
+- **ASK08 hanging-wall term guarded**: it is dormant in production (every call
+  is dip=90 → f_hw=0) but its simplified f4 taper is not the AS08 form; it now
+  logs a loud warning if ever invoked so a future dipping-fault scenario can't
+  silently trust it.
+
 ### Publishing-seam fixes (2026-07-06 integrity audit, phase 3)
 
 - **Daily data pushes now trigger the site rebuild.** GITHUB_TOKEN pushes
