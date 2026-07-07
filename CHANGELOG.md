@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## 2.1.0 — 2026-07-07
+
+**Scientific-integrity release.** A full audit (code, data, paper, methods) fixed
+20 confirmed defects + 24 minors; the ground-motion / hazard model was corrected
+and validated against the published Myanmar literature; and the catalog was
+USGS-backfilled for M≥4 completeness (1970–2019) with spatio-temporal cross-network
+dedup. Headline: dam grades now 44/116/45/49 (Critical/High/Moderate/Low), catalog
+9,679 events, GMPE validated (0.51 g vs 0.57 g observed at NPW), PSHA rock peak
+comparable to GEM reference-rock. Every published number is reproducible from the
+shipped artifacts. Details by phase/spec below.
+
 ### PSHA literature validation + citation fix (spec 009)
 
 Validated the hazard output against published Myanmar PSHA (6-agent research +

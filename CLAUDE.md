@@ -4,10 +4,12 @@ Guidance for Claude Code when working in this repository.
 
 ## What this is
 
-**Myanmar Earthquake Open Data** (`mmeq-opendata`, v2.0.0) — a Python toolkit that
+**Myanmar Earthquake Open Data** (`mmeq-opendata`, v2.1.0) — a Python toolkit that
 fetches, validates, analyzes, and visualizes earthquake data for Myanmar (1950–present)
 from the [Myanmar Earthquake API](https://mmeq.akze.net), plus a seismic-risk study of
-254 Myanmar dams. Outputs auto-deploy to GitHub Pages.
+254 Myanmar dams. Outputs auto-deploy to GitHub Pages. The combined catalog is a
+**multi-network union** (~62% Thai-network ids, ~22% USGS, plus India/EMSC), USGS-
+backfilled for M≥4 completeness over 1970–2019 (see `specs/007`–`009`).
 
 It is a **scientific data pipeline**, not a web app. Correctness of the seismology and
 ground-motion math matters more than anything else — see "Domain correctness" below.
@@ -31,9 +33,11 @@ go/                       # Go rewrite of the export pipeline ONLY (specs/002+00
                           #   cmd/mmeq-export + internal/{api,catalog,config,export,geocoder};
                           #   golden-file tested for byte-parity with the Python writer —
                           #   run `cd go && go test ./...` when touching it
-tests/                    # pytest suite (94 tests): validation, dateranges, seismology,
-                          #   writer/fetcher, dam-risk scoring, vendored assets
-tools/                    # diff_exports.py (Python-vs-Go tree diff), backfill.py,
+tests/                    # pytest suite (109 tests): validation, dateranges, seismology,
+                          #   writer/fetcher, dam-risk scoring, hazard model, map XSS,
+                          #   vendored assets
+tools/                    # see tools/README.md — diff_exports.py (Python-vs-Go tree diff),
+                          #   backfill.py, backfill_usgs.py (USGS gap/completeness fill),
                           #   build_figure_data.py, fetch_vendor.py (+ vendor_lock.json)
 data/                     # input datasets: admin boundaries, shakemap, osm, faults, finite_fault
 quake_exports/            # generated earthquake CSV/JSON (csv|json × monthly|yearly|combined)
@@ -84,7 +88,9 @@ the Python `mmeq export` remains for local use and fetches the same paginated
 
 **CI gates on tests:** `report_and_pages.yml`'s deploy `needs:` a `test` job (ruff +
 pytest), and `tests.yml` runs on every PR/push — keep both green or the dashboard won't
-deploy. Specs 001–004 are Done; the active roadmap is `specs/005` (artifact schema v2, Draft).
+deploy. **Spec status:** 001–004, 006–009 Done; 005 (artifact column-trim) **Rejected**
+(the artifact is a research dataset — keep all columns). No active roadmap; the pipeline
+is stable. See `specs/README.md`.
 
 ## Conventions
 
@@ -101,6 +107,12 @@ deploy. Specs 001–004 are Done; the active roadmap is `specs/005` (artifact sc
   columns; do NOT trim it (spec 005 was rejected for this reason). Its CSV headers
   are per-file and not all in the same order (a known quirk): **parse by column name,
   never by position.**
+- The catalog is a **multi-network union** — the same physical earthquake can appear
+  under a `us`/`th_`/`in_`/`ems` id with epicenters differing by tens of km. When
+  reconciling against another catalog (e.g. USGS), dedup **spatio-temporally** (same
+  event if within ~35 s AND ~250 km), never by id alone — id-only comparison massively
+  over-counts "missing" events. `tools/backfill_usgs.py` implements this; ~10 residual
+  cross-network near-dup pairs are a known minor.
 
 ## Domain correctness (read before touching analysis/)
 
@@ -136,6 +148,13 @@ dashboard. Bugs here are silent and serious. v2.0.0 fixed a critically broken GM
 
 Non-trivial features are developed spec-first. See `specs/README.md`. Start a feature with
 the `/spec` command, which drafts a spec under `specs/`, then implements → tests → reviews
-in a loop until acceptance criteria pass.
-</content>
-</invoke>
+in a loop until acceptance criteria pass. Every merged change of substance has a spec
+(001–009) — read the relevant one before touching that subsystem.
+
+## For contributors (human or agent)
+
+- **[`CONTRIBUTING.md`](CONTRIBUTING.md)** — setup, dev loop, PR/CI flow, domain-correctness
+  rules, and the full "before you open a PR" checklist. Read it first.
+- **[`tools/README.md`](tools/README.md)** — what every script in `tools/` does and when to
+  run it (backfill, vendor pinning, Python-vs-Go diff, figure data).
+- **[`AGENTS.md`](AGENTS.md)** — the same guidance for non-Claude coding agents (points here).
