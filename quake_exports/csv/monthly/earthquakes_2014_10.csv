@@ -1,0 +1,3 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+18.2953,95.2938,59.14,4.5,mb,,98,3.469,1.01,us,usb000sk7j,2015-01-06T23:49:48.040Z,,Myanmar,MM,Asia,earthquake,0,0,1,,,2014-10-09 10:03:28,2014-10-09 16:33:28,Ayeyarwady,Hinthada,Myanaung,Tei Kone,village,0.7,,
+23.6866,94.6864,108.67,4.6,mb,,63,3.184,0.87,us,usb000sq9d,2015-01-17T01:25:35.040Z,,"29 km E of Mawlaik, Myanmar",MM,Asia,earthquake,0,0,1,,,2014-10-24 05:11:56,2014-10-24 11:41:56,Sagaing,Mawlaik,Mawlaik,Law Thar,village,2.3,,

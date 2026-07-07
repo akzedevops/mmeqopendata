@@ -56,7 +56,7 @@ I wanted to know: which dams are most at risk, and can we quantify it with open 
 \subsection{What This Project Does}
 
 \begin{itemize}
-    \item Pulls 9,420 earthquake records (1970--2026) from the \href{https://mmeq.akze.net}{Myanmar Earthquake API}
+    \item Pulls 9,518 earthquake records (1970--2026) from the \href{https://mmeq.akze.net}{Myanmar Earthquake API}
     \item Scores all 254 dams for seismic risk using a proper ground-motion model
     \item Runs probabilistic hazard curves, Coulomb stress transfer, fragility analysis
     \item Validates predictions against actual recorded ground motions
@@ -91,8 +91,8 @@ Buildings (34,224) & OpenStreetMap (Overpass API) & ODbL \\
 \section{The Earthquake Catalog}
 % ============================================================
 
-The catalog has 9,420 events.
-Most are small (mean M\,3.2), but there are 6 events $\geq$\,M7.0 and 357 $\geq$\,M5.0.
+The catalog has 9,518 events.
+Most are small (mean M\,3.2), but there are 6 events $\geq$\,M7.0 and 367 $\geq$\,M5.0.
 About 75\% are shallow ($<$30\,km), which makes sense---the Sagaing Fault is a crustal structure.
 
 \begin{figure}[htbp]
@@ -106,10 +106,10 @@ About 75\% are shallow ($<$30\,km), which makes sense---the Sagaing Fault is a c
 
 The Gutenberg-Richter law says $\log_{10} N = a - bM$.
 The tricky part is that the catalog is incomplete at small magnitudes---the 1970s network couldn't detect M2 events, but the modern network can.
-If you naively fit all the data, you get $b = 0.35$, which is way too low (global average is $\sim$1.0). After Gardner-Knopoff (1974) declustering --- magnitude-dependent space-time windows, e.g.\ $\sim$86\,km and $\sim$967 days for the M7.7 mainshock --- $M_c \approx 4.7$ and $b \approx 1.05$, typical for a tectonic region; these are the rates used for the probabilistic hazard below.
+If you naively fit all the data, you get $b = 0.35$, which is way too low (global average is $\sim$1.0). After Gardner-Knopoff (1974) declustering --- magnitude-dependent space-time windows, e.g.\ $\sim$86\,km and $\sim$967 days for the M7.7 mainshock --- $M_c \approx 4.7$ and $b \approx 1.06$, typical for a tectonic region; these are the rates used for the probabilistic hazard below.
 
 A stability analysis (Figure~\ref{fig:fmd}b) shows the b-value stabilizes around $M_c \approx 4.0$--$4.5$; the headline fit uses $M_c = 4.0$.
-Using that cutoff: $b = 0.71 \pm 0.02$ with 2,473 events.
+Using that cutoff: $b = 0.72 \pm 0.01$ with 2,597 events.
 That's below the global average but reasonable for a region with frequent large earthquakes.
 
 \begin{figure}[htbp]
@@ -122,7 +122,7 @@ That's below the global average but reasonable for a region with frequent large 
 \subsection{Spatial Clustering}
 
 DBSCAN in UTM coordinates (so distances are in actual km, not degrees) finds 7 clusters.
-The Central Myanmar cluster has 8,775 events (95\% of everything), including the 2025 M7.7.
+The Central Myanmar cluster has 9,045 events (95\% of everything), including the 2025 M7.7.
 
 \begin{figure}[htbp]
     \centering
@@ -269,7 +269,7 @@ The median Critical+High fraction across draws is $\sim$67\%, but the grading is
 
 Beyond the single-event PGA, I computed full hazard curves at each dam using the Cornell-McGuire PSHA approach: integrate the G-R magnitude distribution with the GMPE over all possible magnitudes (M5--8), including the ground-motion variability ($\sigma_{ln} = 0.65$).
 
-The 475-year PGA (10\% chance of exceedance in 50 years) ranges from $\sim$0.002$g$ to $\sim$0.55$g$ across the dam portfolio, with a mean of 0.14$g$, computed with a Frankel (1995)-style smoothed-seismicity source model from the Gardner-Knopoff declustered catalog ($b \approx 1.05$), integrating hazard over the source-to-site distance distribution.
+The 475-year PGA (10\% chance of exceedance in 50 years) ranges from $\sim$0.002$g$ to $\sim$0.55$g$ across the dam portfolio, with a mean of 0.14$g$, computed with a Frankel (1995)-style smoothed-seismicity source model from the Gardner-Knopoff declustered catalog ($b \approx 1.06$), integrating hazard over the source-to-site distance distribution.
 170 dams exceed 0.1$g$ and 42 exceed 0.2$g$ at this return period. These values are a \emph{catalog-only lower bound}: the committed fault dataset carries no slip rates, so the model has no dedicated fault-source term and reports lower on-fault hazard than fault-source studies such as Thant et al.\ (2023). An earlier version of this analysis collapsed the entire regional rate onto each dam's single nearest-fault distance, inflating the near-fault 475-year PGA to $\sim$1.9$g$.
 
 \begin{figure}[htbp]

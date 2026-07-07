@@ -1,0 +1,4 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km,shakemapURL,shakemapLastUpdated
+25.2405,95.1224,97.0,4.4,mb,,90,4.079,0.86,us,usb000r69q,2014-08-26T01:21:01.000Z,,"78 km SE of Phek, India",MM,Asia,earthquake,0,0,1,,,2014-05-28 03:19:11,2014-05-28 09:49:11,Sagaing,Hkamti,Homalin,Hpaing Kun,village,0.7,,
+24.2536,94.4977,85.55,4.6,mb,,75,2.731,0.36,us,usc000r8fh,2014-08-26T01:21:02.000Z,,"57 km SE of W?ngjing, India",MM,Asia,earthquake,0,0,1,,,2014-05-29 03:23:46,2014-05-29 09:53:46,Sagaing,Tamu,Tamu,,village,11.1,,
+16.5243,95.6809,22.44,4.7,mb,,35,3.658,0.87,us,usc000r9hr,2022-07-26T16:04:57.258Z,,"9 km NNW of Kyaiklat, Myanmar",MM,Asia,earthquake,0,0,1,,,2014-05-31 17:31:47,2014-06-01 00:01:47,Ayeyarwady,Pyapon,Kyaiklat,Htein Kyun,village,1.1,,
