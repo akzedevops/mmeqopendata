@@ -20,6 +20,16 @@
     "distance_km": 53.8
   },
   {
+    "lat": 17.062,
+    "lon": 94.786,
+    "state": "Ayeyarwady",
+    "district": "Pathein",
+    "township": "Thabaung",
+    "city": "Seik Hpu Kone",
+    "place_type": "village",
+    "distance_km": 0.5
+  },
+  {
     "lat": 17.594,
     "lon": 95.311,
     "state": "Ayeyarwady",
@@ -30,14 +40,14 @@
     "distance_km": 0.5
   },
   {
-    "lat": 17.043,
-    "lon": 94.843,
-    "state": "Ayeyarwady",
-    "district": "Pathein",
-    "township": "Thabaung",
-    "city": "Lin Tar Kya",
+    "lat": 19.011,
+    "lon": 96.198,
+    "state": "Bago",
+    "district": "Taungoo",
+    "township": "Taungoo",
+    "city": "Seik Myaung",
     "place_type": "village",
-    "distance_km": 1.1
+    "distance_km": 3.1
   },
   {
     "lat": 18.297,
@@ -50,14 +60,14 @@
     "distance_km": 6.6
   },
   {
-    "lat": 18.136,
-    "lon": 96.431,
-    "state": "Bago",
-    "district": "Bago",
-    "township": "Kyauktaga",
-    "city": "Yae Aye",
+    "lat": 21.419,
+    "lon": 93.778,
+    "state": "Chin",
+    "district": "Mindat",
+    "township": "Mindat",
+    "city": "Pyung",
     "place_type": "village",
-    "distance_km": 5.5
+    "distance_km": 2.6
   },
   {
     "lat": 20.928,
@@ -70,34 +80,24 @@
     "distance_km": 2.0
   },
   {
-    "lat": 22.484,
-    "lon": 93.363,
-    "state": "Chin",
-    "district": "Hakha",
-    "township": "Thantlang",
-    "city": "Zabung",
+    "lat": 26.832,
+    "lon": 96.958,
+    "state": "Kachin",
+    "district": "Myitkyina",
+    "township": "Tanai",
+    "city": "Khashi",
     "place_type": "village",
-    "distance_km": 1.3
+    "distance_km": 33.8
   },
   {
-    "lat": 25.266,
-    "lon": 96.505,
+    "lat": 26.021,
+    "lon": 96.693,
     "state": "Kachin",
     "district": "Mohnyin",
-    "township": "Mohnyin",
-    "city": "Chaung Wa",
+    "township": "Hpakant",
+    "city": "Ting Kauk",
     "place_type": "village",
-    "distance_km": 4.8
-  },
-  {
-    "lat": 27.256,
-    "lon": 97.092,
-    "state": "Kachin",
-    "district": "Puta-O",
-    "township": "Puta-O",
-    "city": "Vijaynagar",
-    "place_type": "village",
-    "distance_km": 11.6
+    "distance_km": 7.1
   },
   {
     "lat": 19.182,
@@ -120,6 +120,16 @@
     "distance_km": 7.6
   },
   {
+    "lat": 18.413,
+    "lon": 97.296,
+    "state": "Kayin",
+    "district": "Hpapun",
+    "township": "Hpapun",
+    "city": "Hpaw Mu Khar Doe",
+    "place_type": "village",
+    "distance_km": 1.0
+  },
+  {
     "lat": 17.616,
     "lon": 97.571,
     "state": "Kayin",
@@ -130,14 +140,14 @@
     "distance_km": 1.8
   },
   {
-    "lat": 16.62,
-    "lon": 98.44,
-    "state": "Kayin",
-    "district": "Myawaddy",
-    "township": "Myawaddy",
-    "city": "Hpar Chaung (Ah Twin Me Ka Nei)",
+    "lat": 21.839,
+    "lon": 94.145,
+    "state": "Magway",
+    "district": "Gangaw",
+    "township": "Tilin",
+    "city": "Kyar U Yin",
     "place_type": "village",
-    "distance_km": 4.6
+    "distance_km": 1.4
   },
   {
     "lat": 22.637,
@@ -148,16 +158,6 @@
     "city": "ရွေမြစ်သာ",
     "place_type": "village",
     "distance_km": 1.5
-  },
-  {
-    "lat": 20.071,
-    "lon": 95.181,
-    "state": "Magway",
-    "district": "Magway",
-    "township": "Magway",
-    "city": "Kyee Kone",
-    "place_type": "village",
-    "distance_km": 3.2
   },
   {
     "lat": 20.266,
@@ -220,9 +220,29 @@
     "distance_km": 1.6
   },
   {
+    "lat": 24.645,
+    "lon": 94.629,
+    "state": "Sagaing",
+    "district": "Hkamti",
+    "township": "Homalin",
+    "city": "Zay Di",
+    "place_type": "village",
+    "distance_km": 6.7
+  },
+  {
+    "lat": 22.949,
+    "lon": 95.898,
+    "state": "Sagaing",
+    "district": "Kanbalu",
+    "township": "Kanbalu",
+    "city": "Mei Za Taw",
+    "place_type": "village",
+    "distance_km": 2.6
+  },
+  {
     "lat": 25.977,
     "lon": 95.34,
-    "state": "Saigang",
+    "state": "Sagaing",
     "district": "Hkamti",
     "township": "Hkamti",
     "city": "Patun",
@@ -232,7 +252,7 @@
   {
     "lat": 24.34,
     "lon": 94.413,
-    "state": "Saigang",
+    "state": "Sagaing",
     "district": "Tamu",
     "township": "Tamu",
     "city": "Ton Ma Na",
@@ -240,29 +260,29 @@
     "distance_km": 3.4
   },
   {
-    "lat": 21.624,
-    "lon": 98.323,
+    "lat": 20.5,
+    "lon": 98.205,
     "state": "Shan",
-    "district": "Loilen",
-    "township": "Monghsu",
-    "city": "Nar Nam Lat",
+    "district": "Langkho",
+    "township": "Langkho",
+    "city": "Ho Hpar",
     "place_type": "village",
-    "distance_km": 5.4
+    "distance_km": 13.6
   },
   {
-    "lat": 20.761,
-    "lon": 99.139,
+    "lat": 21.313,
+    "lon": 100.786,
     "state": "Shan",
-    "district": "Monghsat",
-    "township": "Monghsat",
-    "city": "Nar Hpar Ko",
+    "district": "Tachileik",
+    "township": "Mongyawng",
+    "city": "",
     "place_type": "village",
     "distance_km": 2.1
   },
   {
     "lat": 13.72,
     "lon": 98.75,
-    "state": "Tanitharyi",
+    "state": "Tanintharyi",
     "district": "Dawei",
     "township": "Dawei",
     "city": "Kyauk Htone",
@@ -272,7 +292,7 @@
   {
     "lat": 13.258,
     "lon": 98.808,
-    "state": "Tanitharyi",
+    "state": "Tanintharyi",
     "district": "Myeik",
     "township": "Palaw",
     "city": "Tha Pyu Pyin",
@@ -382,7 +402,7 @@
   {
     "lat": 23.194,
     "lon": 94.017,
-    "state": "Saigang",
+    "state": "Sagaing",
     "district": "Kale",
     "township": "Kale",
     "city": "Kalay",
@@ -412,31 +432,11 @@
   {
     "lat": 22.564,
     "lon": 95.695,
-    "state": "Saigang",
+    "state": "Sagaing",
     "district": "Shwebo",
     "township": "Shwebo",
     "city": "Shwebo",
     "place_type": "city",
     "distance_km": 0.6
-  },
-  {
-    "lat": 16.78,
-    "lon": 96.17,
-    "state": "Yangon",
-    "district": "Yangon (East)",
-    "township": "Pazundaung",
-    "city": "Yangon",
-    "place_type": "city",
-    "distance_km": 2.1
-  },
-  {
-    "lat": 20.449,
-    "lon": 99.879,
-    "state": "Shan",
-    "district": "Tachileik",
-    "township": "Tachileik",
-    "city": "Tachileik",
-    "place_type": "city",
-    "distance_km": 0.5
   }
 ]
