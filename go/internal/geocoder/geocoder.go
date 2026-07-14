@@ -166,6 +166,23 @@ type geoFeatureCollection struct {
 	} `json:"features"`
 }
 
+// adminNameFixes normalizes two misspelled geoBoundaries ADM1 shapeNames so
+// the published state_region column carries the correct spellings the
+// paper/README use. Must stay in sync with the Python geocoder's
+// _ADMIN_NAME_FIXES (src/mmeq/analysis/geocoder.py) — otherwise the two
+// exporters diverge on state_region and the shadow parity check reds out.
+var adminNameFixes = map[string]string{
+	"Saigang":    "Sagaing",
+	"Tanitharyi": "Tanintharyi",
+}
+
+func normalizeAdminName(name string) string {
+	if fixed, ok := adminNameFixes[name]; ok {
+		return fixed
+	}
+	return name
+}
+
 func loadAdmin(path string) (adminLayer, error) {
 	raw, err := os.ReadFile(path)
 	if errors.Is(err, os.ErrNotExist) {
@@ -181,7 +198,7 @@ func loadAdmin(path string) (adminLayer, error) {
 	}
 	layer := adminLayer{feats: make([]adminFeature, 0, len(fc.Features))}
 	for i, f := range fc.Features {
-		feat := adminFeature{name: f.Properties.ShapeName}
+		feat := adminFeature{name: normalizeAdminName(f.Properties.ShapeName)}
 		switch f.Geometry.Type {
 		case "Polygon":
 			var coords [][][]float64
