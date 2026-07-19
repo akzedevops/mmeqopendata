@@ -329427,9 +329427,9 @@
       "distance_km": 13.9
     },
     {
-      "latitude": 23.59,
-      "longitude": 94.624,
-      "depth": 100.0,
+      "latitude": 23.5239,
+      "longitude": 94.927,
+      "depth": 118.2,
       "mag": 4.5,
       "magType": "ml",
       "nst": "",
@@ -329438,7 +329438,7 @@
       "rms": "",
       "net": "",
       "id": "in_QnlVQnpaQzRLTHB0cGhkb2I2am15Zz09",
-      "updated": "2026-07-10T13:29:44.000Z",
+      "updated": "2026-07-18T20:15:23.000Z",
       "location": "Kaunggwe, Sagaing Region, Myanmar (Burma)",
       "place": "Myanmar",
       "country": "MM",
@@ -329446,7 +329446,7 @@
       "type": "earthquake",
       "timeAdded": "1783690869",
       "timestamp": "1783690184",
-      "locationInferred": "0",
+      "locationInferred": "1",
       "state": "",
       "initialPosition": "23.59,94.62",
       "shakemapURL": "",
@@ -329456,9 +329456,9 @@
       "state_region": "Sagaing",
       "district": "Mawlaik",
       "township": "Mawlaik",
-      "nearest_city": "Man Nwe",
+      "nearest_city": "Pein Hne Kone",
       "place_type": "village",
-      "distance_km": 3.7
+      "distance_km": 12.9
     },
     {
       "latitude": 21.747,
@@ -329935,6 +329935,40 @@
       "nearest_city": "Kha Tet Chin",
       "place_type": "village",
       "distance_km": 9.4
+    },
+    {
+      "latitude": 25.787,
+      "longitude": 95.242,
+      "depth": 107.0,
+      "mag": 3.4,
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "ems_202607_2027958",
+      "updated": "2026-07-17T17:21:29.000Z",
+      "location": "Salem, Sagaing Region, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1784308902",
+      "timestamp": "1784308462",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "25.79,95.24",
+      "shakemapURL": "",
+      "shakemapLastUpdated": "0",
+      "time_utc": "2026-07-17 17:14:22",
+      "time_mmt": "2026-07-17 23:44:22",
+      "state_region": "Sagaing",
+      "district": "Hkamti",
+      "township": "Hkamti",
+      "nearest_city": "Kei Su",
+      "place_type": "village",
+      "distance_km": 2.1
     }
   ]
 }
