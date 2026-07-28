@@ -52,7 +52,7 @@ jobs:
           pip install -e ".[dev]"
 
       - name: Set up Go
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@v7
         with:
           go-version-file: go/go.mod
           # stdlib-only module: no go.sum, so key the cache on go.mod

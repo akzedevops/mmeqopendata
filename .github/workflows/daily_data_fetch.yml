@@ -32,7 +32,7 @@ jobs:
       # diff (3 clean cycles before this cutover). Rollback: restore the
       # setup-python + pip install + `mmeq export` steps from git history.
       - name: Set up Go
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@v7
         with:
           go-version-file: go/go.mod
           cache-dependency-path: go/go.mod
