@@ -1,0 +1,38 @@
+{
+  "earthquakes": [
+    {
+      "latitude": 19.81,
+      "longitude": 98.55,
+      "depth": 2.0,
+      "mag": 1.9,
+      "magType": "ml",
+      "nst": "",
+      "gap": "",
+      "dmin": "",
+      "rms": "",
+      "net": "",
+      "id": "th_EQ17355_202611020041",
+      "updated": "2026-11-02T00:41:50.000Z",
+      "location": "Mone Hta, Shan, Myanmar (Burma)",
+      "place": "Myanmar",
+      "country": "MM",
+      "continent": "Asia",
+      "type": "earthquake",
+      "timeAdded": "1793580805",
+      "timestamp": "1793580110",
+      "locationInferred": "0",
+      "state": "",
+      "initialPosition": "19.81,98.55",
+      "shakemapURL": "",
+      "shakemapLastUpdated": "0",
+      "time_utc": "2026-11-02 00:41:50",
+      "time_mmt": "2026-11-02 07:11:50",
+      "state_region": "Shan",
+      "district": "Langkho",
+      "township": "Langkho",
+      "nearest_city": "Mong Hta",
+      "place_type": "village",
+      "distance_km": 4.6
+    }
+  ]
+}

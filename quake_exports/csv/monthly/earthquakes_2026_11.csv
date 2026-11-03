@@ -1,0 +1,2 @@
+latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,location,place,country,continent,type,timeAdded,timestamp,locationInferred,state,initialPosition,shakemapURL,shakemapLastUpdated,time_utc,time_mmt,state_region,district,township,nearest_city,place_type,distance_km
+19.81,98.55,2.0,1.9,ml,,,,,,th_EQ17355_202611020041,2026-11-02T00:41:50.000Z,"Mone Hta, Shan, Myanmar (Burma)",Myanmar,MM,Asia,earthquake,1793580805,1793580110,0,,"19.81,98.55",,0,2026-11-02 00:41:50,2026-11-02 07:11:50,Shan,Langkho,Langkho,Mong Hta,village,4.6
