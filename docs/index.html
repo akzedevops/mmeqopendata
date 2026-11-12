@@ -56,11 +56,11 @@
 
     <div class="container">
         <div class="stats">
-            <div class="stat-card"><div class="number">9,679</div><div class="label">Earthquake Events</div></div>
+            <div class="stat-card"><div class="number" data-stat="CatalogCount">10,082</div><div class="label">Earthquake Events</div></div>
             <div class="stat-card"><div class="number">M7.7</div><div class="label">2025 Mandalay Earthquake</div></div>
-            <div class="stat-card"><div class="number">173</div><div class="label">Dams Critical/High Risk</div></div>
-            <div class="stat-card"><div class="number">34,224</div><div class="label">Buildings Assessed</div></div>
-            <div class="stat-card"><div class="number">2.9M</div><div class="label">People within 50km</div></div>
+            <div class="stat-card"><div class="number" data-stat="HighCount">160</div><div class="label">Dams: High/Critical Screening</div></div>
+            <div class="stat-card"><div class="number" data-stat="BuildingCount">34,224</div><div class="label">OSM Elements Assessed</div></div>
+            <div class="stat-card"><div class="number" data-stat="CatalogLatest">2026-11-11</div><div class="label">Latest Catalog Event (UTC)</div></div>
         </div>
 
         <div class="section-title">&#127758; Interactive Visualizations</div>
@@ -68,7 +68,7 @@
             <div class="card">
                 <div class="card-header bg-map">Earthquake Map</div>
                 <div class="card-body">
-                    <p>9,679 earthquakes with heatmap, fault lines, and 254 dams including the 2025 M7.7 rupture trace.</p>
+                    <p><span data-stat="CatalogCount">10,082</span> earthquakes with heatmap, fault lines, and 254 dams including the 2025 M7.7 rupture trace.</p>
                     <a href="report/enhanced_earthquake_map.html" class="btn bg-map" target="_blank">Open Map</a>
                 </div>
             </div>
@@ -100,14 +100,14 @@
             <div class="card">
                 <div class="card-header bg-report">Write-up (PDF)</div>
                 <div class="card-body">
-                    <p>17-page hobby write-up — dam risk, GMPE validation, Coulomb stress, fragility, building exposure, HAZUS loss estimates.</p>
+                    <p>Audited hobby write-up — seismic screening, station comparisons, model assumptions, and scenario exposure. Not an engineering safety assessment.</p>
                     <a href="report/paper.pdf" class="btn bg-report" target="_blank">Read PDF</a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header bg-bldg">Building Exposure</div>
                 <div class="card-body">
-                    <p>34,224 schools, hospitals, and critical buildings with site-specific Vs30. 2,166 schools and 901 hospitals above 0.1g PGA.</p>
+                    <p><span data-stat="BuildingCount">34,224</span> mapped OSM elements. Modeled PGA above 0.1g at <span data-stat="SchoolCount">1,674</span> schools and <span data-stat="HospitalCount">583</span> hospitals; not observed damage.</p>
                     <a href="report/building_exposure.csv" class="btn bg-bldg" download>Download CSV (4.3 MB)</a>
                 </div>
             </div>
@@ -142,12 +142,12 @@
                     <a href="report/dam_fragility.json" class="btn bg-data" download>JSON</a>
                 </div>
                 <div class="data-item">
-                    <div class="dl-label">Hazard Curves (251 dams)</div>
+                    <div class="dl-label">Hazard Curves (<span data-stat="DamCount">254</span> dams)</div>
                     <a href="report/hazard_curves/" class="btn bg-data">Browse</a>
                 </div>
                 <div class="data-item">
                     <div class="dl-label">Sensitivity Analysis</div>
-                    <a href="report/hazard_curves/sensitivity_analysis.csv" class="btn bg-data" download>CSV</a>
+                    <a href="report/sensitivity_analysis.csv" class="btn bg-data" download>CSV</a>
                 </div>
             </div>
         </div>
@@ -215,7 +215,7 @@
 
     <script>
     const REPO = 'https://raw.githubusercontent.com/akzedevops/mmeqopendata/master/quake_exports';
-    const YEARS = {2026:614,2025:2469,2024:621,2023:722,2022:1897,2021:467,2020:388,2019:107,2018:114,2017:112,2016:61,2015:51,2014:71,2013:49,2012:71,2011:74,2010:28,2009:37,2008:122,2007:83,2006:61,2005:75,2004:108,2003:104,2002:36,2001:44,2000:40,1999:33,1998:41,1997:45,1996:70,1995:72,1994:35,1993:41,1992:63,1991:50,1990:43,1989:59,1988:87,1987:33,1986:30,1985:25,1984:30,1983:32,1982:21,1981:33,1980:22,1979:27,1978:28,1977:17,1976:46,1975:24,1974:15,1973:12,1972:5,1971:11,1970:3};
+    const YEARS = {"1970": 3, "1971": 11, "1972": 5, "1973": 12, "1974": 15, "1975": 24, "1976": 46, "1977": 17, "1978": 28, "1979": 27, "1980": 22, "1981": 33, "1982": 21, "1983": 32, "1984": 30, "1985": 25, "1986": 30, "1987": 33, "1988": 87, "1989": 59, "1990": 43, "1991": 50, "1992": 63, "1993": 41, "1994": 35, "1995": 72, "1996": 70, "1997": 45, "1998": 41, "1999": 33, "2000": 40, "2001": 44, "2002": 36, "2003": 104, "2004": 108, "2005": 75, "2006": 61, "2007": 83, "2008": 122, "2009": 37, "2010": 28, "2011": 74, "2012": 71, "2013": 49, "2014": 71, "2015": 51, "2016": 61, "2017": 112, "2018": 114, "2019": 107, "2020": 388, "2021": 467, "2022": 1897, "2023": 722, "2024": 621, "2025": 2469, "2026": 1017};
 
     const sel = document.getElementById('year-select');
     const fmt = document.getElementById('format-select');
@@ -241,22 +241,30 @@
     sel.onchange = updateLink;
     fmt.onchange = updateLink;
 
-    // Dam risk table
-    fetch('report/dam_risk_scores.csv').then(r=>r.text()).then(text=>{
-        const lines=text.trim().split('\n');
-        const h=lines[0].split(',').map(s=>s.replace(/"/g,''));
-        const ni=0,pi=h.indexOf('pga_g'),fi=h.indexOf('dist_to_fault_km'),si=h.indexOf('composite_risk'),gi=h.indexOf('risk_grade');
+    fetch('report/publication.json').then(response => {
+        if (!response.ok) throw new Error('Publication metadata unavailable');
+        return response.json();
+    }).then(metadata => {
         const tbody=document.getElementById('risk-tbody');
-        let c=0;
-        for(let i=1;i<lines.length&&c<10;i++){
-            const cols=lines[i].split(',').map(s=>s.replace(/"/g,''));
-            if(cols[gi]!=='Critical')continue;
-            c++;
+        metadata.critical_dams.forEach((dam, index) => {
             const tr=document.createElement('tr');
-            tr.innerHTML=`<td>${c}</td><td>${cols[ni]}</td><td>${parseFloat(cols[pi]).toFixed(3)}</td><td>${parseFloat(cols[fi]).toFixed(1)} km</td><td>${parseFloat(cols[si]).toFixed(1)}</td><td><span class="badge badge-critical">Critical</span></td>`;
+            const values = [index + 1, dam.name, Number(dam.pga_g).toFixed(3),
+                `${Number(dam.dist_to_fault_km).toFixed(1)} km`, Number(dam.composite_risk).toFixed(1), 'Critical'];
+            values.forEach(value => {
+                const cell = document.createElement('td');
+                cell.textContent = value;
+                tr.appendChild(cell);
+            });
             tbody.appendChild(tr);
-        }
-    }).catch(()=>{});
+        });
+    }).catch(error => {
+        const row = document.createElement('tr');
+        const cell = document.createElement('td');
+        cell.colSpan = 6;
+        cell.textContent = error.message;
+        row.appendChild(cell);
+        document.getElementById('risk-tbody').appendChild(row);
+    });
     </script>
 </body>
 </html>
