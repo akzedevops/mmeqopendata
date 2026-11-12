@@ -276,6 +276,19 @@ local use (see `specs/002` and `specs/004`).
 
 ## Configuration
 
+### Basemaps
+
+The interactive earthquake map and animated timeline use OpenStreetMap standard
+tiles, which require no API key. Attribution stays visible on each map. Tiles
+are fetched online by the browser; they are not bundled with the self-hosted
+JavaScript/CSS assets. Follow the [OSM tile usage policy](https://operations.osmfoundation.org/policies/tiles/):
+no bulk downloading or offline prefetching, and preserve browser caching and
+referrer headers. The community tile service is best-effort, not an unlimited
+or guaranteed hosting service. Higher-traffic deployments should use a suitable
+tile provider or self-hosted tiles.
+
+### Environment Variables
+
 Override defaults with environment variables:
 
 | Variable | Default | Description |
