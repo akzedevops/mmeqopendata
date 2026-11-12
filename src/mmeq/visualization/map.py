@@ -77,7 +77,7 @@ def build_earthquake_map(
     quake_map = folium.Map(
         location=MAP_CENTER,
         zoom_start=MAP_ZOOM,
-        tiles="CartoDB positron",
+        tiles="OpenStreetMap",
     )
 
     # folium JSCSSMixin instances whose default CDN links we rewrite to local

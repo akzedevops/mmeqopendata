@@ -27,7 +27,7 @@ def build_animated_map(
     quake_map = folium.Map(
         location=MAP_CENTER,
         zoom_start=MAP_ZOOM,
-        tiles="CartoDB positron",
+        tiles="OpenStreetMap",
     )
 
     features = []

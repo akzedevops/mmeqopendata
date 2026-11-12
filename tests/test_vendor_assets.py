@@ -2,7 +2,7 @@
 
 Every JS/CSS/font/image the folium maps and plotly dashboards need must be served
 page-relative from the vendored tree copied next to the output — zero third-party
-origins on the public site. Runtime map TILE fetches (OpenStreetMap / CartoDB base
+origins on the public site. Runtime map TILE fetches (OpenStreetMap base
 layers) are excluded: they are live map-tile requests inside JS ``L.tileLayer``
 strings, not static ``<script>`` / ``<link>`` assets.
 """
@@ -13,6 +13,7 @@ import pandas as pd
 import pytest
 
 from mmeq.visualization.assets import VENDOR_DIR, VENDOR_MANIFEST
+from mmeq.visualization.animated_map import build_animated_map
 from mmeq.visualization.map import build_earthquake_map
 from mmeq.visualization.dashboard import build_dashboard
 
@@ -47,6 +48,21 @@ def test_vendor_tree_populated():
     """Sanity: the checked-in vendor tree exists and holds every manifest file."""
     for name, rel in VENDOR_MANIFEST.items():
         assert (VENDOR_DIR / rel).is_file(), f"missing vendored asset {name!r} ({rel})"
+
+
+@pytest.mark.parametrize("builder,options", [
+    (build_earthquake_map, {"show_dams": False}),
+    (build_animated_map, {}),
+])
+@pytest.mark.filterwarnings("error:CartoDB tiles now require an API key:UserWarning")
+def test_maps_use_key_free_tiles_with_attribution(tmp_path, builder, options):
+    output = tmp_path / "map.html"
+    builder(_sample_df(), output_path=str(output), **options)
+    rendered = output.read_text()
+    assert "https://tile.openstreetmap.org/{z}/{x}/{y}.png" in rendered
+    assert "https://www.openstreetmap.org/copyright" in rendered
+    assert "OpenStreetMap" in rendered
+    assert "cartocdn.com" not in rendered
 
 
 def test_map_html_has_no_remote_assets(tmp_path):
