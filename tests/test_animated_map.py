@@ -38,4 +38,5 @@ def test_animation_installs_time_sort_before_initialization(tmp_path):
     assert rendered.index(_NUMERIC_TIME_SORT.strip()) < rendered.index(".timeDimension = L.timeDimension(")
     for timestamp in events["time_utc"]:
         assert timestamp.strftime("%Y-%m-%dT%H:%M:%SZ") in rendered
-    assert 'class="animation-title"' in rendered
+    assert 'class="mmeq-map-panel"' in rendered
+    assert 'duration: "P68Y"' in rendered

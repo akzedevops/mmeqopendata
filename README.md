@@ -113,10 +113,17 @@ mmeq report --no-dams               # Skip dam risk analysis
 | Population | `population_exposure.csv` |
 | Sensitivity | `sensitivity_analysis.csv` |
 
-The animated map starts at the earliest catalog event. Press **Play** to advance
-month by month, or drag the timeline to a later date. Earlier earthquakes remain
-visible as the timeline advances; sparse early years may show little change even
-while the displayed date moves forward.
+Both maps have **From year / To year** filters (inclusive, UTC), **Latest year**,
+and **All years** controls. The interactive map filters earthquake markers and
+its heatmap together; dams, faults, and infrastructure remain unchanged. The
+selected-event count updates immediately, including an explicit empty state.
+
+The animated map pauses and restarts at the first event in the selected years.
+Press **Play** to advance month by month, or drag the timeline to a later date.
+Earlier selected earthquakes remain visible as it advances; sparse early years
+may show little change even while the displayed date moves forward. Use **All
+years** to restore the full timeline. These controls change the view, not the
+underlying catalog or scientific results.
 
 ### `mmeq publish`
 

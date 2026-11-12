@@ -52,3 +52,4 @@ new spec from `TEMPLATE.md`, then drive steps 2–5 until every acceptance crite
 | [009](009-psha-literature-validation.md) | Validate PSHA/ASK08 against published Myanmar hazard studies | Done |
 | [010](010-publication-integrity.md) | Correct station validation, publication integrity, and automation monitoring | Done |
 | [011](011-animated-timeline.md) | Restore chronological animation and visible timeline controls | Done |
+| [012](012-map-year-filters.md) | Year-filtered maps with responsive explorer controls | Done |
