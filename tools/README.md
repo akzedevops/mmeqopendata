@@ -10,6 +10,7 @@ part of the daily pipeline unless noted.
 | [`backfill.py`](backfill.py) | Re-fetch & merge specific months from the mmeq API into the monthly files | After a bad/partial daily run |
 | [`build_figure_data.py`](build_figure_data.py) | Precompute the report CSVs (dam risk, Vs30, sensitivity) that the figures read | In CI before `generate_figures.py`; locally to refresh figures |
 | [`check_automation.py`](check_automation.py) | Check scheduled workflow heartbeats and deployed catalog SHA-256 | Daily independent monitor; needs `GH_TOKEN` for GitHub API access |
+| [`check_map_filters.cjs`](check_map_filters.cjs) | Offline Chromium checks of year filters, reset, playback, and mobile controls | After changing either map; requires Node.js, Playwright, and installed Chromium |
 | [`build_as08_reference.py`](build_as08_reference.py) | Generate 80 independent AS08 reference cases | Optional separate OpenQuake 3.26.2 environment; not a runtime dependency |
 | [`diff_exports.py`](diff_exports.py) | Id-keyed, float-tolerant diff of two export trees (Python vs Go) | Verifying Go/Python export parity |
 | [`fetch_vendor.py`](fetch_vendor.py) | Download & hash-pin the self-hosted JS/CSS for the maps/dashboard | When bumping folium/plotly; `--verify` in CI |
@@ -36,6 +37,33 @@ and updates the README and homepage. Check links after copying figures and PDF.
 The freshness monitor checks job completion rather than event origin time; no
 earthquakes is a valid outcome. A live report deployment temporarily defers its
 catalog-hash comparison. See `docs/scientific-audit.md` for limitations.
+
+## Browser checks for map filters
+
+After generating both maps in a report directory, prepare independent year
+counts from the same input and run the optional browser check:
+
+```bash
+python - <<'PY'
+import json
+from pathlib import Path
+import pandas as pd
+
+events = pd.read_csv("quake_exports/csv/combined/earthquakes_combined.csv")
+years = pd.to_datetime(events["time_utc"], utc=True, errors="coerce", format="mixed").dt.year.dropna().astype(int)
+Path("/tmp/mmeq-year-counts.json").write_text(json.dumps(years.value_counts().to_dict()))
+PY
+node tools/check_map_filters.cjs docs/report /tmp/mmeq-year-counts.json
+```
+
+Apply the same magnitude cutoff to the input if the maps were generated with one.
+The script requires `playwright` resolvable by Node.js (or via `NODE_PATH`) and
+an installed compatible Chromium. It serves local assets through browser request
+routing, substitutes a placeholder tile, and blocks external network requests.
+It checks single-year/range counts, marker/heatmap agreement, gap years when
+present, range correction, reset, animation playback, final-frame completeness,
+keyboard focus, and mobile control/attribution bounds. It is separate from the
+Python CI suite; no browser is required to install or use the Python package.
 
 ## `backfill_usgs.py` — USGS gap / completeness fill
 

@@ -8,6 +8,7 @@ from folium.plugins import TimestampedGeoJson
 
 from mmeq.config import MAP_CENTER, MAP_ZOOM, FAULT_LINES_PATH
 from mmeq.visualization.assets import copy_vendor, use_local_assets
+from mmeq.visualization.map_controls import MapYearFilter, prepare_map_events
 
 logger = logging.getLogger(__name__)
 
@@ -26,8 +27,7 @@ def build_animated_map(
     fault_lines_path: Optional[str] = None,
     min_mag: float = 0.0,
 ) -> str:
-    df = df[df["mag"] >= min_mag].copy()
-    df["time_utc"] = pd.to_datetime(df["time_utc"])
+    df = prepare_map_events(df, min_mag)
 
     if fault_lines_path is None:
         fault_lines_path = FAULT_LINES_PATH
@@ -88,6 +88,7 @@ def build_animated_map(
         loop_button=True,
         date_options="YYYY-MM",
         time_slider_drag_update=True,
+        duration=f"P{int(df['time_utc'].dt.year.max() - df['time_utc'].dt.year.min()) + 2}Y",
     )
     tgj.add_to(quake_map)
 
@@ -100,19 +101,7 @@ def build_animated_map(
 
     folium.LayerControl().add_to(quake_map)
 
-    title_html = """
-    <style>
-        .animation-title {
-            position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
-            max-width: calc(100% - 120px); z-index: 1000; margin: 0;
-            padding: 4px 8px; background: white; border-radius: 4px;
-            font-size: 18px; text-align: center; pointer-events: none;
-        }
-        .leaflet-bar-timecontrol { max-width: calc(100vw - 20px); }
-    </style>
-    <h3 class="animation-title">Myanmar Earthquake Timeline</h3>
-    """
-    quake_map.get_root().html.add_child(folium.Element(title_html))
+    MapYearFilter(df, animation=tgj).add_to(quake_map)
 
     use_local_assets(quake_map, tgj)
     copy_vendor(os.path.dirname(os.path.abspath(output_path)))

@@ -9,6 +9,7 @@ from folium.plugins import HeatMap, MarkerCluster
 
 from mmeq.analysis.dam_risk import load_dams_df
 from mmeq.visualization.assets import copy_vendor, use_local_assets
+from mmeq.visualization.map_controls import MapYearFilter, prepare_map_events
 from mmeq.config import (
     MAP_CENTER,
     MAP_ZOOM,
@@ -68,11 +69,7 @@ def build_earthquake_map(
     if fault_lines_path is None:
         fault_lines_path = FAULT_LINES_PATH
 
-    df = df[df["mag"] >= min_mag].copy()
-    df["time_utc"] = pd.to_datetime(df["time_utc"])
-
-    start_date = df["time_utc"].min().strftime("%B %Y")
-    end_date = df["time_utc"].max().strftime("%B %Y")
+    df = prepare_map_events(df, min_mag)
 
     quake_map = folium.Map(
         location=MAP_CENTER,
@@ -83,6 +80,8 @@ def build_earthquake_map(
     # folium JSCSSMixin instances whose default CDN links we rewrite to local
     # vendored assets at save time (see use_local_assets).
     asset_objects = [quake_map]
+    target = None
+    hm = None
 
     if show_markers:
         marker_layer = folium.FeatureGroup(name="Earthquake Markers")
@@ -96,7 +95,7 @@ def build_earthquake_map(
         for _, row in df.iterrows():
             color = _mag_color(row["mag"])
             radius = _mag_radius(row["mag"])
-            folium.CircleMarker(
+            marker = folium.CircleMarker(
                 location=[row["latitude"], row["longitude"]],
                 radius=radius,
                 color=color,
@@ -108,6 +107,7 @@ def build_earthquake_map(
                     f"<b>Time (MMT):</b> {_esc(row.get('time_mmt', 'N/A'))}"
                 ),
             ).add_to(target)
+            marker.options["eventYear"] = int(row["time_utc"].year)
         marker_layer.add_to(quake_map)
 
     if os.path.exists(fault_lines_path):
@@ -198,25 +198,7 @@ def build_earthquake_map(
 
     folium.LayerControl().add_to(quake_map)
 
-    legend_html = f"""
-    <div style="position: fixed; bottom: 50px; left: 50px; width: 210px; z-index:9999;
-                font-size:14px; background-color: white; opacity: 0.9; padding: 10px; border-radius: 5px;">
-        <b>Earthquake Magnitude Legend</b><br>
-        <i style="background: green; width: 10px; height: 10px; border-radius: 50%; display: inline-block;"></i> Magnitude &lt; {MAG_THRESHOLDS['low']}<br>
-        <i style="background: orange; width: 10px; height: 10px; border-radius: 50%; display: inline-block;"></i> {MAG_THRESHOLDS['low']} &le; Magnitude &lt; {MAG_THRESHOLDS['medium']}<br>
-        <i style="background: red; width: 10px; height: 10px; border-radius: 50%; display: inline-block;"></i> Magnitude &ge; {MAG_THRESHOLDS['medium']}<br>
-        <i style="background: purple; width: 15px; height: 3px; display: inline-block;"></i> Fault Lines<br>
-        <i style="background: #2196F3; width: 10px; height: 10px; border-radius: 50%; display: inline-block;"></i> Dams<br><br>
-        <b>Data Range:</b><br>{start_date} – {end_date}
-    </div>
-    """
-    quake_map.get_root().html.add_child(folium.Element(legend_html))
-
-    title_html = f"""
-    <h3 align="center" style="font-size:20px">
-    <b>Myanmar Earthquake Visualization<br>({start_date} – {end_date})</b></h3>
-    """
-    quake_map.get_root().html.add_child(folium.Element(title_html))
+    MapYearFilter(df, marker_target=target, heat_layer=hm).add_to(quake_map)
 
     use_local_assets(*asset_objects)
     copy_vendor(os.path.dirname(os.path.abspath(output_path)))
