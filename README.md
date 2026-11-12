@@ -113,6 +113,11 @@ mmeq report --no-dams               # Skip dam risk analysis
 | Population | `population_exposure.csv` |
 | Sensitivity | `sensitivity_analysis.csv` |
 
+The animated map starts at the earliest catalog event. Press **Play** to advance
+month by month, or drag the timeline to a later date. Earlier earthquakes remain
+visible as the timeline advances; sparse early years may show little change even
+while the displayed date moves forward.
+
 ### `mmeq publish`
 
 Synchronizes the README summary, homepage statistics, paper tables, and publication
