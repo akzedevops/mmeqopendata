@@ -11,6 +11,14 @@ from mmeq.visualization.assets import copy_vendor, use_local_assets
 
 logger = logging.getLogger(__name__)
 
+_NUMERIC_TIME_SORT = """
+L.TimeDimension.Util.sort_and_deduplicate = function (times) {
+    return Array.from(new Set(times)).sort(function (first, second) {
+        return first - second;
+    });
+};
+"""
+
 
 def build_animated_map(
     df: pd.DataFrame,
@@ -29,6 +37,7 @@ def build_animated_map(
         zoom_start=MAP_ZOOM,
         tiles="OpenStreetMap",
     )
+    quake_map.get_root().script.add_child(folium.Element(_NUMERIC_TIME_SORT), name="numeric_time_sort")
 
     features = []
     for _, row in df.iterrows():
@@ -91,7 +100,18 @@ def build_animated_map(
 
     folium.LayerControl().add_to(quake_map)
 
-    title_html = '<h3 align="center" style="font-size:18px"><b>Myanmar Earthquake Timeline</b></h3>'
+    title_html = """
+    <style>
+        .animation-title {
+            position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+            max-width: calc(100% - 120px); z-index: 1000; margin: 0;
+            padding: 4px 8px; background: white; border-radius: 4px;
+            font-size: 18px; text-align: center; pointer-events: none;
+        }
+        .leaflet-bar-timecontrol { max-width: calc(100vw - 20px); }
+    </style>
+    <h3 class="animation-title">Myanmar Earthquake Timeline</h3>
+    """
     quake_map.get_root().html.add_child(folium.Element(title_html))
 
     use_local_assets(quake_map, tgj)
