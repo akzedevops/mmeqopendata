@@ -9,11 +9,33 @@ part of the daily pipeline unless noted.
 | [`backfill_usgs.py`](backfill_usgs.py) | Fill catalog gaps from USGS FDSN with spatio-temporal cross-network dedup | Repairing a coverage hole / completeness gap |
 | [`backfill.py`](backfill.py) | Re-fetch & merge specific months from the mmeq API into the monthly files | After a bad/partial daily run |
 | [`build_figure_data.py`](build_figure_data.py) | Precompute the report CSVs (dam risk, Vs30, sensitivity) that the figures read | In CI before `generate_figures.py`; locally to refresh figures |
+| [`check_automation.py`](check_automation.py) | Check scheduled workflow heartbeats and deployed catalog SHA-256 | Daily independent monitor; needs `GH_TOKEN` for GitHub API access |
+| [`build_as08_reference.py`](build_as08_reference.py) | Generate 80 independent AS08 reference cases | Optional separate OpenQuake 3.26.2 environment; not a runtime dependency |
 | [`diff_exports.py`](diff_exports.py) | Id-keyed, float-tolerant diff of two export trees (Python vs Go) | Verifying Go/Python export parity |
 | [`fetch_vendor.py`](fetch_vendor.py) | Download & hash-pin the self-hosted JS/CSS for the maps/dashboard | When bumping folium/plotly; `--verify` in CI |
 | `vendor_lock.json` | sha256 lock for the vendored assets (not a script) | — |
 
 ---
+
+## Publication build
+
+```bash
+python tools/build_figure_data.py
+mmeq report --output docs/report --reuse-risk
+mmeq publish
+SOURCE_DATE_EPOCH=1735689600 python generate_figures.py
+cp paper/figures/*.png docs/report/figures/
+(cd paper && latexmk -pdf main.tex)
+cp paper/main.pdf docs/report/paper.pdf
+mmeq publish --check-links
+```
+
+CI runs these stages with LaTeX in its existing build action. `mmeq publish`
+requires the complete report, emits generated paper inputs under `paper/generated`,
+and updates the README and homepage. Check links after copying figures and PDF.
+The freshness monitor checks job completion rather than event origin time; no
+earthquakes is a valid outcome. A live report deployment temporarily defers its
+catalog-hash comparison. See `docs/scientific-audit.md` for limitations.
 
 ## `backfill_usgs.py` — USGS gap / completeness fill
 

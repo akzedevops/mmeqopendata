@@ -16,6 +16,12 @@ adversarial reviewer).
 
 ## Findings
 
+**Correction (2026-11-12, spec 010):** the station-validation conclusions below
+are historical and superseded. The comparison used unrelated-fault distances,
+mixed components, and an outlier. The corrected station-only diagnostic and
+limitations are documented in `docs/scientific-audit.md`; regional hazard-range
+similarity must not be treated as independent model validation.
+
 **GMPE (ASK08) — SOUND.** Our scenario PGA reproduces the 2025 M7.7 Naypyidaw
 recording (0.51 g predicted vs 0.57 g observed, ratio 1.12 ≈ 0.2σ), matches
 OpenQuake to 0.04%, and agrees with independent NGA-West2 checks that bracket

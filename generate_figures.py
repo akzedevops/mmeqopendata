@@ -256,30 +256,24 @@ for mag, ls in [(7.7, "-"), (7.0, "--"), (6.5, "-."), (6.0, ":")]:
 
 # Plot dam PGA vs distance to fault
 pga_dams = risk["pga_g"].values
-dist_dams = risk["dist_to_fault_km"].values
+dist_dams = risk["dist_to_rupture_km"].values
 mask_valid = ~np.isnan(dist_dams)
 ax.scatter(dist_dams[mask_valid], pga_dams[mask_valid], s=15, c="gray", alpha=0.5,
            edgecolors="none", label=f"Dams (N={mask_valid.sum()})")
-
-# Add recorded values from 2025 event (near-fault instrumental peaks)
-ax.scatter([5], [1.07], s=80, c="red", marker="D", edgecolors="k", zorder=5, label="Recorded 1.07g (GFZ)")
-ax.scatter([5], [0.62], s=80, c="orange", marker="D", edgecolors="k", zorder=5, label="Recorded 0.62g (USGS)")
 
 # Observed PGA at the six USGS ShakeMap stations (same module that produces
 # Table tab:validation in the paper) — keeps the figure honest and reproducible.
 from mmeq.analysis.shakemap_validation import validate_against_shakemap
 _val = validate_against_shakemap(mag=7.7)
 _stations = _val[_val["station_code"] != "DAM"]
-ax.scatter(_stations["dist_fault_km"], _stations["pga_observed_g"], s=55, c="blue",
+ax.scatter(_stations["rrup_km"], _stations["pga_observed_g"], s=55, c="blue",
            marker="o", edgecolors="k", zorder=6,
            label=f"ShakeMap stations (N={len(_stations)})")
 
-ax.set_xlabel("Joyner-Boore Distance, $R_{jb}$ (km)")
+ax.set_xlabel("Rupture Distance, $R_{rup}$ (km)")
 ax.set_ylabel("Peak Ground Acceleration (g)")
 ax.set_title("Ground Motion Attenuation (Abrahamson & Silva, 2008)")
 ax.legend(loc="upper right", fontsize=8)
-# lower bound must sit below NPW's Rrup = 0.85 km — at xlim(1, ...) the
-# near-fault anchor station is silently clipped off the canvas
 ax.set_xlim(0.5, 600)
 ax.set_ylim(1e-4, 2)
 ax.grid(True, which="both", alpha=0.3)
@@ -483,10 +477,10 @@ cb = plt.colorbar(im, ax=ax, label="ΔCFS (MPa)", shrink=0.6, pad=0.02)
 cb.ax.tick_params(labelsize=9)
 
 coulomb_dams = compute_coulomb_at_dams()
-for r in coulomb_dams:
-    c = "#d62728" if r["dcfs_mpa"] > 0.001 else ("#1f77b4" if r["dcfs_mpa"] < -0.001 else "#888888")
-    s = min(80, max(15, abs(r["dcfs_mpa"]) * 20))
-    ax.scatter(r["longitude"], r["latitude"], s=s, c=c, marker="^",
+for stress_result in coulomb_dams:
+    dam_color = {"Triggered": "#d62728", "Shadow": "#1f77b4", "Neutral": "#888888"}[stress_result["stress_regime"]]
+    marker_size = min(80, max(15, abs(stress_result["dcfs_mpa"]) * 20))
+    ax.scatter(stress_result["longitude"], stress_result["latitude"], s=marker_size, c=dam_color, marker="^",
                edgecolors="k", linewidths=0.3, zorder=3)
 
 segments = build_rupture_segments()
@@ -518,7 +512,7 @@ legend_elements = [
     Line2D([0], [0], marker="^", color="w", markerfacecolor="#d62728", markersize=8, label=f"Triggered ({triggered})"),
     Line2D([0], [0], marker="^", color="w", markerfacecolor="#1f77b4", markersize=8, label=f"Shadow ({shadow})"),
     Line2D([0], [0], marker="^", color="w", markerfacecolor="#888888", markersize=8, label=f"Neutral ({neutral})"),
-    Line2D([0], [0], color="yellow", linewidth=2, label="2025 Rupture"),
+    Line2D([0], [0], color="yellow", linewidth=2, label="Idealized rupture"),
     Line2D([0], [0], marker="*", color="w", markerfacecolor="red", markersize=14, label="Epicenter"),
 ]
 ax.legend(handles=legend_elements, loc="lower left", fontsize=9)

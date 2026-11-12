@@ -1,0 +1,98 @@
+{
+  "catalog_sha256": "9d55dc2563c295f09ead1b3e58010d2a64eea903cdc409803f4a7991579ae4b2",
+  "values": {
+    "CatalogCount": "10,082",
+    "CatalogLatest": "2026-11-11",
+    "MeanMagnitude": "3.21",
+    "LargeFive": "393",
+    "LargeSeven": "6",
+    "ShallowPercent": "73.3",
+    "RawB": "0.35",
+    "RawMc": "2.4",
+    "FixedB": "0.73",
+    "FixedCount": "2,805",
+    "DeclusteredB": "1.04",
+    "DeclusteredMc": "4.7",
+    "DamCount": "254",
+    "HighCount": "160",
+    "HighPercent": "63.0",
+    "VsMin": "229",
+    "VsMax": "875",
+    "VsMean": "450",
+    "HazardMin": "0.002",
+    "HazardMax": "0.562",
+    "HazardMean": "0.143",
+    "HazardAboveOne": "172",
+    "HazardAboveTwo": "46",
+    "BuildingCount": "34,224",
+    "BuildingSevere": "3,395",
+    "BuildingVeryStrong": "5,864",
+    "BuildingStrong": "7,058",
+    "SchoolCount": "1,674",
+    "HospitalCount": "583",
+    "StationCount": "5",
+    "InRangeStations": "3"
+  },
+  "critical_dams": [
+    {
+      "name": "Dam near 21.74N 95.85E",
+      "pga_g": 0.2718,
+      "dist_to_fault_km": 7.4,
+      "composite_risk": 10.0
+    },
+    {
+      "name": "Dam near 22.09N 95.86E",
+      "pga_g": 0.2995,
+      "dist_to_fault_km": 5.7,
+      "composite_risk": 10.0
+    },
+    {
+      "name": "Dam near 21.77N 95.89E",
+      "pga_g": 0.3257,
+      "dist_to_fault_km": 2.7,
+      "composite_risk": 10.0
+    },
+    {
+      "name": "Dam near 21.47N 95.87E",
+      "pga_g": 0.2815,
+      "dist_to_fault_km": 6.0,
+      "composite_risk": 9.7
+    },
+    {
+      "name": "Dam near 20.85N 96.03E",
+      "pga_g": 0.4813,
+      "dist_to_fault_km": 8.3,
+      "composite_risk": 8.8
+    },
+    {
+      "name": "Meikhtila",
+      "pga_g": 0.2412,
+      "dist_to_fault_km": 8.2,
+      "composite_risk": 8.8
+    },
+    {
+      "name": "Dam near 21.34N 95.81E",
+      "pga_g": 0.2263,
+      "dist_to_fault_km": 12.2,
+      "composite_risk": 8.8
+    },
+    {
+      "name": "Natkar",
+      "pga_g": 0.2443,
+      "dist_to_fault_km": 7.9,
+      "composite_risk": 8.7
+    },
+    {
+      "name": "Dam near 21.37N 95.80E",
+      "pga_g": 0.2207,
+      "dist_to_fault_km": 13.4,
+      "composite_risk": 8.7
+    },
+    {
+      "name": "Dam near 20.72N 95.90E",
+      "pga_g": 0.2665,
+      "dist_to_fault_km": 5.6,
+      "composite_risk": 8.7
+    }
+  ]
+}

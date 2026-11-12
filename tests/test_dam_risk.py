@@ -96,6 +96,8 @@ class TestHazardCurve:
         assert rates[0] > 0
         assert (np.diff(rates) <= 1e-15).all()
         assert rates[-1] < rates[0]
+        np.testing.assert_allclose(hc["annual_prob"], -np.expm1(-rates))
+        assert hc["annual_prob"].between(0, 1).all()
 
     def test_return_period_is_inverse_of_rate(self, _cat):
         hc = compute_hazard_curve(

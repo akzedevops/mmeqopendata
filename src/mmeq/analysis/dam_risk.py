@@ -583,7 +583,7 @@ def compute_hazard_curve(
     return pd.DataFrame({
         "pga_g": pga_levels,
         "annual_rate": rates,
-        "annual_prob": rates,
+        "annual_prob": -np.expm1(-rates),
         "prob_50yr": prob_50yr,
         "return_period_yr": np.where(rates > 0, 1.0 / rates, np.inf),
     })

@@ -15,8 +15,7 @@ import pandas as pd
 
 from mmeq.config import DATA_DIR as _DATA_DIR
 
-from .dam_risk import distance_to_nearest_fault, estimate_pga_ask08, _load_fault_segments
-from .finite_fault import load_rupture_trace
+from .dam_risk import distance_to_nearest_fault, estimate_pga_ask08, _load_rupture_trace
 
 logger = logging.getLogger(__name__)
 _OSM_PATH = os.path.join(_DATA_DIR, "osm", "critical_infrastructure.json")
@@ -127,16 +126,7 @@ def compute_building_exposure(mag: float = 7.7, vs30_default: float = 760.0) -> 
     df = load_osm_infrastructure()
     logger.info("Loaded %d OSM infrastructure elements", len(df))
 
-    # Load rupture trace + fault lines for best distance estimates
-    trace = load_rupture_trace()
-    trace_segs = [(trace[i], trace[i + 1]) for i in range(len(trace) - 1)] if len(trace) >= 2 else []
-    fault_segs = _load_fault_segments()
-    # Filter fault segments to Myanmar region for speed
-    filtered = []
-    for (lon1, lat1), (lon2, lat2) in fault_segs:
-        if 15 < lat1 < 29 and 92 < lon1 < 102 and 15 < lat2 < 29 and 92 < lon2 < 102:
-            filtered.append(((lon1, lat1), (lon2, lat2)))
-    segments = filtered + trace_segs
+    segments = _load_rupture_trace()
     if not segments:
         logger.warning("No fault/rupture segments available, cannot compute exposure")
         return df.assign(rrup_km=float("nan"), pga_g=float("nan"), mmi_label="Unknown")

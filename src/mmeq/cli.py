@@ -228,10 +228,7 @@ def cmd_report(args) -> None:
         try:
             from mmeq.analysis.shakemap_validation import validate_against_shakemap
             logging.info("Validating ASK08 GMPE against ShakeMap stations...")
-            dam_risk_csv = os.path.join(args.output, "dam_risk_scores.csv")
-            val_df = validate_against_shakemap(
-                dam_risk_path=dam_risk_csv if os.path.exists(dam_risk_csv) else None,
-            )
+            val_df = validate_against_shakemap()
             if not val_df.empty:
                 val_csv = os.path.join(args.output, "shakemap_validation.csv")
                 val_df.to_csv(val_csv, index=False)
@@ -457,6 +454,14 @@ def main() -> None:
     parser.add_argument("-v", "--verbose", action="store_true", help="Debug output")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
 
+    p_publish = subparsers.add_parser("publish", help="Synchronize publication numbers and check site links")
+    p_publish.add_argument("--data", default=os.path.join(EXPORT_DIR, "csv/combined/earthquakes_combined.csv"))
+    p_publish.add_argument("--site", default="docs")
+    p_publish.add_argument("--paper", default="paper")
+    p_publish.add_argument("--readme", default="README.md")
+    p_publish.add_argument("--report-input", default=os.environ.get("MMEQ_REPORT_DIR", "report"))
+    p_publish.add_argument("--check-links", action="store_true", help="Check local links without regenerating")
+
     # --- export ---
     p_export = subparsers.add_parser("export", help="Fetch & export earthquake data")
     p_export.add_argument("--workers", type=int, default=MAX_WORKERS, help="Parallel workers (env: MMEQ_MAX_WORKERS)")
@@ -529,6 +534,13 @@ def main() -> None:
         cmd_visualize(args)
     elif args.command == "report":
         cmd_report(args)
+    elif args.command == "publish":
+        from pathlib import Path
+        from mmeq.publication import check_site_links, publish
+        if args.check_links:
+            check_site_links(Path(args.site))
+        else:
+            publish(Path(args.data), Path(args.site), Path(args.paper), Path(args.readme), Path(args.report_input))
     else:
         parser.print_help()
         sys.exit(1)

@@ -14,6 +14,7 @@
 
 \geometry{margin=2.5cm}
 \setlength{\parindent}{0pt}
+\input{generated/stats.tex}
 
 \title{\Large How Dangerous Is Myanmar's Dam Infrastructure?\\[0.3em]
 \large A Hobby Seismology Project After the 2025 M7.7 Mandalay Earthquake}
@@ -22,7 +23,7 @@
 \small \texttt{aungkhantzawd@gmail.com}\\
 \small \url{https://github.com/akzedevops/mmeqopendata}}
 
-\date{May 2026}
+\date{Catalog through \CatalogLatest\\Scientific audit: November 2026}
 
 \begin{document}
 
@@ -32,8 +33,8 @@
 \noindent
 After the devastating March 2025 earthquake in Myanmar, I wanted to understand how many of the country's 254 dams are actually at risk.
 This write-up documents a hobby project that pulls earthquake data from a public API, scores every dam for seismic risk, and runs probabilistic hazard analysis---all with open-source Python tools.
-The corrected Abrahamson \& Silva (2008) ground-motion model, validated against the actual Naypyidaw recording (predicted 0.51$g$ vs.\ observed 0.57$g$), shows that most of the dams sit in zones of significant seismic hazard (about 63\% Critical or High).
-An OpenStreetMap-based exposure analysis finds over 2,100 schools and 900 hospitals in areas that experienced strong-to-severe shaking.
+The Abrahamson \& Silva (2008) ground-motion model is compared with a small set of instrumental recordings using event-specific rupture distances and site conditions. The heuristic screening grades classify \HighPercent\% of the inventory as Critical or High; these grades are not probabilities of dam failure.
+An OpenStreetMap-based scenario analysis estimates PGA above 0.1$g$ at \SchoolCount{} schools and \HospitalCount{} hospitals. These are modeled exposures, not observed damage.
 Everything---code, data, interactive maps---is on GitHub.
 \end{abstract}
 
@@ -46,8 +47,7 @@ Everything---code, data, interactive maps---is on GitHub.
 
 On March 28, 2025, a magnitude 7.7 earthquake hit central Myanmar along the Sagaing Fault.
 The rupture was enormous---475~km of surface break, supershear velocity, 5--7~m of slip.
-A seismic station in Naypyidaw recorded 0.57$g$ of peak ground acceleration.
-Over 5,000 people died, and the government reported 586 dams damaged.
+The archived Naypyidaw station has two horizontal PGA peaks near 0.57$g$ and 0.62$g$; their geometric mean is about 0.60$g$. The vertical peak is a different component and must not be compared directly with a horizontal GMPE. This paper does not establish disaster casualty totals or observed dam-damage counts.
 
 Myanmar has at least 254 documented dams (irrigation, hydropower, multi-purpose), many built before modern seismic codes existed.
 The Sagaing Fault runs right through the middle of the country where most of these dams are.
@@ -56,7 +56,7 @@ I wanted to know: which dams are most at risk, and can we quantify it with open 
 \subsection{What This Project Does}
 
 \begin{itemize}
-    \item Pulls 9,679 earthquake records (1970--2026) from the \href{https://mmeq.akze.net}{Myanmar Earthquake API}
+    \item Pulls \CatalogCount{} earthquake records (through \CatalogLatest) from the \href{https://mmeq.akze.net}{Myanmar Earthquake API}
     \item Scores all 254 dams for seismic risk using a proper ground-motion model
     \item Runs probabilistic hazard curves, Coulomb stress transfer, fragility analysis
     \item Validates predictions against actual recorded ground motions
@@ -65,7 +65,9 @@ I wanted to know: which dams are most at risk, and can we quantify it with open 
 
 \subsection{Data Sources}
 
-All data is free and open:
+The following sources are open inputs or supplementary datasets. The WorldPop
+raster is not tracked, and the archived finite-fault model is not used by the
+default Coulomb calculation; neither should be confused with a reproduced input.
 
 \begin{table}[htbp]
 \centering\small
@@ -91,9 +93,9 @@ Buildings (34,224) & OpenStreetMap (Overpass API) & ODbL \\
 \section{The Earthquake Catalog}
 % ============================================================
 
-The catalog has 9,679 events.
-Most are small (mean M\,3.2), but there are 6 events $\geq$\,M7.0 and 393 $\geq$\,M5.0.
-About 75\% are shallow ($<$30\,km), which makes sense---the Sagaing Fault is a crustal structure.
+The catalog has \CatalogCount{} events through \CatalogLatest.
+Most are small (mean M\,\MeanMagnitude), but there are \LargeSeven{} events $\geq$\,M7.0 and \LargeFive{} $\geq$\,M5.0.
+\ShallowPercent\% have reported depths below 30\,km. Catalog completeness and magnitude scales vary by network and time.
 
 \begin{figure}[htbp]
     \centering
@@ -106,11 +108,10 @@ About 75\% are shallow ($<$30\,km), which makes sense---the Sagaing Fault is a c
 
 The Gutenberg-Richter law says $\log_{10} N = a - bM$.
 The tricky part is that the catalog is incomplete at small magnitudes---the 1970s network couldn't detect M2 events, but the modern network can.
-If you naively fit all the data, you get $b = 0.34$, which is way too low (global average is $\sim$1.0). After Gardner-Knopoff (1974) declustering --- magnitude-dependent space-time windows, e.g.\ $\sim$86\,km and $\sim$967 days for the M7.7 mainshock --- $M_c \approx 4.7$ and $b \approx 1.04$, typical for a tectonic region; these are the rates used for the probabilistic hazard below.
+Fitting the full catalog with automatic completeness gives $b = \RawB$ at $M_c = \RawMc$. After Gardner-Knopoff (1974) declustering, $M_c = \DeclusteredMc$ and $b = \DeclusteredB$; these are the rates used for the probabilistic hazard below. A plausible b-value alone does not establish catalog completeness or a stationary Poisson process.
 
 A stability analysis (Figure~\ref{fig:fmd}b) shows the b-value stabilizes around $M_c \approx 4.0$--$4.5$; the headline fit uses $M_c = 4.0$.
-Using that cutoff: $b = 0.72 \pm 0.01$ with 2,757 events.
-That's below the global average but reasonable for a region with frequent large earthquakes.
+Using that cutoff: $b = \FixedB$ with \FixedCount{} events. No confidence interval is asserted here without accounting for catalog heterogeneity and magnitude uncertainty.
 
 \begin{figure}[htbp]
     \centering
@@ -121,13 +122,12 @@ That's below the global average but reasonable for a region with frequent large 
 
 \subsection{Spatial Clustering}
 
-DBSCAN in UTM coordinates (so distances are in actual km, not degrees) finds 6 clusters (the exact count is sensitive to the neighborhood radius---6--8 across nearby $\varepsilon$---so the dominant central cluster, not the count, is the robust feature).
-The Central Myanmar cluster has 9,277 events (96\% of everything), including the 2025 M7.7.
+DBSCAN uses UTM coordinates so distances are metric. The central Myanmar concentration includes the 2025 M7.7 sequence; cluster counts and membership depend on the chosen neighborhood radius and the evolving catalog and should not be interpreted as independent tectonic source zones.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{figures/fig3_depth.png}
-    \caption{(a) Depth distribution---dominated by shallow seismicity. (b) Magnitude vs.\ depth---the biggest events are all shallow.}
+    \caption{(a) Reported depth distribution. (b) Magnitude versus depth: large events include both shallow and intermediate-depth earthquakes.}
     \label{fig:depth}
 \end{figure}
 
@@ -148,58 +148,38 @@ The full model has 6 terms:
     \ln(\text{PGA}) = f_1(M, R_{rup}) + f_{style} + f_{site}(V_{S30}, \text{PGA}_{1100}) + f_{HW} + f_{ZTOR} + f_{large}
 \end{equation}
 
-The coefficients ($a_1 = 0.804$, $a_2 = -0.9679$, $c_1 = 6.75$, $c_4 = 4.5$, $V_{LIN} = 865.1$, $b = -1.186$, etc.) are from Tables 4--5a of the original paper, verified against the \href{https://github.com/gem/oq-engine/blob/master/openquake/hazardlib/gsim/abrahamson_silva_2008.py}{OpenQuake reference implementation}.
+The coefficients ($a_1 = 0.804$, $a_2 = -0.9679$, $c_1 = 6.75$, $c_4 = 4.5$, $V_{LIN} = 865.1$, $b = -1.186$, etc.) are from Tables 4--5a. An independent computation with \href{https://github.com/gem/oq-engine/blob/master/openquake/hazardlib/gsim/abrahamson_silva_2008.py}{OpenQuake 3.26.2} agrees to numerical precision on 80 vertical strike-slip cases spanning M5--8, distances 1--200\,km, and $V_{S30}=180$--1100\,m/s, with default basin depth. This checks implementation parity for those cases, not the applicability of AS08 to Myanmar. The local simplified hanging-wall term is not validated for dipping faults.
 
 The nonlinear site response is important---it depends on both $V_{S30}$ and the rock-site PGA, so soft soil sites don't just scale linearly.
 
 \subsection{Validation Against Actual Recordings}
 
-The USGS ShakeMap for this event reports six seismic stations with PGA recordings, spanning rupture distances from under a kilometre out to nearly 350\,km (Table~\ref{tab:validation}).
-The one that matters is NPW (Naypyidaw), the near-fault station sitting essentially on the Sagaing rupture:
+The archived USGS ShakeMap station list contains six instrumental stations.
+PANO's horizontal PGA values are flagged as outliers and are excluded, leaving \StationCount{} clean horizontal pairs (Table~\ref{tab:validation}). We use the event-specific \texttt{distances.rrup}, \texttt{distances.rjb}, and station \texttt{vs30} supplied by USGS, rather than distance to an unrelated mapped fault.
+Observed PGA is the geometric mean of the two unflagged horizontal component peaks, not the first channel (which may be vertical). This is an approximation to AS08's rotation-independent GMRotI50; the exact component requires time histories and cannot be reconstructed from scalar peaks alone.
 
 \begin{table}[htbp]
 \centering\small
-\caption{ASK08 predictions vs.\ observed PGA at the six USGS ShakeMap stations, ordered by rupture distance. Regenerated by the pipeline (the station rows of \texttt{report/shakemap\_validation.csv}, which also carries per-dam rows).}
-\begin{tabular}{@{}llrrrr@{}}
-\toprule
-\textbf{Station} & \textbf{Location} & \textbf{$R_{rup}$ (km)} & \textbf{Obs.\ ($g$)} & \textbf{Pred.\ ($g$)} & \textbf{Ratio} \\
-\midrule
-NPW  & Naypyidaw     & 0.9   & 0.574 & 0.514 & 1.12 \\
-KTN  & Keng Tung     & 2.3   & 0.009 & 0.479 & 0.02 \\
-NGU  & Ngaung U      & 12.3  & 0.043 & 0.246 & 0.17 \\
-CHTO & Chiang Mai    & 19.6  & 0.014 & 0.182 & 0.08 \\
-YGN  & Yangon        & 38.8  & 0.024 & 0.114 & 0.21 \\
-PANO & Nakhon Phanom & 346.3 & 0.002 & 0.011 & 0.18 \\
-\bottomrule
-\end{tabular}
+\caption{AS08 station diagnostic, ordered by USGS rupture distance. Generated from \texttt{docs/report/shakemap\_validation.csv}. CHTO and KTN exceed the approximate 200\,km calibration range and are extrapolations, not in-range validation.}
+\input{generated/station_table.tex}
 \label{tab:validation}
 \end{table}
 
-The NPW result is the one that carries the analysis, and it is excellent---predicted 0.51$g$ vs.\ observed 0.57$g$, a ratio of 1.12 and within about 0.2 standard deviations of the AS08 median.
-It is the only recording squarely on the rupture, so it is the ground truth that anchors every dam prediction downstream.
-
-The other five stations all over-predict, and it is worth being honest about how much.
-The median observed/predicted ratio across the six stations is 0.18 (geometric-mean ratio 0.15), so once you step off the immediate near-fault zone the model runs high by roughly a factor of five to seven.
-The arithmetic mean ratio (0.30) is a poor summary here---it is dragged up by the single well-matched NPW value---so I report the median and the log-residual instead, which is how ground-motion residuals are conventionally assessed.
-
-Two rows deserve a specific word.
-KTN (Keng Tung), at $R_{rup}=2.3$\,km, is nominally near-fault yet the ShakeMap value ($0.009g$) sits about 50$\times$ below the AS08 prediction ($0.479g$).
-A few things could be behind this: AS08's near-source magnitude--distance saturation is not tightly constrained at such short distances, so the median can be pushed too high; local site conditions at the station may not match the model's assumptions; and, most likely, the ShakeMap value here is an interpolated grid estimate rather than a true instrumental peak, so it probably underestimates the real shaking that close to a rupture running that much energy.
-PANO (Nakhon Phanom, Thailand), at 346\,km, is simply outside the model's intended range---AS08 is calibrated to roughly 200\,km---so its ratio should not be read as a genuine model error.
-CHTO (Chiang Mai) and NGU (Ngaung U) sit off the Sagaing Fault in different geological settings, and the model was never designed for those paths.
-The table is regenerated on every pipeline run (the station rows of \texttt{report/shakemap\_validation.csv} from \texttt{mmeq report}; the file also carries one row per dam site), so these numbers are reproducible rather than hand-transcribed.
+Only \InRangeStations{} retained stations are within 200\,km. This small, single-event sample is a diagnostic, not regional validation of the GMPE, dam fragility, or PSHA. The model is not recalibrated to these observations.
+An earlier version assigned KTN a 2.3\,km distance to an unrelated active fault, despite the supplied event-rupture distance being 370.594\,km, and misidentified its vertical channel as the observation. The resulting ``50-fold overprediction'' and claim that KTN was an interpolated grid value were artifacts of the comparison, not supported scientific conclusions.
+Modeled dam PGA is excluded from the observed-data table: comparing one prediction with another is not independent validation. The table is generated directly from the station diagnostic on every publication build.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.75\textwidth]{figures/fig5_pga_attenuation.png}
-    \caption{PGA attenuation curves. Gray dots are dam sites; red diamonds are actual recordings.}
+    \caption{Reference-rock PGA attenuation curves, scenario dam predictions, and unflagged horizontal station observations. Dam and station site conditions vary; the curves use $V_{S30}=760$\,m/s.}
     \label{fig:pga}
 \end{figure}
 
 \subsection{Site-Specific Vs30}
 
 Instead of assuming all dams sit on rock ($V_{S30} = 760$\,m/s), I sampled $V_{S30}$ at each site from the USGS ShakeMap $V_{S30}$ grid (a Wald \& Allen 2007 topographic-slope proxy).
-Values range from $\sim$230 to 875\,m/s (mean $\sim$450\,m/s): dams in the soft sediments of the central basin amplify shaking relative to those founded on rock.
+Values range from \VsMin{} to \VsMax{}\,m/s (mean \VsMean{}\,m/s). These are site proxies, not measured geotechnical profiles; nonlinear amplification depends on both site velocity and input shaking.
 
 \begin{figure}[htbp]
     \centering
@@ -219,7 +199,8 @@ Each dam gets a composite score (0--10) from four components:
     R = 0.35 \times S_{seismic} + 0.30 \times S_{fault} + 0.20 \times S_{proximity} + 0.15 \times S_{exposure}
 \end{equation}
 
-where $S_{seismic}$ is PGA-based, $S_{fault}$ is distance to nearest fault, $S_{proximity}$ is distance to the 2025 M7.7 epicenter, and $S_{exposure}$ accounts for dam height/capacity/storage.
+Here $S_{seismic}$ is PGA-based. The fault score uses distance to a mapped fault or plate boundary; the proximity score uses distance to the 2025 epicenter. The exposure score combines inventory height, capacity, and storage.
+The screening traces are not a complete active-fault inventory and are distinct from the actual event rupture used for scenario PGA.
 
 \subsection{Results}
 
@@ -228,19 +209,10 @@ With the corrected GMPE:
 \begin{table}[htbp]
 \centering
 \caption{Dam risk grades (corrected ASK08 GMPE).}
-\begin{tabular}{@{}lrr@{}}
-\toprule
-\textbf{Grade} & \textbf{Count} & \textbf{\%} \\
-\midrule
-Critical ($\geq 7$) & 44 & 17.3\% \\
-High (5--7) & 116 & 45.7\% \\
-Moderate (3--5) & 45 & 17.7\% \\
-Low ($< 3$) & 49 & 19.3\% \\
-\bottomrule
-\end{tabular}
+\input{generated/risk_table.tex}
 \end{table}
 
-So about 63\% of dams are Critical or High risk (using rupture-distance scenario PGA; see the ground-motion note below).
+\HighPercent\% of the inventory is Critical or High under this heuristic screening scheme (thresholds 7, 5, and 3). The scores are not engineering safety classifications or calibrated failure probabilities.
 The spatial pattern (Figure~\ref{fig:risk_map}) is clear: the highest-risk dams line up along the Sagaing Fault.
 
 \begin{figure}[htbp]
@@ -267,10 +239,11 @@ The median Critical+High fraction across draws is $\sim$67\%, but the grading is
 \section{Probabilistic Hazard}
 % ============================================================
 
-Beyond the single-event PGA, I computed full hazard curves at each dam using the Cornell-McGuire PSHA approach: integrate the G-R magnitude distribution with the GMPE over all possible magnitudes (M5--8), including the ground-motion variability ($\sigma_{ln} = 0.65$).
+Beyond the single-event PGA, the Cornell-McGuire-style calculation integrates the G-R magnitude distribution and GMPE over the sampled M5--8 range, with fixed log-ground-motion variability ($\sigma_{ln} = 0.65$).
 
-The 475-year PGA (10\% chance of exceedance in 50 years) ranges from $\sim$0.002$g$ to $\sim$0.56$g$ across the dam portfolio, with a mean of 0.14$g$, computed with a Frankel (1995)-style smoothed-seismicity source model from the Gardner-Knopoff declustered catalog ($b \approx 1.04$), integrating hazard over the source-to-site distance distribution.
-172 dams exceed 0.1$g$ and 46 exceed 0.2$g$ at this return period. These values are a \emph{catalog-only estimate}: the committed fault dataset carries no slip rates, so the model has no dedicated fault-source recurrence term. Its rock (Vs30=760) 475-year PGA peaks near $\sim$0.44$g$ at the central-Myanmar seismicity concentration---comparable to the GEM v2018.1 reference-rock hazard for the Sagaing corridor ($\sim$0.2--0.55$g$)---but roughly $2\times$ below the site-amplified ($>$1$g$) near-fault values of Yang et al.\ (2023), the residual gap consistent with the absent fault-source term (and possibly offset locally by the 2025 M7.7 inflating the 56-year catalog rate). An earlier version of this analysis collapsed the entire regional rate onto each dam's single nearest-fault distance, inflating the near-fault 475-year PGA to $\sim$1.9$g$.
+The 475-year PGA (approximately 10\% chance of exceedance in 50 years under a stationary Poisson model) ranges from \HazardMin$g$ to \HazardMax$g$, with a mean of \HazardMean$g$. The Frankel (1995)-style smoothed-seismicity source model uses the declustered catalog ($b = \DeclusteredB$) and integrates over source-to-site distance.
+\HazardAboveOne{} dams exceed 0.1$g$ and \HazardAboveTwo{} exceed 0.2$g$. Annual exceedance \emph{rate} $\lambda$ is distinct from annual probability $1-e^{-\lambda}$; the export now distinguishes these fields.
+These are \emph{catalog-only estimates}: there is no fault-source recurrence term, and a single regional completeness model is applied despite network and temporal heterogeneity. AS08 is also extrapolated for distant source cells. Comparisons with Yang et al.\ (2023) and GEM are contextual only: their source models, locations, site conditions, and assumptions differ. Agreement in regional ranges does not validate this model or establish it as a lower bound.
 
 \begin{figure}[htbp]
     \centering
@@ -288,13 +261,13 @@ After a big earthquake, the stress field changes.
 Some areas get loaded (more likely to have aftershocks), others get unloaded (``stress shadow'').
 I modeled this using the point-source double-couple summation from Aki \& Richards (2002).
 
-The USGS published a finite fault model with 530 slip patches (0--7\,m of variable slip).
-Using that, at the standard $\pm$0.01\,MPa (0.1\,bar) threshold, 16 dams (6\%) are in stress-triggered zones and 72 (28\%) in stress shadows. (An earlier version used a stress kernel that violated point-source symmetry $\sigma(-r)=\sigma(+r)$ and a $\pm$0.001\,MPa threshold inside tidal-stress noise, reporting 34/163.)
+The default calculation does \emph{not} use the archived USGS 530-patch variable-slip solution. It constructs seven segments from an idealized Sagaing trace, divides them into patches, and assigns uniform slip from the M7.7 scalar moment (about 568\,km total length and 1.56\,m slip). This is a simplified point-source stress proxy, not a full elastic half-space solution.
+At $\pm$0.01\,MPa, 16 dam locations are labeled positive (``Triggered'') and 72 negative (``Shadow''). These describe the assumed crustal receiver geometry, not structural loading or a dam-failure probability. The four-lobed pattern and a symmetry test do not independently validate the stress amplitudes.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[height=0.65\textheight]{figures/fig11_coulomb_stress.png}
-    \caption{Coulomb stress transfer. The four-lobed pattern is classic strike-slip.}
+    \caption{Simplified stress proxy from the idealized rupture. Marker colors and legend both use the exported $\pm$0.01\,MPa classification.}
     \label{fig:coulomb}
 \end{figure}
 
@@ -306,7 +279,8 @@ Using that, at the standard $\pm$0.01\,MPa (0.1\,bar) threshold, 16 dams (6\%) a
 
 \subsection{Dam Fragility Curves}
 
-Using HAZUS-informed log-normal fragility functions, most dams fall in the ``None'' or ``Slight'' damage state for the deterministic M7.7 scenario; only a handful reach ``Moderate'' damage probability (the exact count tracks the current catalog snapshot and is written to \texttt{report/dam\_fragility.json}). The dam database carries no construction-type field, so every dam is treated as earthfill/embankment; the concrete and rockfill parameter sets exist in the code but are not exercised, and the log-normal medians are assumed values informed by---not taken verbatim from---the cited studies.
+The exploratory lognormal curves assign the largest state probability to ``None'' or ``Slight'' at most sites. Current outputs are in \path{docs/report/dam_fragility.json}.
+All dams are assumed earthfill because the inventory lacks construction types. Concrete and rockfill parameter sets are plotted for illustration only. These assumed medians are not calibrated Myanmar fragility curves or a direct implementation of HAZUS; they do not establish dam safety.
 
 \begin{figure}[htbp]
     \centering
@@ -318,7 +292,7 @@ Using HAZUS-informed log-normal fragility functions, most dams fall in the ``Non
 \subsection{Monte Carlo PGA Uncertainty}
 
 The GMPE has aleatory uncertainty ($\sigma_{ln} = 0.65$), meaning the actual PGA at any site could easily be 2$\times$ higher or lower than the median.
-1,000 Monte Carlo iterations show that 29 dams have $>$50\% probability of exceeding 0.2$g$.
+The pipeline draws 1,000 lognormal samples per dam. These illustrate conditional ground-motion variability, not epistemic uncertainty in the source model, an annual event probability, or the probability of dam failure; current results are in \texttt{docs/report/monte\_carlo\_pga.csv}.
 
 \begin{figure}[htbp]
     \centering
@@ -332,8 +306,7 @@ The GMPE has aleatory uncertainty ($\sigma_{ln} = 0.65$), meaning the actual PGA
 \section{Population Exposure}
 % ============================================================
 
-A one-off offline analysis with the WorldPop 1\,km population grid (not tracked in the repo, so the pipeline itself uses the city-based estimate) put about 2.9 million people within 50\,km of the M7.7 epicentral region.
-That's significantly more than the city-based estimate of 1.8M, because the grid captures rural populations.
+The reproducible pipeline uses city-based population estimates, not a gridded population census. An earlier 2.9-million WorldPop claim came from an untracked offline raster analysis and is not independently reproducible from this repository; it is not retained as a verified result. Population within an epicentral radius is not a shaking- or inundation-based exposure estimate.
 
 \begin{figure}[htbp]
     \centering
@@ -345,7 +318,7 @@ That's significantly more than the city-based estimate of 1.8M, because the grid
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{figures/fig6_temporal.png}
-    \caption{Annual earthquake counts. The jump after 2000 is network improvement, not more earthquakes.}
+    \caption{Annual catalog counts. Changes reflect both seismicity and changing network completeness; raw counts do not isolate either effect.}
     \label{fig:temporal}
 \end{figure}
 
@@ -354,24 +327,18 @@ That's significantly more than the city-based estimate of 1.8M, because the grid
 \section{Building Exposure from OpenStreetMap}
 % ============================================================
 
-Beyond dams, I pulled 34,224 critical infrastructure sites from OpenStreetMap---schools, hospitals, clinics, police stations, fire stations, universities, and places of worship---within the shaking zone.
-For each building, I computed rupture distance to the combined fault trace and estimated PGA using the same ASK08 GMPE.
-
-The results are sobering.
-About 5,700 structures experienced Severe (MMI~VIII) shaking, and another 6,200 experienced Very Strong (MMI~VII).
-Among these: 2,166 schools and 901 hospitals had PGA above 0.1$g$.
+The OSM inventory contains \BuildingCount{} infrastructure elements, including schools, hospitals, and places of worship. These are mapped elements, not necessarily unique physical buildings or a complete census.
+For each element, the scenario uses distance to the actual 2025 rupture projection only, not to unrelated plate boundaries. The surface projection is an approximation to rupture-plane distance for the near-vertical fault.
+Modeled PGA-to-intensity bins place \BuildingSevere{} elements in Severe (VIII) and \BuildingVeryStrong{} in Very Strong (VII); \SchoolCount{} schools and \HospitalCount{} hospitals have modeled PGA above 0.1$g$. These are scenario estimates, not observations of shaking or damage.
 
 Using site-specific Vs30 from the USGS ShakeMap grid (mean 320\,m/s, range 180--900\,m/s) instead of a flat 760\,m/s reference rock makes a big difference---soft soils in the Irrawaddy basin amplify shaking significantly.
 
-As a one-off offline check against the USGS ShakeMap \emph{grid} (not tracked in this repo, unlike the station comparison in Table~\ref{tab:validation}, which regenerates from \texttt{data/shakemap/stationlist.json}), the Naypyidaw prediction was $\approx$0.43$g$ vs USGS $\approx$0.55$g$ (ratio $\approx$0.78)---reasonable for a pure GMPE without the 1,244 DYFI felt reports that USGS incorporates.
-
-Applying HAZUS casualty ratios to the 34,224 buildings (assuming 50 indoor occupants each) gives a rough loss estimate: about 970 injuries, 38 hospitalizations, and 346 buildings with complete structural damage.
-Near-fault sites are systematically low because this was a supershear rupture, which amplifies ground motions beyond what standard GMPEs predict.
+The repository lacks measured construction classes, occupancy, vulnerability, and damage observations sufficient for casualty estimation. The exploratory loss helper uses assumed coefficients and is not a verified HAZUS implementation; its outputs are not published here as injury, hospitalization, or collapse forecasts. Supershear/directivity effects are not modeled, but they do not justify attributing every residual to systematic underprediction.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{figures/fig14_building_exposure.png}
-    \caption{OSM critical infrastructure exposure. (a) All 34,224 buildings colored by estimated shaking intensity. (b) Schools and hospitals in shaking zones, sized by PGA.}
+    \caption{OSM scenario exposure. (a) \BuildingCount{} mapped elements colored by modeled shaking intensity. (b) Schools and hospitals sized by modeled PGA.}
     \label{fig:building_exposure}
 \end{figure}
 
@@ -382,16 +349,15 @@ Near-fault sites are systematically low because this was a supershear rupture, w
 \begin{enumerate}
     \item \textbf{Getting the GMPE right matters a lot.}
     The original implementation had wrong coefficients (a1 = $-$0.526 instead of 0.804) and no site response.
-    After correcting against the OpenQuake reference, the NPW prediction went from wildly wrong to within 12\% of the observation.
+    Correct coefficients are necessary but not sufficient: component choice, rupture distance, quality flags, and site conditions must also match when checking observations.
 
     \item \textbf{Catalog completeness is sneaky.}
     The raw b-value of 0.34 looked alarming but was just an artifact of mixing 1970s data (only M4.5+ detected) with 2020s data (M2+ detected) and the 2025 aftershock burst.
     A second caveat: the catalog pools magnitude types (\raise.17ex\hbox{$\scriptstyle\sim$}74\% $m_l$, \raise.17ex\hbox{$\scriptstyle\sim$}22\% $m_b$, \raise.17ex\hbox{$\scriptstyle\sim$}2\% $M_w$) without converting to a common moment-magnitude scale, so the FMD slope carries some inter-scale bias on top of the completeness effect.
     Always check stability before trusting a b-value.
 
-    \item \textbf{Over half of Myanmar's dams are in high-hazard zones.}
-    44 Critical + 116 High = 160 dams (63\%) with significant seismic exposure.
-    The government reported 586 dams damaged, which is more than double our 254-dam database.
+    \item \textbf{Screening is not a safety assessment.}
+    \HighCount{} inventory entries (\HighPercent\%) meet the chosen Critical/High thresholds. This inventory is not all Myanmar dams, and these heuristic grades do not demonstrate observed damage or structural failure risk.
 
     \item \textbf{Open data makes this possible.}
     USGS ShakeMap, GEM faults, WorldPop, Copernicus DEM, Open Development Mekong---all free, all accessible via API or download.
@@ -399,7 +365,7 @@ Near-fault sites are systematically low because this was a supershear rupture, w
 
     \item \textbf{Validation is essential.}
     Without the ShakeMap station comparison, I wouldn't have caught the GMPE coefficient errors.
-    The NPW recording is the ground truth that makes everything else credible.
+    A near-fault recording is useful, but one station cannot establish the validity of all downstream models.
 \end{enumerate}
 
 \subsection{Limitations}
@@ -410,7 +376,8 @@ This is a hobby project, not a professional PSHA. Key caveats:
     \item No actual dam structural data (age, construction quality, foundation)
     \item Fragility curves use generic HAZUS parameters, not Myanmar-specific
     \item The AS08 model doesn't account for directivity (the supershear rupture would amplify PGA in the forward direction)
-    \item Only 6 stations with PGA recordings---sparse validation
+    \item Only \StationCount{} unflagged horizontal station pairs, with \InRangeStations{} within 200\,km; geometric-mean peaks approximate GMRotI50
+    \item Mixed magnitude types, nonuniform completeness, simplified source depths and rupture geometry, and uncalibrated screening weights
     \item The Coulomb model uses a simplified point-source approach, not the full Okada (1992) elastic half-space
 \end{itemize}
 
@@ -430,7 +397,7 @@ mmeq export                    # fetch earthquake data
 mmeq report --output ./report  # run everything
 \end{verbatim}
 
-The \texttt{mmeq report} command generates: interactive Folium map, Plotly dashboard, 3D depth cross-section, animated timeline, PDF report, dam risk scores CSV, hazard curves, population exposure, and sensitivity analysis.
+The \texttt{mmeq report} command generates maps, reports, dam scores, hazard curves, and exposure estimates. Run \texttt{python tools/build\_figure\_data.py} first for sensitivity inputs; \texttt{mmeq publish} synchronizes the paper tables, site downloads, and README with the generated report.
 
 Live dashboard: \url{https://akzedevops.github.io/mmeqopendata/}
 

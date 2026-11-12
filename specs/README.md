@@ -50,3 +50,4 @@ new spec from `TEMPLATE.md`, then drive steps 2–5 until every acceptance crite
 | [007](007-usgs-2014-backfill.md) | Backfill the 2013-09 … 2015-02 catalog gap from USGS FDSN | Done |
 | [008](008-usgs-completeness-backfill.md) | Complete the historical catalog (1970–2019) from USGS with spatio-temporal dedup | Done |
 | [009](009-psha-literature-validation.md) | Validate PSHA/ASK08 against published Myanmar hazard studies | Done |
+| [010](010-publication-integrity.md) | Correct station validation, publication integrity, and automation monitoring | Done |

@@ -4,13 +4,15 @@
 [![Daily Fetch](https://github.com/akzedevops/mmeqopendata/actions/workflows/daily_data_fetch.yml/badge.svg)](https://github.com/akzedevops/mmeqopendata/actions/workflows/daily_data_fetch.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-green.svg)](https://python.org)
-[![Events](https://img.shields.io/badge/Earthquakes-9%2C679-orange.svg)](https://akzedevops.github.io/mmeqopendata/)
+[![Events](https://img.shields.io/badge/Earthquakes-10%2C082-orange.svg)](https://akzedevops.github.io/mmeqopendata/)
 
-A hobby project for collecting, analyzing, and visualizing earthquake data in Myanmar. Built on the [Myanmar Earthquake API](https://mmeq.akze.net), covering records from 1950 to present.
+A hobby project for collecting, analyzing, and visualizing historical and recent earthquake data in Myanmar. Built on the [Myanmar Earthquake API](https://mmeq.akze.net); coverage depends on the available catalog and network history.
 
 **Live dashboard:** [https://akzedevops.github.io/mmeqopendata/](https://akzedevops.github.io/mmeqopendata/)
 
 **Write-up:** [`paper/main.pdf`](paper/main.pdf) — a casual hobby write-up on Myanmar dam seismic risk with 14 figures and open data.
+
+**Scientific audit:** [`docs/scientific-audit.md`](docs/scientific-audit.md) records corrected methods, independent reference checks, and remaining limitations. These outputs support screening, not engineering safety decisions.
 
 ## What It Does
 
@@ -21,7 +23,7 @@ A hobby project for collecting, analyzing, and visualizing earthquake data in My
 - Uses Abrahamson & Silva (2008) GMPE with rupture distance to fault trace
 - Runs b-value / completeness analysis, aftershock forecasting (Omori law)
 - DBSCAN clustering in UTM coordinates, Monte Carlo sensitivity on risk weights
-- Coulomb stress transfer modeling from USGS finite fault data
+- Approximate Coulomb stress transfer using an idealized seven-segment, uniform-slip rupture
 - Generates interactive maps (Folium), dashboards (Plotly), 3D views, animated timelines
 - Auto-deploys to GitHub Pages via CI/CD
 
@@ -111,6 +113,28 @@ mmeq report --no-dams               # Skip dam risk analysis
 | Population | `population_exposure.csv` |
 | Sensitivity | `sensitivity_analysis.csv` |
 
+### `mmeq publish`
+
+Synchronizes the README summary, homepage statistics, paper tables, and publication
+manifest from the catalog and generated analysis outputs. Run from the repository
+root after generating the report; this command does not rerun the scientific analyses.
+
+```bash
+mmeq publish                      # Refresh publication data and catalog SHA-256
+mmeq publish --check-links        # Check local homepage/hazard-index links only
+```
+
+## Publication and Automation
+
+- Daily data fetch runs the Go exporter at **00:17 UTC**; GitHub schedules may be delayed.
+- A nightly Python-versus-Go export comparison checks byte parity against the live API.
+- The report workflow tests the code, rebuilds the report, synchronizes publication
+  data, regenerates figures and the paper, checks links, and deploys GitHub Pages.
+- The freshness monitor runs at **12:43 UTC** and opens or updates an issue for
+  missing successful fetch/parity runs within 48 hours, a failed latest report, or
+  a deployed catalog hash mismatch. Earthquake occurrence time is not a job heartbeat.
+- Changes go through a branch and pull request; deployment follows merge to `master`.
+
 ## How the Dam Risk Scoring Works
 
 254 dams from [Open Development Mekong](https://data.opendevelopmentmekong.net/en/dataset/myanmar-dams) (IFC/WLE, CC BY-SA 4.0).
@@ -120,7 +144,7 @@ Each dam gets a composite risk score from four components:
 | Component | Weight | What it measures |
 |---|---|---|
 | PGA (ground shaking) | 35% | Abrahamson & Silva 2008 GMPE with site-specific Vs30 |
-| Fault proximity | 30% | Distance to nearest active fault segment |
+| Fault proximity | 30% | Distance to a mapped fault/plate-boundary trace (screening proxy) |
 | Mainshock proximity | 20% | Distance to the 2025 M7.7 epicenter |
 | Structural exposure | 15% | Dam height, capacity, storage volume |
 
@@ -128,56 +152,51 @@ The ground motion model uses rupture distance (not epicentral distance) — this
 
 Vs30 (shear-wave velocity in the top 30 m) is sampled at each dam from the USGS ShakeMap Vs30 grid (a Wald & Allen 2007 topographic-slope proxy). Range: ~230–875 m/s across the 254 sites (mean ~450 m/s) — dams in the soft sediments of the central basin amplify shaking relative to those founded on rock.
 
-I validated the GMPE against the actual Naypyidaw ShakeMap recording — predicted 0.51g vs observed 0.57g (ratio 1.12), which is well within one standard deviation.
+The station diagnostic uses USGS event-specific rupture distances, station Vs30, and the geometric mean of two unflagged horizontal peaks. This approximates AS08's GMRotI50 component; it is not a regional model validation. Flagged PANO observations and modeled dam values are excluded. See [the scientific audit](docs/scientific-audit.md).
 
-**Results:**
+**Generated results** — synchronized by `mmeq publish` on every report build:
 
-| Grade | Count |
-|---|---|
-| Critical | 44 |
-| High | 116 |
-| Moderate | 45 |
-| Low | 49 |
+<!-- BEGIN PUBLICATION -->
+Catalog through **2026-11-11**: **10,082 events**, mean M 3.21; 393 M≥5 and 6 M≥7.
 
-160 dams (63%) scored Critical or High. (This number has moved as two ground-motion bugs were fixed: an earlier GMPE bug floored the PGA of distant dams and *under*-counted risk, while the scenario "rupture distance" was mistakenly measured to a global plate-boundary file — correcting it to the actual 2025 rupture geometry lowered the scenario PGA of dams near non-ruptured fault sections. The scenario event also silently used the 1988 Lancang M7.7 until the max-magnitude tie was broken by recency. See CHANGELOG.)
+Dam screening: **160/254 Critical or High (63.0%)**. Critical: 44, High: 116, Moderate: 45, Low: 49. These are heuristic screening grades, not failure probabilities.
+
+Catalog-only 475-year PGA: **0.002–0.562g**, mean 0.143g; 172 dams above 0.1g.
+
+Scenario building exposure: 3,395 Severe (VIII), 5,864 Very Strong (VII), 7,058 Strong (VI); 1,674 schools and 583 hospitals above 0.1g. These are modeled values, not measured damage.
+
+Station comparison: 5 unflagged horizontal pairs; 3 within 200 km. See the generated paper table and scientific audit.
+<!-- END PUBLICATION -->
 
 ## How the Seismology Works
 
-The catalog has 9,679 events. Most are small (mean M 3.2), but there are 6 events ≥ M7.0 and 393 ≥ M5.0.
+Current catalog counts are generated above, rather than frozen in prose.
 
 **USGS completeness backfill:** the upstream API is a multi-network union (62% Thai-network ids, 22% USGS, …) with gaps — most notably an ~18-month hole (2013-09…2015-02, all of 2014 empty). Missing events were backfilled from USGS FDSN (M≥4.0, epicenter inside a Myanmar ADM1 polygon), **spatio-temporally deduplicated** against the existing catalog so no cross-network duplicate is re-injected: 98 events for the 2014 window (spec 007) + 160 more across 1970–2019 (spec 008), pulled 2026-07-07, reproducible via `tools/backfill_usgs.py`. ~10 pre-existing cross-network near-duplicate pairs remain in the union. **Completeness caveat:** because the backfill stops at 2019, the catalog is more uniformly complete at M≥4 for 1970–2019 than for 2020–2025 (still the raw API), so time-resolved rate / temporal-b analysis should treat the 2019/2020 boundary as a coverage change, not a seismicity change. The exact backfilled event ids are frozen in `specs/008-backfill-manifest.csv` (ComCat is mutable).
 
-**b-value and completeness:** On the full catalog the Gutenberg-Richter b-value at Mc = 4.0 is 0.72 (N≈2,757), but the raw value (auto-Mc ≈ 2.4) drops to 0.34 — an artifact of the 2025 aftershock sequence flooding the small-magnitude bins. After Gardner-Knopoff (1974) declustering — magnitude-dependent space-time windows, e.g. ~86 km / ~967 days for the M7.7 — the catalog yields Mc ≈ 4.7 and b ≈ 1.04, typical for a tectonic region. The probabilistic hazard below uses these declustered rates.
+**b-value and completeness:** The paper generates the full-catalog, fixed-Mc, and Gardner-Knopoff-declustered b-values from the current data. Mixed magnitude scales, changing network coverage, and the 2025 aftershock sequence complicate interpretation; a plausible b-value does not demonstrate completeness or stationarity. PSHA uses the declustered rates.
 
 **Clustering:** DBSCAN in UTM Zone 47N coordinates (so distances are in meters, not degrees) identifies ~6 seismic zones (the exact count is sensitive to the DBSCAN radius; the dominant central cluster is the robust feature). The central Myanmar cluster contains ~96% of all events.
 
 **Aftershock forecasting:** Modified Omori law fitted by maximum likelihood (Ogata 1983) to the 2025 M7.7 Sagaing sequence gives p ≈ 0.77 with c ≈ 16 h — a slow decay, partly reflecting early-sequence catalog incompleteness after the mainshock — forecasting expected M≥3 aftershocks at 7, 30, and 90 day windows. (Earlier releases quoted p = 0.93 from a biased least-squares fit that had also selected the 1988 Lancang M7.7 as the mainshock.)
 
-**Coulomb stress transfer:** Using the USGS finite fault model (530 slip patches, 0–7 m variable slip), I computed which dams are in stress-triggered zones (16 dams, 6%) vs stress shadows (72 dams, 28%), at the standard ±0.01 MPa (0.1 bar) threshold. (An earlier version used a stress kernel that violated point-source symmetry and a ±0.001 MPa threshold inside tidal-stress noise, reporting 34/163 — see CHANGELOG.)
+**Coulomb stress proxy:** The default model uses an idealized seven-segment Sagaing trace with uniform moment-derived slip, **not** the archived USGS 530-patch slip solution. It classifies 16 dam locations positive and 72 negative at ±0.01 MPa. These are approximate crustal-receiver stress indicators, not dam structural loads or failure probabilities; the paper describes the limitations.
 
 ## Probabilistic Hazard
 
-Beyond single-event PGA, each dam gets a full hazard curve using the Cornell-McGuire PSHA approach — integrating the Gutenberg-Richter magnitude distribution with the GMPE over all possible magnitudes (M5–8).
+Beyond single-event PGA, each dam gets a Cornell-McGuire-style hazard curve integrating the Gutenberg-Richter distribution and GMPE over a sampled M5–8 range.
 
-The 475-year PGA (10% chance of exceedance in 50 years) ranges from ~0.002g to ~0.56g across the dam portfolio, with a mean of ~0.14g; 172 dams exceed 0.1g and 46 exceed 0.2g at this return period. The rates come from a Frankel (1995)-style smoothed-seismicity source model built from the Gardner-Knopoff-declustered catalog (b ≈ 1.04), with hazard integrated over the source-to-site distance distribution. **These are a catalog-only estimate** (no fault-source recurrence term — the committed fault file has no slip rates). The rock 475-yr PGA peaks near ~0.44g at the central-Myanmar seismicity concentration, comparable to GEM v2018.1 reference-rock (~0.2–0.55g) for the Sagaing corridor, but ~2× below the site-amplified >1g near-fault values of Yang et al. (2023, *Geoscience Letters* 10:48). (An earlier version collapsed the whole regional rate onto each dam's single nearest-fault distance, inflating near-fault 475-yr PGA to ~1.9g — see CHANGELOG.)
+Current 475-year PGA results appear in the generated summary. These are **catalog-only estimates**, with no fault-source recurrence term and a simplified treatment of completeness, source depth, and magnitude scales. Regional comparisons with Yang et al. (2023, *Geoscience Letters* 10:48) and GEM are context, not independent validation: source models, site conditions, and locations differ. Annual exceedance rate and probability are exported separately (`annual_prob = 1 - exp(-annual_rate)`).
 
 ## Building Exposure from OpenStreetMap
 
 34,224 critical infrastructure sites pulled from OSM via Overpass API — schools, hospitals, clinics, police stations, fire stations, universities, and places of worship within the shaking zone.
 
-For each building, PGA is estimated using the same ASK08 GMPE with rupture distance to the combined fault trace.
-
-| Shaking Intensity | Buildings |
-|---|---|
-| Severe (VIII) | ~5,700 |
-| Very Strong (VII) | ~6,200 |
-| Strong (VI) | ~8,100 |
-
-2,166 schools and 901 hospitals had PGA above 0.1g.
+Each OSM element uses AS08 with distance to the **actual 2025 rupture only**, not unrelated faults. Updated exposure counts are generated above. These are scenario predictions, not measured shaking, structural damage, or casualty forecasts. OSM elements need not correspond one-to-one with physical buildings.
 
 Uses site-specific Vs30 from the USGS ShakeMap grid (mean 320 m/s) — soft soils in the Irrawaddy basin amplify shaking significantly compared to reference rock.
 
-As a one-off offline check against the USGS ShakeMap grid (not tracked in this repo, unlike the station-list comparison, which regenerates in CI), the Naypyidaw prediction was ~0.43g vs USGS ~0.55g (ratio ~0.78). Near-fault underprediction is expected because this was a supershear rupture.
+The older offline grid comparison is not reproducible from the tracked data and is not retained as validation evidence. Sparse station recordings cannot establish systematic directivity bias or validate downstream loss assumptions.
 
 ## Figures
 
@@ -251,8 +270,9 @@ tools/                              # see tools/README.md
 ```
 
 A nightly **shadow workflow** (`.github/workflows/shadow_go_export.yml`) runs both
-exporters against the live API and diffs the trees; the Go binary takes over the
-daily fetch only after ≥3 consecutive clean cycles (see `specs/002` and `specs/004`).
+exporters against the live API and diffs the trees. The Go binary already runs the
+daily fetch; Python remains the reference implementation for parity checks and
+local use (see `specs/002` and `specs/004`).
 
 ## Configuration
 
@@ -285,13 +305,14 @@ Override defaults with environment variables:
 
 ```bash
 ruff check .              # lint (must be clean)
-pytest tests/ -v          # Python suite (109 tests)
+pytest tests/ -v          # Python suite, including independent AS08 reference cases
 cd go && go test ./...    # Go exporter suite incl. golden-parity fixtures
 ```
 
 Python tests cover data validation, date ranges, CSV/JSON I/O, deduplication,
 seismology, the hazard model (Coulomb parity, PSHA), map XSS-escaping, vendored
-assets, and dam-risk scoring. The Go suite additionally pins byte-level parity
+assets, station quality/components, publication links/provenance, and dam-risk scoring.
+The Go suite additionally pins byte-level parity
 with the Python writer/geocoder via golden files generated by running the actual
 Python code.
 

@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+### Publication and scientific audit (spec 010)
+
+- Correct station distances, horizontal-component selection, quality flags and
+  Vs30; exclude modeled dams and flagged PANO from observed-data validation.
+- Restrict building scenario distance to the actual event rupture. Correct
+  figure 5 distances/recordings and figure 11 classification colors.
+- Export annual Poisson probability separately from annual exceedance rate.
+- Generate publication counts/tables, publish the missing sensitivity download,
+  check local links, and render dam names safely from JSON.
+- Add deployment-failure notification and scheduled heartbeat/catalog-hash monitoring.
+- Add 80 independent OpenQuake 3.26.2 reference cases and regression coverage.
+- Revise the paper and generated artifacts; remove unsupported safety/loss claims
+  and correct the description of the default Coulomb model. Earlier station
+  validation claims in this changelog/spec 009 are superseded by
+  [the scientific audit](docs/scientific-audit.md).
+
 ## 2.1.0 — 2026-07-07
 
 **Scientific-integrity release.** A full audit (code, data, paper, methods) fixed
