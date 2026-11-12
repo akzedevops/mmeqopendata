@@ -10,9 +10,10 @@ on:
       - 'data/**'
       - 'generate_figures.py'
       - 'tools/**'
-      - 'paper/main.tex'
+      - 'paper/**'
       - 'pyproject.toml'
       - 'docs/index.html'
+      - '.github/workflows/**'
 
 # Least privilege: permissions are granted per job below (test: read;
 # build: contents write; deploy: pages + id-token write).
@@ -83,8 +84,12 @@ jobs:
         # in the previous step, so the report consumes it instead of recomputing
         # (spec 003 P2 — dam risk is computed once per CI build).
         run: |
+          rm -rf docs/report
           mkdir -p docs/report
           mmeq report --output docs/report --reuse-risk
+
+      - name: Synchronize publication data and paper tables
+        run: mmeq publish
 
       - name: Regenerate paper figures
         run: |
@@ -104,12 +109,15 @@ jobs:
         # a 2-month-old paper — 2026-07-06 audit, finding C6).
         run: cp -f paper/main.pdf docs/report/paper.pdf
 
+      - name: Validate published downloads
+        run: mmeq publish --check-links
+
       - name: Commit report, figures & paper artifacts
         if: github.ref == 'refs/heads/master'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/ paper/figures/ paper/main.pdf
+          git add docs/ paper/figures/ paper/generated/ paper/main.pdf README.md
           git diff --cached --quiet || git commit -m "docs: update report, figures & paper [skip ci]"
           # master may have moved during the ~8 min build (e.g. a PR merge or the
           # daily data commit) — rebase the artifact commit onto the new tip and
@@ -149,3 +157,24 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  notify-failure:
+    if: ${{ always() && contains(needs.*.result, 'failure') }}
+    needs: [test, build, deploy]
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Report publication failure
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="Report or Pages deployment failed"
+          body="Publication failed. The site may be stale. Run: $RUN_URL"
+          existing=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number' --repo "$GITHUB_REPOSITORY")
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body" --repo "$GITHUB_REPOSITORY"
+          else
+            gh issue create --title "$title" --body "$body" --repo "$GITHUB_REPOSITORY"
+          fi

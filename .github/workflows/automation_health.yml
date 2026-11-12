@@ -1,0 +1,45 @@
+name: Automation Freshness Monitor
+
+on:
+  schedule:
+    - cron: '43 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+
+concurrency:
+  group: automation-health
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: master
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Check scheduled heartbeats and deployed data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/check_automation.py
+      - name: Notify on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="Automation freshness check failed"
+          body="A scheduled workflow or deployed catalog is stale or failed. Run: $RUN_URL"
+          existing=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number' --repo "$GITHUB_REPOSITORY")
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body" --repo "$GITHUB_REPOSITORY"
+          else
+            gh issue create --title "$title" --body "$body" --repo "$GITHUB_REPOSITORY"
+          fi
