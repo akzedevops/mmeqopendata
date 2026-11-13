@@ -56,11 +56,11 @@
 
     <div class="container">
         <div class="stats">
-            <div class="stat-card"><div class="number" data-stat="CatalogCount">10,082</div><div class="label">Earthquake Events</div></div>
+            <div class="stat-card"><div class="number" data-stat="CatalogCount">10,085</div><div class="label">Earthquake Events</div></div>
             <div class="stat-card"><div class="number">M7.7</div><div class="label">2025 Mandalay Earthquake</div></div>
             <div class="stat-card"><div class="number" data-stat="HighCount">160</div><div class="label">Dams: High/Critical Screening</div></div>
             <div class="stat-card"><div class="number" data-stat="BuildingCount">34,224</div><div class="label">OSM Elements Assessed</div></div>
-            <div class="stat-card"><div class="number" data-stat="CatalogLatest">2026-11-11</div><div class="label">Latest Catalog Event (UTC)</div></div>
+            <div class="stat-card"><div class="number" data-stat="CatalogLatest">2026-11-12</div><div class="label">Latest Catalog Event (UTC)</div></div>
         </div>
 
         <div class="section-title">&#127758; Interactive Visualizations</div>
@@ -68,7 +68,7 @@
             <div class="card">
                 <div class="card-header bg-map">Earthquake Map</div>
                 <div class="card-body">
-                    <p><span data-stat="CatalogCount">10,082</span> earthquakes with heatmap, fault lines, and 254 dams including the 2025 M7.7 rupture trace.</p>
+                    <p><span data-stat="CatalogCount">10,085</span> earthquakes with heatmap, fault lines, and 254 dams including the 2025 M7.7 rupture trace.</p>
                     <a href="report/enhanced_earthquake_map.html" class="btn bg-map" target="_blank">Open Map</a>
                 </div>
             </div>
@@ -215,7 +215,7 @@
 
     <script>
     const REPO = 'https://raw.githubusercontent.com/akzedevops/mmeqopendata/master/quake_exports';
-    const YEARS = {"1970": 3, "1971": 11, "1972": 5, "1973": 12, "1974": 15, "1975": 24, "1976": 46, "1977": 17, "1978": 28, "1979": 27, "1980": 22, "1981": 33, "1982": 21, "1983": 32, "1984": 30, "1985": 25, "1986": 30, "1987": 33, "1988": 87, "1989": 59, "1990": 43, "1991": 50, "1992": 63, "1993": 41, "1994": 35, "1995": 72, "1996": 70, "1997": 45, "1998": 41, "1999": 33, "2000": 40, "2001": 44, "2002": 36, "2003": 104, "2004": 108, "2005": 75, "2006": 61, "2007": 83, "2008": 122, "2009": 37, "2010": 28, "2011": 74, "2012": 71, "2013": 49, "2014": 71, "2015": 51, "2016": 61, "2017": 112, "2018": 114, "2019": 107, "2020": 388, "2021": 467, "2022": 1897, "2023": 722, "2024": 621, "2025": 2469, "2026": 1017};
+    const YEARS = {"1970": 3, "1971": 11, "1972": 5, "1973": 12, "1974": 15, "1975": 24, "1976": 46, "1977": 17, "1978": 28, "1979": 27, "1980": 22, "1981": 33, "1982": 21, "1983": 32, "1984": 30, "1985": 25, "1986": 30, "1987": 33, "1988": 87, "1989": 59, "1990": 43, "1991": 50, "1992": 63, "1993": 41, "1994": 35, "1995": 72, "1996": 70, "1997": 45, "1998": 41, "1999": 33, "2000": 40, "2001": 44, "2002": 36, "2003": 104, "2004": 108, "2005": 75, "2006": 61, "2007": 83, "2008": 122, "2009": 37, "2010": 28, "2011": 74, "2012": 71, "2013": 49, "2014": 71, "2015": 51, "2016": 61, "2017": 112, "2018": 114, "2019": 107, "2020": 388, "2021": 467, "2022": 1897, "2023": 722, "2024": 621, "2025": 2469, "2026": 1020};
 
     const sel = document.getElementById('year-select');
     const fmt = document.getElementById('format-select');
