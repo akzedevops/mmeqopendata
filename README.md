@@ -4,7 +4,7 @@
 [![Daily Fetch](https://github.com/akzedevops/mmeqopendata/actions/workflows/daily_data_fetch.yml/badge.svg)](https://github.com/akzedevops/mmeqopendata/actions/workflows/daily_data_fetch.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-green.svg)](https://python.org)
-[![Events](https://img.shields.io/badge/Earthquakes-10%2C085-orange.svg)](https://akzedevops.github.io/mmeqopendata/)
+[![Events](https://img.shields.io/badge/Earthquakes-10%2C088-orange.svg)](https://akzedevops.github.io/mmeqopendata/)
 
 A hobby project for collecting, analyzing, and visualizing historical and recent earthquake data in Myanmar. Built on the [Myanmar Earthquake API](https://mmeq.akze.net); coverage depends on the available catalog and network history.
 
@@ -169,7 +169,7 @@ The station diagnostic uses USGS event-specific rupture distances, station Vs30,
 **Generated results** — synchronized by `mmeq publish` on every report build:
 
 <!-- BEGIN PUBLICATION -->
-Catalog through **2026-11-12**: **10,085 events**, mean M 3.21; 393 M≥5 and 6 M≥7.
+Catalog through **2026-11-12**: **10,088 events**, mean M 3.21; 393 M≥5 and 6 M≥7.
 
 Dam screening: **160/254 Critical or High (63.0%)**. Critical: 44, High: 116, Moderate: 45, Low: 49. These are heuristic screening grades, not failure probabilities.
 
