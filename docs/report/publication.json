@@ -1,8 +1,8 @@
 {
-  "catalog_sha256": "65e2010c0a686a3e64b65c7bd6e88a8ad7ac822eb516f579d31b5d70ffb44f9c",
+  "catalog_sha256": "f26b980f5e82ec4f13e526009430939aacb1ecc3fd6455e55f459a0aadda042c",
   "values": {
-    "CatalogCount": "10,113",
-    "CatalogLatest": "2026-11-18",
+    "CatalogCount": "10,119",
+    "CatalogLatest": "2026-11-19",
     "MeanMagnitude": "3.21",
     "LargeFive": "393",
     "LargeSeven": "6",
