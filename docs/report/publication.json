@@ -1,8 +1,8 @@
 {
-  "catalog_sha256": "704d7d37c78f674af53f409cc167450f75c5301d810d4431a4f7e400ef324ebf",
+  "catalog_sha256": "eb7d8c658c3dd34ec4fcb0bc571fc04caf1da78bf8a5679de87cc15781fbde31",
   "values": {
-    "CatalogCount": "10,137",
-    "CatalogLatest": "2026-11-25",
+    "CatalogCount": "10,141",
+    "CatalogLatest": "2026-11-27",
     "MeanMagnitude": "3.21",
     "LargeFive": "393",
     "LargeSeven": "6",
@@ -10,7 +10,7 @@
     "RawB": "0.35",
     "RawMc": "2.4",
     "FixedB": "0.73",
-    "FixedCount": "2,809",
+    "FixedCount": "2,810",
     "DeclusteredB": "1.04",
     "DeclusteredMc": "4.7",
     "DamCount": "254",
